@@ -5,10 +5,10 @@ name: Live scoring
 # In November, shift each block one hour later.
 on:
   schedule:
-    - cron: '*/10 17-23 * * 0'   # Sunday 1pm - 8pm ET
-    - cron: '*/10 0-4 * * 1'     # Sunday night into Monday ET
-    - cron: '*/10 0-4 * * 2'     # Monday Night Football
-    - cron: '*/10 0-4 * * 5'     # Thursday Night Football
+   # - cron: '*/10 17-23 * * 0'   # Sunday 1pm - 8pm ET
+   # - cron: '*/10 0-4 * * 1'     # Sunday night into Monday ET
+   # - cron: '*/10 0-4 * * 2'     # Monday Night Football
+   # - cron: '*/10 0-4 * * 5'     # Thursday Night Football
   workflow_dispatch:
 
 permissions:
