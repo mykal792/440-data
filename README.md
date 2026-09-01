@@ -1,5 +1,9 @@
 # 440 & Friends — site data
 
+> **Scheduled jobs are OFF.** They were disabled on 2026-09-01 because
+> there is no Yahoo token yet. See **TURN-ON-WHEN-YAHOO-WORKS.md** for
+> the checklist to switch everything back on.
+
 This repo does one job: put two files on the internet at a fixed address.
 
 ```
