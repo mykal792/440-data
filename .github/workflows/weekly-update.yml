@@ -5,8 +5,8 @@ on:
     # GitHub cron is UTC and does not follow daylight saving, so Tuesday 5am ET
     # is two different UTC times across the season. Both are listed; the pull is
     # idempotent, so running twice on one Tuesday just rewrites the same file.
-    - cron: '0 9 * * 2'    # 5am EDT  (Sep - early Nov)
-    - cron: '0 10 * * 2'   # 5am EST  (Nov - Jan)
+    # - cron: '0 9 * * 2'    # 5am EDT  (Sep - early Nov)
+    # - cron: '0 10 * * 2'   # 5am EST  (Nov - Jan)
   push:
     # Editing the ledger in GitHub's web UI regenerates the site data immediately,
     # so settling a week's bonuses doesn't mean waiting until next Tuesday.
