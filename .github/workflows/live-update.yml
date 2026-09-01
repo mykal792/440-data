@@ -36,16 +36,16 @@ jobs:
             echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
           fi
           echo "$YAHOO_TOKEN_B64" | base64 -d > "$HOME/.yahoofantasy"
-      - name: Pull live bonus standings
+      - name: Pull live scores and bonus races
+        # Writes docs/scoreboard.json and docs/bonus.json.
         run: python pull_live.py
       - name: Publish if changed
         run: |
-          cp bonus.json docs/bonus.json
-          if git diff --quiet -- docs/bonus.json; then
+          if git diff --quiet -- docs/bonus.json docs/scoreboard.json; then
             echo "No change."; exit 0
           fi
           git config user.name  "league-bot"
           git config user.email "league-bot@users.noreply.github.com"
-          git add docs/bonus.json
+          git add docs/bonus.json docs/scoreboard.json
           git commit -m "Live update $(date -u +'%H:%M UTC')"
           git push
