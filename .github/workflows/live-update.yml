@@ -1,0 +1,51 @@
+name: Live scoring
+
+# Only runs during game windows. Cron is UTC and does not follow daylight
+# saving; these cover the EDT half of the season (September to early November).
+# In November, shift each block one hour later.
+on:
+  schedule:
+    - cron: '*/10 17-23 * * 0'   # Sunday 1pm - 8pm ET
+    - cron: '*/10 0-4 * * 1'     # Sunday night into Monday ET
+    - cron: '*/10 0-4 * * 2'     # Monday Night Football
+    - cron: '*/10 0-4 * * 5'     # Thursday Night Football
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-scoring
+  cancel-in-progress: true
+
+jobs:
+  live:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: pip install 'yahoofantasy==1.4.9'
+      - name: Restore Yahoo token
+        env:
+          YAHOO_TOKEN_B64: ${{ secrets.YAHOO_TOKEN_B64 }}
+        run: |
+          if [ -z "$YAHOO_TOKEN_B64" ]; then
+            echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
+          fi
+          echo "$YAHOO_TOKEN_B64" | base64 -d > "$HOME/.yahoofantasy"
+      - name: Pull live bonus standings
+        run: python pull_live.py
+      - name: Publish if changed
+        run: |
+          cp bonus.json docs/bonus.json
+          if git diff --quiet -- docs/bonus.json; then
+            echo "No change."; exit 0
+          fi
+          git config user.name  "league-bot"
+          git config user.email "league-bot@users.noreply.github.com"
+          git add docs/bonus.json
+          git commit -m "Live update $(date -u +'%H:%M UTC')"
+          git push
