@@ -1,14 +1,17 @@
 name: Live scoring
 
-# Only runs during game windows. Cron is UTC and does not follow daylight
-# saving; these cover the EDT half of the season (September to early November).
+# SCHEDULE DISABLED until pull_live.py exists and Yahoo access is live.
+# To switch it back on, delete the '#' from the five lines below.
+# Cron is UTC and ignores daylight saving; these cover EDT (Sep - early Nov).
 # In November, shift each block one hour later.
+#
+#  schedule:
+#    - cron: '*/10 17-23 * * 0'   # Sunday 1pm - 8pm ET
+#    - cron: '*/10 0-4 * * 1'     # Sunday night into Monday ET
+#    - cron: '*/10 0-4 * * 2'     # Monday Night Football
+#    - cron: '*/10 0-4 * * 5'     # Thursday Night Football
+
 on:
-  schedule:
-   # - cron: '*/10 17-23 * * 0'   # Sunday 1pm - 8pm ET
-   # - cron: '*/10 0-4 * * 1'     # Sunday night into Monday ET
-   # - cron: '*/10 0-4 * * 2'     # Monday Night Football
-   # - cron: '*/10 0-4 * * 5'     # Thursday Night Football
   workflow_dispatch:
 
 permissions:
