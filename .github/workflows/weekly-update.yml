@@ -8,10 +8,12 @@ on:
     - cron: '0 9 * * 2'    # 5am EDT  (Sep - early Nov)
     - cron: '0 10 * * 2'   # 5am EST  (Nov - Jan)
   push:
+    # Editing the ledger in GitHub's web UI regenerates the site data immediately,
+    # so settling a week's bonuses doesn't mean waiting until next Tuesday.
     paths:
       - 'bank-ledger.json'
       - 'bonus-categories.json'
-  workflow_dispatch:
+  workflow_dispatch:        # a "Run workflow" button, for testing
 
 permissions:
   contents: write
@@ -25,7 +27,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           # 3.11 on purpose. yahoofantasy calls ssl.wrap_socket(), removed in
-          # 3.12 — the same thing patched locally. Staying on 3.11 avoids it.
+          # 3.12 — the same thing you patched locally. Staying on 3.11 means the
+          # patch is never needed here.
           python-version: '3.11'
 
       - name: Install
@@ -39,19 +42,27 @@ jobs:
             echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
           fi
           echo "$YAHOO_TOKEN_B64" | base64 -d > "$HOME/.yahoofantasy"
+          echo "Token restored ($(stat -c%s "$HOME/.yahoofantasy") bytes)"
 
       - name: Pull standings
         run: python pull_standings.py
 
       - name: Publish if changed
         run: |
-          mkdir -p docs
-          cp standings.json docs/standings.json
-          if git diff --quiet -- docs/standings.json; then
+          if git diff --quiet -- docs/season.json; then
             echo "No change this run."; exit 0
           fi
           git config user.name  "league-bot"
           git config user.email "league-bot@users.noreply.github.com"
-          git add docs/standings.json
+          git add docs/season.json
           git commit -m "Update standings — $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
+
+      - name: Warn if the refresh token rotated
+        run: |
+          NEW=$(base64 -w0 < "$HOME/.yahoofantasy")
+          if [ "$NEW" != "${{ secrets.YAHOO_TOKEN_B64 }}" ]; then
+            echo "::warning::The token file changed during this run. If Yahoo \
+            rotates refresh tokens, update the YAHOO_TOKEN_B64 secret with the \
+            new value or a future run will fail to authenticate."
+          fi
