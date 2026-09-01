@@ -1,0 +1,148 @@
+{
+  "high_score": {
+    "label": "High Score",
+    "description": "Most fantasy points scored that week.",
+    "amount": 15
+  },
+  "category_amount": 25,
+  "categories": [
+    {
+      "week": 1,
+      "key": "bench-warmer",
+      "label": "Bench Warmer",
+      "description": "Most points by a single player on your bench."
+    },
+    {
+      "week": 2,
+      "key": "match-up-blues",
+      "label": "Match Up Blues",
+      "description": "Highest team score in a loss."
+    },
+    {
+      "week": 3,
+      "key": "beast-mode",
+      "label": "Beast Mode",
+      "description": "Most points by an active Running Back."
+    },
+    {
+      "week": 4,
+      "key": "lucky-duck",
+      "label": "Lucky Duck",
+      "description": "Lowest team score in a win."
+    },
+    {
+      "week": 5,
+      "key": "the-sheriff",
+      "label": "The Sheriff",
+      "description": "Most points by an active Quarterback."
+    },
+    {
+      "week": 6,
+      "key": "photo-finish",
+      "label": "Photo Finish",
+      "description": "Narrowest margin of victory."
+    },
+    {
+      "week": 7,
+      "key": "the-flex",
+      "label": "The Flex",
+      "description": "Most points by your FLEX starter.",
+      "long_description": "Most points by a RB/WR/TE in your FLEX position."
+    },
+    {
+      "week": 8,
+      "key": "nice-hands",
+      "label": "Nice Hands",
+      "description": "Most points by an active Wide Receiver."
+    },
+    {
+      "week": 9,
+      "key": "blow-out",
+      "label": "Blow Out",
+      "description": "Largest margin of victory."
+    },
+    {
+      "week": 10,
+      "key": "bad-beat",
+      "label": "Bad Beat",
+      "description": "Narrowest margin of defeat."
+    },
+    {
+      "week": 11,
+      "key": "hammer-toe",
+      "label": "Hammer Toe",
+      "description": "Most points by an active Kicker."
+    },
+    {
+      "week": 12,
+      "key": "one-two-punch",
+      "label": "One-Two Punch",
+      "description": "Combined total of your RB1 and RB2.",
+      "long_description": "Highest combined total of your RB1 and RB2 positions."
+    },
+    {
+      "week": 13,
+      "key": "pick-six",
+      "label": "Pick Six",
+      "description": "Most points by an active Defense."
+    },
+    {
+      "week": 14,
+      "key": "tighty-whities",
+      "label": "Tighty Whities",
+      "description": "Most points by an active Tight End."
+    },
+    {
+      "week": 15,
+      "key": "points-against",
+      "label": "Points Against",
+      "description": "Highest season total points against.",
+      "long_description": "Team with the highest season total points against."
+    }
+  ],
+  "awards": {
+    "squid_game": {
+      "label": "Squid Game Champion",
+      "short": "SG",
+      "amount": 100
+    }
+  },
+  "playoffs": {
+    "label": "Playoff payouts",
+    "places": [
+      {
+        "place": 1,
+        "amount": 500
+      },
+      {
+        "place": 2,
+        "amount": 300
+      },
+      {
+        "place": 3,
+        "amount": 200
+      }
+    ]
+  },
+  "draftkings": {
+    "label": "DraftKings Challenge",
+    "amount": null,
+    "note": "Season-long. Varies each year with transaction volume \u2014 set manually."
+  },
+  "thanksgiving": {
+    "label": "Thanksgiving DraftKings",
+    "short": "TG",
+    "amount": 100,
+    "places": [
+      {
+        "place": 1,
+        "amount": 75
+      },
+      {
+        "place": 2,
+        "amount": 25
+      }
+    ],
+    "note": "Week 13. Settled by hand \u2014 add winners to bank-ledger.json as awards."
+  }
+}
