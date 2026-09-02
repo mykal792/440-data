@@ -4,16 +4,17 @@ pull_squid.py - 440 & Friends, Squid Game scores feed.
 
 Writes ONE file, overwritten every run:
 
-    docs/squid-scores.json   week, live, final, updated, scores, remaining
+    docs/squid-scores.json   week, live, final, updated, scores,
+                             remaining, projected
 
-It does NOT write docs/squid-state.json and never opens it. That file holds
-tokens, eliminated and duel - the three things no API can know, entered by hand
-by the commissioner. Duels are rare and irrecoverable: a job that merged both
-into one object would look fine for weeks and then wipe the one thing that
-cannot be regenerated. Splitting the files means automation *structurally*
-cannot do that, rather than relying on this script staying correct forever.
+Yahoo's keys ONLY. Tokens, eliminated and duel live in the Wix
+SquidGameState collection and are written by the commissioner page. Nothing
+in this repo has a write path to them - the separation is structural, not a
+convention someone has to remember. Duels are rare and irrecoverable: a job
+that wrote the whole object would look fine for weeks and then wipe the one
+thing that cannot be regenerated, at 1pm on a Sunday.
 
-The board reads both files and merges them client-side.
+The board fetches this feed and overlays it on the collection state.
 
     python3 pull_squid.py                          # -> docs/squid-scores.json
     python3 pull_squid.py --week 4                 # force a week
@@ -108,6 +109,40 @@ def remaining_from_rosters(rosters):
     return out
 
 
+def projected_from_yahoo(sb_payload):
+    """-> {manager_key: float} from team_projected_points.
+
+    Yahoo's projected total is live, not frozen at kickoff: it swaps each
+    starter's projection for their actual score as they play, so it converges
+    on the real total and equals it once every starter is done. That is exactly
+    what the board's PROJECTED toggle and chopping-block ranking want.
+
+    Returns {} if the field is absent, in which case the board falls back to
+    its flat estimate and labels the column ESTIMATE instead of POINTS.
+    """
+    league = sb_payload["fantasy_content"]["league"]
+    sb = yc.find_key(league[1:], "scoreboard") or league[1].get("scoreboard")
+    container = (sb or {}).get("0", {}).get("matchups") or (sb or {}).get("matchups")
+
+    out = {}
+    for wrapper in yc.numbered(container or {}):
+        m = wrapper.get("matchup")
+        mm = yc.merge_meta(m) if isinstance(m, list) else (m or {})
+        teams_c = mm.get("0", {}).get("teams") or mm.get("teams") or {}
+        for tw in yc.numbered(teams_c):
+            team = tw.get("team")
+            if team is None:
+                continue
+            tmeta = yc.merge_meta(team[0] if isinstance(team[0], list) else team)
+            manager = yc.TEAM_MAP.get(str(tmeta.get("team_id", "")))
+            if manager is None:
+                continue
+            proj = yc.find_key(team[1:], "team_projected_points")
+            if isinstance(proj, dict) and proj.get("total") is not None:
+                out[manager] = round(yc.fnum(proj.get("total")), 2)
+    return out
+
+
 def build(week, status, matchups, rosters, sb_payload):
     scores = {k: 0.0 for k in yc.MANAGER_KEYS}
     for m in matchups:
@@ -121,9 +156,13 @@ def build(week, status, matchups, rosters, sb_payload):
         remaining = remaining_from_rosters(rosters)
         source = "unscored starters (fallback)"
 
+    projected = projected_from_yahoo(sb_payload) if sb_payload else {}
+    proj_source = "team_projected_points" if projected else "absent - board will ESTIMATE"
+
     # Every manager, every week, including eliminated ones. A missing key would
     # read as 0 anyway; being explicit makes a broken pull obvious.
     remaining = {k: int(remaining.get(k, 0)) for k in yc.MANAGER_KEYS}
+    projected = {k: round(yc.fnum(projected.get(k)), 2) for k in yc.MANAGER_KEYS}
 
     return {
         "season": yc.SEASON,
@@ -133,9 +172,12 @@ def build(week, status, matchups, rosters, sb_payload):
         "updated": display_stamp(),
         "scores": scores,
         "remaining": remaining,
-        "_note": ("Written by pull_squid.py. Tokens, eliminated and duel live in "
-                  "squid-state.json and are never touched by automation."),
-    }, source
+        "projected": projected,
+        "_note": ("Written by pull_squid.py - Yahoo's keys only. Tokens, "
+                  "eliminated and duel live in the Wix SquidGameState "
+                  "collection, written by the commissioner page. Nothing "
+                  "automated has a write path to them."),
+    }, source, proj_source
 
 
 def main():
@@ -167,9 +209,10 @@ def main():
         sb_week, status, matchups = (args.week or 1), "pregame", []
     week = args.week or sb_week or 1
 
-    payload, source = build(week, status, matchups, rosters, sb_raw)
+    payload, source, proj_source = build(week, status, matchups, rosters, sb_raw)
 
-    print("week %d | %s | remaining via %s" % (week, status, source))
+    print("week %d | %s | remaining via %s | projected via %s"
+          % (week, status, source, proj_source))
     if len(rosters) != 10:
         print("  ! expected 10 managers, got %d - check TEAM_MAP" % len(rosters))
 
