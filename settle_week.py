@@ -68,7 +68,7 @@ def settle(week, yf_dir=None):
         top = [h for h in high if h["rank"] == 1]
         print("  HIGH SCORE  ($%d)  ->  %s  (%s)"
               % (meta["high_score"]["amount"],
-                 ", ".join(h["name"] for h in top), top[0]["value"]))
+                 ", ".join(h["manager"] for h in top), top[0]["value"]))
         if len(top) > 1:
             print("     !! tie - the $%d is split"
                   % meta["high_score"]["amount"])
@@ -86,10 +86,10 @@ def settle(week, yf_dir=None):
             print("     no result - check the week is finished")
         for l in leaders:
             print("     %d. %-12s %8s   %s"
-                  % (l["rank"], l["name"], l["value"], l["detail"]))
+                  % (l["rank"], l["manager"], l["value"], l["detail"]))
         if len(winners) > 1:
             print("     !! tie between %s - the $%d is split"
-                  % (", ".join(w["name"] for w in winners),
+                  % (", ".join(w["manager"] for w in winners),
                      meta.get("category_amount", 25)))
 
         # The ledger carries the value and detail as well as the name: the
@@ -97,9 +97,9 @@ def settle(week, yf_dir=None):
         # the DraftKings High Score column shows the winning score. Both read
         # from here, so a name alone isn't enough.
         entry = {
-            "high": {"manager": top[0]["name"] if high else "?",
+            "high": {"manager": top[0]["manager"] if high else "?",
                      "value": top[0]["value"] if high else "0.00"},
-            "category": {"manager": winners[0]["name"] if winners else "?",
+            "category": {"manager": winners[0]["manager"] if winners else "?",
                          "value": winners[0]["value"] if winners else "0.00",
                          "detail": winners[0]["detail"] if winners else ""},
         }

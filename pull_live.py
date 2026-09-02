@@ -53,14 +53,19 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame):
     cat = meta["_by_week"].get(week, {})
     rows, ascending = yc.compute_bonus(week, rosters, matchups, standings)
 
-    # Before kickoff every value is 0.00, so a "top 3" would just be ten names
-    # tied at zero. Show an empty board instead unless asked otherwise.
+    # ALWAYS exactly three rows in both lists. The bonus board sizes itself to
+    # its content and the HTML blocks can't talk to each other, so a list that
+    # shrinks leaves white space on the page. Before kickoff every value is
+    # 0.00 and all ten managers would tie, so pregame shows placeholders only.
     if status == "pregame" and not show_pregame:
         cat_leaders, high_leaders = [], []
     else:
         cat_leaders = yc.rank_rows(rows, ascending=ascending)
         high_leaders = yc.rank_rows(
             yc.high_score_rows(rosters, matchups, standings))
+
+    cat_leaders = yc.pad_leaders(cat_leaders)
+    high_leaders = yc.pad_leaders(high_leaders)
 
     return {
         "league": {"season": yc.SEASON},

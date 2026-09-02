@@ -548,7 +548,12 @@ def high_score_rows(rosters, matchups, standings):
 
 
 def rank_rows(rows, ascending=False, limit=3):
-    """Rank rows into leader dicts. Ties share a rank and all tied entries show."""
+    """Rank rows into leader dicts. Ties share a rank.
+
+    `manager` carries the UPPERCASE display name because that is what the
+    bonus board renders. The lowercase key is in `face`, matching
+    scoreboard.json, so avatars can be wired to it later.
+    """
     rows = [r for r in rows if r[0]]
     if not rows:
         return []
@@ -562,12 +567,35 @@ def rank_rows(rows, ascending=False, limit=3):
             seen.append(value)
         leaders.append({
             "rank": len(seen),
-            "manager": manager,
-            "name": DISPLAY.get(manager, manager),
+            "manager": DISPLAY.get(manager, manager),
+            "face": manager,
             "value": "%.2f" % value,
             "detail": detail,
         })
     return leaders
+
+
+def pad_leaders(leaders, size=3):
+    """Always exactly `size` rows.
+
+    The bonus board sizes itself to its content, so a list that shrinks leaves
+    white space between HTML blocks that cannot talk to each other. Real
+    leaders first, placeholders to fill, hard cap at `size` - a three-way tie
+    would otherwise push the list to four rows and grow the block.
+
+    settle_week.py deliberately does NOT pad or cap: when money is being paid
+    out, every tied manager must be visible.
+    """
+    out = list(leaders[:size])
+    for i in range(len(out), size):
+        out.append({
+            "rank": i + 1,
+            "manager": "NAME",
+            "face": "",
+            "value": "0.00",
+            "detail": "",
+        })
+    return out
 
 
 def compute_bonus(week, rosters, matchups, standings):
