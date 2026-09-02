@@ -122,7 +122,9 @@ def main():
 
     if args.fixtures:
         fx = Path(args.fixtures).expanduser()
-        rosters_raw = json.loads((fx / "allrosters_sample.json").read_text())
+        rosters_raw = {tid: json.loads((fx / ("roster_t%s.json" % tid)).read_text())
+                       for tid in yc.TEAM_MAP
+                       if (fx / ("roster_t%s.json" % tid)).exists()}
         standings_raw = json.loads(
             (fx / ("league_%s_standings.json" % yc.LEAGUE_KEY)).read_text())
         sb_path = fx / "scoreboard_sample.json"

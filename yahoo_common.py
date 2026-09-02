@@ -179,9 +179,29 @@ def fetch(path, token):
 
 
 def fetch_rosters(token, week):
-    """All ten rosters in ONE call."""
-    return fetch("league/%s/teams/roster/players/stats;type=week;week=%d"
-                 % (LEAGUE_KEY, week), token)
+    """All ten rosters, as {team_id: payload}.
+
+    TEN CALLS, ON PURPOSE. The league-wide form looks like an obvious
+    optimisation and is a trap:
+
+        league/<key>/teams/roster/players/stats;type=week;week=N
+
+    returns 200 with all 150 players and their selected_position, but NO
+    player_points blocks at all - verified 2026-09-01, with and without the
+    type/week parameters. Every bonus would silently compute as 0.00 for the
+    whole season. Only the per-team form carries points:
+
+        team/<key>.t.<id>/roster/players/stats;type=week;week=N
+
+    Ten calls per refresh is roughly 60/hour at a 10-minute cadence, which is
+    well inside normal use.
+    """
+    out = {}
+    for team_id in TEAM_MAP:
+        out[team_id] = fetch(
+            "team/%s.t.%s/roster/players/stats;type=week;week=%d"
+            % (LEAGUE_KEY, team_id, week), token)
+    return out
 
 
 def fetch_scoreboard(token, week):
@@ -202,25 +222,25 @@ def current_week(token):
 
 # --- parsers -----------------------------------------------------------------
 
-def parse_rosters(payload):
+def parse_rosters(payloads):
     """-> {manager_key: {'team_id', 'team_name', 'players': [...]}}
+
+    Takes {team_id: payload} from fetch_rosters. Each payload is a single-team
+    response: fantasy_content.team = [ [metadata...], {roster...} ].
 
     player: {name, display_position, slot, is_flex, points}
     """
-    league = payload["fantasy_content"]["league"]
-    teams = find_key(league[1:], "teams") or league[1].get("teams")
     out = {}
-
-    for wrapper in numbered(teams):
-        team = wrapper.get("team")
-        if team is None:
-            continue
-        meta = merge_meta(team[0] if isinstance(team[0], list) else team)
-        manager = TEAM_MAP.get(str(meta.get("team_id", "")))
+    for team_id, payload in (payloads or {}).items():
+        manager = TEAM_MAP.get(str(team_id))
         if manager is None:
             continue
+        team = payload.get("fantasy_content", {}).get("team")
+        if not team:
+            continue
 
-        roster = find_key(team[1:], "roster") if len(team) > 1 else None
+        meta = merge_meta(team[0] if isinstance(team[0], list) else team)
+        roster = find_key(team[1:], "roster")
         players_container = None
         if isinstance(roster, dict):
             players_container = (roster.get("0", {}).get("players")
@@ -242,7 +262,7 @@ def parse_rosters(payload):
                 "points": fnum(pts.get("total")),
             })
 
-        out[manager] = {"team_id": str(meta.get("team_id", "")),
+        out[manager] = {"team_id": str(team_id),
                         "team_name": clean(meta.get("name", "")),
                         "players": players}
     return out
