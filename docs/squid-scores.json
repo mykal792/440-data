@@ -3,7 +3,7 @@
   "week": 1,
   "live": false,
   "final": false,
-  "updated": "WED 9:24 AM",
+  "updated": "WED 11:02 AM",
   "scores": {
     "schilling": 0.0,
     "garrett": 0.0,
@@ -28,5 +28,17 @@
     "scotty": 9,
     "anthony": 9
   },
-  "_note": "Written by pull_squid.py. Tokens, eliminated and duel live in squid-state.json and are never touched by automation."
+  "projected": {
+    "schilling": 117.95,
+    "garrett": 114.61,
+    "hayden": 110.11,
+    "greg": 113.74,
+    "scarpitti": 108.82,
+    "gangus": 118.31,
+    "graham": 114.99,
+    "coyne": 108.53,
+    "scotty": 111.2,
+    "anthony": 113.78
+  },
+  "_note": "Written by pull_squid.py - Yahoo's keys only. Tokens, eliminated and duel live in the Wix SquidGameState collection, written by the commissioner page. Nothing automated has a write path to them."
 }
