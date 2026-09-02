@@ -5,7 +5,7 @@
     "regular_weeks": 15,
     "playoff_teams": 4
   },
-  "updated": "2026-08-25T13:00:00Z",
+  "updated": "2026-09-02T03:41:54Z",
   "managers": [
     {
       "key": "greg",
@@ -135,18 +135,211 @@
           "avg_per_week": 0.0
         }
       ]
+    },
+    {
+      "week": 1,
+      "label": "Week 1",
+      "short": "W1",
+      "teams": [
+        {
+          "key": "schilling",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        },
+        {
+          "key": "garrett",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        },
+        {
+          "key": "hayden",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        },
+        {
+          "key": "greg",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        },
+        {
+          "key": "scarpitti",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        },
+        {
+          "key": "gangus",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        },
+        {
+          "key": "graham",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        },
+        {
+          "key": "coyne",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        },
+        {
+          "key": "scotty",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        },
+        {
+          "key": "anthony",
+          "rank": 0,
+          "wins": 0,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 0.0
+        }
+      ]
     }
   ],
   "bonuses": {
-    "greg": [],
+    "schilling": [
+      {
+        "week": 4,
+        "type": "high",
+        "label": "High Score",
+        "short": "HS",
+        "amount": 15
+      }
+    ],
+    "garrett": [
+      {
+        "week": 2,
+        "type": "category",
+        "label": "Match Up Blues",
+        "short": "Match Up Blues",
+        "amount": 25
+      }
+    ],
+    "hayden": [
+      {
+        "week": 2,
+        "type": "high",
+        "label": "High Score",
+        "short": "HS",
+        "amount": 15
+      },
+      {
+        "week": 6,
+        "type": "high",
+        "label": "High Score",
+        "short": "HS",
+        "amount": 15
+      },
+      {
+        "week": 7,
+        "type": "category",
+        "label": "The Flex",
+        "short": "The Flex",
+        "amount": 25
+      }
+    ],
+    "greg": [
+      {
+        "week": 1,
+        "type": "high",
+        "label": "High Score",
+        "short": "HS",
+        "amount": 15
+      },
+      {
+        "week": 3,
+        "type": "high",
+        "label": "High Score",
+        "short": "HS",
+        "amount": 15
+      },
+      {
+        "week": 5,
+        "type": "category",
+        "label": "The Sheriff",
+        "short": "The Sheriff",
+        "amount": 25
+      },
+      {
+        "week": 7,
+        "type": "high",
+        "label": "High Score",
+        "short": "HS",
+        "amount": 15
+      }
+    ],
+    "scarpitti": [
+      {
+        "week": 6,
+        "type": "category",
+        "label": "Photo Finish",
+        "short": "Photo Finish",
+        "amount": 25
+      }
+    ],
+    "gangus": [
+      {
+        "week": 3,
+        "type": "category",
+        "label": "Beast Mode",
+        "short": "Beast Mode",
+        "amount": 25
+      },
+      {
+        "week": 5,
+        "type": "high",
+        "label": "High Score",
+        "short": "HS",
+        "amount": 15
+      }
+    ],
     "graham": [],
-    "anthony": [],
-    "scotty": [],
-    "gangus": [],
-    "hayden": [],
-    "garrett": [],
-    "coyne": [],
-    "scarpitti": [],
-    "schilling": []
+    "coyne": [
+      {
+        "week": 4,
+        "type": "category",
+        "label": "Lucky Duck",
+        "short": "Lucky Duck",
+        "amount": 25
+      }
+    ],
+    "scotty": [
+      {
+        "week": 1,
+        "type": "category",
+        "label": "Bench Warmer",
+        "short": "Bench Warmer",
+        "amount": 25
+      }
+    ],
+    "anthony": []
   }
 }
