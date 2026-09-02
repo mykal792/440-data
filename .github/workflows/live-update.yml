@@ -42,9 +42,13 @@ jobs:
         run: python pull_live.py
       - name: Pull DraftKings ticker
         run: python pull_dk.py
+      - name: Pull Squid Game scores
+        # Writes docs/squid-scores.json only. squid-state.json holds tokens,
+        # eliminated and duel, and no script ever opens it.
+        run: python pull_squid.py
       - name: Publish if changed
         run: |
-          FILES="docs/bonus.json docs/scoreboard.json docs/dk.json"
+          FILES="docs/bonus.json docs/scoreboard.json docs/dk.json docs/squid-scores.json"
           if git diff --quiet -- $FILES; then
             echo "No change."; exit 0
           fi
