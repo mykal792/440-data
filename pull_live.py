@@ -1,0 +1,156 @@
+#!/usr/bin/env python3
+"""
+pull_live.py - 440 & Friends, live board.
+
+Writes TWO files, both overwritten every run:
+
+    docs/scoreboard.json   current week's matchups and scores
+    docs/bonus.json        current week's bonus + high score, live top 3
+
+It does NOT touch season.json. That belongs to pull_standings.py, which also
+merges the bank ledger into it - two scripts writing one file would clobber
+each other.
+
+Two API calls per run, so a 10-minute cadence during games is comfortable.
+
+    python3 pull_live.py                           # current week -> docs/
+    python3 pull_live.py --week 3                  # force a week
+    python3 pull_live.py --dry-run                 # print, write nothing
+    python3 pull_live.py --fixtures ~/440-samples  # offline, saved JSON
+
+The bonus board answers "do I have a shot at this week's bonus". Weekly winners
+are settled separately with settle_week.py once a week is final.
+"""
+
+import argparse
+import json
+import os
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import yahoo_common as yc
+
+
+def build_scoreboard(week, status, matchups):
+    return {
+        "week": week,
+        "status": status,
+        "updated": yc.now_iso(),
+        "matchups": [
+            {"home": {"name": yc.DISPLAY.get(m["home"][0], ""),
+                      "face": m["home"][0],
+                      "score": round(m["home"][1], 2)},
+             "away": {"name": yc.DISPLAY.get(m["away"][0], ""),
+                      "face": m["away"][0],
+                      "score": round(m["away"][1], 2)}}
+            for m in matchups
+        ],
+    }
+
+
+def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame):
+    cat = meta["_by_week"].get(week, {})
+    rows, ascending = yc.compute_bonus(week, rosters, matchups, standings)
+
+    # Before kickoff every value is 0.00, so a "top 3" would just be ten names
+    # tied at zero. Show an empty board instead unless asked otherwise.
+    if status == "pregame" and not show_pregame:
+        cat_leaders, high_leaders = [], []
+    else:
+        cat_leaders = yc.rank_rows(rows, ascending=ascending)
+        high_leaders = yc.rank_rows(
+            yc.high_score_rows(rosters, matchups, standings))
+
+    return {
+        "league": {"season": yc.SEASON},
+        "live": {
+            "state": status,
+            "week": week,
+            "updated": yc.now_iso(),
+            "category": {
+                "week": week,
+                "key": cat.get("key", "no-bonus"),
+                "label": cat.get("label", "No Bonus"),
+                "description": cat.get("description", ""),
+                "amount": meta.get("category_amount", 25),
+                "leaders": cat_leaders,
+            },
+            "high": {
+                "key": "high-score",
+                "label": meta["high_score"]["label"],
+                "description": meta["high_score"]["description"],
+                "amount": meta["high_score"]["amount"],
+                "leaders": high_leaders,
+            },
+        },
+    }
+
+
+def write_json(path, payload, dry_run):
+    text = json.dumps(payload, indent=2) + "\n"
+    if dry_run:
+        print("--- would write %s ---" % path)
+        print(text[:1800])
+        return
+    tmp = str(path) + ".tmp"
+    with open(tmp, "w") as fh:
+        fh.write(text)
+    os.replace(tmp, path)
+    print("wrote %s" % path)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--week", type=int, help="override the week number")
+    ap.add_argument("--out-dir", default="docs", help="where the json files live")
+    ap.add_argument("--yf-dir", help="directory holding .yahoofantasy")
+    ap.add_argument("--fixtures", help="parse saved JSON from this dir, no network")
+    ap.add_argument("--categories", help="path to bonus-categories.json")
+    ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--show-pregame", action="store_true",
+                    help="list leaders even before kickoff (all zeros)")
+    args = ap.parse_args()
+
+    out_dir = Path(args.out_dir).expanduser().resolve()
+    meta = yc.load_categories(args.categories)
+
+    if args.fixtures:
+        fx = Path(args.fixtures).expanduser()
+        rosters_raw = json.loads((fx / "allrosters_sample.json").read_text())
+        standings_raw = json.loads(
+            (fx / ("league_%s_standings.json" % yc.LEAGUE_KEY)).read_text())
+        sb_path = fx / "scoreboard_sample.json"
+        sb_raw = json.loads(sb_path.read_text()) if sb_path.exists() else None
+    else:
+        token = yc.get_token(args.yf_dir)
+        week = args.week or yc.current_week(token)
+        rosters_raw = yc.fetch_rosters(token, week)
+        sb_raw = yc.fetch_scoreboard(token, week)
+        standings_raw = yc.fetch_standings(token)
+
+    rosters = yc.parse_rosters(rosters_raw)
+    standings = yc.parse_standings(standings_raw)
+
+    if sb_raw:
+        sb_week, status, matchups = yc.parse_scoreboard(sb_raw)
+    else:
+        sb_week, status, matchups = (args.week or 1), "pregame", []
+
+    week = args.week or sb_week or 1
+
+    print("week %d | %s | %d managers | %d matchups"
+          % (week, status, len(rosters), len(matchups)))
+    if len(rosters) != 10:
+        print("  ! expected 10 managers - check TEAM_MAP in yahoo_common.py")
+
+    write_json(out_dir / "scoreboard.json",
+               build_scoreboard(week, status, matchups), args.dry_run)
+    write_json(out_dir / "bonus.json",
+               build_bonus(week, status, rosters, matchups, standings, meta,
+                           args.show_pregame),
+               args.dry_run)
+
+
+if __name__ == "__main__":
+    main()
