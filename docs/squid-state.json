@@ -1,0 +1,33 @@
+{
+  "_comment": "Commissioner-owned. NO SCRIPT WRITES THIS FILE. Tokens, eliminations and duels are human decisions; pull_squid.py writes squid-scores.json and never opens this one, so automation cannot wipe a duel. Edit here by hand and commit. The board reads both files and merges them.",
+
+  "season": 2026,
+  "prize": "$100.00",
+
+  "_players_note": "Fixed roster. The id values are tied to the avatar artwork - do not rename them.",
+  "players": [
+    { "id": "anthony",   "name": "ANTHONY" },
+    { "id": "coyne",     "name": "COYNE" },
+    { "id": "gangus",    "name": "GANGUS" },
+    { "id": "garrett",   "name": "GARRETT" },
+    { "id": "graham",    "name": "GRAHAM" },
+    { "id": "greg",      "name": "GREG" },
+    { "id": "hayden",    "name": "HAYDEN" },
+    { "id": "scarpitti", "name": "SCARPITTI" },
+    { "id": "schilling", "name": "SCHILLING" },
+    { "id": "scotty",    "name": "SCOTTY" }
+  ],
+
+  "_tokens_note": "Weeks 1-3 only. Highest scorer wins a Duel Token; if they already hold one it drops to the next-highest team without one. Three exist all season. status: held | active | spent | expired. All unspent tokens expire when the field reaches three.",
+  "tokens": [],
+
+  "_eliminated_note": "Weeks 4-11, lowest-scoring active team each week. how: 'low' (low score) or 'duel' (lost a redemption duel).",
+  "eliminated": [],
+
+  "_duel_note": "null when no duel is live. Set when an eliminated token holder challenges an active team before the following week's kickoff. The next week's scores decide it. A challenger who wins is still ranked for that same week's elimination.",
+  "duel": null,
+
+  "_tuning_note": "pointsPerPlayer is what one unplayed starter is worth; sdPerPlayer is how much one can swing. Used for projected = score + (remaining x pointsPerPlayer).",
+  "pointsPerPlayer": 11,
+  "sdPerPlayer": 7
+}
