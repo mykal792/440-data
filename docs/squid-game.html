@@ -7,7 +7,7 @@
 <style>
 /* ============================================================
    440 & Friends — SQUID GAME HQ
-   Built 2026-09-02 14:19 by build_squid_game.py — do not hand-edit.
+   Built 2026-09-02 14:50 by build_squid_game.py — do not hand-edit.
    Artboard: 1043 desktop / 640 mobile.
    Every length is a multiple of --u. Never introduce a fixed px.
    Radii are offset curves: --r-out = --r-in + --pad at every nesting level.
@@ -605,7 +605,7 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
    FEED wins for its own keys and nothing else. Set "pinWeek": true in the
    collection to hold a week the feed disagrees with (preseason, mainly). */
 var FEED_URL = "https://mykal792.github.io/440-data/squid-scores.json";
-var FEED_KEYS = ['season', 'week', 'live', 'final', 'updated', 'scores', 'remaining'];
+var FEED_KEYS = ['season', 'week', 'live', 'final', 'updated', 'scores', 'remaining', 'projected'];
 var FEED_MS = 60000;
 
 var BASE = null;   /* set from DATA at boot, then from the collection */
@@ -751,7 +751,23 @@ function tokDot(id) {
 }
 function left(id) { var r = S.d.remaining || {}; return r[id] != null ? r[id] : 0; }
 /* what a team should end the week on, given who has not played yet */
-function proj(id) { return score(id) + left(id) * (S.d.pointsPerPlayer > 0 ? S.d.pointsPerPlayer : 11); }
+/* Yahoo's projected total if the feed carries one, otherwise a flat estimate
+   per unplayed starter. The flat version gives every team the same number
+   before kickoff, which is honest about knowing nothing but useless to read —
+   real projections are worth wiring up. */
+function proj(id) {
+  var p = S.d.projected;
+  if (p && typeof p[id] === 'number' && isFinite(p[id])) return p[id];
+  return score(id) + left(id) * (S.d.pointsPerPlayer > 0 ? S.d.pointsPerPlayer : 11);
+}
+function hasRealProj() {
+  var p = S.d.projected;
+  if (!p) return false;
+  for (var i = 0; i < S.d.players.length; i++) {
+    if (typeof p[S.d.players[i].id] !== 'number') return false;
+  }
+  return true;
+}
 function toPlay(id) {
   var n = left(id);
   return n === 0 ? 'ALL PLAYED' : '<b>' + n + '</b> LEFT TO PLAY';
@@ -957,7 +973,8 @@ function renderTokenBoard() {
     '<span class="seg">' +
       '<button type="button" data-view="now" aria-pressed="' + (RACE_VIEW === 'now') + '">CURRENT</button>' +
       '<button type="button" data-view="proj" aria-pressed="' + (RACE_VIEW === 'proj') + '">PROJECTED</button>' +
-    '</span><span class="dashrule"></span><span class="cnt">POINTS</span>';
+    '</span><span class="dashrule"></span><span class="cnt">' +
+    (RACE_VIEW === 'proj' && !hasRealProj() ? 'ESTIMATE' : 'POINTS') + '</span>';
   wrap.appendChild(rh);
 
   var val = RACE_VIEW === 'proj' ? proj : score;
@@ -1102,7 +1119,9 @@ function renderBlock(spot) {
   }
   list.appendChild(el('p', 'oddsnote', (S.d.final || allPlayed(ranked)
     ? 'Every starter has played. Low score is out.'
-    : 'Survival projects each team forward on the starters it still has to play, then spreads the field by how much scoring is left. It sharpens as the week runs down.') +
+    : (hasRealProj()
+        ? 'Survival reads each team\u2019s projected finish, then spreads the field by how much scoring is left. It sharpens as the week runs down.'
+        : 'No projections in the feed yet, so each team is carried forward at a flat rate per unplayed starter. Survival spreads the field by how much scoring is left.')) +
     ' ' + esc(low.name) + ' is held in the card at left and is not ranked in this list.'));
   bb.appendChild(list);
   b.appendChild(bb);
