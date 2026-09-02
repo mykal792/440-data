@@ -109,40 +109,6 @@ def remaining_from_rosters(rosters):
     return out
 
 
-def projected_from_yahoo(sb_payload):
-    """-> {manager_key: float} from team_projected_points.
-
-    Yahoo's projected total is live, not frozen at kickoff: it swaps each
-    starter's projection for their actual score as they play, so it converges
-    on the real total and equals it once every starter is done. That is exactly
-    what the board's PROJECTED toggle and chopping-block ranking want.
-
-    Returns {} if the field is absent, in which case the board falls back to
-    its flat estimate and labels the column ESTIMATE instead of POINTS.
-    """
-    league = sb_payload["fantasy_content"]["league"]
-    sb = yc.find_key(league[1:], "scoreboard") or league[1].get("scoreboard")
-    container = (sb or {}).get("0", {}).get("matchups") or (sb or {}).get("matchups")
-
-    out = {}
-    for wrapper in yc.numbered(container or {}):
-        m = wrapper.get("matchup")
-        mm = yc.merge_meta(m) if isinstance(m, list) else (m or {})
-        teams_c = mm.get("0", {}).get("teams") or mm.get("teams") or {}
-        for tw in yc.numbered(teams_c):
-            team = tw.get("team")
-            if team is None:
-                continue
-            tmeta = yc.merge_meta(team[0] if isinstance(team[0], list) else team)
-            manager = yc.TEAM_MAP.get(str(tmeta.get("team_id", "")))
-            if manager is None:
-                continue
-            proj = yc.find_key(team[1:], "team_projected_points")
-            if isinstance(proj, dict) and proj.get("total") is not None:
-                out[manager] = round(yc.fnum(proj.get("total")), 2)
-    return out
-
-
 def build(week, status, matchups, rosters, sb_payload):
     scores = {k: 0.0 for k in yc.MANAGER_KEYS}
     for m in matchups:
@@ -156,7 +122,7 @@ def build(week, status, matchups, rosters, sb_payload):
         remaining = remaining_from_rosters(rosters)
         source = "unscored starters (fallback)"
 
-    projected = projected_from_yahoo(sb_payload) if sb_payload else {}
+    projected = yc.parse_projected(sb_payload) if sb_payload else {}
     proj_source = "team_projected_points" if projected else "absent - board will ESTIMATE"
 
     # Every manager, every week, including eliminated ones. A missing key would

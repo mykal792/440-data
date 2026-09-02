@@ -313,6 +313,40 @@ def parse_scoreboard(payload):
     return week, status, matchups
 
 
+def parse_projected(payload):
+    """-> {manager_key: float} from team_projected_points on the scoreboard.
+
+    Yahoo's projected total is LIVE, not frozen at kickoff: it swaps each
+    starter's projection for their actual score as they play, so it converges
+    on the real total and equals it once every starter is done. That makes it
+    useful before kickoff (a real number instead of 0.00) and during games (a
+    team on 40 with six starters left still projects near 110).
+
+    Returns {} if the field is absent.
+    """
+    league = payload["fantasy_content"]["league"]
+    sb = find_key(league[1:], "scoreboard") or league[1].get("scoreboard")
+    container = (sb or {}).get("0", {}).get("matchups") or (sb or {}).get("matchups")
+
+    out = {}
+    for wrapper in numbered(container or {}):
+        m = wrapper.get("matchup")
+        mm = merge_meta(m) if isinstance(m, list) else (m or {})
+        teams_c = mm.get("0", {}).get("teams") or mm.get("teams") or {}
+        for tw in numbered(teams_c):
+            team = tw.get("team")
+            if team is None:
+                continue
+            tmeta = merge_meta(team[0] if isinstance(team[0], list) else team)
+            manager = TEAM_MAP.get(str(tmeta.get("team_id", "")))
+            if manager is None:
+                continue
+            proj = find_key(team[1:], "team_projected_points")
+            if isinstance(proj, dict) and proj.get("total") is not None:
+                out[manager] = round(fnum(proj.get("total")), 2)
+    return out
+
+
 def parse_standings(payload):
     """-> {manager_key: {rank, wins, losses, ties, points_for, points_against}}"""
     league = payload["fantasy_content"]["league"]

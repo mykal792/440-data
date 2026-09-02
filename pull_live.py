@@ -32,20 +32,31 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import yahoo_common as yc
 
 
-def build_scoreboard(week, status, matchups):
+def build_scoreboard(week, status, matchups, projected):
+    """`score` is always the truth; `projected` sits alongside it.
+
+    Before kickoff every score is 0.00, which reads as if nobody is playing.
+    Yahoo's projected total gives the cards a real number to show instead, and
+    it stays useful during games because Yahoo updates it live - a team on 40
+    with six starters left still projects near 110.
+
+    The block decides what to display: projections while `status` is
+    "pregame", actual scores once it is "live" or "final". Keeping both in the
+    feed means that choice can change without touching this script.
+    """
+    def side(key):
+        manager = key[0]
+        return {"name": yc.DISPLAY.get(manager, ""),
+                "face": manager,
+                "score": round(key[1], 2),
+                "projected": projected.get(manager, 0.0)}
+
     return {
         "week": week,
         "status": status,
         "updated": yc.now_iso(),
-        "matchups": [
-            {"home": {"name": yc.DISPLAY.get(m["home"][0], ""),
-                      "face": m["home"][0],
-                      "score": round(m["home"][1], 2)},
-             "away": {"name": yc.DISPLAY.get(m["away"][0], ""),
-                      "face": m["away"][0],
-                      "score": round(m["away"][1], 2)}}
-            for m in matchups
-        ],
+        "matchups": [{"home": side(m["home"]), "away": side(m["away"])}
+                     for m in matchups],
     }
 
 
@@ -141,8 +152,10 @@ def main():
 
     if sb_raw:
         sb_week, status, matchups = yc.parse_scoreboard(sb_raw)
+        projected = yc.parse_projected(sb_raw)
     else:
         sb_week, status, matchups = (args.week or 1), "pregame", []
+        projected = {}
 
     week = args.week or sb_week or 1
 
@@ -152,7 +165,7 @@ def main():
         print("  ! expected 10 managers - check TEAM_MAP in yahoo_common.py")
 
     write_json(out_dir / "scoreboard.json",
-               build_scoreboard(week, status, matchups), args.dry_run)
+               build_scoreboard(week, status, matchups, projected), args.dry_run)
     write_json(out_dir / "bonus.json",
                build_bonus(week, status, rosters, matchups, standings, meta,
                            args.show_pregame),
