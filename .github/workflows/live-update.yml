@@ -1,16 +1,20 @@
 name: Live scoring
-# SCHEDULE DISABLED until Week 1 has been run by hand successfully.
-# To switch it back on, delete the '#' from the five lines below.
 # Cron is UTC and ignores daylight saving; these cover EDT (Sep - early Nov).
 # In November, shift each block one hour later.
 #
-#  schedule:
-#    - cron: '*/10 17-23 * * 0'   # Sunday 1pm - 8pm ET
-#    - cron: '*/10 0-4 * * 1'     # Sunday night into Monday ET
-#    - cron: '*/10 0-4 * * 2'     # Monday Night Football
-#    - cron: '*/10 0-4 * * 5'     # Thursday Night Football
+# UTC day numbers look shifted because ET evening games fall on the NEXT UTC
+# day: '* * 4' is Wednesday night ET, '* * 5' is Thursday night ET, and so on.
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '*/10 0-4 * * 4'     # Wednesday night opener, Sep 9 only
+    - cron: '*/10 0-4 * * 5'     # Thursday Night Football
+    - cron: '*/10 18-23 * * 4'   # Thanksgiving afternoon games (week 13)
+    - cron: '*/10 18-23 * * 6'   # Saturday afternoon (late-season games)
+    - cron: '*/10 0-4 * * 0'     # Saturday night into Sunday ET
+    - cron: '*/10 17-23 * * 0'   # Sunday 1pm - 8pm ET
+    - cron: '*/10 0-4 * * 1'     # Sunday night into Monday ET
+    - cron: '*/10 0-4 * * 2'     # Monday Night Football
 permissions:
   contents: write
 concurrency:
