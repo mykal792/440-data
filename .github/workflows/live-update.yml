@@ -33,5 +33,23 @@ jobs:
           if [ -z "$YAHOO_TOKEN_B64" ]; then
             echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
           fi
-          # The library reads .yahoofantasy from the CURRENT DIRECTORY, not
-          # $HOME. Writing it to $HOME looks right and fails every
+          echo "$YAHOO_TOKEN_B64" | tr -d '[:space:]' | base64 -d > "$GITHUB_WORKSPACE/.yahoofantasy"
+      - name: Pull live scores and bonus race
+        run: python pull_live.py
+      - name: Pull DraftKings ticker
+        run: python pull_dk.py
+      - name: Publish if changed
+        run: |
+          FILES="docs/bonus.json docs/scoreboard.json docs/dk.json"
+          if git diff --quiet -- $FILES; then
+            echo "No change."; exit 0
+          fi
+          git config user.name  "league-bot"
+          git config user.email "league-bot@users.noreply.github.com"
+          git add $FILES
+          git commit -m "Live update $(date -u +'%H:%M UTC')"
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash
+          done
+          echo "::error::push failed after 3 attempts"; exit 1
