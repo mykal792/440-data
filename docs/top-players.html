@@ -188,15 +188,15 @@
 @container (max-width:400px){
   .tp{ border-radius:16px }
   .tp__bar{
-    padding:10px 14px; padding-right:56px; /* room for the pinned toggle + status */
-    position:relative; row-gap:4px; min-height:66px;
+    padding:10px 15px; padding-right:60px; /* room for the pinned toggle + status */
+    position:relative; row-gap:4px; min-height:65px;
   }
-  .tp__label{ flex:1 1 100%; margin-right:0; font-size:13px }
+  .tp__label{ flex:1 1 100%; margin-right:0; font-size:13.5px }
   /* mode + status are both pinned to fixed spots, not flex-flowed, so
      'PRESEASON' always sits in the same place under the toggle whether or
      not the 'ago' text next to it is visible yet */
-  .tp__mode{ position:absolute; top:10px; right:14px }
-  .tp__status{ position:absolute; top:39px; right:14px; margin:0 }
+  .tp__mode{ position:absolute; top:11px; right:15px }
+  .tp__status{ position:absolute; top:40px; right:15px; margin:0 }
   .tp__body{ padding:11px 12px 12px }
   .tp__filter{ display:flex; overflow-x:auto; scrollbar-width:none; padding-bottom:2px }
   .tp__filter::-webkit-scrollbar{ display:none }
@@ -212,10 +212,10 @@
 }
 
 
-/* desktop target: 905px */
+/* desktop target: 905px - deliberately no .tp__bar/.tp__label override here:
+   the scoreboard keeps its header at base size at this width too, so this
+   inherits the same 48px-min-height, 14px-label bar as the base rule */
 @container (min-width:700px){
-  .tp__bar{ padding:14px 28px }
-  .tp__label{ font-size:16px }
   .tp__body{ padding:20px 32px 32px }
   .tp__desc{ font-size:12.5px; margin-bottom:16px }
   .tp__filter{ gap:10px; margin-bottom:16px }
