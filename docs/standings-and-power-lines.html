@@ -1127,6 +1127,18 @@ async function load(){
     pre.teams.forEach((t, i) => t.rank = i + 1);
   }
 
+  /* The scoring job appends a snapshot on a schedule, which means a week
+     can land in the feed before it has been played — Yahoo has no table to
+     report yet, so every rank comes back 0. A week like that isn't a week:
+     it would park the football on an empty column and stack all ten lines
+     on the same y. Drop anything that isn't a complete 1..N ranking and
+     let it reappear once the games are final. */
+  state.data.weeks = (state.data.weeks || []).filter(w => {
+    if (w.week === 0) return true;
+    if (!Array.isArray(w.teams) || !w.teams.length) return false;
+    return w.teams.every(t => Number(t.rank) > 0);
+  });
+
   TL = timeline(state.data);
   BY_WEEK = new Map(state.data.weeks.map(w => [w.week, w]));
   LAST = TL.reduce((last, slot, i) => BY_WEEK.has(slot.w) ? i : last, 0);
