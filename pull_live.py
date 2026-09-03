@@ -2,16 +2,32 @@
 """
 pull_live.py - 440 & Friends, live board.
 
-Writes TWO files, both overwritten every run:
+Writes THREE files, all overwritten every run:
 
-    docs/scoreboard.json   current week's matchups and scores
-    docs/bonus.json        current week's bonus + high score, live top 3
+    docs/scoreboard.json    current week's matchups and scores
+    docs/bonus.json         current week's bonus + high score, live top 3
+    docs/top-players.json   every starter's points, highest to lowest, plus
+                             a short per-player stat line (yards, TD, etc.)
 
 It does NOT touch season.json. That belongs to pull_standings.py, which also
 merges the bank ledger into it - two scripts writing one file would clobber
 each other.
 
-Two API calls per run, so a 10-minute cadence during games is comfortable.
+top-players.json rides on the same ten roster calls the bonus board already
+makes - no new PER-RUN API traffic. It only lists starters: bench
+performances already have a home in the Bench Warmer bonus category, and
+mixing the two would just duplicate it. The stat line comes from the SAME
+roster payload too (the "stats" subresource already returns the raw
+per-category breakdown alongside the point total, parse_rosters just wasn't
+reading it before).
+
+The one real addition: mapping a raw stat_id to "PASS YD" etc. needs the
+season's stat category table, which costs one extra call the very first
+time this ever runs (or if stat-categories.json goes missing) and is then
+read from that local file - see yc.load_stat_categories().
+
+Twelve API calls per run in steady state (ten rosters, one scoreboard, one
+standings), so a 10-minute cadence during games is comfortable.
 
     python3 pull_live.py                           # current week -> docs/
     python3 pull_live.py --week 3                  # force a week
@@ -103,6 +119,39 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame):
     }
 
 
+def build_top_players(week, status, rosters, stat_buckets):
+    """Every starter's points this week, highest to lowest.
+
+    One flat list, not pre-sliced by position - the block filters client-side
+    the same way the draft-selections page does, so a design change there
+    doesn't require touching this script.
+
+    stat_buckets is yc.resolve_stat_buckets(...) - already resolved once in
+    main() so this doesn't redo that work per player.
+    """
+    rows = []
+    for manager, team in rosters.items():
+        for p in team["players"]:
+            if p["slot"] not in yc.STARTING_SLOTS:
+                continue
+            rows.append({
+                "name": p["name"],
+                "position": p["display_position"],
+                "team": p.get("team", ""),
+                "manager": manager,
+                "manager_display": yc.DISPLAY.get(manager, manager),
+                "points": round(p["points"], 2),
+                "stats": yc.summarize_stats(p.get("raw_stats"), stat_buckets),
+            })
+    rows.sort(key=lambda r: -r["points"])
+    return {
+        "week": week,
+        "status": status,
+        "updated": yc.now_iso(),
+        "players": rows,
+    }
+
+
 def write_json(path, payload, dry_run):
     text = json.dumps(payload, indent=2) + "\n"
     if dry_run:
@@ -140,12 +189,19 @@ def main():
             (fx / ("league_%s_standings.json" % yc.LEAGUE_KEY)).read_text())
         sb_path = fx / "scoreboard_sample.json"
         sb_raw = json.loads(sb_path.read_text()) if sb_path.exists() else None
+        stat_categories = yc.load_stat_categories(fixtures_dir=args.fixtures)
     else:
         token = yc.get_token(args.yf_dir)
         week = args.week or yc.current_week(token)
         rosters_raw = yc.fetch_rosters(token, week)
         sb_raw = yc.fetch_scoreboard(token, week)
         standings_raw = yc.fetch_standings(token)
+        stat_categories = yc.load_stat_categories(token=token)
+
+    stat_buckets = yc.resolve_stat_buckets(stat_categories)
+    if not stat_categories:
+        print("  ! no stat-categories.json and no fixture for it - "
+              "top-players.json stat lines will come back empty")
 
     rosters = yc.parse_rosters(rosters_raw)
     standings = yc.parse_standings(standings_raw)
@@ -170,6 +226,8 @@ def main():
                build_bonus(week, status, rosters, matchups, standings, meta,
                            args.show_pregame),
                args.dry_run)
+    write_json(out_dir / "top-players.json",
+               build_top_players(week, status, rosters, stat_buckets), args.dry_run)
 
 
 if __name__ == "__main__":

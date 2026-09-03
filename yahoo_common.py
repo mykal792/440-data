@@ -82,6 +82,22 @@ BENCH_SLOT = "BN"
 REPO = Path(__file__).resolve().parent
 CATEGORIES_FILE = REPO / "bonus-categories.json"
 
+# Cache for the NFL-wide stat category table (stat_id -> name), used to read
+# individual box-score lines (passing yards, INT, etc.) off each player.
+# Resolved once via fetch_stat_categories() and written here, NOT re-fetched
+# every run - see load_stat_categories().
+STAT_CATEGORIES_FILE = REPO / "stat-categories.json"
+
+
+def game_key():
+    """The numeric game key ('470') off the front of LEAGUE_KEY ('470.l.63529').
+
+    Stat category IDs are defined at the game level (i.e. shared by every NFL
+    league in a season), so this is enough to look them up without a
+    league-specific call.
+    """
+    return LEAGUE_KEY.split(".l.")[0]
+
 
 # --- Yahoo JSON helpers ------------------------------------------------------
 # Yahoo nests as lists of single-key dicts and dicts keyed by stringified ints.
@@ -216,11 +232,147 @@ def fetch_league_meta(token):
     return merge_meta(fetch("league/" + LEAGUE_KEY, token)["fantasy_content"]["league"][0])
 
 
+def fetch_stat_categories(token):
+    """The NFL game's full stat table for this season: {stat_id, name, ...}.
+
+    game/<key>/stat_categories - a "game" resource, not a "league" one, so
+    this is one call for the whole season, not one per league or per week.
+    NOT verified against a live response yet; the shape below is modeled on
+    the same list-of-single-key-dicts pattern every other Yahoo resource in
+    this file uses. Confirm with a real payload before trusting it blind.
+    """
+    return fetch("game/%s/stat_categories" % game_key(), token)
+
+
 def current_week(token):
     return int(fnum(fetch_league_meta(token).get("current_week"), 1))
 
 
 # --- parsers -----------------------------------------------------------------
+
+def _parse_stat_block(raw):
+    """A player's player_stats block -> {stat_id(str): value(str)}.
+
+    Shape mirrors player_points: a "stats" list of {"stat": {"stat_id",
+    "value"}} pairs. Silently returns {} for anything unexpected (a DNP
+    player, a bye, or - until confirmed - a real payload that doesn't match
+    this guess) rather than raising, since a missing stat line should mean
+    "no stat line shown", not a crashed run.
+    """
+    if raw is None:
+        return {}
+    container = raw.get("stats") if isinstance(raw, dict) else find_key(raw, "stats")
+    out = {}
+    for item in container or []:
+        stat = item.get("stat") if isinstance(item, dict) else None
+        if not stat:
+            continue
+        sid = str(stat.get("stat_id", ""))
+        if sid:
+            out[sid] = stat.get("value")
+    return out
+
+
+def parse_stat_categories(payload):
+    """fetch_stat_categories() payload -> {stat_id(str): name}.
+
+    e.g. {"4": "Passing Yards", "9": "Rushing Yards", ...}. Not fixture-
+    tested - see fetch_stat_categories().
+    """
+    game = payload.get("fantasy_content", {}).get("game")
+    if not game:
+        return {}
+    cats = find_key(game if isinstance(game, list) else [game], "stat_categories") or {}
+    stats_list = cats.get("stats") if isinstance(cats, dict) else None
+    out = {}
+    for item in stats_list or []:
+        stat = item.get("stat") if isinstance(item, dict) else None
+        if not stat:
+            continue
+        sid = str(stat.get("stat_id", ""))
+        name = stat.get("name", "")
+        if sid and name:
+            out[sid] = name
+    return out
+
+
+def load_stat_categories(token=None, fixtures_dir=None):
+    """id -> name for every stat category this season, from cache if present.
+
+    Costs one extra API call the FIRST time this ever runs (or if
+    stat-categories.json is deleted) - after that it's a local file read,
+    same spirit as load_categories() for bonus-categories.json. Pass
+    fixtures_dir when running offline; expects a stat_categories.json in
+    that directory in the same shape fetch_stat_categories() returns. If
+    neither a cache, a token, nor fixtures produce anything, returns {} and
+    every player's stat line comes back empty rather than the run failing.
+    """
+    if fixtures_dir:
+        fx = Path(fixtures_dir).expanduser() / "stat_categories.json"
+        if fx.exists():
+            return parse_stat_categories(json.loads(fx.read_text()))
+        return {}
+    if STAT_CATEGORIES_FILE.exists():
+        return json.loads(STAT_CATEGORIES_FILE.read_text())
+    if token is None:
+        return {}
+    id_to_name = parse_stat_categories(fetch_stat_categories(token))
+    if id_to_name:
+        STAT_CATEGORIES_FILE.write_text(json.dumps(id_to_name, indent=2) + "\n")
+    return id_to_name
+
+
+# Which Yahoo category NAMES feed each abbreviation on the Top Players stat
+# line, and the order they're shown in. Names are copied from Yahoo's own
+# scoring-category reference (help.yahoo.com/kb/SLN6490.html) - NOT yet
+# checked against this league's actual stat_categories response, so treat
+# these as a first draft. If a name doesn't match exactly (extra plural,
+# different casing) that category will just never populate - it fails quiet,
+# not loud, so it's worth spot-checking against stat-categories.json once
+# that file exists.
+STAT_ORDER = ["PASS YD", "RUSH YD", "REC YD", "REC", "TD", "INT", "FUM"]
+STAT_NAME_BUCKETS = {
+    "PASS YD": ["Passing Yards"],
+    "RUSH YD": ["Rushing Yards"],
+    "REC YD":  ["Receiving Yards"],
+    "REC":     ["Receptions"],
+    "TD":      ["Passing Touchdowns", "Rushing Touchdowns",
+                "Receiving Touchdowns", "Return Touchdowns", "Touchdowns"],
+    "INT":     ["Interceptions Thrown", "Interceptions Made", "Interceptions"],
+    "FUM":     ["Fumble Lost", "Fumbles Lost"],
+}
+
+
+def resolve_stat_buckets(id_to_name):
+    """{stat_id: name} -> {abbrev: set(stat_id)} using STAT_NAME_BUCKETS."""
+    out = {abbrev: set() for abbrev in STAT_NAME_BUCKETS}
+    for sid, name in (id_to_name or {}).items():
+        for abbrev, names in STAT_NAME_BUCKETS.items():
+            if name in names:
+                out[abbrev].add(sid)
+    return out
+
+
+def summarize_stats(raw_stats, buckets):
+    """A player's raw_stats + the resolved buckets -> the Top Players stat
+    line: only non-zero categories, in STAT_ORDER, as
+    [{"stat": "PASS YD", "value": 224}, ...]. Whole numbers come back as
+    int; anything else rounds to one decimal.
+    """
+    out = []
+    for abbrev in STAT_ORDER:
+        total, found = 0.0, False
+        for sid in buckets.get(abbrev) or ():
+            v = (raw_stats or {}).get(sid)
+            if v in (None, "", "-"):
+                continue
+            found = True
+            total += fnum(v)
+        if found and total:
+            value = int(total) if total == int(total) else round(total, 1)
+            out.append({"stat": abbrev, "value": value})
+    return out
+
 
 def parse_rosters(payloads):
     """-> {manager_key: {'team_id', 'team_name', 'players': [...]}}
@@ -228,7 +380,7 @@ def parse_rosters(payloads):
     Takes {team_id: payload} from fetch_rosters. Each payload is a single-team
     response: fantasy_content.team = [ [metadata...], {roster...} ].
 
-    player: {name, display_position, slot, is_flex, points}
+    player: {name, display_position, team, slot, is_flex, points, raw_stats}
     """
     out = {}
     for team_id, payload in (payloads or {}).items():
@@ -254,12 +406,18 @@ def parse_rosters(payloads):
             pmeta = merge_meta(p[0] if isinstance(p[0], list) else p)
             sel = merge_meta(find_key(p[1:], "selected_position") or [])
             pts = find_key(p[1:], "player_points") or {}
+            raw_stats = find_key(p[1:], "player_stats")
             players.append({
                 "name": clean((pmeta.get("name") or {}).get("full", "")),
                 "display_position": pmeta.get("display_position", ""),
+                "team": pmeta.get("editorial_team_abbr", ""),
                 "slot": sel.get("position", ""),
                 "is_flex": str(sel.get("is_flex", "0")) == "1",
                 "points": fnum(pts.get("total")),
+                # {stat_id(str): raw value(str)}, box-score line for this
+                # week - same "stats;type=week" payload as points, just the
+                # per-category breakdown instead of the computed total.
+                "raw_stats": _parse_stat_block(raw_stats),
             })
 
         out[manager] = {"team_id": str(team_id),
