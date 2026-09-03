@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>440 &amp; Friends — kickoff countdown</title>
+<style>
+/* ==========================================================================
+   440 & FRIENDS — split-flap kickoff countdown
+
+   ONE LINE AT 290px
+   Eight cards plus three colons have to share whatever width there is, so
+   below 520px the card stops being a clamp and becomes pure arithmetic:
+
+     4 groups x 2.07w  +  3 separators x 0.385w  =  9.435w
+
+   Dividing the available width by 9.8 leaves about 4% headroom for font
+   metric variance in the colon. At 290px that puts each card near 28px, so
+   the digits are ~27px tall — small, but the whole clock holds one line.
+   Labels and the matchup row scale off the same --cw so nothing drifts.
+
+   THE FOLD BUG, FIXED
+   The lower fold used animation-fill-mode: forwards with a .27s delay. Before
+   a delayed animation starts, forwards applies nothing, so for the whole first
+   half of the flip that panel sat un-rotated on top of the static lower half,
+   showing the new number while the top was still dropping. It now uses `both`
+   (backwards applies the from-state during the delay) plus an explicit resting
+   rotateX(90deg), so it stays edge-on and invisible until its turn.
+
+   FONTS
+   'Laro' (Larin Type Co.) is commercial, so it can't load from a CDN. Upload
+   the .woff2 to Wix and point the @font-face src at it, or drop the file next
+   to this page. Until then it falls back to Wix Madefor Text.
+   ========================================================================== */
+
+@font-face{
+  font-family:'Rotundo';
+  src:url(data:font/woff2;base64,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) format('woff2');
+  font-weight:400;
+  font-style:normal;
+  font-display:block;
+}
+
+@font-face{
+  font-family:'Laro';
+  src:url('Laro-Bold.woff2') format('woff2');
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
+
+:root{
+  --tile:#e4e4e4;
+  --ink:#333333;
+  --seam:rgba(0,0,0,.14);
+  --label:#8e8e8e;
+  --sub:#6d6e71;
+  --rule:#c9c9c9;
+
+  /* logo sizing. The Seahawks mark is a 2.49:1 crop against the
+     Patriots' 2.02:1, so matching their heights makes it read wider.
+     --sea trims it back until the two feel like the same weight. */
+  --logo:clamp(20px,2.6vw,30px);
+  --sea:.86;
+
+  --display:'Rotundo','Arial Black','Helvetica Neue',Impact,sans-serif;
+  --unit:'Laro','Wix Madefor Text',ui-sans-serif,system-ui,sans-serif;
+  --body:'Wix Madefor Text',ui-sans-serif,system-ui,sans-serif;
+
+  /* one knob: card width. Everything else derives from it. */
+  --cw:clamp(46px,8.2vw,96px);
+  --ch:calc(var(--cw) * 1.34);
+  --r:calc(var(--cw) * .12);
+  --dig:calc(var(--ch) * .72);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;background:#fff;color:var(--ink);
+  font-family:var(--body);-webkit-font-smoothing:antialiased;
+  display:flex;align-items:center;justify-content:center;
+  min-height:100vh;padding:32px 16px;
+}
+
+.kick{display:inline-block}
+
+/* ---------- KICK OFF between two rules ---------- */
+.kick__head{
+  display:flex;align-items:center;gap:clamp(12px,1.8vw,22px);
+  margin:0 0 clamp(18px,2.6vw,30px);
+}
+.kick__head::before,
+.kick__head::after{
+  content:'';flex:1 1 0;height:3px;background:var(--rule);border-radius:1.5px;
+}
+.kick__title{
+  font-family:var(--display);
+  font-size:clamp(20px,3vw,34px);line-height:1;letter-spacing:.04em;
+  font-weight:400;margin:0;white-space:nowrap;
+}
+
+/* ---------- the clock ---------- */
+.clock{
+  display:flex;align-items:flex-start;justify-content:center;
+  gap:clamp(10px,1.8vw,22px);
+}
+.group{display:flex;flex-direction:column;align-items:center}
+.cards{display:flex;gap:calc(var(--cw) * .07)}
+.group__cap{
+  margin-top:calc(var(--cw) * .24);
+  font-family:var(--unit);font-weight:700;
+  font-size:clamp(9.5px,1.1vw,13px);letter-spacing:.15em;
+  color:var(--label);white-space:nowrap;
+}
+.sep{
+  font-family:var(--display);line-height:1;
+  font-size:calc(var(--ch) * .42);color:var(--label);
+  padding-top:calc(var(--ch) * .29);
+}
+
+/* ---------- the card ---------- */
+.card{
+  position:relative;
+  width:var(--cw);height:var(--ch);
+  perspective:calc(var(--ch) * 2.2);
+  font-family:var(--display);
+  font-size:var(--dig);line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.half{
+  position:absolute;left:0;width:100%;height:50%;
+  overflow:hidden;background:var(--tile);
+}
+.half span{
+  position:absolute;left:0;width:100%;height:var(--ch);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--ink);
+}
+.half.up{top:0;border-radius:var(--r) var(--r) 0 0;border-bottom:1px solid var(--seam)}
+.half.up span{top:0}
+.half.dn{bottom:0;border-radius:0 0 var(--r) var(--r)}
+.half.dn span{top:calc(var(--ch) * -.5)}
+
+/* the two animating copies sit on top and are edge-on or hidden at rest */
+.fold{visibility:hidden;z-index:2;backface-visibility:hidden}
+.fold.up{transform-origin:bottom center;transform:rotateX(0deg)}
+.fold.dn{transform-origin:top center;transform:rotateX(90deg)}
+
+.card.go .fold{visibility:visible}
+.card.go .fold.up{animation:foldDown .27s cubic-bezier(.4,0,.7,.4) both}
+.card.go .fold.dn{animation:foldUp .27s .27s cubic-bezier(.3,.6,.6,1) both}
+
+@keyframes foldDown{
+  from{transform:rotateX(0deg)}
+  to{transform:rotateX(-90deg)}
+}
+@keyframes foldUp{
+  from{transform:rotateX(90deg)}
+  to{transform:rotateX(0deg)}
+}
+
+/* ---------- matchup + date ---------- */
+.match{
+  display:flex;align-items:center;justify-content:center;
+  gap:clamp(10px,1.5vw,18px);flex-wrap:nowrap;white-space:nowrap;
+  margin:clamp(26px,3.2vw,38px) 0 0;
+}
+.team{display:flex;align-items:center;gap:10px}
+.team svg{display:block;height:var(--logo);width:auto;flex:none}
+.team--sea svg{height:calc(var(--logo) * var(--sea))}
+.team__name{
+  font-family:var(--display);
+  font-size:clamp(13px,1.7vw,20px);line-height:1;letter-spacing:.02em;
+}
+.match__at{
+  font-family:var(--unit);font-weight:700;
+  font-size:clamp(11px,1.3vw,15px);letter-spacing:.12em;color:var(--label);
+}
+
+.kick__when{
+  margin:clamp(12px,1.5vw,16px) 0 0;text-align:center;
+  font-family:var(--unit);font-weight:700;
+  font-size:clamp(10.5px,1.2vw,13px);letter-spacing:.16em;color:var(--sub);
+}
+
+/* ==========================================================================
+   MOBILE — everything stays on one line. Holds to ~270px.
+   ========================================================================== */
+@media (max-width:520px){
+  :root{
+    --cw:min(64px, calc((100vw - 18px) / 9.8));
+    --logo:clamp(15px, calc(var(--cw) * .62), 26px);
+  }
+  body{padding:20px 9px;min-height:0}
+
+  .kick{display:block;width:100%}
+  .kick__head{gap:10px;margin-bottom:16px}
+  .kick__title{font-size:clamp(16px,5.4vw,22px)}
+
+  .clock{gap:calc(var(--cw) * .12)}
+  .sep{
+    font-size:calc(var(--ch) * .36);
+    padding-top:calc(var(--ch) * .3);
+  }
+  .group__cap{
+    margin-top:calc(var(--cw) * .26);
+    font-size:clamp(7.5px, calc(var(--cw) * .27), 13px);
+    letter-spacing:.05em;
+  }
+
+  .match{gap:calc(var(--cw) * .28);margin-top:22px}
+  .team{gap:calc(var(--cw) * .2)}
+  .team__name{font-size:clamp(11px, calc(var(--cw) * .47), 18px)}
+  .match__at{font-size:clamp(9.5px, calc(var(--cw) * .38), 14px);letter-spacing:.08em}
+
+  .kick__when{
+    font-size:clamp(8.5px,2.9vw,11px);letter-spacing:.09em;margin-top:13px;
+  }
+}
+
+@media (prefers-reduced-motion:reduce){
+  .card.go .fold{visibility:hidden;animation:none}
+}
+</style>
+</head>
+<body>
+
+<section class="kick" aria-label="Countdown to kickoff">
+
+  <div class="kick__head">
+    <h2 class="kick__title">KICK OFF</h2>
+  </div>
+
+  <div class="clock" id="clock" role="timer" aria-live="off"></div>
+
+  <div class="match">
+    <span class="team">
+      <svg viewBox="0 0 64.26 31.83" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g><path d="M63.45,4.3c-8.11,1.79-8.38-2.99-20.51-4.09C26.61-1.28,12.74,5.73,1.74,6.45c-2.39.16-2.12,2.19-.41,2.56,4.12,1.07,8.39,1.02,12.31.56-.14.32-.28.81.15,1.2,1.52,1.37,7.74,1.6,10.48,1.49.93-.04,2.91-.19,2.91-.19-.57.04-1.48,1.78.38,2.32,11.47,3.51,16.8,8.93,22.88,17.43,2.54-.28,4.98-3.35,4-5.74l.53-1.26,1.88-.85-.46-4.26,2.87-1.31s4.65-12.06,4.92-12.94c.28-.88-.25-1.28-.73-1.18" style="fill:#fff;"/><path d="M31.43,5.36c-8,.33-17.68,4.76-29.86,2.48C12.42,6.55,20.74,3.05,30.83,1.79l.59,3.57Z" style="fill:#da2128;"/><path d="M32.67,10.11c3.25-.29,6.11-.13,9.18,1.87-6.48-.84-9.7.95-13.76,1.29,14.24,4.1,19.33,12.39,22.8,16.99,2.5-1.03,2.68-3.23,2.06-4.02l.67-1.38.05-.9,1.72-.78-.46-4.36,3.23-1.28,4.46-11.77c-7.22,1.38-9.46-3.4-19.67-4.24-4.16-.34-7.91-.22-11.44.19l.51,3.64c2.36-.04,4.56.31,6.65,1.33-2.31-.19-4.39-.03-6.43.31l.45,3.12Z" style="fill:#0a2240;"/><path d="M32.2,10.15c-4.43.45-9.59,1.62-16.96.05,6.38-.05,11.2-2.14,16.47-3.12l.49,3.07Z" style="fill:#da2128;"/><path d="M43.53,20.31c3.82,2.84,5.75,5.94,7.72,8.66,1.03-.42,1.38-1.62,1.05-2.06l-.95-1.24,1.11.09.53-.9-1.38-.11-1.56.26,1.6-1.07,1.2.09.06-.7-1.21-.62.43-.46,2.26.19-.56-5.17c-.9-.13-1.66.34-2.01,1.66l-4.02-.32c.59-1.3,1.48-1.87,3.15-1.62-.91-1.36-5.49-1.57-6.17.52l3.5,3.04.41,2.72-1.42-2.19c-1.29-1.18-2.65-2.02-3.73-.76" style="fill:#d1d3d4;"/><polygon points="55.67 7.24 55.91 9.84 58.75 10.98 56.05 11.62 56.26 15.12 53.99 12.12 50.51 12.89 52.7 10.38 50.98 7.97 53.91 9.06 55.67 7.24" style="fill:#fff;"/></g></svg>
+      <span class="team__name">PATRIOTS</span>
+    </span>
+
+    <span class="match__at">AT</span>
+
+    <span class="team team--sea">
+      <svg viewBox="0 0 58.36 23.41" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><g><polygon points="22.41 18.26 25.48 18.26 44.93 7.25 42.86 4.88 28.02 2.74 9.49 4.47 2.92 9.07 2.08 10.74 22.41 18.26" style="fill:#fff;"/><path d="M7.82,0s.27,1.31,3.39,1.39l25.62.04s5.6-.25,8.3,3.23c0,0,13.54.88,13.21,7.67,0,0,.04,5.24-7.24,11.08,0,0,3.19-3.93-2.54-4.42,0,0-3-.45-23.27-.49,0,0-2.59,0-1.76-2.02l1.99-3.19-4.23-3.5s4-4.8,9.28-4.83c0,0,2.18-.12,5.61,1.41,0,0,5.05,2.85,7.29.72,0,0-1.52,1.09-5.74-1.04,0,0-4.06-2.22-8.04-2.13,0,0-3.74-.26-8.33,3.53,0,0-1.75,1.89-4.61,1.65l-13.85-.03L7.82,0Z" style="fill:#00143f;"/><path d="M52.89,18.96s-5.13-3.56-16.7-4.23c0,0-4.6-.21-5.95,2.79h1.6s.52-2.05,6.08-1.73c0,0,9.23.61,14.96,3.17" style="fill:#fcffff;"/><path d="M28.23,17.55h-2.12s2.25-5.1,6.76-4.79h5.57s2.64.39,3.91-1.96c0,0,1.47-4.15,4.6-4.56,0,0-1.12.82-.33,1.37,0,0,.59.31,2.56.49,0,0,9.73,1.1,4.27,10.12,0,0-6.01-3.93-17.42-4.36,0,0-5.77-.69-7.81,3.69" style="fill:#fff;"/><path d="M31.85,6.77s-2.14-.7-5.73,2.29c0,0,2.42,2.72,5.16,2.65h6.22s3.58,0,4.2-2.5h-1.88s-.87,1.97-4.95,1.63c0,0-4.13.09-4.11-1.63,0,0-.08-.89,1.09-2.43" style="fill:#fdfdfc;"/><path d="M33.91,7.14l1.38.51s-.98,1.26.97,1.65c0,0,.91.17,1.46-.6l.61.2s-.35,1.49-3.63.77c0,0-2.52-.25-.78-2.53" style="fill:#52b745;"/><path d="M2.08,10.74h14.85s2.59-.06,3.78,1.23l2.59,2.04-1.53,2.84s-.41.92.47,1.67H4.98S.12,19.06,0,15.7C0,15.7-.1,13.77,2.08,10.74" style="fill:#2d597f;"/></g></svg>
+      <span class="team__name">SEAHAWKS</span>
+    </span>
+  </div>
+
+  <p class="kick__when">WEDNESDAY, SEPT 9 AT 8:20 PM ET</p>
+
+</section>
+
+<script>
+const KICKOFF = new Date('2026-09-09T20:20:00');
+const UNITS = [
+  { key:'d', cap:'DAYS'    },
+  { key:'h', cap:'HOURS'   },
+  { key:'m', cap:'MINUTES' },
+  { key:'s', cap:'SECONDS' }
+];
+const FOLD_MS = 560;
+
+const clock = document.getElementById('clock');
+const cards = {};
+
+UNITS.forEach((u, i) => {
+  if (i) {
+    const sep = document.createElement('span');
+    sep.className = 'sep';
+    sep.setAttribute('aria-hidden','true');
+    sep.textContent = ':';
+    clock.appendChild(sep);
+  }
+
+  const group = document.createElement('div');
+  group.className = 'group';
+
+  const row = document.createElement('div');
+  row.className = 'cards';
+
+  cards[u.key] = [0,1].map(() => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.dataset.v = '0';
+    card.innerHTML =
+      '<div class="half up"><span>0</span></div>' +
+      '<div class="half dn"><span>0</span></div>' +
+      '<div class="half up fold"><span>0</span></div>' +
+      '<div class="half dn fold"><span>0</span></div>';
+    row.appendChild(card);
+    return card;
+  });
+
+  const cap = document.createElement('div');
+  cap.className = 'group__cap';
+  cap.textContent = u.cap;
+
+  group.appendChild(row);
+  group.appendChild(cap);
+  clock.appendChild(group);
+});
+
+function flip(card, val){
+  if (card.dataset.v === val) return;
+  const old = card.dataset.v;
+  const [staticUp, staticDn, foldUp, foldDn] = card.querySelectorAll('span');
+
+  foldUp.textContent   = old;   /* old top, drops away          */
+  foldDn.textContent   = val;   /* new bottom, swings up after  */
+  staticUp.textContent = val;   /* revealed behind the dropping panel */
+  staticDn.textContent = old;   /* holds the old value until the fold lands */
+
+  card.dataset.v = val;
+  card.classList.remove('go');
+  void card.offsetWidth;
+  card.classList.add('go');
+
+  clearTimeout(card._t);
+  card._t = setTimeout(() => {
+    staticDn.textContent = val;
+    card.classList.remove('go');
+  }, FOLD_MS);
+}
+
+function setUnit(key, n){
+  const s = String(n).padStart(2,'0');
+  flip(cards[key][0], s[0]);
+  flip(cards[key][1], s[1]);
+}
+
+function tick(){
+  const diff = KICKOFF - new Date();
+  if (diff <= 0){
+    ['d','h','m','s'].forEach(k => setUnit(k, 0));
+    return;
+  }
+  const t = Math.floor(diff / 1000);
+  setUnit('d', Math.floor(t / 86400));
+  setUnit('h', Math.floor(t % 86400 / 3600));
+  setUnit('m', Math.floor(t % 3600 / 60));
+  setUnit('s', t % 60);
+}
+
+tick();
+setInterval(tick, 1000);
+</script>
+</body>
+</html>
