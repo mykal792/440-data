@@ -1,0 +1,155 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>440 &amp; Friends — data</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --ink:#171a17; --soft:#6b7268; --hair:#dcdfd8;
+    --paper:#ffffff; --field:#1f5c3a; --warn:#9a5b12; --bad:#96261f;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:40px 24px 72px; background:var(--paper); color:var(--ink);
+    font:16px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{max-width:60ch; margin:0 auto}
+  h1{font-size:19px; font-weight:640; letter-spacing:-.01em; margin:0 0 2px}
+  .sub{color:var(--soft); font-size:14px; margin:0 0 34px}
+  h2{
+    font-size:14px; font-weight:640; margin:36px 0 2px;
+    padding-bottom:7px; border-bottom:1px solid var(--hair);
+  }
+  .note{color:var(--soft); font-size:13px; margin:9px 0 14px}
+
+  .row{display:flex; gap:12px; align-items:baseline; padding:11px 0; border-bottom:1px solid var(--hair)}
+  .row:last-child{border-bottom:0}
+  .row > .main{flex:1; min-width:0}
+  a{color:var(--field); text-decoration-thickness:1px; text-underline-offset:2px}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--field); outline-offset:2px; border-radius:3px}
+  .who{color:var(--soft); font-size:13px}
+  .path{color:var(--soft); font-size:12.5px; word-break:break-all}
+
+  .stamp{font-size:13px; color:var(--soft); white-space:nowrap; text-align:right}
+  .stamp.ok{color:var(--field)}
+  .stamp.old{color:var(--warn)}
+  .stamp.gone{color:var(--bad)}
+
+  button.copy{
+    font:inherit; font-size:12.5px; color:var(--soft); background:none;
+    border:1px solid var(--hair); border-radius:4px; padding:2px 8px; cursor:pointer;
+  }
+  button.copy:hover{color:var(--ink); border-color:var(--soft)}
+
+  footer{margin-top:40px; color:var(--soft); font-size:13px}
+  code{font-size:13px; background:#f4f5f2; padding:1px 5px; border-radius:3px}
+  @media (max-width:520px){
+    body{padding:28px 18px 56px}
+    .row{flex-wrap:wrap; gap:6px}
+    .stamp{text-align:left; width:100%}
+  }
+</style>
+
+<main>
+  <h1>440 &amp; Friends — data</h1>
+  <p class="sub">Everything published from this repo, and whether it is still moving.</p>
+
+  <h2>Pages embedded in Wix</h2>
+  <p class="note">Each of these is pasted into a Wix <em>Embed a Site</em> element as a URL.
+     Renaming a file here breaks that embed with no warning.</p>
+  <div id="pages"></div>
+
+  <h2>Feeds</h2>
+  <p class="note">Written by the scripts in the repo root. The time on the right is the
+     feed's own timestamp, not when this page loaded.</p>
+  <div id="feeds"></div>
+
+  <footer>
+    Live jobs run every 10 minutes on game days; standings rebuild Tuesday 5am.
+    Weekly winners come from <code>bank-ledger.json</code> in the repo root, by hand.
+  </footer>
+</main>
+
+<script>
+const PAGES = [
+  ["Scoreboard and bonus board", "scoreboard.html"],
+  ["Squid Game board",           "squid-game.html"],
+  ["Squid Game commissioner",    "squid-game-commish.html"],
+  ["Standings and power lines",  "standings-and-power-lines.html"],
+];
+
+/* stamp: where the timestamp lives, since the feeds don't agree on a shape */
+const FEEDS = [
+  ["scoreboard.json",   "pull_live.py",      d => d.updated],
+  ["bonus.json",        "pull_live.py",      d => d.live && d.live.updated],
+  ["dk.json",           "pull_dk.py",        d => d.updated],
+  ["squid-scores.json", "pull_squid.py",     d => d.updated],
+  ["season.json",       "pull_standings.py", d => d.updated],
+];
+
+const el = (t, c, txt) => {
+  const n = document.createElement(t);
+  if (c) n.className = c;
+  if (txt != null) n.textContent = txt;
+  return n;
+};
+
+function ago(iso){
+  const t = Date.parse(iso);
+  if (isNaN(t)) return null;
+  const m = Math.round((Date.now() - t) / 60000);
+  if (m < 1)  return ["just now", "ok"];
+  if (m < 60) return [m + " min ago", m > 25 ? "old" : "ok"];
+  const h = Math.round(m / 60);
+  if (h < 36) return [h + (h === 1 ? " hr ago" : " hrs ago"), "old"];
+  return [Math.round(h / 24) + " days ago", "old"];
+}
+
+const pages = document.getElementById("pages");
+PAGES.forEach(([label, file]) => {
+  const row  = el("div", "row");
+  const main = el("div", "main");
+  const a    = el("a", null, label);
+  a.href = file;
+  main.append(a, el("div", "path", new URL(file, location.href).href));
+  const btn = el("button", "copy", "Copy URL");
+  btn.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(new URL(file, location.href).href);
+      btn.textContent = "Copied";
+    } catch { btn.textContent = "Select it manually"; }
+    setTimeout(() => (btn.textContent = "Copy URL"), 1800);
+  });
+  row.append(main, btn);
+  pages.append(row);
+});
+
+const feeds = document.getElementById("feeds");
+FEEDS.forEach(([file, writer, pick]) => {
+  const row   = el("div", "row");
+  const main  = el("div", "main");
+  const a     = el("a", null, file);
+  a.href = file;
+  main.append(a, el("div", "who", writer));
+  const stamp = el("div", "stamp", "checking");
+  row.append(main, stamp);
+  feeds.append(row);
+
+  fetch(file, {cache: "no-store"})
+    .then(r => r.ok ? r.json() : Promise.reject(r.status))
+    .then(d => {
+      const raw = pick(d);
+      if (!raw) { stamp.textContent = "no timestamp"; stamp.className = "stamp old"; return; }
+      const rel = ago(raw);
+      /* squid-scores writes a display stamp like "SUN 4:12 PM", not a date */
+      if (!rel) { stamp.textContent = String(raw); return; }
+      stamp.textContent = rel[0];
+      stamp.className = "stamp " + rel[1];
+    })
+    .catch(e => {
+      stamp.textContent = e === 404 ? "not published" : "unreachable";
+      stamp.className = "stamp gone";
+    });
+});
+</script>
