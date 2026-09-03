@@ -77,12 +77,14 @@ const PAGES = [
   ["Squid Game board",           "squid-game.html"],
   ["Squid Game commissioner",    "squid-game-commish.html"],
   ["Standings and power lines",  "standings-and-power-lines.html"],
+  ["Top Players",                "top-players.html"],
 ];
 
 /* stamp: where the timestamp lives, since the feeds don't agree on a shape */
 const FEEDS = [
   ["scoreboard.json",   "pull_live.py",      d => d.updated],
   ["bonus.json",        "pull_live.py",      d => d.live && d.live.updated],
+  ["top-players.json",  "pull_live.py",      d => d.updated],
   ["dk.json",           "pull_dk.py",        d => d.updated],
   ["squid-scores.json", "pull_squid.py",     d => d.updated],
   ["season.json",       "pull_standings.py", d => d.updated],
