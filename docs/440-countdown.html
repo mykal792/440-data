@@ -75,11 +75,15 @@
 }
 
 *{box-sizing:border-box}
+/* page shell — inside a Wix HTML box the iframe viewport IS the box, so no
+   margins and no scrollbars. height:100% instead of min-height:100vh: 100vh
+   is the viewport, and if it ever resolves a pixel taller than the box you
+   get the inner scrollbar. */
+html,body{background:transparent;height:100%;overflow:hidden;margin:0;padding:0}
 body{
-  margin:0;background:#fff;color:var(--ink);
+  color:var(--ink);
   font-family:var(--body);-webkit-font-smoothing:antialiased;
   display:flex;align-items:center;justify-content:center;
-  min-height:100vh;padding:32px 16px;
 }
 
 .kick{display:inline-block}
@@ -191,7 +195,6 @@ body{
     --cw:min(64px, calc((100vw - 18px) / 9.8));
     --logo:clamp(15px, calc(var(--cw) * .62), 26px);
   }
-  body{padding:20px 9px;min-height:0}
 
   .kick{display:block;width:100%}
   .kick__head{gap:10px;margin-bottom:16px}
