@@ -41,12 +41,12 @@
 
 .tp__bar{
   background:var(--tp-bar); color:#fff;
-  display:flex; align-items:center; flex-wrap:wrap;
-  gap:8px 14px; padding:11px 20px; min-height:48px;
+  display:flex; align-items:center; justify-content:space-between;
+  gap:14px; padding:11px 20px; min-height:48px;
 }
+.tp__right{ display:flex; align-items:center; gap:14px }
 .tp__label{
-  font-family:"Rotundo",sans-serif; font-size:14px; letter-spacing:.05em;
-  margin:0; margin-right:auto;
+  font-family:"Rotundo",sans-serif; font-size:14px; letter-spacing:.05em; margin:0;
 }
 .tp__label span{ margin-right:8px }
 .tp__label b{ font-weight:400; color:var(--tp-mint) }
@@ -65,11 +65,8 @@
   70%{box-shadow:0 0 0 7px rgba(136,233,191,0)}
   100%{box-shadow:0 0 0 0 rgba(136,233,191,0)}
 }
-.tp__state{ font-family:"Rotundo",sans-serif; letter-spacing:.09em; color:#fff }
-.tp__ago{
-  margin:0; font-size:10.5px; letter-spacing:.10em; text-transform:uppercase;
-  color:#a8a8a8; white-space:nowrap;
-}
+.tp__state{ font-family:"Rotundo",sans-serif; letter-spacing:.09em; color:#fff; margin-right:6px }
+.tp__ago{ white-space:nowrap }
 .tp__ago[hidden]{ display:none }
 
 /* ---- dark mode toggle, ported 1:1 from the scoreboard ---- */
@@ -105,7 +102,7 @@
   color:var(--tp-sub); margin:0 0 11px;
 }
 
-.tp__filter{ display:grid; grid-template-columns:repeat(7,1fr); gap:6px; margin:0 0 10px }
+.tp__filter{ position:relative; display:grid; grid-template-columns:repeat(7,1fr); gap:6px; margin:0 0 10px }
 .tp__tab{
   appearance:none; border:0; cursor:pointer; min-width:0;
   height:26px; padding:0 4px; border-radius:999px; background:var(--tp-card);
@@ -143,7 +140,7 @@
   position:absolute; right:-5px; bottom:-5px;
   min-width:19px; height:15px; padding:0 3px;
   display:flex; align-items:center; justify-content:center;
-  background:#fff; border:2.5px solid var(--pos-color,var(--tp-ink)); border-radius:5px;
+  background:#fff; border:1.5px solid var(--pos-color,var(--tp-ink)); border-radius:5px;
   font-family:"Rotundo",sans-serif; font-size:8px; line-height:1;
   color:var(--pos-color,var(--tp-ink));
 }
@@ -180,7 +177,7 @@
 @keyframes tp-ticker{ from{ transform:translateX(0) } to{ transform:translateX(-50%) } }
 
 .tp__pts{
-  font-family:"Rotundo",sans-serif; font-size:15px; color:var(--tp-ink);
+  font-family:"Rotundo",sans-serif; font-size:13px; color:var(--tp-ink);
   font-variant-numeric:tabular-nums; text-align:right;
 }
 
@@ -188,27 +185,31 @@
 @container (max-width:400px){
   .tp{ border-radius:16px }
   .tp__bar{
-    padding:10px 15px; padding-right:60px; /* room for the pinned toggle + status */
-    position:relative; row-gap:4px; min-height:65px;
+    padding:10px 15px;
+    flex-wrap:wrap; row-gap:4px; column-gap:12px; min-height:65px;
+    position:relative; padding-right:60px; /* room for the pinned toggle */
   }
-  .tp__label{ flex:1 1 100%; margin-right:0; font-size:13.5px }
-  /* mode + status are both pinned to fixed spots, not flex-flowed, so
-     'PRESEASON' always sits in the same place under the toggle whether or
-     not the 'ago' text next to it is visible yet */
   .tp__mode{ position:absolute; top:11px; right:15px }
-  .tp__status{ position:absolute; top:40px; right:15px; margin:0 }
+  .tp__right{ gap:10px }
+  .tp__label{ font-size:13.5px }
+  .tp__status{
+    flex-wrap:wrap; row-gap:3px; font-size:10px; letter-spacing:.07em; min-height:18px;
+  }
+  /* 18px = the two-line case, so preseason reserves the room the timestamp
+     will need once the season starts - matches the scoreboard's reasoning */
+  .tp__state{ margin-right:2px }
   .tp__body{ padding:11px 12px 12px }
   .tp__filter{ display:flex; overflow-x:auto; scrollbar-width:none; padding-bottom:2px }
   .tp__filter::-webkit-scrollbar{ display:none }
-  .tp__tab{ flex:0 0 auto; padding:0 10px; font-size:10.5px }
+  .tp__tab{ flex:0 0 52px; padding:0 4px; font-size:10.5px; text-align:center }
   .tp__list{ padding:3px 8px 5px }
   .tp__row{ grid-template-columns:12px 25px minmax(0,1fr) auto; gap:7px; padding:8px 0 }
   .tp__id{ width:25px; height:25px }
-  .tp__pos{ min-width:15px; height:12px; font-size:7px; border-width:2.5px; right:-4px; bottom:-4px }
+  .tp__pos{ min-width:15px; height:12px; font-size:7px; border-width:1.5px; right:-4px; bottom:-4px }
   .tp__name{ font-size:11.5px }
   .tp__team{ font-size:7px; padding:1.5px 3px }
   .tp__stats{ font-size:9px }
-  .tp__pts{ font-size:13.5px }
+  .tp__pts{ font-size:12px }
 }
 
 
@@ -223,11 +224,11 @@
   .tp__list{ padding:6px 24px 12px }
   .tp__row{ grid-template-columns:20px 42px minmax(0,1fr) auto; gap:16px; padding:13px 0 }
   .tp__id{ width:42px; height:42px }
-  .tp__pos{ min-width:23px; height:17px; font-size:10px; border-width:2.5px; right:-6px; bottom:-6px }
+  .tp__pos{ min-width:23px; height:17px; font-size:10px; border-width:1.5px; right:-6px; bottom:-6px }
   .tp__name{ font-size:15px }
   .tp__team{ font-size:9px; padding:2.5px 5px }
   .tp__stats{ font-size:11.5px }
-  .tp__pts{ font-size:18px }
+  .tp__pts{ font-size:16px }
 }
 </style>
 
@@ -235,18 +236,20 @@
 <section class="tp" id="tp" data-status="pregame" aria-labelledby="tpLabel">
   <div class="tp__bar">
     <p class="tp__label" id="tpLabel"><span id="tpWeek">WEEK -</span><b>TOP PLAYERS</b></p>
-    <p class="tp__status">
-      <span class="tp__dot"></span>
-      <span class="tp__state" id="tpState">PRESEASON</span>
-    </p>
-    <p class="tp__ago" id="tpAgo" hidden></p>
-    <button class="tp__mode" id="tpMode" type="button" role="switch"
-            aria-checked="false" aria-label="Dark mode">
+    <div class="tp__right">
+      <p class="tp__status">
+        <span class="tp__dot"></span>
+        <span class="tp__state" id="tpState">PRESEASON</span>
+        <span class="tp__ago" id="tpAgo" hidden></span>
+      </p>
+      <button class="tp__mode" id="tpMode" type="button" role="switch"
+              aria-checked="false" aria-label="Dark mode">
       <span class="tp__knob">
         <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.6v2.2M12 19.2v2.2M2.6 12h2.2M19.2 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></svg>
         <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1Z"/></svg>
       </span>
-    </button>
+      </button>
+    </div>
   </div>
   <div class="tp__body">
     <p class="tp__desc">The top 5 scorers at each position, from starting lineups only.</p>
