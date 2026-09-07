@@ -50,6 +50,8 @@
 }
 .tp__label span{ margin-right:8px }
 .tp__label b{ font-weight:400; color:var(--tp-mint) }
+.tp__logo{ display:inline-flex; align-items:center; gap:4px; margin-left:9px; vertical-align:middle }
+.tp__logo-dot{ width:7px; height:7px; border-radius:50%; background:var(--c); display:inline-block }
 .tp__status{
   display:flex; align-items:center; gap:9px; margin:0;
   font-size:10.5px; letter-spacing:.10em; text-transform:uppercase; color:#a8a8a8;
@@ -102,12 +104,12 @@
   color:var(--tp-sub); margin:0 0 11px;
 }
 
-.tp__filter{ position:relative; display:grid; grid-template-columns:repeat(7,1fr); gap:6px; margin:0 0 10px }
+.tp__filter{ position:relative; display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin:0 0 10px }
 .tp__tab{
   appearance:none; border:0; cursor:pointer; min-width:0;
   height:26px; padding:0 4px; border-radius:999px; background:var(--tp-card);
   font-family:"Rotundo",sans-serif; font-size:10px; line-height:1; color:var(--tp-ink);
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  text-align:center; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
   transition:background 130ms ease,color 130ms ease;
 }
 .tp__tab:hover{ background:var(--pos-color, var(--tp-ink)); color:#fff }
@@ -136,14 +138,25 @@
   width:100%; height:100%; border-radius:50%; display:block;
   background:var(--tp-tile); object-fit:cover;
 }
-.tp__pos{
-  position:absolute; right:-5px; bottom:-5px;
-  min-width:19px; height:15px; padding:0 3px;
-  display:flex; align-items:center; justify-content:center;
-  background:#fff; border:1.5px solid var(--pos-color,var(--tp-ink)); border-radius:5px;
-  font-family:"Rotundo",sans-serif; font-size:8px; line-height:1;
-  color:var(--pos-color,var(--tp-ink));
+/* marks the #1 row - the one actually winning the dot and the $5. Filled
+   and glow-pulsing while the lead could still change (games live) - same
+   treatment as the header's own live-status dot, just in the position's
+   color instead of mint. Stops pulsing once final (the dot is secured),
+   but stays filled - unlike the header dot, this isn't going dormant, it's
+   a result. Nothing shown pregame - nobody's winning off an all-zero week. */
+.tp__windot{
+  position:absolute; right:-3px; bottom:-3px;
+  width:10px; height:10px; border-radius:50%;
+  background:var(--pos-color, var(--tp-mint));
+  animation:tp-windot-pulse 1.8s ease-out infinite;
 }
+.tp__windot--final{ animation:none; box-shadow:0 0 0 2px var(--tp-card) }
+@keyframes tp-windot-pulse{
+  0%{ box-shadow:0 0 0 2px var(--tp-card), 0 0 0 0 rgba(var(--pos-rgb,136,233,191),.55) }
+  70%{ box-shadow:0 0 0 2px var(--tp-card), 0 0 0 7px rgba(var(--pos-rgb,136,233,191),0) }
+  100%{ box-shadow:0 0 0 2px var(--tp-card), 0 0 0 0 rgba(var(--pos-rgb,136,233,191),0) }
+}
+@media (prefers-reduced-motion:reduce){ .tp__windot{ animation:none } }
 
 .tp__main{ min-width:0 }
 .tp__nameline{ display:flex; align-items:center; gap:5px; min-width:0 }
@@ -192,6 +205,11 @@
   .tp__mode{ position:absolute; top:11px; right:15px }
   .tp__right{ gap:10px }
   .tp__label{ font-size:13.5px }
+  .tp__logo{
+    display:inline-grid; grid-template-columns:repeat(2, auto);
+    gap:2px; margin-left:6px; vertical-align:middle;
+  }
+  .tp__logo-dot{ width:5px; height:5px }
   .tp__status{
     flex-wrap:wrap; row-gap:3px; font-size:10px; letter-spacing:.07em; min-height:18px;
   }
@@ -199,13 +217,11 @@
      will need once the season starts - matches the scoreboard's reasoning */
   .tp__state{ margin-right:2px }
   .tp__body{ padding:11px 12px 12px }
-  .tp__filter{ display:flex; overflow-x:auto; scrollbar-width:none; padding-bottom:2px }
-  .tp__filter::-webkit-scrollbar{ display:none }
-  .tp__tab{ flex:0 0 52px; padding:0 4px; font-size:10.5px; text-align:center }
+  .tp__tab{ height:28px; font-size:10.5px }
   .tp__list{ padding:3px 8px 5px }
   .tp__row{ grid-template-columns:12px 25px minmax(0,1fr) auto; gap:7px; padding:8px 0 }
   .tp__id{ width:25px; height:25px }
-  .tp__pos{ min-width:15px; height:12px; font-size:7px; border-width:1.5px; right:-4px; bottom:-4px }
+  .tp__windot{ width:8px; height:8px; right:-2px; bottom:-2px }
   .tp__name{ font-size:11.5px }
   .tp__team{ font-size:7px; padding:1.5px 3px }
   .tp__stats{ font-size:9px }
@@ -224,7 +240,7 @@
   .tp__list{ padding:6px 24px 12px }
   .tp__row{ grid-template-columns:20px 42px minmax(0,1fr) auto; gap:16px; padding:13px 0 }
   .tp__id{ width:42px; height:42px }
-  .tp__pos{ min-width:23px; height:17px; font-size:10px; border-width:1.5px; right:-6px; bottom:-6px }
+  .tp__windot{ width:12px; height:12px; right:-4px; bottom:-4px }
   .tp__name{ font-size:15px }
   .tp__team{ font-size:9px; padding:2.5px 5px }
   .tp__stats{ font-size:11.5px }
@@ -235,7 +251,15 @@
 <div class="tp-wrap">
 <section class="tp" id="tp" data-status="pregame" aria-labelledby="tpLabel">
   <div class="tp__bar">
-    <p class="tp__label" id="tpLabel"><span id="tpWeek">WEEK -</span><b>TOP PLAYERS</b></p>
+    <p class="tp__label" id="tpLabel">
+      <span id="tpWeek">WEEK -</span><b>DOT POT</b>
+      <span class="tp__logo" aria-hidden="true">
+        <i class="tp__logo-dot" style="--c:#ff4858"></i>
+        <i class="tp__logo-dot" style="--c:#049dd9"></i>
+        <i class="tp__logo-dot" style="--c:#28b99a"></i>
+        <i class="tp__logo-dot" style="--c:#ff8a2a"></i>
+      </span>
+    </p>
     <div class="tp__right">
       <p class="tp__status">
         <span class="tp__dot"></span>
@@ -252,7 +276,7 @@
     </div>
   </div>
   <div class="tp__body">
-    <p class="tp__desc">The top 5 scorers at each position, from starting lineups only.</p>
+    <p class="tp__desc">Top scorer at each position wins a dot and $5. Starting lineups only, top 5 shown.</p>
     <div class="tp__filter" id="tpFilter"></div>
     <div class="tp__card" id="tpCard">
       <div class="tp__list" id="tpList"></div>
@@ -273,15 +297,15 @@
   var REFRESH_MS = 10 * 60 * 1000;
   var TICKER_PX_PER_SEC = 34; // ticker speed for stat lines too long to fit
 
-  var POS_COLOR = { QB:'#ff4858', RB:'#049dd9', WR:'#28b99a',
-                    TE:'#ff8a2a', K:'#b157f5', DEF:'#989898' };
-  var POS_LABEL = { ALL:'All', QB:'QB', RB:'RB', WR:'WR', TE:'TE', K:'K', DEF:'DEF' };
-  var POS_ORDER = ['QB','RB','WR','TE','K','DEF'];
+  var POS_COLOR = { QB:'#ff4858', RB:'#049dd9', WR:'#28b99a', TE:'#ff8a2a' };
+  var POS_RGB   = { QB:'255,72,88', RB:'4,157,217', WR:'40,185,154', TE:'255,138,42' };
+  var POS_LABEL = { QB:'QB', RB:'RB', WR:'WR', TE:'TE' };
+  var POS_ORDER = ['QB','RB','WR','TE'];
   var STATE_LABEL = { pregame:'PRESEASON', live:'LIVE', final:'FINAL' };
   var INK = '#2d2d2d';
 
   var players = [];
-  var active = 'ALL';
+  var active = 'QB';
   var updated = Date.now();
   var hasData = false;
 
@@ -349,13 +373,11 @@
     var list = document.getElementById('tpList');
     list.textContent = '';
 
-    var rows = active === 'ALL' ? players
-             : players.filter(function (p) { return p.position === active; });
+    var rows = players.filter(function (p) { return p.position === active; });
     rows = rows.slice(0, TOP_N);
-    while (rows.length < TOP_N) rows.push(placeholderRow(active === 'ALL' ? '' : active));
+    while (rows.length < TOP_N) rows.push(placeholderRow(active));
 
-    document.getElementById('tpCard').style.setProperty(
-      '--tp-accent', active === 'ALL' ? INK : (POS_COLOR[active] || INK));
+    document.getElementById('tpCard').style.setProperty('--tp-accent', POS_COLOR[active] || INK);
 
     rows.forEach(function (p, i) {
       var row = el('div', 'tp__row' + (i === 0 ? ' tp__row--1' : '') +
@@ -375,13 +397,13 @@
       } else {
         idWrap.appendChild(el('span', 'tp__avatar'));
       }
-      // The position chip is only informative in the ALL view, where rows
-      // mix positions. Filtered to one position it would just repeat the
-      // same pill five times, so skip it there.
-      if (p.position && active === 'ALL') {
-        var pos = el('span', 'tp__pos', p.position);
-        pos.style.setProperty('--pos-color', POS_COLOR[p.position] || INK);
-        idWrap.appendChild(pos);
+      var weekStatus = tpSection.getAttribute('data-status');
+      if (i === 0 && !p.placeholder && weekStatus !== 'pregame') {
+        var winDot = el('span', 'tp__windot' + (weekStatus === 'final' ? ' tp__windot--final' : ''));
+        winDot.style.setProperty('--pos-color', POS_COLOR[active] || INK);
+        winDot.style.setProperty('--pos-rgb', POS_RGB[active] || '136,233,191');
+        winDot.title = weekStatus === 'final' ? 'Dot won' : 'Currently leading - not final yet';
+        idWrap.appendChild(winDot);
       }
       row.appendChild(idWrap);
 
@@ -406,13 +428,13 @@
 
   function buildFilter() {
     var bar = document.getElementById('tpFilter');
-    ['ALL'].concat(POS_ORDER).forEach(function (pos) {
+    POS_ORDER.forEach(function (pos) {
       var b = el('button', 'tp__tab', POS_LABEL[pos]);
       b.type = 'button';
-      b.setAttribute('aria-pressed', pos === 'ALL' ? 'true' : 'false');
+      b.setAttribute('aria-pressed', pos === active ? 'true' : 'false');
       var posColor = POS_COLOR[pos] || INK;
       b.style.setProperty('--pos-color', posColor); // read by the :hover rule
-      if (pos === 'ALL') b.style.background = INK;
+      if (pos === active) b.style.background = posColor;
       b.addEventListener('click', function () {
         bar.querySelectorAll('.tp__tab').forEach(function (o) {
           o.setAttribute('aria-pressed', 'false');
