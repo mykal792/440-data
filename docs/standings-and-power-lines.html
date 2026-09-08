@@ -156,16 +156,22 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
 }
 .back .bank{ margin-right:0; flex:none; }
 .back .ledgerwrap{ flex:1; min-width:0; display:flex; }
-.ledger{ display:flex; flex-direction:column; gap:5px; min-width:0; flex:1; overflow:hidden; }
+.ledger{ display:flex; flex-direction:column; gap:3px; min-width:0; flex:1; overflow:hidden; }
 .lrow{ display:flex; align-items:baseline; gap:9px; min-width:0; }
 .ltag{
-  font-family:var(--display); font-size:10.5px; letter-spacing:.06em;
+  font-family:var(--display); font-size:9px; letter-spacing:.06em;
   text-transform:uppercase; color:var(--mint); flex:none; width:96px;
   line-height:1; white-space:nowrap;
 }
 .ltag.hs{ color:var(--white); }
+.ltag.dots{ color:var(--white); }
+/* one small solid circle per dot actually won, grouped by position with a
+   little breathing room between groups - color alone says which position,
+   same reasoning as everywhere else this shows up */
+.dpips{ display:inline-flex; align-items:center; gap:3px; flex-wrap:wrap }
+.dpip{ display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--c); flex:0 0 auto }
 .lval{
-  font-family:var(--body); font-size:14px; color:var(--white); line-height:1.15;
+  font-family:var(--body); font-size:12px; color:var(--white); line-height:1;
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 .lval.none{ color:var(--gray); }
@@ -424,9 +430,11 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
   .bank{ font-size:14px; height:25px; min-width:58px; padding:0 9px; margin-right:14px; }
   .rank{ font-size:13px; padding-right:3px; }
   .back{ padding:0 14px 0 32px; gap:8px; }
-  .ledger{ gap:3px; }
-  .ltag{ width:auto; min-width:74px; font-size:9px; }
-  .lval{ font-size:12px; }
+  .ledger{ gap:2.5px; }
+  .ltag{ width:auto; min-width:74px; font-size:8px; }
+  .lval{ font-size:10.5px; }
+  .dpip{ width:6px; height:6px }
+  .dpips{ gap:2.5px }
   .broke{ font-size:13px; }
   .row.cut::after{ left:-8px; right:-8px; height:1.5px;
     top:calc(100% + (var(--cut-gap) / 2) - .75px); }
@@ -471,8 +479,8 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
   .rec{ font-size:12.5px; padding-right:0; text-align:center; }
   .bank{ font-size:13px; height:24px; min-width:54px; padding:0 8px; margin-right:0; justify-self:stretch; }
   .back{ padding:0 10px; gap:8px; }
-  .ltag{ min-width:58px; font-size:8px; letter-spacing:.04em; }
-  .lval{ font-size:10.5px; }
+  .ltag{ min-width:58px; font-size:7px; letter-spacing:.04em; }
+  .lval{ font-size:9.5px; }
   .broke{ font-size:10px; }
   .wl{ display:none; }
   .ws{ display:inline; }
@@ -694,11 +702,31 @@ function ledgerLines(i, key){
     : `<span class="wl">${esc(b.label)}</span><span class="ws">${esc(b.short || b.label)}</span>`;
   const bonus = list.filter(b => b.type === 'category').map(tag);
   const hs = list.filter(b => b.type === 'high' || b.type === 'award').map(tag);
+
+  /* Dot Pot: one small circle per dot actually won, in that position's
+     color, evenly spaced - color is the only thing marking position, no
+     extra gap between one position's dots and the next. Shown at every
+     width; flex-wrap is the safety net if a manager racks up enough dots
+     to not fit on one line, rather than an entirely different mobile view. */
+  const DOT_COLOR = { QB:'#ff4858', RB:'#049dd9', WR:'#28b99a', TE:'#ff8a2a' };
+  const DOT_ORDER = ['QB','RB','WR','TE'];
+  const dots = list.filter(b => b.type === 'dot');
+  const dotCounts = {};
+  dots.forEach(d => { dotCounts[d.pos] = (dotCounts[d.pos] || 0) + 1; });
+  const dotPips = DOT_ORDER
+    .flatMap(p => Array(dotCounts[p] || 0).fill(DOT_COLOR[p]))
+    .map(c => `<span class="dpip" style="--c:${c}"></span>`)
+    .join('');
+
   return `<div class="ledger">
       <div class="lrow"><span class="ltag">Bonus wins</span>
         <span class="lval${bonus.length ? '' : ' none'}">${bonus.join(' · ') || 'None yet'}</span></div>
       <div class="lrow"><span class="ltag hs">High scores</span>
         <span class="lval${hs.length ? '' : ' none'}">${hs.join(' · ') || 'None yet'}</span></div>
+      <div class="lrow"><span class="ltag dots">Dot Pot</span>
+        <span class="lval${dots.length ? '' : ' none'}">
+          <span class="dpips">${dotPips || 'None yet'}</span>
+        </span></div>
     </div>`;
 }
 
