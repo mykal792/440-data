@@ -1,11 +1,10 @@
 {
-  "league": {
-    "season": 2026
-  },
+  "league": { "season": 2026 },
+  "avatars": {},
   "live": {
-    "state": "pregame",
+    "state": "preseason",
     "week": 1,
-    "updated": "2026-09-08T02:59:19Z",
+    "updated": null,
     "category": {
       "week": 1,
       "key": "bench-warmer",
@@ -13,27 +12,14 @@
       "description": "Most points by a single player on your bench.",
       "amount": 25,
       "leaders": [
-        {
-          "rank": 1,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
-        },
-        {
-          "rank": 2,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
-        },
-        {
-          "rank": 3,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
-        }
+        { "manager": "NAME", "value": "0.00" },
+        { "manager": "NAME", "value": "0.00" },
+        { "manager": "NAME", "value": "0.00" }
+      ],
+      "projected": [
+        { "manager": "NAME", "value": "0.00" },
+        { "manager": "NAME", "value": "0.00" },
+        { "manager": "NAME", "value": "0.00" }
       ]
     },
     "high": {
@@ -42,27 +28,14 @@
       "description": "Most fantasy points scored that week.",
       "amount": 15,
       "leaders": [
-        {
-          "rank": 1,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
-        },
-        {
-          "rank": 2,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
-        },
-        {
-          "rank": 3,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
-        }
+        { "manager": "NAME", "value": "0.00" },
+        { "manager": "NAME", "value": "0.00" },
+        { "manager": "NAME", "value": "0.00" }
+      ],
+      "projected": [
+        { "manager": "NAME", "value": "0.00" },
+        { "manager": "NAME", "value": "0.00" },
+        { "manager": "NAME", "value": "0.00" }
       ]
     }
   }

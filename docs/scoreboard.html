@@ -12,8 +12,8 @@
 
   TWO FEEDS, MERGED CLIENT SIDE
   SCORE_SOURCE  your matchup feed (the shape is documented below)
-  BONUS_SOURCE  your existing bonus.json, unchanged — this reads
-                the same `live` object your bonus board already reads
+  BONUS_SOURCE  bonus.json — reads the same `live` object your bonus
+                board already read, plus a `projected` array on each race
 
   Both are fetched together every 10 minutes. If one fails the other
   still renders. Week and status come from the score feed, falling
@@ -139,7 +139,27 @@
   text-transform:uppercase; color:#8a8a8a; margin:0 0 8px 2px;
 }
 .ls__sect b{font-weight:400; color:#a8a8a8}
-.ls__split{border:0; border-top:2px dashed var(--ls-rule); margin:15px 0 13px}
+.ls__sectrow{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:8px}
+.ls__sectrow .ls__sect{margin-bottom:0}
+
+/* actual / projected switch */
+.ls__seg{
+  display:inline-flex; gap:2px; padding:2px; border-radius:999px;
+  background:rgba(0,0,0,.07); flex:0 0 auto;
+}
+.ls.is-dark .ls__seg{background:rgba(255,255,255,.10)}
+.ls__seg button{
+  font-family:"Rotundo",sans-serif; font-size:9px; letter-spacing:.06em;
+  text-transform:uppercase; border:0; background:transparent; color:#8a8a8a;
+  padding:3px 9px; border-radius:999px; cursor:pointer; line-height:1.35;
+}
+.ls.is-dark .ls__seg button{color:#a5a7aa}
+.ls__seg button[aria-pressed="true"]{background:#333; color:#fff}
+.ls.is-dark .ls__seg button[aria-pressed="true"]{background:var(--ls-mint); color:#333}
+.ls__seg button:focus-visible{outline:2px solid var(--ls-mint); outline-offset:2px}
+/* a projection is not a result, so the winner check stays out of that view */
+.ls__races.is-projected .race__check{display:none}
+.ls__split{border:0; border-top:2px dashed var(--ls-rule); margin:10px 0 8px}
 
 /* ---- matchups ---- */
 .ls__track{
@@ -355,7 +375,7 @@
   .sgx-face .sgx-word{font-size:11.05px}
   .sgx-face .sgx-hq{font-size:17.85px}
   .sgx-mark{height:23.15px; transform:translateY(1.64px)}
-  .ls__split{margin:13px 0 11px}
+  .ls__split{margin:8px 0 6px}
 }
 @media (max-width:560px){
   .ls__bar{
@@ -424,7 +444,13 @@ body{margin:0; padding:0; font-family:"Laro Soft",Arial,sans-serif}
 
     <hr class="ls__split">
 
-    <p class="ls__sect">Bonus Board</p>
+    <div class="ls__sectrow">
+      <p class="ls__sect">Bonus Board</p>
+      <div class="ls__seg" id="lsView" role="group" aria-label="Show actual or projected totals">
+        <button type="button" data-view="actual" aria-pressed="true">Actual</button>
+        <button type="button" data-view="projected" aria-pressed="false">Projected</button>
+      </div>
+    </div>
     <div class="ls__races" id="lsRaces"></div>
 
     <a class="sgx" href="https://www.440andfriends.com/squid-game" target="_top" aria-label="Enter Squid Game HQ">
@@ -516,8 +542,14 @@ body{margin:0; padding:0; font-family:"Laro Soft",Arial,sans-serif}
    face ids: anthony, coyne, gangus, garrett, graham, greg,
              hayden, scarpitti, schilling, scotty
 
-   BONUS_SOURCE is your existing bonus.json — unchanged. This reads
-   its `live` object: { state, week, category:{...}, high:{...} } */
+   BONUS_SOURCE is bonus.json. This reads its `live` object:
+     { state, week, updated, category:{...}, high:{...} }
+   Each race carries two ranked lists:
+     leaders    ranked by points already scored
+     projected  ranked by projected final — a different set of names, not
+                the same three re-valued. Optional: without it the switch
+                falls back to sorting `leaders` by a per-leader `projected`
+                field, which can only rank people already in the top three. */
 const SCORE_SOURCE = "https://mykal792.github.io/440-data/scoreboard.json";
 const BONUS_SOURCE = "https://mykal792.github.io/440-data/bonus.json";
 const REFRESH_MS   = 10 * 60 * 1000;
@@ -553,6 +585,24 @@ modeBtn.addEventListener("click", () => setMode(!ls.classList.contains("is-dark"
 const track = document.getElementById("lsTrack");
 const races = document.getElementById("lsRaces");
 let updated = Date.now(), status = "pregame", hasData = false;
+let last = null;                     // last payload, so the switch can re-render
+let view = "actual";                 // "actual" | "projected"
+try { view = localStorage.getItem("bb-view") === "projected" ? "projected" : "actual"; } catch(e){}
+
+const seg = document.getElementById("lsView");
+function paintView(){
+  seg.querySelectorAll("button").forEach(btn =>
+    btn.setAttribute("aria-pressed", String(btn.dataset.view === view)));
+}
+seg.addEventListener("click", e => {
+  const btn = e.target.closest("button[data-view]");
+  if (!btn || btn.dataset.view === view) return;
+  view = btn.dataset.view;
+  try { localStorage.setItem("bb-view", view); } catch(err){}
+  paintView();
+  if (last) render(last);
+});
+paintView();
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmt = n => Number(n).toFixed(2);
@@ -570,10 +620,24 @@ function teamRow(t, leading, pre){
 }
 
 /* --- one bonus race --- */
-function race(r){
+/* Which three names a race shows depends on the view. Ranked-by-projection is
+   a different list from ranked-by-actual, not a re-labelling of the same one,
+   so the feed can send its own `projected` array. If it doesn't, we sort the
+   actual leaders by their own `projected` value as a fallback. */
+function rowsFor(r, mode){
+  if (mode !== "projected") return r.leaders || [];
+  if (Array.isArray(r.projected)) return r.projected;
+  const derived = (r.leaders || []).filter(l => l.projected != null);
+  return derived.length
+    ? derived.slice().sort((a,b) => parseFloat(b.projected) - parseFloat(a.projected))
+             .map(l => ({ manager:l.manager, value:l.projected, detail:l.detail }))
+    : (r.leaders || []);          // nothing projected — show what we have
+}
+
+function race(r, mode){
   if (!r) return "";
   const hasIcon = !!document.getElementById("ic-" + r.key);
-  const rows = (r.leaders || []).slice(0,3).map((l,i) => `
+  const rows = rowsFor(r, mode).slice(0,3).map((l,i) => `
     <div class="race__row race__row--${i+1}">
       <span class="race__pos">${i+1}</span>
       <span class="race__who">
@@ -601,6 +665,7 @@ function race(r){
 }
 
 function render(data){
+  last = data;
   const pre = data.status === "pregame";
   ls.dataset.status = data.status;
   document.getElementById("lsWeek").textContent = "WEEK " + data.week;
@@ -621,7 +686,8 @@ function render(data){
   }).join("");
 
   const b = data.bonus || {};
-  races.innerHTML = race(b.category) + race(b.high);
+  races.classList.toggle("is-projected", view === "projected");
+  races.innerHTML = race(b.category, view) + race(b.high, view);
 
   /* the feed's own write time, not the moment the browser fetched it: if the
      cron stalls, re-fetching the same stale file must not reset the clock */
