@@ -563,6 +563,17 @@ def load_categories(path=None):
 
 LEDGER_FILE = REPO / "bank-ledger.json"
 
+# --- Dot Pot -------------------------------------------------------------
+# $5 to whoever has the week's highest-scoring STARTER at QB, RB, WR, and TE.
+# Settled into bank-ledger.json exactly like High Score and the weekly
+# category bonus - never auto-paid off a live "final" flag from the API.
+# Same reasoning as everywhere else in this file: a bonus is real money, and
+# a tie is a human call, not a script's.
+DOT_POSITIONS = ("QB", "RB", "WR", "TE")
+DOT_VALUE = 5
+DOT_POT_WEEKS = 15
+DOT_POT_TOTAL = DOT_VALUE * len(DOT_POSITIONS) * DOT_POT_WEEKS  # $300
+
 
 def manager_key(name):
     """Accept 'GREG', 'greg', ' Greg ' -> 'greg'. None if unrecognised."""
@@ -571,28 +582,68 @@ def manager_key(name):
 
 
 def normalize_winner(entry):
-    """Accept either shape and return {manager, value, detail} or None.
+    """Accept any of three shapes and return {manager, managers, value, detail}.
 
-        "GREG"                                   (old, name only)
-        {"manager": "GREG", "value": "142.88"}   (current)
+        "GREG"                                          (oldest, name only)
+        {"manager": "GREG", "value": "142.88"}          (single winner)
+        {"managers": ["GREG","COYNE"], "value": "..."}  (tie - split)
+
+    `managers` is ALWAYS a list, usually of one. `manager` is always the first
+    of them, so every board that displays a single name keeps working untouched
+    - only the money math reads `managers`. That is deliberate: ties are about
+    a once-in-eight-years event, and making every consumer tie-aware to handle
+    it would be a lot of new ways to break something that already works.
     """
     if not entry:
         return None
+
     if isinstance(entry, str):
-        key = manager_key(entry)
-        return {"manager": key, "value": "", "detail": ""} if key else None
-    key = manager_key(entry.get("manager"))
-    if not key:
+        keys = [k for k in [manager_key(entry)] if k]
+        value = detail = ""
+    else:
+        raw = entry.get("managers")
+        if raw is None:
+            raw = [entry.get("manager")]
+        elif not isinstance(raw, list):
+            raw = [raw]
+        keys, seen = [], set()
+        for name in raw:
+            k = manager_key(name)
+            if k and k not in seen:
+                seen.add(k)
+                keys.append(k)
+        value = str(entry.get("value", ""))
+        detail = str(entry.get("detail", ""))
+
+    if not keys:
         return None
-    return {"manager": key,
-            "value": str(entry.get("value", "")),
-            "detail": str(entry.get("detail", ""))}
+    return {"manager": keys[0], "managers": keys, "value": value, "detail": detail}
+
+
+def split_amount(amount, winners):
+    """A prize divided evenly among tied winners, rounded to the cent.
+
+    One dot at $5 split two ways is $2.50 each. Whole dollars stay ints so the
+    common case renders as "$25", not "$25.0".
+    """
+    n = max(1, len(winners or []))
+    if n == 1:
+        return amount
+    share = round(float(amount) / n, 2)
+    return int(share) if share == int(share) else share
+
+
+def normalize_dots(entry):
+    """A week's 'dots' ledger entry -> {position: normalize_winner(...) or None}."""
+    entry = entry or {}
+    return {pos: normalize_winner(entry.get(pos)) for pos in DOT_POSITIONS}
 
 
 def load_ledger(path=None):
     """-> (weeks, awards) for the current season.
 
-    weeks: {week_int: {"high": {...} or None, "category": {...} or None}}
+    weeks: {week_int: {"high": {...} or None, "category": {...} or None,
+                        "dots": {"QB": {...} or None, "RB": ..., ...}}}
     awards: [{manager, label, short, amount}, ...]
     """
     p = Path(path) if path else LEDGER_FILE
@@ -608,6 +659,7 @@ def load_ledger(path=None):
         weeks[int(week_str)] = {
             "high": normalize_winner(entry.get("high")),
             "category": normalize_winner(entry.get("category")),
+            "dots": normalize_dots(entry.get("dots")),
         }
 
     awards = []
@@ -638,6 +690,26 @@ def _best_player(rosters, predicate):
 
 def _starting(p):
     return p["slot"] in STARTING_SLOTS
+
+
+def top_scorers_by_position(rosters, positions=DOT_POSITIONS):
+    """The starting lineup's highest scorer at each of `positions` this
+    week, across every manager - the Dot Pot candidates.
+
+    Reuses _best_player + rank_rows, the same machinery every other bonus
+    category uses, so ties are handled identically: shared rank, left for
+    a human to record the split rather than guessed at here.
+
+    -> {position: [rank-1 leader dicts from rank_rows(..., limit=1)]}
+       (a list, not a single dict - a tie means more than one entry)
+    """
+    out = {}
+    for pos in positions:
+        rows = _best_player(
+            rosters,
+            lambda p, pos=pos: _starting(p) and p["display_position"] == pos)
+        out[pos] = rank_rows(rows, limit=1)
+    return out
 
 
 def _margins(matchups):
@@ -785,6 +857,86 @@ def rank_rows(rows, ascending=False, limit=3):
             "detail": detail,
         })
     return leaders
+
+
+def write_ledger_week(week, entry, path=None):
+    """Insert one settled week into bank-ledger.json. Returns a status string.
+
+    NEVER overwrites a week that is already recorded. A rerun - a retried
+    workflow, a manual run after an automatic one, a re-triggered Tuesday job -
+    must not pay anyone twice, and must not quietly undo a hand correction the
+    commissioner made after the fact. If you genuinely need to redo a week,
+    delete that week's key from the ledger first; that is a deliberate act.
+
+    Everything else in the file is preserved byte-for-byte in structure: the
+    _comment, the awards array, and any other season.
+    """
+    p = Path(path) if path else LEDGER_FILE
+    raw = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    season = raw.setdefault(str(SEASON), {})
+    if not isinstance(season, dict):
+        return "ledger's %s block is not an object - refusing to touch it" % SEASON
+
+    if str(week) in season:
+        return "week %d already in the ledger - left untouched" % week
+
+    season[str(week)] = entry
+    tmp = p.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(raw, indent=2) + "\n", encoding="utf-8")
+    tmp.replace(p)
+    return "week %d written to the ledger" % week
+
+
+def dot_pot_summary(weeks):
+    """load_ledger()'s weeks -> the Dot Pot leaderboard's data shape.
+
+    Only weeks with a settled 'dots' entry count toward totals or the pot -
+    same rule as every other dollar in this file: nothing counts until a
+    human has put it in the ledger, a live 'final' flag from the API is
+    never enough on its own.
+    """
+    totals = {k: {pos: 0 for pos in DOT_POSITIONS} for k in DISPLAY}
+    history = []
+    dots_awarded = 0
+    for week in sorted(weeks):
+        dots = weeks[week].get("dots") or {}
+        if not any(dots.get(pos) for pos in DOT_POSITIONS):
+            continue  # week not settled yet - not final, or not pasted in
+        row = {"week": week, "positions": {}}
+        for pos in DOT_POSITIONS:
+            winner = dots.get(pos)
+            if not winner:
+                row["positions"][pos] = None
+                continue
+            # One dot per POSITION comes out of the pot, however many people
+            # tied for it - but each tied manager is credited with the dot on
+            # the leaderboard, because they did win it.
+            dots_awarded += 1
+            for key in winner["managers"]:
+                if key in totals:
+                    totals[key][pos] += 1
+            row["positions"][pos] = {
+                "manager": winner["manager"],
+                "manager_display": DISPLAY.get(winner["manager"], winner["manager"]),
+                "managers": [DISPLAY.get(k, k) for k in winner["managers"]],
+                "value": winner["value"],
+                "detail": winner["detail"],
+            }
+        history.append(row)
+
+    paid_out = dots_awarded * DOT_VALUE
+    return {
+        "season": SEASON,
+        "updated": now_iso(),
+        "pot": {
+            "total": DOT_POT_TOTAL,
+            "dot_value": DOT_VALUE,
+            "paid_out": paid_out,
+            "remaining": DOT_POT_TOTAL - paid_out,
+        },
+        "totals": totals,
+        "history": history,
+    }
 
 
 def pad_leaders(leaders, size=3):

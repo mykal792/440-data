@@ -42,8 +42,10 @@ LEDGER = REPO / "bank-ledger.json"
 def bonuses_from_ledger(meta, ledger_path=None):
     """bank-ledger.json -> {manager_key: [{week,type,label,short,amount}, ...]}
 
-    Money only comes from here. Playoff payouts, the DraftKings Challenge, and
-    the Thanksgiving DK go in the ledger's "awards" array and are picked up
+    Money comes from three places in the ledger: the weekly High Score and
+    category bonus (as before), and now Dot Pot - $5 per position won at
+    QB/RB/WR/TE. Playoff payouts, the DraftKings Challenge, and the
+    Thanksgiving DK go in the ledger's "awards" array and are picked up
     automatically - do not edit the HTML to add them, or the bank column and the
     ledger will disagree.
     """
@@ -51,21 +53,43 @@ def bonuses_from_ledger(meta, ledger_path=None):
     weeks, awards = yc.load_ledger(ledger_path)
     out = {k: [] for k in yc.MANAGER_KEYS}
 
+    def credit(winner, row, amount):
+        """Give `row` to every tied manager, dividing the prize between them.
+
+        `managers` is a list of one in the normal case, so this is the same as
+        a single append. On a tie it pays each winner an even share - a $25
+        category split two ways is $12.50 each, and the pot is never overspent.
+        """
+        share = yc.split_amount(amount, winner["managers"])
+        for key in winner["managers"]:
+            entry = dict(row, amount=share)
+            if len(winner["managers"]) > 1:
+                entry["split"] = len(winner["managers"])
+            out[key].append(entry)
+
     for week, winners in weeks.items():
         hi = winners.get("high")
         if hi:
-            out[hi["manager"]].append({
-                "week": week, "type": "high", "label": "High Score",
-                "short": "HS", "amount": meta["high_score"]["amount"]})
+            credit(hi, {"week": week, "type": "high", "label": "High Score",
+                        "short": "HS"}, meta["high_score"]["amount"])
 
         ct = winners.get("category")
         if ct:
             c = by_week.get(week, {})
-            out[ct["manager"]].append({
-                "week": week, "type": "category",
-                "label": c.get("label", "Week %d" % week),
-                "short": c.get("short", c.get("label", "")),
-                "amount": meta.get("category_amount", 25)})
+            credit(ct, {"week": week, "type": "category",
+                        "label": c.get("label", "Week %d" % week),
+                        "short": c.get("short", c.get("label", ""))},
+                   meta.get("category_amount", 25))
+
+        # Dot Pot: $5 to whoever had the week's top scorer at each of
+        # QB/RB/WR/TE. Settled the same way as High Score and the weekly
+        # category - only counts once it is actually in the ledger.
+        for pos, winner in (winners.get("dots") or {}).items():
+            if not winner:
+                continue
+            credit(winner, {"week": week, "type": "dot", "pos": pos,
+                            "label": "Dot Pot - %s" % pos, "short": pos},
+                   yc.DOT_VALUE)
 
     for a in awards:
         out[a["manager"]].append({"type": "award", "label": a["label"],
