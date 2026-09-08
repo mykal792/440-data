@@ -47,6 +47,12 @@ def probe(label, path, token):
     print("    %s" % path)
     try:
         payload = yc.fetch(path, token)
+    except SystemExit as err:
+        # yahoo_common.fetch() calls sys.exit() on any non-200, and SystemExit
+        # is not an Exception subclass - so a single 400 used to abort the
+        # whole probe before the later variants ran.
+        print("    rejected by Yahoo: %s" % str(err).splitlines()[0])
+        return None
     except Exception as err:                      # noqa: BLE001
         print("    request failed: %s" % err)
         return None
@@ -94,19 +100,34 @@ def main():
           "team/%s/roster/players/stats;type=week;week=%d;out=projected_points"
           % (tk, week), token)
 
-    # 3. a projected stats coverage type rather than the actual one
-    probe("player stats with type=projected_week",
-          "team/%s/roster/players/stats;type=projected_week;week=%d" % (tk, week),
-          token)
-
-    # 4. bare roster, in case projections hang off selected_position
+    # 3. bare roster, in case projections hang off selected_position
     probe("bare roster, no stats subresource",
           "team/%s/roster;week=%d" % (tk, week), token)
 
-    # 5. the team itself - team_projected_points is documented here, so this
-    #    is the control: if this prints nothing, the probe itself is broken
+    # 4. week on the roster resource itself, stats nested under it
+    probe("roster;week=N with nested stats",
+          "team/%s/roster;week=%d/players/stats;type=week;week=%d"
+          % (tk, week, week), token)
+
+    # 5. every player subresource at once - if a projection rides along on any
+    #    of the documented ones, it shows up here
+    probe("roster with all player subresources",
+          "team/%s/roster/players/stats;type=week;week=%d"
+          ";out=stats,ownership,percent_owned,draft_analysis" % (tk, week), token)
+
+    # 6. season-long coverage, in case weekly is the only gap
+    probe("player stats, season coverage",
+          "team/%s/roster/players/stats;type=season" % tk, token)
+
+    # 7. CONTROL - team_projected_points is documented here and pull_live.py
+    #    already reads it. If this finds nothing, the probe is broken and the
+    #    negatives above mean nothing.
     probe("team stats (control - should find team_projected_points)",
           "team/%s/stats;type=week;week=%d" % (tk, week), token)
+
+    # 8. CONTROL - the scoreboard call pull_live.py makes every run
+    probe("league scoreboard (control - should find team_projected_points)",
+          "league/%s/scoreboard;week=%d" % (yc.LEAGUE_KEY, week), token)
 
     if args.dump and roster:
         Path(args.dump).write_text(json.dumps(roster, indent=2))
