@@ -823,6 +823,48 @@ SCOREBOARD_WEEKS = {2, 4, 6, 9, 10}
 STANDINGS_WEEKS = {15}
 
 
+def projected_matchups(matchups, projected):
+    """`matchups`, with every score swapped for Yahoo's projected total.
+
+    Same shape parse_scoreboard returns, so the week-2/4/6/9/10 calculators
+    run against it unchanged.
+    """
+    out = []
+    for m in matchups:
+        row = {}
+        for side in ("home", "away"):
+            manager = m[side][0]
+            row[side] = (manager, float(projected.get(manager, 0.0)))
+        out.append(row)
+    return out
+
+
+def high_score_projected_rows(matchups, projected):
+    """High Score, ranked by projected final instead of points so far."""
+    rows = []
+    for m in projected_matchups(matchups, projected):
+        for manager, value in (m["home"], m["away"]):
+            rows.append((manager, value, "proj. final"))
+    return rows
+
+
+def compute_bonus_projected(week, matchups, projected):
+    """-> (rows, ascending), or (None, False) when the week can't be projected.
+
+    Only the categories computed from TEAM scores can be: swap in the
+    projected totals and run the same calculator. The player-level weeks in
+    ROSTER_WEEKS have no equivalent - Yahoo publishes team_projected_points,
+    not a per-player projection - and week 15 is a season-long total, so both
+    return None and the race simply ships without a `projected` list.
+    """
+    if week not in SCOREBOARD_WEEKS or not projected:
+        return None, False
+    calc = CALCULATORS.get(week)
+    if not calc:
+        return None, False
+    return calc({}, projected_matchups(matchups, projected), {}), week in ASCENDING
+
+
 def high_score_rows(rosters, matchups, standings):
     rows = []
     for m in matchups:
