@@ -122,6 +122,14 @@
 }
 .tp__list{ padding:4px 12px 6px }
 
+.tp__lblink{
+  display:block; text-align:center; margin-top:12px;
+  font-family:"Rotundo",sans-serif; font-size:11px; letter-spacing:.05em;
+  color:#fff; background:var(--tp-bar); text-decoration:none;
+  padding:11px; border-radius:999px; transition:opacity 130ms ease;
+}
+.tp__lblink:hover{ opacity:.85 }
+
 /* -- rows: rank | avatar+position chip | name/team + stat line | points -- */
 .tp__row{
   display:grid; grid-template-columns:14px 32px minmax(0,1fr) auto;
@@ -197,6 +205,7 @@
 /* mobile target: 290px */
 @container (max-width:400px){
   .tp{ border-radius:16px }
+  .tp__lblink{ font-size:10px; padding:9px; margin-top:10px }
   .tp__bar{
     padding:10px 15px;
     flex-wrap:wrap; row-gap:4px; column-gap:12px; min-height:65px;
@@ -281,6 +290,7 @@
     <div class="tp__card" id="tpCard">
       <div class="tp__list" id="tpList"></div>
     </div>
+    <a class="tp__lblink" href="https://www.440andfriends.com/dot-pot-leaderboard" target="_top">SEE THE DOT POT LEADERBOARD</a>
   </div>
 </section>
 </div>
