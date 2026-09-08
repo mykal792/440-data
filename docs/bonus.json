@@ -1,10 +1,11 @@
 {
-  "league": { "season": 2026 },
-  "avatars": {},
+  "league": {
+    "season": 2026
+  },
   "live": {
-    "state": "preseason",
+    "state": "pregame",
     "week": 1,
-    "updated": null,
+    "updated": "2026-09-08T03:16:12Z",
     "category": {
       "week": 1,
       "key": "bench-warmer",
@@ -12,14 +13,27 @@
       "description": "Most points by a single player on your bench.",
       "amount": 25,
       "leaders": [
-        { "manager": "NAME", "value": "0.00" },
-        { "manager": "NAME", "value": "0.00" },
-        { "manager": "NAME", "value": "0.00" }
-      ],
-      "projected": [
-        { "manager": "NAME", "value": "0.00" },
-        { "manager": "NAME", "value": "0.00" },
-        { "manager": "NAME", "value": "0.00" }
+        {
+          "rank": 1,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        },
+        {
+          "rank": 2,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        },
+        {
+          "rank": 3,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        }
       ]
     },
     "high": {
@@ -28,14 +42,27 @@
       "description": "Most fantasy points scored that week.",
       "amount": 15,
       "leaders": [
-        { "manager": "NAME", "value": "0.00" },
-        { "manager": "NAME", "value": "0.00" },
-        { "manager": "NAME", "value": "0.00" }
-      ],
-      "projected": [
-        { "manager": "NAME", "value": "0.00" },
-        { "manager": "NAME", "value": "0.00" },
-        { "manager": "NAME", "value": "0.00" }
+        {
+          "rank": 1,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        },
+        {
+          "rank": 2,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        },
+        {
+          "rank": 3,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        }
       ]
     }
   }
