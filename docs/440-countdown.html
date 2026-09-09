@@ -63,6 +63,9 @@
   --logo:clamp(20px,2.6vw,30px);
   --sea:.86;
 
+  /* how tight the cards close up once it reads FOOTBALL */
+  --final-gap:3px;
+
   --display:'Rotundo','Arial Black','Helvetica Neue',Impact,sans-serif;
   --unit:'Laro','Wix Madefor Text',ui-sans-serif,system-ui,sans-serif;
   --body:'Wix Madefor Text',ui-sans-serif,system-ui,sans-serif;
@@ -116,6 +119,15 @@ body{
   font-size:clamp(9.5px,1.1vw,13px);letter-spacing:.15em;
   color:var(--label);white-space:nowrap;
 }
+/* ---------- the final state: eight cards spelling one word ---------- */
+.clock.is-final{gap:var(--final-gap)}
+.clock.is-final .cards{gap:var(--final-gap)}
+.clock.is-final .sep{display:none}
+.clock.is-final .group__cap{display:none}
+/* letters are wider than digits, so they need a touch less size to sit
+   inside the same card without crowding the edges */
+.card.is-letter{font-size:calc(var(--ch) * .58)}
+
 .sep{
   font-family:var(--display);line-height:1;
   font-size:calc(var(--ch) * .42);color:var(--label);
@@ -200,6 +212,7 @@ body{
   .kick__head{gap:10px;margin-bottom:16px}
   .kick__title{font-size:clamp(16px,5.4vw,22px)}
 
+  :root{--final-gap:2px}
   .clock{gap:calc(var(--cw) * .12)}
   .sep{
     font-size:calc(var(--ch) * .36);
@@ -231,7 +244,7 @@ body{
 <section class="kick" aria-label="Countdown to kickoff">
 
   <div class="kick__head">
-    <h2 class="kick__title">KICK OFF</h2>
+    <h2 class="kick__title" id="kickTitle">KICK OFF</h2>
   </div>
 
   <div class="clock" id="clock" role="timer" aria-live="off"></div>
@@ -332,12 +345,39 @@ function setUnit(key, n){
   flip(cards[key][1], s[1]);
 }
 
+/* ---------------------------------------------------------------------
+   AT ZERO
+   Eight cards, eight letters — FOOTBALL fits the board exactly. The colons
+   and unit labels drop out, the gaps close to --final-gap so it reads as one
+   word, and the letters flip in left to right rather than all at once.
+
+   Preview it without waiting: add #final to the end of the URL.
+   --------------------------------------------------------------------- */
+const FINAL_WORD  = 'FOOTBALL';
+const FINAL_TITLE = "IT'S TIME FOR";
+const STAGGER_MS  = 110;
+
+let finished = false;
+let timer = null;
+
+function goFinal(){
+  if (finished) return;
+  finished = true;
+  if (timer) clearInterval(timer);
+
+  document.getElementById('kickTitle').textContent = FINAL_TITLE;
+  clock.classList.add('is-final');
+
+  const ordered = ['d','h','m','s'].reduce((a,k) => a.concat(cards[k]), []);
+  ordered.forEach((card, i) => {
+    card.classList.add('is-letter');
+    setTimeout(() => flip(card, FINAL_WORD[i]), i * STAGGER_MS);
+  });
+}
+
 function tick(){
   const diff = KICKOFF - new Date();
-  if (diff <= 0){
-    ['d','h','m','s'].forEach(k => setUnit(k, 0));
-    return;
-  }
+  if (diff <= 0){ goFinal(); return; }
   const t = Math.floor(diff / 1000);
   setUnit('d', Math.floor(t / 86400));
   setUnit('h', Math.floor(t % 86400 / 3600));
@@ -345,8 +385,12 @@ function tick(){
   setUnit('s', t % 60);
 }
 
-tick();
-setInterval(tick, 1000);
+if (/final/.test(location.hash + location.search)) {
+  goFinal();
+} else {
+  tick();
+  timer = setInterval(tick, 1000);
+}
 </script>
 </body>
 </html>
