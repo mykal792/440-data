@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-10T00:59:45Z",
+  "updated": "2026-09-10T01:14:19Z",
   "players": [
     {
       "name": "Patriots",
@@ -9,8 +9,30 @@
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 11.0,
+      "points": 12.0,
       "stats": []
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 44
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Seahawks",
@@ -18,7 +40,7 @@
       "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 10.0,
+      "points": 5.0,
       "stats": []
     },
     {
@@ -40,20 +62,20 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
+      "name": "A.J. Brown",
+      "position": "WR",
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 2.04,
+      "points": 2.2,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 16
+          "stat": "REC YD",
+          "value": 12
         },
         {
-          "stat": "RUSH YD",
-          "value": 14
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -68,24 +90,6 @@
         {
           "stat": "RUSH YD",
           "value": 12
-        }
-      ]
-    },
-    {
-      "name": "A.J. Brown",
-      "position": "WR",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
