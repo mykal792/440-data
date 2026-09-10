@@ -2,7 +2,7 @@ name: Live scoring
 # Cron is UTC and ignores daylight saving; these cover EDT (Sep - early Nov).
 # In November, shift each block one hour later.
 #
-# UTC day numbers look shifted because ET evening games fall on the NEXT UTC
+# UTC day numbers look shifted because ET evening games fall on the next UTC
 # day: '* * 4' is Wednesday night ET, '* * 5' is Thursday night ET, and so on.
 on:
   workflow_dispatch:
