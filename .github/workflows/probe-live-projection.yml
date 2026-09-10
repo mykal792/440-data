@@ -1,0 +1,42 @@
+name: Probe live projection
+
+# Manual only. Asks whether Yahoo exposes a live-updating projection field
+# (team_live_projected_points) alongside the pregame one we already read.
+# Writes nothing, commits nothing, touches no file in docs/.
+#
+# Best run WHILE GAMES ARE IN PROGRESS. Outside a game window Yahoo may drop
+# the live fields, which reads as a false negative.
+#
+# Delete this file and probe_live_projection.py once answered.
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'Week number (blank = current week)'
+        required: false
+        default: ''
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: pip install 'yahoofantasy==1.4.9'
+      - name: Restore Yahoo token
+        env:
+          YAHOO_TOKEN_B64: ${{ secrets.YAHOO_TOKEN_B64 }}
+        run: |
+          if [ -z "$YAHOO_TOKEN_B64" ]; then
+            echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
+          fi
+          echo "$YAHOO_TOKEN_B64" | tr -d '[:space:]' | base64 -d > "$GITHUB_WORKSPACE/.yahoofantasy"
+      - name: Probe
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.week }}" ]; then ARGS="$ARGS --week ${{ inputs.week }}"; fi
+          python probe_live_projection.py $ARGS
