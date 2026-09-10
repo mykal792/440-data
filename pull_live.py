@@ -95,25 +95,6 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
     cat_leaders = yc.pad_leaders(cat_leaders)
     high_leaders = yc.pad_leaders(high_leaders)
 
-    # Projections are worth most in exactly the state the real lists are
-    # worthless: before kickoff, when every actual value is 0.00 and the board
-    # shows placeholders. So these are built in EVERY state, pregame included,
-    # and are not gated on --show-pregame.
-    #
-    # Ranked-by-projected is a different list from ranked-by-actual, not the
-    # same three names re-valued - someone fourth right now with two starters
-    # left can project into first - so each race carries its own array.
-    high_proj = None
-    if projected:
-        high_proj = yc.pad_leaders(
-            yc.rank_rows(
-                yc.high_score_projected_rows(matchups, projected, remaining)))
-
-    cat_proj = None
-    proj_rows, proj_ascending = yc.compute_bonus_projected(week, matchups, projected)
-    if proj_rows:
-        cat_proj = yc.pad_leaders(yc.rank_rows(proj_rows, ascending=proj_ascending))
-
     category = {
         "week": week,
         "key": cat.get("key", "no-bonus"),
@@ -122,9 +103,6 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
         "amount": meta.get("category_amount", 25),
         "leaders": cat_leaders,
     }
-    if cat_proj:
-        category["projected"] = cat_proj
-
     high = {
         "key": "high-score",
         "label": meta["high_score"]["label"],
@@ -132,9 +110,6 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
         "amount": meta["high_score"]["amount"],
         "leaders": high_leaders,
     }
-    if high_proj:
-        high["projected"] = high_proj
-
     return {
         "league": {"season": yc.SEASON},
         "live": {
