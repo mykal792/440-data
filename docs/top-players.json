@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-10T02:28:53Z",
+  "updated": "2026-09-10T02:41:55Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -9,11 +9,11 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 13.24,
+      "points": 12.68,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 91
+          "value": 127
         },
         {
           "stat": "RUSH YD",
@@ -22,6 +22,50 @@
         {
           "stat": "TD",
           "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 66
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 44
+        },
+        {
+          "stat": "REC",
+          "value": 5
         }
       ]
     },
@@ -35,52 +79,12 @@
       "stats": []
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 53
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
-        },
-        {
-          "stat": "REC YD",
-          "value": 16
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 5.0,
+      "points": 7.0,
       "stats": []
     },
     {
