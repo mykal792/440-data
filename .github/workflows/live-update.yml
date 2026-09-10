@@ -1,20 +1,18 @@
 name: Live scoring
-# Cron is UTC and ignores daylight saving; these cover EDT (Sep - early Nov).
-# In November, shift each block one hour later.
+# NO GITHUB SCHEDULE. This runs from cron-job.org, which POSTs to the
+# workflow_dispatch API every 10 minutes from 9am to 1:59am ET.
 #
-# UTC day numbers look shifted because ET evening games fall on the next UTC
-# day: '* * 4' is Wednesday night ET, '* * 5' is Thursday night ET, and so on.
+# Why: GitHub's scheduled workflows are best-effort and get deprioritised under
+# load. On opening night, Sept 9 2026, exactly one scheduled run fired in a
+# four-hour window that should have produced twenty-four. An external trigger
+# hits the dispatch endpoint directly and runs when it says it will.
+#
+# The cron-job.org job is called "440 live scoring" and authenticates with a
+# fine-grained GitHub token scoped to this repo with Actions read/write.
+# THAT TOKEN EXPIRES 2027-09-10 - when it does, the site silently stops
+# updating and cron-job.org starts logging 401s.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '*/10 0-4 * * 4'     # Wednesday night opener, Sep 9 only
-    - cron: '*/10 0-4 * * 5'     # Thursday Night Football
-    - cron: '*/10 18-23 * * 4'   # Thanksgiving afternoon games (week 13)
-    - cron: '*/10 18-23 * * 6'   # Saturday afternoon (late-season games)
-    - cron: '*/10 0-4 * * 0'     # Saturday night into Sunday ET
-    - cron: '*/10 17-23 * * 0'   # Sunday 1pm - 8pm ET
-    - cron: '*/10 0-4 * * 1'     # Sunday night into Monday ET
-    - cron: '*/10 0-4 * * 2'     # Monday Night Football
 permissions:
   contents: write
 concurrency:
