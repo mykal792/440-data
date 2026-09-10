@@ -104,7 +104,7 @@
   color:var(--tp-sub); margin:0 0 11px;
 }
 
-.tp__filter{ position:relative; display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin:0 0 10px }
+.tp__filter{ position:relative; display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin:0 0 10px }
 .tp__tab{
   appearance:none; border:0; cursor:pointer; min-width:0;
   height:26px; padding:0 4px; border-radius:999px; background:var(--tp-card);
@@ -121,6 +121,11 @@
   border:3px solid var(--tp-accent); transition:border-color 160ms ease;
 }
 .tp__list{ padding:4px 12px 6px }
+/* Added only for the ALL tab's 4 rows, so the card stays the exact same
+   height as the 5-row tabs instead of leaving dead space at the bottom -
+   the explicit height per breakpoint below is measured off the real
+   5-row list, not guessed. */
+.tp__list--spread{ display:flex; flex-direction:column; justify-content:space-evenly }
 
 .tp__lblink{
   display:block; text-align:center; margin-top:12px;
@@ -136,6 +141,7 @@
   align-items:center; gap:10px; padding:10px 0;
   border-bottom:2px solid var(--tp-accent, var(--tp-hair));
 }
+.tp__row--all{ grid-template-columns:30px 32px minmax(0,1fr) auto } /* rank slot widened to fit a pill instead of a digit */
 .tp__row:last-child{ border-bottom:0 }
 .tp__row--1 .tp__rank{ color:var(--tp-ink); font-weight:600 }
 .tp__row--empty{ opacity:.45 }
@@ -179,6 +185,11 @@
   letter-spacing:.03em; text-transform:uppercase; line-height:1;
   color:var(--tp-sub); background:var(--tp-tile); padding:2px 4px; border-radius:4px;
 }
+.tp__poschip{
+  justify-self:center; display:inline-flex; align-items:center; justify-content:center;
+  font-family:"Rotundo",sans-serif; font-size:8.5px; letter-spacing:.02em; line-height:1;
+  color:#fff; background:var(--c); padding:2px 5px; border-radius:4px;
+}
 
 /* stat line: single row, clipped; JS adds data-scroll + a duplicate .tp__copy
    only when the text is too long for the container, and ticks it like a
@@ -204,6 +215,7 @@
 
 /* mobile target: 290px */
 @container (max-width:400px){
+  .tp__list--spread{ height:231px } /* measured off the real 5-row list at this width */
   .tp{ border-radius:16px }
   .tp__lblink{ font-size:10px; padding:9px; margin-top:10px }
   .tp__bar{
@@ -229,9 +241,10 @@
   .tp__tab{ height:28px; font-size:10.5px }
   .tp__list{ padding:3px 8px 5px }
   .tp__row{ grid-template-columns:12px 25px minmax(0,1fr) auto; gap:7px; padding:8px 0 }
+  .tp__row--all{ grid-template-columns:26px 25px minmax(0,1fr) auto }
   .tp__id{ width:25px; height:25px }
   .tp__windot{ width:8px; height:8px; right:-2px; bottom:-2px }
-  .tp__name{ font-size:11.5px }
+  .tp__name{ font-size:10.5px; font-family:"Laro Soft","Helvetica Neue",Arial,sans-serif; font-weight:600 }
   .tp__team{ font-size:7px; padding:1.5px 3px }
   .tp__stats{ font-size:9px }
   .tp__pts{ font-size:12px }
@@ -242,12 +255,14 @@
    the scoreboard keeps its header at base size at this width too, so this
    inherits the same 48px-min-height, 14px-label bar as the base rule */
 @container (min-width:700px){
+  .tp__list--spread{ height:366px } /* measured off the real 5-row list at this width */
   .tp__body{ padding:20px 32px 32px }
   .tp__desc{ font-size:12.5px; margin-bottom:16px }
   .tp__filter{ gap:10px; margin-bottom:16px }
   .tp__tab{ height:30px; font-size:11.5px }
   .tp__list{ padding:6px 24px 12px }
   .tp__row{ grid-template-columns:20px 42px minmax(0,1fr) auto; gap:16px; padding:13px 0 }
+  .tp__row--all{ grid-template-columns:40px 42px minmax(0,1fr) auto }
   .tp__id{ width:42px; height:42px }
   .tp__windot{ width:12px; height:12px; right:-4px; bottom:-4px }
   .tp__name{ font-size:15px }
@@ -309,8 +324,9 @@
 
   var POS_COLOR = { QB:'#ff4858', RB:'#049dd9', WR:'#28b99a', TE:'#ff8a2a' };
   var POS_RGB   = { QB:'255,72,88', RB:'4,157,217', WR:'40,185,154', TE:'255,138,42' };
-  var POS_LABEL = { QB:'QB', RB:'RB', WR:'WR', TE:'TE' };
-  var POS_ORDER = ['QB','RB','WR','TE'];
+  var POS_LABEL = { ALL:'ALL', QB:'QB', RB:'RB', WR:'WR', TE:'TE' };
+  var POS_ORDER = ['QB','RB','WR','TE'];   // the 4 real positions
+  var TAB_ORDER = ['ALL'].concat(POS_ORDER); // what buttons to render, left to right
   var STATE_LABEL = { pregame:'PRESEASON', live:'LIVE', final:'FINAL' };
   var INK = '#2d2d2d';
 
@@ -382,17 +398,47 @@
   function render() {
     var list = document.getElementById('tpList');
     list.textContent = '';
+    var weekStatus = tpSection.getAttribute('data-status');
 
-    var rows = players.filter(function (p) { return p.position === active; });
-    rows = rows.slice(0, TOP_N);
-    while (rows.length < TOP_N) rows.push(placeholderRow(active));
+    var rows, rowCount;
+    if (active === 'ALL') {
+      // One row per real position - each IS that position's current #1,
+      // not a ranking across positions, so every row gets a win-dot, not
+      // just the first.
+      rowCount = POS_ORDER.length;
+      rows = POS_ORDER.map(function (pos) {
+        // Only a player who has actually recorded points counts as "in" -
+        // a rostered starter sitting at 0.00 before kickoff isn't a real
+        // answer to "who's winning this position", so treat that the same
+        // as nobody being there yet.
+        var top = players.filter(function (p) { return p.position === pos && p.points > 0; })[0];
+        return top || placeholderRow(pos);
+      });
+    } else {
+      rowCount = TOP_N;
+      rows = players.filter(function (p) { return p.position === active && p.points > 0; });
+      rows = rows.slice(0, TOP_N);
+      while (rows.length < TOP_N) rows.push(placeholderRow(active));
+    }
 
     document.getElementById('tpCard').style.setProperty('--tp-accent', POS_COLOR[active] || INK);
+    list.classList.toggle('tp__list--spread', rowCount < TOP_N);
 
     rows.forEach(function (p, i) {
-      var row = el('div', 'tp__row' + (i === 0 ? ' tp__row--1' : '') +
-                          (p.placeholder ? ' tp__row--empty' : ''));
-      row.appendChild(el('span', 'tp__rank', String(i + 1)));
+      var isWinner = active === 'ALL' ? true : i === 0; // every row in ALL is a position's #1
+      var row = el('div', 'tp__row' + (isWinner ? ' tp__row--1' : '') +
+                          (p.placeholder ? ' tp__row--empty' : '') +
+                          (active === 'ALL' ? ' tp__row--all' : ''));
+      // ALL isn't a ranking - each row is a different position's own #1 -
+      // so a rank number there was misleading. The position pill takes
+      // that slot instead, freeing the name line from carrying it.
+      if (active === 'ALL') {
+        var rankChip = el('span', 'tp__poschip', p.position || '');
+        rankChip.style.setProperty('--c', POS_COLOR[p.position] || INK);
+        row.appendChild(rankChip);
+      } else {
+        row.appendChild(el('span', 'tp__rank', String(i + 1)));
+      }
 
       var idWrap = el('div', 'tp__id');
       if (p.manager) {
@@ -407,11 +453,12 @@
       } else {
         idWrap.appendChild(el('span', 'tp__avatar'));
       }
-      var weekStatus = tpSection.getAttribute('data-status');
-      if (i === 0 && !p.placeholder && weekStatus !== 'pregame') {
+      if (isWinner && !p.placeholder && weekStatus !== 'pregame') {
+        var dotColor = POS_COLOR[active === 'ALL' ? p.position : active] || INK;
+        var dotRgb = POS_RGB[active === 'ALL' ? p.position : active] || '136,233,191';
         var winDot = el('span', 'tp__windot' + (weekStatus === 'final' ? ' tp__windot--final' : ''));
-        winDot.style.setProperty('--pos-color', POS_COLOR[active] || INK);
-        winDot.style.setProperty('--pos-rgb', POS_RGB[active] || '136,233,191');
+        winDot.style.setProperty('--pos-color', dotColor);
+        winDot.style.setProperty('--pos-rgb', dotRgb);
         winDot.title = weekStatus === 'final' ? 'Dot won' : 'Currently leading - not final yet';
         idWrap.appendChild(winDot);
       }
@@ -438,11 +485,11 @@
 
   function buildFilter() {
     var bar = document.getElementById('tpFilter');
-    POS_ORDER.forEach(function (pos) {
+    TAB_ORDER.forEach(function (pos) {
       var b = el('button', 'tp__tab', POS_LABEL[pos]);
       b.type = 'button';
       b.setAttribute('aria-pressed', pos === active ? 'true' : 'false');
-      var posColor = POS_COLOR[pos] || INK;
+      var posColor = POS_COLOR[pos] || INK; // ALL has no color of its own - ink
       b.style.setProperty('--pos-color', posColor); // read by the :hover rule
       if (pos === active) b.style.background = posColor;
       b.addEventListener('click', function () {
