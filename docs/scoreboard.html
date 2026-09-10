@@ -204,7 +204,8 @@
 }
 .ls__row--lead .ls__name,
 .ls__row--lead .ls__pts{color:var(--ls-ink)}
-.ls__row--lead .ls__face{box-shadow:0 0 0 2px var(--ls-mint-ink)}
+/* same mint as the leader badge in the bonus board */
+.ls__row--lead .ls__face{box-shadow:0 0 0 2px var(--ls-mint)}
 .ls__hair{height:1px; border-top:2px dashed var(--ls-hair)}
 .ls[data-status="pregame"] .ls__name{color:var(--ls-ink)}
 .ls[data-status="pregame"] .ls__pts{color:var(--ls-mute)}
@@ -439,18 +440,18 @@ body{margin:0; padding:0; font-family:"Laro Soft",Arial,sans-serif}
   </div>
 
   <div class="ls__body">
-    <p class="ls__sect" id="lsSect">Matchups</p>
-    <div class="ls__track" id="lsTrack" tabindex="0" role="list"></div>
-
-    <hr class="ls__split">
-
     <div class="ls__sectrow">
-      <p class="ls__sect">Bonus Board</p>
+      <p class="ls__sect" id="lsSect">Matchups</p>
       <div class="ls__seg" id="lsView" role="group" aria-label="Show actual or projected totals">
         <button type="button" data-view="actual" aria-pressed="true">Actual</button>
         <button type="button" data-view="projected" aria-pressed="false">Projected</button>
       </div>
     </div>
+    <div class="ls__track" id="lsTrack" tabindex="0" role="list"></div>
+
+    <hr class="ls__split">
+
+    <p class="ls__sect">Bonus Board</p>
     <div class="ls__races" id="lsRaces"></div>
 
     <a class="sgx" href="https://www.440andfriends.com/squid-game" target="_top" aria-label="Enter Squid Game HQ">
@@ -609,9 +610,11 @@ const fmt = n => Number(n).toFixed(2);
 
 /* --- matchup card --- */
 function teamRow(t, leading, pre){
-  /* before kickoff there is no score worth showing, so the card carries the
-     projection instead; once games start it swaps to the real number */
-  const shown = (pre && t.projected != null) ? t.projected : t.score;
+  /* Two reasons to show the projection instead of the score: nothing has been
+     scored yet, or the reader asked for projections. Either way it falls back
+     to the score if the feed has no projection for this team. */
+  const wantProj = pre || view === "projected";
+  const shown = (wantProj && t.projected != null) ? t.projected : t.score;
   return `<div class="ls__row${leading ? " ls__row--lead" : ""}">
     <span class="ls__face"><svg aria-hidden="true"><use href="${FACE_SPRITE}#face-${t.face}"></use></svg></span>
     <span class="ls__name">${esc(t.name)}</span>
@@ -674,10 +677,11 @@ function render(data){
 
   /* label the projections so nobody reads them as points already scored */
   document.getElementById("lsSect").innerHTML =
-    pre ? 'Matchups <b>— projected</b>' : "Matchups";
+    (pre || view === "projected") ? 'Matchups <b>— projected</b>' : "Matchups";
 
   track.innerHTML = (data.matchups || []).map(m => {
-    const homeUp = m.home.score >= m.away.score;
+    const by = t => (view === "projected" && t.projected != null) ? t.projected : t.score;
+    const homeUp = by(m.home) >= by(m.away);
     return `<div class="ls__game" role="listitem">
       ${teamRow(m.home, homeUp && !pre, pre)}
       <span class="ls__hair"></span>
