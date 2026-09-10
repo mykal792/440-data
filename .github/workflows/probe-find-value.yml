@@ -1,0 +1,48 @@
+name: Probe find value
+
+# Manual only. Give it a number you can see on Yahoo's site right now (the
+# Live Proj from a matchup header) and it searches every reachable payload for
+# that value, reporting the exact field path if it exists.
+#
+# Run it WHILE the site still shows that number - projections move.
+# Writes nothing, commits nothing, touches no file in docs/.
+
+on:
+  workflow_dispatch:
+    inputs:
+      value:
+        description: 'Live Proj value from Yahoo (e.g. 95.92)'
+        required: true
+      team:
+        description: 'Team id that value belongs to (e.g. 2 for Anthony)'
+        required: false
+        default: ''
+      week:
+        description: 'Week number (blank = current)'
+        required: false
+        default: ''
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: pip install 'yahoofantasy==1.4.9'
+      - name: Restore Yahoo token
+        env:
+          YAHOO_TOKEN_B64: ${{ secrets.YAHOO_TOKEN_B64 }}
+        run: |
+          if [ -z "$YAHOO_TOKEN_B64" ]; then
+            echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
+          fi
+          echo "$YAHOO_TOKEN_B64" | tr -d '[:space:]' | base64 -d > "$GITHUB_WORKSPACE/.yahoofantasy"
+      - name: Probe
+        run: |
+          ARGS="--value ${{ inputs.value }}"
+          if [ -n "${{ inputs.team }}" ]; then ARGS="$ARGS --team ${{ inputs.team }}"; fi
+          if [ -n "${{ inputs.week }}" ]; then ARGS="$ARGS --week ${{ inputs.week }}"; fi
+          python probe_find_value.py $ARGS
