@@ -123,9 +123,11 @@
 .tp__list{ padding:4px 12px 6px }
 /* Added only for the ALL tab's 4 rows, so the card stays the exact same
    height as the 5-row tabs instead of leaving dead space at the bottom -
-   the explicit height per breakpoint below is measured off the real
-   5-row list, not guessed. */
-.tp__list--spread{ display:flex; flex-direction:column; justify-content:space-evenly; height:220px }
+   the explicit padding added to .tp__row--all below is measured to make
+   the 4 rows' natural (block-stacked, no gaps) height equal the 5-row
+   list's height - not a flex/gap trick, which was putting the extra
+   height BETWEEN rows instead of symmetrically inside each one, breaking
+   the divider-to-content spacing this exists to fix in the first place. */
 
 .tp__lblink{
   display:block; text-align:center; margin-top:12px;
@@ -215,7 +217,6 @@
 
 /* mobile target: 290px */
 @container (max-width:400px){
-  .tp__list--spread{ height:231px } /* measured off the real 5-row list at this width */
   .tp{ border-radius:16px }
   .tp__poschip{ width:19px; height:19px; padding:2px 0 0.5px; font-size:7.5px; border-radius:5px }
   .tp__lblink{ font-size:10px; padding:9px; margin-top:10px }
@@ -242,7 +243,7 @@
   .tp__tab{ height:28px; font-size:10.5px }
   .tp__list{ padding:3px 8px 5px }
   .tp__row{ grid-template-columns:12px 25px minmax(0,1fr) auto; gap:7px; padding:9.5px 0 6.5px } /* redistributed, not increased - measured shift to center the whole row block */
-  .tp__row--all{ grid-template-columns:26px 25px minmax(0,1fr) auto }
+  .tp__row--all{ grid-template-columns:26px 25px minmax(0,1fr) auto; padding:16.6px 0 10.6px } /* fine-tuned from measured avatar-to-divider distances */
   .tp__id{ width:25px; height:25px }
   .tp__windot{ width:8px; height:8px; right:-2px; bottom:-2px }
   .tp__name{ font-size:10.5px; font-family:"Laro Soft","Helvetica Neue",Arial,sans-serif; font-weight:600 }
@@ -256,7 +257,6 @@
    the scoreboard keeps its header at base size at this width too, so this
    inherits the same 48px-min-height, 14px-label bar as the base rule */
 @container (min-width:700px){
-  .tp__list--spread{ height:366px } /* measured off the real 5-row list at this width */
   .tp__poschip{ font-size:12px; padding:3.7px 8px 3.8px; border-radius:6px }
   .tp__body{ padding:20px 32px 32px }
   .tp__desc{ font-size:12.5px; margin-bottom:16px }
@@ -264,7 +264,7 @@
   .tp__tab{ height:30px; font-size:11.5px }
   .tp__list{ padding:6px 24px 12px }
   .tp__row{ grid-template-columns:20px 42px minmax(0,1fr) auto; gap:16px; padding:16px 0 10px } /* redistributed, not increased - measured shift to center the whole row block */
-  .tp__row--all{ grid-template-columns:40px 42px minmax(0,1fr) auto }
+  .tp__row--all{ grid-template-columns:40px 42px minmax(0,1fr) auto; padding:24.25px 0 18.25px } /* base padding + 8.25px each side, measured to match the 5-row height with no inter-row gaps */
   .tp__id{ width:42px; height:42px }
   .tp__windot{ width:12px; height:12px; right:-4px; bottom:-4px }
   .tp__name{ font-size:15px }
@@ -402,12 +402,11 @@
     list.textContent = '';
     var weekStatus = tpSection.getAttribute('data-status');
 
-    var rows, rowCount;
+    var rows;
     if (active === 'ALL') {
       // One row per real position - each IS that position's current #1,
       // not a ranking across positions, so every row gets a win-dot, not
       // just the first.
-      rowCount = POS_ORDER.length;
       rows = POS_ORDER.map(function (pos) {
         // Only a player who has actually recorded points counts as "in" -
         // a rostered starter sitting at 0.00 before kickoff isn't a real
@@ -417,14 +416,12 @@
         return top || placeholderRow(pos);
       });
     } else {
-      rowCount = TOP_N;
       rows = players.filter(function (p) { return p.position === active && p.points > 0; });
       rows = rows.slice(0, TOP_N);
       while (rows.length < TOP_N) rows.push(placeholderRow(active));
     }
 
     document.getElementById('tpCard').style.setProperty('--tp-accent', POS_COLOR[active] || INK);
-    list.classList.toggle('tp__list--spread', rowCount < TOP_N);
 
     rows.forEach(function (p, i) {
       var isWinner = active === 'ALL' ? true : i === 0; // every row in ALL is a position's #1
