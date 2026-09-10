@@ -1,8 +1,30 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-10T01:14:19Z",
+  "updated": "2026-09-10T01:34:28Z",
   "players": [
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 66
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 36
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Patriots",
       "position": "DEF",
@@ -13,24 +35,20 @@
       "stats": []
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 9.76,
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 6.7,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 44
+          "stat": "REC YD",
+          "value": 47
         },
         {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "TD",
-          "value": 1
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -44,38 +62,20 @@
       "stats": []
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 2.2,
+      "points": 4.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 12
+          "value": 26
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         }
       ]
     },
@@ -85,11 +85,19 @@
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.2,
+      "points": 2.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 12
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
