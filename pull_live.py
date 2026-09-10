@@ -77,7 +77,7 @@ def build_scoreboard(week, status, matchups, projected):
 
 
 def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
-                projected):
+                projected, remaining=None):
     cat = meta["_by_week"].get(week, {})
     rows, ascending = yc.compute_bonus(week, rosters, matchups, standings)
 
@@ -90,7 +90,7 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
     else:
         cat_leaders = yc.rank_rows(rows, ascending=ascending)
         high_leaders = yc.rank_rows(
-            yc.high_score_rows(rosters, matchups, standings))
+            yc.high_score_rows(rosters, matchups, standings, remaining))
 
     cat_leaders = yc.pad_leaders(cat_leaders)
     high_leaders = yc.pad_leaders(high_leaders)
@@ -106,7 +106,8 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
     high_proj = None
     if projected:
         high_proj = yc.pad_leaders(
-            yc.rank_rows(yc.high_score_projected_rows(matchups, projected)))
+            yc.rank_rows(
+                yc.high_score_projected_rows(matchups, projected, remaining)))
 
     cat_proj = None
     proj_rows, proj_ascending = yc.compute_bonus_projected(week, matchups, projected)
@@ -235,9 +236,11 @@ def main():
 
     if sb_raw:
         sb_week, status, matchups = yc.parse_scoreboard(sb_raw)
+        remaining = yc.remaining_starters(sb_raw, rosters)
         projected = yc.parse_projected(sb_raw)
     else:
         sb_week, status, matchups = (args.week or 1), "pregame", []
+        remaining = yc.remaining_starters(None, rosters)
         projected = {}
 
     week = args.week or sb_week or 1
@@ -251,7 +254,7 @@ def main():
                build_scoreboard(week, status, matchups, projected), args.dry_run)
     write_json(out_dir / "bonus.json",
                build_bonus(week, status, rosters, matchups, standings, meta,
-                           args.show_pregame, projected),
+                           args.show_pregame, projected, remaining),
                args.dry_run)
     write_json(out_dir / "top-players.json",
                build_top_players(week, status, rosters, stat_buckets), args.dry_run)

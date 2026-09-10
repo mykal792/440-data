@@ -499,8 +499,18 @@ def parse_projected(payload):
             manager = TEAM_MAP.get(str(tmeta.get("team_id", "")))
             if manager is None:
                 continue
-            proj = find_key(team[1:], "team_projected_points")
-            if isinstance(proj, dict) and proj.get("total") is not None:
+            # team_live_projected_points is the number Yahoo's site shows as
+            # "projected final" during games - points banked so far plus a
+            # projection for the starters still to play. It only appears once
+            # the week is live; before kickoff only the pregame field exists,
+            # and that one barely moves after games start. Live first.
+            proj = None
+            for field in ("team_live_projected_points", "team_projected_points"):
+                found = find_key(team[1:], field)
+                if isinstance(found, dict) and found.get("total") is not None:
+                    proj = found
+                    break
+            if proj is not None:
                 out[manager] = round(fnum(proj.get("total")), 2)
     return out
 
@@ -839,12 +849,12 @@ def projected_matchups(matchups, projected):
     return out
 
 
-def high_score_projected_rows(matchups, projected):
+def high_score_projected_rows(matchups, projected, remaining=None):
     """High Score, ranked by projected final instead of points so far."""
     rows = []
     for m in projected_matchups(matchups, projected):
         for manager, value in (m["home"], m["away"]):
-            rows.append((manager, value, "proj. final"))
+            rows.append((manager, value, "PROJ" + _left(remaining, manager)))
     return rows
 
 
@@ -865,11 +875,56 @@ def compute_bonus_projected(week, matchups, projected):
     return calc({}, projected_matchups(matchups, projected), {}), week in ASCENDING
 
 
-def high_score_rows(rosters, matchups, standings):
+def remaining_starters(payload, rosters):
+    """-> {manager_key: int} starters who have not played yet.
+
+    Yahoo publishes team_remaining_games on live scoreboards but omits it
+    outside game windows, so this falls back to counting starters with no
+    score. The fallback slightly overstates late in a week (a genuine zero
+    keeps counting) which is the safe direction: it never claims a team is
+    done when it isn't.
+    """
+    out = {}
+    if payload:
+        league = payload["fantasy_content"]["league"]
+        sb = find_key(league[1:], "scoreboard") or league[1].get("scoreboard")
+        container = ((sb or {}).get("0", {}).get("matchups")
+                     or (sb or {}).get("matchups"))
+        for wrapper in numbered(container or {}):
+            m = wrapper.get("matchup")
+            mm = merge_meta(m) if isinstance(m, list) else (m or {})
+            teams_c = mm.get("0", {}).get("teams") or mm.get("teams") or {}
+            for tw in numbered(teams_c):
+                team = tw.get("team")
+                if team is None:
+                    continue
+                tmeta = merge_meta(team[0] if isinstance(team[0], list) else team)
+                manager = TEAM_MAP.get(str(tmeta.get("team_id", "")))
+                if manager is None:
+                    continue
+                rg = find_key(team[1:], "team_remaining_games")
+                total = merge_meta(rg).get("total") if rg is not None else None
+                if total is not None:
+                    out[manager] = int(fnum(total))
+
+    if len(out) < len(MANAGER_KEYS):
+        out = {manager: sum(1 for p in team["players"]
+                            if p["slot"] in STARTING_SLOTS and p["points"] == 0.0)
+               for manager, team in rosters.items()}
+    return out
+
+
+def _left(remaining, manager):
+    """' - 3 LEFT', or '' when nobody is left or the count is unknown."""
+    n = (remaining or {}).get(manager)
+    return " - %d LEFT" % n if n else ""
+
+
+def high_score_rows(rosters, matchups, standings, remaining=None):
     rows = []
     for m in matchups:
         for manager, score in (m["home"], m["away"]):
-            rows.append((manager, score, "week total"))
+            rows.append((manager, score, "TOTAL" + _left(remaining, manager)))
     return rows
 
 
