@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-11T00:30:26Z",
+  "updated": "2026-09-11T00:40:22Z",
   "players": [
     {
       "name": "Jaxon Smith-Njigba",
@@ -83,6 +83,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -115,6 +124,38 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
         }
       ]
     },
@@ -596,27 +637,9 @@
       "stats": []
     },
     {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
@@ -851,15 +874,6 @@
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
