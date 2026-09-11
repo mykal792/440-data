@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-11T00:45:25Z",
+  "updated": "2026-09-11T00:50:28Z",
   "players": [
     {
       "name": "Jaxon Smith-Njigba",
@@ -83,20 +83,20 @@
       ]
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
+      "points": 7.0,
+      "stats": []
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 7.0,
       "stats": []
     },
@@ -128,6 +128,37 @@
       ]
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.0,
+      "stats": []
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -142,20 +173,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
         }
       ]
     },
@@ -870,15 +887,6 @@
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
