@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T22:25:24Z",
+  "updated": "2026-09-13T22:30:25Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -126,6 +126,32 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 30.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 102
+        },
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -222,32 +248,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 26.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 95
-        },
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -712,6 +712,24 @@
       "stats": []
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 86
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Cairo Santos",
       "position": "K",
       "team": "Chi",
@@ -835,24 +853,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 80
-        },
-        {
-          "stat": "REC",
-          "value": 6
         }
       ]
     },
@@ -1312,11 +1312,11 @@
       "team": "Was",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 3.4,
+      "points": 4.04,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 45
+          "value": 61
         },
         {
           "stat": "RUSH YD",
