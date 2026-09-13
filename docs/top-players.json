@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T21:20:24Z",
+  "updated": "2026-09-13T21:25:19Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -757,11 +757,11 @@
       "team": "Phi",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.24,
+      "points": 10.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 91
+          "value": 99
         },
         {
           "stat": "RUSH YD",
@@ -799,6 +799,24 @@
       "manager_display": "GANGUS",
       "points": 9.8,
       "stats": []
+    },
+    {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 74
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
     },
     {
       "name": "Bhayshul Tuten",
@@ -960,24 +978,6 @@
       ]
     },
     {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 60
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -1059,6 +1059,28 @@
       ]
     },
     {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -1077,28 +1099,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 6.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
     },
@@ -1143,16 +1143,25 @@
       ]
     },
     {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "De'Von Achane",
       "position": "RB",
       "team": "Mia",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 5.1,
+      "points": 5.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 20
+          "value": 19
         },
         {
           "stat": "REC YD",
@@ -1165,13 +1174,22 @@
       ]
     },
     {
-      "name": "Chargers",
-      "position": "DEF",
+      "name": "Justin Herbert",
+      "position": "QB",
       "team": "LAC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.0,
-      "stats": []
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.98,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 112
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        }
+      ]
     },
     {
       "name": "Michael Mayer",
@@ -1250,24 +1268,6 @@
       ]
     },
     {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.38,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 72
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Rico Dowdle",
       "position": "RB",
       "team": "Pit",
@@ -1317,6 +1317,28 @@
       "stats": []
     },
     {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -1349,20 +1371,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 14
         }
       ]
     },
