@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T20:40:22Z",
+  "updated": "2026-09-13T20:45:26Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -673,6 +673,28 @@
       ]
     },
     {
+      "name": "Juwan Johnson",
+      "position": "TE",
+      "team": "NO",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 36
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -850,6 +872,24 @@
       ]
     },
     {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 60
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -868,28 +908,6 @@
       ]
     },
     {
-      "name": "Juwan Johnson",
-      "position": "TE",
-      "team": "NO",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Sam LaPorta",
       "position": "TE",
       "team": "Det",
@@ -904,6 +922,24 @@
         {
           "stat": "REC",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -1167,16 +1203,38 @@
       "stats": []
     },
     {
-      "name": "Ladd McConkey",
-      "position": "WR",
+      "name": "Justin Herbert",
+      "position": "QB",
       "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.3,
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.8,
       "stats": [
         {
-          "stat": "REC YD",
+          "stat": "PASS YD",
+          "value": 60
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
           "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
         },
         {
           "stat": "REC",
@@ -1203,16 +1261,20 @@
       ]
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 1.8,
+      "points": 1.7,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 18
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1235,11 +1297,11 @@
       ]
     },
     {
-      "name": "Harrison Mevis",
+      "name": "Cameron Dicker",
       "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
       "points": 1.0,
       "stats": []
     },
@@ -1249,11 +1311,11 @@
       "team": "Phi",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.72,
+      "points": 1.0,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 3
+          "value": 10
         },
         {
           "stat": "RUSH YD",
@@ -1262,18 +1324,13 @@
       ]
     },
     {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.72,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 18
-        }
-      ]
+      "name": "Harrison Mevis",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Jayden Daniels",
@@ -1295,25 +1352,11 @@
       "team": "Phi",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.4,
+      "points": 0.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
+          "value": 5
         }
       ]
     },
@@ -1348,15 +1391,6 @@
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Cameron Dicker",
-      "position": "K",
-      "team": "LAC",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1440,15 +1474,6 @@
       "team": "KC",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 0.0,
       "stats": []
     },
