@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T20:35:20Z",
+  "updated": "2026-09-13T20:40:22Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -226,6 +226,24 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 25.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 182
+        },
+        {
+          "stat": "REC",
+          "value": 10
+        }
+      ]
+    },
+    {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "team": "Sea",
@@ -296,24 +314,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 22.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 162
-        },
-        {
-          "stat": "REC",
-          "value": 9
         }
       ]
     },
@@ -638,11 +638,11 @@
       "team": "NO",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 11.2,
+      "points": 11.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 45
+          "value": 46
         },
         {
           "stat": "REC YD",
@@ -908,15 +908,6 @@
       ]
     },
     {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -1020,6 +1011,15 @@
       ]
     },
     {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -1052,6 +1052,24 @@
         {
           "stat": "REC YD",
           "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Michael Mayer",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 21
         },
         {
           "stat": "REC",
@@ -1149,6 +1167,24 @@
       "stats": []
     },
     {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -1172,11 +1208,29 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 1.5,
+      "points": 1.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 18
+        }
+      ]
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1190,6 +1244,38 @@
       "stats": []
     },
     {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 3
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 18
+        }
+      ]
+    },
+    {
       "name": "Jayden Daniels",
       "position": "QB",
       "team": "Was",
@@ -1200,6 +1286,34 @@
         {
           "stat": "PASS YD",
           "value": 13
+        }
+      ]
+    },
+    {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
         }
       ]
     },
@@ -1285,29 +1399,11 @@
       "stats": []
     },
     {
-      "name": "Michael Mayer",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 0.0,
       "stats": []
     },
@@ -1330,38 +1426,11 @@
       "stats": []
     },
     {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
@@ -1416,24 +1485,6 @@
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     }
