@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T20:00:30Z",
+  "updated": "2026-09-13T20:05:22Z",
   "players": [
     {
       "name": "Derrick Henry",
@@ -9,11 +9,11 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 35.9,
+      "points": 36.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 135
+          "value": 144
         },
         {
           "stat": "REC YD",
@@ -22,6 +22,50 @@
         {
           "stat": "REC",
           "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 35.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 268
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 65
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 34.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 300
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 24
         },
         {
           "stat": "TD",
@@ -48,50 +92,6 @@
         {
           "stat": "TD",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 33.46,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 239
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 59
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 31.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 265
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -322,6 +322,24 @@
       "stats": []
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 18.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 120
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -374,20 +392,28 @@
       ]
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 16.7,
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 16.3,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 56
+        },
+        {
           "stat": "REC YD",
-          "value": 112
+          "value": 22
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -397,15 +423,15 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 16.2,
+      "points": 16.26,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 255
+          "value": 254
         },
         {
           "stat": "RUSH YD",
-          "value": 20
+          "value": 21
         },
         {
           "stat": "TD",
@@ -436,32 +462,6 @@
         {
           "stat": "REC",
           "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 15.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 50
-        },
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 5
         },
         {
           "stat": "TD",
@@ -776,11 +776,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 8.5,
+      "points": 8.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 58
+          "value": 57
         },
         {
           "stat": "REC YD",
@@ -791,6 +791,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 8.0,
+      "stats": []
     },
     {
       "name": "Tee Higgins",
@@ -855,15 +864,6 @@
       "stats": []
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -882,6 +882,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -929,24 +947,6 @@
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 4.1,
@@ -1034,11 +1034,11 @@
       "team": "Pit",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 2.9,
+      "points": 2.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 11
         },
         {
           "stat": "REC YD",
