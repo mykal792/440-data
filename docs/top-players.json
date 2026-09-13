@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T23:25:23Z",
+  "updated": "2026-09-13T23:30:29Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -274,6 +274,28 @@
       ]
     },
     {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 27.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 92
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -388,6 +410,28 @@
       ]
     },
     {
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 21.7,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 165
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 31
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -428,28 +472,6 @@
         {
           "stat": "REC",
           "value": 9
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 19.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 83
-        },
-        {
-          "stat": "REC",
-          "value": 7
         },
         {
           "stat": "TD",
@@ -623,28 +645,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 15.62,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 163
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 31
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -1296,15 +1296,6 @@
       ]
     },
     {
-      "name": "Eagles",
-      "position": "DEF",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -1361,6 +1352,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Eagles",
+      "position": "DEF",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.0,
+      "stats": []
     },
     {
       "name": "Rico Dowdle",
