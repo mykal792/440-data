@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T17:40:22Z",
+  "updated": "2026-09-13T17:45:23Z",
   "players": [
     {
       "name": "Jaxon Smith-Njigba",
@@ -31,11 +31,11 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 16.2,
+      "points": 16.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 100
+          "value": 109
         },
         {
           "stat": "RUSH YD",
@@ -214,6 +214,28 @@
       ]
     },
     {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 83
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -258,28 +280,6 @@
       ]
     },
     {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.74,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 66
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -287,6 +287,28 @@
       "manager_display": "ANTHONY",
       "points": 10.6,
       "stats": []
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.26,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 49
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Ravens",
@@ -316,43 +338,16 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "David Montgomery",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 7.8,
+      "points": 7.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 11
         },
         {
           "stat": "REC YD",
@@ -374,15 +369,51 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 7.5,
+      "points": 7.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 18
         },
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 66
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -418,6 +449,15 @@
       "stats": []
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -434,24 +474,6 @@
       "manager_display": "SCARPITTI",
       "points": 6.0,
       "stats": []
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 49
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Nico Collins",
@@ -472,6 +494,46 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "team": "Det",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -508,46 +570,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 26
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -672,6 +694,15 @@
       "stats": []
     },
     {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -690,24 +721,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 33
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
         }
       ]
     },
@@ -744,13 +757,18 @@
       ]
     },
     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
       "points": 1.0,
-      "stats": []
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        }
+      ]
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -799,20 +817,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rico Dowdle",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
         }
       ]
     },
@@ -1205,7 +1209,7 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": -0.7,
+      "points": -0.8,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -1213,7 +1217,7 @@
         },
         {
           "stat": "REC YD",
-          "value": -1
+          "value": -2
         },
         {
           "stat": "REC",
