@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T22:00:35Z",
+  "updated": "2026-09-13T22:05:23Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -1102,6 +1102,24 @@
       "stats": []
     },
     {
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 126
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 16
+        }
+      ]
+    },
+    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -1161,20 +1179,24 @@
       ]
     },
     {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 6.24,
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.2,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 126
+          "stat": "RUSH YD",
+          "value": 31
         },
         {
-          "stat": "RUSH YD",
-          "value": 12
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1215,28 +1237,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "De'Von Achane",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 26
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
