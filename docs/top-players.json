@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T20:55:17Z",
+  "updated": "2026-09-13T21:00:32Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -572,11 +572,11 @@
       "team": "NO",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 13.0,
+      "points": 12.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 55
+          "value": 54
         },
         {
           "stat": "REC",
@@ -682,11 +682,11 @@
       "team": "NO",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 11.3,
+      "points": 11.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 46
+          "value": 45
         },
         {
           "stat": "REC YD",
@@ -837,6 +837,24 @@
       ]
     },
     {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 24
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -970,24 +988,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1278,7 +1278,7 @@
       "team": "LAC",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 2.8,
+      "points": 2.9,
       "stats": [
         {
           "stat": "PASS YD",
@@ -1286,7 +1286,25 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 4
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1327,38 +1345,6 @@
       ]
     },
     {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        }
-      ]
-    },
-    {
       "name": "Cameron Dicker",
       "position": "K",
       "team": "LAC",
@@ -1366,6 +1352,20 @@
       "manager_display": "SCHILLING",
       "points": 1.0,
       "stats": []
+    },
+    {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        }
+      ]
     },
     {
       "name": "Harrison Mevis",
