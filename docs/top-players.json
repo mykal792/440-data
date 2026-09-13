@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T22:05:23Z",
+  "updated": "2026-09-13T22:10:22Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -384,6 +384,28 @@
       "stats": []
     },
     {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 17.98,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 122
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -406,28 +428,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 17.62,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 113
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -581,11 +581,11 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 14.1,
+      "points": 14.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 46
+          "value": 51
         },
         {
           "stat": "REC YD",
@@ -774,11 +774,11 @@
       "team": "Ari",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 11.1,
+      "points": 11.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 32
+          "value": 34
         },
         {
           "stat": "REC YD",
@@ -1147,20 +1147,6 @@
       ]
     },
     {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 6.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 64
-        }
-      ]
-    },
-    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -1175,6 +1161,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
         }
       ]
     },
