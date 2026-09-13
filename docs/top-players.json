@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T19:10:27Z",
+  "updated": "2026-09-13T19:15:28Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -53,11 +53,11 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 28.0,
+      "points": 28.52,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 190
+          "value": 203
         },
         {
           "stat": "RUSH YD",
@@ -201,11 +201,11 @@
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 19.8,
+      "points": 20.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 37
+          "value": 39
         },
         {
           "stat": "REC YD",
@@ -326,6 +326,15 @@
       ]
     },
     {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 14.0,
+      "stats": []
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -411,15 +420,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 13.0,
-      "stats": []
     },
     {
       "name": "Chase Brown",
@@ -633,15 +633,6 @@
       "stats": []
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -718,6 +709,15 @@
       ]
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Cairo Santos",
       "position": "K",
       "team": "Chi",
@@ -763,6 +763,28 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 43
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -777,28 +799,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 39
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -835,6 +835,33 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.0,
+      "stats": []
+    },
+    {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -883,6 +910,28 @@
       ]
     },
     {
+      "name": "Travis Etienne Jr.",
+      "position": "RB",
+      "team": "NO",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -906,15 +955,6 @@
       "team": "Hou",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 3.0,
-      "stats": []
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 3.0,
       "stats": []
     },
@@ -986,28 +1026,6 @@
       ]
     },
     {
-      "name": "Travis Etienne Jr.",
-      "position": "RB",
-      "team": "NO",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1036,24 +1054,6 @@
         {
           "stat": "RUSH YD",
           "value": 13
-        }
-      ]
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
