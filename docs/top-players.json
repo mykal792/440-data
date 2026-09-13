@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T19:45:24Z",
+  "updated": "2026-09-13T19:50:26Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -301,11 +301,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 17.9,
+      "points": 17.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 93
+          "value": 91
         },
         {
           "stat": "REC YD",
@@ -374,6 +374,24 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 16.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 112
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -400,20 +418,28 @@
       ]
     },
     {
-      "name": "Chris Olave",
+      "name": "Nico Collins",
       "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 15.3,
+      "team": "Hou",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 16.0,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
           "stat": "REC YD",
-          "value": 103
+          "value": 63
         },
         {
           "stat": "REC",
           "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -470,32 +496,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Nico Collins",
-      "position": "WR",
-      "team": "Hou",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 14.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 55
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -651,6 +651,15 @@
       "stats": []
     },
     {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -665,6 +674,37 @@
         {
           "stat": "REC",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 9.8,
+      "stats": []
+    },
+    {
+      "name": "Travis Etienne Jr.",
+      "position": "RB",
+      "team": "NO",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 27
+        },
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 7
         }
       ]
     },
@@ -691,15 +731,6 @@
       ]
     },
     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.0,
-      "stats": []
-    },
-    {
       "name": "Emeka Egbuka",
       "position": "WR",
       "team": "TB",
@@ -718,35 +749,26 @@
       ]
     },
     {
-      "name": "Travis Etienne Jr.",
-      "position": "RB",
-      "team": "NO",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
+      "name": "Tyler Warren",
+      "position": "TE",
+      "team": "Ind",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 8.8,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 27
-        },
-        {
           "stat": "REC YD",
-          "value": 31
+          "value": 13
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.0,
-      "stats": []
     },
     {
       "name": "Patriots",
@@ -756,6 +778,32 @@
       "manager_display": "GREG",
       "points": 7.0,
       "stats": []
+    },
+    {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jason Myers",
@@ -787,6 +835,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.0,
+      "stats": []
     },
     {
       "name": "Quinshon Judkins",
@@ -905,15 +962,6 @@
       ]
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.0,
-      "stats": []
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -932,37 +980,29 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 3.1,
       "stats": [
         {
@@ -1032,42 +1072,6 @@
       "manager_display": "SCOTTY",
       "points": 2.0,
       "stats": []
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Harrison Mevis",
