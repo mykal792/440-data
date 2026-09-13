@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T18:50:26Z",
+  "updated": "2026-09-13T18:55:21Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -197,11 +197,11 @@
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 17.5,
+      "points": 18.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 19
         },
         {
           "stat": "REC YD",
@@ -240,13 +240,34 @@
       ]
     },
     {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 16.0,
-      "stats": []
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 15.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 87
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jonathan Taylor",
@@ -336,34 +357,39 @@
       "stats": []
     },
     {
-      "name": "Jahmyr Gibbs",
+      "name": "Breece Hall",
       "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 13.7,
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 67
+          "value": 49
         },
         {
           "stat": "REC YD",
-          "value": 15
+          "value": 16
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 2
         },
         {
           "stat": "TD",
           "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.0,
+      "stats": []
     },
     {
       "name": "Nico Collins",
@@ -497,6 +523,15 @@
       "stats": []
     },
     {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.5,
+      "stats": []
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -608,28 +643,6 @@
       "stats": []
     },
     {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 45
-        },
-        {
-          "stat": "REC YD",
-          "value": 16
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -688,6 +701,24 @@
       "stats": []
     },
     {
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "team": "Det",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 39
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -738,33 +769,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.0,
-      "stats": []
-    },
-    {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 32
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -916,6 +920,28 @@
       ]
     },
     {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -926,28 +952,6 @@
         {
           "stat": "REC YD",
           "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
         },
         {
           "stat": "REC",
