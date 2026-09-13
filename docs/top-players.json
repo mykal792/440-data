@@ -1,8 +1,30 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T18:15:24Z",
+  "updated": "2026-09-13T18:20:23Z",
   "players": [
+    {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 25.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 150
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Trevor Lawrence",
       "position": "QB",
@@ -48,42 +70,46 @@
       ]
     },
     {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 23.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 138
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 22.18,
+      "points": 22.66,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 202
+          "value": 214
         },
         {
           "stat": "RUSH YD",
           "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 20.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 1
         },
         {
           "stat": "TD",
@@ -97,33 +123,15 @@
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 19.46,
+      "points": 19.66,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 129
+          "value": 134
         },
         {
           "stat": "RUSH YD",
           "value": 23
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "David Montgomery",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 17.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 52
         },
         {
           "stat": "TD",
@@ -137,15 +145,41 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 17.08,
+      "points": 18.6,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 67
+          "value": 105
         },
         {
           "stat": "RUSH YD",
           "value": 24
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 18.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 52
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
         },
         {
           "stat": "TD",
@@ -190,11 +224,11 @@
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 15.0,
+      "points": 15.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 17
         },
         {
           "stat": "REC YD",
@@ -251,7 +285,7 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 13.3,
+      "points": 12.2,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -259,17 +293,30 @@
         },
         {
           "stat": "REC YD",
-          "value": 11
+          "value": 15
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         },
         {
           "stat": "TD",
           "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.0,
+      "stats": []
     },
     {
       "name": "Rhamondre Stevenson",
@@ -342,32 +389,6 @@
       ]
     },
     {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 11.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 28
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -425,15 +446,6 @@
       ]
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -448,6 +460,36 @@
         {
           "stat": "REC",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 9.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 31
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -484,7 +526,7 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 8.7,
+      "points": 8.6,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -492,14 +534,18 @@
         },
         {
           "stat": "REC YD",
-          "value": 2
+          "value": 16
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         },
         {
           "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -519,6 +565,15 @@
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
+      "points": 7.0,
+      "stats": []
+    },
+    {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 7.0,
       "stats": []
     },
@@ -679,6 +734,15 @@
       ]
     },
     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -734,24 +798,6 @@
       "team": "Cin",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 3.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.0,
-      "stats": []
-    },
-    {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 3.0,
       "stats": []
     },
@@ -822,32 +868,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
@@ -952,6 +972,24 @@
       ]
     },
     {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Harrison Mevis",
       "position": "K",
       "team": "LAR",
@@ -1041,15 +1079,6 @@
       "name": "Cam Skattebo",
       "position": "RB",
       "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
