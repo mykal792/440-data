@@ -1,8 +1,52 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T20:05:22Z",
+  "updated": "2026-09-13T20:10:24Z",
   "players": [
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 41.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 334
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 24
+        },
+        {
+          "stat": "TD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 41.26,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 269
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 65
+        },
+        {
+          "stat": "TD",
+          "value": 4
+        }
+      ]
+    },
     {
       "name": "Derrick Henry",
       "position": "RB",
@@ -22,50 +66,6 @@
         {
           "stat": "REC",
           "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 35.22,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 268
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 65
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 34.4,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 300
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 24
         },
         {
           "stat": "TD",
@@ -96,32 +96,6 @@
       ]
     },
     {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 29.26,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 324
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -140,6 +114,32 @@
         {
           "stat": "REC",
           "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 28.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 324
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 40
         },
         {
           "stat": "TD",
@@ -278,6 +278,24 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 22.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 163
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -320,24 +338,6 @@
       "manager_display": "SCARPITTI",
       "points": 19.0,
       "stats": []
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 18.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 120
-        },
-        {
-          "stat": "REC",
-          "value": 8
-        }
-      ]
     },
     {
       "name": "Bucky Irving",
@@ -423,7 +423,7 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 16.26,
+      "points": 16.16,
       "stats": [
         {
           "stat": "PASS YD",
@@ -431,7 +431,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 21
+          "value": 20
         },
         {
           "stat": "TD",
@@ -624,6 +624,15 @@
       ]
     },
     {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -648,15 +657,6 @@
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 10.6,
-      "stats": []
-    },
-    {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.0,
       "stats": []
     },
     {
@@ -802,6 +802,32 @@
       "stats": []
     },
     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 46
+        },
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -820,6 +846,28 @@
       ]
     },
     {
+      "name": "Juwan Johnson",
+      "position": "TE",
+      "team": "NO",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -827,32 +875,6 @@
       "manager_display": "GREG",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 37
-        },
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Jason Myers",
@@ -1002,6 +1024,28 @@
       ]
     },
     {
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -1029,28 +1073,6 @@
       "stats": []
     },
     {
-      "name": "Rico Dowdle",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -1067,15 +1089,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.0,
-      "stats": []
     },
     {
       "name": "Harrison Mevis",
@@ -1222,15 +1235,6 @@
       "stats": []
     },
     {
-      "name": "Juwan Johnson",
-      "position": "TE",
-      "team": "NO",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jayden Daniels",
       "position": "QB",
       "team": "Was",
@@ -1360,6 +1364,15 @@
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.0,
+      "stats": []
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
