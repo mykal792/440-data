@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T19:40:22Z",
+  "updated": "2026-09-13T19:45:24Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -253,7 +253,7 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 22.3,
+      "points": 23.6,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -261,11 +261,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 15
+          "value": 23
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         },
         {
           "stat": "TD",
@@ -278,6 +278,15 @@
       ]
     },
     {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 19.5,
+      "stats": []
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -287,13 +296,30 @@
       "stats": []
     },
     {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 17.0,
-      "stats": []
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 17.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 93
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Bucky Irving",
@@ -348,24 +374,24 @@
       ]
     },
     {
-      "name": "Breece Hall",
+      "name": "Chase Brown",
       "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 16.4,
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 16.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 78
+          "value": 52
         },
         {
           "stat": "REC YD",
-          "value": 16
+          "value": 23
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 5
         },
         {
           "stat": "TD",
@@ -374,12 +400,30 @@
       ]
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 16.3,
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 15.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 103
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 15.0,
       "stats": []
     },
     {
@@ -400,6 +444,32 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 14.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 205
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -426,32 +496,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 14.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 201
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -492,32 +536,6 @@
       "stats": []
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 13.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 39
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -525,24 +543,6 @@
       "manager_display": "GARRETT",
       "points": 12.7,
       "stats": []
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 12.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 98
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Rhamondre Stevenson",
@@ -718,6 +718,28 @@
       ]
     },
     {
+      "name": "Travis Etienne Jr.",
+      "position": "RB",
+      "team": "NO",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 27
+        },
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -734,28 +756,6 @@
       "manager_display": "GREG",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "Travis Etienne Jr.",
-      "position": "RB",
-      "team": "NO",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 6.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 29
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Jason Myers",
@@ -847,6 +847,28 @@
       ]
     },
     {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
@@ -890,24 +912,6 @@
       "manager_display": "GANGUS",
       "points": 4.0,
       "stats": []
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 29
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Jameson Williams",
