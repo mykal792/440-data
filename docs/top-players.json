@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T19:00:31Z",
+  "updated": "2026-09-13T19:05:22Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -53,11 +53,11 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 27.72,
+      "points": 28.0,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 183
+          "value": 190
         },
         {
           "stat": "RUSH YD",
@@ -119,11 +119,11 @@
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 23.16,
+      "points": 23.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 229
+          "value": 239
         },
         {
           "stat": "RUSH YD",
@@ -270,6 +270,32 @@
       ]
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 15.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 73
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -357,47 +383,12 @@
       "stats": []
     },
     {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 49
-        },
-        {
-          "stat": "REC YD",
-          "value": 16
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 13.0,
-      "stats": []
-    },
-    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 12.9,
+      "points": 13.0,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -405,7 +396,7 @@
         },
         {
           "stat": "REC YD",
-          "value": 32
+          "value": 33
         },
         {
           "stat": "REC",
@@ -420,6 +411,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.0,
+      "stats": []
     },
     {
       "name": "Nico Collins",
@@ -446,6 +446,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.7,
+      "stats": []
     },
     {
       "name": "Chase Brown",
@@ -589,6 +598,24 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 74
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -625,25 +652,16 @@
       ]
     },
     {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.7,
-      "stats": []
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 8.2,
+      "points": 8.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 55
+          "value": 54
         },
         {
           "stat": "REC YD",
@@ -663,24 +681,6 @@
       "manager_display": "SCARPITTI",
       "points": 8.0,
       "stats": []
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 7.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 51
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
     },
     {
       "name": "Patriots",
@@ -831,16 +831,34 @@
       ]
     },
     {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 3.1,
+      "points": 3.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 8
+          "value": 12
         },
         {
           "stat": "REC YD",
@@ -882,24 +900,6 @@
       "manager_display": "ANTHONY",
       "points": 3.0,
       "stats": []
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Ja'Marr Chase",
