@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T17:26:41Z",
+  "updated": "2026-09-13T17:30:28Z",
   "players": [
     {
       "name": "Jaxon Smith-Njigba",
@@ -59,6 +59,54 @@
       "manager_display": "GRAHAM",
       "points": 14.0,
       "stats": []
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 47
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jaguars",
@@ -140,28 +188,6 @@
       ]
     },
     {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 11.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -238,6 +264,24 @@
       ]
     },
     {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 63
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
@@ -252,24 +296,6 @@
         {
           "stat": "RUSH YD",
           "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 8.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 51
         },
         {
           "stat": "TD",
@@ -322,28 +348,6 @@
       "stats": []
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -358,6 +362,28 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "Hou",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 34
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -491,24 +517,16 @@
       ]
     },
     {
-      "name": "Nico Collins",
-      "position": "WR",
+      "name": "David Montgomery",
+      "position": "RB",
       "team": "Hou",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.1,
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "value": 17
         }
       ]
     },
@@ -541,20 +559,6 @@
         {
           "stat": "RUSH YD",
           "value": 15
-        }
-      ]
-    },
-    {
-      "name": "David Montgomery",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 14
         }
       ]
     },
