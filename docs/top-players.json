@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T19:15:28Z",
+  "updated": "2026-09-13T19:20:24Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -114,16 +114,42 @@
       ]
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 24.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 96
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 23.56,
+      "points": 23.92,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 239
+          "value": 248
         },
         {
           "stat": "RUSH YD",
@@ -170,32 +196,6 @@
       ]
     },
     {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 20.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 63
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -218,6 +218,32 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 19.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 57
+        },
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -252,30 +278,13 @@
       ]
     },
     {
-      "name": "David Montgomery",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 18.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 57
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 17.0,
+      "stats": []
     },
     {
       "name": "Parker Washington",
@@ -324,15 +333,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 14.0,
-      "stats": []
     },
     {
       "name": "Kyren Williams",
@@ -387,6 +387,32 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 13.48,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 187
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -481,32 +507,6 @@
       "manager_display": "GARRETT",
       "points": 12.7,
       "stats": []
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 12.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 163
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Rhamondre Stevenson",
@@ -915,11 +915,11 @@
       "team": "NO",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 3.3,
+      "points": 3.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 13
         },
         {
           "stat": "REC YD",
@@ -968,6 +968,28 @@
       "stats": []
     },
     {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -986,20 +1008,20 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
+      "name": "Rico Dowdle",
       "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.1,
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 13
         },
         {
           "stat": "REC YD",
-          "value": 1
+          "value": 2
         },
         {
           "stat": "REC",
@@ -1040,20 +1062,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Rico Dowdle",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
         }
       ]
     },
