@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T19:05:22Z",
+  "updated": "2026-09-13T19:10:27Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -201,11 +201,11 @@
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 19.5,
+      "points": 19.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 34
+          "value": 37
         },
         {
           "stat": "REC YD",
@@ -217,6 +217,36 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 18.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 62
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -296,58 +326,6 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 15.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 14.48,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 162
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -381,6 +359,28 @@
       "manager_display": "GRAHAM",
       "points": 14.0,
       "stats": []
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 46
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Bucky Irving",
@@ -422,6 +422,32 @@
       "stats": []
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 43
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -457,27 +483,27 @@
       "stats": []
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
+      "name": "Joe Burrow",
+      "position": "QB",
       "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.3,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.52,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 163
+        },
+        {
           "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 2
+          "value": 20
         },
         {
           "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -553,6 +579,42 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 87
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -585,24 +647,6 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 9.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 74
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 9.9,
       "stats": [
         {
@@ -715,42 +759,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -871,6 +879,24 @@
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1116,15 +1142,6 @@
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
