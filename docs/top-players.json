@@ -1,8 +1,30 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T18:40:22Z",
+  "updated": "2026-09-13T18:45:26Z",
   "players": [
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 33.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 220
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 4
+        }
+      ]
+    },
     {
       "name": "Caleb Williams",
       "position": "QB",
@@ -70,28 +92,6 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 24.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 166
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "team": "Sea",
@@ -109,6 +109,32 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 23.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 229
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 40
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -136,32 +162,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 20.66,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 214
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
     },
@@ -586,7 +586,16 @@
       "team": "Jax",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 7.7,
+      "points": 8.7,
+      "stats": []
+    },
+    {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.0,
       "stats": []
     },
     {
@@ -599,13 +608,26 @@
       "stats": []
     },
     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 7.0,
-      "stats": []
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 43
+        },
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jason Myers",
@@ -682,20 +704,6 @@
       "manager_display": "HAYDEN",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 47
-        }
-      ]
     },
     {
       "name": "Sam LaPorta",
