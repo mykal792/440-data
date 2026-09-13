@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T18:10:23Z",
+  "updated": "2026-09-13T18:15:24Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -70,6 +70,28 @@
       ]
     },
     {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 22.18,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 202
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Caleb Williams",
       "position": "QB",
       "team": "Chi",
@@ -84,6 +106,24 @@
         {
           "stat": "RUSH YD",
           "value": 23
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 17.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 52
         },
         {
           "stat": "TD",
@@ -136,24 +176,6 @@
       ]
     },
     {
-      "name": "David Montgomery",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 16.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 47
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -168,11 +190,11 @@
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 15.4,
+      "points": 15.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 13
         },
         {
           "stat": "REC YD",
@@ -181,28 +203,6 @@
         {
           "stat": "REC",
           "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 14.02,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 148
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
         },
         {
           "stat": "TD",
@@ -461,6 +461,24 @@
       "stats": []
     },
     {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "team": "TB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 8.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 63
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -532,24 +550,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "team": "TB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 39
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -738,6 +738,15 @@
       "stats": []
     },
     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.0,
+      "stats": []
+    },
+    {
       "name": "Cairo Santos",
       "position": "K",
       "team": "Chi",
@@ -761,11 +770,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 2.7,
+      "points": 2.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 9
+          "value": 11
         },
         {
           "stat": "REC YD",
@@ -800,32 +809,6 @@
       ]
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        },
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -844,13 +827,30 @@
       ]
     },
     {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
       "points": 2.0,
-      "stats": []
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Quinshon Judkins",
