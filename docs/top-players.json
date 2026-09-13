@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T21:55:24Z",
+  "updated": "2026-09-13T22:00:35Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -122,6 +122,28 @@
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 29.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 131
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -410,28 +432,6 @@
       ]
     },
     {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 17.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 97
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -576,6 +576,32 @@
       "stats": []
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 14.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 46
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -609,32 +635,6 @@
       "manager_display": "GRAHAM",
       "points": 14.0,
       "stats": []
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 13.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Juwan Johnson",
@@ -1044,6 +1044,28 @@
       ]
     },
     {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Sam LaPorta",
       "position": "TE",
       "team": "Det",
@@ -1139,24 +1161,20 @@
       ]
     },
     {
-      "name": "Omarion Hampton",
-      "position": "RB",
+      "name": "Justin Herbert",
+      "position": "QB",
       "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 6.2,
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.24,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 126
+        },
+        {
           "stat": "RUSH YD",
-          "value": 22
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
+          "value": 12
         }
       ]
     },
@@ -1197,24 +1215,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 118
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
         }
       ]
     },
