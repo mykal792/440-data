@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T20:25:21Z",
+  "updated": "2026-09-13T20:30:31Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -101,19 +101,19 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 29.1,
+      "points": 33.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 128
+          "value": 156
         },
         {
           "stat": "REC YD",
-          "value": 23
+          "value": 30
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 5
         },
         {
           "stat": "TD",
@@ -554,6 +554,15 @@
       "stats": []
     },
     {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -646,15 +655,6 @@
       ]
     },
     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -679,6 +679,24 @@
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 10.6,
+      "stats": []
+    },
+    {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Eagles",
+      "position": "DEF",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.0,
       "stats": []
     },
     {
@@ -926,6 +944,24 @@
       "stats": []
     },
     {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -1006,20 +1042,42 @@
       ]
     },
     {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.8,
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.3,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
           "stat": "REC YD",
-          "value": 23
+          "value": 21
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1100,6 +1158,20 @@
       "stats": []
     },
     {
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 13
+        }
+      ]
+    },
+    {
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
@@ -1138,15 +1210,6 @@
     {
       "name": "Cameron Dicker",
       "position": "K",
-      "team": "LAC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chargers",
-      "position": "DEF",
       "team": "LAC",
       "manager": "schilling",
       "manager_display": "SCHILLING",
@@ -1235,15 +1298,6 @@
       "stats": []
     },
     {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
@@ -1256,15 +1310,6 @@
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
@@ -1321,24 +1366,6 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Eagles",
-      "position": "DEF",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "De'Von Achane",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 0.0,
       "stats": []
     },
