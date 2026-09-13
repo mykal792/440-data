@@ -1,8 +1,34 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T19:50:26Z",
+  "updated": "2026-09-13T19:55:19Z",
   "players": [
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 35.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 130
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
     {
       "name": "Trevor Lawrence",
       "position": "QB",
@@ -22,32 +48,6 @@
         {
           "stat": "TD",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 34.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 117
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -101,15 +101,45 @@
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 28.34,
+      "points": 29.26,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 301
+          "value": 324
         },
         {
           "stat": "RUSH YD",
           "value": 43
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 29.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 129
+        },
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 4
         },
         {
           "stat": "TD",
@@ -127,11 +157,11 @@
       "team": "Hou",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 27.3,
+      "points": 27.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 59
+          "value": 60
         },
         {
           "stat": "REC YD",
@@ -191,36 +221,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 25.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 102
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
@@ -785,7 +785,7 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 6.8,
+      "points": 6.9,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -793,7 +793,7 @@
         },
         {
           "stat": "REC YD",
-          "value": 26
+          "value": 27
         },
         {
           "stat": "REC",
@@ -980,29 +980,33 @@
       ]
     },
     {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
       "manager": "gangus",
       "manager_display": "GANGUS",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 3.1,
       "stats": [
         {
