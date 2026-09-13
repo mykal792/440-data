@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T22:50:26Z",
+  "updated": "2026-09-13T22:55:19Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -126,32 +126,6 @@
       ]
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 31.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 102
-        },
-        {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -166,6 +140,32 @@
         {
           "stat": "REC",
           "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 29.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 98
+        },
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 6
         },
         {
           "stat": "TD",
@@ -430,6 +430,28 @@
       "manager_display": "SCARPITTI",
       "points": 19.0,
       "stats": []
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 18.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 89
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Nico Collins",
@@ -710,24 +732,6 @@
       "manager_display": "GARRETT",
       "points": 12.7,
       "stats": []
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 86
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        }
-      ]
     },
     {
       "name": "Cairo Santos",
@@ -1267,6 +1271,24 @@
       ]
     },
     {
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.5,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 65
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 29
+        }
+      ]
+    },
+    {
       "name": "Michael Mayer",
       "position": "TE",
       "team": "LV",
@@ -1303,24 +1325,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 65
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 16
         }
       ]
     },
@@ -1383,15 +1387,6 @@
       ]
     },
     {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.0,
-      "stats": []
-    },
-    {
       "name": "Rams",
       "position": "DEF",
       "team": "LAR",
@@ -1425,6 +1420,15 @@
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 2.0,
+      "stats": []
+    },
+    {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.0,
       "stats": []
     },
     {
