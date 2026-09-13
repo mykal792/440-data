@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T23:10:23Z",
+  "updated": "2026-09-13T23:15:26Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -148,6 +148,28 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 31.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 206
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 48
+        },
+        {
+          "stat": "TD",
+          "value": 3
         }
       ]
     },
@@ -366,28 +388,6 @@
       ]
     },
     {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 21.08,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 162
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 26
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -436,6 +436,28 @@
       ]
     },
     {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 19.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 83
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -452,28 +474,6 @@
       "manager_display": "SCARPITTI",
       "points": 19.0,
       "stats": []
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 17.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 83
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Nico Collins",
@@ -646,6 +646,32 @@
       "stats": []
     },
     {
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 14.58,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 192
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 29
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -698,32 +724,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 13.5,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 165
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -1003,28 +1003,6 @@
       ]
     },
     {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 8.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 83
-        },
-        {
-          "stat": "REC YD",
-          "value": -1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
@@ -1092,6 +1070,20 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 80
         }
       ]
     },
