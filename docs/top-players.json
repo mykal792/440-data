@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-13T18:45:26Z",
+  "updated": "2026-09-13T18:50:26Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -171,11 +171,11 @@
       "team": "Hou",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 18.0,
+      "points": 18.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 52
+          "value": 57
         },
         {
           "stat": "REC YD",
@@ -279,6 +279,28 @@
       ]
     },
     {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 14.48,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 162
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -344,28 +366,6 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 13.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 133
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -384,6 +384,32 @@
         {
           "stat": "REC",
           "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 43
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
@@ -462,32 +488,6 @@
       ]
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 10.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 27
-        },
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -522,6 +522,15 @@
           "value": 5
         }
       ]
+    },
+    {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.7,
+      "stats": []
     },
     {
       "name": "Bucky Irving",
@@ -599,6 +608,46 @@
       "stats": []
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 45
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 51
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -639,28 +688,6 @@
       "stats": []
     },
     {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 45
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -693,6 +720,24 @@
         {
           "stat": "REC",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -782,33 +827,6 @@
       ]
     },
     {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.0,
-      "stats": []
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -885,37 +903,15 @@
       "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 2.1,
+      "points": 2.2,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 16
+          "value": 12
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -938,16 +934,20 @@
       ]
     },
     {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.7,
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.9,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
           "stat": "REC YD",
-          "value": 12
+          "value": 1
         },
         {
           "stat": "REC",
