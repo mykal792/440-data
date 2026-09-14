@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-14T02:20:27Z",
+  "updated": "2026-09-14T02:25:19Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -950,6 +950,28 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -976,6 +998,32 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 96
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -1122,54 +1170,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.28,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 72
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -1420,6 +1420,24 @@
       ]
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
@@ -1494,24 +1512,6 @@
       "manager_display": "ANTHONY",
       "points": 3.0,
       "stats": []
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Javonte Williams",
