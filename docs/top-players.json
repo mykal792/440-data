@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-14T01:35:23Z",
+  "updated": "2026-09-14T01:40:23Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -914,6 +914,28 @@
       "stats": []
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 66
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -939,28 +961,6 @@
       "manager_display": "GANGUS",
       "points": 9.8,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.48,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 52
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Bhayshul Tuten",
@@ -1108,6 +1108,28 @@
         },
         {
           "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -1265,28 +1287,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1510,6 +1510,20 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -1544,20 +1558,6 @@
       "manager_display": "SCHILLING",
       "points": 2.0,
       "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 19
-        }
-      ]
     },
     {
       "name": "Harrison Mevis",
