@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-14T03:10:24Z",
+  "updated": "2026-09-14T03:15:25Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -410,6 +410,32 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 21.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 41
+        },
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jayden Daniels",
       "position": "QB",
       "team": "Was",
@@ -496,6 +522,32 @@
       "manager_display": "SCARPITTI",
       "points": 19.0,
       "stats": []
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 18.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 175
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Nico Collins",
@@ -729,32 +781,6 @@
       "stats": []
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 13.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 41
-        },
-        {
-          "stat": "REC YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
@@ -887,32 +913,6 @@
         {
           "stat": "INT",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 11.72,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 158
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -1576,20 +1576,20 @@
       "stats": []
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.0,
-      "stats": []
-    },
-    {
       "name": "Harrison Mevis",
       "position": "K",
       "team": "LAR",
       "manager": "coyne",
       "manager_display": "COYNE",
+      "points": 1.0,
+      "stats": []
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 1.0,
       "stats": []
     },
