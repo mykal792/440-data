@@ -45,6 +45,23 @@
   gap:14px; padding:11px 20px; min-height:48px;
 }
 .tp__right{ display:flex; align-items:center; gap:14px }
+.tp__nav{ display:flex; align-items:center; gap:6px; flex:0 0 auto; min-width:0 }
+.tp__step{
+  width:20px; height:20px; padding:0; border-radius:50%; cursor:pointer;
+  border:1px solid rgba(255,255,255,.28); background:transparent; color:#cfcfcf;
+  display:grid; place-items:center; flex:0 0 auto;
+}
+.tp__step svg{ width:9px; height:9px; display:block }
+.tp__step:hover:not(:disabled){ color:var(--tp-mint); border-color:var(--tp-mint) }
+.tp__step:disabled{ opacity:.28; cursor:default }
+.tp__step:focus-visible{ outline:2px solid var(--tp-mint); outline-offset:2px }
+/* a past week is history, not a live feed - say so instead of ticking */
+.tp__back{
+  font-size:10px; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--tp-mint); background:none; border:0; padding:0 0 0 4px;
+  cursor:pointer; font-family:"Rotundo",sans-serif; flex:0 0 auto;
+}
+.tp__back[hidden]{ display:none }
 .tp__label{
   font-family:"Rotundo",sans-serif; font-size:14px; letter-spacing:.05em; margin:0;
 }
@@ -227,7 +244,9 @@
   }
   .tp__mode{ position:absolute; top:11px; right:15px }
   .tp__right{ gap:10px }
-  .tp__label{ font-size:13.5px }
+  .tp__nav{ flex:1 1 auto; max-width:100%; flex-wrap:wrap; row-gap:2px; gap:4px }
+  .tp__label{ font-size:12.3px }
+  .tp__label span{ margin-right:5px }
   .tp__logo{
     display:inline-grid; grid-template-columns:repeat(2, auto);
     gap:2px; margin-left:6px; vertical-align:middle;
@@ -277,15 +296,24 @@
 <div class="tp-wrap">
 <section class="tp" id="tp" data-status="pregame" aria-labelledby="tpLabel">
   <div class="tp__bar">
-    <p class="tp__label" id="tpLabel">
-      <span id="tpWeek">WEEK -</span><b>DOT POT</b>
-      <span class="tp__logo" aria-hidden="true">
-        <i class="tp__logo-dot" style="--c:#ff4858"></i>
-        <i class="tp__logo-dot" style="--c:#049dd9"></i>
-        <i class="tp__logo-dot" style="--c:#28b99a"></i>
-        <i class="tp__logo-dot" style="--c:#ff8a2a"></i>
-      </span>
-    </p>
+    <div class="tp__nav">
+      <button class="tp__step" id="tpPrev" type="button" aria-label="Previous week" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <p class="tp__label" id="tpLabel">
+        <span id="tpWeek">WEEK -</span><b>DOT POT</b>
+        <span class="tp__logo" aria-hidden="true">
+          <i class="tp__logo-dot" style="--c:#ff4858"></i>
+          <i class="tp__logo-dot" style="--c:#049dd9"></i>
+          <i class="tp__logo-dot" style="--c:#28b99a"></i>
+          <i class="tp__logo-dot" style="--c:#ff8a2a"></i>
+        </span>
+      </p>
+      <button class="tp__step" id="tpNext" type="button" aria-label="Next week" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+      <button class="tp__back" id="tpBack" type="button" hidden>back to live</button>
+    </div>
     <div class="tp__right">
       <p class="tp__status">
         <span class="tp__dot"></span>
@@ -317,6 +345,11 @@
   'use strict';
 
   var SOURCE = "https://mykal792.github.io/440-data/top-players.json";
+  // Archived weeks, written by pull_live.py every run. index.json says which
+  // weeks exist and which one is current; wN.json is a whole week in one file -
+  // the same archive the scoreboard reads, just a different field inside it.
+  var WEEKS_INDEX = "https://mykal792.github.io/440-data/weeks/index.json";
+  var WEEK_SOURCE = function (n) { return "https://mykal792.github.io/440-data/weeks/w" + n + ".json"; };
   // Avatars live alongside the feed, one <manager-key>.svg per manager -
   // see the /avatars folder that ships with this handoff.
   var AVATAR_BASE = SOURCE.replace(/top-players\.json$/, 'avatars/');
@@ -521,24 +554,32 @@
     ago.textContent = t;
   }
 
+  function grab(url) {
+    var withBuster = url + (url.indexOf('?') < 0 ? '?t=' : '&t=') + Date.now();
+    return fetch(withBuster, { cache: 'no-store' })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+
+  function applyData(data) {
+    players = data.players || [];
+    var stamp = Date.parse(data.updated || '');
+    updated = isNaN(stamp) ? Date.now() : stamp;
+    hasData = true;
+
+    var status = data.status || 'pregame';
+    tpSection.setAttribute('data-status', status);
+    document.getElementById('tpState').textContent = STATE_LABEL[status] || status.toUpperCase();
+    document.getElementById('tpWeek').textContent = 'WEEK ' + (data.week || '-');
+
+    tickAgo();
+    render();
+  }
+
   function load() {
+    if (viewWeek !== null) return; // reader is in the archive; leave them there
     fetch(SOURCE, { cache: 'no-store' })
       .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-      .then(function (data) {
-        players = data.players || [];
-        var stamp = Date.parse(data.updated || '');
-        updated = isNaN(stamp) ? Date.now() : stamp;
-        hasData = true;
-
-        var section = tpSection;
-        var status = data.status || 'pregame';
-        section.setAttribute('data-status', status);
-        document.getElementById('tpState').textContent = STATE_LABEL[status] || status.toUpperCase();
-        document.getElementById('tpWeek').textContent = 'WEEK ' + (data.week || '-');
-
-        tickAgo();
-        render();
-      })
+      .then(applyData)
       .catch(function () {
         hasData = false;
         players = [];
@@ -546,6 +587,53 @@
         render();
       });
   }
+
+  /* --- week browsing ---------------------------------------------------
+     viewWeek === null means "follow the live feed". Any other value pins
+     the widget to an archived week and stops the 10-minute refresh from
+     yanking the reader back to now. --------------------------------------------------- */
+  var weeksKnown = [], weekNow = null, viewWeek = null;
+
+  var prevBtn = document.getElementById('tpPrev');
+  var nextBtn = document.getElementById('tpNext');
+  var backBtn = document.getElementById('tpBack');
+
+  function paintNav() {
+    var shown = viewWeek || weekNow;
+    var older = weeksKnown.filter(function (w) { return w < shown; });
+    var newer = weeksKnown.filter(function (w) { return w > shown; });
+    prevBtn.disabled = !older.length;
+    nextBtn.disabled = !newer.length;
+    backBtn.hidden = viewWeek === null;
+  }
+
+  function loadIndex() {
+    return grab(WEEKS_INDEX).then(function (idx) {
+      weeksKnown = (idx.weeks || []).slice().sort(function (a, b) { return a - b; });
+      weekNow = idx.current;
+    }).catch(function () { /* no archive yet - arrows stay disabled */ })
+      .then(paintNav);
+  }
+
+  function showWeek(n) {
+    if (n === weekNow) { viewWeek = null; paintNav(); return load(); }
+    return grab(WEEK_SOURCE(n)).then(function (w) {
+      viewWeek = n;
+      applyData({ week: w.week, status: w.status, updated: w.updated, players: w.top_players || [] });
+      paintNav();
+    }).catch(function () { /* missing snapshot - leave the view alone */ });
+  }
+
+  function step(dir) {
+    var shown = viewWeek || weekNow;
+    var pool = dir < 0 ? weeksKnown.filter(function (w) { return w < shown; })
+                       : weeksKnown.filter(function (w) { return w > shown; });
+    if (!pool.length) return;
+    showWeek(dir < 0 ? pool[pool.length - 1] : pool[0]);
+  }
+  prevBtn.addEventListener('click', function () { step(-1); });
+  nextBtn.addEventListener('click', function () { step(1); });
+  backBtn.addEventListener('click', function () { showWeek(weekNow); });
 
   var resizeTimer;
   window.addEventListener('resize', function () {
@@ -555,8 +643,8 @@
 
   buildFilter();
   render();
-  load();
+  loadIndex().then(load);
   setInterval(tickAgo, 30000);
-  setInterval(load, REFRESH_MS);
+  setInterval(function () { loadIndex(); load(); }, REFRESH_MS);
 })();
 </script>
