@@ -1,6 +1,51 @@
 {
-  "_comment": "Who won what, by season and week. Hand-editable on purpose — the commissioner has the final say, and a tie or a judgment call should never depend on a script. settle_week.py proposes entries; you confirm them here. Playoff payouts and the Thanksgiving DraftKings go in the awards array — never edit the HTML for those, or the bank column and this file will disagree.",
+  "_comment": "Who won what, by season and week. Hand-editable on purpose \u2014 the commissioner has the final say, and a tie or a judgment call should never depend on a script. settle_week.py proposes entries; you confirm them here. Playoff payouts and the Thanksgiving DraftKings go in the awards array \u2014 never edit the HTML for those, or the bank column and this file will disagree.",
   "2026": {
-    "awards": []
+    "awards": [],
+    "1": {
+      "high": {
+        "managers": [
+          "HAYDEN"
+        ],
+        "value": "184.00"
+      },
+      "category": {
+        "managers": [
+          "GARRETT"
+        ],
+        "value": "33.90",
+        "detail": "D'Andre Swift"
+      },
+      "dots": {
+        "QB": {
+          "managers": [
+            "SCARPITTI"
+          ],
+          "value": "41.66",
+          "detail": "Josh Allen"
+        },
+        "RB": {
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "36.80",
+          "detail": "Derrick Henry"
+        },
+        "WR": {
+          "managers": [
+            "SCHILLING"
+          ],
+          "value": "31.70",
+          "detail": "Christian Watson"
+        },
+        "TE": {
+          "managers": [
+            "GANGUS"
+          ],
+          "value": "20.00",
+          "detail": "Trey McBride"
+        }
+      }
+    }
   }
 }
