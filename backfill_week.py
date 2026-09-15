@@ -87,8 +87,15 @@ def main():
     projected = yc.parse_projected(sb_raw)
     remaining = yc.remaining_starters(sb_raw, rosters)
 
-    stat_categories = yc.fetch_stat_categories(token)
+    # load_stat_categories() parses the payload into {stat_id: name} and
+    # caches it. Calling fetch_stat_categories() directly hands resolve_stat_
+    # buckets() the raw Yahoo payload instead, every bucket comes back empty,
+    # and every player's stat line is silently blank - which is exactly what
+    # the first backfill of week 1 produced.
+    stat_categories = yc.load_stat_categories(token=token)
     stat_buckets = yc.resolve_stat_buckets(stat_categories)
+    if not stat_categories:
+        print("  ! stat categories empty - stat lines will be blank")
 
     print("  week %d | status %s | %d managers | %d matchups"
           % (sb_week or week, status, len(rosters), len(matchups)))
