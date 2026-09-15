@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-15T02:35:20Z",
+  "updated": "2026-09-15T02:40:26Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -122,6 +122,32 @@
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Kenneth Walker",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 32.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 151
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -292,32 +318,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 25.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 151
-        },
-        {
-          "stat": "REC YD",
-          "value": 16
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1548,15 +1548,6 @@
       ]
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.0,
-      "stats": []
-    },
-    {
       "name": "Eagles",
       "position": "DEF",
       "team": "Phi",
@@ -1647,6 +1638,15 @@
       "team": "LAC",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 2.0,
+      "stats": []
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
       "points": 2.0,
       "stats": []
     },
