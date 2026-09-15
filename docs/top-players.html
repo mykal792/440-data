@@ -75,7 +75,10 @@ html,body{ background:transparent; margin:0; padding:0 }
 }
 .tp__back:hover{color:var(--tp-mint)}
 .tp__back:focus-visible{outline:2px solid var(--tp-mint); outline-offset:3px}
-.tp__back[hidden]{ display:none }
+/* reserved, not removed: if this line only existed while browsing the
+   archive, the header - and the whole board - would change height every
+   time you stepped a week */
+.tp__back[hidden]{ display:block; visibility:hidden; pointer-events:none }
 .tp__label{
   font-family:"Rotundo",sans-serif; font-size:14px; letter-spacing:.05em;
   margin:0; line-height:1;      /* no half-leading, so flex centring is true */

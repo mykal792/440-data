@@ -93,7 +93,10 @@
 }
 .ls__back:hover{color:var(--ls-mint)}
 .ls__back:focus-visible{outline:2px solid var(--ls-mint); outline-offset:3px}
-.ls__back[hidden]{display:none}
+/* reserved, not removed: if this line only existed while browsing the
+   archive, the header - and the whole board - would change height every
+   time you stepped a week */
+.ls__back[hidden]{ display:block; visibility:hidden; pointer-events:none }
 .ls__label b{font-weight:400; color:var(--ls-mint)}
 .ls__status[hidden]{display:none}
 .ls__status{
