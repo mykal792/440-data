@@ -168,6 +168,43 @@ def write_json(path, payload, dry_run):
     print("wrote %s" % path)
 
 
+def update_week_archive(out_dir, week, scoreboard_payload, bonus_payload, top_players_payload, dry_run):
+    """Permanent per-week snapshot, read by the scoreboard's and the Dot Pot
+    board's "previous weeks" browsing (see their WEEKS_INDEX/WEEK_SOURCE).
+
+    This is deliberately separate from scoreboard.json/bonus.json/
+    top-players.json, which always describe "whatever week is current" and
+    get overwritten every run. weeks/wN.json is refreshed every run too -
+    that's how it goes from pregame to live to final as this week plays out
+    - but once week N+1 starts, nothing ever writes to weeks/wN.json again.
+    That's what actually stops settling a new week from erasing the last one.
+    """
+    weeks_dir = out_dir / "weeks"
+    if not dry_run:
+        weeks_dir.mkdir(parents=True, exist_ok=True)
+
+    snapshot = {
+        "week": week,
+        "status": scoreboard_payload["status"],
+        "updated": scoreboard_payload["updated"],
+        "matchups": scoreboard_payload["matchups"],
+        "bonus": {"category": bonus_payload["live"]["category"],
+                  "high": bonus_payload["live"]["high"]},
+        "top_players": top_players_payload["players"],
+    }
+    write_json(weeks_dir / ("w%d.json" % week), snapshot, dry_run)
+
+    index_path = weeks_dir / "index.json"
+    known = set()
+    if index_path.exists():
+        try:
+            known = set(json.loads(index_path.read_text(encoding="utf-8")).get("weeks", []))
+        except (ValueError, OSError):
+            pass  # corrupt or unreadable - rebuild it from what we know now
+    known.add(week)
+    write_json(index_path, {"weeks": sorted(known), "current": week}, dry_run)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--week", type=int, help="override the week number")
@@ -225,14 +262,17 @@ def main():
     if len(rosters) != 10:
         print("  ! expected 10 managers - check TEAM_MAP in yahoo_common.py")
 
-    write_json(out_dir / "scoreboard.json",
-               build_scoreboard(week, status, matchups, projected), args.dry_run)
-    write_json(out_dir / "bonus.json",
-               build_bonus(week, status, rosters, matchups, standings, meta,
-                           args.show_pregame, projected, remaining),
-               args.dry_run)
-    write_json(out_dir / "top-players.json",
-               build_top_players(week, status, rosters, stat_buckets), args.dry_run)
+    scoreboard_payload = build_scoreboard(week, status, matchups, projected)
+    bonus_payload = build_bonus(week, status, rosters, matchups, standings, meta,
+                                 args.show_pregame, projected, remaining)
+    top_players_payload = build_top_players(week, status, rosters, stat_buckets)
+
+    write_json(out_dir / "scoreboard.json", scoreboard_payload, args.dry_run)
+    write_json(out_dir / "bonus.json", bonus_payload, args.dry_run)
+    write_json(out_dir / "top-players.json", top_players_payload, args.dry_run)
+
+    update_week_archive(out_dir, week, scoreboard_payload, bonus_payload,
+                         top_players_payload, args.dry_run)
 
 
 if __name__ == "__main__":
