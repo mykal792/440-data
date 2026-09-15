@@ -1,7 +1,7 @@
 {
   "week": 1,
   "status": "live",
-  "updated": "2026-09-15T01:55:31Z",
+  "updated": "2026-09-15T02:00:31Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -292,6 +292,32 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Kenneth Walker",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 25.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 149
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -909,28 +935,6 @@
       ]
     },
     {
-      "name": "Kenneth Walker",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 11.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 89
-        },
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -1090,6 +1094,28 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 8.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -1267,28 +1293,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -1575,15 +1579,6 @@
       ]
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.0,
-      "stats": []
-    },
-    {
       "name": "Rams",
       "position": "DEF",
       "team": "LAR",
@@ -1645,6 +1640,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Harrison Mevis",
