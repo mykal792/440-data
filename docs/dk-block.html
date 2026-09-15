@@ -182,7 +182,7 @@ html,body{ margin:0; padding:0; overflow:hidden; background:transparent; }
   left:calc(var(--cu)*15.8000); right:calc(var(--cu)*16.9100);
   height:calc(var(--cu)*424.3607); }
 .chip{ position:absolute; left:calc(var(--cu)*14.8900); top:50%;
-  margin-top:calc(var(--cu)*11.6100/-2);
+  margin-top:calc(var(--cu)*11.6100/-2 + var(--cu)*0.5900);
   width:calc(var(--cu)*12.0100); height:calc(var(--cu)*11.6100);
   border-radius:calc(var(--cu)*3.0000); background:var(--chip); }
 .chip > span{ position:absolute; left:50%; top:50%; line-height:0;
@@ -190,8 +190,6 @@ html,body{ margin:0; padding:0; overflow:hidden; background:transparent; }
   font-family:var(--disp); font-size:calc(var(--cu)*6.8000); color:var(--dark); }
 .wk { font-family:var(--disp); font-size:calc(var(--cu)*11.8000); color:var(--hsweek);
   left:calc(var(--cu)*34.8800); top:50%; letter-spacing:.03em; }
-.who{ font-family:var(--disp); font-size:calc(var(--cu)*7.8000); color:#8e908f;
-  right:calc(var(--cu)*55.0000); top:50%; letter-spacing:.03em; }
 /* green stays muted until a score lands, then lights to full saturation */
 .val{ font-family:var(--disp); font-size:calc(var(--cu)*8.8000); color:var(--mint-dim);
   right:calc(var(--cu)*18.7500); top:50%; transition:color .3s ease; }
@@ -296,10 +294,10 @@ html,body{ margin:0; padding:0; overflow:hidden; background:transparent; }
   }
   function hsRows(l){
     return l.map(function(r){ var p=parseFloat(r.score)>0;
+      var label=(p&&r.manager)?esc(r.manager):('WEEK '+r.week);
       return '<div class="hs-row'+(p?' played':'')+'">'+
         '<div class="chip"><span>'+r.week+'</span></div>'+
-        '<div class="cap wk">WEEK '+r.week+'</div>'+
-        (p&&r.manager?'<div class="cap who">'+esc(r.manager)+'</div>':'')+
+        '<div class="cap wk">'+label+'</div>'+
         '<div class="cap val">'+esc(r.score)+'</div></div>'; }).join("");
   }
   function paint(d){
