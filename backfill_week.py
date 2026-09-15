@@ -115,8 +115,27 @@ def main():
                                       top.get("manager", "-"),
                                       top.get("value", "-")))
 
+    # update_week_archive() sets index.json's "current" to the week it just
+    # wrote - correct for the live run, wrong here: backfilling week 1 would
+    # tell the widget week 1 IS now, the arrows go dead and the board
+    # disagrees with the live feeds until the next scheduled run repairs it.
+    # So remember the real current week and put it back.
+    index_path = out_dir / "weeks" / "index.json"
+    real_current = None
+    try:
+        real_current = json.loads(index_path.read_text()).get("current")
+    except Exception:                                   # noqa: BLE001
+        pass
+
     pl.update_week_archive(out_dir, week, scoreboard, bonus, top_players,
                            args.dry_run)
+
+    if real_current is not None and real_current != week and not args.dry_run:
+        idx = json.loads(index_path.read_text())
+        idx["current"] = real_current
+        index_path.write_text(json.dumps(idx, indent=2) + "\n")
+        print("  kept current = week %d (this is a backfill, not the live week)"
+              % real_current)
     if args.dry_run:
         print("\n--dry-run: nothing written. Snapshot would be:")
         print(json.dumps({"week": week, "status": status,
