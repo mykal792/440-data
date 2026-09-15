@@ -17,6 +17,12 @@ exactly as they were.
 This is the ONLY script that writes season.json. pull_live.py writes
 scoreboard.json and bonus.json; it deliberately leaves this file alone.
 
+FIXED 2026-09-15:
+  - was labelling the snapshot with Yahoo's current_week, which rolls over
+    partway through Tuesday. That recorded week 1 as zeros before it was
+    played, then filed week 1's results under week 2. Now snapshots the last
+    week whose scoreboard is final, and writes nothing when none is.
+
 FIXED 2026-09-01:
   - was calling Context().get_leagues(nfl, 2026), which raises ValueError before
     any network call because the library's season table stops at 2025. Now
@@ -117,6 +123,27 @@ def snapshot(standings):
     return teams
 
 
+def latest_final_week(token):
+    """The most recent week that is actually over.
+
+    Yahoo's current_week rolls over to the new week partway through Tuesday,
+    so a Tuesday-morning job cannot trust it - see pick_week() in
+    settle_week.py, which hit this first. Trusting it here is what recorded
+    week 1 as a row of zeros on 2026-09-08, then filed week 1's results under
+    week 2 a week later. Walk back from current_week and take the first week
+    whose scoreboard is final. None means nothing has finished yet, which is
+    the normal preseason answer.
+    """
+    current = yc.current_week(token)
+    for week in (current, current - 1):
+        if week < 1:
+            continue
+        _w, status, matchups = yc.parse_scoreboard(yc.fetch_scoreboard(token, week))
+        if matchups and status == "final":
+            return week
+    return None
+
+
 def inspect(args):
     token = yc.get_token(args.yf_dir)
     meta = yc.fetch_league_meta(token)
@@ -144,7 +171,10 @@ def main(args):
     cat_meta = yc.load_categories(args.categories)
 
     token = yc.get_token(args.yf_dir)
-    week = args.week or yc.current_week(token)
+    week = args.week or latest_final_week(token)
+    if week is None:
+        print("No finished week yet - nothing to snapshot.")
+        return
     standings = yc.parse_standings(yc.fetch_standings(token))
 
     if len(standings) != 10:
