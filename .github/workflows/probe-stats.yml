@@ -1,0 +1,68 @@
+name: Probe stats
+
+# Manual only. Finds out why every Top Players stat line is empty: prints
+# Yahoo's real stat category table, flags which STAT_NAME_BUCKETS names don't
+# match it, and dumps one player's raw stat block.
+#
+# With write = true it also commits stat-categories.json, so runs stop
+# refetching the table every time. Nothing else is ever written.
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'Week number (blank = current)'
+        required: false
+        default: ''
+      team:
+        description: 'Team id to sample a roster from (blank = team 1)'
+        required: false
+        default: ''
+      write:
+        description: 'Also commit stat-categories.json'
+        type: boolean
+        default: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: pip install 'yahoofantasy==1.4.9'
+      - name: Restore Yahoo token
+        env:
+          YAHOO_TOKEN_B64: ${{ secrets.YAHOO_TOKEN_B64 }}
+        run: |
+          if [ -z "$YAHOO_TOKEN_B64" ]; then
+            echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
+          fi
+          echo "$YAHOO_TOKEN_B64" | tr -d '[:space:]' | base64 -d > "$GITHUB_WORKSPACE/.yahoofantasy"
+      - name: Probe
+        run: |
+          ARGS=""
+          if [ -n "${{ inputs.week }}" ]; then ARGS="$ARGS --week ${{ inputs.week }}"; fi
+          if [ -n "${{ inputs.team }}" ]; then ARGS="$ARGS --team ${{ inputs.team }}"; fi
+          if [ "${{ inputs.write }}" = "true" ]; then ARGS="$ARGS --write"; fi
+          python probe_stats.py $ARGS
+      - name: Commit stat-categories.json
+        if: ${{ inputs.write == true }}
+        run: |
+          if git diff --quiet -- stat-categories.json; then
+            echo "No change."; exit 0
+          fi
+          git config user.name  "league-bot"
+          git config user.email "league-bot@users.noreply.github.com"
+          git add stat-categories.json
+          git commit -m "Cache Yahoo stat categories"
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash
+          done
+          echo "::error::push failed after 3 attempts"; exit 1
