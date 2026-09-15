@@ -1,0 +1,66 @@
+name: Backfill week
+
+# Manual only. Rebuilds one past week into docs/weeks/ from Yahoo, for weeks
+# that settled before the archive existed.
+#
+# Run with dry_run = true first and read the log. It prints the matchups and
+# the winning bonus lines it found, so you can sanity-check them against what
+# you remember before anything is committed.
+#
+# It only ever writes docs/weeks/. scoreboard.json, bonus.json and
+# top-players.json are never touched, so the live board is unaffected.
+
+on:
+  workflow_dispatch:
+    inputs:
+      week:
+        description: 'Week number to rebuild (e.g. 1)'
+        required: true
+      dry_run:
+        description: 'Preview only, write nothing'
+        type: boolean
+        default: true
+      force:
+        description: 'Overwrite an existing snapshot'
+        type: boolean
+        default: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: pip install 'yahoofantasy==1.4.9'
+      - name: Restore Yahoo token
+        env:
+          YAHOO_TOKEN_B64: ${{ secrets.YAHOO_TOKEN_B64 }}
+        run: |
+          if [ -z "$YAHOO_TOKEN_B64" ]; then
+            echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
+          fi
+          echo "$YAHOO_TOKEN_B64" | tr -d '[:space:]' | base64 -d > "$GITHUB_WORKSPACE/.yahoofantasy"
+      - name: Backfill
+        run: |
+          ARGS="${{ inputs.week }}"
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          python backfill_week.py $ARGS
+      - name: Commit the snapshot
+        if: ${{ inputs.dry_run == false }}
+        run: |
+          if git diff --quiet -- docs/weeks; then
+            echo "Nothing changed in docs/weeks."; exit 0
+          fi
+          git config user.name  "league-bot"
+          git config user.email "league-bot@users.noreply.github.com"
+          git add docs/weeks
+          git commit -m "Backfill week ${{ inputs.week }}"
+          for i in 1 2 3; do
+            git push && exit 0
+            git pull --rebase --autostash
+          done
+          echo "::error::push failed after 3 attempts"; exit 1
