@@ -10,6 +10,11 @@ name: Backfill week
 # It only ever writes docs/weeks/. scoreboard.json, bonus.json and
 # top-players.json are never touched, so the live board is unaffected.
 
+# github-actions[bot] can't push without this. live-update.yml has the same
+# block; leaving it out is why the first run committed locally and 403'd.
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
     inputs:
