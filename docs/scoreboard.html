@@ -50,6 +50,10 @@
 
   max-width:1240px; margin:0 auto;
   border-radius:18px; overflow:hidden;
+  /* the panel needs its own background: the chin is inset, and without this
+     the strip either side of it falls through to the page instead of the
+     panel, so an inset white chin on a white page looks full width */
+  background:var(--ls-panel);
   font-family:"Laro Soft","Helvetica Neue",Arial,sans-serif;
   -webkit-font-smoothing:antialiased; color:var(--ls-ink);
 }
@@ -58,31 +62,40 @@
 .ls__bar{
   background:var(--ls-bar); color:#fff;
   display:flex; align-items:center; justify-content:space-between;
-  gap:14px; padding:11px 20px; min-height:48px;
+  gap:14px; padding:17px 20px; min-height:60px; align-items:flex-start;
 }
-.ls__right{display:flex; align-items:center; gap:14px}
+.ls__right{display:flex; align-items:center; gap:14px; height:19px}
 .ls__label{
-  font-family:"Rotundo",sans-serif; font-size:14px; letter-spacing:.05em; margin:0;
+  font-family:"Rotundo",sans-serif; font-size:14px; letter-spacing:.05em;
+  margin:0; line-height:1;
 }
 .ls__label span{margin-right:8px}
-.ls__nav{display:flex; align-items:center; gap:6px; flex:0 0 auto}
+.ls__headcol{display:flex; flex-direction:column; align-items:flex-start; gap:9px; flex:0 0 auto}
+.ls__nav{display:flex; align-items:center; gap:9px; flex:0 0 auto}
 .ls__step{
-  width:20px; height:20px; padding:0; border-radius:50%; cursor:pointer;
-  border:1px solid rgba(255,255,255,.28); background:transparent; color:#cfcfcf;
+  width:19px; height:19px; padding:0; border:0; background:transparent;
+  color:#e4e4e4; cursor:pointer;
   display:grid; place-items:center; flex:0 0 auto;
 }
-.ls__step svg{width:9px; height:9px; display:block}
-.ls__step:hover:not(:disabled){color:var(--ls-mint); border-color:var(--ls-mint)}
+.ls__step svg{width:19px; height:19px; display:block}
+.ls__step:hover:not(:disabled){color:var(--ls-mint)}
 .ls__step:disabled{opacity:.28; cursor:default}
 .ls__step:focus-visible{outline:2px solid var(--ls-mint); outline-offset:2px}
 /* a past week is history, not a live feed - say so instead of ticking */
+/* Its own line under the week. The 28px indent is the arrow (19px) plus the
+   nav gap (9px), so its first letter lands under the W of WEEK, not under
+   the arrow. */
 .ls__back{
-  font-size:10px; letter-spacing:.09em; text-transform:uppercase;
-  color:var(--ls-mint); background:none; border:0; padding:0 0 0 4px;
-  cursor:pointer; font-family:"Rotundo",sans-serif;
+  font-family:"Wix Madefor Text",Arial,sans-serif;
+  font-size:12.5px; letter-spacing:.02em; text-transform:uppercase;
+  color:#d8d8d8; background:none; border:0; padding:0; margin:0 0 0 28px;
+  cursor:pointer; white-space:nowrap; line-height:1;
 }
+.ls__back:hover{color:var(--ls-mint)}
+.ls__back:focus-visible{outline:2px solid var(--ls-mint); outline-offset:3px}
 .ls__back[hidden]{display:none}
 .ls__label b{font-weight:400; color:var(--ls-mint)}
+.ls__status[hidden]{display:none}
 .ls__status{
   display:flex; align-items:center; gap:9px; margin:0;
   font-size:10.5px; letter-spacing:.10em; text-transform:uppercase; color:#a8a8a8;
@@ -150,7 +163,42 @@
 }
 
 /* ---- gray body ---- */
-.ls__body{background:var(--ls-panel); padding:13px 16px 16px}
+.ls__body{background:var(--ls-panel); padding:12px 16px 16px}
+/* status lives here, not in the black bar: the bar is identity (which week,
+   which board, light or dark) and this line is state (live or final, how
+   fresh, and the way back). Same split on the Dot Pot board. */
+/* The chin: a band of its own between the header and the body, so every
+   piece of state has ONE baseline to sit on. Square where it meets the
+   header, rounded where it meets the panel, inset 1.2% each side - the
+   proportions off Scoreboard_header_Example.svg. */
+.ls__chin{
+  background:var(--ls-card);
+  margin:0 1.25%;            /* measured off the mock: 19px inset on a 1557 panel */
+  border-radius:0 0 22px 22px;  /* the curve reads at 22, not 14 - at 14 on a
+                                   36px band it looks like a full-width strip */
+  height:36px;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 18px;
+}
+.ls.is-dark .ls__chin{background:var(--ls-card)}
+.ls__now,.ls__when{
+  display:flex; align-items:center; gap:8px; margin:0;
+  font-size:11px; letter-spacing:.09em; text-transform:uppercase;
+  line-height:1;                     /* no half-leading, so flex centering is true */
+}
+.ls__now .ls__state{
+  font-family:"Rotundo",sans-serif; letter-spacing:.09em; color:var(--ls-ink);
+  line-height:1;
+}
+.ls[data-status="live"] .ls__now .ls__state{color:#2eb57b}
+.ls[data-status="live"] .ls__chin .ls__dot{background:#2eb57b}
+.ls.is-dark .ls__now .ls__state{color:#fff}
+.ls__when .ls__ago{
+  font-family:"Wix Madefor Text",Arial,sans-serif; letter-spacing:.06em;
+  color:var(--ls-ink); line-height:1;
+}
+.ls.is-dark .ls__when .ls__ago{color:#fff}
+
 .ls__sect{
   font-family:"Rotundo",sans-serif; font-size:10.5px; letter-spacing:.05em;
   text-transform:uppercase; color:#8a8a8a; margin:0 0 8px 2px;
@@ -403,6 +451,48 @@
   .race__nameline b{font-size:12px}
   .race__val{font-size:13px}
 }
+/* The Wix mobile box is 290px - narrower than any phone viewport, so the
+   560px rules were still sized for something twice as wide. */
+@media (max-width:380px){
+  .ls__bar{padding:12px 12px; min-height:0; row-gap:0; padding-right:48px}
+  .ls__headcol{gap:7px}
+  .ls__back{font-size:9.5px; margin-left:19px}
+  .ls__right{height:15px}
+  .ls__label,.ls__week{font-size:11.5px; letter-spacing:.03em}
+  .ls__nav{gap:4px}
+  .ls__step{width:16px; height:16px}
+  .ls__step svg{width:7px; height:7px}
+  .ls__mode{width:34px; height:19px; top:10px; right:11px}
+  .ls__knob{width:13px; height:13px; top:3px; left:3px}
+  .ls.is-dark .ls__knob{transform:translateX(15px)}
+  .ls__knob svg{width:8px; height:8px}
+  .ls__body{padding:9px 10px 11px}
+  .ls__chin{height:27px; padding:0 11px; border-radius:0 0 14px 14px}
+  .ls__sect{font-size:9px; letter-spacing:.04em}
+  .ls__now,.ls__when{font-size:8.5px; gap:5px}
+  .ls__step,.ls__step svg{width:15px; height:15px}
+  .ls__game{flex-basis:186px; padding:8px 10px 9px; border-radius:10px}
+  .ls__face{width:26px; height:26px; padding:4px 4px 2px}
+  .ls__name{font-size:11px}
+  .ls__pts{font-size:12px; min-width:42px}
+  .ls__split{margin:9px 0 7px}
+  .race{padding:9px 10px 8px; border-radius:10px}
+  .race__icon,.race__icon svg{width:24px; height:24px}
+  .race__name{font-size:11.5px}
+  .race__amt{font-size:9px}
+  .race__desc{font-size:9px}
+  .race__row{height:38px; gap:8px; padding:0 7px}
+  .race__nameline b{font-size:11px}
+  .race__val{font-size:12px}
+  .race__detail{font-size:9px}
+  .race__pos{width:15px; height:15px; font-size:9px}
+  .ls .sgx{height:46px; border-radius:10px}
+  .sgx-face{gap:8px; padding:0 10px}
+  .sgx-face .sgx-word{font-size:8.5px}
+  .sgx-face .sgx-hq{font-size:13.5px}
+  .sgx-mark{height:17.5px; transform:translateY(1.2px)}
+}
+
 @media (prefers-reduced-motion:reduce){
   .ls__dot{animation:none}
 }
@@ -424,20 +514,22 @@ body{margin:0; padding:0; font-family:"Laro Soft",Arial,sans-serif}
 <!-- ============ LIVE SCORING WIDGET ============ -->
 <section class="ls" id="ls" data-status="pregame" aria-labelledby="lsLabel">
   <div class="ls__bar">
-    <div class="ls__nav">
+    <div class="ls__headcol">
+      <div class="ls__nav">
       <button class="ls__step" id="lsPrev" type="button" aria-label="Previous week" disabled>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        <svg viewBox="0 0 18.33 18.33" aria-hidden="true"><circle cx="9.17" cy="9.17" r="8.67" fill="none" stroke="currentColor" stroke-miterlimit="10"/><path d="M9.32,5.83l-2.81,2.81c-.29.29-.29.76,0,1.05l2.81,2.81c.47.47,1.27.14,1.27-.53v-5.62c0-.66-.8-.99-1.27-.53Z" fill="currentColor"/></svg>
       </button>
       <p class="ls__label" id="lsLabel"><span id="lsWeek">WEEK 1</span><b>SCOREBOARD</b></p>
       <button class="ls__step" id="lsNext" type="button" aria-label="Next week" disabled>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        <svg viewBox="0 0 18.33 18.33" aria-hidden="true"><circle cx="9.17" cy="9.17" r="8.67" fill="none" stroke="currentColor" stroke-miterlimit="10"/><path d="M9.01,5.83l2.81,2.81c.29.29.29.76,0,1.05l-2.81,2.81c-.47.47-1.27.14-1.27-.53v-5.62c0-.66.8-.99,1.27-.53Z" fill="currentColor"/></svg>
       </button>
-      <button class="ls__back" id="lsBack" type="button" hidden>back to live</button>
+      </div>
+      <button class="ls__back" id="lsBack" type="button" hidden>back to current week</button>
     </div>
     <div class="ls__right">
-      <p class="ls__status">
+      <p class="ls__status" hidden>
         <span class="ls__dot"></span>
-        <span class="ls__state" id="lsState">PRESEASON</span>
+        <span class="ls__state" id="lsStateOld">PRESEASON</span>
         <span class="ls__ago" id="lsAgo" hidden></span>
       </p>
       <button class="ls__mode" id="lsMode" type="button" role="switch"
@@ -450,6 +542,15 @@ body{margin:0; padding:0; font-family:"Laro Soft",Arial,sans-serif}
     </div>
   </div>
 
+  <div class="ls__chin">
+    <p class="ls__now">
+      <span class="ls__dot"></span>
+      <span class="ls__state" id="lsState">PRESEASON</span>
+    </p>
+    <p class="ls__when">
+      <span class="ls__ago" id="lsAgo2" hidden></span>
+    </p>
+  </div>
   <div class="ls__body">
     <p class="ls__sect" id="lsSect">Matchups</p>
     <div class="ls__track" id="lsTrack" tabindex="0" role="list"></div>
@@ -648,6 +749,9 @@ function render(data){
   const pre = data.status === "pregame";
   ls.dataset.status = data.status;
   document.getElementById("lsWeek").textContent = "WEEK " + data.week;
+  var _old = document.getElementById("lsStateOld");
+  if (_old) _old.textContent =
+    data.status === "live" ? "LIVE" : data.status === "final" ? "FINAL" : "PRESEASON";
   document.getElementById("lsState").textContent =
     data.status === "live" ? "LIVE" : data.status === "final" ? "FINAL" : "PRESEASON";
 
@@ -764,7 +868,7 @@ function tickAgo(){
     document.getElementById("lsAgo").hidden = true;
     return;
   }
-  const ago = document.getElementById("lsAgo");
+  const ago = document.getElementById("lsAgo2") || document.getElementById("lsAgo");
   /* stays hidden until a feed actually lands, so a failed fetch can never
      read as "updated just now" over stale or empty content */
   if (!hasData) { ago.hidden = true; return; }

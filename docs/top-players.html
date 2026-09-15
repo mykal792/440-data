@@ -21,6 +21,10 @@
 
   width:100%;
   border-radius:18px; overflow:hidden;
+  /* the chin is inset, so the panel needs its own background - otherwise the
+     strip either side falls through to the page and an inset white chin on a
+     white page looks full width */
+  background:var(--tp-panel);
   font-family:"Laro Soft","Helvetica Neue",Arial,sans-serif;
   -webkit-font-smoothing:antialiased; color:var(--tp-ink);
 }
@@ -41,30 +45,64 @@
 
 .tp__bar{
   background:var(--tp-bar); color:#fff;
-  display:flex; align-items:center; justify-content:space-between;
-  gap:14px; padding:11px 20px; min-height:48px;
+  display:flex; align-items:flex-start; justify-content:space-between;
+  gap:14px; padding:17px 20px; min-height:60px;
 }
-.tp__right{ display:flex; align-items:center; gap:14px }
-.tp__nav{ display:flex; align-items:center; gap:6px; flex:0 0 auto; min-width:0 }
+.tp__right{ display:flex; align-items:center; gap:14px; height:19px }
+.tp__nav{ display:flex; align-items:center; gap:9px; flex:0 0 auto; min-width:0 }
 .tp__step{
-  width:20px; height:20px; padding:0; border-radius:50%; cursor:pointer;
-  border:1px solid rgba(255,255,255,.28); background:transparent; color:#cfcfcf;
+  width:19px; height:19px; padding:0; border:0; background:transparent;
+  color:#e4e4e4; cursor:pointer;
   display:grid; place-items:center; flex:0 0 auto;
 }
-.tp__step svg{ width:9px; height:9px; display:block }
-.tp__step:hover:not(:disabled){ color:var(--tp-mint); border-color:var(--tp-mint) }
+.tp__step svg{ width:19px; height:19px; display:block }
+.tp__step:hover:not(:disabled){ color:var(--tp-mint) }
 .tp__step:disabled{ opacity:.28; cursor:default }
 .tp__step:focus-visible{ outline:2px solid var(--tp-mint); outline-offset:2px }
 /* a past week is history, not a live feed - say so instead of ticking */
+/* 28px = arrow (19) + nav gap (9), so its first letter lands under the W of
+   WEEK rather than under the arrow */
 .tp__back{
-  font-size:10px; letter-spacing:.09em; text-transform:uppercase;
-  color:var(--tp-mint); background:none; border:0; padding:0 0 0 4px;
-  cursor:pointer; font-family:"Rotundo",sans-serif; flex:0 0 auto;
+  font-family:"Wix Madefor Text",Arial,sans-serif;
+  font-size:12.5px; letter-spacing:.02em; text-transform:uppercase;
+  color:#d8d8d8; background:none; border:0; padding:0; margin:0 0 0 28px;
+  cursor:pointer; white-space:nowrap; line-height:1; flex:0 0 auto;
 }
+.tp__back:hover{color:var(--tp-mint)}
+.tp__back:focus-visible{outline:2px solid var(--tp-mint); outline-offset:3px}
 .tp__back[hidden]{ display:none }
 .tp__label{
-  font-family:"Rotundo",sans-serif; font-size:14px; letter-spacing:.05em; margin:0;
+  font-family:"Rotundo",sans-serif; font-size:14px; letter-spacing:.05em;
+  margin:0; line-height:1;      /* no half-leading, so flex centring is true */
 }
+.tp__headcol{display:flex; flex-direction:column; align-items:flex-start; gap:9px; flex:0 0 auto}
+
+/* The chin: state gets its own band between header and body, square where it
+   meets the header and rounded where it meets the panel. Same proportions as
+   the scoreboard so the two boards read as a set. */
+.tp__chin{
+  background:var(--tp-card);
+  margin:0 1.25%;
+  border-radius:0 0 22px 22px;
+  height:36px;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 18px;
+}
+.tp__now,.tp__when{
+  display:flex; align-items:center; gap:8px; margin:0;
+  font-size:11px; letter-spacing:.09em; text-transform:uppercase; line-height:1;
+}
+.tp__now .tp__state{
+  font-family:"Rotundo",sans-serif; letter-spacing:.09em; color:var(--tp-ink); line-height:1;
+}
+.tp[data-status="live"] .tp__now .tp__state{color:#2eb57b}
+.tp[data-status="live"] .tp__chin .tp__dot{background:#2eb57b}
+.tp.is-dark .tp__now .tp__state{color:#fff}
+.tp__when .tp__ago{
+  font-family:"Wix Madefor Text",Arial,sans-serif; letter-spacing:.06em;
+  color:var(--tp-ink); line-height:1;
+}
+.tp.is-dark .tp__when .tp__ago{color:#fff}
 .tp__label span{ margin-right:8px }
 .tp__label b{ font-weight:400; color:var(--tp-mint) }
 .tp__logo{ display:inline-flex; align-items:center; gap:4px; margin-left:9px; vertical-align:middle }
@@ -242,7 +280,7 @@
     flex-wrap:wrap; row-gap:4px; column-gap:12px; min-height:65px;
     position:relative; padding-right:60px; /* room for the pinned toggle */
   }
-  .tp__mode{ position:absolute; top:11px; right:15px }
+  .tp__mode{ position:absolute; top:17px; right:15px }
   .tp__right{ gap:10px }
   .tp__nav{ flex:1 1 auto; max-width:100%; flex-wrap:wrap; row-gap:2px; gap:4px }
   .tp__label{ font-size:12.3px }
@@ -252,9 +290,7 @@
     gap:2px; margin-left:6px; vertical-align:middle;
   }
   .tp__logo-dot{ width:5px; height:5px }
-  .tp__status{
-    flex-wrap:wrap; row-gap:3px; font-size:10px; letter-spacing:.07em; min-height:18px;
-  }
+  .tp__now,.tp__when{ font-size:10px; letter-spacing:.07em }
   /* 18px = the two-line case, so preseason reserves the room the timestamp
      will need once the season starts - matches the scoreboard's reasoning */
   .tp__state{ margin-right:2px }
@@ -270,6 +306,36 @@
   .tp__stats{ font-size:9px }
   .tp__pts{ font-size:12px }
 }
+
+@container (max-width:320px){
+  .tp__bar{ padding:12px 12px; min-height:0; padding-right:48px }
+  .tp__headcol{ gap:7px }
+  .tp__label{ font-size:11.5px; letter-spacing:.03em }
+  .tp__nav{ gap:9px }
+  .tp__step,.tp__step svg{ width:15px; height:15px }
+  .tp__back{ font-size:9.5px; margin-left:24px }
+  .tp__right{ height:15px }
+  .tp__chin{ height:27px; padding:0 11px; border-radius:0 0 14px 14px }
+  .tp__now,.tp__when{ font-size:8.5px; gap:5px }
+  .tp__mode{ width:34px; height:19px; top:10px; right:11px }
+  .tp__knob{ width:13px; height:13px; top:3px; left:3px }
+  .tp.is-dark .tp__knob{ transform:translateX(15px) }
+  .tp__knob svg{ width:8px; height:8px }
+  .tp__logo-dot{ width:5px; height:5px }
+  .tp__body{ padding:10px 10px 12px }
+  .tp__desc{ font-size:9px; margin-bottom:8px }
+  .tp__filter{ gap:4px; margin-bottom:8px }
+  .tp__tab{ height:24px; font-size:9px }
+  .tp__row{ grid-template-columns:11px 22px minmax(0,1fr) auto; gap:6px; padding:8px 0 5.5px }
+  .tp__row--all{ grid-template-columns:22px 22px minmax(0,1fr) auto; padding:13px 0 9px }
+  .tp__id{ width:22px; height:22px }
+  .tp__name{ font-size:9.5px }
+  .tp__team{ font-size:6.5px; padding:1px 2.5px }
+  .tp__stats{ font-size:8px }
+  .tp__pts{ font-size:10.5px }
+  .tp__lblink{ font-size:9px }
+}
+
 
 
 /* desktop target: 905px - deliberately no .tp__bar/.tp__label override here:
@@ -296,9 +362,10 @@
 <div class="tp-wrap">
 <section class="tp" id="tp" data-status="pregame" aria-labelledby="tpLabel">
   <div class="tp__bar">
-    <div class="tp__nav">
+    <div class="tp__headcol">
+      <div class="tp__nav">
       <button class="tp__step" id="tpPrev" type="button" aria-label="Previous week" disabled>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        <svg viewBox="0 0 18.33 18.33" aria-hidden="true"><circle cx="9.17" cy="9.17" r="8.67" fill="none" stroke="currentColor" stroke-miterlimit="10"/><path d="M9.32,5.83l-2.81,2.81c-.29.29-.29.76,0,1.05l2.81,2.81c.47.47,1.27.14,1.27-.53v-5.62c0-.66-.8-.99-1.27-.53Z" fill="currentColor"/></svg>
       </button>
       <p class="tp__label" id="tpLabel">
         <span id="tpWeek">WEEK -</span><b>DOT POT</b>
@@ -310,16 +377,12 @@
         </span>
       </p>
       <button class="tp__step" id="tpNext" type="button" aria-label="Next week" disabled>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        <svg viewBox="0 0 18.33 18.33" aria-hidden="true"><circle cx="9.17" cy="9.17" r="8.67" fill="none" stroke="currentColor" stroke-miterlimit="10"/><path d="M9.01,5.83l2.81,2.81c.29.29.29.76,0,1.05l-2.81,2.81c-.47.47-1.27.14-1.27-.53v-5.62c0-.66.8-.99,1.27-.53Z" fill="currentColor"/></svg>
       </button>
-      <button class="tp__back" id="tpBack" type="button" hidden>back to live</button>
+      </div>
+      <button class="tp__back" id="tpBack" type="button" hidden>back to current week</button>
     </div>
     <div class="tp__right">
-      <p class="tp__status">
-        <span class="tp__dot"></span>
-        <span class="tp__state" id="tpState">PRESEASON</span>
-        <span class="tp__ago" id="tpAgo" hidden></span>
-      </p>
       <button class="tp__mode" id="tpMode" type="button" role="switch"
               aria-checked="false" aria-label="Dark mode">
       <span class="tp__knob">
@@ -328,6 +391,15 @@
       </span>
       </button>
     </div>
+  </div>
+  <div class="tp__chin">
+    <p class="tp__now">
+      <span class="tp__dot"></span>
+      <span class="tp__state" id="tpState">PRESEASON</span>
+    </p>
+    <p class="tp__when">
+      <span class="tp__ago" id="tpAgo" hidden></span>
+    </p>
   </div>
   <div class="tp__body">
     <p class="tp__desc">Top scorer at each position wins a dot and $5. Starting lineups only, top 5 shown.</p>
