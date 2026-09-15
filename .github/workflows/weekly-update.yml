@@ -1,16 +1,27 @@
 name: Weekly league update
-# Tuesday 8am ET. Settles the finished week into bank-ledger.json, then rebuilds
-# the standings so the bank column reflects it in the same run.
+# Tuesday 6am ET. Settles the finished week into bank-ledger.json, then rebuilds
+# the standings and the DraftKings high-score board so all three land in the
+# same commit.
 #
-# Both cron lines are here on purpose: 12:00 UTC is 8am EDT and 13:00 UTC is 8am
-# EST, so one of them is always the right 8am and the other runs an hour off.
-# The second is harmless - settle refuses a week already in the ledger, and
-# standings then finds nothing changed.
+# Four cron lines on purpose. Each pair covers a timezone - 10:00 UTC is 6am EDT
+# and 11:00 UTC is 6am EST - and the later pair is an 8am backstop. 6am is close
+# behind Monday Night Football and Yahoo does not always have the week marked
+# final by then; on 2026-09-15 the scoreboard still read "live" at 1:55am ET.
+# If 6am is too early the job simply does nothing and 8am catches it, instead of
+# the week going unrecorded until the following Tuesday.
+#
+# Repeat runs are harmless: settle refuses a week already in the ledger, and the
+# pulls then find nothing changed and skip the commit.
+#
+# Minute 17 rather than 00 - GitHub's scheduler is best-effort and the top of
+# the hour is the most contested minute on the platform.
 on:
   workflow_dispatch:        # the "Run workflow" button, for testing
   schedule:
-    - cron: '0 12 * * 2'    # 8am EDT  (Sep - early Nov)
-    - cron: '0 13 * * 2'    # 8am EST  (Nov - Jan)
+    - cron: '17 10 * * 2'   # 6am EDT  (Sep - early Nov)
+    - cron: '17 11 * * 2'   # 6am EST  (Nov - Jan)
+    - cron: '17 12 * * 2'   # 8am EDT  backstop
+    - cron: '17 13 * * 2'   # 8am EST  backstop
 permissions:
   contents: write
 concurrency:
@@ -48,9 +59,15 @@ jobs:
         # Reads the ledger the step above just wrote, so records, averages and
         # the bank column all land in the same commit.
         run: python pull_standings.py
+      - name: Pull DraftKings ticker
+        # Also reads the ledger - the High Score board is built from it, so it
+        # has to run after settle or the board publishes a week behind. Without
+        # this it only refreshes on the next live run, which is why week 1's
+        # high score sat empty from 12:07 until 13:00 UTC.
+        run: python pull_dk.py
       - name: Publish if changed
         run: |
-          FILES="docs/season.json bank-ledger.json"
+          FILES="docs/season.json bank-ledger.json docs/dk.json"
           if git diff --quiet -- $FILES; then
             echo "No change this run."; exit 0
           fi
