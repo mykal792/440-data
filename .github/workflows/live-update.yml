@@ -52,7 +52,11 @@ jobs:
         # and nothing anywhere reports an error. That is exactly what happened
         # to top-players.json on opening night.
         run: |
-          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/dk.json docs/squid-scores.json"
+          # docs/weeks is a DIRECTORY on purpose: it covers index.json and every
+          # wN.json, including weeks that do not exist yet, so a new week never
+          # needs this line edited again. Leaving it out was why the archive was
+          # written on the runner every run and thrown away every run.
+          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/dk.json docs/squid-scores.json docs/weeks"
           if git diff --quiet -- $FILES; then
             echo "No change."; exit 0
           fi
