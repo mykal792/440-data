@@ -90,7 +90,8 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
     else:
         cat_leaders = yc.rank_rows(rows, ascending=ascending)
         high_leaders = yc.rank_rows(
-            yc.high_score_rows(rosters, matchups, standings, remaining))
+            yc.high_score_rows(rosters, matchups, standings, remaining,
+                               final=(status == "final")))
 
     cat_leaders = yc.pad_leaders(cat_leaders)
     high_leaders = yc.pad_leaders(high_leaders)
