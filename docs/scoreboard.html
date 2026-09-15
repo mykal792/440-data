@@ -65,6 +65,23 @@
   font-family:"Rotundo",sans-serif; font-size:14px; letter-spacing:.05em; margin:0;
 }
 .ls__label span{margin-right:8px}
+.ls__nav{display:flex; align-items:center; gap:6px; flex:0 0 auto}
+.ls__step{
+  width:20px; height:20px; padding:0; border-radius:50%; cursor:pointer;
+  border:1px solid rgba(255,255,255,.28); background:transparent; color:#cfcfcf;
+  display:grid; place-items:center; flex:0 0 auto;
+}
+.ls__step svg{width:9px; height:9px; display:block}
+.ls__step:hover:not(:disabled){color:var(--ls-mint); border-color:var(--ls-mint)}
+.ls__step:disabled{opacity:.28; cursor:default}
+.ls__step:focus-visible{outline:2px solid var(--ls-mint); outline-offset:2px}
+/* a past week is history, not a live feed - say so instead of ticking */
+.ls__back{
+  font-size:10px; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--ls-mint); background:none; border:0; padding:0 0 0 4px;
+  cursor:pointer; font-family:"Rotundo",sans-serif;
+}
+.ls__back[hidden]{display:none}
 .ls__label b{font-weight:400; color:var(--ls-mint)}
 .ls__status{
   display:flex; align-items:center; gap:9px; margin:0;
@@ -407,7 +424,16 @@ body{margin:0; padding:0; font-family:"Laro Soft",Arial,sans-serif}
 <!-- ============ LIVE SCORING WIDGET ============ -->
 <section class="ls" id="ls" data-status="pregame" aria-labelledby="lsLabel">
   <div class="ls__bar">
-    <p class="ls__label" id="lsLabel"><span id="lsWeek">WEEK 1</span><b>SCOREBOARD</b></p>
+    <div class="ls__nav">
+      <button class="ls__step" id="lsPrev" type="button" aria-label="Previous week" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+      </button>
+      <p class="ls__label" id="lsLabel"><span id="lsWeek">WEEK 1</span><b>SCOREBOARD</b></p>
+      <button class="ls__step" id="lsNext" type="button" aria-label="Next week" disabled>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+      <button class="ls__back" id="lsBack" type="button" hidden>back to live</button>
+    </div>
     <div class="ls__right">
       <p class="ls__status">
         <span class="ls__dot"></span>
@@ -536,6 +562,10 @@ const REFRESH_MS   = 10 * 60 * 1000;
 const FACE_SPRITE  = "";   // production: "/img/faces-sprite.svg"
 const ICON_SPRITE  = "";   // production: "/img/bonus-icons.svg"
 const DEMO         = false; // live feeds
+/* Archived weeks, written by pull_live.py every run. index.json says which
+   weeks exist and which one is current; wN.json is a whole week in one file. */
+const WEEKS_INDEX  = "https://mykal792.github.io/440-data/weeks/index.json";
+const WEEK_SOURCE  = n => "https://mykal792.github.io/440-data/weeks/w" + n + ".json";
 /* Wix can't resize an HTML box from code, so instead of growing the box the
    widget shrinks to whatever box you drew. Set false to leave it alone. */
 const FIT_TO_BOX   = true;
@@ -730,6 +760,10 @@ function fitToBox(){
 window.addEventListener("resize", fitToBox);
 
 function tickAgo(){
+  if (viewWeek !== null) {      /* history: the snapshot's own status says it all */
+    document.getElementById("lsAgo").hidden = true;
+    return;
+  }
   const ago = document.getElementById("lsAgo");
   /* stays hidden until a feed actually lands, so a failed fetch can never
      read as "updated just now" over stale or empty content */
@@ -763,7 +797,58 @@ async function grab(url){
   return res.json();
 }
 
+/* --- week browsing ---------------------------------------------------
+   viewWeek === null means "follow the live feeds". Any other value pins the
+   widget to an archived week and stops the 10-minute refresh from yanking the
+   reader back to now. --------------------------------------------------- */
+let weeksKnown = [], weekNow = null, viewWeek = null;
+
+const prevBtn = document.getElementById("lsPrev");
+const nextBtn = document.getElementById("lsNext");
+const backBtn = document.getElementById("lsBack");
+
+function paintNav(){
+  const shown = viewWeek || weekNow;
+  const older = weeksKnown.filter(w => w < shown);
+  const newer = weeksKnown.filter(w => w > shown);
+  prevBtn.disabled = !older.length;
+  nextBtn.disabled = !newer.length;
+  backBtn.hidden = viewWeek === null;
+}
+
+async function loadIndex(){
+  try {
+    const idx = await grab(WEEKS_INDEX);
+    weeksKnown = (idx.weeks || []).slice().sort((a, b) => a - b);
+    weekNow = idx.current;
+  } catch (e) { /* no archive yet - arrows stay disabled */ }
+  paintNav();
+}
+
+async function showWeek(n){
+  if (n === weekNow) { viewWeek = null; paintNav(); return load(); }
+  try {
+    const w = await grab(WEEK_SOURCE(n));
+    viewWeek = n;
+    render({ week: w.week, status: w.status, updated: w.updated,
+             matchups: w.matchups || [], bonus: w.bonus || null });
+    paintNav();
+  } catch (e) { /* missing snapshot - leave the view alone */ }
+}
+
+function step(dir){
+  const shown = viewWeek || weekNow;
+  const pool = dir < 0 ? weeksKnown.filter(w => w < shown)
+                       : weeksKnown.filter(w => w > shown);
+  if (!pool.length) return;
+  showWeek(dir < 0 ? pool[pool.length - 1] : pool[0]);
+}
+prevBtn.addEventListener("click", () => step(-1));
+nextBtn.addEventListener("click", () => step(1));
+backBtn.addEventListener("click", () => showWeek(weekNow));
+
 async function load(){
+  if (viewWeek !== null) return;        // reader is in the archive; leave them there
   const [s, b] = await Promise.allSettled([grab(SCORE_SOURCE), grab(BONUS_SOURCE)]);
   const scores = s.status === "fulfilled" ? s.value : null;
   const bonus  = b.status === "fulfilled" ? (b.value.live || null) : null;
@@ -777,8 +862,8 @@ async function load(){
     bonus: bonus ? { category: bonus.category, high: bonus.high } : null
   });
 }
-load();
-setInterval(load, REFRESH_MS);
+loadIndex().then(load);
+setInterval(() => { loadIndex(); load(); }, REFRESH_MS);
 
 /* ============ /LIVE SCORING SCRIPT ============ */
 
