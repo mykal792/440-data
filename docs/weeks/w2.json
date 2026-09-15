@@ -2,7 +2,140 @@
   "week": 2,
   "status": "live",
   "updated": "2026-09-15T16:05:22Z",
-  "players": [
+  "matchups": [
+    {
+      "home": {
+        "name": "SCHILLING",
+        "face": "schilling",
+        "score": 0.0,
+        "projected": 114.4
+      },
+      "away": {
+        "name": "GREG",
+        "face": "greg",
+        "score": 0.0,
+        "projected": 112.91
+      }
+    },
+    {
+      "home": {
+        "name": "GARRETT",
+        "face": "garrett",
+        "score": 0.0,
+        "projected": 120.53
+      },
+      "away": {
+        "name": "ANTHONY",
+        "face": "anthony",
+        "score": 0.0,
+        "projected": 99.43
+      }
+    },
+    {
+      "home": {
+        "name": "HAYDEN",
+        "face": "hayden",
+        "score": 0.0,
+        "projected": 99.92
+      },
+      "away": {
+        "name": "GRAHAM",
+        "face": "graham",
+        "score": 0.0,
+        "projected": 116.73
+      }
+    },
+    {
+      "home": {
+        "name": "SCARPITTI",
+        "face": "scarpitti",
+        "score": 0.0,
+        "projected": 111.21
+      },
+      "away": {
+        "name": "SCOTTY",
+        "face": "scotty",
+        "score": 0.0,
+        "projected": 111.67
+      }
+    },
+    {
+      "home": {
+        "name": "GANGUS",
+        "face": "gangus",
+        "score": 0.0,
+        "projected": 116.76
+      },
+      "away": {
+        "name": "COYNE",
+        "face": "coyne",
+        "score": 0.0,
+        "projected": 108.38
+      }
+    }
+  ],
+  "bonus": {
+    "category": {
+      "week": 2,
+      "key": "match-up-blues",
+      "label": "Match Up Blues",
+      "description": "Highest team score in a loss.",
+      "amount": 25,
+      "leaders": [
+        {
+          "rank": 1,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        },
+        {
+          "rank": 2,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        },
+        {
+          "rank": 3,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        }
+      ]
+    },
+    "high": {
+      "key": "high-score",
+      "label": "High Score",
+      "description": "Most fantasy points scored that week.",
+      "amount": 15,
+      "leaders": [
+        {
+          "rank": 1,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "0.00",
+          "detail": "9 to play"
+        },
+        {
+          "rank": 1,
+          "manager": "GREG",
+          "face": "greg",
+          "value": "0.00",
+          "detail": "9 to play"
+        },
+        {
+          "rank": 1,
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "0.00",
+          "detail": "9 to play"
+        }
+      ]
+    }
+  },
+  "top_players": [
     {
       "name": "Jaxson Dart",
       "position": "QB",
