@@ -872,17 +872,32 @@ def remaining_starters(payload, rosters):
     return out
 
 
-def _left(remaining, manager):
-    """'3 LEFT', or '' when nobody is left or the count is unknown."""
+def _left(remaining, manager, final=False):
+    """How much of this team's week is still to come.
+
+    'Final' once the week is settled, '5 to play' while starters are still
+    waiting, 'All played' when everyone has a score but Yahoo has not closed
+    the week out. Sentence case, to sit alongside the player names that
+    occupy this same line in the other race card.
+
+    A caveat worth knowing: Yahoo omits team_remaining_games, so the count
+    comes from starters with no points yet. A player who is on the field
+    right now but has not scored still counts as 'to play'. It never claims
+    a team is done when it isn't, which is the safe direction.
+    """
+    if final:
+        return "Final"
     n = (remaining or {}).get(manager)
-    return "%d LEFT" % n if n else ""
+    if n is None:
+        return ""
+    return "%d to play" % n if n else "All played"
 
 
-def high_score_rows(rosters, matchups, standings, remaining=None):
+def high_score_rows(rosters, matchups, standings, remaining=None, final=False):
     rows = []
     for m in matchups:
         for manager, score in (m["home"], m["away"]):
-            rows.append((manager, score, _left(remaining, manager)))
+            rows.append((manager, score, _left(remaining, manager, final)))
     return rows
 
 
