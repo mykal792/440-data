@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "tax_per_move": 0.5,
-  "updated": "2026-09-16T05:55:20Z",
+  "updated": "2026-09-16T12:37:52Z",
   "high_score_bonus": "15.00",
   "managers": [
     {
@@ -10,22 +10,30 @@
     },
     {
       "name": "HAYDEN",
-      "moves": 2
+      "moves": 3
+    },
+    {
+      "name": "ANTHONY",
+      "moves": 1
+    },
+    {
+      "name": "GANGUS",
+      "moves": 1
     },
     {
       "name": "GRAHAM",
       "moves": 1
     },
     {
-      "name": "ANTHONY",
-      "moves": 0
+      "name": "SCARPITTI",
+      "moves": 1
+    },
+    {
+      "name": "SCOTTY",
+      "moves": 1
     },
     {
       "name": "COYNE",
-      "moves": 0
-    },
-    {
-      "name": "GANGUS",
       "moves": 0
     },
     {
@@ -35,17 +43,50 @@
     {
       "name": "GREG",
       "moves": 0
-    },
-    {
-      "name": "SCARPITTI",
-      "moves": 0
-    },
-    {
-      "name": "SCOTTY",
-      "moves": 0
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "manager": "HAYDEN",
+      "added": "Deebo Samuel Sr.",
+      "add_pos": "SF - WR",
+      "dropped": "Chris Godwin Jr.",
+      "drop_pos": "TB - WR",
+      "date": "Sep 16"
+    },
+    {
+      "manager": "SCARPITTI",
+      "added": "Braelon Allen",
+      "add_pos": "NYJ - RB",
+      "dropped": "Bo Nix",
+      "drop_pos": "Den - QB",
+      "date": "Sep 16"
+    },
+    {
+      "manager": "GANGUS",
+      "added": "Jalen Coker",
+      "add_pos": "Car - WR",
+      "dropped": "Kyler Murray",
+      "drop_pos": "Min - QB",
+      "date": "Sep 16"
+    },
+    {
+      "manager": "SCOTTY",
+      "added": "Dontayvion Wicks",
+      "add_pos": "Phi - WR",
+      "dropped": "Tank Bigsby",
+      "drop_pos": "Phi - RB",
+      "date": "Sep 16"
+    },
+    {
+      "manager": "ANTHONY",
+      "added": "Matthew Golden",
+      "add_pos": "GB - WR",
+      "dropped": "",
+      "drop_pos": "",
+      "date": "Sep 16"
+    }
+  ],
   "high_scores": [
     {
       "week": 1,
