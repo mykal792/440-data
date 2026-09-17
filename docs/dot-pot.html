@@ -91,6 +91,7 @@ body{ margin:0; background:transparent }
   padding:8px 0; border-bottom:1.5px solid #e6e6e6; border-left:1.5px solid #ececec;
 }
 .lb-num--tot{ }
+.lb-num--zero{ color:#9b9b9b }
 
 /* ---- week by week: ALWAYS all 15 weeks, in a fixed-height scroll box -
    this is what makes the block's overall height constant no matter how
@@ -105,8 +106,14 @@ body{ margin:0; background:transparent }
 }
 .wk__grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:6px }
 .wk__cell{ display:flex; align-items:center; gap:5px; border-left:3px solid var(--c); padding:2px 0 2px 6px; min-width:0 }
-.wk__avatar{ width:15px; height:15px; border-radius:50%; flex:0 0 auto; background:#efefef; object-fit:cover }
-.wk__placeholder{ width:15px; height:15px; border-radius:50%; flex:0 0 auto; background:#efefef }
+/* mobile only (base styles - see the container-query note above): dropped
+   to give the player name more room, since the manager name already
+   appears right below it - the avatar was redundant here specifically,
+   unlike the leaderboard where it's the only identifier for the row.
+   Desktop re-enables display and keeps everything else defined here -
+   shape/background/object-fit aren't repeated at the desktop breakpoint. */
+.wk__avatar{ display:none; width:15px; height:15px; border-radius:50%; flex:0 0 auto; background:#efefef; object-fit:cover }
+.wk__placeholder{ display:none; width:15px; height:15px; border-radius:50%; flex:0 0 auto; background:#efefef }
 .wk__text{ min-width:0 }
 .wk__cell b{
   display:block; font-family:"Rotundo",sans-serif; font-weight:400; font-size:9.5px;
@@ -151,7 +158,7 @@ body{ margin:0; background:transparent }
   .wk__num{ font-size:10.5px; margin-bottom:7px }
   .wk__grid{ grid-template-columns:repeat(4,1fr); gap:10px }
   .wk__cell{ gap:7px; padding:2px 0 2px 8px }
-  .wk__avatar, .wk__placeholder{ width:20px; height:20px }
+  .wk__avatar, .wk__placeholder{ display:block; width:20px; height:20px }
   .wk__cell b{ font-size:12px }
   .wk__cell small{ font-size:10.5px }
   .foot{ font-size:11px; margin-top:10px; min-height:13px }
@@ -227,6 +234,15 @@ body{ margin:0; background:transparent }
     return n;
   }
 
+  // A manager with zero dots at a position hasn't "scored a zero" - there's
+  // just nothing there yet. A dash reads as "none" at a glance; a page full
+  // of digit zeros reads as noise.
+  function numCell(value, extraClass) {
+    var cls = 'lb-num' + (extraClass ? ' ' + extraClass : '');
+    if (value === 0) return el('div', cls + ' lb-num--zero', '\u2014');
+    return el('div', cls, String(value));
+  }
+
   function tickAgo() {
     var ago = document.getElementById('dpAgo');
     if (!hasData) { ago.textContent = ''; return; }
@@ -282,9 +298,9 @@ body{ margin:0; background:transparent }
       board.appendChild(name);
 
       POS_ORDER.forEach(function (pos) {
-        board.appendChild(el('div', 'lb-num', String(m.byPos[pos] || 0)));
+        board.appendChild(numCell(m.byPos[pos] || 0));
       });
-      board.appendChild(el('div', 'lb-num lb-num--tot', String(m.total)));
+      board.appendChild(numCell(m.total, 'lb-num--tot'));
     });
   }
 
