@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-18T00:15:26Z",
+  "updated": "2026-09-18T00:20:24Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 0.0,
+        "score": 1.2,
         "projected": 114.62
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 0.0,
+        "score": 0.36,
         "projected": 117.49
       },
       "away": {
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "NAME",
-          "face": "",
+          "manager": "SCHILLING",
+          "face": "schilling",
           "value": "0.00",
-          "detail": ""
+          "detail": "lost to GREG"
         },
         {
-          "rank": 2,
-          "manager": "NAME",
-          "face": "",
+          "rank": 1,
+          "manager": "SCOTTY",
+          "face": "scotty",
           "value": "0.00",
-          "detail": ""
+          "detail": "lost to SCARPITTI"
         },
         {
           "rank": 3,
@@ -113,22 +113,22 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "0.00",
-          "detail": "9 to play"
-        },
-        {
-          "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "0.00",
-          "detail": "9 to play"
+          "value": "1.20",
+          "detail": "8 to play"
         },
         {
-          "rank": 1,
-          "manager": "GARRETT",
-          "face": "garrett",
+          "rank": 2,
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "0.36",
+          "detail": "8 to play"
+        },
+        {
+          "rank": 3,
+          "manager": "SCHILLING",
+          "face": "schilling",
           "value": "0.00",
           "detail": "9 to play"
         }
@@ -136,6 +136,34 @@
     }
   },
   "top_players": [
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 9
+        }
+      ]
+    },
     {
       "name": "Jaxson Dart",
       "position": "QB",
@@ -389,15 +417,6 @@
       "stats": []
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -457,15 +476,6 @@
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 0.0,
       "stats": []
     },
