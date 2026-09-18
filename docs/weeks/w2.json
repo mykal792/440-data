@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-18T00:50:21Z",
+  "updated": "2026-09-18T00:55:57Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 3.7,
+        "score": 3.8,
         "projected": 114.62
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 19.78,
+        "score": 21.3,
         "projected": 117.49
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 3.0,
+        "score": 4.7,
         "projected": 113.54
       }
     }
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "19.78",
+          "value": "21.30",
           "detail": "7 to play"
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "3.70",
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "4.70",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "3.00",
+          "manager": "GREG",
+          "face": "greg",
+          "value": "3.80",
           "detail": "8 to play"
         }
       ]
@@ -142,11 +142,11 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 19.88,
+      "points": 21.4,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 97
+          "value": 135
         },
         {
           "stat": "RUSH YD",
@@ -159,34 +159,34 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 37
-        }
-      ]
-    },
-    {
       "name": "Dalton Kincaid",
       "position": "TE",
       "team": "Buf",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 3.0,
+      "points": 4.7,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 25
+          "value": 37
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 38
         }
       ]
     },
