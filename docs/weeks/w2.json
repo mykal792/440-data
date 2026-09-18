@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-18T02:25:20Z",
+  "updated": "2026-09-18T02:30:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 13.5,
+        "score": 13.7,
         "projected": 114.62
       }
     },
@@ -49,8 +49,8 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 36.44,
-        "projected": 117.49
+        "score": 38.46,
+        "projected": 105.43
       },
       "away": {
         "name": "SCOTTY",
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 15.0,
+        "score": 17.8,
         "projected": 113.54
       }
     }
@@ -84,10 +84,10 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "15.00",
-          "detail": "lost to GANGUS"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "16.00",
+          "detail": "lost to COYNE"
         },
         {
           "rank": 2,
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "36.44",
+          "value": "38.46",
           "detail": "7 to play"
         },
         {
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "16.00",
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "17.80",
           "detail": "8 to play"
         }
       ]
@@ -142,15 +142,15 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 36.54,
+      "points": 38.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 181
+          "value": 204
         },
         {
           "stat": "RUSH YD",
-          "value": 53
+          "value": 64
         },
         {
           "stat": "TD",
@@ -185,6 +185,28 @@
       ]
     },
     {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "Buf",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 17.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 88
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -207,38 +229,16 @@
       ]
     },
     {
-      "name": "Dalton Kincaid",
-      "position": "TE",
-      "team": "Buf",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 15.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 65
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 13.5,
+      "points": 13.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 106
+          "value": 108
         },
         {
           "stat": "REC YD",
