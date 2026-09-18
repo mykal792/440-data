@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-18T01:05:22Z",
+  "updated": "2026-09-18T01:10:22Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 2.5,
+        "score": 5.1,
         "projected": 121.73
       },
       "away": {
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "4.70",
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "5.10",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "3.90",
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "4.70",
           "detail": "8 to play"
         }
       ]
@@ -155,6 +155,28 @@
         {
           "stat": "TD",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -187,20 +209,6 @@
         {
           "stat": "RUSH YD",
           "value": 39
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
         }
       ]
     },
