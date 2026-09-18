@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-18T00:45:22Z",
+  "updated": "2026-09-18T00:50:21Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 2.8,
+        "score": 3.7,
         "projected": 114.62
       }
     },
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "3.00",
+          "manager": "GREG",
+          "face": "greg",
+          "value": "3.70",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "2.80",
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "3.00",
           "detail": "8 to play"
         }
       ]
@@ -159,6 +159,20 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
+        }
+      ]
+    },
+    {
       "name": "Dalton Kincaid",
       "position": "TE",
       "team": "Buf",
@@ -173,20 +187,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 28
         }
       ]
     },
