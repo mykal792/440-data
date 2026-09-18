@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-18T00:35:22Z",
+  "updated": "2026-09-18T00:40:21Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -9,11 +9,11 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 10.88,
+      "points": 19.88,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 22
+          "value": 97
         },
         {
           "stat": "RUSH YD",
@@ -21,6 +21,24 @@
         },
         {
           "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "Buf",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
           "value": 1
         }
       ]
@@ -31,11 +49,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 2.3,
+      "points": 2.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 23
+          "value": 28
         }
       ]
     },
@@ -400,15 +418,6 @@
       "stats": []
     },
     {
-      "name": "DJ Moore",
-      "position": "WR",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Cairo Santos",
       "position": "K",
       "team": "Chi",
@@ -634,15 +643,6 @@
       "stats": []
     },
     {
-      "name": "Dalton Kincaid",
-      "position": "TE",
-      "team": "Buf",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -830,6 +830,20 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": -0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        }
+      ]
     }
   ]
 }
