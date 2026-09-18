@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-18T01:10:22Z",
+  "updated": "2026-09-18T01:15:27Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 5.1,
+        "score": 14.6,
         "projected": 121.73
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 0.0,
+        "score": 1.6,
         "projected": 119.63
       },
       "away": {
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "1.60",
+          "detail": "lost to COYNE"
+        },
+        {
+          "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "0.00",
           "detail": "lost to GREG"
         },
         {
-          "rank": 1,
+          "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
           "value": "0.00",
           "detail": "lost to GARRETT"
-        },
-        {
-          "rank": 1,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "0.00",
-          "detail": "lost to SCARPITTI"
         }
       ]
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "5.10",
+          "value": "14.60",
           "detail": "8 to play"
         },
         {
@@ -164,18 +164,22 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.1,
+      "points": 14.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 34
+          "value": 40
         },
         {
           "stat": "REC YD",
-          "value": 12
+          "value": 31
         },
         {
           "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -209,6 +213,24 @@
         {
           "stat": "RUSH YD",
           "value": 39
+        }
+      ]
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -603,15 +625,6 @@
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
