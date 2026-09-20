@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T20:55:22Z",
+  "updated": "2026-09-20T21:00:31Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 57.8,
+        "score": 63.2,
         "projected": 116.81
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 28.12,
+        "score": 29.02,
         "projected": 113.58
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 23.26,
+        "score": 18.26,
         "projected": 111.47
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 80.9,
+        "score": 82.0,
         "projected": 114.11
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 78.68,
+        "score": 87.18,
         "projected": 122.19
       },
       "away": {
@@ -84,23 +84,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "80.90",
-          "detail": "lost to SCARPITTI"
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "85.32",
+          "detail": "lost to GANGUS"
         },
         {
           "rank": 2,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "78.68",
-          "detail": "lost to COYNE"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "82.00",
+          "detail": "lost to SCARPITTI"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "57.80",
+          "value": "63.20",
           "detail": "lost to GREG"
         }
       ]
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "85.32",
-          "detail": "2 to play"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "87.18",
+          "detail": "All played"
         }
       ]
     }
@@ -577,6 +577,28 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
@@ -597,15 +619,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 11.0,
-      "stats": []
     },
     {
       "name": "D'Andre Swift",
@@ -946,6 +959,28 @@
       ]
     },
     {
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 47
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -968,11 +1003,38 @@
       ]
     },
     {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "Den",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 50
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
+      "points": 6.0,
+      "stats": []
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
       "points": 6.0,
       "stats": []
     },
@@ -984,28 +1046,6 @@
       "manager_display": "GREG",
       "points": 5.9,
       "stats": []
-    },
-    {
-      "name": "De'Von Achane",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Eagles",
@@ -1035,20 +1075,20 @@
       ]
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 4.6,
+      "points": 4.58,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 26
+          "stat": "PASS YD",
+          "value": 52
         },
         {
-          "stat": "REC",
-          "value": 4
+          "stat": "RUSH YD",
+          "value": 25
         }
       ]
     },
@@ -1164,20 +1204,6 @@
       ]
     },
     {
-      "name": "J.K. Dobbins",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 31
-        }
-      ]
-    },
-    {
       "name": "Terry McLaurin",
       "position": "WR",
       "team": "Was",
@@ -1196,20 +1222,16 @@
       ]
     },
     {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.78,
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.9,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 52
-        },
-        {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 29
         }
       ]
     },
@@ -1250,6 +1272,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
         }
       ]
     },
@@ -1321,20 +1357,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 17
         }
       ]
     },
@@ -1456,17 +1478,13 @@
       ]
     },
     {
-      "name": "Jaylen Waddle",
+      "name": "Ladd McConkey",
       "position": "WR",
-      "team": "Den",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.6,
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.5,
       "stats": [
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
         {
           "stat": "REC",
           "value": 1
@@ -1578,15 +1596,6 @@
       "team": "NYG",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     },
