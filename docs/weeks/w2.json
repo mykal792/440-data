@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:50:25Z",
+  "updated": "2026-09-20T17:55:18Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 40.34,
+        "score": 41.64,
         "projected": 109.29
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 39.7,
+        "score": 36.7,
         "projected": 119.66
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 4.76,
+        "score": 5.56,
         "projected": 113.39
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 22.9,
+        "score": 23.2,
         "projected": 108.64
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 21.7,
+        "score": 24.3,
         "projected": 113.98
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 46.5,
+        "score": 47.8,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 35.06,
+        "score": 34.76,
         "projected": 115.65
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "35.06",
+          "value": "34.76",
           "detail": "lost to GANGUS"
         },
         {
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "21.70",
+          "value": "24.30",
           "detail": "lost to SCARPITTI"
         },
         {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "46.50",
+          "value": "47.80",
           "detail": "5 to play"
         },
         {
           "rank": 3,
           "manager": "GREG",
           "face": "greg",
-          "value": "40.34",
+          "value": "41.64",
           "detail": "3 to play"
         }
       ]
@@ -281,21 +281,12 @@
       ]
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 11.0,
+      "points": 12.0,
       "stats": []
     },
     {
@@ -314,6 +305,15 @@
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 9.0,
+      "stats": []
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 8.0,
       "stats": []
     },
     {
@@ -349,11 +349,11 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 6.0,
+      "points": 6.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 50
+          "value": 53
         },
         {
           "stat": "REC",
@@ -412,6 +412,42 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 34
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -430,26 +466,12 @@
       ]
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 38
-        }
-      ]
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 3.7,
+      "points": 4.1,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -457,11 +479,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 6
+          "value": 5
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -510,6 +532,20 @@
       ]
     },
     {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 35
+        }
+      ]
+    },
+    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -520,24 +556,6 @@
         {
           "stat": "PASS YD",
           "value": 79
-        }
-      ]
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -560,20 +578,24 @@
       ]
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.1,
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.84,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 21
+          "stat": "PASS YD",
+          "value": 106
         },
         {
-          "stat": "REC",
-          "value": 2
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -658,28 +680,6 @@
       ]
     },
     {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.94,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 101
-        },
-        {
-          "stat": "RUSH YD",
-          "value": -1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -721,6 +721,24 @@
       "team": "Chi",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 0.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 0.8,
       "stats": [
         {
@@ -1161,15 +1179,6 @@
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
