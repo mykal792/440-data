@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T19:05:21Z",
+  "updated": "2026-09-20T19:10:26Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 71.5,
+        "score": 71.58,
         "projected": 109.29
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 34.8,
+        "score": 34.3,
         "projected": 108.64
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 67.32,
+        "score": 68.42,
         "projected": 116.09
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 46.68,
+        "score": 47.58,
         "projected": 113.98
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 55.1,
+        "score": 55.4,
         "projected": 115.65
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "55.10",
+          "value": "55.40",
           "detail": "lost to GANGUS"
         },
         {
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "46.68",
+          "value": "47.58",
           "detail": "lost to SCARPITTI"
         },
         {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "71.50",
+          "value": "71.58",
           "detail": "1 to play"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "67.32",
+          "value": "68.42",
           "detail": "4 to play"
         },
         {
@@ -348,15 +348,15 @@
       "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 12.8,
+      "points": 13.7,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 48
+          "value": 52
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 5
         },
         {
           "stat": "TD",
@@ -379,11 +379,11 @@
       "team": "Phi",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 11.6,
+      "points": 11.68,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 165
+          "value": 167
         },
         {
           "stat": "RUSH YD",
@@ -444,28 +444,6 @@
       ]
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 8.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 72
-        },
-        {
-          "stat": "REC YD",
-          "value": -3
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -502,6 +480,28 @@
       "stats": []
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 67
+        },
+        {
+          "stat": "REC YD",
+          "value": -3
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Emeka Egbuka",
       "position": "WR",
       "team": "TB",
@@ -533,11 +533,11 @@
       "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 7.5,
+      "points": 7.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 75
+          "value": 78
         }
       ]
     },
@@ -701,6 +701,28 @@
       "stats": []
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -829,28 +851,6 @@
       "manager_display": "GANGUS",
       "points": 3.7,
       "stats": []
-    },
-    {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        },
-        {
-          "stat": "REC YD",
-          "value": 16
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Quinshon Judkins",
