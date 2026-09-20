@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:15:22Z",
+  "updated": "2026-09-20T17:20:24Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -140,20 +140,20 @@
       "stats": []
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 10.0,
       "stats": []
     },
@@ -167,13 +167,35 @@
       "stats": []
     },
     {
-      "name": "Texans",
+      "name": "Buccaneers",
       "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.0,
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.0,
       "stats": []
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Jameson Williams",
@@ -230,20 +252,52 @@
       ]
     },
     {
-      "name": "Caleb Williams",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Lamar Jackson",
       "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.98,
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.28,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 7
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 17
+          "value": 57
         }
       ]
     },
@@ -253,11 +307,11 @@
       "team": "Chi",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 1.9,
+      "points": 2.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 10
         },
         {
           "stat": "REC YD",
@@ -270,13 +324,17 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.7,
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.14,
       "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 11
+        },
         {
           "stat": "RUSH YD",
           "value": 17
@@ -284,20 +342,16 @@
       ]
     },
     {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.66,
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.9,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 44
-        },
-        {
           "stat": "RUSH YD",
-          "value": -1
+          "value": 19
         }
       ]
     },
@@ -334,38 +388,6 @@
       ]
     },
     {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
-        }
-      ]
-    },
-    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
@@ -380,16 +402,16 @@
       ]
     },
     {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.44,
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.4,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 11
+          "stat": "RUSH YD",
+          "value": 4
         }
       ]
     },
@@ -404,6 +426,20 @@
         {
           "stat": "RUSH YD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
         }
       ]
     },
@@ -525,15 +561,6 @@
       "stats": []
     },
     {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -606,15 +633,6 @@
       "stats": []
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -647,15 +665,6 @@
       "team": "Bal",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 0.0,
       "stats": []
     },
@@ -990,6 +999,28 @@
         {
           "stat": "RUSH YD",
           "value": -3
+        }
+      ]
+    },
+    {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": -0.34,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 44
+        },
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
