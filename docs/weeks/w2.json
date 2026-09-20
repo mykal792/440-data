@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T18:25:21Z",
+  "updated": "2026-09-20T18:30:34Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 60.04,
+        "score": 59.04,
         "projected": 109.29
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 9.86,
+        "score": 12.56,
         "projected": 113.5
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 65.22,
+        "score": 65.62,
         "projected": 116.09
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 40.54,
+        "score": 41.54,
         "projected": 113.98
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "40.54",
+          "value": "41.54",
           "detail": "lost to SCARPITTI"
         },
         {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "65.22",
+          "value": "65.62",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "60.04",
+          "value": "59.04",
           "detail": "1 to play"
         },
         {
@@ -347,15 +347,6 @@
       ]
     },
     {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Jalen Hurts",
       "position": "QB",
       "team": "Phi",
@@ -418,6 +409,24 @@
       ]
     },
     {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 72
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "MarShawn Lloyd",
       "position": "RB",
       "team": "GB",
@@ -453,16 +462,38 @@
       "stats": []
     },
     {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 7.7,
+      "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.1,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 47
+        },
+        {
           "stat": "REC YD",
-          "value": 62
+          "value": 9
         },
         {
           "stat": "REC",
@@ -487,15 +518,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 7.0,
-      "stats": []
     },
     {
       "name": "Bucky Irving",
@@ -523,6 +545,28 @@
       "manager_display": "COYNE",
       "points": 6.0,
       "stats": []
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 42
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Drake London",
@@ -569,28 +613,6 @@
       ]
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 37
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
@@ -628,28 +650,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -708,6 +708,28 @@
       ]
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 8
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -715,28 +737,6 @@
       "manager_display": "GANGUS",
       "points": 3.7,
       "stats": []
-    },
-    {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Quinshon Judkins",
