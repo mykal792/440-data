@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T18:40:22Z",
+  "updated": "2026-09-20T18:45:27Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -122,6 +122,28 @@
       ]
     },
     {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 15.14,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 186
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 17
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -144,38 +166,16 @@
       ]
     },
     {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 14.54,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 171
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 17
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 14.3,
+      "points": 15.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 51
+          "value": 58
         },
         {
           "stat": "REC YD",
@@ -214,6 +214,15 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Jalen Hurts",
       "position": "QB",
       "team": "Phi",
@@ -238,15 +247,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.0,
-      "stats": []
     },
     {
       "name": "Buccaneers",
@@ -338,6 +338,46 @@
       "stats": []
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 38
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -360,28 +400,6 @@
       ]
     },
     {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 34
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -396,24 +414,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 54
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -557,24 +557,6 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.26,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 89
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        }
-      ]
-    },
-    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -606,6 +588,50 @@
       "stats": []
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 125
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 60
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -623,28 +649,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 60
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
