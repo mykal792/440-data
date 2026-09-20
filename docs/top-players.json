@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T21:15:26Z",
+  "updated": "2026-09-20T21:20:28Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -381,25 +381,16 @@
       ]
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 12.8,
-      "stats": []
-    },
-    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 12.8,
+      "points": 13.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 45
+          "value": 53
         },
         {
           "stat": "REC YD",
@@ -414,6 +405,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 12.8,
+      "stats": []
     },
     {
       "name": "Aaron Jones Sr.",
@@ -519,11 +519,11 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 10.9,
+      "points": 11.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 12
+          "value": 13
         },
         {
           "stat": "REC YD",
@@ -852,6 +852,46 @@
       ]
     },
     {
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 50
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 65
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 45
+        }
+      ]
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -901,28 +941,6 @@
       ]
     },
     {
-      "name": "De'Von Achane",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
@@ -939,24 +957,6 @@
       "manager_display": "GREG",
       "points": 5.9,
       "stats": []
-    },
-    {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.1,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 65
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        }
-      ]
     },
     {
       "name": "Eagles",
@@ -1054,11 +1054,11 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 3.46,
+      "points": 3.9,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 79
+          "value": 90
         },
         {
           "stat": "RUSH YD",
@@ -1339,6 +1339,28 @@
       ]
     },
     {
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 79
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Cameron Dicker",
       "position": "K",
       "team": "LAC",
@@ -1364,28 +1386,6 @@
       "manager_display": "GRAHAM",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 66
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Colston Loveland",
