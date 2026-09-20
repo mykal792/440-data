@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T18:15:24Z",
+  "updated": "2026-09-20T18:20:23Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -249,6 +249,15 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Buccaneers",
       "position": "DEF",
       "team": "TB",
@@ -302,15 +311,6 @@
       ]
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.0,
-      "stats": []
-    },
-    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -338,6 +338,24 @@
       ]
     },
     {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -352,11 +370,11 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 6.3,
+      "points": 6.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 53
+          "value": 54
         },
         {
           "stat": "REC",
@@ -396,24 +414,6 @@
       ]
     },
     {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 46
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -432,6 +432,20 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 52
         }
       ]
     },
@@ -561,30 +575,16 @@
       ]
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        }
-      ]
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 2.8,
+      "points": 3.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 20
+          "value": 26
         },
         {
           "stat": "REC YD",
@@ -726,6 +726,24 @@
       "stats": []
     },
     {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -746,6 +764,20 @@
           "stat": "REC YD",
           "value": 3
         },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Kyle Pitts Sr.",
+      "position": "TE",
+      "team": "Atl",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.5,
+      "stats": [
         {
           "stat": "REC",
           "value": 1
@@ -891,15 +923,6 @@
       "name": "Michael Wilson",
       "position": "WR",
       "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
@@ -1080,15 +1103,6 @@
       "name": "De'Von Achane",
       "position": "RB",
       "team": "Mia",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Kyle Pitts Sr.",
-      "position": "TE",
-      "team": "Atl",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
