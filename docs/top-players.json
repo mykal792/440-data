@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T19:55:21Z",
+  "updated": "2026-09-20T20:00:33Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -44,6 +44,28 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 24.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 117
+        },
+        {
+          "stat": "REC",
+          "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -131,6 +153,32 @@
       ]
     },
     {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 20.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 264
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 16
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Dalton Kincaid",
       "position": "TE",
       "team": "Buf",
@@ -167,28 +215,6 @@
         {
           "stat": "REC",
           "value": 8
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 17.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 83
-        },
-        {
-          "stat": "REC",
-          "value": 7
         },
         {
           "stat": "TD",
@@ -290,32 +316,6 @@
       ]
     },
     {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.28,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 227
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -339,11 +339,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 11.3,
+      "points": 11.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 25
+          "value": 28
         },
         {
           "stat": "REC YD",
@@ -426,6 +426,28 @@
       ]
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 80
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -479,28 +501,6 @@
       ]
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 9.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 69
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Emeka Egbuka",
       "position": "WR",
       "team": "TB",
@@ -527,28 +527,6 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 208
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -556,6 +534,28 @@
       "manager_display": "GANGUS",
       "points": 8.2,
       "stats": []
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.02,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 208
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 17
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Texans",
