@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T18:20:23Z",
+  "updated": "2026-09-20T18:25:21Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 58.84,
+        "score": 60.04,
         "projected": 109.29
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 40.3,
+        "score": 42.5,
         "projected": 119.66
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 8.86,
+        "score": 9.86,
         "projected": 113.5
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 65.32,
+        "score": 65.22,
         "projected": 116.09
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 39.04,
+        "score": 40.54,
         "projected": 113.98
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 54.7,
+        "score": 58.4,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 49.82,
+        "score": 50.1,
         "projected": 115.65
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "49.82",
+          "value": "50.10",
           "detail": "lost to GANGUS"
         },
         {
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "39.04",
+          "value": "40.54",
           "detail": "lost to SCARPITTI"
         },
         {
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "65.32",
+          "value": "65.22",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "58.84",
+          "value": "60.04",
           "detail": "1 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "54.70",
-          "detail": "5 to play"
+          "value": "58.40",
+          "detail": "4 to play"
         }
       ]
     }
@@ -525,6 +525,28 @@
       "stats": []
     },
     {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -2
+        },
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -610,6 +632,28 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 36
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -664,26 +708,13 @@
       ]
     },
     {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -2
-        },
-        {
-          "stat": "REC YD",
-          "value": 28
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.7,
+      "stats": []
     },
     {
       "name": "Breece Hall",
@@ -691,11 +722,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 3.6,
+      "points": 3.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 6
         },
         {
           "stat": "REC YD",
@@ -704,28 +735,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 26
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -752,6 +761,28 @@
       ]
     },
     {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.7,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 60
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -765,28 +796,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.42,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 53
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -824,6 +833,24 @@
         {
           "stat": "REC YD",
           "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Kyle Pitts Sr.",
+      "position": "TE",
+      "team": "Atl",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 15
         },
         {
           "stat": "REC",
@@ -886,6 +913,28 @@
       "stats": []
     },
     {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "team": "TB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -3
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -897,20 +946,6 @@
           "stat": "REC YD",
           "value": 3
         },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kyle Pitts Sr.",
-      "position": "TE",
-      "team": "Atl",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.5,
-      "stats": [
         {
           "stat": "REC",
           "value": 1
@@ -1134,15 +1169,6 @@
       "stats": []
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Justin Herbert",
       "position": "QB",
       "team": "LAC",
@@ -1324,20 +1350,6 @@
         {
           "stat": "RUSH YD",
           "value": -1
-        }
-      ]
-    },
-    {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "team": "TB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": -0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -3
         }
       ]
     },
