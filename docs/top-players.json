@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T20:30:28Z",
+  "updated": "2026-09-20T20:35:25Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -431,6 +431,28 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -546,6 +568,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 53
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -766,24 +810,6 @@
       "stats": []
     },
     {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -886,6 +912,46 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -926,16 +992,16 @@
       ]
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.0,
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.5,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 50
+          "stat": "RUSH YD",
+          "value": 25
         }
       ]
     },
@@ -989,20 +1055,6 @@
       ]
     },
     {
-      "name": "J.K. Dobbins",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        }
-      ]
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -1025,42 +1077,6 @@
       ]
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 29
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Michael Mayer",
       "position": "TE",
       "team": "LV",
@@ -1079,18 +1095,22 @@
       ]
     },
     {
-      "name": "De'Von Achane",
-      "position": "RB",
-      "team": "Mia",
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.0,
+      "stats": []
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        }
-      ]
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Omarion Hampton",
@@ -1161,6 +1181,24 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jaylen Waddle",
       "position": "WR",
       "team": "Den",
@@ -1193,18 +1231,23 @@
       ]
     },
     {
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Jaxson Dart",
       "position": "QB",
       "team": "NYG",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1283,15 +1326,6 @@
       "stats": []
     },
     {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -1328,15 +1362,6 @@
       "stats": []
     },
     {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -1358,15 +1383,6 @@
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
@@ -1419,6 +1435,28 @@
         {
           "stat": "RUSH YD",
           "value": -1
+        }
+      ]
+    },
+    {
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": -0.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 29
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     }
