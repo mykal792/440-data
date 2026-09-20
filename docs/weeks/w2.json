@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:00:34Z",
+  "updated": "2026-09-20T17:05:19Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 22.4,
+        "score": 32.4,
         "projected": 109.28
       }
     },
@@ -21,27 +21,27 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 20.3,
+        "score": 30.3,
         "projected": 119.73
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 0.0,
-        "projected": 112.55
+        "projected": 113.47
       }
     },
     {
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 4.3,
+        "score": 4.7,
         "projected": 108.66
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 0.0,
+        "score": 3.5,
         "projected": 111.24
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 46.72,
+        "score": 56.72,
         "projected": 116.08
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 0.0,
+        "score": 13.4,
         "projected": 114.1
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 32.7,
+        "score": 42.9,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 19.0,
+        "score": 29.8,
         "projected": 115.78
       }
     }
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "19.00",
+          "value": "29.80",
           "detail": "lost to GANGUS"
         },
         {
           "rank": 2,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "0.00",
-          "detail": "lost to GREG"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "13.40",
+          "detail": "lost to SCARPITTI"
         },
         {
-          "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "0.00",
-          "detail": "lost to GARRETT"
+          "rank": 3,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "3.50",
+          "detail": "lost to HAYDEN"
         }
       ]
     },
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "46.72",
-          "detail": "7 to play"
+          "value": "56.72",
+          "detail": "6 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "32.70",
-          "detail": "8 to play"
+          "value": "42.90",
+          "detail": "6 to play"
         },
         {
           "rank": 3,
           "manager": "GREG",
           "face": "greg",
-          "value": "22.40",
-          "detail": "8 to play"
+          "value": "32.40",
+          "detail": "7 to play"
         }
       ]
     }
@@ -255,6 +255,60 @@
       ]
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Eagles",
+      "position": "DEF",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -268,6 +322,84 @@
         },
         {
           "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 24
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
           "value": 2
         }
       ]
@@ -417,15 +549,6 @@
       "stats": []
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -438,15 +561,6 @@
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
@@ -561,15 +675,6 @@
       "stats": []
     },
     {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -624,15 +729,6 @@
       "stats": []
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jayden Daniels",
       "position": "QB",
       "team": "Was",
@@ -645,15 +741,6 @@
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
@@ -696,15 +783,6 @@
       "stats": []
     },
     {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Justin Herbert",
       "position": "QB",
       "team": "LAC",
@@ -726,15 +804,6 @@
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
@@ -804,15 +873,6 @@
       "stats": []
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -849,15 +909,6 @@
       "stats": []
     },
     {
-      "name": "Eagles",
-      "position": "DEF",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
@@ -879,15 +930,6 @@
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
@@ -930,15 +972,6 @@
       "stats": []
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -975,7 +1008,7 @@
       "stats": []
     },
     {
-      "name": "Quentin Johnston",
+      "name": "Ladd McConkey",
       "position": "WR",
       "team": "LAC",
       "manager": "anthony",

@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:00:34Z",
+  "updated": "2026-09-20T17:05:19Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -122,6 +122,60 @@
       ]
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Eagles",
+      "position": "DEF",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -135,6 +189,84 @@
         },
         {
           "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 24
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
           "value": 2
         }
       ]
@@ -284,15 +416,6 @@
       "stats": []
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -305,15 +428,6 @@
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
@@ -428,15 +542,6 @@
       "stats": []
     },
     {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -491,15 +596,6 @@
       "stats": []
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jayden Daniels",
       "position": "QB",
       "team": "Was",
@@ -512,15 +608,6 @@
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
@@ -563,15 +650,6 @@
       "stats": []
     },
     {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Justin Herbert",
       "position": "QB",
       "team": "LAC",
@@ -593,15 +671,6 @@
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
@@ -671,15 +740,6 @@
       "stats": []
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -716,15 +776,6 @@
       "stats": []
     },
     {
-      "name": "Eagles",
-      "position": "DEF",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
@@ -746,15 +797,6 @@
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
@@ -797,15 +839,6 @@
       "stats": []
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -842,7 +875,7 @@
       "stats": []
     },
     {
-      "name": "Quentin Johnston",
+      "name": "Ladd McConkey",
       "position": "WR",
       "team": "LAC",
       "manager": "anthony",
