@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T19:00:31Z",
+  "updated": "2026-09-20T19:05:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 14.4,
+        "score": 14.5,
         "projected": 116.56
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 12.88,
+        "score": 12.8,
         "projected": 113.5
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 34.6,
+        "score": 34.8,
         "projected": 108.64
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 45.9,
+        "score": 46.68,
         "projected": 113.98
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 61.1,
+        "score": 64.5,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 56.82,
+        "score": 55.1,
         "projected": 115.65
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "56.82",
+          "value": "55.10",
           "detail": "lost to GANGUS"
         },
         {
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "45.90",
+          "value": "46.68",
           "detail": "lost to SCARPITTI"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "14.40",
+          "value": "14.50",
           "detail": "lost to GREG"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "61.10",
+          "value": "64.50",
           "detail": "3 to play"
         }
       ]
@@ -260,11 +260,11 @@
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 16.5,
+      "points": 16.38,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 210
+          "value": 207
         },
         {
           "stat": "RUSH YD",
@@ -282,7 +282,7 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 15.8,
+      "points": 16.0,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -290,11 +290,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 22
+          "value": 19
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         },
         {
           "stat": "TD",
@@ -321,6 +321,24 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 14.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 102
+        },
+        {
+          "stat": "REC",
+          "value": 5
         }
       ]
     },
@@ -382,25 +400,16 @@
       ]
     },
     {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "MarShawn Lloyd",
       "position": "RB",
       "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 9.3,
+      "points": 9.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 18
         },
         {
           "stat": "REC YD",
@@ -413,24 +422,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 9.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 73
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -489,6 +480,15 @@
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
+      "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 8.0,
       "stats": []
     },
@@ -591,15 +591,6 @@
       "stats": []
     },
     {
-      "name": "Eagles",
-      "position": "DEF",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -679,25 +670,16 @@
       ]
     },
     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "Caleb Williams",
       "position": "QB",
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 4.92,
+      "points": 5.2,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 68
+          "value": 75
         },
         {
           "stat": "RUSH YD",
@@ -708,6 +690,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Chris Olave",
@@ -733,11 +724,11 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 4.58,
+      "points": 4.5,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 147
+          "value": 145
         },
         {
           "stat": "RUSH YD",
@@ -802,6 +793,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Eagles",
+      "position": "DEF",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.0,
+      "stats": []
     },
     {
       "name": "Harold Fannin Jr.",
@@ -875,6 +875,32 @@
       ]
     },
     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 40
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
@@ -932,32 +958,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 31
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
