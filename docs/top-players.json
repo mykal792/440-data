@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T21:25:19Z",
+  "updated": "2026-09-20T21:30:28Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -179,6 +179,28 @@
       ]
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 19.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 100
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
@@ -319,16 +341,20 @@
       ]
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 14.7,
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 15.3,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 70
+        },
+        {
           "stat": "REC YD",
-          "value": 82
+          "value": 18
         },
         {
           "stat": "REC",
@@ -381,24 +407,20 @@
       ]
     },
     {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 13.6,
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.26,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 69
+        },
+        {
           "stat": "RUSH YD",
-          "value": 53
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "value": 45
         },
         {
           "stat": "TD",
@@ -699,11 +721,11 @@
       "team": "Mia",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 8.4,
+      "points": 8.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 50
+          "value": 54
         },
         {
           "stat": "REC YD",
@@ -874,24 +896,6 @@
       ]
     },
     {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.1,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 65
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 45
-        }
-      ]
-    },
-    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -937,6 +941,28 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "Was",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -1103,11 +1129,11 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 3.1,
+      "points": 3.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 21
+          "value": 22
         },
         {
           "stat": "REC YD",
@@ -1463,15 +1489,6 @@
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Stefon Diggs",
-      "position": "WR",
-      "team": "Was",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
