@@ -1,19 +1,19 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:55:18Z",
+  "updated": "2026-09-20T18:00:30Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 1.3,
+        "score": 6.8,
         "projected": 116.56
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 41.64,
+        "score": 43.56,
         "projected": 109.29
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 36.7,
+        "score": 36.9,
         "projected": 119.66
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 5.56,
+        "score": 5.76,
         "projected": 113.39
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 23.2,
+        "score": 24.9,
         "projected": 108.64
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 6.3,
+        "score": 8.0,
         "projected": 111.37
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 47.8,
+        "score": 48.8,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 34.76,
+        "score": 35.86,
         "projected": 115.65
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "34.76",
+          "value": "35.86",
           "detail": "lost to GANGUS"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "6.30",
+          "value": "8.00",
           "detail": "lost to HAYDEN"
         }
       ]
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "47.80",
+          "value": "48.80",
           "detail": "5 to play"
         },
         {
           "rank": 3,
           "manager": "GREG",
           "face": "greg",
-          "value": "41.64",
+          "value": "43.56",
           "detail": "3 to play"
         }
       ]
@@ -260,11 +260,11 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 12.6,
+      "points": 14.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 34
+          "value": 51
         },
         {
           "stat": "REC YD",
@@ -295,7 +295,7 @@
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.0,
+      "points": 11.0,
       "stats": []
     },
     {
@@ -308,20 +308,20 @@
       "stats": []
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Buccaneers",
       "position": "DEF",
       "team": "TB",
       "manager": "gangus",
       "manager_display": "GANGUS",
+      "points": 9.0,
+      "stats": []
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 8.0,
       "stats": []
     },
@@ -448,6 +448,24 @@
       ]
     },
     {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -484,6 +502,28 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 119
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -537,11 +577,11 @@
       "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 3.5,
+      "points": 3.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 35
+          "value": 36
         }
       ]
     },
@@ -574,28 +614,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 106
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -663,11 +681,11 @@
       "team": "Chi",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 2.2,
+      "points": 2.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 12
         },
         {
           "stat": "REC YD",
@@ -680,16 +698,24 @@
       ]
     },
     {
-      "name": "Bijan Robinson",
+      "name": "David Montgomery",
       "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.6,
+      "team": "Hou",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 16
+          "value": 11
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -699,11 +725,11 @@
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.86,
+      "points": 1.86,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 14
+          "value": 39
         },
         {
           "stat": "RUSH YD",
@@ -711,6 +737,38 @@
         },
         {
           "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        }
+      ]
+    },
+    {
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
           "value": 1
         }
       ]
@@ -752,34 +810,6 @@
       ]
     },
     {
-      "name": "David Montgomery",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        }
-      ]
-    },
-    {
-      "name": "MarShawn Lloyd",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.5,
-      "stats": [
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jaxson Dart",
       "position": "QB",
       "team": "NYG",
@@ -810,15 +840,6 @@
       "name": "Jaylen Waddle",
       "position": "WR",
       "team": "Den",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
