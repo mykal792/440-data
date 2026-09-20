@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T22:35:30Z",
+  "updated": "2026-09-20T22:40:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 84.6,
+        "score": 85.9,
         "projected": 116.81
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 53.32,
+        "score": 53.22,
         "projected": 113.58
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 135.32,
+        "score": 136.02,
         "projected": 116.38
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 89.82,
+        "score": 90.32,
         "projected": 115.65
       }
     }
@@ -93,14 +93,14 @@
           "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "89.82",
+          "value": "90.32",
           "detail": "lost to GANGUS"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "84.60",
+          "value": "85.90",
           "detail": "lost to GREG"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "135.32",
+          "value": "136.02",
           "detail": "All played"
         },
         {
@@ -304,6 +304,32 @@
       "stats": []
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 20.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 43
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -351,32 +377,6 @@
         },
         {
           "stat": "INT",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 19.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "REC YD",
-          "value": 35
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
           "value": 2
         }
       ]
@@ -453,11 +453,11 @@
       "team": "LAC",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 18.3,
+      "points": 18.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 92
+          "value": 91
         },
         {
           "stat": "REC YD",
@@ -650,25 +650,16 @@
       ]
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 12.8,
-      "stats": []
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 12.5,
+      "points": 13.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 58
+          "value": 65
         },
         {
           "stat": "REC YD",
@@ -683,6 +674,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 12.8,
+      "stats": []
     },
     {
       "name": "Aaron Jones Sr.",
@@ -1135,6 +1135,28 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -1207,28 +1229,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
