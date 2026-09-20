@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T22:25:21Z",
+  "updated": "2026-09-20T22:30:29Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 77.66,
+        "score": 77.9,
         "projected": 119.65
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 50.72,
+        "score": 53.02,
         "projected": 113.58
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 47.32,
+        "score": 51.1,
         "projected": 111.47
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 86.6,
+        "score": 90.9,
         "projected": 114.11
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 101.44,
+        "score": 102.54,
         "projected": 122.19
       },
       "away": {
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "90.90",
+          "detail": "lost to SCARPITTI"
+        },
+        {
+          "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
           "value": "89.82",
           "detail": "lost to GANGUS"
-        },
-        {
-          "rank": 2,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "86.60",
-          "detail": "lost to SCARPITTI"
         },
         {
           "rank": 3,
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "101.44",
+          "value": "102.54",
           "detail": "All played"
         }
       ]
@@ -287,11 +287,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 20.46,
+      "points": 20.7,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 184
+          "value": 190
         },
         {
           "stat": "RUSH YD",
@@ -453,11 +453,11 @@
       "team": "LAC",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 17.4,
+      "points": 18.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 83
+          "value": 89
         },
         {
           "stat": "REC YD",
@@ -761,16 +761,42 @@
       ]
     },
     {
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 165
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "De'Von Achane",
       "position": "RB",
       "team": "Mia",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 10.6,
+      "points": 10.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 72
+          "value": 71
         },
         {
           "stat": "REC YD",
@@ -804,32 +830,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 153
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -938,6 +938,15 @@
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 9.0,
+      "stats": []
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.9,
       "stats": []
     },
     {
@@ -1273,6 +1282,15 @@
       "stats": []
     },
     {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.3,
+      "stats": []
+    },
+    {
       "name": "Eagles",
       "position": "DEF",
       "team": "Phi",
@@ -1309,15 +1327,6 @@
       ]
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.5,
-      "stats": []
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -1328,6 +1337,24 @@
         {
           "stat": "REC YD",
           "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 31
         },
         {
           "stat": "REC",
@@ -1372,6 +1399,28 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "J.K. Dobbins",
       "position": "RB",
       "team": "Den",
@@ -1400,28 +1449,6 @@
         {
           "stat": "REC YD",
           "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
         },
         {
           "stat": "REC",
@@ -1514,24 +1541,6 @@
       ]
     },
     {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Cameron Dicker",
       "position": "K",
       "team": "LAC",
@@ -1546,15 +1555,6 @@
       "team": "Chi",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 2.0,
-      "stats": []
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 2.0,
       "stats": []
     },
