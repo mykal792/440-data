@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:05:19Z",
+  "updated": "2026-09-20T17:10:25Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -122,12 +122,21 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 10.0,
+      "points": 11.0,
       "stats": []
     },
     {
@@ -136,15 +145,6 @@
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 10.0,
       "stats": []
     },
@@ -212,20 +212,48 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.68,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 42
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 3.4,
+      "points": 1.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 24
+          "value": 6
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 25
         }
       ]
     },
@@ -479,15 +507,6 @@
       "stats": []
     },
     {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -518,15 +537,6 @@
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "team": "TB",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
@@ -794,15 +804,6 @@
       "stats": []
     },
     {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -835,15 +836,6 @@
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     },
@@ -930,6 +922,46 @@
         {
           "stat": "RUSH YD",
           "value": -1
+        }
+      ]
+    },
+    {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "team": "TB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": -0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -3
+        }
+      ]
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": -0.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     }

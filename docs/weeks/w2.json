@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:05:19Z",
+  "updated": "2026-09-20T17:10:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 32.4,
+        "score": 33.1,
         "projected": 109.28
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 30.3,
+        "score": 31.3,
         "projected": 119.73
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 0.0,
+        "score": 1.68,
         "projected": 113.47
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 56.72,
+        "score": 58.72,
         "projected": 116.08
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 13.4,
+        "score": 10.3,
         "projected": 114.1
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "13.40",
+          "value": "10.30",
           "detail": "lost to SCARPITTI"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "56.72",
+          "value": "58.72",
           "detail": "6 to play"
         },
         {
@@ -129,8 +129,8 @@
           "rank": 3,
           "manager": "GREG",
           "face": "greg",
-          "value": "32.40",
-          "detail": "7 to play"
+          "value": "33.10",
+          "detail": "5 to play"
         }
       ]
     }
@@ -255,12 +255,21 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 10.0,
+      "points": 11.0,
       "stats": []
     },
     {
@@ -269,15 +278,6 @@
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 10.0,
       "stats": []
     },
@@ -345,20 +345,48 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.68,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 42
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 3.4,
+      "points": 1.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 24
+          "value": 6
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 25
         }
       ]
     },
@@ -612,15 +640,6 @@
       "stats": []
     },
     {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -651,15 +670,6 @@
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "team": "TB",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
@@ -927,15 +937,6 @@
       "stats": []
     },
     {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -968,15 +969,6 @@
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     },
@@ -1063,6 +1055,46 @@
         {
           "stat": "RUSH YD",
           "value": -1
+        }
+      ]
+    },
+    {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "team": "TB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": -0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -3
+        }
+      ]
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": -0.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     }
