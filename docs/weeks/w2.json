@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T18:35:20Z",
+  "updated": "2026-09-20T18:40:22Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 59.28,
+        "score": 59.56,
         "projected": 109.29
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 42.5,
+        "score": 41.7,
         "projected": 119.66
       },
       "away": {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "59.28",
+          "value": "59.56",
           "detail": "1 to play"
         },
         {
@@ -352,11 +352,11 @@
       "team": "Phi",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.88,
+      "points": 11.16,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 147
+          "value": 154
         },
         {
           "stat": "RUSH YD",
@@ -453,15 +453,6 @@
       ]
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -494,6 +485,28 @@
         {
           "stat": "REC YD",
           "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
         },
         {
           "stat": "REC",
@@ -536,6 +549,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.0,
+      "stats": []
     },
     {
       "name": "Eagles",
@@ -583,28 +605,6 @@
         {
           "stat": "REC YD",
           "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
         },
         {
           "stat": "REC",
