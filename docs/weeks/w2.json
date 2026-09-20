@@ -1,19 +1,19 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T20:00:33Z",
+  "updated": "2026-09-20T20:05:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 19.5,
+        "score": 29.5,
         "projected": 116.83
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 102.26,
+        "score": 102.46,
         "projected": 109.39
       }
     },
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "22.32",
-          "detail": "lost to GARRETT"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "29.50",
+          "detail": "lost to GREG"
         }
       ]
     },
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "102.26",
+          "value": "102.46",
           "detail": "1 to play"
         },
         {
@@ -590,6 +590,28 @@
       "stats": []
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 80
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -604,28 +626,6 @@
         {
           "stat": "REC YD",
           "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 78
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
         },
         {
           "stat": "REC",
