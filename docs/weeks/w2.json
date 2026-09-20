@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T20:50:25Z",
+  "updated": "2026-09-20T20:55:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 62.8,
+        "score": 57.8,
         "projected": 116.81
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 27.32,
+        "score": 28.12,
         "projected": 113.58
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 54.16,
+        "score": 57.06,
         "projected": 108.67
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 80.2,
+        "score": 80.9,
         "projected": 114.11
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 76.42,
+        "score": 78.68,
         "projected": 122.19
       },
       "away": {
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "80.20",
+          "value": "80.90",
           "detail": "lost to SCARPITTI"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "76.42",
+          "value": "78.68",
           "detail": "lost to COYNE"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "62.80",
+          "value": "57.80",
           "detail": "lost to GREG"
         }
       ]
@@ -492,15 +492,6 @@
       ]
     },
     {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 14.0,
-      "stats": []
-    },
-    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -742,6 +733,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.0,
+      "stats": []
     },
     {
       "name": "Emeka Egbuka",
@@ -991,19 +991,19 @@
       "team": "Mia",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 5.2,
+      "points": 5.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 41
+          "value": 46
         },
         {
           "stat": "REC YD",
-          "value": 6
+          "value": 3
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -1164,6 +1164,56 @@
       ]
     },
     {
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 31
+        }
+      ]
+    },
+    {
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "team": "Was",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 24
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.78,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 52
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -1200,20 +1250,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "J.K. Dobbins",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
         }
       ]
     },
@@ -1289,6 +1325,20 @@
       ]
     },
     {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 17
+        }
+      ]
+    },
+    {
       "name": "Mike Evans",
       "position": "WR",
       "team": "SF",
@@ -1303,20 +1353,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 15
         }
       ]
     },
@@ -1438,20 +1474,6 @@
       ]
     },
     {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 13
-        }
-      ]
-    },
-    {
       "name": "Jaxson Dart",
       "position": "QB",
       "team": "NYG",
@@ -1484,15 +1506,6 @@
       "team": "KC",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Terry McLaurin",
-      "position": "WR",
-      "team": "Was",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
       "points": 0.0,
       "stats": []
     },
