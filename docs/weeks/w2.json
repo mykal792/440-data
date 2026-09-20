@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:45:24Z",
+  "updated": "2026-09-20T17:50:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 36.32,
+        "score": 40.34,
         "projected": 109.29
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 38.0,
+        "score": 39.7,
         "projected": 119.66
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 4.16,
+        "score": 4.76,
         "projected": 113.39
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 22.2,
+        "score": 22.9,
         "projected": 108.64
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 4.2,
+        "score": 6.3,
         "projected": 111.37
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 64.62,
+        "score": 64.32,
         "projected": 116.09
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 45.5,
+        "score": 46.5,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 31.26,
+        "score": 35.06,
         "projected": 115.65
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "31.26",
+          "value": "35.06",
           "detail": "lost to GANGUS"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "4.20",
+          "value": "6.30",
           "detail": "lost to HAYDEN"
         }
       ]
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "64.62",
+          "value": "64.32",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "45.50",
+          "value": "46.50",
           "detail": "5 to play"
         },
         {
           "rank": 3,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "38.00",
-          "detail": "4 to play"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "40.34",
+          "detail": "3 to play"
         }
       ]
     }
@@ -322,8 +322,26 @@
       "team": "TB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 7.0,
+      "points": 8.0,
       "stats": []
+    },
+    {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 6.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 44
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
     },
     {
       "name": "Bucky Irving",
@@ -331,19 +349,33 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 5.3,
+      "points": 6.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 45
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
+          "value": 50
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 46
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -398,20 +430,60 @@
       ]
     },
     {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 4.1,
+      "points": 3.8,
       "stats": [
         {
-          "stat": "REC YD",
+          "stat": "RUSH YD",
+          "value": 38
+        }
+      ]
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
           "value": 26
         },
         {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
           "stat": "REC",
-          "value": 3
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -2
+        },
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -421,11 +493,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 3.9,
+      "points": 3.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 7
         },
         {
           "stat": "REC YD",
@@ -434,24 +506,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -524,28 +578,6 @@
       ]
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 19
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -586,16 +618,20 @@
       ]
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.3,
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.6,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 23
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -622,34 +658,16 @@
       ]
     },
     {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jalen Hurts",
       "position": "QB",
       "team": "Phi",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 1.22,
+      "points": 1.94,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 83
+          "value": 101
         },
         {
           "stat": "RUSH YD",
@@ -667,11 +685,11 @@
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 1.0,
+      "points": 1.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 16
         }
       ]
     },
@@ -893,15 +911,6 @@
       "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 0.0,
       "stats": []
     },
