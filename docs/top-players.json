@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T22:05:19Z",
+  "updated": "2026-09-20T22:10:25Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -654,6 +654,32 @@
       ]
     },
     {
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 153
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -698,15 +724,6 @@
       ]
     },
     {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -714,32 +731,6 @@
       "manager_display": "SCARPITTI",
       "points": 10.0,
       "stats": []
-    },
-    {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 145
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Chase Brown",
@@ -808,6 +799,15 @@
       ]
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Emeka Egbuka",
       "position": "WR",
       "team": "TB",
@@ -863,6 +863,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.0,
+      "stats": []
     },
     {
       "name": "Texans",
@@ -975,33 +984,6 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 7.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 161
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -1080,6 +1062,28 @@
       "manager_display": "GREG",
       "points": 5.9,
       "stats": []
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 161
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Eagles",
@@ -1172,6 +1176,15 @@
       "stats": []
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Mike Evans",
       "position": "WR",
       "team": "SF",
@@ -1186,6 +1199,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 36
         }
       ]
     },
@@ -1208,20 +1235,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "J.K. Dobbins",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
         }
       ]
     },
@@ -1250,15 +1263,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.0,
-      "stats": []
     },
     {
       "name": "Terry McLaurin",
