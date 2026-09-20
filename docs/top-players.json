@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T21:50:22Z",
+  "updated": "2026-09-20T21:55:18Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -125,6 +125,28 @@
       "manager_display": "GREG",
       "points": 21.0,
       "stats": []
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 20.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 108
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jahmyr Gibbs",
@@ -267,20 +289,24 @@
       ]
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 17.4,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 83
+        },
+        {
           "stat": "REC YD",
-          "value": 99
+          "value": 21
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 2
         },
         {
           "stat": "TD",
@@ -329,32 +355,6 @@
         {
           "stat": "RUSH YD",
           "value": 69
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 16.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 81
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -500,6 +500,28 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -588,6 +610,24 @@
       ]
     },
     {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "Den",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 87
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -636,6 +676,28 @@
       ]
     },
     {
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 67
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Chargers",
       "position": "DEF",
       "team": "LAC",
@@ -652,6 +714,32 @@
       "manager_display": "SCARPITTI",
       "points": 10.0,
       "stats": []
+    },
+    {
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 145
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Chase Brown",
@@ -698,28 +786,6 @@
       ]
     },
     {
-      "name": "De'Von Achane",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 62
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -738,24 +804,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "team": "Den",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 71
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1057,24 +1105,6 @@
       ]
     },
     {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -1164,6 +1194,20 @@
       ]
     },
     {
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        }
+      ]
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -1190,18 +1234,13 @@
       ]
     },
     {
-      "name": "J.K. Dobbins",
-      "position": "RB",
-      "team": "Den",
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 30
-        }
-      ]
+      "stats": []
     },
     {
       "name": "Terry McLaurin",
@@ -1316,6 +1355,15 @@
       ]
     },
     {
+      "name": "Cameron Dicker",
+      "position": "K",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "Cairo Santos",
       "position": "K",
       "team": "Chi",
@@ -1365,15 +1413,6 @@
       ]
     },
     {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.0,
-      "stats": []
-    },
-    {
       "name": "Mike Evans",
       "position": "WR",
       "team": "SF",
@@ -1390,37 +1429,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 79
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Cameron Dicker",
-      "position": "K",
-      "team": "LAC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Jason Myers",
