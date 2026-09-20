@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T22:20:30Z",
+  "updated": "2026-09-20T22:25:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 78.5,
+        "score": 84.6,
         "projected": 116.81
       },
       "away": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 76.5,
+        "score": 77.66,
         "projected": 119.65
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 49.72,
+        "score": 50.72,
         "projected": 113.58
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 67.24,
+        "score": 68.36,
         "projected": 108.67
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 127.92,
+        "score": 132.22,
         "projected": 116.38
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 100.84,
+        "score": 101.44,
         "projected": 122.19
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 89.92,
+        "score": 89.82,
         "projected": 115.65
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "89.92",
+          "value": "89.82",
           "detail": "lost to GANGUS"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "78.50",
+          "value": "84.60",
           "detail": "lost to GREG"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "127.92",
+          "value": "132.22",
           "detail": "All played"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "100.84",
+          "value": "101.44",
           "detail": "All played"
         }
       ]
@@ -186,15 +186,15 @@
       "team": "Sea",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 28.0,
+      "points": 29.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 115
+          "value": 124
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 6
         },
         {
           "stat": "TD",
@@ -282,6 +282,28 @@
       "stats": []
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 20.46,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 184
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -334,20 +356,24 @@
       ]
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
       "points": 19.3,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 155
+          "stat": "RUSH YD",
+          "value": 23
         },
         {
-          "stat": "RUSH YD",
-          "value": 11
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 3
         },
         {
           "stat": "TD",
@@ -580,32 +606,6 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 13.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
-        },
-        {
-          "stat": "REC YD",
-          "value": 35
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "George Kittle",
       "position": "TE",
       "team": "SF",
@@ -659,6 +659,32 @@
       ]
     },
     {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 58
+        },
+        {
+          "stat": "REC YD",
+          "value": -3
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
@@ -687,32 +713,6 @@
         {
           "stat": "REC",
           "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 54
-        },
-        {
-          "stat": "REC YD",
-          "value": -3
-        },
-        {
-          "stat": "REC",
-          "value": 2
         },
         {
           "stat": "TD",
@@ -1126,6 +1126,24 @@
       ]
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -1189,19 +1207,41 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 6.8,
+      "points": 6.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 36
+          "value": 32
         },
         {
           "stat": "REC YD",
-          "value": 12
+          "value": 15
         },
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 189
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -1233,33 +1273,20 @@
       "stats": []
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 161
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Eagles",
       "position": "DEF",
       "team": "Phi",
       "manager": "coyne",
       "manager_display": "COYNE",
+      "points": 5.0,
+      "stats": []
+    },
+    {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 5.0,
       "stats": []
     },
@@ -1274,24 +1301,6 @@
         {
           "stat": "REC YD",
           "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 25
         },
         {
           "stat": "REC",
@@ -1345,15 +1354,6 @@
       "stats": []
     },
     {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.0,
-      "stats": []
-    },
-    {
       "name": "Michael Mayer",
       "position": "TE",
       "team": "LV",
@@ -1400,6 +1400,28 @@
         {
           "stat": "REC YD",
           "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
         },
         {
           "stat": "REC",
@@ -1526,28 +1548,6 @@
       "manager_display": "SCARPITTI",
       "points": 2.0,
       "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Jason Myers",
