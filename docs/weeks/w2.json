@@ -1,20 +1,20 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T20:10:25Z",
+  "updated": "2026-09-20T20:15:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 29.5,
-        "projected": 116.83
+        "projected": 116.81
       },
       "away": {
         "name": "GREG",
         "face": "greg",
         "score": 102.46,
-        "projected": 109.39
+        "projected": 109.4
       }
     },
     {
@@ -22,41 +22,41 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 49.5,
-        "projected": 119.67
+        "projected": 119.65
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 23.92,
-        "projected": 113.59
+        "score": 24.02,
+        "projected": 113.6
       }
     },
     {
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 53.4,
-        "projected": 108.68
+        "score": 53.6,
+        "projected": 108.67
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 11.04,
-        "projected": 111.46
+        "projected": 111.47
       }
     },
     {
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 70.62,
-        "projected": 116.39
+        "score": 70.72,
+        "projected": 116.38
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 71.5,
-        "projected": 114.12
+        "projected": 114.11
       }
     },
     {
@@ -64,12 +64,12 @@
         "name": "GANGUS",
         "face": "gangus",
         "score": 69.3,
-        "projected": 122.18
+        "projected": 122.19
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 83.12,
+        "score": 83.32,
         "projected": 115.65
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "70.62",
+          "value": "70.72",
           "detail": "lost to SCOTTY"
         },
         {
@@ -122,8 +122,8 @@
           "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "83.12",
-          "detail": "3 to play"
+          "value": "83.32",
+          "detail": "2 to play"
         },
         {
           "rank": 3,
@@ -494,11 +494,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 11.6,
+      "points": 11.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 28
+          "value": 29
         },
         {
           "stat": "REC YD",
@@ -1088,11 +1088,11 @@
       "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 0.4,
+      "points": 0.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 4
+          "value": 5
         }
       ]
     },
@@ -1107,6 +1107,34 @@
         {
           "stat": "RUSH YD",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
         }
       ]
     },
@@ -1188,15 +1216,6 @@
       "team": "Jax",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
       "points": 0.0,
       "stats": []
     },
@@ -1348,15 +1367,6 @@
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
