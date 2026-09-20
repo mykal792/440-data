@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T22:50:24Z",
+  "updated": "2026-09-20T22:55:19Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 89.3,
+        "score": 87.3,
         "projected": 116.81
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 84.98,
+        "score": 85.38,
         "projected": 119.65
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 53.02,
+        "score": 54.02,
         "projected": 111.47
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 103.84,
+        "score": 104.84,
         "projected": 122.19
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "89.30",
+          "value": "87.30",
           "detail": "lost to GREG"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "103.84",
+          "value": "104.84",
           "detail": "All played"
         }
       ]
@@ -208,11 +208,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 27.78,
+      "points": 28.18,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 202
+          "value": 212
         },
         {
           "stat": "RUSH YD",
@@ -954,6 +954,15 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Emeka Egbuka",
       "position": "WR",
       "team": "TB",
@@ -1009,24 +1018,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.0,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 8.0,
-      "stats": []
     },
     {
       "name": "Texans",
@@ -1268,6 +1259,15 @@
       ]
     },
     {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Terry McLaurin",
       "position": "WR",
       "team": "Was",
@@ -1311,6 +1311,28 @@
       "manager_display": "ANTHONY",
       "points": 5.0,
       "stats": []
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "DK Metcalf",
@@ -1399,28 +1421,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
