@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T22:30:29Z",
+  "updated": "2026-09-20T22:35:30Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -66,6 +66,28 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 27.18,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 202
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "TD",
+          "value": 3
         }
       ]
     },
@@ -147,28 +169,6 @@
       "manager_display": "GREG",
       "points": 21.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 20.7,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 190
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Jahmyr Gibbs",
@@ -320,11 +320,11 @@
       "team": "LAC",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 18.0,
+      "points": 18.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 89
+          "value": 92
         },
         {
           "stat": "REC YD",
@@ -433,6 +433,28 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 16.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 80
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -473,20 +495,20 @@
       ]
     },
     {
-      "name": "George Kittle",
+      "name": "Trey McBride",
       "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.9,
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 14.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 54
+          "value": 41
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 8
         },
         {
           "stat": "TD",
@@ -502,28 +524,6 @@
       "manager_display": "HAYDEN",
       "points": 12.8,
       "stats": []
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Bhayshul Tuten",
@@ -633,11 +633,11 @@
       "team": "LAC",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 10.8,
+      "points": 11.4,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 165
+          "value": 180
         },
         {
           "stat": "RUSH YD",
@@ -733,6 +733,15 @@
       "stats": []
     },
     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.9,
+      "stats": []
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -805,15 +814,6 @@
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.9,
       "stats": []
     },
     {
