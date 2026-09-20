@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T18:10:27Z",
+  "updated": "2026-09-20T18:15:24Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 56.84,
+        "score": 57.84,
         "projected": 109.29
       }
     },
@@ -21,14 +21,14 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 40.4,
+        "score": 40.3,
         "projected": 119.66
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 7.86,
-        "projected": 113.39
+        "score": 8.26,
+        "projected": 113.5
       }
     },
     {
@@ -42,7 +42,7 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 7.9,
-        "projected": 111.37
+        "projected": 111.41
       }
     },
     {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 53.7,
+        "score": 54.7,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 47.26,
+        "score": 48.22,
         "projected": 115.65
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "47.26",
+          "value": "48.22",
           "detail": "lost to GANGUS"
         },
         {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "56.84",
-          "detail": "3 to play"
+          "value": "57.84",
+          "detail": "2 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "53.70",
+          "value": "54.70",
           "detail": "5 to play"
         }
       ]
@@ -382,6 +382,15 @@
       ]
     },
     {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -431,15 +440,6 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 9.0,
       "stats": []
     },
@@ -498,12 +498,21 @@
       ]
     },
     {
+      "name": "Eagles",
+      "position": "DEF",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.9,
+      "points": 5.8,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -511,7 +520,7 @@
         },
         {
           "stat": "REC YD",
-          "value": 22
+          "value": 21
         },
         {
           "stat": "REC",
@@ -565,15 +574,6 @@
       "team": "Chi",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 5.0,
-      "stats": []
-    },
-    {
-      "name": "Eagles",
-      "position": "DEF",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 5.0,
       "stats": []
     },
@@ -775,11 +775,11 @@
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.46,
+      "points": 2.42,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 54
+          "value": 53
         },
         {
           "stat": "RUSH YD",
@@ -832,6 +832,24 @@
       ]
     },
     {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -841,29 +859,20 @@
       "stats": []
     },
     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.0,
+      "stats": []
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.8,
       "stats": [
         {
@@ -1024,15 +1033,6 @@
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
