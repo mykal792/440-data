@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T20:35:25Z",
+  "updated": "2026-09-20T20:40:28Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -275,6 +275,28 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 15.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "team": "Sea",
@@ -342,7 +364,7 @@
       "team": "LAC",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 13.0,
+      "points": 14.0,
       "stats": []
     },
     {
@@ -431,28 +453,6 @@
       ]
     },
     {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 11.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -460,6 +460,37 @@
       "manager_display": "HAYDEN",
       "points": 11.0,
       "stats": []
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.0,
+      "stats": []
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.74,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 91
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "D'Andre Swift",
@@ -519,15 +550,6 @@
       "stats": []
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -568,28 +590,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.22,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 53
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -846,6 +846,28 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -862,6 +884,24 @@
       "manager_display": "GANGUS",
       "points": 4.0,
       "stats": []
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "David Montgomery",
@@ -908,24 +948,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1006,6 +1028,28 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Cairo Santos",
       "position": "K",
       "team": "Chi",
@@ -1015,20 +1059,20 @@
       "stats": []
     },
     {
-      "name": "Ashton Jeanty",
+      "name": "Javonte Williams",
       "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 2.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 7
         },
         {
           "stat": "REC YD",
-          "value": 5
+          "value": 8
         },
         {
           "stat": "REC",
@@ -1055,20 +1099,30 @@
       ]
     },
     {
-      "name": "Javonte Williams",
+      "name": "Bhayshul Tuten",
       "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 1.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 2
-        },
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Mike Evans",
+      "position": "WR",
+      "team": "SF",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.5,
+      "stats": [
         {
           "stat": "REC YD",
-          "value": 8
+          "value": 10
         },
         {
           "stat": "REC",
@@ -1181,24 +1235,6 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jaylen Waddle",
       "position": "WR",
       "team": "Den",
@@ -1217,30 +1253,16 @@
       ]
     },
     {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        }
-      ]
-    },
-    {
       "name": "Jayden Daniels",
       "position": "QB",
       "team": "Was",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.24,
+      "points": 0.32,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 6
+          "value": 8
         }
       ]
     },
@@ -1329,15 +1351,6 @@
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Mike Evans",
-      "position": "WR",
-      "team": "SF",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
