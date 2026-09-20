@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T20:05:23Z",
+  "updated": "2026-09-20T20:10:25Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 22.32,
+        "score": 23.92,
         "projected": 113.59
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 43.4,
+        "score": 53.4,
         "projected": 108.68
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 10.4,
+        "score": 11.04,
         "projected": 111.46
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 70.32,
+        "score": 70.62,
         "projected": 116.39
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 80.22,
+        "score": 83.12,
         "projected": 115.65
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "70.32",
+          "value": "70.62",
           "detail": "lost to SCOTTY"
         },
         {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "80.22",
+          "value": "83.12",
           "detail": "3 to play"
         },
         {
@@ -426,6 +426,28 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 14.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 57
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -485,28 +507,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 11.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -579,6 +579,24 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "Steelers",
@@ -1019,6 +1037,20 @@
       ]
     },
     {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -1033,6 +1065,48 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 16
+        }
+      ]
+    },
+    {
+      "name": "J.K. Dobbins",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
         }
       ]
     },
@@ -1075,15 +1149,6 @@
     {
       "name": "Cameron Dicker",
       "position": "K",
-      "team": "LAC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chargers",
-      "position": "DEF",
       "team": "LAC",
       "manager": "schilling",
       "manager_display": "SCHILLING",
@@ -1163,29 +1228,11 @@
       "stats": []
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Michael Wilson",
       "position": "WR",
       "team": "Ari",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 0.0,
       "stats": []
     },
@@ -1240,15 +1287,6 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
@@ -1361,15 +1399,6 @@
       "stats": []
     },
     {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Ladd McConkey",
       "position": "WR",
       "team": "LAC",
@@ -1382,15 +1411,6 @@
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "J.K. Dobbins",
-      "position": "RB",
-      "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
