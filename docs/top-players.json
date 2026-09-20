@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:30:29Z",
+  "updated": "2026-09-20T17:35:23Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -202,11 +202,11 @@
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 44
+          "value": 45
         },
         {
           "stat": "REC YD",
-          "value": 4
+          "value": 3
         },
         {
           "stat": "REC",
@@ -247,6 +247,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -305,6 +323,24 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -323,42 +359,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.74,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 11
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 23
         }
       ]
     },
@@ -403,24 +403,6 @@
       ]
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
@@ -457,20 +439,6 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        }
-      ]
-    },
-    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -494,11 +462,25 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 1.64,
+      "points": 1.84,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 41
+          "value": 46
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 17
         }
       ]
     },
@@ -517,6 +499,28 @@
       ]
     },
     {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 83
+        },
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -526,23 +530,55 @@
       "stats": []
     },
     {
-      "name": "Jalen Hurts",
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "name": "Caleb Williams",
       "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.9,
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.86,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 75
+          "value": 14
         },
         {
           "stat": "RUSH YD",
-          "value": -1
+          "value": 23
         },
         {
           "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
           "value": 1
         }
       ]
@@ -572,20 +608,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
         }
       ]
     },
@@ -620,15 +642,6 @@
       "name": "Jaylen Waddle",
       "position": "WR",
       "team": "Den",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1091,11 +1104,11 @@
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": -0.7,
+      "points": -0.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 7
         },
         {
           "stat": "REC YD",
