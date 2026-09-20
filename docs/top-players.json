@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T22:10:25Z",
+  "updated": "2026-09-20T22:15:21Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -40,6 +40,28 @@
         {
           "stat": "REC",
           "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 28.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 115
+        },
+        {
+          "stat": "REC",
+          "value": 5
         },
         {
           "stat": "TD",
@@ -125,28 +147,6 @@
       "manager_display": "GREG",
       "points": 21.0,
       "stats": []
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 20.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 108
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Jahmyr Gibbs",
@@ -359,6 +359,24 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "Den",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 16.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 109
+        },
+        {
+          "stat": "REC",
+          "value": 7
         }
       ]
     },
@@ -610,20 +628,24 @@
       ]
     },
     {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "team": "Den",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 11.2,
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.6,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 72
+        },
+        {
           "stat": "REC YD",
-          "value": 87
+          "value": 19
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 3
         }
       ]
     },
@@ -698,28 +720,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "De'Von Achane",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 67
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -1024,6 +1024,24 @@
       ]
     },
     {
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "team": "Was",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 50
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
@@ -1185,6 +1203,24 @@
       "stats": []
     },
     {
+      "name": "Michael Mayer",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Mike Evans",
       "position": "WR",
       "team": "SF",
@@ -1261,42 +1297,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Terry McLaurin",
-      "position": "WR",
-      "team": "Was",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 24
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Michael Mayer",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1417,6 +1417,15 @@
       ]
     },
     {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "team": "Atl",
@@ -1433,15 +1442,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Colston Loveland",
