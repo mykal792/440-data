@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T22:55:19Z",
+  "updated": "2026-09-20T23:00:33Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 85.38,
+        "score": 85.42,
         "projected": 119.65
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 51.52,
+        "score": 52.42,
         "projected": 113.58
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 54.02,
+        "score": 52.18,
         "projected": 111.47
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 145.72,
+        "score": 146.62,
         "projected": 116.38
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 92.2,
+        "score": 98.2,
         "projected": 114.11
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 104.84,
-        "projected": 122.19
+        "score": 104.94,
+        "projected": 98.68
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 90.62,
+        "score": 91.42,
         "projected": 115.65
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "92.20",
+          "value": "98.20",
           "detail": "lost to SCARPITTI"
         },
         {
           "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "90.62",
+          "value": "91.42",
           "detail": "lost to GANGUS"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "145.72",
+          "value": "146.62",
           "detail": "All played"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "104.84",
+          "value": "104.94",
           "detail": "All played"
         }
       ]
@@ -164,15 +164,15 @@
       "team": "Sea",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 39.1,
+      "points": 40.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 151
+          "value": 155
         },
         {
           "stat": "REC",
-          "value": 8
+          "value": 9
         },
         {
           "stat": "TD",
@@ -208,11 +208,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 28.18,
+      "points": 28.22,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 212
+          "value": 213
         },
         {
           "stat": "RUSH YD",
@@ -592,6 +592,15 @@
       ]
     },
     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 15.9,
+      "stats": []
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -743,32 +752,6 @@
       ]
     },
     {
-      "name": "Justin Herbert",
-      "position": "QB",
-      "team": "LAC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 11.72,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 188
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -870,13 +853,30 @@
       "stats": []
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.9,
-      "stats": []
+      "name": "Justin Herbert",
+      "position": "QB",
+      "team": "LAC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 9.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 192
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Chase Brown",
@@ -985,6 +985,28 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 48
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -1104,28 +1126,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 7.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 40
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1304,6 +1304,24 @@
       "stats": []
     },
     {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1318,7 +1336,7 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 4.7,
+      "points": 4.8,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -1326,7 +1344,7 @@
         },
         {
           "stat": "REC YD",
-          "value": 19
+          "value": 20
         },
         {
           "stat": "REC",
@@ -1363,24 +1381,6 @@
         {
           "stat": "REC YD",
           "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 31
         },
         {
           "stat": "REC",
