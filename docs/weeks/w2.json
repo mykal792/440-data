@@ -1,14 +1,14 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T23:10:23Z",
+  "updated": "2026-09-20T23:15:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 87.3,
-        "projected": 116.81
+        "projected": 116.85
       },
       "away": {
         "name": "GREG",
@@ -21,14 +21,14 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 85.42,
+        "score": 86.0,
         "projected": 119.65
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 52.42,
-        "projected": 113.58
+        "projected": 113.53
       }
     },
     {
@@ -36,13 +36,13 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 68.36,
-        "projected": 108.67
+        "projected": 108.68
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 61.68,
-        "projected": 111.47
+        "projected": 111.42
       }
     },
     {
@@ -56,21 +56,21 @@
         "name": "SCOTTY",
         "face": "scotty",
         "score": 98.2,
-        "projected": 114.11
+        "projected": 114.13
       }
     },
     {
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 104.94,
+        "score": 105.34,
         "projected": 98.68
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 91.42,
-        "projected": 115.65
+        "projected": 115.64
       }
     }
   ],
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "105.26",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "105.34",
           "detail": "All played"
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "104.94",
+          "manager": "GREG",
+          "face": "greg",
+          "value": "105.26",
           "detail": "All played"
         }
       ]
@@ -208,15 +208,15 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 28.22,
+      "points": 28.8,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 213
+          "value": 220
         },
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 20
         },
         {
           "stat": "TD",
@@ -1295,6 +1295,28 @@
       "stats": []
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 17
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Eagles",
       "position": "DEF",
       "team": "Phi",
@@ -1329,28 +1351,6 @@
       "manager_display": "ANTHONY",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "DK Metcalf",
