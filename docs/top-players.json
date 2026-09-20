@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T18:45:27Z",
+  "updated": "2026-09-20T18:50:28Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -127,15 +127,41 @@
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 15.14,
+      "points": 16.5,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 186
+          "value": 210
         },
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 15.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 66
+        },
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
@@ -158,32 +184,6 @@
         {
           "stat": "REC",
           "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 15.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 58
-        },
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 2
         },
         {
           "stat": "TD",
@@ -228,11 +228,11 @@
       "team": "Phi",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 11.16,
+      "points": 11.6,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 154
+          "value": 165
         },
         {
           "stat": "RUSH YD",
@@ -320,6 +320,28 @@
       ]
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 72
+        },
+        {
+          "stat": "REC YD",
+          "value": -3
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -338,42 +360,28 @@
       "stats": []
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
+      "name": "Emeka Egbuka",
+      "position": "WR",
       "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 7.8,
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 68
+          "value": -3
+        },
+        {
+          "stat": "REC YD",
+          "value": 12
         },
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 38
         },
         {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 3
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -480,6 +488,32 @@
       ]
     },
     {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 38
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
@@ -557,6 +591,46 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 68
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -602,28 +676,6 @@
         {
           "stat": "RUSH YD",
           "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 60
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 32
         },
         {
           "stat": "INT",
@@ -694,16 +746,20 @@
       ]
     },
     {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 2.1,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
           "stat": "REC YD",
-          "value": 16
+          "value": 11
         },
         {
           "stat": "REC",
@@ -782,28 +838,6 @@
       "manager_display": "GREG",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "team": "TB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -3
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Colston Loveland",
@@ -1007,15 +1041,6 @@
       "name": "Jayden Daniels",
       "position": "QB",
       "team": "Was",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
