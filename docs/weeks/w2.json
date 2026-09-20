@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T19:45:21Z",
+  "updated": "2026-09-20T19:50:39Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 49.1,
+        "score": 49.5,
         "projected": 119.66
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 70.06,
+        "score": 70.16,
         "projected": 113.98
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 71.3,
+        "score": 69.3,
         "projected": 122.22
       },
       "away": {
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "71.30",
-          "detail": "lost to COYNE"
-        },
-        {
-          "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "70.02",
           "detail": "lost to SCOTTY"
+        },
+        {
+          "rank": 2,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "69.30",
+          "detail": "lost to COYNE"
         },
         {
           "rank": 3,
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "71.30",
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "70.16",
           "detail": "3 to play"
         }
       ]
@@ -665,6 +665,24 @@
       ]
     },
     {
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 54
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Caleb Williams",
       "position": "QB",
       "team": "Chi",
@@ -788,15 +806,6 @@
       ]
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Buccaneers",
       "position": "DEF",
       "team": "TB",
@@ -813,24 +822,6 @@
       "manager_display": "GREG",
       "points": 5.9,
       "stats": []
-    },
-    {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Eagles",
@@ -896,6 +887,15 @@
       ]
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
@@ -923,11 +923,11 @@
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 2.8,
+      "points": 2.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 40
+          "value": 41
         },
         {
           "stat": "REC YD",
