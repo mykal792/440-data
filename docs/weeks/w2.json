@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T19:35:21Z",
+  "updated": "2026-09-20T19:40:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 14.5,
+        "score": 12.7,
         "projected": 116.56
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 19.12,
+        "score": 22.62,
         "projected": 113.5
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 69.92,
+        "score": 70.02,
         "projected": 116.3
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 66.92,
+        "score": 67.42,
         "projected": 115.65
       }
     }
@@ -93,14 +93,14 @@
           "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "66.92",
+          "value": "67.42",
           "detail": "lost to GANGUS"
         },
         {
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "19.12",
+          "value": "22.62",
           "detail": "lost to GARRETT"
         }
       ]
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "69.92",
+          "value": "70.02",
           "detail": "4 to play"
         },
         {
@@ -449,6 +449,28 @@
       ]
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 63
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -467,28 +489,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 11.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "REC YD",
-          "value": 63
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -550,32 +550,6 @@
       ]
     },
     {
-      "name": "MarShawn Lloyd",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -620,6 +594,20 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 85
         }
       ]
     },
@@ -677,20 +665,6 @@
       ]
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 8.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 80
-        }
-      ]
-    },
-    {
       "name": "Caleb Williams",
       "position": "QB",
       "team": "Chi",
@@ -708,6 +682,36 @@
         },
         {
           "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -807,15 +811,6 @@
       ]
     },
     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -834,6 +829,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -971,6 +984,15 @@
       ]
     },
     {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "team": "Atl",
@@ -985,24 +1007,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
