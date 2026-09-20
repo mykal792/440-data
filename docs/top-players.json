@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T19:10:26Z",
+  "updated": "2026-09-20T19:15:22Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -70,6 +70,28 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 22.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 70
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -210,28 +232,6 @@
       ]
     },
     {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 13.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 52
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -262,6 +262,28 @@
         },
         {
           "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -311,6 +333,28 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -334,15 +378,6 @@
       "team": "TB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 8.0,
-      "stats": []
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 8.0,
       "stats": []
     },
@@ -409,20 +444,51 @@
       ]
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.1,
+      "stats": []
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 7.1,
+      "points": 7.02,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 208
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 47
+          "value": 53
         },
         {
           "stat": "REC YD",
-          "value": 9
+          "value": 2
         },
         {
           "stat": "REC",
@@ -449,12 +515,56 @@
       ]
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -2
+        },
+        {
+          "stat": "REC YD",
+          "value": 51
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 6.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.0,
       "stats": []
     },
     {
@@ -467,60 +577,16 @@
       "stats": []
     },
     {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 5.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": -2
-        },
-        {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 38
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 38
+          "value": 42
         },
         {
           "stat": "REC YD",
@@ -542,11 +608,11 @@
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 5.2,
+      "points": 5.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 75
+          "value": 84
         },
         {
           "stat": "RUSH YD",
@@ -559,33 +625,20 @@
       ]
     },
     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.0,
-      "stats": []
-    },
-    {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.7,
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.5,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
           "stat": "REC YD",
-          "value": 20
+          "value": 40
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 3
         }
       ]
     },
@@ -595,39 +648,26 @@
       "team": "NO",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 4.7,
+      "points": 5.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 32
+          "value": 35
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 4
         }
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 145
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Christian Watson",
@@ -666,24 +706,6 @@
       ]
     },
     {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Eagles",
       "position": "DEF",
       "team": "Phi",
@@ -691,24 +713,6 @@
       "manager_display": "COYNE",
       "points": 4.0,
       "stats": []
-    },
-    {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Ka'imi Fairbairn",
