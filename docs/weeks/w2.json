@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:40:28Z",
+  "updated": "2026-09-20T17:45:24Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 37.32,
+        "score": 36.32,
         "projected": 109.29
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 4.0,
+        "score": 4.16,
         "projected": 113.39
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 63.62,
+        "score": 64.62,
         "projected": 116.09
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 21.38,
+        "score": 21.7,
         "projected": 113.98
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 46.0,
+        "score": 45.5,
         "projected": 122.22
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "21.38",
+          "value": "21.70",
           "detail": "lost to SCARPITTI"
         },
         {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "63.62",
+          "value": "64.62",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "46.00",
+          "value": "45.50",
           "detail": "5 to play"
         },
         {
@@ -313,7 +313,7 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 8.0,
+      "points": 9.0,
       "stats": []
     },
     {
@@ -371,11 +371,11 @@
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 4.68,
+      "points": 5.0,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 117
+          "value": 125
         }
       ]
     },
@@ -456,24 +456,16 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.2,
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.16,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "stat": "PASS YD",
+          "value": 79
         }
       ]
     },
@@ -554,16 +546,24 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.0,
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.7,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 75
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -660,15 +660,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Bijan Robinson",
@@ -927,6 +918,15 @@
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.0,
+      "stats": []
+    },
+    {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,

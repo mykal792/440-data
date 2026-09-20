@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:40:28Z",
+  "updated": "2026-09-20T17:45:24Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -180,7 +180,7 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 8.0,
+      "points": 9.0,
       "stats": []
     },
     {
@@ -238,11 +238,11 @@
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 4.68,
+      "points": 5.0,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 117
+          "value": 125
         }
       ]
     },
@@ -323,24 +323,16 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.2,
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.16,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "stat": "PASS YD",
+          "value": 79
         }
       ]
     },
@@ -421,16 +413,24 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.0,
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.7,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 75
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -527,15 +527,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Bijan Robinson",
@@ -794,6 +785,15 @@
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.0,
+      "stats": []
+    },
+    {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
