@@ -1,19 +1,19 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T20:40:28Z",
+  "updated": "2026-09-20T20:45:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 55.2,
+        "score": 62.8,
         "projected": 116.81
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 102.46,
+        "score": 103.86,
         "projected": 109.4
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 60.24,
+        "score": 60.64,
         "projected": 119.65
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 25.82,
+        "score": 27.32,
         "projected": 113.58
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 56.56,
+        "score": 57.88,
         "projected": 108.67
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 87.52,
+        "score": 87.72,
         "projected": 116.38
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 75.32,
+        "score": 75.22,
         "projected": 122.19
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 85.42,
+        "score": 85.32,
         "projected": 115.65
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "75.32",
+          "value": "75.22",
           "detail": "lost to COYNE"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "55.20",
+          "value": "62.80",
           "detail": "lost to GREG"
         }
       ]
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "102.46",
-          "detail": "1 to play"
+          "value": "103.86",
+          "detail": "All played"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "87.52",
+          "value": "87.72",
           "detail": "1 to play"
         },
         {
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "85.42",
+          "value": "85.32",
           "detail": "2 to play"
         }
       ]
@@ -356,6 +356,28 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 17.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 89
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
@@ -400,28 +422,6 @@
         {
           "stat": "REC",
           "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 15.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 79
-        },
-        {
-          "stat": "REC",
-          "value": 4
         },
         {
           "stat": "TD",
@@ -586,6 +586,28 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 11.14,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 101
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -602,28 +624,6 @@
       "manager_display": "GRAHAM",
       "points": 11.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 10.74,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 91
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "D'Andre Swift",
@@ -647,6 +647,32 @@
         },
         {
           "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -979,28 +1005,6 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        },
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -1024,11 +1028,11 @@
       "team": "Ari",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 3.7,
+      "points": 3.6,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 22
+          "value": 21
         },
         {
           "stat": "REC",
@@ -1166,11 +1170,11 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.3,
+      "points": 2.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 12
         },
         {
           "stat": "REC YD",
@@ -1179,6 +1183,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.18,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 47
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
         }
       ]
     },
@@ -1237,11 +1259,19 @@
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 1.5,
+      "points": 1.7,
       "stats": [
         {
           "stat": "RUSH YD",
           "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": -3
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1256,6 +1286,38 @@
         {
           "stat": "REC YD",
           "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
         },
         {
           "stat": "REC",
@@ -1300,18 +1362,13 @@
       "stats": []
     },
     {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 1.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        }
-      ]
+      "stats": []
     },
     {
       "name": "George Pickens",
@@ -1328,24 +1385,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.86,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 14
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
         }
       ]
     },
@@ -1463,15 +1502,6 @@
       "stats": []
     },
     {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "George Kittle",
       "position": "TE",
       "team": "SF",
@@ -1547,15 +1577,6 @@
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
