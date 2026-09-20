@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T18:50:28Z",
+  "updated": "2026-09-20T18:55:19Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 67.0,
+        "score": 71.5,
         "projected": 109.29
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 40.1,
+        "score": 41.2,
         "projected": 119.66
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 67.62,
+        "score": 67.32,
         "projected": 116.09
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 60.5,
+        "score": 60.6,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 53.52,
+        "score": 55.82,
         "projected": 115.65
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "53.52",
+          "value": "55.82",
           "detail": "lost to GANGUS"
         },
         {
@@ -113,23 +113,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "67.62",
-          "detail": "4 to play"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "71.50",
+          "detail": "1 to play"
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "67.00",
-          "detail": "1 to play"
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "67.32",
+          "detail": "4 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "60.50",
+          "value": "60.60",
           "detail": "3 to play"
         }
       ]
@@ -519,6 +519,20 @@
       ]
     },
     {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 75
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -577,26 +591,13 @@
       "stats": []
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 5.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 42
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
+      "stats": []
     },
     {
       "name": "Drake London",
@@ -613,6 +614,28 @@
         {
           "stat": "REC YD",
           "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 38
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
         },
         {
           "stat": "REC",
@@ -643,20 +666,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 52
         }
       ]
     },
@@ -764,28 +773,6 @@
       ]
     },
     {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
-        },
-        {
-          "stat": "REC YD",
-          "value": 16
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -817,16 +804,38 @@
       ]
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 2.7,
+      "points": 2.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 18
+          "value": 19
         },
         {
           "stat": "REC YD",
@@ -962,15 +971,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Colston Loveland",
