@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T19:20:28Z",
+  "updated": "2026-09-20T19:25:19Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 74.18,
+        "score": 85.22,
         "projected": 109.29
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 35.4,
+        "score": 35.7,
         "projected": 108.64
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 69.82,
+        "score": 68.12,
         "projected": 116.09
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 64.98,
+        "score": 65.26,
         "projected": 113.98
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 62.9,
+        "score": 67.3,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 62.76,
+        "score": 64.76,
         "projected": 115.65
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "64.98",
+          "value": "65.26",
           "detail": "lost to SCARPITTI"
         },
         {
           "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "62.76",
+          "value": "64.76",
           "detail": "lost to GANGUS"
         },
         {
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "74.18",
+          "value": "85.22",
           "detail": "1 to play"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "69.82",
+          "value": "68.12",
           "detail": "4 to play"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "64.98",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "67.30",
           "detail": "3 to play"
         }
       ]
@@ -277,16 +277,47 @@
       ]
     },
     {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 17.0,
+      "stats": []
+    },
+    {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 16.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 16.38,
+      "points": 16.66,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 207
+          "value": 214
         },
         {
           "stat": "RUSH YD",
@@ -304,11 +335,11 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 16.0,
+      "points": 16.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 66
+          "value": 68
         },
         {
           "stat": "REC YD",
@@ -347,53 +378,22 @@
       ]
     },
     {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 15.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 66
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 14.7,
+      "points": 14.6,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 102
+          "value": 101
         },
         {
           "stat": "REC",
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.0,
-      "stats": []
     },
     {
       "name": "Jalen Hurts",
@@ -401,15 +401,15 @@
       "team": "Phi",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 11.68,
+      "points": 13.32,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 167
+          "value": 203
         },
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 12
         },
         {
           "stat": "TD",
@@ -442,6 +442,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "MarShawn Lloyd",
@@ -510,16 +519,25 @@
       ]
     },
     {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.2,
+      "stats": []
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 8.0,
+      "points": 8.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 68
+          "value": 69
         },
         {
           "stat": "REC YD",
@@ -532,13 +550,18 @@
       ]
     },
     {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "greg",
-      "manager_display": "GREG",
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 8.0,
-      "stats": []
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 80
+        }
+      ]
     },
     {
       "name": "Emeka Egbuka",
@@ -563,20 +586,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 78
         }
       ]
     },
@@ -679,11 +688,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 6.1,
+      "points": 6.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 21
+          "value": 24
         },
         {
           "stat": "REC YD",
@@ -852,15 +861,6 @@
       "stats": []
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.7,
-      "stats": []
-    },
-    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
@@ -931,6 +931,24 @@
       ]
     },
     {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
@@ -967,24 +985,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
