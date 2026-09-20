@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T17:35:23Z",
+  "updated": "2026-09-20T17:40:28Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 2.84,
+        "score": 4.0,
         "projected": 113.39
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 21.5,
+        "score": 22.2,
         "projected": 108.64
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 61.22,
+        "score": 63.62,
         "projected": 116.09
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 18.98,
+        "score": 21.38,
         "projected": 113.98
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 44.5,
+        "score": 46.0,
         "projected": 122.22
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 30.56,
+        "score": 31.26,
         "projected": 115.65
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "30.56",
+          "value": "31.26",
           "detail": "lost to GANGUS"
         },
         {
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "18.98",
+          "value": "21.38",
           "detail": "lost to SCARPITTI"
         },
         {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "61.22",
+          "value": "63.62",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "44.50",
+          "value": "46.00",
           "detail": "5 to play"
         },
         {
@@ -260,15 +260,15 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 11.9,
+      "points": 12.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 28
+          "value": 34
         },
         {
           "stat": "REC YD",
-          "value": 21
+          "value": 22
         },
         {
           "stat": "REC",
@@ -313,7 +313,7 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 7.0,
+      "points": 8.0,
       "stats": []
     },
     {
@@ -366,6 +366,20 @@
       "stats": []
     },
     {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.68,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 117
+        }
+      ]
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -402,6 +416,28 @@
       ]
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -412,6 +448,28 @@
         {
           "stat": "REC YD",
           "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
         },
         {
           "stat": "REC",
@@ -496,6 +554,20 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 75
+        }
+      ]
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -514,38 +586,16 @@
       ]
     },
     {
-      "name": "Breece Hall",
+      "name": "Aaron Jones Sr.",
       "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.5,
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 8
-        },
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.28,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 57
+          "value": 23
         }
       ]
     },
@@ -586,48 +636,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 46
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 17
-        }
-      ]
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 16
         }
       ]
     },
