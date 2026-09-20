@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T19:50:39Z",
+  "updated": "2026-09-20T19:55:21Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -180,15 +180,15 @@
       "team": "Phi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 16.9,
+      "points": 17.8,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 79
+          "value": 83
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 7
         },
         {
           "stat": "TD",
@@ -202,18 +202,22 @@
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 16.66,
+      "points": 16.8,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 214
+          "value": 235
         },
         {
           "stat": "RUSH YD",
-          "value": 21
+          "value": 34
         },
         {
           "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -286,6 +290,32 @@
       ]
     },
     {
+      "name": "Jalen Hurts",
+      "position": "QB",
+      "team": "Phi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 227
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -300,32 +330,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 203
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
@@ -362,6 +366,28 @@
         {
           "stat": "REC YD",
           "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 36
         },
         {
           "stat": "REC",
@@ -423,6 +449,28 @@
         {
           "stat": "REC YD",
           "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 78
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
         },
         {
           "stat": "REC",
@@ -510,26 +558,13 @@
       "stats": []
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 8.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 63
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
+      "stats": []
     },
     {
       "name": "Harold Fannin Jr.",
@@ -642,15 +677,6 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -671,15 +697,6 @@
           "value": 4
         }
       ]
-    },
-    {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 6.0,
-      "stats": []
     },
     {
       "name": "Tyler Loop",
@@ -718,24 +735,6 @@
       ]
     },
     {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -759,6 +758,15 @@
       "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
+      "points": 4.0,
+      "stats": []
+    },
+    {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 4.0,
       "stats": []
     },
@@ -790,11 +798,11 @@
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 2.9,
+      "points": 3.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 41
+          "value": 43
         },
         {
           "stat": "REC YD",
