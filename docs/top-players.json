@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-20T21:30:28Z",
+  "updated": "2026-09-20T21:35:26Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -179,38 +179,16 @@
       ]
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 19.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 100
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 19.1,
+      "points": 19.3,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 150
+          "value": 155
         },
         {
           "stat": "RUSH YD",
@@ -272,15 +250,37 @@
       "team": "Dal",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 18.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 94
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 17.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 89
+          "value": 99
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 3
         },
         {
           "stat": "TD",
@@ -650,6 +650,28 @@
       ]
     },
     {
+      "name": "De'Von Achane",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 62
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -712,28 +734,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "De'Von Achane",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 54
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -1129,11 +1129,11 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 3.2,
+      "points": 3.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 22
+          "value": 21
         },
         {
           "stat": "REC YD",
