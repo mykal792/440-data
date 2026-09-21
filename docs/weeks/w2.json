@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-21T01:40:25Z",
+  "updated": "2026-09-21T01:45:21Z",
   "matchups": [
     {
       "home": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 97.32,
+        "score": 105.72,
         "projected": 115.64
       }
     }
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "105.72",
+          "detail": "lost to GANGUS"
+        },
+        {
+          "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "102.20",
           "detail": "lost to GREG"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
           "value": "99.20",
           "detail": "lost to SCARPITTI"
-        },
-        {
-          "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "97.32",
-          "detail": "lost to GANGUS"
         }
       ]
     },
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "105.26",
-          "detail": "All played"
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "105.72",
+          "detail": "1 to play"
         }
       ]
     }
@@ -637,6 +637,32 @@
         {
           "stat": "REC",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 14.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 74
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -1385,28 +1411,6 @@
       "manager_display": "GREG",
       "points": 5.9,
       "stats": []
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 50
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Rashee Rice",
