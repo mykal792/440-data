@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-21T01:20:24Z",
+  "updated": "2026-09-21T01:25:20Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 98.46,
+        "score": 100.56,
         "projected": 119.65
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 72.16,
+        "score": 73.36,
         "projected": 108.68
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 70.48,
+        "score": 73.08,
         "projected": 111.42
       }
     },
@@ -844,6 +844,28 @@
       ]
     },
     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -1091,28 +1113,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1365,6 +1365,46 @@
       "stats": []
     },
     {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 46
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -1495,28 +1535,6 @@
       ]
     },
     {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 27
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "J.K. Dobbins",
       "position": "RB",
       "team": "Den",
@@ -1527,24 +1545,6 @@
         {
           "stat": "RUSH YD",
           "value": 36
-        }
-      ]
-    },
-    {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
