@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-21T02:40:22Z",
+  "updated": "2026-09-21T02:45:57Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 61.42,
+        "score": 62.32,
         "projected": 113.48
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 108.12,
+        "score": 109.22,
         "projected": 115.64
       }
     }
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "108.12",
+          "value": "109.22",
           "detail": "1 to play"
         },
         {
@@ -488,6 +488,32 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 17.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 77
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -559,32 +585,6 @@
         {
           "stat": "RUSH YD",
           "value": 69
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 16.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 78
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 2
         },
         {
           "stat": "TD",
@@ -945,6 +945,32 @@
       "stats": []
     },
     {
+      "name": "Tyler Warren",
+      "position": "TE",
+      "team": "Ind",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Justin Herbert",
       "position": "QB",
       "team": "LAC",
@@ -1031,32 +1057,6 @@
       "manager_display": "GRAHAM",
       "points": 9.0,
       "stats": []
-    },
-    {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 9.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Emeka Egbuka",
