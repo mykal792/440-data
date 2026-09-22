@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-22T00:35:31Z",
+  "updated": "2026-09-22T00:40:23Z",
   "matchups": [
     {
       "home": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 99.2,
+        "score": 99.8,
         "projected": 114.99
       }
     },
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "99.20",
+          "value": "99.80",
           "detail": "lost to SCARPITTI"
         }
       ]
@@ -1780,20 +1780,29 @@
       ]
     },
     {
-      "name": "Harrison Mevis",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
       "manager": "scotty",
       "manager_display": "SCOTTY",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Harrison Mevis",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 0.0,
       "stats": []
     },
