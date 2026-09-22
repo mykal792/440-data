@@ -86,12 +86,18 @@ jobs:
         if: always()
         run: |
           FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/dots.json docs/dk.json docs/squid-scores.json docs/season.json bank-ledger.json"
-          if git diff --quiet -- $FILES; then
+          # Stage first, THEN compare. "git diff" alone can't see files that
+          # have never been committed, so a brand-new output (dots.json in
+          # week 2) was written every run and silently discarded as "no change"
+          # whenever nothing else changed alongside it.
+          # One at a time: "git add" rejects the whole list if any single
+          # file is missing, so one failed script would block the rest.
+          for f in $FILES; do if [ -e "$f" ]; then git add "$f"; fi; done
+          if git diff --cached --quiet; then
             echo "No change."; exit 0
           fi
           git config user.name  "league-bot"
           git config user.email "league-bot@users.noreply.github.com"
-          git add $FILES
           git commit -m "Live update $(date -u +'%H:%M UTC')"
           for i in 1 2 3; do
             git push && exit 0
