@@ -246,13 +246,19 @@ body{ margin:0; background:transparent }
   function tickAgo() {
     var ago = document.getElementById('dpAgo');
     if (!hasData) { ago.textContent = ''; return; }
-    var m = Math.floor((Date.now() - updated) / 60000);
-    var t;
-    if (m < 1) t = 'Updated just now';
-    else if (m === 1) t = 'Updated 1 min ago';
-    else if (m < 60) t = 'Updated ' + m + ' min ago';
-    else { var h = Math.floor(m / 60); t = 'Updated ' + h + (h === 1 ? ' hr' : ' hrs') + ' ago'; }
-    ago.textContent = t;
+    var total = Math.floor((Date.now() - updated) / 60000);
+    if (total < 1) { ago.textContent = 'Updated just now'; return; }
+    var d = Math.floor(total / 1440);
+    var h = Math.floor((total % 1440) / 60);
+    var m = total % 60;
+    function unit(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
+    // Largest two units only: "2 days 3 hrs", "5 hrs 12 min", "40 min".
+    // Minutes stop mattering once it's been a day or more.
+    var parts = [];
+    if (d) parts.push(unit(d, 'day', 'days'));
+    if (h) parts.push(unit(h, 'hr', 'hrs'));
+    if (m && !d) parts.push(unit(m, 'min', 'min'));
+    ago.textContent = 'Updated ' + parts.slice(0, 2).join(' ') + ' ago';
   }
 
   var SEASON_FALLBACK = 2026;
