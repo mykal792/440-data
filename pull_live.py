@@ -2,12 +2,16 @@
 """
 pull_live.py - 440 & Friends, live board.
 
-Writes THREE files, all overwritten every run:
+Writes FOUR files:
 
     docs/scoreboard.json    current week's matchups and scores
     docs/bonus.json         current week's bonus + high score, live top 3
     docs/top-players.json   every starter's points, highest to lowest, plus
                              a short per-player stat line (yards, TD, etc.)
+    docs/dots.json          Dot Pot: season totals + remaining pot, off the
+                             SETTLED ledger only (see below) - the only one
+                             of the four not freshly computed from this
+                             run's live data.
 
 It does NOT touch season.json. That belongs to pull_standings.py, which also
 merges the bank ledger into it - two scripts writing one file would clobber
@@ -25,6 +29,15 @@ The one real addition: mapping a raw stat_id to "PASS YD" etc. needs the
 season's stat category table, which costs one extra call the very first
 time this ever runs (or if stat-categories.json goes missing) and is then
 read from that local file - see yc.load_stat_categories().
+
+dots.json is different from the other three: it's a straight re-export of
+bank-ledger.json (hand-settled, via settle_week.py), not a live computation.
+Writing it every run costs nothing extra - no new API call, no new fetch -
+it just means a commissioner's ledger edit reaches the public page on the
+next normal run instead of needing a separate export step. The Top Players
+board's live win-dot (this week's provisional #1 at each position, blinking
+while live) is a completely separate, purely front-end thing built from
+top-players.json - it never touches the ledger or the pot total.
 
 Twelve API calls per run in steady state (ten rosters, one scoreboard, one
 standings), so a 10-minute cadence during games is comfortable.
@@ -76,8 +89,7 @@ def build_scoreboard(week, status, matchups, projected):
     }
 
 
-def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
-                projected, remaining=None):
+def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame):
     cat = meta["_by_week"].get(week, {})
     rows, ascending = yc.compute_bonus(week, rosters, matchups, standings)
 
@@ -90,35 +102,32 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
     else:
         cat_leaders = yc.rank_rows(rows, ascending=ascending)
         high_leaders = yc.rank_rows(
-            yc.high_score_rows(rosters, matchups, standings, remaining,
-                               final=(status == "final")))
+            yc.high_score_rows(rosters, matchups, standings))
 
     cat_leaders = yc.pad_leaders(cat_leaders)
     high_leaders = yc.pad_leaders(high_leaders)
 
-    category = {
-        "week": week,
-        "key": cat.get("key", "no-bonus"),
-        "label": cat.get("label", "No Bonus"),
-        "description": cat.get("description", ""),
-        "amount": meta.get("category_amount", 25),
-        "leaders": cat_leaders,
-    }
-    high = {
-        "key": "high-score",
-        "label": meta["high_score"]["label"],
-        "description": meta["high_score"]["description"],
-        "amount": meta["high_score"]["amount"],
-        "leaders": high_leaders,
-    }
     return {
         "league": {"season": yc.SEASON},
         "live": {
             "state": status,
             "week": week,
             "updated": yc.now_iso(),
-            "category": category,
-            "high": high,
+            "category": {
+                "week": week,
+                "key": cat.get("key", "no-bonus"),
+                "label": cat.get("label", "No Bonus"),
+                "description": cat.get("description", ""),
+                "amount": meta.get("category_amount", 25),
+                "leaders": cat_leaders,
+            },
+            "high": {
+                "key": "high-score",
+                "label": meta["high_score"]["label"],
+                "description": meta["high_score"]["description"],
+                "amount": meta["high_score"]["amount"],
+                "leaders": high_leaders,
+            },
         },
     }
 
@@ -169,43 +178,6 @@ def write_json(path, payload, dry_run):
     print("wrote %s" % path)
 
 
-def update_week_archive(out_dir, week, scoreboard_payload, bonus_payload, top_players_payload, dry_run):
-    """Permanent per-week snapshot, read by the scoreboard's and the Dot Pot
-    board's "previous weeks" browsing (see their WEEKS_INDEX/WEEK_SOURCE).
-
-    This is deliberately separate from scoreboard.json/bonus.json/
-    top-players.json, which always describe "whatever week is current" and
-    get overwritten every run. weeks/wN.json is refreshed every run too -
-    that's how it goes from pregame to live to final as this week plays out
-    - but once week N+1 starts, nothing ever writes to weeks/wN.json again.
-    That's what actually stops settling a new week from erasing the last one.
-    """
-    weeks_dir = out_dir / "weeks"
-    if not dry_run:
-        weeks_dir.mkdir(parents=True, exist_ok=True)
-
-    snapshot = {
-        "week": week,
-        "status": scoreboard_payload["status"],
-        "updated": scoreboard_payload["updated"],
-        "matchups": scoreboard_payload["matchups"],
-        "bonus": {"category": bonus_payload["live"]["category"],
-                  "high": bonus_payload["live"]["high"]},
-        "top_players": top_players_payload["players"],
-    }
-    write_json(weeks_dir / ("w%d.json" % week), snapshot, dry_run)
-
-    index_path = weeks_dir / "index.json"
-    known = set()
-    if index_path.exists():
-        try:
-            known = set(json.loads(index_path.read_text(encoding="utf-8")).get("weeks", []))
-        except (ValueError, OSError):
-            pass  # corrupt or unreadable - rebuild it from what we know now
-    known.add(week)
-    write_json(index_path, {"weeks": sorted(known), "current": week}, dry_run)
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--week", type=int, help="override the week number")
@@ -249,11 +221,9 @@ def main():
 
     if sb_raw:
         sb_week, status, matchups = yc.parse_scoreboard(sb_raw)
-        remaining = yc.remaining_starters(sb_raw, rosters)
         projected = yc.parse_projected(sb_raw)
     else:
         sb_week, status, matchups = (args.week or 1), "pregame", []
-        remaining = yc.remaining_starters(None, rosters)
         projected = {}
 
     week = args.week or sb_week or 1
@@ -263,17 +233,19 @@ def main():
     if len(rosters) != 10:
         print("  ! expected 10 managers - check TEAM_MAP in yahoo_common.py")
 
-    scoreboard_payload = build_scoreboard(week, status, matchups, projected)
-    bonus_payload = build_bonus(week, status, rosters, matchups, standings, meta,
-                                 args.show_pregame, projected, remaining)
-    top_players_payload = build_top_players(week, status, rosters, stat_buckets)
+    write_json(out_dir / "scoreboard.json",
+               build_scoreboard(week, status, matchups, projected), args.dry_run)
+    write_json(out_dir / "bonus.json",
+               build_bonus(week, status, rosters, matchups, standings, meta,
+                           args.show_pregame),
+               args.dry_run)
+    write_json(out_dir / "top-players.json",
+               build_top_players(week, status, rosters, stat_buckets), args.dry_run)
 
-    write_json(out_dir / "scoreboard.json", scoreboard_payload, args.dry_run)
-    write_json(out_dir / "bonus.json", bonus_payload, args.dry_run)
-    write_json(out_dir / "top-players.json", top_players_payload, args.dry_run)
-
-    update_week_archive(out_dir, week, scoreboard_payload, bonus_payload,
-                         top_players_payload, args.dry_run)
+    # dots.json is NOT written here any more - build_dots.py owns it. It used
+    # to be the last thing this script did, after a dozen-plus Yahoo calls, so
+    # any failure above left the dot pot a week stale, and the weekly button
+    # (which doesn't run this script) never refreshed it at all.
 
 
 if __name__ == "__main__":
