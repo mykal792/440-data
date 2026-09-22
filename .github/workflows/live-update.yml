@@ -1,26 +1,37 @@
 name: Live scoring
-# NO GITHUB SCHEDULE. This runs from cron-job.org, which POSTs to the
-# workflow_dispatch API every 10 minutes from 9am to 1:59am ET.
+# Runs EVERYTHING - scores, bonuses, top players, DraftKings, Squid, weekly
+# settlement and standings. Triggered by cron-job.org every 10 minutes, 9am to
+# 1:59am ET. No GitHub cron: GitHub's scheduler is best-effort and dropped runs
+# on opening night and on the first two Tuesdays.
 #
-# Why: GitHub's scheduled workflows are best-effort and get deprioritised under
-# load. On opening night, Sept 9 2026, exactly one scheduled run fired in a
-# four-hour window that should have produced twenty-four. An external trigger
-# hits the dispatch endpoint directly and runs when it says it will.
+# Settlement and standings used to live on a separate Tuesday schedule, which
+# meant one missed Tuesday left the bank and the standings a week behind. Now
+# they ride along every 10 minutes. Both are no-ops when there is nothing new,
+# so within ten minutes of Yahoo marking a week final, the ledger and standings
+# catch up on their own - with nobody pressing anything.
 #
-# The cron-job.org job is called "440 live scoring" and authenticates with a
-# fine-grained GitHub token scoped to this repo with Actions read/write.
-# THAT TOKEN EXPIRES 2027-09-10 - when it does, the site silently stops
-# updating and cron-job.org starts logging 401s.
+# NOTHING BLOCKS ANYTHING. Every step has continue-on-error, so one flaky Yahoo
+# response can't stop the other boards updating, and the publish step always
+# runs and commits whatever did succeed.
+#
+# cron-job.org authenticates with a fine-grained token scoped to this repo,
+# Actions read/write. THAT TOKEN EXPIRES 2027-09-10 - when it does, the site
+# silently stops updating and cron-job.org starts logging 401s.
 on:
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
   group: live-scoring
-  cancel-in-progress: false
+  # A new run cancels one still in flight. The old setting (false) let a single
+  # hung run block the whole queue for a day with nobody noticing.
+  cancel-in-progress: true
 jobs:
   live:
     runs-on: ubuntu-latest
+    # A normal run takes ~30 seconds. GitHub's default timeout is six hours,
+    # which is how a stuck run sat unnoticed. Five minutes is generous.
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -36,27 +47,41 @@ jobs:
             echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
           fi
           echo "$YAHOO_TOKEN_B64" | tr -d '[:space:]' | base64 -d > "$GITHUB_WORKSPACE/.yahoofantasy"
+
       - name: Pull live scores, bonus race and top players
-        # Writes docs/scoreboard.json, docs/bonus.json and docs/top-players.json.
+        # docs/scoreboard.json, docs/bonus.json, docs/top-players.json
+        continue-on-error: true
         run: python pull_live.py
       - name: Pull DraftKings ticker
+        # docs/dk.json
+        continue-on-error: true
         run: python pull_dk.py
       - name: Pull Squid Game scores
-        # Writes docs/squid-scores.json only. Tokens, eliminated and duel live
-        # in the Wix collection and no script ever opens them.
+        # docs/squid-scores.json. Tokens, eliminated and duel live in the Wix
+        # collection and no script ever opens them.
+        continue-on-error: true
         run: python pull_squid.py
+      - name: Settle finished weeks
+        # bank-ledger.json. Writes every finished week not yet in the ledger,
+        # so a missed run just catches up next time. Ties split evenly. Never
+        # overwrites a settled week. A no-op almost every run.
+        continue-on-error: true
+        run: python settle_week.py --auto --apply
+      - name: Pull standings
+        # docs/season.json - records, averages and the bank column, reading the
+        # ledger the step above just wrote. Rebuilds any missing week and
+        # only commits when something actually changed.
+        continue-on-error: true
+        run: python pull_standings.py
+
       - name: Publish if changed
-        # EVERY file the scripts write must be listed here. A file that is
-        # written but not listed is generated on the runner and thrown away -
-        # the board then shows preseason data while every other board is live,
-        # and nothing anywhere reports an error. That is exactly what happened
-        # to top-players.json on opening night.
+        # EVERY file a step above writes must be listed here. A file written
+        # but not listed is generated on the runner and thrown away, and the
+        # board shows stale data while the rest are live - with no error
+        # anywhere. That is what happened to top-players.json on opening night.
+        if: always()
         run: |
-          # docs/weeks is a DIRECTORY on purpose: it covers index.json and every
-          # wN.json, including weeks that do not exist yet, so a new week never
-          # needs this line edited again. Leaving it out was why the archive was
-          # written on the runner every run and thrown away every run.
-          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/dk.json docs/squid-scores.json docs/weeks"
+          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/dk.json docs/squid-scores.json docs/season.json bank-ledger.json"
           if git diff --quiet -- $FILES; then
             echo "No change."; exit 0
           fi

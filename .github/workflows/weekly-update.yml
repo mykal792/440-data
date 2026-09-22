@@ -1,25 +1,27 @@
-name: Weekly league update
-# Cron is UTC. Both lines are here on purpose: 9:00 UTC is 5am EDT and 10:00
-# UTC is 5am EST, so one of them is always the right 5am and the other runs an
-# hour off. A harmless second run - it just finds nothing changed.
+name: Weekly league update (manual backup)
+# NO SCHEDULE. Settlement and standings now run inside "Live scoring" every
+# 10 minutes, so nothing depends on a Tuesday schedule firing. GitHub's cron
+# missed the first two Tuesdays of the season, which is why this moved.
+#
+# This stays as a button in case you ever want to force a settle-and-standings
+# run on its own: Actions -> Weekly league update -> Run workflow. It is safe to
+# press any time - settle never overwrites a week already in the ledger, and
+# standings only commits when something changed.
 on:
-  workflow_dispatch:        # the "Run workflow" button, for testing
-  schedule:
-    - cron: '0 9 * * 2'     # 5am EDT  (Sep - early Nov)
-    - cron: '0 10 * * 2'    # 5am EST  (Nov - Jan)
+  workflow_dispatch:
 permissions:
   contents: write
 concurrency:
-  group: weekly-update
+  group: live-scoring
+  cancel-in-progress: false
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          # 3.11 on purpose. yahoofantasy calls ssl.wrap_socket(), removed in
-          # 3.12 — the same thing patched locally. Staying on 3.11 avoids it.
           python-version: '3.11'
       - name: Install
         run: pip install 'yahoofantasy==1.4.9'
@@ -30,27 +32,24 @@ jobs:
           if [ -z "$YAHOO_TOKEN_B64" ]; then
             echo "::error::YAHOO_TOKEN_B64 secret is not set."; exit 1
           fi
-          # The library reads .yahoofantasy from the CURRENT DIRECTORY, not
-          # $HOME. Writing it to $HOME looks right and fails every time.
           echo "$YAHOO_TOKEN_B64" | tr -d '[:space:]' | base64 -d > "$GITHUB_WORKSPACE/.yahoofantasy"
+      - name: Settle finished weeks
+        continue-on-error: true
+        run: python settle_week.py --auto --apply
       - name: Pull standings
-        # Also merges bank-ledger.json into season.json, so paste the week's
-        # winners into the ledger BEFORE this runs on Tuesday morning.
+        continue-on-error: true
         run: python pull_standings.py
-      - name: Pull Dot Pot
-        # Reads bank-ledger.json's "dots" entries only - no Yahoo call, no
-        # token needed. Same "paste winners in before Tuesday" rule applies.
-        run: python pull_dots.py
       - name: Publish if changed
+        if: always()
         run: |
-          FILES="docs/season.json docs/dots.json"
+          FILES="docs/season.json bank-ledger.json"
           if git diff --quiet -- $FILES; then
             echo "No change this run."; exit 0
           fi
           git config user.name  "league-bot"
           git config user.email "league-bot@users.noreply.github.com"
           git add $FILES
-          git commit -m "Update standings — $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git commit -m "Weekly update - $(date -u +'%Y-%m-%d %H:%M UTC')"
           for i in 1 2 3; do
             git push && exit 0
             git pull --rebase --autostash
