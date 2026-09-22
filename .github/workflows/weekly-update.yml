@@ -36,13 +36,19 @@ jobs:
       - name: Settle finished weeks
         continue-on-error: true
         run: python settle_week.py --auto --apply
+      - name: Build dot pot
+        # docs/dots.json, straight from the ledger. No network calls, so a
+        # Yahoo hiccup can't leave the dot pot stale. Right after settle so a
+        # newly settled week shows up in the same run.
+        continue-on-error: true
+        run: python build_dots.py
       - name: Pull standings
         continue-on-error: true
         run: python pull_standings.py
       - name: Publish if changed
         if: always()
         run: |
-          FILES="docs/season.json bank-ledger.json"
+          FILES="docs/season.json docs/dots.json bank-ledger.json"
           # Stage first, THEN compare. "git diff" alone can't see files that
           # have never been committed, so a brand-new output (dots.json in
           # week 2) was written every run and silently discarded as "no change"

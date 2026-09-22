@@ -56,9 +56,14 @@ jobs:
         # overwrites a settled week. A no-op almost every run.
         continue-on-error: true
         run: python settle_week.py --auto --apply
-      - name: Pull live scores, bonus race, top players and dot pot
-        # docs/scoreboard.json, docs/bonus.json, docs/top-players.json,
-        # docs/dots.json (the dot pot, rebuilt from the ledger settled above)
+      - name: Build dot pot
+        # docs/dots.json, straight from the ledger. No network calls, so a
+        # Yahoo hiccup can't leave the dot pot stale. Right after settle so a
+        # newly settled week shows up in the same run.
+        continue-on-error: true
+        run: python build_dots.py
+      - name: Pull live scores, bonus race and top players
+        # docs/scoreboard.json, docs/bonus.json, docs/top-players.json
         continue-on-error: true
         run: python pull_live.py
       - name: Pull DraftKings ticker
