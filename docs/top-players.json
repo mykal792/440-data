@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-22T01:20:29Z",
+  "updated": "2026-09-22T01:25:27Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -648,6 +648,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 13.0,
+      "stats": []
+    },
+    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -709,15 +718,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 12.0,
-      "stats": []
     },
     {
       "name": "Breece Hall",
@@ -1369,6 +1369,28 @@
       "stats": []
     },
     {
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -1517,28 +1539,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Cam Skattebo",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
