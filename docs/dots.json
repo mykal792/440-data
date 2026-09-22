@@ -1,11 +1,11 @@
 {
   "season": 2026,
-  "updated": "2026-09-22T11:52:16Z",
+  "updated": "2026-09-22T13:59:06Z",
   "pot": {
     "total": 300,
     "dot_value": 5,
-    "paid_out": 20,
-    "remaining": 280
+    "paid_out": 40,
+    "remaining": 260
   },
   "totals": {
     "schilling": {
@@ -33,9 +33,9 @@
       "TE": 0
     },
     "scarpitti": {
-      "QB": 1,
+      "QB": 2,
       "RB": 0,
-      "WR": 0,
+      "WR": 1,
       "TE": 0
     },
     "gangus": {
@@ -48,11 +48,11 @@
       "QB": 0,
       "RB": 0,
       "WR": 0,
-      "TE": 0
+      "TE": 1
     },
     "coyne": {
       "QB": 0,
-      "RB": 0,
+      "RB": 1,
       "WR": 0,
       "TE": 0
     },
@@ -108,6 +108,47 @@
           ],
           "value": "20.00",
           "detail": "Trey McBride"
+        }
+      }
+    },
+    {
+      "week": 2,
+      "positions": {
+        "QB": {
+          "manager": "scarpitti",
+          "manager_display": "SCARPITTI",
+          "managers": [
+            "SCARPITTI"
+          ],
+          "value": "46.82",
+          "detail": "Josh Allen"
+        },
+        "RB": {
+          "manager": "coyne",
+          "manager_display": "COYNE",
+          "managers": [
+            "COYNE"
+          ],
+          "value": "27.20",
+          "detail": "Jonathan Taylor"
+        },
+        "WR": {
+          "manager": "scarpitti",
+          "manager_display": "SCARPITTI",
+          "managers": [
+            "SCARPITTI"
+          ],
+          "value": "40.00",
+          "detail": "Jaxon Smith-Njigba"
+        },
+        "TE": {
+          "manager": "graham",
+          "manager_display": "GRAHAM",
+          "managers": [
+            "GRAHAM"
+          ],
+          "value": "22.60",
+          "detail": "Travis Kelce"
         }
       }
     }
