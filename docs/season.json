@@ -5,7 +5,7 @@
     "regular_weeks": 15,
     "playoff_teams": 4
   },
-  "updated": "2026-09-22T11:52:16Z",
+  "updated": "2026-09-22T12:30:39Z",
   "managers": [
     {
       "key": "greg",
@@ -357,6 +357,29 @@
         "label": "Dot Pot - QB",
         "short": "QB",
         "amount": 5
+      },
+      {
+        "week": 2,
+        "type": "dot",
+        "pos": "QB",
+        "label": "Dot Pot - QB",
+        "short": "QB",
+        "amount": 5
+      },
+      {
+        "week": 2,
+        "type": "dot",
+        "pos": "WR",
+        "label": "Dot Pot - WR",
+        "short": "WR",
+        "amount": 5
+      },
+      {
+        "week": 2,
+        "type": "high",
+        "label": "High Score",
+        "short": "HS",
+        "amount": 15
       }
     ],
     "gangus": [
@@ -367,10 +390,35 @@
         "label": "Dot Pot - TE",
         "short": "TE",
         "amount": 5
+      },
+      {
+        "week": 2,
+        "type": "category",
+        "label": "Match Up Blues",
+        "short": "Match Up Blues",
+        "amount": 25
       }
     ],
-    "graham": [],
-    "coyne": [],
+    "graham": [
+      {
+        "week": 2,
+        "type": "dot",
+        "pos": "TE",
+        "label": "Dot Pot - TE",
+        "short": "TE",
+        "amount": 5
+      }
+    ],
+    "coyne": [
+      {
+        "week": 2,
+        "type": "dot",
+        "pos": "RB",
+        "label": "Dot Pot - RB",
+        "short": "RB",
+        "amount": 5
+      }
+    ],
     "scotty": [],
     "anthony": []
   }
