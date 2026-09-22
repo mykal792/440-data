@@ -48,8 +48,17 @@ jobs:
           fi
           echo "$YAHOO_TOKEN_B64" | tr -d '[:space:]' | base64 -d > "$GITHUB_WORKSPACE/.yahoofantasy"
 
-      - name: Pull live scores, bonus race and top players
-        # docs/scoreboard.json, docs/bonus.json, docs/top-players.json
+      - name: Settle finished weeks
+        # bank-ledger.json. RUNS FIRST, because everything after it reads the
+        # ledger - the dot pot (dots.json) and the bank column (season.json).
+        # Run it later and those boards are always one week behind.
+        # Writes every finished week not yet in the ledger, splits ties, never
+        # overwrites a settled week. A no-op almost every run.
+        continue-on-error: true
+        run: python settle_week.py --auto --apply
+      - name: Pull live scores, bonus race, top players and dot pot
+        # docs/scoreboard.json, docs/bonus.json, docs/top-players.json,
+        # docs/dots.json (the dot pot, rebuilt from the ledger settled above)
         continue-on-error: true
         run: python pull_live.py
       - name: Pull DraftKings ticker
@@ -61,12 +70,6 @@ jobs:
         # collection and no script ever opens them.
         continue-on-error: true
         run: python pull_squid.py
-      - name: Settle finished weeks
-        # bank-ledger.json. Writes every finished week not yet in the ledger,
-        # so a missed run just catches up next time. Ties split evenly. Never
-        # overwrites a settled week. A no-op almost every run.
-        continue-on-error: true
-        run: python settle_week.py --auto --apply
       - name: Pull standings
         # docs/season.json - records, averages and the bank column, reading the
         # ledger the step above just wrote. Rebuilds any missing week and
@@ -78,10 +81,11 @@ jobs:
         # EVERY file a step above writes must be listed here. A file written
         # but not listed is generated on the runner and thrown away, and the
         # board shows stale data while the rest are live - with no error
-        # anywhere. That is what happened to top-players.json on opening night.
+        # anywhere. That happened to top-players.json on opening night and to
+        # dots.json in week 2.
         if: always()
         run: |
-          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/dk.json docs/squid-scores.json docs/season.json bank-ledger.json"
+          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/dots.json docs/dk.json docs/squid-scores.json docs/season.json bank-ledger.json"
           if git diff --quiet -- $FILES; then
             echo "No change."; exit 0
           fi
