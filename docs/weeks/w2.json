@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-22T01:00:30Z",
+  "updated": "2026-09-22T01:05:22Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 86.28,
+        "score": 94.18,
         "projected": 111.51
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 119.62,
+        "score": 120.62,
         "projected": 115.59
       }
     }
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "119.62",
+          "value": "120.62",
           "detail": "All played"
         },
         {
@@ -1086,6 +1086,32 @@
       "stats": []
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Emeka Egbuka",
       "position": "WR",
       "team": "TB",
@@ -1708,6 +1734,15 @@
       "stats": []
     },
     {
+      "name": "Harrison Mevis",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "team": "Atl",
@@ -1724,37 +1759,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Harrison Mevis",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Jaxson Dart",
