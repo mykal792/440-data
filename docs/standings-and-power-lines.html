@@ -41,6 +41,12 @@
 
   --card-radius:clamp(18px, 5.677vw, 51.15px);
   --row-radius:clamp(8px, 1.171vw, 10.55px);
+  --bar-radius:clamp(13px, 1.65vw, 18px);
+  /* Bank pills are one width on every bar and both faces, pinned the same
+     distance from the right edge, so they stack in a clean column. Sized
+     for three digits; anything longer shrinks its type to fit (fitBank). */
+  --bank-w:92px;
+  --bank-m:41px;
 
   --nm-size:clamp(20px, 6.015vw, 54.2px);
   --yr-size:clamp(14px, 4.451vw, 40.1px);
@@ -124,7 +130,8 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
 }
 .labels .l-name{ text-align:left; }
 .labels .l-rank{ padding-right:6.9px; cursor:default; }
-.labels .l-rec, .labels .l-avg, .labels .l-bank{ padding-right:45.2px; }
+.labels .l-rec, .labels .l-avg{ padding-right:45.2px; }
+.labels .l-bank{ justify-self:end; width:var(--bank-w); margin-right:var(--bank-m); }
 .labels span:hover:not(.l-rank){ color:var(--mint); }
 .labels span:focus-visible{ outline:2px solid var(--mint); outline-offset:4px; border-radius:3px; }
 .labels span[aria-sort]{ color:var(--mint); }
@@ -135,7 +142,13 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
 .rows{ display:flex; flex-direction:column; gap:var(--row-gap); }
 .rows.no-cut{ padding-bottom:calc(var(--cut-gap) - var(--row-gap)); }
 
-.row{ height:var(--row-h); perspective:1400px; transition:opacity .25s ease; }
+.row{
+  height:var(--row-h); perspective:1400px; transition:opacity .25s ease;
+  /* the whole bar flips, so it gets the pointer and loses text selection -
+     a double tap would otherwise highlight the name */
+  cursor:pointer; user-select:none; -webkit-user-select:none;
+  -webkit-tap-highlight-color:transparent;
+}
 .row.faded{ opacity:.3; }
 .flipper{
   position:relative; width:100%; height:100%;
@@ -145,40 +158,113 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
 .row.flipped .flipper{ transform:rotateX(180deg); }
 .face{
   position:absolute; inset:0;
-  background:var(--bar); border-radius:var(--row-radius);
+  background:var(--bar); border-radius:var(--bar-radius);
   backface-visibility:hidden; -webkit-backface-visibility:hidden;
 }
 .front{ align-items:center; }
 .back{
   transform:rotateX(180deg);
   display:flex; align-items:center; gap:18px;
-  padding:0 47.9px 0 var(--face-pad);
+  /* avatar centred in the same 70px the rank occupies on the front */
+  padding:0 var(--bank-m) 0 calc((var(--face-pad) - 34px) / 2);
 }
 .back .bank{ margin-right:0; flex:none; }
-.back .ledgerwrap{ flex:1; min-width:0; display:flex; }
-.ledger{ display:flex; flex-direction:column; gap:3px; min-width:0; flex:1; overflow:hidden; }
-.lrow{ display:flex; align-items:baseline; gap:9px; min-width:0; }
+/* The payout groups sit side by side and scroll sideways when they don't
+   fit, rather than truncating. Phones always scroll; desktop only does at
+   its narrowest. A fade on whichever edge has more to show is the cue. */
+/* The scroller sits in a box with the arrow button, so the button stays put
+   while the payouts slide underneath it. */
+.back .ledgerbox{ position:relative; flex:1; min-width:0; align-self:stretch; display:flex; }
+.back .ledgerwrap{
+  flex:1; min-width:0; display:flex; position:relative;
+  overflow-x:auto; overflow-y:hidden; overscroll-behavior-x:contain;
+  scrollbar-width:none;
+  --fl:0px; --fr:0px; --fe:0px;
+  -webkit-mask-image:linear-gradient(90deg, transparent, #000 var(--fl), #000 calc(100% - var(--fr)), transparent calc(100% - var(--fe)), transparent);
+          mask-image:linear-gradient(90deg, transparent, #000 var(--fl), #000 calc(100% - var(--fr)), transparent calc(100% - var(--fe)), transparent);
+}
+.back .ledgerwrap::-webkit-scrollbar{ display:none; }
+.back .ledgerwrap.more-l{ --fl:22px; }
+/* the last stretch under the arrow fades out completely, so the chevron
+   never sits on top of half-visible text */
+.back .ledgerwrap.more-r{ --fr:58px; --fe:26px; }
+/* room at the end so the last payout can scroll clear of the arrow */
+.back .ledgerwrap.over .ledger{ padding-right:34px; }
+/* Just the chevron - the button keeps a finger-sized box around it, but
+   nothing is drawn except the arrow. */
+.lmore{
+  position:absolute; right:0; top:50%; transform:translateY(-50%);
+  width:26px; height:34px; padding:0; border:0; background:none;
+  display:grid; place-items:center; cursor:pointer;
+  color:var(--white); transition:color .18s ease;
+}
+.lmore[hidden]{ display:none; }
+.lmore:hover{ color:var(--mint); }
+.lmore:focus-visible{ outline:2px solid var(--mint); outline-offset:-2px; border-radius:6px; }
+.lmore svg{ width:11px; height:11px; fill:none; stroke:currentColor; stroke-width:2.4;
+  stroke-linecap:round; stroke-linejoin:round; transition:transform .2s ease; }
+.lmore.left svg{ transform:scaleX(-1); }
+.ledger{ display:flex; align-items:stretch; flex:none; min-width:100%; }
+/* Each group is a two-column grid, so its tags line up with each other and
+   size to the longest one. The value column has a floor per group, which
+   keeps the divider in the same place on every bar unless a manager wins
+   enough to need more room - then that one bar pushes out and scrolls. */
+.lgroup{
+  display:grid; grid-template-columns:max-content minmax(var(--vmin, 0px), max-content);
+  justify-content:start;
+  column-gap:12px; row-gap:5px; align-content:center; align-items:baseline;
+  flex:none; padding-right:22px;
+}
+.lgroup.bonus{ --vmin:136px; }
+.lgroup.side{ --vmin:138px; }   /* fits "Thanksgiving 2nd ($25)" */
+.lrow{ display:contents; }
+.lgroup + .lgroup{ padding-left:22px; position:relative; }
+/* the divider stops short of the bar's edges */
+.lgroup + .lgroup::before{
+  content:''; position:absolute; left:0; top:11px; bottom:11px;
+  width:1px; background:rgba(255,255,255,.16);
+}
+/* Side-game tags get a floor wide enough for SQUID GAME CHAMP, so the amounts
+   line up down the column whichever payouts a manager has. */
+.lgroup.side .ltag{ min-width:115px; }
+.broke{ align-self:center; }
 .ltag{
   font-family:var(--display); font-size:9px; letter-spacing:.06em;
-  text-transform:uppercase; color:var(--mint); flex:none; width:96px;
+  text-transform:uppercase; color:var(--mint); flex:none;
   line-height:1; white-space:nowrap;
 }
-.ltag.hs{ color:var(--white); }
-.ltag.dots{ color:var(--white); }
+.ltag.hs, .ltag.dots, .ltag.side{ color:var(--white); }
+/* Side-game tags wear their own colours: medal colours for the podium,
+   Squid Game pink, and DraftKings in its two brand colours. */
+.ltag.gold{ color:#f5c542; }
+.ltag.silver{ color:#c9ced6; }
+.ltag.bronze{ color:#d38b52; }
+.ltag.squid{ color:#fb287e; }
+.ltag.squid .champ{ color:var(--white); }
+.ltag .dk-d{ color:#f07121; }
+.ltag .dk-k{ color:#41a948; }
 /* one small solid circle per dot actually won, grouped by position with a
    little breathing room between groups - color alone says which position,
    same reasoning as everywhere else this shows up */
 .dpips{ display:inline-flex; align-items:center; gap:3px; flex-wrap:wrap }
 .dpip{ display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--c); flex:0 0 auto }
 .lval{
-  font-family:var(--body); font-size:12px; color:var(--white); line-height:1;
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  font-family:var(--copy); font-size:12px; color:var(--white); line-height:1;
+  white-space:nowrap;
 }
+/* Three steps of emphasis on the back: the Rotundo tag says what the row
+   is, the week numbers are the content, and the money is the payoff - in
+   the same mint the bank pill uses for its $. The "Wk" prefix is written
+   once and dimmed, so the numbers carry the line instead of repeating it. */
+.lval .wk{ color:var(--gray); }
+.lval .lamt{ margin-left:.35em; color:var(--mint); }
+.lval .lamt.solo{ margin-left:0; }
+.lval .dpips{ vertical-align:-1px; }
 .lval.none{ color:var(--gray); }
 .ws{ display:none; }
 .broke{
   font-family:var(--copy); font-size:14px; color:var(--gray);
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  white-space:nowrap; line-height:1.25;
 }
 
 .row.cut{ margin-bottom:calc(var(--cut-gap) - var(--row-gap)); position:relative; }
@@ -193,30 +279,29 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
   text-align:center; color:var(--gray); padding-right:6.9px;
 }
 .row.in .rank{ color:var(--mint); }
-.who{
-  display:flex; align-items:center; gap:11px; min-width:0;
-  background:none; border:0; padding:0; color:inherit; cursor:pointer; text-align:left;
-}
-.who .ava{
-  width:34px; height:34px; flex:none; border-radius:50%;
-  background:center/cover no-repeat;
+.who{ display:flex; align-items:center; gap:11px; min-width:0; }
+/* The face is the one part of the bar that doesn't flip it - it traces
+   that manager on the power lines instead, from either side. */
+.face .ava{
+  width:34px; height:34px; flex:none; border-radius:50%; border:0; padding:0;
+  background:center/cover no-repeat; cursor:pointer;
   box-shadow:0 0 0 2px var(--c);
-  transition:filter .18s ease;
+  transition:filter .18s ease, box-shadow .18s ease;
 }
+.face .ava:hover{ filter:brightness(1.12); box-shadow:0 0 0 3px var(--c); }
+.face .ava:focus-visible{ outline:2px solid var(--mint); outline-offset:3px; }
 .name{
   font-family:var(--display); font-size:25px; line-height:1;
   text-transform:uppercase;
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
-.who:hover .name{ color:var(--mint); }
-.who:focus-visible{ outline:2px solid var(--mint); outline-offset:3px; border-radius:6px; }
 .rec, .avg{
   font-family:var(--body); font-size:24.3px; line-height:1;
   text-align:center; font-variant-numeric:tabular-nums; padding-right:45.2px;
 }
 .bank{
-  justify-self:center; margin-right:45.2px;
-  min-width:78.2px; height:32.4px; padding:0 12px;
+  justify-self:end; margin-right:var(--bank-m);
+  width:var(--bank-w); height:32.4px; padding:0;
   border-radius:999px; background:var(--chip); color:var(--gray);
   display:inline-flex; align-items:center; justify-content:center;
   font-family:var(--display); font-size:21px; line-height:1;
@@ -410,7 +495,7 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
 
 /* ── Narrow ─────────────────────────────────────────────── */
 @media (max-width:920px){
-  :root{ --margin:16px; --row-h:50px; --row-gap:10px; --cut-gap:24px; --pad-bottom:48px; }
+  :root{ --bank-w:64px; --bank-m:21px; --margin:16px; --row-h:50px; --row-gap:10px; --cut-gap:24px; --pad-bottom:48px; }
   .stack{ gap:10px; }
   .card.standings{ padding:22px 0 var(--pad-bottom); }
   .card.climb{ padding:20px 0 20px; }
@@ -421,17 +506,23 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
   .labels{ margin-top:14px; margin-bottom:6px; }
   .labels span{ font-size:10px; }
   .labels .l-rank{ padding-right:3px; }
-  .labels .l-rec, .labels .l-avg, .labels .l-bank{ padding-right:14px; }
+  .labels .l-rec, .labels .l-avg{ padding-right:14px; }
   .labels, .front{ grid-template-columns:32px minmax(0,1fr) 76px 88px 92px; }
   .who{ gap:7px; }
-  .who .ava{ width:26px; height:26px; box-shadow:0 0 0 1.5px var(--c); }
+  .face .ava{ width:26px; height:26px; box-shadow:0 0 0 1.5px var(--c); }
+  .face .ava:hover{ box-shadow:0 0 0 2.5px var(--c); }
   .name{ font-size:15px; }
   .rec,.avg{ font-size:15px; padding-right:14px; }
-  .bank{ font-size:14px; height:25px; min-width:58px; padding:0 9px; margin-right:14px; }
+  .bank{ font-size:14px; height:25px; }
   .rank{ font-size:13px; padding-right:3px; }
-  .back{ padding:0 14px 0 32px; gap:8px; }
-  .ledger{ gap:2.5px; }
-  .ltag{ width:auto; min-width:74px; font-size:8px; }
+  .back{ padding:0 var(--bank-m) 0 10px; gap:10px; }
+  .lgroup{ row-gap:4px; column-gap:10px; padding-right:18px; }
+  .lgroup.bonus{ --vmin:112px; }
+  .lgroup.side{ --vmin:122px; }
+  .lgroup.side .ltag{ min-width:100px; }
+  .lgroup + .lgroup{ padding-left:18px; }
+  .lgroup + .lgroup::before{ top:9px; bottom:9px; }
+  .ltag{ font-size:8px; }
   .lval{ font-size:10.5px; }
   .dpip{ width:6px; height:6px }
   .dpips{ gap:2.5px }
@@ -453,7 +544,7 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
 }
 @media (max-width:560px){
   body{ padding:2px; }
-  :root{ --margin:14px; --row-h:36px; --row-gap:6px; --cut-gap:14px; --pad-bottom:32px; }
+  :root{ --bank-w:56px; --bank-m:0px; --margin:14px; --row-h:44px; --row-gap:6px; --cut-gap:14px; --pad-bottom:32px; }
   .card.standings{ padding:14px 0 var(--pad-bottom); }
   .card.climb{ padding:16px 0 16px; }
   .head{ padding-left:14px; padding-right:46px; gap:5px; margin-bottom:14px; }
@@ -468,19 +559,28 @@ h2{ margin:0; font-family:var(--display); font-weight:400; line-height:1; }
   .dashed-wrap{ margin:8px var(--margin) 0; height:3px; }
   .labels{ margin-top:9px; margin-bottom:4px; padding:0 10px; }
   .labels span{ font-size:9px; }
-  .labels .l-rank, .labels .l-rec, .labels .l-avg, .labels .l-bank{ padding-right:0; }
+  .labels .l-rank, .labels .l-rec, .labels .l-avg{ padding-right:0; }
   .labels .l-avg, .front .avg{ display:none; }
   .labels, .front{ grid-template-columns:18px 82px minmax(0,1fr) 56px; gap:6px; }
   .front{ padding:0 10px; }
   .rank{ font-size:12px; padding-right:0; text-align:center; }
   .week .rewound{ font-size:9px; padding:4px 9px; margin-left:8px; }
-  .who .ava{ display:none; }
+  /* the width goes to the bonus lines instead */
+  .face .ava{ display:none; }
   .name{ font-size:12px; }
   .rec{ font-size:12.5px; padding-right:0; text-align:center; }
-  .bank{ font-size:13px; height:24px; min-width:54px; padding:0 8px; margin-right:0; justify-self:stretch; }
+  .bank{ font-size:13px; height:24px; }
   .back{ padding:0 10px; gap:8px; }
-  .ltag{ min-width:58px; font-size:7px; letter-spacing:.04em; }
-  .lval{ font-size:9.5px; }
+  .lgroup{ row-gap:4px; column-gap:8px; padding-right:16px; }
+  .lgroup.bonus{ --vmin:96px; }
+  .lgroup.side{ --vmin:0px; }   /* nothing to line up on a phone */
+  .lgroup.side .ltag{ min-width:0; }
+  .lmore{ width:24px; height:32px; }
+  .lmore svg{ width:10px; height:10px; }
+  .lgroup + .lgroup{ padding-left:16px; }
+  .lgroup + .lgroup::before{ top:8px; bottom:8px; }
+  .ltag{ font-size:7px; letter-spacing:.04em; }
+  .lval{ font-size:9px; }
   .broke{ font-size:10px; }
   .wl{ display:none; }
   .ws{ display:inline; }
@@ -600,8 +700,12 @@ let els = null, raf = null, timer = null;
 let TL = [], BY_WEEK = new Map(), LAST = 0;
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const money    = n => '$' + n.toLocaleString('en-US');
-const moneyTag = n => `<span class="amt"><i class="cur">$</i>${n.toLocaleString('en-US')}</span>`;
+/* Whole dollars read "$25"; anything with cents shows both places - a tie
+   split or the waiver-tax DraftKings pot can land on $62.50, never "$62.5". */
+const amt      = n => n.toLocaleString('en-US', n % 1
+  ? { minimumFractionDigits:2, maximumFractionDigits:2 } : {});
+const money    = n => '$' + amt(n);
+const moneyTag = n => `<span class="amt"><i class="cur">$</i>${amt(n)}</span>`;
 const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 const xOf = i => COL * 0.55 + i * COL;
@@ -690,27 +794,48 @@ const COLS = [
   { key:'bank',         label:'Bank',         cls:'l-bank' },
 ];
 
+/* Which group a payout belongs to. Everything in `bonuses` is money in the
+   bank; an award's `kind` says which side game it came from. Awards written
+   before `kind` existed land in "Other" under their own label, so nothing
+   is ever dropped - it just isn't filed yet. */
+const KIND = { playoff:'po', squid:'squid', dk:'dk' };
+const kindOf = b => b.type === 'award' ? (KIND[b.kind] || 'other') : b.type;
+
 function ledgerLines(i, key){
   const list = bonusesTo(i, key);
   if (!list.length)
     return `<div class="ledger"><p class="broke">Sorry, you are bonus cash poor.</p></div>`;
-  /* Two forms per entry — the narrow layout can't fit
-     "Wk 7 · Wk 8 · Squid Game Champion", so CSS swaps to the short
-     one below 560px. */
-  const tag = b => b.week
-    ? `<span class="wl">Wk&nbsp;${b.week}</span><span class="ws">W${b.week}</span>`
-    : `<span class="wl">${esc(b.label)}</span><span class="ws">${esc(b.short || b.label)}</span>`;
-  const bonus = list.filter(b => b.type === 'category').map(tag);
-  const hs = list.filter(b => b.type === 'high' || b.type === 'award').map(tag);
+  const of = k => list.filter(b => kindOf(b) === k);
+
+  /* One "Wk" per line - "Wk 1, 3, 8 ($75)" - rather than repeating it on
+     every week, which is most of what used to push lines into an ellipsis.
+     */
+  const total = xs => xs.length
+    ? `<span class="lamt">(${money(xs.reduce((s, b) => s + b.amount, 0))})</span>` : '';
+  const line = wins => {
+    if (!wins.length) return 'None';
+    /* Weekly bonuses read by week number. Named payouts - playoffs, Squid
+       Game, the two DraftKings contests - read by their short name, since
+       the row's tag already names the game: "Thanksgiving ($75)". A named
+       payout's week still decides when it lands in the bank; it just isn't
+       what's printed. */
+    const wks = wins.filter(b => b.type !== 'award' && b.week)
+      .map(b => b.week).sort((x, y) => x - y);
+    const named = wins.filter(b => b.type === 'award')
+      .sort((x, y) => (x.week || 99) - (y.week || 99))
+      .map(b => esc(b.short || b.label));
+    const parts = wks.length ? [`<span class="wk">Wk</span> ${wks.join(', ')}`] : [];
+    return [...parts, ...named].join(', ') + total(wins);
+  };
+  const row = (tag, cls, wins, body) =>
+    `<div class="lrow"><span class="ltag${cls ? ' ' + cls : ''}">${tag}</span>
+      <span class="lval${wins.length ? '' : ' none'}">${body ?? line(wins)}</span></div>`;
 
   /* Dot Pot: one small circle per dot actually won, in that position's
-     color, evenly spaced - color is the only thing marking position, no
-     extra gap between one position's dots and the next. Shown at every
-     width; flex-wrap is the safety net if a manager racks up enough dots
-     to not fit on one line, rather than an entirely different mobile view. */
+     color, evenly spaced - color is the only thing marking position. */
   const DOT_COLOR = { QB:'#ff4858', RB:'#049dd9', WR:'#28b99a', TE:'#ff8a2a' };
   const DOT_ORDER = ['QB','RB','WR','TE'];
-  const dots = list.filter(b => b.type === 'dot');
+  const dots = of('dot');
   const dotCounts = {};
   dots.forEach(d => { dotCounts[d.pos] = (dotCounts[d.pos] || 0) + 1; });
   const dotPips = DOT_ORDER
@@ -718,16 +843,108 @@ function ledgerLines(i, key){
     .map(c => `<span class="dpip" style="--c:${c}"></span>`)
     .join('');
 
-  return `<div class="ledger">
-      <div class="lrow"><span class="ltag">Bonus wins</span>
-        <span class="lval${bonus.length ? '' : ' none'}">${bonus.join(' · ') || 'None yet'}</span></div>
-      <div class="lrow"><span class="ltag hs">High scores</span>
-        <span class="lval${hs.length ? '' : ' none'}">${hs.join(' · ') || 'None yet'}</span></div>
-      <div class="lrow"><span class="ltag dots">Dot Pot</span>
-        <span class="lval${dots.length ? '' : ' none'}">
-          <span class="dpips">${dotPips || 'None yet'}</span>
-        </span></div>
-    </div>`;
+  /* Two groups and one divider: the weekly bonuses on the left, and the
+     side games on the right - playoff places, Squid Game, DraftKings. */
+  const bonusG = `<div class="lgroup bonus">${
+    row('Bonus wins', '', of('category')) +
+    row('High scores', 'hs', of('high')) +
+    row('Dot Pot', 'dots', dots, dots.length ? `<span class="dpips">${dotPips}</span>${total(dots)}` : 'None')
+  }</div>`;
+
+  /* Side rows appear only once that manager has won them - Squid Game pays
+     in week 12, the Turkey Bowl in week 13, and DraftKings 2026 and the
+     playoffs after the season, so none of them should sit there reading
+     "None" for months. A playoff place is its own tag, in medal colours,
+     with just the amount beside it. */
+  const PLACE = { 1:['League Champion', 'gold'], 2:['2nd Place', 'silver'], 3:['3rd Place', 'bronze'] };
+  const placeOf = b => b.place ||
+    (/champ|1st|winner/i.test(b.label) ? 1 : /2nd|runner|second/i.test(b.label) ? 2 : /3rd|third/i.test(b.label) ? 3 : 1);
+  const podium = of('po').sort((x, y) => placeOf(x) - placeOf(y)).map(b => {
+    const [tag, cls] = PLACE[placeOf(b)] || PLACE[1];
+    return row(tag, cls, [b], `<span class="lamt solo">${money(b.amount)}</span>`);
+  }).join('');
+  const DK = '<span class="dk-d">Draft</span><span class="dk-k">Kings</span>';
+  const sideRows = podium +
+    (of('squid').length ? row('Squid Game <span class="champ">Champ</span>', 'squid', of('squid'),
+      `<span class="lamt solo">${money(of('squid').reduce((s, b) => s + b.amount, 0))}</span>`) : '') +
+    (of('dk').length    ? row(DK, 'dk', of('dk')) : '') +
+    (of('other').length ? row('Other', 'side', of('other')) : '');
+  const groups = [bonusG, sideRows ? `<div class="lgroup side">${sideRows}</div>` : ''];
+
+  return `<div class="ledger">${groups.join('')}</div>`;
+}
+
+/* The pill is a fixed width, so a four-digit or cents amount shrinks its
+   type to fit rather than stretching its pill out of line with the rest. */
+function fitBank(b){
+  b.style.fontSize = '';
+  const a = b.querySelector('.amt');
+  if (!a) return;
+  const room = b.clientWidth * 0.84;
+  if (a.offsetWidth > room)
+    b.style.fontSize = (parseFloat(getComputedStyle(b).fontSize) * room / a.offsetWidth).toFixed(2) + 'px';
+}
+
+/* Fade whichever edge of a bar's payouts has more hidden past it. */
+/* The arrow shows whenever a bar's payouts overflow: pointing right while
+   there's more to the right, flipping to point back once you reach the end. */
+function edgeFade(w){
+  /* Measure overflow without the end padding the 'over' class adds - taking
+     the class off to measure would shrink the content mid-scroll and yank
+     the scroll position back. */
+  const L = w.querySelector('.ledger');
+  const pad = L ? parseFloat(getComputedStyle(L).paddingRight) || 0 : 0;
+  const over = w.scrollWidth - pad - w.clientWidth > 2;
+  w.classList.toggle('over', over);
+  const max = w.scrollWidth - w.clientWidth;
+  // real content still hidden to the right - the end padding doesn't count,
+  // so text slid into view beside the arrow isn't faded out
+  const right = max - pad - w.scrollLeft > 2;
+  w.classList.toggle('more-l', w.scrollLeft > 2);
+  w.classList.toggle('more-r', right);
+  const btn = w.parentNode.querySelector('.lmore');
+  if (!btn) return;
+  btn.hidden = !over;
+  /* Points back while the side games are slid into view (w._out), or if a
+     swipe has already reached the end; otherwise points right. */
+  const back = over && (w._out || !right);
+  btn.classList.toggle('left', back);
+  btn.setAttribute('aria-label', back ? 'Slide back' : 'Show more payouts');
+}
+
+/* The arrow slides just far enough to bring the side games fully into view,
+   ending clear of the arrow itself - not to the far end - and remembers
+   where it started so the next tap puts it right back. */
+function slidePayouts(w){
+  const max = w.scrollWidth - w.clientWidth;
+  const btn = w.parentNode.querySelector('.lmore');
+  const how = reduced() ? 'auto' : 'smooth';
+  const pad = parseFloat(getComputedStyle(w.querySelector('.ledger')).paddingRight) || 0;
+  if (w._out || max - pad - w.scrollLeft <= 2){
+    w.scrollTo({ left: w._out ? w._home : 0, behavior: how });
+    w._out = false;
+    btn && btn.classList.remove('left');
+    return;
+  }
+  let to = max;
+  const side = w.querySelector('.lgroup.side');
+  if (side){
+    /* where the side games' text actually ends, in scroll coordinates -
+       measured from the ink, not the grid box, which has spare width */
+    const base = w.getBoundingClientRect().left - w.scrollLeft;
+    const end = Math.max(...[...side.querySelectorAll('.ltag, .lval')].map(el => {
+      const r = document.createRange(); r.selectNodeContents(el);
+      return r.getBoundingClientRect().right - base;
+    }));
+    const room = (btn ? btn.offsetWidth : 0) + 10;
+    to = end - w.clientWidth + room;              // right edge just clear of the arrow
+    to = Math.min(to, side.getBoundingClientRect().left - base - 6);   // but never past the side tags
+    to = Math.max(0, Math.min(max, Math.round(to)));
+  }
+  w._home = w.scrollLeft;
+  w._out = true;
+  btn && btn.classList.add('left');
+  w.scrollTo({ left: to, behavior: how });
 }
 
 /* The rows are built once and then only updated. Rebuilding the table's
@@ -749,16 +966,22 @@ function buildTable(){
       <div class="flipper">
         <div class="face front">
           <span class="rank"></span>
-          <button class="who" data-trace="${m.key}" title="Trace ${esc(m.name)} on the power lines">
-            <span class="ava" style="background-image:url(&quot;${FACES[m.key]}&quot;)"></span>
+          <div class="who">
+            <button class="ava" data-trace="${m.key}" style="background-image:url(&quot;${FACES[m.key]}&quot;)"
+              title="Trace ${esc(m.name)} on the power lines" aria-label="Trace ${esc(m.name)} on the power lines"></button>
             <span class="name">${esc(m.name)}</span>
-          </button>
+          </div>
           <span class="rec"></span>
           <span class="avg"></span>
           <button class="bank" data-k="${m.key}" aria-expanded="false"></button>
         </div>
         <div class="face back">
-          <div class="ledgerwrap"></div>
+          <button class="ava" data-trace="${m.key}" style="background-image:url(&quot;${FACES[m.key]}&quot;)"
+            title="Trace ${esc(m.name)} on the power lines" aria-label="Trace ${esc(m.name)} on the power lines"></button>
+          <div class="ledgerbox">
+            <div class="ledgerwrap"></div>
+            <button class="lmore" hidden aria-label="Show more payouts"><svg viewBox="0 0 12 12"><path d="M4.5 2.5 8 6l-3.5 3.5"/></svg></button>
+          </div>
           <button class="bank" data-k="${m.key}" aria-label="Close breakdown"></button>
         </div>
       </div>
@@ -797,13 +1020,21 @@ function buildTable(){
       banks:[...el.querySelectorAll('.bank')],
       ledger:el.querySelector('.ledgerwrap'),
     };
-    el.querySelector('.who').addEventListener('click', () => toggleTrace(m.key));
-    TBL.rows[m.key].banks.forEach(btn => btn.addEventListener('click', () => {
+    TBL.rows[m.key].ledger.addEventListener('scroll', e => edgeFade(e.currentTarget), { passive:true });
+    /* a finger or trackpad on the payouts takes over from the arrow */
+    ['touchstart', 'wheel'].forEach(ev => TBL.rows[m.key].ledger.addEventListener(ev,
+      e => { e.currentTarget._out = false; }, { passive:true }));
+    /* One listener for the whole bar. A tap on either face traces; a tap
+       anywhere else flips. The bank pills stay real buttons, so keyboard
+       users still have something to focus - their clicks bubble up here. */
+    el.addEventListener('click', e => {
+      if (e.target.closest('[data-trace]')){ toggleTrace(m.key); return; }
+      if (e.target.closest('.lmore')){ slidePayouts(TBL.rows[m.key].ledger); return; }
       state.open.has(m.key) ? state.open.delete(m.key) : state.open.add(m.key);
       el.classList.toggle('flipped');
       el.querySelectorAll('.front .bank')
         .forEach(b => b.setAttribute('aria-expanded', state.open.has(m.key)));
-    }));
+    });
   });
 }
 
@@ -834,9 +1065,13 @@ function updateTable(){
     r.rec.textContent = recOf(t);
     r.avg.textContent = t.avg_per_week.toFixed(2);
     r.ledger.innerHTML = ledgerLines(i, t.key);
+    r.ledger.scrollLeft = 0;
+    r.ledger._out = false;
+    edgeFade(r.ledger);
     r.banks.forEach(b => {
       b.innerHTML = moneyTag(t.bank);
       b.classList.toggle('paid', t.bank > 0);
+      fitBank(b);
     });
     r.banks[0].setAttribute('aria-label', `${r.name} bank ${money(t.bank)} — show breakdown`);
     /* The mint rank belongs to the team, so it survives any sort. The
@@ -934,6 +1169,10 @@ function buildChart(){
     c.addEventListener('click', () => toggleTrace(c.dataset.k)));
 
   addEventListener('resize', debounce(paintStatic, 150));
+  addEventListener('resize', debounce(() => {
+    document.querySelectorAll('.back .ledgerwrap').forEach(edgeFade);
+    document.querySelectorAll('.row .bank').forEach(fitBank);
+  }, 150));
   goTo(LAST, true);
 }
 
