@@ -169,24 +169,25 @@ def settle(week, yf_dir=None, apply_it=False, force=False):
     print("\n  " + yc.write_ledger_week(week, entry) + "\n")
 
 
-def pick_week(token):
-    """Which week to settle, without being told.
+def unsettled_weeks(token):
+    """Every finished week that isn't in the ledger yet, oldest first.
 
-    Yahoo's current_week rolls over to the new week partway through Tuesday, so
-    a Tuesday-morning job cannot simply trust it. Try current_week first, then
-    the one before it, and settle the first that is genuinely final and not yet
-    in the ledger. Returns None when there is nothing to do - the normal answer
-    in the preseason, on a bye, and every Tuesday after the job has already run.
+    The first version only checked the current week and the one before it, so
+    one missed Tuesday orphaned that week forever - the next run looked past
+    it. Now it walks every week from 1 up to the current one and settles all
+    the finished, unsettled ones. A missed Tuesday simply catches up next time.
+    Stops at the playoffs: bonus weeks are 1-15.
     """
     current = yc.current_week(token)
     settled, _awards = yc.load_ledger()
-    for week in (current, current - 1):
-        if week < 1 or week in settled:
+    todo = []
+    for week in range(1, min(current, 15) + 1):
+        if week in settled:
             continue
         _w, status, matchups = yc.parse_scoreboard(yc.fetch_scoreboard(token, week))
         if matchups and status == "final":
-            return week
-    return None
+            todo.append(week)
+    return todo
 
 
 if __name__ == "__main__":
@@ -204,12 +205,31 @@ if __name__ == "__main__":
     weeks = [a for a in args if a.isdigit()]
 
     if auto:
-        tok = yc.get_token(yf)
-        target = pick_week(tok)
-        if target is None:
-            print("Nothing to settle: no finished, unsettled week.")
+        # --auto NEVER fails the job. Settling is a bonus on top of the
+        # standings, not a gate in front of them: if anything goes wrong here,
+        # it is logged and the workflow carries on, and the week is retried on
+        # the next run because it is still missing from the ledger.
+        try:
+            tok = yc.get_token(yf)
+            todo = unsettled_weeks(tok)
+        except SystemExit as e:
+            print("Could not check for unsettled weeks - will retry next run.\n  %s" % e)
             sys.exit(0)
-        settle(target, yf, apply_it, force)
+        except Exception as e:
+            print("Could not check for unsettled weeks - will retry next run.\n  %r" % e)
+            sys.exit(0)
+        if not todo:
+            print("Nothing to settle: every finished week is already in the ledger.")
+            sys.exit(0)
+        print("Settling week(s): %s" % ", ".join(map(str, todo)))
+        for week in todo:
+            try:
+                settle(week, yf, apply_it, force)
+            except SystemExit as e:
+                print("  Week %d not settled - will retry next run. %s" % (week, e))
+            except Exception as e:
+                print("  Week %d not settled - will retry next run. %r" % (week, e))
+        sys.exit(0)
     elif len(weeks) == 1:
         settle(int(weeks[0]), yf, apply_it, force)
     else:

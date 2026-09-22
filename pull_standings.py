@@ -17,12 +17,6 @@ exactly as they were.
 This is the ONLY script that writes season.json. pull_live.py writes
 scoreboard.json and bonus.json; it deliberately leaves this file alone.
 
-FIXED 2026-09-15:
-  - was labelling the snapshot with Yahoo's current_week, which rolls over
-    partway through Tuesday. That recorded week 1 as zeros before it was
-    played, then filed week 1's results under week 2. Now snapshots the last
-    week whose scoreboard is final, and writes nothing when none is.
-
 FIXED 2026-09-01:
   - was calling Context().get_leagues(nfl, 2026), which raises ValueError before
     any network call because the library's season table stops at 2025. Now
@@ -98,12 +92,8 @@ def bonuses_from_ledger(meta, ledger_path=None):
                    yc.DOT_VALUE)
 
     for a in awards:
-        entry = {"type": "award", "label": a["label"],
-                 "short": a["short"], "amount": a["amount"]}
-        for field in ("kind", "week", "place"):
-            if a.get(field) is not None:
-                entry[field] = a[field]
-        out[a["manager"]].append(entry)
+        out[a["manager"]].append({"type": "award", "label": a["label"],
+                                  "short": a["short"], "amount": a["amount"]})
 
     for v in out.values():
         v.sort(key=lambda b: (b.get("week") or 99, b["type"]))
@@ -127,27 +117,6 @@ def snapshot(standings):
     return teams
 
 
-def latest_final_week(token):
-    """The most recent week that is actually over.
-
-    Yahoo's current_week rolls over to the new week partway through Tuesday,
-    so a Tuesday-morning job cannot trust it - see pick_week() in
-    settle_week.py, which hit this first. Trusting it here is what recorded
-    week 1 as a row of zeros on 2026-09-08, then filed week 1's results under
-    week 2 a week later. Walk back from current_week and take the first week
-    whose scoreboard is final. None means nothing has finished yet, which is
-    the normal preseason answer.
-    """
-    current = yc.current_week(token)
-    for week in (current, current - 1):
-        if week < 1:
-            continue
-        _w, status, matchups = yc.parse_scoreboard(yc.fetch_scoreboard(token, week))
-        if matchups and status == "final":
-            return week
-    return None
-
-
 def inspect(args):
     token = yc.get_token(args.yf_dir)
     meta = yc.fetch_league_meta(token)
@@ -167,6 +136,42 @@ def inspect(args):
         print("\n  ! not resolved: %s - check TEAM_MAP" % ", ".join(sorted(missing)))
 
 
+def reconstruct_through(token, through_week):
+    """Standings as of the end of `through_week`, rebuilt from scoreboards.
+
+    Yahoo's standings endpoint only ever returns *current* totals - it can't
+    tell you what the table looked like after Week 1 once Week 2 is played.
+    But every week's scoreboard is still fetchable, so the history can be
+    rebuilt by replaying results: wins, losses, ties and points for, week by
+    week. Ranked by wins then points for, which is Yahoo's default tiebreak.
+
+    Used only to fill gaps - a missed Tuesday, or the rows lost to the old
+    current_week labelling. The latest week always comes from Yahoo's own
+    standings, so its ranks are authoritative.
+    """
+    tally = {k: {"wins": 0, "losses": 0, "ties": 0, "points_for": 0.0,
+                 "points_against": 0.0, "rank": 0} for k in yc.MANAGER_KEYS}
+    for wk in range(1, through_week + 1):
+        _w, _status, matchups = yc.parse_scoreboard(yc.fetch_scoreboard(token, wk))
+        for m in matchups:
+            (hm, hs), (am, asc) = m["home"], m["away"]
+            if hm not in tally or am not in tally:
+                continue
+            tally[hm]["points_for"] += hs; tally[hm]["points_against"] += asc
+            tally[am]["points_for"] += asc; tally[am]["points_against"] += hs
+            if hs > asc:
+                tally[hm]["wins"] += 1; tally[am]["losses"] += 1
+            elif asc > hs:
+                tally[am]["wins"] += 1; tally[hm]["losses"] += 1
+            else:
+                tally[hm]["ties"] += 1; tally[am]["ties"] += 1
+    order = sorted(tally, key=lambda k: (-(tally[k]["wins"] + 0.5 * tally[k]["ties"]),
+                                          -tally[k]["points_for"]))
+    for i, k in enumerate(order, 1):
+        tally[k]["rank"] = i
+    return tally
+
+
 def main(args):
     if not OUT.exists():
         sys.exit("%s is missing. It holds the season's history - restore it from "
@@ -175,10 +180,6 @@ def main(args):
     cat_meta = yc.load_categories(args.categories)
 
     token = yc.get_token(args.yf_dir)
-    week = args.week or latest_final_week(token)
-    if week is None:
-        print("No finished week yet - nothing to snapshot.")
-        return
     standings = yc.parse_standings(yc.fetch_standings(token))
 
     if len(standings) != 10:
@@ -186,22 +187,68 @@ def main(args):
                  "standings row. Check TEAM_MAP in yahoo_common.py."
                  % len(standings))
 
-    row = {"week": week, "label": "Week %d" % week,
-           "short": "W%d" % week, "teams": snapshot(standings)}
+    # The row is labelled by GAMES PLAYED, not Yahoo's current_week. Yahoo
+    # flips current_week to the next week first thing Tuesday, so labelling by
+    # it saved the standings *through* Week 1 as "Week 2" - the power-lines
+    # chart ran one week ahead and never had a Week 1. Games played is what the
+    # records actually describe, and it doesn't care when Yahoo flips.
+    played = max((s["wins"] + s["losses"] + s["ties"]) for s in standings.values())
+    week = args.week or played
 
     weeks = feed.get("weeks", [])
-    at = next((i for i, w in enumerate(weeks) if w.get("week") == week), None)
-    if at is None:
-        weeks.append(row)
-        action = "added week %d" % week
-    else:
-        weeks[at] = row
-        action = "refreshed week %d" % week
-    weeks.sort(key=lambda w: w.get("week", 0))
 
+    # Self-heal: a row labelled AHEAD of games played is a leftover from the old
+    # current_week labelling (standings-through-Week-2 saved as "Week 3").
+    # Drop it; the correctly labelled row replaces it below.
+    before = len(weeks)
+    weeks = [w for w in weeks if int(w.get("week", 0)) <= max(week, 0)]
+    healed = before - len(weeks)
+
+    # Self-heal: rebuild any finished week missing from the history, so the
+    # power-lines chart never has a gap - whether from the old labelling bug
+    # or a Tuesday run that didn't fire.
+    have = {int(w.get("week", -1)) for w in weeks}
+    rebuilt = []
+    for missing in range(1, week):
+        if missing not in have:
+            tally = reconstruct_through(token, missing)
+            weeks.append({"week": missing, "label": "Week %d" % missing,
+                          "short": "W%d" % missing, "teams": snapshot(tally)})
+            rebuilt.append(missing)
+
+    if week < 1:
+        action = "preseason - weeks unchanged"
+    else:
+        row = {"week": week, "label": "Week %d" % week,
+               "short": "W%d" % week, "teams": snapshot(standings)}
+        at = next((i for i, w in enumerate(weeks) if w.get("week") == week), None)
+        if at is None:
+            weeks.append(row)
+            action = "added week %d" % week
+        else:
+            weeks[at] = row
+            action = "refreshed week %d" % week
+        weeks.sort(key=lambda w: w.get("week", 0))
+
+    weeks.sort(key=lambda w: w.get("week", 0))
+    if healed:
+        action += "; dropped %d mislabelled row(s)" % healed
+    if rebuilt:
+        action += "; rebuilt week(s) %s" % ", ".join(map(str, rebuilt))
+    original = json.dumps({k: v for k, v in feed.items() if k != "updated"},
+                          sort_keys=True)
     feed["weeks"] = weeks
     feed["bonuses"] = bonuses_from_ledger(cat_meta, args.ledger)
     feed.setdefault("league", {})["season"] = yc.SEASON
+
+    # This now runs every 10 minutes alongside the live feeds, so it must not
+    # rewrite the file when nothing changed - a fresh "updated" stamp alone
+    # would commit season.json every run all season.
+    changed = json.dumps({k: v for k, v in feed.items() if k != "updated"},
+                         sort_keys=True) != original
+    if not changed and not args.dry_run:
+        print("season.json unchanged (%s)." % action)
+        return
     feed["updated"] = yc.now_iso()
 
     banked = sum(b["amount"] for v in feed["bonuses"].values() for b in v)

@@ -180,18 +180,45 @@ def get_token(yf_dir=None):
     return token
 
 
-def fetch(path, token):
+RETRYABLE = {401, 429, 500, 502, 503, 504}
+
+
+def fetch(path, token, attempts=4):
+    """GET a Yahoo resource, retrying the failures that fix themselves.
+
+    Yahoo intermittently returns 401 "Invalid cookie, please log in again" on a
+    perfectly good token, plus the usual 5xx and rate-limit blips. One bad
+    response used to kill the whole run. Now each call retries with a short
+    backoff (2s, 4s, 8s) before giving up, which swallows nearly all of them.
+
+    403 is NOT retried: that means the app itself isn't authorised, and no
+    amount of waiting fixes it.
+    """
+    import time
     import requests
-    r = requests.get(API + path + "?format=json",
-                     headers={"Authorization": "Bearer " + token}, timeout=30)
-    if r.status_code == 403:
-        sys.exit("403 from Yahoo for %s\n"
-                 "The app is not activated against the Fantasy API. This is a "
-                 "manual step on Yahoo's side - email Fantasy support with the "
-                 "App ID, Client ID, and Yahoo ID.\n%s" % (path, r.text[:300]))
-    if r.status_code != 200:
-        sys.exit("Yahoo returned %s for %s\n%s" % (r.status_code, path, r.text[:400]))
-    return r.json()
+    last = None
+    for i in range(attempts):
+        try:
+            r = requests.get(API + path + "?format=json",
+                             headers={"Authorization": "Bearer " + token},
+                             timeout=30)
+        except requests.RequestException as e:
+            last = "network error: %s" % e
+        else:
+            if r.status_code == 200:
+                return r.json()
+            if r.status_code == 403:
+                sys.exit("403 from Yahoo for %s\n"
+                         "The app is not activated against the Fantasy API. This "
+                         "is a manual step on Yahoo's side - email Fantasy support "
+                         "with the App ID, Client ID, and Yahoo ID.\n%s"
+                         % (path, r.text[:300]))
+            last = "Yahoo returned %s: %s" % (r.status_code, r.text[:300])
+            if r.status_code not in RETRYABLE:
+                break
+        if i < attempts - 1:
+            time.sleep(2 ** (i + 1))
+    sys.exit("Gave up on %s after %d attempts. Last: %s" % (path, attempts, last))
 
 
 def fetch_rosters(token, week):
@@ -499,18 +526,8 @@ def parse_projected(payload):
             manager = TEAM_MAP.get(str(tmeta.get("team_id", "")))
             if manager is None:
                 continue
-            # team_live_projected_points is the number Yahoo's site shows as
-            # "projected final" during games - points banked so far plus a
-            # projection for the starters still to play. It only appears once
-            # the week is live; before kickoff only the pregame field exists,
-            # and that one barely moves after games start. Live first.
-            proj = None
-            for field in ("team_live_projected_points", "team_projected_points"):
-                found = find_key(team[1:], field)
-                if isinstance(found, dict) and found.get("total") is not None:
-                    proj = found
-                    break
-            if proj is not None:
+            proj = find_key(team[1:], "team_projected_points")
+            if isinstance(proj, dict) and proj.get("total") is not None:
                 out[manager] = round(fnum(proj.get("total")), 2)
     return out
 
@@ -649,20 +666,12 @@ def normalize_dots(entry):
     return {pos: normalize_winner(entry.get(pos)) for pos in DOT_POSITIONS}
 
 
-def _dollars(value):
-    """A ledger amount, kept to the cent. Whole dollars stay ints so they
-    render as "$75"; the waiver-tax DraftKings pot can land on $62.50, which
-    int() used to truncate to $62."""
-    amount = round(fnum(value), 2)
-    return int(amount) if amount == int(amount) else amount
-
-
 def load_ledger(path=None):
     """-> (weeks, awards) for the current season.
 
     weeks: {week_int: {"high": {...} or None, "category": {...} or None,
                         "dots": {"QB": {...} or None, "RB": ..., ...}}}
-    awards: [{manager, label, short, amount, kind?, week?, place?}, ...]
+    awards: [{manager, label, short, amount}, ...]
     """
     p = Path(path) if path else LEDGER_FILE
     if not p.exists():
@@ -684,22 +693,10 @@ def load_ledger(path=None):
     for a in season.get("awards", []) or []:
         key = manager_key(a.get("manager"))
         if key:
-            award = {"manager": key,
-                     "label": a.get("label", "Award"),
-                     "short": a.get("short", a.get("label", "")),
-                     "amount": _dollars(a.get("amount"))}
-            # kind files it on the standings page (playoff / squid / dk);
-            # week lets a mid-season win count from that week on when the
-            # page is rewound, instead of only at Final. Both optional.
-            if a.get("kind"):
-                award["kind"] = str(a["kind"]).strip().lower()
-            if str(a.get("week", "")).strip().isdigit():
-                award["week"] = int(a["week"])
-            # place (1, 2, 3) picks the playoff tag: League Champion,
-            # 2nd Place, 3rd Place.
-            if str(a.get("place", "")).strip().isdigit():
-                award["place"] = int(a["place"])
-            awards.append(award)
+            awards.append({"manager": key,
+                           "label": a.get("label", "Award"),
+                           "short": a.get("short", a.get("label", "")),
+                           "amount": int(fnum(a.get("amount")))})
     return weeks, awards
 
 
@@ -853,71 +850,11 @@ SCOREBOARD_WEEKS = {2, 4, 6, 9, 10}
 STANDINGS_WEEKS = {15}
 
 
-def remaining_starters(payload, rosters):
-    """-> {manager_key: int} starters who have not played yet.
-
-    Yahoo publishes team_remaining_games on live scoreboards but omits it
-    outside game windows, so this falls back to counting starters with no
-    score. The fallback slightly overstates late in a week (a genuine zero
-    keeps counting) which is the safe direction: it never claims a team is
-    done when it isn't.
-    """
-    out = {}
-    if payload:
-        league = payload["fantasy_content"]["league"]
-        sb = find_key(league[1:], "scoreboard") or league[1].get("scoreboard")
-        container = ((sb or {}).get("0", {}).get("matchups")
-                     or (sb or {}).get("matchups"))
-        for wrapper in numbered(container or {}):
-            m = wrapper.get("matchup")
-            mm = merge_meta(m) if isinstance(m, list) else (m or {})
-            teams_c = mm.get("0", {}).get("teams") or mm.get("teams") or {}
-            for tw in numbered(teams_c):
-                team = tw.get("team")
-                if team is None:
-                    continue
-                tmeta = merge_meta(team[0] if isinstance(team[0], list) else team)
-                manager = TEAM_MAP.get(str(tmeta.get("team_id", "")))
-                if manager is None:
-                    continue
-                rg = find_key(team[1:], "team_remaining_games")
-                total = merge_meta(rg).get("total") if rg is not None else None
-                if total is not None:
-                    out[manager] = int(fnum(total))
-
-    if len(out) < len(MANAGER_KEYS):
-        out = {manager: sum(1 for p in team["players"]
-                            if p["slot"] in STARTING_SLOTS and p["points"] == 0.0)
-               for manager, team in rosters.items()}
-    return out
-
-
-def _left(remaining, manager, final=False):
-    """How much of this team's week is still to come.
-
-    'Final' once the week is settled, '5 to play' while starters are still
-    waiting, 'All played' when everyone has a score but Yahoo has not closed
-    the week out. Sentence case, to sit alongside the player names that
-    occupy this same line in the other race card.
-
-    A caveat worth knowing: Yahoo omits team_remaining_games, so the count
-    comes from starters with no points yet. A player who is on the field
-    right now but has not scored still counts as 'to play'. It never claims
-    a team is done when it isn't, which is the safe direction.
-    """
-    if final:
-        return "Final"
-    n = (remaining or {}).get(manager)
-    if n is None:
-        return ""
-    return "%d to play" % n if n else "All played"
-
-
-def high_score_rows(rosters, matchups, standings, remaining=None, final=False):
+def high_score_rows(rosters, matchups, standings):
     rows = []
     for m in matchups:
         for manager, score in (m["home"], m["away"]):
-            rows.append((manager, score, _left(remaining, manager, final)))
+            rows.append((manager, score, "week total"))
     return rows
 
 
