@@ -1,7 +1,7 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-22T01:15:33Z",
+  "updated": "2026-09-22T01:20:29Z",
   "players": [
     {
       "name": "Josh Allen",
@@ -711,6 +711,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -852,15 +861,6 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 10.0,
       "stats": []
     },
@@ -1521,6 +1521,28 @@
       ]
     },
     {
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -1553,28 +1575,6 @@
         {
           "stat": "REC YD",
           "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Cam Skattebo",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 15
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
         },
         {
           "stat": "REC",
