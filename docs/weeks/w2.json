@@ -1,13 +1,13 @@
 {
   "week": 2,
   "status": "live",
-  "updated": "2026-09-22T00:20:26Z",
+  "updated": "2026-09-22T00:25:30Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 102.92,
+        "score": 103.0,
         "projected": 117.05
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 105.96,
+        "score": 106.66,
         "projected": 120.12
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "102.92",
+          "value": "103.00",
           "detail": "lost to GREG"
         },
         {
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "106.64",
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "106.66",
           "detail": "All played"
         }
       ]
@@ -1704,6 +1704,42 @@
       ]
     },
     {
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jaxson Dart",
+      "position": "QB",
+      "team": "NYG",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 20
+        }
+      ]
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -1718,34 +1754,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jaxson Dart",
-      "position": "QB",
-      "team": "NYG",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.72,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 18
-        }
-      ]
-    },
-    {
-      "name": "Cam Skattebo",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
         }
       ]
     },
