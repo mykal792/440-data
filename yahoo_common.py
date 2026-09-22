@@ -649,12 +649,20 @@ def normalize_dots(entry):
     return {pos: normalize_winner(entry.get(pos)) for pos in DOT_POSITIONS}
 
 
+def _dollars(value):
+    """A ledger amount, kept to the cent. Whole dollars stay ints so they
+    render as "$75"; the waiver-tax DraftKings pot can land on $62.50, which
+    int() used to truncate to $62."""
+    amount = round(fnum(value), 2)
+    return int(amount) if amount == int(amount) else amount
+
+
 def load_ledger(path=None):
     """-> (weeks, awards) for the current season.
 
     weeks: {week_int: {"high": {...} or None, "category": {...} or None,
                         "dots": {"QB": {...} or None, "RB": ..., ...}}}
-    awards: [{manager, label, short, amount}, ...]
+    awards: [{manager, label, short, amount, kind?, week?, place?}, ...]
     """
     p = Path(path) if path else LEDGER_FILE
     if not p.exists():
@@ -676,10 +684,22 @@ def load_ledger(path=None):
     for a in season.get("awards", []) or []:
         key = manager_key(a.get("manager"))
         if key:
-            awards.append({"manager": key,
-                           "label": a.get("label", "Award"),
-                           "short": a.get("short", a.get("label", "")),
-                           "amount": int(fnum(a.get("amount")))})
+            award = {"manager": key,
+                     "label": a.get("label", "Award"),
+                     "short": a.get("short", a.get("label", "")),
+                     "amount": _dollars(a.get("amount"))}
+            # kind files it on the standings page (playoff / squid / dk);
+            # week lets a mid-season win count from that week on when the
+            # page is rewound, instead of only at Final. Both optional.
+            if a.get("kind"):
+                award["kind"] = str(a["kind"]).strip().lower()
+            if str(a.get("week", "")).strip().isdigit():
+                award["week"] = int(a["week"])
+            # place (1, 2, 3) picks the playoff tag: League Champion,
+            # 2nd Place, 3rd Place.
+            if str(a.get("place", "")).strip().isdigit():
+                award["place"] = int(a["place"])
+            awards.append(award)
     return weeks, awards
 
 

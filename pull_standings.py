@@ -98,8 +98,12 @@ def bonuses_from_ledger(meta, ledger_path=None):
                    yc.DOT_VALUE)
 
     for a in awards:
-        out[a["manager"]].append({"type": "award", "label": a["label"],
-                                  "short": a["short"], "amount": a["amount"]})
+        entry = {"type": "award", "label": a["label"],
+                 "short": a["short"], "amount": a["amount"]}
+        for field in ("kind", "week", "place"):
+            if a.get(field) is not None:
+                entry[field] = a[field]
+        out[a["manager"]].append(entry)
 
     for v in out.values():
         v.sort(key=lambda b: (b.get("week") or 99, b["type"]))
