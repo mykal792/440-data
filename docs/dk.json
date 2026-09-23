@@ -1,27 +1,35 @@
 {
   "season": 2026,
   "tax_per_move": 0.5,
-  "updated": "2026-09-23T05:55:27Z",
+  "updated": "2026-09-23T11:00:43Z",
   "high_score_bonus": "15.00",
   "managers": [
     {
+      "name": "GANGUS",
+      "moves": 6
+    },
+    {
       "name": "SCHILLING",
-      "moves": 5
+      "moves": 6
     },
     {
       "name": "HAYDEN",
-      "moves": 4
-    },
-    {
-      "name": "GANGUS",
-      "moves": 2
+      "moves": 5
     },
     {
       "name": "SCARPITTI",
-      "moves": 2
+      "moves": 3
     },
     {
       "name": "ANTHONY",
+      "moves": 2
+    },
+    {
+      "name": "SCOTTY",
+      "moves": 2
+    },
+    {
+      "name": "GARRETT",
       "moves": 1
     },
     {
@@ -29,23 +37,104 @@
       "moves": 1
     },
     {
-      "name": "SCOTTY",
+      "name": "GREG",
       "moves": 1
     },
     {
       "name": "COYNE",
       "moves": 0
-    },
-    {
-      "name": "GARRETT",
-      "moves": 0
-    },
-    {
-      "name": "GREG",
-      "moves": 0
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "manager": "SCOTTY",
+      "added": "Hunter Henry",
+      "add_pos": "NE - TE",
+      "dropped": "Wan'Dale Robinson",
+      "drop_pos": "Ten - WR",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "GANGUS",
+      "added": "Tank Bigsby",
+      "add_pos": "Phi - RB",
+      "dropped": "Jayden Daniels",
+      "drop_pos": "Was - QB",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "GANGUS",
+      "added": "",
+      "add_pos": "",
+      "dropped": "Jonathon Brooks",
+      "drop_pos": "Car - RB",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "GANGUS",
+      "added": "Jordan Love",
+      "add_pos": "GB - QB",
+      "dropped": "Buccaneers",
+      "drop_pos": "TB - DEF",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "GANGUS",
+      "added": "Denzel Boston",
+      "add_pos": "Cle - WR",
+      "dropped": "Alec Pierce",
+      "drop_pos": "Ind - WR",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "ANTHONY",
+      "added": "Khalil Shakir",
+      "add_pos": "Buf - WR",
+      "dropped": "Mark Andrews",
+      "drop_pos": "Bal - TE",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "SCHILLING",
+      "added": "Jonah Coleman",
+      "add_pos": "Den - RB",
+      "dropped": "Makai Lemon",
+      "drop_pos": "Phi - WR",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "GARRETT",
+      "added": "Dalton Schultz",
+      "add_pos": "Hou - TE",
+      "dropped": "",
+      "drop_pos": "",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "HAYDEN",
+      "added": "Juwan Johnson",
+      "add_pos": "NO - TE",
+      "dropped": "Michael Mayer",
+      "drop_pos": "LV - TE",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "GREG",
+      "added": "Chiefs",
+      "add_pos": "KC - DEF",
+      "dropped": "Patriots",
+      "drop_pos": "NE - DEF",
+      "date": "Sep 23"
+    },
+    {
+      "manager": "SCARPITTI",
+      "added": "Tyler Shough",
+      "add_pos": "NO - QB",
+      "dropped": "Carnell Tate",
+      "drop_pos": "Ten - WR",
+      "date": "Sep 23"
+    }
+  ],
   "high_scores": [
     {
       "week": 1,
