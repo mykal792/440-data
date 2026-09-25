@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-25T02:45:25Z",
+  "updated": "2026-09-25T02:50:25Z",
   "players": [
     {
       "name": "Bijan Robinson",
@@ -48,16 +48,20 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
+      "name": "Christian Watson",
+      "position": "WR",
       "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.92,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 15.0,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 173
+          "stat": "REC YD",
+          "value": 65
+        },
+        {
+          "stat": "REC",
+          "value": 5
         },
         {
           "stat": "TD",
@@ -66,20 +70,16 @@
       ]
     },
     {
-      "name": "Christian Watson",
-      "position": "WR",
+      "name": "Jordan Love",
+      "position": "QB",
       "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.6,
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 14.8,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 31
-        },
-        {
-          "stat": "REC",
-          "value": 3
+          "stat": "PASS YD",
+          "value": 220
         },
         {
           "stat": "TD",
