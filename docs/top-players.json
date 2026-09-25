@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-25T00:30:27Z",
+  "updated": "2026-09-25T00:35:22Z",
   "players": [
     {
       "name": "Bijan Robinson",
@@ -26,6 +26,20 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 51
+        }
+      ]
+    },
+    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -44,20 +58,6 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.24,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 6
-        }
-      ]
-    },
-    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -70,15 +70,6 @@
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "MarShawn Lloyd",
-      "position": "RB",
-      "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -839,6 +830,24 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": -0.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": -6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     }
   ]
 }
