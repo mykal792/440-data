@@ -1,8 +1,48 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-25T00:35:22Z",
+  "updated": "2026-09-25T00:40:24Z",
   "players": [
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 9.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 82
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Bijan Robinson",
       "position": "RB",
@@ -26,30 +66,38 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 51
-        }
-      ]
-    },
-    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 1.1,
+      "points": 2.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 6
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
         },
         {
           "stat": "REC",
@@ -97,15 +145,6 @@
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -830,24 +869,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "MarShawn Lloyd",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": -0.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": -6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     }
   ]
 }
