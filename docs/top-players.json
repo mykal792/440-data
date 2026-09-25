@@ -1,8 +1,34 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-25T00:50:26Z",
+  "updated": "2026-09-25T00:55:18Z",
   "players": [
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 15.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 73
+        },
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Jordan Love",
       "position": "QB",
@@ -17,28 +43,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 9.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 68
-        },
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
           "value": 1
         }
       ]
