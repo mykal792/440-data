@@ -91,7 +91,7 @@ def build_scoreboard(week, status, matchups, projected):
 
 def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame):
     cat = meta["_by_week"].get(week, {})
-    rows, ascending = yc.compute_bonus(week, rosters, matchups, standings)
+    rows, ascending = yc.compute_bonus(week, rosters, matchups, standings, status)
 
     # ALWAYS exactly three rows in both lists. The bonus board sizes itself to
     # its content and the HTML blocks can't talk to each other, so a list that

@@ -751,63 +751,67 @@ def _margins(matchups):
     return out
 
 
-def c_bench_warmer(r, m, s):
+def c_bench_warmer(r, m, s, status=None):
     return _best_player(r, lambda p: p["slot"] == BENCH_SLOT)
 
 
-def c_matchup_blues(r, m, s):
+def c_matchup_blues(r, m, s, status=None):
+    verb = "lost to" if status == "final" else "losing to"
     rows = []
     for w, l, _ in _margins(m):
         for mu in m:
             for manager, score in (mu["home"], mu["away"]):
                 if manager == l:
-                    rows.append((l, score, "lost to %s" % DISPLAY.get(w, w)))
+                    rows.append((l, score, "%s %s" % (verb, DISPLAY.get(w, w))))
     return rows
 
 
-def c_beast_mode(r, m, s):
+def c_beast_mode(r, m, s, status=None):
     return _best_player(r, lambda p: _starting(p) and p["display_position"] == "RB")
 
 
-def c_lucky_duck(r, m, s):
+def c_lucky_duck(r, m, s, status=None):
+    verb = "beat" if status == "final" else "beating"
     rows = []
     for w, l, _ in _margins(m):
         for mu in m:
             for manager, score in (mu["home"], mu["away"]):
                 if manager == w:
-                    rows.append((w, score, "beat %s" % DISPLAY.get(l, l)))
+                    rows.append((w, score, "%s %s" % (verb, DISPLAY.get(l, l))))
     return rows
 
 
-def c_the_sheriff(r, m, s):
+def c_the_sheriff(r, m, s, status=None):
     return _best_player(r, lambda p: _starting(p) and p["display_position"] == "QB")
 
 
-def c_photo_finish(r, m, s):
-    return [(w, margin, "beat %s" % DISPLAY.get(l, l)) for w, l, margin in _margins(m)]
+def c_photo_finish(r, m, s, status=None):
+    verb = "beat" if status == "final" else "beating"
+    return [(w, margin, "%s %s" % (verb, DISPLAY.get(l, l))) for w, l, margin in _margins(m)]
 
 
-def c_the_flex(r, m, s):
+def c_the_flex(r, m, s, status=None):
     return _best_player(r, lambda p: p["slot"] == FLEX_SLOT or p["is_flex"])
 
 
-def c_nice_hands(r, m, s):
+def c_nice_hands(r, m, s, status=None):
     return _best_player(r, lambda p: _starting(p) and p["display_position"] == "WR")
 
 
-def c_blow_out(r, m, s):
-    return c_photo_finish(r, m, s)
+def c_blow_out(r, m, s, status=None):
+    return c_photo_finish(r, m, s, status)
 
 
-def c_bad_beat(r, m, s):
-    return [(l, margin, "lost to %s" % DISPLAY.get(w, w)) for w, l, margin in _margins(m)]
+def c_bad_beat(r, m, s, status=None):
+    verb = "lost to" if status == "final" else "losing to"
+    return [(l, margin, "%s %s" % (verb, DISPLAY.get(w, w))) for w, l, margin in _margins(m)]
 
 
-def c_hammer_toe(r, m, s):
+def c_hammer_toe(r, m, s, status=None):
     return _best_player(r, lambda p: p["slot"] == "K")
 
 
-def c_one_two_punch(r, m, s):
+def c_one_two_punch(r, m, s, status=None):
     """The two dedicated RB slots. A flex RB has slot 'W/R/T', so it's excluded."""
     rows = []
     for manager, team in r.items():
@@ -820,15 +824,15 @@ def c_one_two_punch(r, m, s):
     return rows
 
 
-def c_pick_six(r, m, s):
+def c_pick_six(r, m, s, status=None):
     return _best_player(r, lambda p: p["slot"] == "DEF")
 
 
-def c_tighty_whities(r, m, s):
+def c_tighty_whities(r, m, s, status=None):
     return _best_player(r, lambda p: _starting(p) and p["display_position"] == "TE")
 
 
-def c_points_against(r, m, s):
+def c_points_against(r, m, s, status=None):
     return [(k, round(v["points_against"], 2), "season total")
             for k, v in (s or {}).items()]
 
@@ -851,10 +855,11 @@ STANDINGS_WEEKS = {15}
 
 
 def high_score_rows(rosters, matchups, standings):
+    """No detail text - the redesign shows only rank, name, and score here."""
     rows = []
     for m in matchups:
         for manager, score in (m["home"], m["away"]):
-            rows.append((manager, score, "week total"))
+            rows.append((manager, score, ""))
     return rows
 
 
@@ -989,9 +994,15 @@ def pad_leaders(leaders, size=3):
     return out
 
 
-def compute_bonus(week, rosters, matchups, standings):
-    """-> (rows, ascending) for the given week, or ([], False) if no bonus."""
+def compute_bonus(week, rosters, matchups, standings, status=None):
+    """-> (rows, ascending) for the given week, or ([], False) if no bonus.
+
+    `status` ("pregame" | "live" | "final") only changes anything for the
+    five margin-based categories (2, 4, 6, 9, 10) - it picks present tense
+    ("losing to X") while the week is still being played and past tense
+    ("lost to X") once it's final. Every other category ignores it.
+    """
     calc = CALCULATORS.get(week)
     if not calc:
         return [], False
-    return calc(rosters, matchups, standings), week in ASCENDING
+    return calc(rosters, matchups, standings, status), week in ASCENDING
