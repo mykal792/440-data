@@ -288,6 +288,12 @@
   align-items:center; gap:10px; padding:0 9px;
   height:46px;              /* fixed, not min-height — see .race__detail */
 }
+/* A race whose leaders carry no detail text at all (High Score, now that it
+   has none) gets a shorter, single-line row instead of reserving room for a
+   second line that will never arrive. Applied per-race, not globally, so a
+   category race that legitimately has detail text keeps its two-line 46px
+   row regardless of what High Score is doing. */
+.race--nodetail .race__row{ height:32px }
 .race__row--1{
   border:2px solid #333; border-radius:10px; padding:0 7px;
 }
@@ -721,6 +727,7 @@ function teamRow(t, leading, pre){
 function race(r){
   if (!r) return "";
   const hasIcon = !!document.getElementById("ic-" + r.key);
+  const hasDetail = (r.leaders || []).some(l => l.detail);
   const rows = (r.leaders || []).slice(0,3).map((l,i) => `
     <div class="race__row race__row--${i+1}">
       <span class="race__pos">${i+1}</span>
@@ -728,12 +735,12 @@ function race(r){
         <span class="race__nameline"><b>${esc(l.manager)}</b>${i === 0
           ? '<span class="race__check"><svg aria-hidden="true"><use href="' + ICON_SPRITE + '#ic-check"></use></svg></span>'
           : ''}</span>
-        <span class="race__detail">${l.detail ? esc(l.detail) : "&nbsp;"}</span>
+        ${hasDetail ? `<span class="race__detail">${l.detail ? esc(l.detail) : "&nbsp;"}</span>` : ""}
       </span>
       <span class="race__val">${esc(l.value)}</span>
     </div>`).join("") || '<p class="race__empty">Nothing scored yet.</p>';
 
-  return `<div class="race${hasIcon ? "" : " race--noicon"}">
+  return `<div class="race${hasIcon ? "" : " race--noicon"}${hasDetail ? "" : " race--nodetail"}">
     <div class="race__head">
       ${hasIcon ? `<span class="race__icon"><svg aria-hidden="true"><use href="${ICON_SPRITE}#ic-${esc(r.key)}"></use></svg></span>` : ""}
       <div class="race__meta">
