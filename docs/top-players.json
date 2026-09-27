@@ -1,8 +1,34 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T19:40:27Z",
+  "updated": "2026-09-27T19:45:26Z",
   "players": [
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 37.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 99
+        },
+        {
+          "stat": "REC YD",
+          "value": 65
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
     {
       "name": "Bijan Robinson",
       "position": "RB",
@@ -22,32 +48,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 31.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 100
-        },
-        {
-          "stat": "REC YD",
-          "value": 48
-        },
-        {
-          "stat": "REC",
-          "value": 5
         },
         {
           "stat": "TD",
@@ -96,6 +96,32 @@
       ]
     },
     {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 25.68,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 182
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 24
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -118,28 +144,24 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
+      "name": "Jared Goff",
       "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 23.76,
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 23.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 169
+          "value": 269
         },
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 8
         },
         {
           "stat": "TD",
-          "value": 3
-        },
-        {
-          "stat": "INT",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -171,11 +193,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 20.4,
+      "points": 20.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 71
+          "value": 70
         },
         {
           "stat": "REC YD",
@@ -258,23 +280,65 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 14.92,
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 16.1,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 203
+          "stat": "RUSH YD",
+          "value": 74
         },
         {
-          "stat": "RUSH YD",
-          "value": 8
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 15.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 188
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 16
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -298,6 +362,55 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 13.0,
+      "stats": []
+    },
+    {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 59
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 88
+        },
+        {
+          "stat": "REC",
+          "value": 7
         }
       ]
     },
@@ -373,24 +486,6 @@
       ]
     },
     {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 10.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 73
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
-    },
-    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -411,15 +506,6 @@
           "value": 9
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.0,
-      "stats": []
     },
     {
       "name": "Amon-Ra St. Brown",
@@ -462,28 +548,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 66
-        },
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -541,44 +605,6 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.02,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 168
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -619,6 +645,28 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -672,26 +720,13 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 6.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 53
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
+      "name": "Harrison Butker",
+      "position": "K",
+      "team": "KC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.4,
+      "stats": []
     },
     {
       "name": "David Montgomery",
@@ -712,33 +747,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Harrison Butker",
-      "position": "K",
-      "team": "KC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.4,
-      "stats": []
-    },
-    {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 48
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -820,6 +828,15 @@
       "stats": []
     },
     {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -882,15 +899,6 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 3.0,
-      "stats": []
-    },
-    {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 3.0,
       "stats": []
     },
