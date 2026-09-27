@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T20:00:33Z",
+  "updated": "2026-09-27T20:05:21Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -61,11 +61,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 29.26,
+      "points": 29.94,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 249
+          "value": 266
         },
         {
           "stat": "RUSH YD",
@@ -284,6 +284,28 @@
       ]
     },
     {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 18.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 85
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -339,28 +361,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 16.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 68
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -490,11 +490,11 @@
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 75
+          "value": 74
         },
         {
           "stat": "REC YD",
-          "value": 21
+          "value": 22
         },
         {
           "stat": "REC",
@@ -640,6 +640,28 @@
       ]
     },
     {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -676,28 +698,6 @@
         {
           "stat": "REC YD",
           "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 63
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
         },
         {
           "stat": "REC",
@@ -818,15 +818,6 @@
       "stats": []
     },
     {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -907,6 +898,15 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
+      "points": 3.0,
+      "stats": []
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 3.0,
       "stats": []
     },
