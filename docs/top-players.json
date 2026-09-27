@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T23:00:34Z",
+  "updated": "2026-09-27T23:05:36Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -328,6 +328,32 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 19.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 74
+        },
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -341,6 +367,28 @@
         },
         {
           "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 18.3,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 240
+        },
+        {
+          "stat": "RUSH YD",
           "value": 7
         },
         {
@@ -438,32 +486,6 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 17.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 66
-        },
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -528,24 +550,20 @@
       ]
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
+      "name": "CeeDee Lamb",
+      "position": "WR",
       "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 14.94,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 14.8,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 156
+          "stat": "REC YD",
+          "value": 98
         },
         {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -592,6 +610,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.0,
+      "stats": []
     },
     {
       "name": "Chuba Hubbard",
@@ -681,6 +708,24 @@
       "manager_display": "HAYDEN",
       "points": 11.8,
       "stats": []
+    },
+    {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 82
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
     },
     {
       "name": "Tony Pollard",
@@ -873,6 +918,28 @@
       ]
     },
     {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 56
+        },
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -880,42 +947,6 @@
       "manager_display": "GRAHAM",
       "points": 9.7,
       "stats": []
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 66
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 49
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Quinshon Judkins",
@@ -958,6 +989,15 @@
       ]
     },
     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.6,
+      "stats": []
+    },
+    {
       "name": "Ladd McConkey",
       "position": "WR",
       "team": "LAC",
@@ -972,28 +1012,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 8.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 56
-        },
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -1020,6 +1038,28 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 30
+        },
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -1040,33 +1080,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 7.6,
-      "stats": []
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.4,
-      "stats": []
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.0,
-      "stats": []
     },
     {
       "name": "Breece Hall",
@@ -1109,25 +1122,16 @@
       ]
     },
     {
-      "name": "Harrison Butker",
-      "position": "K",
-      "team": "KC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.4,
-      "stats": []
-    },
-    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 6.2,
+      "points": 6.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 40
+          "value": 46
         },
         {
           "stat": "REC YD",
@@ -1138,6 +1142,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Harrison Butker",
+      "position": "K",
+      "team": "KC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.4,
+      "stats": []
     },
     {
       "name": "Steelers",
@@ -1225,28 +1238,6 @@
       ]
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 30
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -1268,6 +1259,15 @@
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.0,
+      "stats": []
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 5.0,
