@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T22:50:24Z",
+  "updated": "2026-09-27T22:55:23Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -258,6 +258,28 @@
       ]
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 20.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Kenneth Walker III",
       "position": "RB",
       "team": "KC",
@@ -306,28 +328,6 @@
       ]
     },
     {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 20.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 77
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -342,6 +342,28 @@
         {
           "stat": "REC",
           "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 18.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 71
+        },
+        {
+          "stat": "REC",
+          "value": 10
         },
         {
           "stat": "TD",
@@ -386,28 +408,6 @@
         {
           "stat": "REC",
           "value": 9
-        }
-      ]
-    },
-    {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 17.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 67
-        },
-        {
-          "stat": "REC",
-          "value": 9
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -577,7 +577,7 @@
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 13.96,
+      "points": 13.86,
       "stats": [
         {
           "stat": "PASS YD",
@@ -585,7 +585,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 34
+          "value": 33
         },
         {
           "stat": "TD",
@@ -815,6 +815,24 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 70
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -844,24 +862,6 @@
       "manager_display": "GRAHAM",
       "points": 9.7,
       "stats": []
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 66
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
     },
     {
       "name": "CeeDee Lamb",
@@ -904,6 +904,24 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 59
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Emeka Egbuka",
       "position": "WR",
       "team": "TB",
@@ -936,24 +954,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 59
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -1020,6 +1020,24 @@
       "stats": []
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -1069,20 +1087,24 @@
       ]
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 6.6,
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.8,
       "stats": [
         {
-          "stat": "REC YD",
+          "stat": "RUSH YD",
           "value": 46
         },
         {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
           "stat": "REC",
-          "value": 4
+          "value": 2
         }
       ]
     },
@@ -1094,28 +1116,6 @@
       "manager_display": "SCHILLING",
       "points": 6.4,
       "stats": []
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 40
-        },
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Steelers",
@@ -1230,11 +1230,11 @@
       "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 5.2,
+      "points": 5.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 52
+          "value": 53
         }
       ]
     },
@@ -1255,6 +1255,15 @@
           "value": 5
         }
       ]
+    },
+    {
+      "name": "49ers",
+      "position": "DEF",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Cam Little",
@@ -1327,15 +1336,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "49ers",
-      "position": "DEF",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.0,
-      "stats": []
     },
     {
       "name": "Drake Maye",
