@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T21:25:20Z",
+  "updated": "2026-09-27T21:30:37Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -350,6 +350,28 @@
       ]
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 17.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -384,28 +406,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 16.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -507,25 +507,16 @@
       ]
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.0,
-      "stats": []
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 12.0,
+      "points": 12.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 52
+          "value": 53
         },
         {
           "stat": "REC YD",
@@ -540,6 +531,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.0,
+      "stats": []
     },
     {
       "name": "Evan McPherson",
@@ -825,6 +825,24 @@
       "stats": []
     },
     {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 46
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "49ers",
       "position": "DEF",
       "team": "SF",
@@ -923,6 +941,24 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
@@ -986,6 +1022,24 @@
       "stats": []
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -1000,6 +1054,24 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 58
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 22
         }
       ]
     },
@@ -1089,24 +1161,6 @@
       ]
     },
     {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.9,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 45
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        }
-      ]
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -1160,24 +1214,6 @@
       ]
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "TreVeyon Henderson",
       "position": "RB",
       "team": "NE",
@@ -1196,24 +1232,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -1412,24 +1430,6 @@
         {
           "stat": "RUSH YD",
           "value": 17
-        }
-      ]
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
