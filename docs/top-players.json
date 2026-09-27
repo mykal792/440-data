@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T17:25:24Z",
+  "updated": "2026-09-27T17:30:26Z",
   "players": [
     {
       "name": "Bijan Robinson",
@@ -97,15 +97,6 @@
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 13.0,
-      "stats": []
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 10.0,
       "stats": []
     },
@@ -184,6 +175,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Steelers",
@@ -311,24 +311,6 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.34,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 36
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        }
-      ]
-    },
-    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -356,11 +338,11 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 2.24,
+      "points": 2.2,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 56
+          "value": 55
         }
       ]
     },
@@ -370,11 +352,11 @@
       "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 2.2,
+      "points": 2.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 17
+          "value": 16
         },
         {
           "stat": "REC",
@@ -443,6 +425,24 @@
         {
           "stat": "REC YD",
           "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 11
         },
         {
           "stat": "REC",
@@ -547,6 +547,20 @@
       ]
     },
     {
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
       "name": "Ladd McConkey",
       "position": "WR",
       "team": "LAC",
@@ -557,6 +571,32 @@
         {
           "stat": "REC YD",
           "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.06,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 9
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
         },
         {
           "stat": "REC",
@@ -637,33 +677,11 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "TreVeyon Henderson",
+      "name": "Tony Pollard",
       "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 0.8,
       "stats": [
         {
@@ -715,16 +733,42 @@
       ]
     },
     {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 0.5,
+      "points": 0.34,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 36
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 21
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -1107,15 +1151,6 @@
       "stats": []
     },
     {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1132,24 +1167,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": -0.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     }
   ]
 }
