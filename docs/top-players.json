@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T21:55:24Z",
+  "updated": "2026-09-27T22:00:35Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -218,6 +218,24 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 21.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 245
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
@@ -236,24 +254,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 21.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 233
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -428,6 +428,32 @@
         {
           "stat": "REC",
           "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 13.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 31
+        },
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 3
         },
         {
           "stat": "TD",
@@ -937,28 +963,6 @@
       "stats": []
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 30
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -1078,6 +1082,20 @@
       "manager_display": "GARRETT",
       "points": 5.0,
       "stats": []
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 49
+        }
+      ]
     },
     {
       "name": "Ashton Jeanty",
@@ -1326,20 +1344,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 33
         }
       ]
     },
