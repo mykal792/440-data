@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T18:35:21Z",
+  "updated": "2026-09-27T18:40:22Z",
   "players": [
     {
       "name": "Bijan Robinson",
@@ -65,6 +65,32 @@
         },
         {
           "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 19.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 60
+        },
+        {
+          "stat": "REC YD",
+          "value": 48
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -189,11 +215,15 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 12.4,
+      "points": 13.0,
       "stats": [
         {
           "stat": "PASS YD",
           "value": 160
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
         },
         {
           "stat": "TD",
@@ -202,24 +232,24 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 11.6,
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.5,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
           "stat": "REC YD",
-          "value": 48
+          "value": 35
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -238,28 +268,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 32
-        },
-        {
-          "stat": "REC",
-          "value": 3
         },
         {
           "stat": "TD",
@@ -546,6 +554,15 @@
       ]
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -707,15 +724,6 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 3.0,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 3.0,
       "stats": []
     },
@@ -887,11 +895,11 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 1.28,
+      "points": 1.32,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 87
+          "value": 88
         },
         {
           "stat": "RUSH YD",
