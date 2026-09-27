@@ -1,8 +1,30 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T23:05:36Z",
+  "updated": "2026-09-27T23:10:27Z",
   "players": [
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 39.38,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 297
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 35
+        },
+        {
+          "stat": "TD",
+          "value": 4
+        }
+      ]
+    },
     {
       "name": "Jahmyr Gibbs",
       "position": "RB",
@@ -78,24 +100,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 29.08,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 277
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -236,6 +240,28 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 23.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 82
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
@@ -333,11 +359,11 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 19.5,
+      "points": 19.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 74
+          "value": 75
         },
         {
           "stat": "REC YD",
@@ -465,11 +491,11 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 17.2,
+      "points": 17.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 97
+          "value": 98
         },
         {
           "stat": "REC YD",
@@ -568,38 +594,16 @@
       ]
     },
     {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 14.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 62
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 13.86,
+      "points": 14.06,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 114
+          "value": 119
         },
         {
           "stat": "RUSH YD",
@@ -923,7 +927,7 @@
       "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 9.9,
+      "points": 9.8,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -931,7 +935,7 @@
         },
         {
           "stat": "REC YD",
-          "value": 23
+          "value": 22
         },
         {
           "stat": "REC",
@@ -947,6 +951,28 @@
       "manager_display": "GRAHAM",
       "points": 9.7,
       "stats": []
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Quinshon Judkins",
@@ -1038,28 +1064,6 @@
       ]
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 8.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 30
-        },
-        {
-          "stat": "REC YD",
-          "value": 37
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -1144,6 +1148,15 @@
       ]
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.7,
+      "stats": []
+    },
+    {
       "name": "Harrison Butker",
       "position": "K",
       "team": "KC",
@@ -1211,15 +1224,6 @@
       "team": "Bal",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 5.7,
-      "stats": []
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 5.7,
       "stats": []
     },
