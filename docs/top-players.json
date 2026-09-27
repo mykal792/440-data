@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T22:40:25Z",
+  "updated": "2026-09-27T22:45:24Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -412,6 +412,32 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 17.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 66
+        },
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -502,24 +528,20 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 15.2,
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 14.94,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 156
+        },
+        {
           "stat": "RUSH YD",
-          "value": 47
-        },
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 3
+          "value": 7
         },
         {
           "stat": "TD",
@@ -581,6 +603,28 @@
       ]
     },
     {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 12.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 83
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -606,28 +650,6 @@
       "manager_display": "GREG",
       "points": 12.0,
       "stats": []
-    },
-    {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 11.88,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 62
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 34
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Evan McPherson",
@@ -703,15 +725,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 11.0,
-      "stats": []
     },
     {
       "name": "Mike Evans",
@@ -829,6 +842,24 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 49
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -865,6 +896,24 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 59
+        },
+        {
+          "stat": "REC",
+          "value": 5
         }
       ]
     },
@@ -922,24 +971,6 @@
       "stats": []
     },
     {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 49
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -947,6 +978,24 @@
       "manager_display": "SCARPITTI",
       "points": 7.4,
       "stats": []
+    },
+    {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "team": "TB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
     },
     {
       "name": "George Kittle",
@@ -965,6 +1014,15 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Breece Hall",
@@ -1029,24 +1087,6 @@
       ]
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 47
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1081,24 +1121,6 @@
       "manager_display": "SCHILLING",
       "points": 6.4,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 137
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        }
-      ]
     },
     {
       "name": "Steelers",
@@ -1232,24 +1254,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "team": "TB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 31
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
