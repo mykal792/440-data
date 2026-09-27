@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T19:10:25Z",
+  "updated": "2026-09-27T19:15:28Z",
   "players": [
     {
       "name": "Bijan Robinson",
@@ -96,6 +96,32 @@
       ]
     },
     {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 23.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 169
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -110,6 +136,32 @@
         {
           "stat": "RUSH YD",
           "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 19.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
         },
         {
           "stat": "TD",
@@ -135,58 +187,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 18.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 52
-        },
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 17.08,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 152
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -289,6 +289,28 @@
       ]
     },
     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Cam Skattebo",
       "position": "RB",
       "team": "NYG",
@@ -360,6 +382,40 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.06,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 154
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -382,36 +438,24 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.58,
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.7,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 142
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
           "stat": "REC YD",
-          "value": 1
+          "value": 17
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         },
         {
           "stat": "TD",
           "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
@@ -465,24 +509,24 @@
       ]
     },
     {
-      "name": "Breece Hall",
+      "name": "Jonathan Taylor",
       "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.2,
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 34
+          "value": 59
         },
         {
           "stat": "REC YD",
-          "value": 23
+          "value": 4
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 2
         }
       ]
     },
@@ -509,6 +553,28 @@
       ]
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -527,6 +593,28 @@
       ]
     },
     {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 53
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -536,24 +624,20 @@
       "stats": []
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 6.2,
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.5,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 48
-        },
-        {
           "stat": "REC YD",
-          "value": 9
+          "value": 40
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 5
         }
       ]
     },
@@ -585,11 +669,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 5.6,
+      "points": 5.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 76
+          "value": 77
         },
         {
           "stat": "FUM",
@@ -616,24 +700,6 @@
       ]
     },
     {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 32
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Ladd McConkey",
       "position": "WR",
       "team": "LAC",
@@ -648,37 +714,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.0,
-      "stats": []
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -713,15 +748,6 @@
           "value": 4
         }
       ]
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 4.0,
-      "stats": []
     },
     {
       "name": "David Montgomery",
@@ -786,29 +812,20 @@
       ]
     },
     {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
+      "points": 3.0,
+      "stats": []
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 3.0,
       "stats": []
     },
@@ -919,6 +936,15 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "De'Von Achane",
       "position": "RB",
       "team": "Mia",
@@ -929,24 +955,6 @@
         {
           "stat": "RUSH YD",
           "value": 17
-        }
-      ]
-    },
-    {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
