@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T21:10:27Z",
+  "updated": "2026-09-27T21:15:27Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -388,6 +388,28 @@
       ]
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 16.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 36
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -639,15 +661,6 @@
       ]
     },
     {
-      "name": "49ers",
-      "position": "DEF",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -662,28 +675,6 @@
         {
           "stat": "REC",
           "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 9.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -805,6 +796,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "49ers",
+      "position": "DEF",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Breece Hall",
@@ -1335,11 +1335,11 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.3,
+      "points": 2.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 16
         },
         {
           "stat": "REC YD",
@@ -1350,6 +1350,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.0,
+      "stats": []
     },
     {
       "name": "Eddy Pineiro",
@@ -1441,15 +1450,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Kyle Pitts Sr.",
