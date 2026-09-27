@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T22:10:22Z",
+  "updated": "2026-09-27T22:15:31Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -480,6 +480,32 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 57
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -525,32 +551,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 57
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -758,6 +758,33 @@
       "stats": []
     },
     {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -820,6 +847,15 @@
       ]
     },
     {
+      "name": "49ers",
+      "position": "DEF",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -876,42 +912,6 @@
       "manager_display": "SCARPITTI",
       "points": 7.4,
       "stats": []
-    },
-    {
-      "name": "49ers",
-      "position": "DEF",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.0,
-      "stats": []
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.0,
-      "stats": []
-    },
-    {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Breece Hall",
@@ -990,25 +990,16 @@
       "stats": []
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 5.8,
+      "points": 6.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 36
+          "value": 38
         },
         {
           "stat": "REC YD",
@@ -1019,6 +1010,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 6.0,
+      "stats": []
     },
     {
       "name": "David Montgomery",
@@ -1174,6 +1174,24 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.86,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 104
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -1278,20 +1296,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.16,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 104
         }
       ]
     },
