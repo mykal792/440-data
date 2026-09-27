@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T21:15:27Z",
+  "updated": "2026-09-27T21:20:25Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -315,11 +315,11 @@
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 18.44,
+      "points": 18.8,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 161
+          "value": 170
         },
         {
           "stat": "TD",
@@ -516,25 +516,16 @@
       "stats": []
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 11.8,
-      "stats": []
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 11.7,
+      "points": 12.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 49
+          "value": 52
         },
         {
           "stat": "REC YD",
@@ -549,6 +540,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 11.8,
+      "stats": []
     },
     {
       "name": "Tony Pollard",
@@ -605,6 +605,28 @@
         {
           "stat": "REC YD",
           "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Mike Evans",
+      "position": "WR",
+      "team": "SF",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
         },
         {
           "stat": "REC",
@@ -692,28 +714,6 @@
       "stats": []
     },
     {
-      "name": "Mike Evans",
-      "position": "WR",
-      "team": "SF",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 9.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -732,6 +732,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 61
+        },
+        {
+          "stat": "REC",
+          "value": 5
         }
       ]
     },
@@ -798,11 +816,29 @@
       ]
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.4,
+      "stats": []
+    },
+    {
       "name": "49ers",
       "position": "DEF",
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 7.0,
+      "stats": []
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 7.0,
       "stats": []
     },
@@ -853,42 +889,6 @@
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 6.4,
-      "stats": []
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 6.4,
-      "stats": []
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 42
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.0,
       "stats": []
     },
     {
@@ -955,6 +955,28 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -996,28 +1018,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 16
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1124,6 +1124,24 @@
       ]
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Lamar Jackson",
       "position": "QB",
       "team": "Bal",
@@ -1196,6 +1214,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1280,24 +1320,6 @@
       ]
     },
     {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -1321,33 +1343,25 @@
       "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.5,
+      "points": 2.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 25
+          "value": 27
         }
       ]
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.5,
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.16,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 16
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "stat": "PASS YD",
+          "value": 54
         }
       ]
     },
@@ -1368,20 +1382,6 @@
       "manager_display": "ANTHONY",
       "points": 2.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 49
-        }
-      ]
     },
     {
       "name": "George Kittle",
