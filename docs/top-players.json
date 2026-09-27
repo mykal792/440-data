@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T18:15:22Z",
+  "updated": "2026-09-27T18:20:30Z",
   "players": [
     {
       "name": "Bijan Robinson",
@@ -211,11 +211,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 10.04,
+      "points": 10.08,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 101
+          "value": 102
         },
         {
           "stat": "TD",
@@ -268,20 +268,20 @@
       ]
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
+      "points": 9.0,
+      "stats": []
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 8.0,
       "stats": []
     },
@@ -379,6 +379,28 @@
       ]
     },
     {
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -424,23 +446,19 @@
       ]
     },
     {
-      "name": "Cam Skattebo",
+      "name": "James Cook III",
       "position": "RB",
-      "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 3.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 4
+          "value": 59
         },
         {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -468,24 +486,6 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 56
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -500,6 +500,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -538,28 +560,6 @@
       "manager_display": "GRAHAM",
       "points": 3.0,
       "stats": []
-    },
-    {
-      "name": "TreVeyon Henderson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 19
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Jameson Williams",
@@ -828,6 +828,36 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 112
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
         }
       ]
     },
@@ -1244,36 +1274,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": -1.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 55
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
     }
   ]
 }
