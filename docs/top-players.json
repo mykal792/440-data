@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T20:40:28Z",
+  "updated": "2026-09-27T20:45:28Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -485,6 +485,32 @@
       "stats": []
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 11.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 48
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -697,15 +723,6 @@
       ]
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -786,6 +803,15 @@
       "stats": []
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -827,6 +853,20 @@
         {
           "stat": "RUSH YD",
           "value": 56
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 134
         }
       ]
     },
@@ -912,20 +952,6 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 44
-        }
-      ]
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -949,20 +975,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.88,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 97
         }
       ]
     },
@@ -1126,6 +1138,20 @@
       ]
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -1158,16 +1184,20 @@
       ]
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 1.7,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 17
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1204,6 +1234,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 34
         }
       ]
     },
@@ -1271,6 +1315,24 @@
       "stats": []
     },
     {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "team": "TB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Mike Evans",
       "position": "WR",
       "team": "SF",
@@ -1289,16 +1351,16 @@
       ]
     },
     {
-      "name": "Dak Prescott",
+      "name": "Lamar Jackson",
       "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.88,
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.36,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 22
+          "value": 9
         }
       ]
     },
@@ -1366,29 +1428,11 @@
       "stats": []
     },
     {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "team": "TB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 0.0,
       "stats": []
     },
@@ -1443,15 +1487,6 @@
       "team": "Phi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 0.0,
       "stats": []
     },
