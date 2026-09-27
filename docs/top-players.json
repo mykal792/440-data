@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T23:30:34Z",
+  "updated": "2026-09-27T23:35:24Z",
   "players": [
     {
       "name": "Brock Purdy",
@@ -420,6 +420,28 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 20.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 276
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -468,24 +490,20 @@
       ]
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
+      "name": "CeeDee Lamb",
+      "position": "WR",
       "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 18.6,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 18.7,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 240
+          "stat": "REC YD",
+          "value": 112
         },
         {
-          "stat": "RUSH YD",
-          "value": 10
-        },
-        {
-          "stat": "TD",
-          "value": 1
+          "stat": "REC",
+          "value": 7
         }
       ]
     },
@@ -607,24 +625,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 14.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 98
-        },
-        {
-          "stat": "REC",
-          "value": 6
         }
       ]
     },
@@ -882,6 +882,28 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 56
+        },
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -900,28 +922,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 51
-        },
-        {
-          "stat": "REC YD",
-          "value": 37
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -1174,6 +1174,15 @@
       ]
     },
     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 6.7,
+      "stats": []
+    },
+    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1221,15 +1230,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.7,
-      "stats": []
     },
     {
       "name": "Omarion Hampton",
