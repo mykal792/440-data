@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T21:30:37Z",
+  "updated": "2026-09-27T21:35:22Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -288,6 +288,24 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 20.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 204
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -306,24 +324,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 18.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 170
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -507,16 +507,25 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 12.1,
+      "points": 12.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 53
+          "value": 52
         },
         {
           "stat": "REC YD",
@@ -531,24 +540,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.0,
-      "stats": []
-    },
-    {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 11.8,
-      "stats": []
     },
     {
       "name": "Tony Pollard",
@@ -637,6 +628,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.8,
+      "stats": []
     },
     {
       "name": "DK Metcalf",
@@ -825,24 +825,6 @@
       "stats": []
     },
     {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 46
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "49ers",
       "position": "DEF",
       "team": "SF",
@@ -859,6 +841,24 @@
       "manager_display": "GARRETT",
       "points": 7.0,
       "stats": []
+    },
+    {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
     },
     {
       "name": "Breece Hall",
@@ -1027,17 +1027,26 @@
       "team": "Ari",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 4.7,
+      "points": 4.8,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 32
+          "value": 33
         },
         {
           "stat": "REC",
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.7,
+      "stats": []
     },
     {
       "name": "Tucker Kraft",
@@ -1054,6 +1063,24 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Emeka Egbuka",
+      "position": "WR",
+      "team": "TB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -1236,6 +1263,20 @@
       ]
     },
     {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 33
+        }
+      ]
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -1320,24 +1361,6 @@
       ]
     },
     {
-      "name": "Emeka Egbuka",
-      "position": "WR",
-      "team": "TB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -1356,41 +1379,18 @@
       ]
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 27
-        }
-      ]
-    },
-    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 2.16,
+      "points": 2.4,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 54
+          "value": 60
         }
       ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.0,
-      "stats": []
     },
     {
       "name": "Eddy Pineiro",
