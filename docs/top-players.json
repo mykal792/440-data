@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T19:45:26Z",
+  "updated": "2026-09-27T19:50:28Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -61,11 +61,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 28.98,
+      "points": 29.26,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 242
+          "value": 249
         },
         {
           "stat": "RUSH YD",
@@ -101,7 +101,7 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 25.68,
+      "points": 25.78,
       "stats": [
         {
           "stat": "PASS YD",
@@ -109,7 +109,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 24
+          "value": 25
         },
         {
           "stat": "TD",
@@ -188,6 +188,32 @@
       ]
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 21.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 58
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Kenneth Walker III",
       "position": "RB",
       "team": "KC",
@@ -241,15 +267,15 @@
       "team": "Cin",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 16.7,
+      "points": 17.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 82
+          "value": 89
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 6
         },
         {
           "stat": "TD",
@@ -285,11 +311,11 @@
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 16.1,
+      "points": 16.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 74
+          "value": 73
         },
         {
           "stat": "REC YD",
@@ -344,23 +370,19 @@
       ]
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.2,
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 13.8,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 47
+          "stat": "RUSH YD",
+          "value": 138
         },
         {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -415,6 +437,15 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -424,16 +455,38 @@
       "stats": []
     },
     {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 11.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 76
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Cam Skattebo",
       "position": "RB",
       "team": "NYG",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 11.7,
+      "points": 11.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 62
+          "value": 61
         },
         {
           "stat": "REC YD",
@@ -468,20 +521,24 @@
       ]
     },
     {
-      "name": "James Cook III",
+      "name": "Chuba Hubbard",
       "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.2,
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 112
+          "value": 67
         },
         {
-          "stat": "FUM",
-          "value": 1
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -530,37 +587,6 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 9.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 52
-        },
-        {
-          "stat": "REC YD",
-          "value": 28
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.0,
-      "stats": []
-    },
-    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -579,28 +605,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 68
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -751,6 +755,20 @@
       ]
     },
     {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 56
+        }
+      ]
+    },
+    {
       "name": "Ladd McConkey",
       "position": "WR",
       "team": "LAC",
@@ -767,6 +785,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Malik Nabers",
@@ -787,20 +814,6 @@
       ]
     },
     {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 49
-        }
-      ]
-    },
-    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -817,15 +830,6 @@
           "value": 4
         }
       ]
-    },
-    {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.0,
-      "stats": []
     },
     {
       "name": "Bengals",
