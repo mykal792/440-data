@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T19:15:28Z",
+  "updated": "2026-09-27T19:20:24Z",
   "players": [
     {
       "name": "Bijan Robinson",
@@ -149,11 +149,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 19.3,
+      "points": 19.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 63
+          "value": 64
         },
         {
           "stat": "REC YD",
@@ -236,6 +236,28 @@
       ]
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -265,28 +287,6 @@
       "manager_display": "SCOTTY",
       "points": 12.0,
       "stats": []
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 11.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 35
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Parker Washington",
@@ -382,50 +382,16 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.06,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 154
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 9.0,
+      "points": 9.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 47
+          "value": 52
         },
         {
           "stat": "REC YD",
@@ -531,6 +497,44 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.06,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 154
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -629,11 +633,11 @@
       "team": "KC",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 6.5,
+      "points": 6.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 40
+          "value": 39
         },
         {
           "stat": "REC",
@@ -812,6 +816,15 @@
       ]
     },
     {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.0,
+      "stats": []
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -892,46 +905,11 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.08,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 107
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Harrison Butker",
       "position": "K",
       "team": "KC",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 2.0,
-      "stats": []
-    },
-    {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
       "points": 2.0,
       "stats": []
     },
@@ -999,6 +977,32 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.08,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 107
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
