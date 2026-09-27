@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T23:40:24Z",
+  "updated": "2026-09-27T23:45:23Z",
   "players": [
     {
       "name": "Brock Purdy",
@@ -218,6 +218,28 @@
       ]
     },
     {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 24.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 185
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 50
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -254,28 +276,6 @@
         {
           "stat": "RUSH YD",
           "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 23.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 159
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 50
         },
         {
           "stat": "TD",
@@ -565,6 +565,24 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 17.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 107
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -682,20 +700,24 @@
       ]
     },
     {
-      "name": "Chris Olave",
+      "name": "Zay Flowers",
       "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
       "points": 12.8,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 20
+        },
+        {
           "stat": "REC YD",
-          "value": 88
+          "value": 83
         },
         {
           "stat": "REC",
-          "value": 8
+          "value": 5
         }
       ]
     },
@@ -716,6 +738,15 @@
           "value": 7
         }
       ]
+    },
+    {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.3,
+      "stats": []
     },
     {
       "name": "Chiefs",
@@ -882,6 +913,15 @@
       ]
     },
     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.9,
+      "stats": []
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -970,28 +1010,6 @@
       ]
     },
     {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 9.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "REC YD",
-          "value": 57
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -1039,15 +1057,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.6,
-      "stats": []
     },
     {
       "name": "Ladd McConkey",
@@ -1172,15 +1181,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 6.7,
-      "stats": []
     },
     {
       "name": "Eddy Pineiro",
