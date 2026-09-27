@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T20:35:25Z",
+  "updated": "2026-09-27T20:40:28Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -953,6 +953,20 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 97
+        }
+      ]
+    },
+    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -979,6 +993,28 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 16
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "TreVeyon Henderson",
       "position": "RB",
       "team": "NE",
@@ -997,20 +1033,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 84
         }
       ]
     },
@@ -1164,16 +1186,42 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
+      "name": "Ashton Jeanty",
       "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.6,
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 16
+          "value": 6
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1251,34 +1299,6 @@
         {
           "stat": "PASS YD",
           "value": 22
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
         }
       ]
     },
