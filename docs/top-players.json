@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T19:35:23Z",
+  "updated": "2026-09-27T19:40:27Z",
   "players": [
     {
       "name": "Bijan Robinson",
@@ -35,11 +35,11 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 31.4,
+      "points": 31.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 101
+          "value": 100
         },
         {
           "stat": "REC YD",
@@ -144,16 +144,38 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 22.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 100
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Kenneth Walker III",
       "position": "RB",
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 20.6,
+      "points": 20.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 73
+          "value": 71
         },
         {
           "stat": "REC YD",
@@ -241,7 +263,7 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 14.82,
+      "points": 14.92,
       "stats": [
         {
           "stat": "PASS YD",
@@ -249,7 +271,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 8
         },
         {
           "stat": "TD",
@@ -289,20 +311,24 @@
       "stats": []
     },
     {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 11.7,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 62
+        },
+        {
           "stat": "REC YD",
-          "value": 77
+          "value": 40
         },
         {
           "stat": "REC",
-          "value": 8
+          "value": 3
         }
       ]
     },
@@ -329,24 +355,38 @@
       ]
     },
     {
-      "name": "Cam Skattebo",
+      "name": "James Cook III",
       "position": "RB",
-      "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 11.0,
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 11.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 55
+          "value": 112
         },
         {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.3,
+      "stats": [
+        {
           "stat": "REC YD",
-          "value": 40
+          "value": 73
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 6
         }
       ]
     },
@@ -426,42 +466,35 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 8.82,
+      "points": 9.3,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 188
-        },
-        {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 66
         },
         {
           "stat": "REC YD",
-          "value": 1
+          "value": 17
         },
         {
           "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.0,
+      "stats": []
     },
     {
       "name": "DK Metcalf",
@@ -508,33 +541,40 @@
       ]
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 8.0,
-      "stats": []
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 7.9,
+      "points": 8.02,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 168
+        },
+        {
           "stat": "RUSH YD",
-          "value": 52
+          "value": 7
         },
         {
           "stat": "REC YD",
-          "value": 17
+          "value": 1
         },
         {
           "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
           "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -557,6 +597,28 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 64
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -610,28 +672,6 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 54
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -650,42 +690,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 6.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 86
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 39
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -757,6 +761,24 @@
       ]
     },
     {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
@@ -798,6 +820,32 @@
       "stats": []
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 199
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -829,48 +877,13 @@
       ]
     },
     {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 190
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.0,
+      "stats": []
     },
     {
       "name": "Bengals",
@@ -983,15 +996,6 @@
           "value": 17
         }
       ]
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Kyle Pitts Sr.",
