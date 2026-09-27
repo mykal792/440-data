@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T17:20:26Z",
+  "updated": "2026-09-27T17:25:24Z",
   "players": [
     {
       "name": "Bijan Robinson",
@@ -110,13 +110,44 @@
       "stats": []
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.0,
-      "stats": []
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 60
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Kenneth Walker III",
@@ -137,15 +168,6 @@
       ]
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -164,6 +186,15 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "Bengals",
       "position": "DEF",
       "team": "Cin",
@@ -171,6 +202,33 @@
       "manager_display": "GANGUS",
       "points": 5.0,
       "stats": []
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.0,
+      "stats": []
+    },
+    {
+      "name": "Tyler Warren",
+      "position": "TE",
+      "team": "Ind",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Tucker Kraft",
@@ -191,20 +249,24 @@
       ]
     },
     {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.4,
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.0,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
           "stat": "REC YD",
-          "value": 24
+          "value": 30
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 1
         }
       ]
     },
@@ -249,20 +311,20 @@
       ]
     },
     {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.5,
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.34,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 15
+          "stat": "PASS YD",
+          "value": 36
         },
         {
-          "stat": "REC",
-          "value": 2
+          "stat": "RUSH YD",
+          "value": 9
         }
       ]
     },
@@ -289,16 +351,34 @@
       ]
     },
     {
-      "name": "Joe Burrow",
+      "name": "Jared Goff",
       "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.28,
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.24,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 57
+          "value": 56
+        }
+      ]
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -321,6 +401,20 @@
       ]
     },
     {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        }
+      ]
+    },
+    {
       "name": "De'Von Achane",
       "position": "RB",
       "team": "Mia",
@@ -335,30 +429,16 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 39
-        }
-      ]
-    },
-    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 1.5,
+      "points": 1.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 3
+          "value": 5
         },
         {
           "stat": "REC YD",
@@ -385,6 +465,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -449,6 +547,24 @@
       ]
     },
     {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Harrison Butker",
       "position": "K",
       "team": "KC",
@@ -474,6 +590,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Tetairoa McMillan",
@@ -534,30 +659,16 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 23
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
+      "name": "TreVeyon Henderson",
       "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.7,
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 8
         }
       ]
     },
@@ -590,6 +701,20 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -600,48 +725,6 @@
         {
           "stat": "RUSH YD",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "TreVeyon Henderson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Cam Skattebo",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
         }
       ]
     },
@@ -772,15 +855,6 @@
       "stats": []
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -874,15 +948,6 @@
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
@@ -1033,15 +1098,6 @@
       "stats": []
     },
     {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -1054,15 +1110,6 @@
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
