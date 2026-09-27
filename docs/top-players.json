@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T21:00:33Z",
+  "updated": "2026-09-27T21:05:23Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -670,6 +670,28 @@
       ]
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 9.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -693,28 +715,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 9.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 28
-        },
-        {
-          "stat": "REC",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -1164,6 +1164,20 @@
       ]
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 28
+        }
+      ]
+    },
+    {
       "name": "Dalton Kincaid",
       "position": "TE",
       "team": "Buf",
@@ -1259,11 +1273,11 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.2,
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 14
         },
         {
           "stat": "REC YD",
@@ -1276,16 +1290,20 @@
       ]
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 2.0,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 20
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1373,24 +1391,6 @@
         {
           "stat": "REC YD",
           "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
         },
         {
           "stat": "REC",
