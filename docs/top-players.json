@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T20:10:26Z",
+  "updated": "2026-09-27T20:15:22Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -48,6 +48,32 @@
         {
           "stat": "REC",
           "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 32.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 128
+        },
+        {
+          "stat": "REC",
+          "value": 10
         },
         {
           "stat": "TD",
@@ -148,32 +174,6 @@
       ]
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 24.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 14
-        },
-        {
-          "stat": "REC YD",
-          "value": 83
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -223,11 +223,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 20.5,
+      "points": 21.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 145
+          "value": 154
         },
         {
           "stat": "TD",
@@ -337,7 +337,7 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 17.06,
+      "points": 16.96,
       "stats": [
         {
           "stat": "PASS YD",
@@ -345,7 +345,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 23
+          "value": 22
         },
         {
           "stat": "REC YD",
@@ -396,6 +396,28 @@
       ]
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 13.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 82
+        },
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -423,28 +445,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 12.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 82
-        },
-        {
-          "stat": "REC YD",
-          "value": 28
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -813,6 +813,15 @@
       ]
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.4,
+      "stats": []
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -883,6 +892,24 @@
       "manager_display": "GANGUS",
       "points": 4.4,
       "stats": []
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Drake Maye",
@@ -1013,34 +1040,16 @@
       ]
     },
     {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 1.7,
+      "points": 1.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 18
         }
       ]
     },
@@ -1242,15 +1251,6 @@
       "name": "George Kittle",
       "position": "TE",
       "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
