@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T22:30:30Z",
+  "updated": "2026-09-27T22:35:26Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -372,6 +372,28 @@
       ]
     },
     {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 17.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 67
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -405,28 +427,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 16.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 61
-        },
-        {
-          "stat": "REC",
-          "value": 8
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -606,6 +606,28 @@
       "manager_display": "GREG",
       "points": 12.0,
       "stats": []
+    },
+    {
+      "name": "Lamar Jackson",
+      "position": "QB",
+      "team": "Bal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 62
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Evan McPherson",
@@ -909,16 +931,38 @@
       "stats": []
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 51
+        },
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 7.3,
+      "points": 7.2,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 48
+          "value": 47
         },
         {
           "stat": "REC",
@@ -963,28 +1007,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1083,6 +1105,15 @@
       ]
     },
     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.7,
+      "stats": []
+    },
+    {
       "name": "George Kittle",
       "position": "TE",
       "team": "SF",
@@ -1097,6 +1128,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 31
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1120,11 +1173,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.46,
+      "points": 5.42,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 119
+          "value": 118
         },
         {
           "stat": "RUSH YD",
@@ -1138,11 +1191,11 @@
       "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 5.1,
+      "points": 5.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 51
+          "value": 52
         }
       ]
     },
@@ -1171,37 +1224,6 @@
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 5.0,
-      "stats": []
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.7,
       "stats": []
     },
     {
@@ -1237,24 +1259,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Lamar Jackson",
-      "position": "QB",
-      "team": "Bal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 58
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 22
         }
       ]
     },
