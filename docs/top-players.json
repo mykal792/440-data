@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-27T22:20:27Z",
+  "updated": "2026-09-27T22:25:23Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -458,16 +458,42 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 15.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 81
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 13.6,
+      "points": 15.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 31
+          "value": 47
         },
         {
           "stat": "REC YD",
@@ -498,32 +524,6 @@
         {
           "stat": "REC",
           "value": 8
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 13.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 56
-        },
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -683,6 +683,15 @@
       ]
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Mike Evans",
       "position": "WR",
       "team": "SF",
@@ -777,15 +786,6 @@
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 9.7,
-      "stats": []
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.0,
       "stats": []
     },
     {
@@ -909,6 +909,24 @@
       "stats": []
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 48
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -941,6 +959,24 @@
         {
           "stat": "REC YD",
           "value": 49
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 47
         },
         {
           "stat": "REC",
@@ -1065,24 +1101,6 @@
       ]
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
@@ -1097,20 +1115,20 @@
       ]
     },
     {
-      "name": "George Pickens",
-      "position": "WR",
+      "name": "Dak Prescott",
+      "position": "QB",
       "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.4,
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.46,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 34
+          "stat": "PASS YD",
+          "value": 119
         },
         {
-          "stat": "REC",
-          "value": 4
+          "stat": "RUSH YD",
+          "value": 7
         }
       ]
     },
@@ -1140,24 +1158,6 @@
       "manager_display": "GARRETT",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.94,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 106
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        }
-      ]
     },
     {
       "name": "Aaron Jones Sr.",
