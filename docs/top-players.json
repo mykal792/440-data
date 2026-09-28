@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-28T02:40:26Z",
+  "updated": "2026-09-28T02:45:22Z",
   "players": [
     {
       "name": "Brock Purdy",
@@ -1241,15 +1241,6 @@
       "stats": []
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
@@ -1282,6 +1273,28 @@
         {
           "stat": "RUSH YD",
           "value": 56
+        }
+      ]
+    },
+    {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "Den",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1385,29 +1398,20 @@
       ]
     },
     {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "team": "Den",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
+      "points": 4.0,
+      "stats": []
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 4.0,
       "stats": []
     },
