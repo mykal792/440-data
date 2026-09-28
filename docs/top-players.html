@@ -134,11 +134,17 @@
 .dp__nameline{ display:flex; align-items:baseline; gap:9px; min-width:0 }
 .dp__name{
   font-family:"Rotundo",sans-serif; font-size:22px; letter-spacing:.01em;
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; flex:1 1 auto;
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0;
+  flex:0 1 auto;   /* shrink allowed (for the rare very-long name), but NOT
+    grow - flex:1 here was stretching the name's own box to fill the whole
+    row, which pushed the team pill after it out to the far right instead
+    of sitting right next to the visible text */
 }
 .dp__team{
+  flex:0 0 auto; display:inline-flex; align-items:center; justify-content:center;
   font-family:"Wix Madefor Text",Arial,sans-serif; font-weight:600; font-size:12px;
-  color:var(--sub); text-transform:uppercase; flex:0 0 auto;
+  letter-spacing:.03em; text-transform:uppercase; line-height:1;
+  color:var(--sub); background:#efefef; padding:3px 6px; border-radius:5px;
 }
 .dp__stats{
   margin-top:2px; overflow:hidden; white-space:nowrap;
@@ -278,11 +284,14 @@ body{ padding:24px 16px }
   .dp__windot{ width:11px; height:11px; border-width:1.8px }
 
   .dp__name{
-    font-family:"Wix Madefor Text",Arial,sans-serif; font-weight:700; font-size:9px;
-    /* measured against "Christian McCaffrey", the longest realistic name -
-       88px needed at this size, 97px available; nothing should ever truncate */
+    font-family:"Wix Madefor Text",Arial,sans-serif; font-weight:700;
+    text-transform:uppercase; font-size:8px;
+    /* 8px is the largest size where only the single longest realistic name
+       ("Christian McCaffrey") needs to truncate - every other real name
+       tested fits in full. 7px is truncation-free for all of them if that
+       matters more than the slightly bigger text. */
   }
-  .dp__team{ font-size:6.5px }
+  .dp__team{ font-size:6.5px; padding:2px 4px; border-radius:4px }
   .dp__stats{ font-size:7.5px; margin-top:1px }
   .dp__pts{ font-size:13px }
 
