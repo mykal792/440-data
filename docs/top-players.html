@@ -46,14 +46,6 @@
 .dp__navbtn svg{width:29px; height:29px; display:block}
 .dp__navbtn:disabled{opacity:.35; cursor:default}
 .dp__week{font-family:"Rotundo",sans-serif; font-size:28px; letter-spacing:.02em}
-.dp__back{
-  display:block; margin:4px auto 0; font-family:"Wix Madefor Text",Arial,sans-serif;
-  font-size:12.5px; letter-spacing:.02em; text-transform:uppercase; color:#8a8a8a;
-  background:none; border:0; cursor:pointer;
-}
-.dp__back[hidden]{ display:none }   /* explicit override needed - the button's
-  own display:block above would otherwise beat the browser's [hidden] rule */
-.dp__back:hover{ color:var(--ink) }
 
 .dp__desc{
   text-align:center; font-family:"Wix Madefor Text",Arial,sans-serif; font-weight:500;
@@ -96,7 +88,7 @@
    card border does, so both recolour together on tab click */
 .dp__row + .dp__row::before{
   content:""; position:absolute; top:0; left:28px; right:28px; height:3px;
-  background:var(--dp-accent); transition:background-color 160ms ease;
+  background:var(--dp-accent); border-radius:999px; transition:background-color 160ms ease;
 }
 .dp__row--all{ height:127.5px }
 .dp__row--all:first-child{ height:134.9px }   /* ALL has 4 rows, not 5 - this
@@ -133,6 +125,8 @@
 .dp__main{ min-width:0 }
 .dp__nameline{ display:flex; align-items:baseline; gap:9px; min-width:0 }
 .dp__name{
+  display:inline-block;   /* explicit, not relying on flex-item blockification -
+    an inline span gave unreliable scrollWidth once already (the ticker bug) */
   font-family:"Rotundo",sans-serif; font-size:22px; letter-spacing:.01em;
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0;
   flex:0 1 auto;   /* shrink allowed (for the rare very-long name), but NOT
@@ -167,6 +161,8 @@
   display:flex; align-items:center; justify-content:center; gap:10px;
   width:100%; margin:22px 0; font-family:"Rotundo",sans-serif; font-size:16px; letter-spacing:.02em;
   background:none; border:0; cursor:pointer; color:var(--ink); text-align:center;
+  text-decoration:none;   /* it's an <a> now, not a <button> - browsers
+    underline links by default */
 }
 .dp__seelink svg{ width:9px; height:15px; display:block }   /* plain triangle, no ring */
 .dp__seelink:hover{ opacity:.7 }
@@ -257,7 +253,6 @@ body{ padding:24px 16px }
   .dp__navbtn{ width:20px; height:20px }
   .dp__navbtn svg{ width:20px; height:20px }
   .dp__week{ font-size:18px }
-  .dp__back{ font-size:10px; margin-top:2px }
 
   .dp__desc{ font-size:9px; margin-bottom:10px; padding:0 4px }
 
@@ -270,7 +265,7 @@ body{ padding:24px 16px }
     padding:0 10px; height:58px;
   }
   .dp__row:first-child{ height:62px }
-  .dp__row + .dp__row::before{ left:10px; right:10px; height:2px }
+  .dp__row + .dp__row::before{ left:10px; right:10px; height:2px; border-radius:999px }
   .dp__row--all{ height:72.5px }
   .dp__row--all:first-child{ height:76.5px }   /* same reasoning as desktop:
     ALL has one fewer row, so each of its rows grows by (one row's worth)/4
@@ -285,10 +280,13 @@ body{ padding:24px 16px }
 
   .dp__name{
     font-family:"Wix Madefor Text",Arial,sans-serif; font-weight:700;
-    text-transform:uppercase; font-size:8px;
-    /* 8px is the largest size where only the single longest realistic name
-       ("Christian McCaffrey") needs to truncate - every other real name
-       tested fits in full. 7px is truncation-free for all of them if that
+    text-transform:uppercase; font-size:10px;
+    /* now that a too-long name abbreviates ("F. Last") instead of
+       truncating, the size can go bigger without ever looking broken -
+       at 10px, 7 of 10 real names tested show in full; the rest
+       (Bijan Robinson, Christian McCaffrey, Amon-Ra St. Brown) abbreviate
+       cleanly instead. 7px is the largest size where every one of them
+       shows in full if that
        matters more than the slightly bigger text. */
   }
   .dp__team{ font-size:6.5px; padding:2px 4px; border-radius:4px }
@@ -323,7 +321,6 @@ body{ padding:24px 16px }
       <svg aria-hidden="true" style="transform:scaleX(-1)"><use href="#dp-arrow"></use></svg>
     </button>
   </div>
-  <button class="dp__back" id="dpBack" type="button" hidden>back to current week</button>
 
   <p class="dp__desc">Top scorer at each position wins a dot and $5. Starting lineups only, top 5 shown.</p>
 
@@ -333,11 +330,11 @@ body{ padding:24px 16px }
     <div id="dpList"></div>
   </div>
 
-  <button class="dp__seelink" id="dpSeeBoard" type="button">
+  <a class="dp__seelink" id="dpSeeBoard" href="https://www.440andfriends.com/dot-pot-leaderboard">
     <svg viewBox="0 0 9.3 15.6" aria-hidden="true"><path d="M8.5,1.2c.7.7.7,1.9,0,2.6l-4,4,4,4c.7.7.7,1.9,0,2.6-.7.7-1.9.7-2.6,0L.6,9.1c-.7-.7-.7-1.9,0-2.6L5.9,1.2c.7-.7,1.9-.7,2.6,0Z" fill="currentColor"/></svg>
     SEE THE DOT POT LEADERBOARD
     <svg viewBox="0 0 9.3 15.6" aria-hidden="true"><path d="M.8,1.2c-.7.7-.7,1.9,0,2.6l4,4-4,4c-.7.7-.7,1.9,0,2.6.7.7,1.9.7,2.6,0l5.3-5.3c.7-.7.7-1.9,0-2.6L3.4,1.2c-.7-.7-1.9-.7-2.6,0Z" fill="currentColor"/></svg>
-  </button>
+  </a>
 
   <a class="sgx" href="https://www.440andfriends.com/squid-game" target="_top" aria-label="Enter Squid Game HQ">
       <span class="sgx-face sgx-base"><span class="sgx-word">Enter</span><svg class="sgx-mark" aria-hidden="true" focusable="false" id="dp-sgba-b" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146.37 24.55"><g id="dp-sgba-c"><circle cx="27.63" cy="12.23" r="5.35" style="fill:#fb287e;"/><path d="M48.99,0h-2.15c-.51,0-.76.25-.76.76v10.02c0,.97-.04,1.78-.14,2.44-.09.66-.31,1.22-.65,1.68-.35.46-.86.69-1.56.69s-1.21-.23-1.55-.66c-.34-.44-.56-.99-.65-1.63-.09-.64-.14-1.43-.14-2.36v-4.55c0-.5-.25-.76-.76-.76h-3.1c-.5,0-.76.25-.76.76v3.78c0,2.21.24,3.96.71,5.27.47,1.31,1.21,2.25,2.23,2.84,1.01.59,2.35.88,4.01.88,1.49,0,2.66-.29,3.53-.88.87-.59,1.5-1.52,1.89-2.82.39-1.29.59-3.06.59-5.29V.76c0-.5-.25-.76-.76-.76Z" style="fill:currentColor;"/><path d="M56.23,5.63h-3.09c-.5,0-.76.25-.76.76v11.71c0,.51.25.76.76.76h3.09c.51,0,.76-.25.76-.76V6.39c0-.5-.25-.76-.76-.76Z" style="fill:currentColor;"/><path d="M71.03,7.13c-1.35-1.07-3.16-1.62-5.42-1.63h-.83c-1.2,0-2.54.03-4.02.09-.49.01-.74.27-.74.78v11.74c0,.5.25.76.74.78,1.1.04,2.74.07,4.92.07,2.29,0,4.1-.54,5.4-1.64,1.31-1.1,1.96-2.85,1.96-5.27.01-2.2-.65-3.84-2.01-4.92ZM69.16,15.06c-.68.65-1.76.97-3.24.97-.16,0-.44-.01-.81-.04-.25-.03-.38-.16-.38-.4v-6.64c0-.24.13-.37.38-.4.38-.02.65-.04.81-.04,2.85,0,4.27,1.21,4.27,3.61,0,1.31-.34,2.29-1.03,2.93Z" style="fill:currentColor;"/><path d="M24,18.44c-1.13-.54-2.02-1.34-2.65-2.41-.64-1.06-.95-2.36-.95-3.9,0-1.35.31-2.52.93-3.52.62-1,1.48-1.76,2.58-2.29,1.09-.53,2.35-.79,3.76-.79s2.62.26,3.71.79c1.09.53,1.94,1.29,2.57,2.29.62,1,.93,2.17.93,3.52,0,1.5-.29,2.78-.88,3.85-.59,1.07-1.41,1.88-2.46,2.44-1.06.55-2.27.83-3.64.83-1.46,0-2.76-.27-3.89-.81ZM25.54,15.17c.6.69,1.46,1.03,2.57,1.03,1.02,0,1.84-.35,2.47-1.05.63-.7.94-1.65.94-2.84,0-.72-.14-1.35-.43-1.91-.29-.55-.69-.98-1.21-1.28-.52-.3-1.11-.45-1.77-.45s-1.26.15-1.78.45-.93.73-1.24,1.28-.45,1.19-.45,1.91c0,1.22.3,2.17.91,2.86Z" style="fill:currentColor;"/><path d="M18.47,14.77c0,.97-.3,1.76-.89,2.4-.6.63-1.38,1.09-2.35,1.38-.92.28-1.92.42-3,.43-.04,0-.08,0-.12,0h-.04l-10.82-.04c-.48,0-.9-.31-1.04-.76l-.15-.46c-.23-.71.3-1.44,1.05-1.44h10.8c.1,0,.18,0,.22,0,.07,0,.13,0,.2,0,.47-.01.86-.09,1.15-.23.33-.15.5-.4.5-.73s-.2-.56-.61-.7c-.41-.14-1.09-.28-2.03-.41-1.17-.18-2.16-.38-2.96-.62-.8-.24-1.5-.67-2.08-1.29-.6-.62-.89-1.47-.89-2.56,0-.94.26-1.74.8-2.37.54-.63,1.25-1.1,2.13-1.39.89-.3,1.86-.44,2.92-.44.98,0,1.95.12,2.9.37.95.24,1.78.59,2.48,1.02.25.17.38.38.38.65,0,.14-.03.26-.08.38l-.41,1.02c-.14.31-.35.47-.62.47-.12,0-.26-.04-.41-.12-1.55-.73-2.88-1.09-3.99-1.09-.55,0-.98.09-1.29.29-.3.2-.46.46-.46.78,0,.29.21.51.64.66.43.15,1.1.3,2.04.47,1.19.21,2.2.45,3.02.7.81.26,1.52.68,2.13,1.26.6.59.9,1.38.9,2.37Z" style="fill:currentColor;"/><path d="M7.64,18.98h0s-.12,0-.12,0c.04,0,.09,0,.12,0Z" style="fill:currentColor;"/><path d="M12.31,16.28c-.07,0-.13,0-.2,0-.04,0-.12,0-.22,0h.41Z" style="fill:currentColor;"/><rect x="132.84" y="6.36" width="8.98" height="9.79" style="fill:#fb287e;"/><rect x="99.56" y="7.45" width="6.82" height="10.63" style="fill:#fb287e;"/><path d="M82.47,17.51c-1.08-.5-1.94-1.27-2.59-2.3-.65-1.04-.97-2.34-.97-3.9,0-1.41.33-2.61,1-3.61.67-.99,1.56-1.75,2.69-2.26,1.13-.51,2.38-.76,3.75-.76,1.54,0,2.84.32,3.91.96,1.07.64,1.77,1.57,2.1,2.78.02.13.04.21.04.25,0,.33-.2.54-.6.64l-1.47.34c-.13.03-.21.04-.25.04-.29,0-.52-.19-.68-.57-.29-.62-.71-1.07-1.27-1.36s-1.11-.43-1.66-.43c-.74,0-1.37.19-1.89.58-.52.38-.9.89-1.15,1.52-.25.63-.38,1.32-.38,2.06,0,.78.14,1.46.43,2.05.29.59.69,1.04,1.21,1.35.52.31,1.11.47,1.77.47,1.4,0,2.17-.47,2.32-1.4l.02-.09c0-.1-.03-.18-.1-.23-.07-.05-.16-.08-.27-.08h-1.94c-.5,0-.76-.25-.76-.76v-1.17c0-.5.25-.76.76-.76h5.46c.5,0,.76.25.76.76v2.68c0,.78-.3,1.47-.9,2.07-.6.6-1.41,1.06-2.43,1.39-1.02.33-2.14.49-3.36.49-1.28,0-2.46-.25-3.54-.75Z" style="fill:currentColor;"/><path d="M108.4,6.83c-1.12-1.42-2.74-2.13-4.87-2.13-1.44,0-2.64.25-3.56.76-.92.51-1.63,1.42-2.12,2.74-.49,1.31-.74,3.16-.74,5.53v3.6c0,.5.25.76.76.76h1.97c.5,0,.76-.25.76-.76v-1.49c0-.09.05-3.46.05-3.46,0-.17.01-.32.03-.47.05-.84.14-1.52.25-2.06.14-.63.37-1.11.69-1.44.32-.33.77-.49,1.34-.49.65,0,1.15.17,1.49.49.34.33.57.8.7,1.42.12.52.19,1.21.24,2.08,0,.15.01.3.02.47,0,0,.05,3.37.05,3.46v1.49c0,.5.25.76.76.76h3.1c.5,0,.76-.25.76-.76v-3.6c0-3.17-.56-5.48-1.67-6.89Z" style="fill:currentColor;"/><path d="M118.24,15.21l-1.43-4.02c-.05-.15-.13-.23-.23-.23-.06,0-.11.03-.15.09-.04.06-.06.13-.06.22v6.06c0,.5-.25.76-.76.76h-1.96c-.5,0-.76-.25-.76-.76V5.62c0-.5.25-.76.76-.76h3.95c.44,0,.72.21.83.64l1.23,4.44c.05.18.13.26.23.26.11,0,.2-.08.25-.25l1.36-4.47c.14-.42.42-.62.85-.62h4.21c.5,0,.76.25.76.76v11.71c0,.5-.25.76-.76.76h-3.1c-.5,0-.76-.25-.76-.76v-6.12c0-.09-.02-.16-.06-.22-.04-.06-.08-.09-.13-.09-.11,0-.2.08-.25.23l-1.53,4.08c-.15.4-.44.6-.87.6h-.76c-.43,0-.72-.2-.87-.6Z" style="fill:currentColor;"/><path d="M130.32,17.33V5.62c0-.5.25-.76.76-.76h9.99c.5,0,.76.25.76.76v1.17c0,.5-.25.76-.76.76h-5.76c-.25,0-.38.13-.38.38v1.77c0,.25.13.38.38.38h10.3c.5,0,.76.25.76.76v1.17c0,.5-.25.76-.76.76h-10.3c-.25,0-.38.13-.38.38v1.89c0,.25.13.38.38.38h5.76c.5,0,.76.25.76.76v1.17c0,.5-.25.76-.76.76h-9.99c-.5,0-.76-.25-.76-.76Z" style="fill:currentColor;"/><path d="M98.71,23.94l-.58.34c-.55.32-1.25.13-1.56-.42l-6.49-11.14c-.17-.29-.07-.67.22-.83l1.51-.87c.29-.17.67-.07.83.22l6.49,11.14c.32.55.13,1.25-.42,1.56Z" style="fill:currentColor;"/><path d="M34.91,24.06l-.58.34c-.55.32-1.25.13-1.56-.42l-4.94-8.99c-.17-.29-.07-.67.22-.83l1.51-.87c.29-.17.67-.07.83.22l4.94,8.99c.32.55.13,1.25-.42,1.56Z" style="fill:currentColor;"/></g></svg><span class="sgx-hq">HQ</span></span>
@@ -403,6 +400,20 @@ function statLine(p) {
     var v = s.value;
     return (Number.isInteger(v) ? v : Number(v).toFixed(1)) + ' ' + s.stat;
   }).join('  \u00b7  ');
+}
+
+// "Christian McCaffrey" style names: try the name in full first, and only
+// if it doesn't fit, abbreviate the first name down to an initial ("C.
+// McCaffrey") rather than truncating with an ellipsis or scrolling.
+function abbreviateName(name) {
+  var parts = name.trim().split(' ');
+  if (parts.length < 2) return name;
+  return parts[0].charAt(0) + '. ' + parts.slice(1).join(' ');
+}
+function fitName(nameEl, fullName) {
+  nameEl.textContent = fullName;
+  if (nameEl.scrollWidth <= nameEl.clientWidth + 1) return;
+  nameEl.textContent = abbreviateName(fullName);
 }
 
 function fitTicker(stats, track, text, copyClass) {
@@ -482,7 +493,8 @@ function render() {
 
     var main = el('div', 'dp__main');
     var nameline = el('div', 'dp__nameline');
-    nameline.appendChild(el('span', 'dp__name', p.name));
+    var nameEl = el('span', 'dp__name', p.name);
+    nameline.appendChild(nameEl);
     if (p.team) nameline.appendChild(el('span', 'dp__team', p.team));
     main.appendChild(nameline);
 
@@ -495,8 +507,8 @@ function render() {
     row.appendChild(el('span', 'dp__pts', p.points.toFixed(2)));
     list.appendChild(row);
 
-    fitTicker(stats, track, statLine(p));   // stats only - names use a fitted
-    // font size instead (see the mobile override), not a scrolling ticker
+    fitTicker(stats, track, statLine(p));   // stats only - names never scroll
+    fitName(nameEl, p.name);   // full name if it fits, "F. Last" if it doesn't
   });
 }
 
@@ -558,7 +570,6 @@ function load() {
 var weeksKnown = [], weekNow = null, viewWeek = null;
 var prevBtn = document.getElementById('dpPrev');
 var nextBtn = document.getElementById('dpNext');
-var backBtn = document.getElementById('dpBack');
 
 function paintNav() {
   var shown = viewWeek || weekNow;
@@ -566,7 +577,6 @@ function paintNav() {
   var newer = weeksKnown.filter(function (w) { return w > shown; });
   prevBtn.disabled = !older.length;
   nextBtn.disabled = !newer.length;
-  backBtn.hidden = viewWeek === null;
 }
 
 function loadIndex() {
@@ -594,7 +604,6 @@ function step(dir) {
 }
 prevBtn.addEventListener('click', function () { step(-1); });
 nextBtn.addEventListener('click', function () { step(1); });
-backBtn.addEventListener('click', function () { showWeek(weekNow); });
 
 // the original re-runs render() on resize, debounced - needed because the
 // stat-line (and formerly name) ticker's fit check depends on the current
