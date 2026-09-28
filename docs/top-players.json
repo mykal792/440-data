@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-28T01:50:28Z",
+  "updated": "2026-09-28T01:55:23Z",
   "players": [
     {
       "name": "Brock Purdy",
@@ -749,6 +749,15 @@
       "stats": []
     },
     {
+      "name": "Harrison Mevis",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 12.1,
+      "stats": []
+    },
+    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
@@ -825,6 +834,28 @@
       ]
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
+          "stat": "REC YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -887,28 +918,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 11.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 64
-        },
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -1130,15 +1139,6 @@
       ]
     },
     {
-      "name": "Harrison Mevis",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 8.1,
-      "stats": []
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -1238,15 +1238,6 @@
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 6.4,
-      "stats": []
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.0,
       "stats": []
     },
     {
@@ -1392,6 +1383,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.0,
+      "stats": []
     },
     {
       "name": "Drake Maye",
