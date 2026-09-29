@@ -41,7 +41,7 @@ jobs:
         # Yahoo hiccup can't leave the dot pot stale. Right after settle so a
         # newly settled week shows up in the same run.
         continue-on-error: true
-        run: python build_dots.py
+        run: python pull_dots.py
       - name: Pull standings
         continue-on-error: true
         run: python pull_standings.py
