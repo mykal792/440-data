@@ -1,11 +1,11 @@
 {
   "season": 2026,
-  "updated": "2026-09-22T13:59:06Z",
+  "updated": "2026-09-29T11:00:34Z",
   "pot": {
     "total": 300,
     "dot_value": 5,
-    "paid_out": 40,
-    "remaining": 260
+    "paid_out": 60,
+    "remaining": 240
   },
   "totals": {
     "schilling": {
@@ -16,7 +16,7 @@
     },
     "garrett": {
       "QB": 0,
-      "RB": 0,
+      "RB": 1,
       "WR": 0,
       "TE": 0
     },
@@ -24,7 +24,7 @@
       "QB": 0,
       "RB": 1,
       "WR": 0,
-      "TE": 0
+      "TE": 1
     },
     "greg": {
       "QB": 0,
@@ -35,7 +35,7 @@
     "scarpitti": {
       "QB": 2,
       "RB": 0,
-      "WR": 1,
+      "WR": 2,
       "TE": 0
     },
     "gangus": {
@@ -51,7 +51,7 @@
       "TE": 1
     },
     "coyne": {
-      "QB": 0,
+      "QB": 1,
       "RB": 1,
       "WR": 0,
       "TE": 0
@@ -149,6 +149,47 @@
           ],
           "value": "22.60",
           "detail": "Travis Kelce"
+        }
+      }
+    },
+    {
+      "week": 3,
+      "positions": {
+        "QB": {
+          "manager": "coyne",
+          "manager_display": "COYNE",
+          "managers": [
+            "COYNE"
+          ],
+          "value": "39.28",
+          "detail": "Brock Purdy"
+        },
+        "RB": {
+          "manager": "garrett",
+          "manager_display": "GARRETT",
+          "managers": [
+            "GARRETT"
+          ],
+          "value": "37.90",
+          "detail": "Jahmyr Gibbs"
+        },
+        "WR": {
+          "manager": "scarpitti",
+          "manager_display": "SCARPITTI",
+          "managers": [
+            "SCARPITTI"
+          ],
+          "value": "32.36",
+          "detail": "Jaxon Smith-Njigba"
+        },
+        "TE": {
+          "manager": "hayden",
+          "manager_display": "HAYDEN",
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "24.60",
+          "detail": "Brock Bowers"
         }
       }
     }

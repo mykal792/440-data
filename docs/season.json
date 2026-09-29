@@ -5,7 +5,7 @@
     "regular_weeks": 15,
     "playoff_teams": 4
   },
-  "updated": "2026-09-22T12:30:39Z",
+  "updated": "2026-09-29T11:00:45Z",
   "managers": [
     {
       "key": "greg",
@@ -309,6 +309,93 @@
           "avg_per_week": 91.43
         }
       ]
+    },
+    {
+      "week": 3,
+      "label": "Week 3",
+      "short": "W3",
+      "teams": [
+        {
+          "key": "scarpitti",
+          "rank": 1,
+          "wins": 3,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 149.87
+        },
+        {
+          "key": "graham",
+          "rank": 2,
+          "wins": 3,
+          "losses": 0,
+          "ties": 0,
+          "avg_per_week": 111.97
+        },
+        {
+          "key": "hayden",
+          "rank": 3,
+          "wins": 2,
+          "losses": 1,
+          "ties": 0,
+          "avg_per_week": 140.51
+        },
+        {
+          "key": "garrett",
+          "rank": 4,
+          "wins": 2,
+          "losses": 1,
+          "ties": 0,
+          "avg_per_week": 118.73
+        },
+        {
+          "key": "coyne",
+          "rank": 5,
+          "wins": 1,
+          "losses": 2,
+          "ties": 0,
+          "avg_per_week": 128.69
+        },
+        {
+          "key": "greg",
+          "rank": 6,
+          "wins": 1,
+          "losses": 2,
+          "ties": 0,
+          "avg_per_week": 114.23
+        },
+        {
+          "key": "gangus",
+          "rank": 7,
+          "wins": 1,
+          "losses": 2,
+          "ties": 0,
+          "avg_per_week": 110.73
+        },
+        {
+          "key": "schilling",
+          "rank": 8,
+          "wins": 1,
+          "losses": 2,
+          "ties": 0,
+          "avg_per_week": 96.51
+        },
+        {
+          "key": "anthony",
+          "rank": 9,
+          "wins": 1,
+          "losses": 2,
+          "ties": 0,
+          "avg_per_week": 89.93
+        },
+        {
+          "key": "scotty",
+          "rank": 10,
+          "wins": 0,
+          "losses": 3,
+          "ties": 0,
+          "avg_per_week": 94.9
+        }
+      ]
     }
   ],
   "bonuses": {
@@ -329,6 +416,21 @@
         "label": "Bench Warmer",
         "short": "Bench Warmer",
         "amount": 25
+      },
+      {
+        "week": 3,
+        "type": "category",
+        "label": "Beast Mode",
+        "short": "Beast Mode",
+        "amount": 25
+      },
+      {
+        "week": 3,
+        "type": "dot",
+        "pos": "RB",
+        "label": "Dot Pot - RB",
+        "short": "RB",
+        "amount": 5
       }
     ],
     "hayden": [
@@ -342,6 +444,21 @@
       },
       {
         "week": 1,
+        "type": "high",
+        "label": "High Score",
+        "short": "HS",
+        "amount": 15
+      },
+      {
+        "week": 3,
+        "type": "dot",
+        "pos": "TE",
+        "label": "Dot Pot - TE",
+        "short": "TE",
+        "amount": 5
+      },
+      {
+        "week": 3,
         "type": "high",
         "label": "High Score",
         "short": "HS",
@@ -380,6 +497,14 @@
         "label": "High Score",
         "short": "HS",
         "amount": 15
+      },
+      {
+        "week": 3,
+        "type": "dot",
+        "pos": "WR",
+        "label": "Dot Pot - WR",
+        "short": "WR",
+        "amount": 5
       }
     ],
     "gangus": [
@@ -416,6 +541,14 @@
         "pos": "RB",
         "label": "Dot Pot - RB",
         "short": "RB",
+        "amount": 5
+      },
+      {
+        "week": 3,
+        "type": "dot",
+        "pos": "QB",
+        "label": "Dot Pot - QB",
+        "short": "QB",
         "amount": 5
       }
     ],
