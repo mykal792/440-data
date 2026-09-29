@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-29T01:05:23Z",
+  "updated": "2026-09-29T01:10:22Z",
   "players": [
     {
       "name": "Brock Purdy",
@@ -1250,6 +1250,20 @@
       "stats": []
     },
     {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 60
+        }
+      ]
+    },
+    {
       "name": "Eagles",
       "position": "DEF",
       "team": "Phi",
@@ -1535,6 +1549,24 @@
       ]
     },
     {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Dalton Kincaid",
       "position": "TE",
       "team": "Buf",
@@ -1575,16 +1607,20 @@
       ]
     },
     {
-      "name": "Saquon Barkley",
-      "position": "RB",
+      "name": "Jalen Hurts",
+      "position": "QB",
       "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.6,
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.14,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 46
+        },
+        {
           "stat": "RUSH YD",
-          "value": 26
+          "value": 3
         }
       ]
     },
@@ -1607,24 +1643,6 @@
       ]
     },
     {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "De'Von Achane",
       "position": "RB",
       "team": "Mia",
@@ -1635,20 +1653,6 @@
         {
           "stat": "RUSH YD",
           "value": 17
-        }
-      ]
-    },
-    {
-      "name": "Jalen Hurts",
-      "position": "QB",
-      "team": "Phi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.64,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 41
         }
       ]
     },
