@@ -58,8 +58,11 @@
   margin-bottom:10px;
 }
 .dp__navbtn{
-  width:29px; height:29px; padding:0; border:0; background:none; cursor:pointer;
+  width:44px; height:44px; padding:0; border:0; background:none; cursor:pointer;
   color:var(--ink); display:grid; place-items:center;
+  /* was 29x29 - the exact size of the icon, no room for an imprecise click.
+     Bigger box now; the icon itself is unchanged (set below), so this only
+     adds invisible padding around it to click into. */
 }
 .dp__navbtn svg{width:14px; height:23.5px; display:block}   /* matches the
   triangle's own 9.3:15.6 aspect ratio - the old square sizing was for the
@@ -185,7 +188,10 @@
 /* ---- below the card ---- */
 .dp__seelink{
   display:flex; align-items:center; justify-content:center; gap:10px;
-  width:100%; margin:22px 0 28px; font-family:"Rotundo",sans-serif; font-size:16px; letter-spacing:.02em;
+  width:100%; margin:28px 0; font-family:"Rotundo",sans-serif; font-size:16px; letter-spacing:.02em;
+  /* was 22px above / 28px below - a real mismatch, never balanced for desktop
+     (only mobile got fixed previously). Both now 28px: even, and a genuine
+     bump up from the smaller side rather than trimming the bigger one down. */
   background:none; border:0; cursor:pointer; color:var(--ink); text-align:center;
   text-decoration:none;   /* it's an <a> now, not a <button> - browsers
     underline links by default */
@@ -277,7 +283,7 @@ body{ padding:24px 16px }
   .dp__dotfield{ width:290px }
 
   .dp__nav{ gap:9px; margin-bottom:7px }
-  .dp__navbtn{ width:20px; height:20px }
+  .dp__navbtn{ width:32px; height:32px }
   .dp__navbtn svg{ width:10px; height:16.8px }
   .dp__week{ font-size:18px }
 
