@@ -1,7 +1,7 @@
 {
   "week": 3,
   "status": "live",
-  "updated": "2026-09-29T00:15:21Z",
+  "updated": "2026-09-29T00:20:22Z",
   "players": [
     {
       "name": "Brock Purdy",
@@ -1028,6 +1028,15 @@
       ]
     },
     {
+      "name": "Eagles",
+      "position": "DEF",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -1558,6 +1567,20 @@
       ]
     },
     {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        }
+      ]
+    },
+    {
       "name": "49ers",
       "position": "DEF",
       "team": "SF",
@@ -1590,17 +1613,17 @@
       "team": "Chi",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jalen Hurts",
@@ -1623,15 +1646,6 @@
     {
       "name": "DeVonta Smith",
       "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Eagles",
-      "position": "DEF",
       "team": "Phi",
       "manager": "coyne",
       "manager_display": "COYNE",
