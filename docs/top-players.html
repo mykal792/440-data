@@ -32,7 +32,7 @@
 
 /* ---- title (static logo image; the scattered dots are separate
    animated elements layered on top - see .dp__dot below) ---- */
-.dp__titlewrap{ position:relative; display:flex; justify-content:center; margin-bottom:-24px }
+.dp__titlewrap{ position:relative; display:flex; justify-content:center; margin-bottom:-18px }
 .dp__title{ width:820px; height:auto; display:block }
 .dp__dotfield{
   position:absolute; top:0; left:50%; transform:translateX(-50%);
@@ -55,13 +55,15 @@
 
 .dp__nav{
   display:flex; align-items:center; justify-content:center; gap:14px;
-  margin-bottom:4px;
+  margin-bottom:10px;
 }
 .dp__navbtn{
   width:29px; height:29px; padding:0; border:0; background:none; cursor:pointer;
   color:var(--ink); display:grid; place-items:center;
 }
-.dp__navbtn svg{width:29px; height:29px; display:block}
+.dp__navbtn svg{width:14px; height:23.5px; display:block}   /* matches the
+  triangle's own 9.3:15.6 aspect ratio - the old square sizing was for the
+  circle-ringed version, and would stretch a plain triangle out of shape */
 .dp__navbtn:disabled{opacity:.35; cursor:default}
 .dp__week{font-family:"Rotundo",sans-serif; font-size:28px; letter-spacing:.02em}
 
@@ -72,7 +74,7 @@
 
 /* ---- filter pills: 5 equal columns, ALL + QB/RB/WR/TE ---- */
 .dp__filter{
-  display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:18px;
+  display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:24px;
 }
 .dp__tab{
   height:43px; border-radius:999px; border:0; cursor:pointer;
@@ -183,7 +185,7 @@
 /* ---- below the card ---- */
 .dp__seelink{
   display:flex; align-items:center; justify-content:center; gap:10px;
-  width:100%; margin:22px 0; font-family:"Rotundo",sans-serif; font-size:16px; letter-spacing:.02em;
+  width:100%; margin:22px 0 28px; font-family:"Rotundo",sans-serif; font-size:16px; letter-spacing:.02em;
   background:none; border:0; cursor:pointer; color:var(--ink); text-align:center;
   text-decoration:none;   /* it's an <a> now, not a <button> - browsers
     underline links by default */
@@ -270,18 +272,18 @@ body{ padding:24px 16px }
 @media (max-width:500px){
   .dp{ max-width:290px }
 
-  .dp__titlewrap{ margin-bottom:6px }
+  .dp__titlewrap{ margin-bottom:11px }
   .dp__title{ width:290px }
   .dp__dotfield{ width:290px }
 
-  .dp__nav{ gap:9px; margin-bottom:2px }
+  .dp__nav{ gap:9px; margin-bottom:7px }
   .dp__navbtn{ width:20px; height:20px }
-  .dp__navbtn svg{ width:20px; height:20px }
+  .dp__navbtn svg{ width:10px; height:16.8px }
   .dp__week{ font-size:18px }
 
   .dp__desc{ font-size:9px; margin-bottom:10px; padding:0 4px }
 
-  .dp__filter{ gap:6px; margin-bottom:10px }
+  .dp__filter{ gap:6px; margin-bottom:14px }
   .dp__tab{ height:26px; font-size:9.5px; border-radius:999px }
 
   .dp__card{ border-width:2.5px; border-radius:16px }
@@ -318,7 +320,7 @@ body{ padding:24px 16px }
   .dp__stats{ font-size:7.5px; margin-top:1px }
   .dp__pts{ font-size:13px }
 
-  .dp__seelink{ font-size:9.5px; gap:6px; margin:14px 0 }
+  .dp__seelink{ font-size:9.5px; gap:6px; margin:16px 0 }
   .dp__seelink svg{ width:6px; height:11px }
 
   .dp .sgx{ height:46px; margin-top:8px }
@@ -357,9 +359,9 @@ body{ padding:24px 16px }
   </div>
 
   <a class="dp__seelink" id="dpSeeBoard" href="https://www.440andfriends.com/dot-pot-leaderboard" target="_top">
-    <svg viewBox="0 0 9.3 15.6" aria-hidden="true"><path d="M8.5,1.2c.7.7.7,1.9,0,2.6l-4,4,4,4c.7.7.7,1.9,0,2.6-.7.7-1.9.7-2.6,0L.6,9.1c-.7-.7-.7-1.9,0-2.6L5.9,1.2c.7-.7,1.9-.7,2.6,0Z" fill="currentColor"/></svg>
+    <svg viewBox="0 0 9.3 15.6" aria-hidden="true"><path d="M 2.21,7.18 L 7.79,2.62 Q 8.80,1.80 8.80,3.10 L 8.80,12.90 Q 8.80,14.20 7.79,13.38 L 2.21,8.82 Q 1.20,8.00 2.21,7.18 Z" fill="currentColor"/></svg>
     SEE THE DOT POT LEADERBOARD
-    <svg viewBox="0 0 9.3 15.6" aria-hidden="true"><path d="M.8,1.2c-.7.7-.7,1.9,0,2.6l4,4-4,4c-.7.7-.7,1.9,0,2.6.7.7,1.9.7,2.6,0l5.3-5.3c.7-.7.7-1.9,0-2.6L3.4,1.2c-.7-.7-1.9-.7-2.6,0Z" fill="currentColor"/></svg>
+    <svg viewBox="0 0 9.3 15.6" aria-hidden="true"><path d="M 7.79,7.18 L 2.21,2.62 Q 1.20,1.80 1.20,3.10 L 1.20,12.90 Q 1.20,14.20 2.21,13.38 L 7.79,8.82 Q 8.80,8.00 7.79,7.18 Z" fill="currentColor"/></svg>
   </a>
 
   <a class="sgx" href="https://www.440andfriends.com/squid-game" target="_top" aria-label="Enter Squid Game HQ">
@@ -369,9 +371,8 @@ body{ padding:24px 16px }
 </div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="dp-arrow" viewBox="0 0 29.71 29.71">
-    <path d="M14.86,29.71C6.67,29.71,0,23.05,0,14.86S6.67,0,14.86,0s14.85,6.66,14.85,14.86-6.66,14.85-14.85,14.85ZM14.86,2.4C7.99,2.4,2.4,7.99,2.4,14.86s5.59,12.45,12.45,12.45,12.45-5.59,12.45-12.45S21.72,2.4,14.86,2.4Z" style="fill:#333"/>
-    <path d="M15.11,9.6l-4.43,4.43c-.46.46-.46,1.2,0,1.65l4.43,4.43c.74.74,2,.22,2-.83v-8.85c0-1.04-1.26-1.56-2-.83v.02Z" style="fill:#333"/>
+  <symbol id="dp-arrow" viewBox="0 0 9.3 15.6">
+    <path d="M 2.21,7.18 L 7.79,2.62 Q 8.80,1.80 8.80,3.10 L 8.80,12.90 Q 8.80,14.20 7.79,13.38 L 2.21,8.82 Q 1.20,8.00 2.21,7.18 Z" fill="#333"/>
   </symbol>
 </svg>
 
