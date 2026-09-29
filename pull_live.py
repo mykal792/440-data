@@ -89,8 +89,20 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
         cat_leaders, high_leaders = [], []
     else:
         cat_leaders = yc.rank_rows(rows, ascending=ascending)
-        high_leaders = yc.rank_rows(
-            yc.high_score_rows(rosters, matchups, standings, remaining))
+        high_rows = yc.high_score_rows(rosters, matchups, standings, remaining)
+        # high_score_rows() builds a row for every manager regardless of
+        # whether they've actually scored - it has no "nobody's played yet"
+        # concept of its own. If literally everyone is still at 0, ranking
+        # them isn't a real result, it's a full tie - and rank_rows() breaks
+        # ties by whatever order the rows arrived in, which is just the
+        # matchup list's fixed order. That reliably makes the same team
+        # "win" every tied week, looking exactly like a real #1 when it's
+        # actually a sorting artifact. Same empty-list/placeholder treatment
+        # the comment above already intends for this exact situation.
+        if high_rows and max(r[1] for r in high_rows) == 0:
+            high_leaders = []
+        else:
+            high_leaders = yc.rank_rows(high_rows)
 
     cat_leaders = yc.pad_leaders(cat_leaders)
     high_leaders = yc.pad_leaders(high_leaders)
