@@ -2,7 +2,140 @@
   "week": 4,
   "status": "live",
   "updated": "2026-09-29T14:17:07Z",
-  "players": [
+  "matchups": [
+    {
+      "home": {
+        "name": "SCHILLING",
+        "face": "schilling",
+        "score": 0.0,
+        "projected": 110.94
+      },
+      "away": {
+        "name": "GANGUS",
+        "face": "gangus",
+        "score": 0.0,
+        "projected": 112.42
+      }
+    },
+    {
+      "home": {
+        "name": "GARRETT",
+        "face": "garrett",
+        "score": 0.0,
+        "projected": 120.56
+      },
+      "away": {
+        "name": "SCOTTY",
+        "face": "scotty",
+        "score": 0.0,
+        "projected": 98.26
+      }
+    },
+    {
+      "home": {
+        "name": "HAYDEN",
+        "face": "hayden",
+        "score": 0.0,
+        "projected": 116.75
+      },
+      "away": {
+        "name": "ANTHONY",
+        "face": "anthony",
+        "score": 0.0,
+        "projected": 103.75
+      }
+    },
+    {
+      "home": {
+        "name": "GREG",
+        "face": "greg",
+        "score": 0.0,
+        "projected": 112.96
+      },
+      "away": {
+        "name": "COYNE",
+        "face": "coyne",
+        "score": 0.0,
+        "projected": 111.02
+      }
+    },
+    {
+      "home": {
+        "name": "SCARPITTI",
+        "face": "scarpitti",
+        "score": 0.0,
+        "projected": 112.9
+      },
+      "away": {
+        "name": "GRAHAM",
+        "face": "graham",
+        "score": 0.0,
+        "projected": 111.44
+      }
+    }
+  ],
+  "bonus": {
+    "category": {
+      "week": 4,
+      "key": "lucky-duck",
+      "label": "Lucky Duck",
+      "description": "Lowest team score in a win.",
+      "amount": 25,
+      "leaders": [
+        {
+          "rank": 1,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        },
+        {
+          "rank": 2,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        },
+        {
+          "rank": 3,
+          "manager": "NAME",
+          "face": "",
+          "value": "0.00",
+          "detail": ""
+        }
+      ]
+    },
+    "high": {
+      "key": "high-score",
+      "label": "High Score",
+      "description": "Most fantasy points scored that week.",
+      "amount": 15,
+      "leaders": [
+        {
+          "rank": 1,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "0.00",
+          "detail": "9 to play"
+        },
+        {
+          "rank": 1,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "0.00",
+          "detail": "9 to play"
+        },
+        {
+          "rank": 1,
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "0.00",
+          "detail": "9 to play"
+        }
+      ]
+    }
+  },
+  "top_players": [
     {
       "name": "Joe Burrow",
       "position": "QB",
