@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "tax_per_move": 0.5,
-  "updated": "2026-09-30T05:55:28Z",
+  "updated": "2026-09-30T11:00:35Z",
   "high_score_bonus": "15.00",
   "managers": [
     {
@@ -18,10 +18,14 @@
     },
     {
       "name": "SCARPITTI",
-      "moves": 4
+      "moves": 5
     },
     {
       "name": "ANTHONY",
+      "moves": 4
+    },
+    {
+      "name": "COYNE",
       "moves": 3
     },
     {
@@ -39,13 +43,50 @@
     {
       "name": "GREG",
       "moves": 1
-    },
-    {
-      "name": "COYNE",
-      "moves": 0
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "manager": "SCARPITTI",
+      "added": "Zach Charbonnet",
+      "add_pos": "Sea - RB",
+      "dropped": "Emmett Johnson",
+      "drop_pos": "KC - RB",
+      "date": "Sep 30"
+    },
+    {
+      "manager": "COYNE",
+      "added": "Spencer Shrader",
+      "add_pos": "Ind - K",
+      "dropped": "Harrison Mevis",
+      "drop_pos": "LAR - K",
+      "date": "Sep 30"
+    },
+    {
+      "manager": "COYNE",
+      "added": "Vikings",
+      "add_pos": "Min - DEF",
+      "dropped": "Eagles",
+      "drop_pos": "Phi - DEF",
+      "date": "Sep 30"
+    },
+    {
+      "manager": "COYNE",
+      "added": "Jaylen Wright",
+      "add_pos": "Mia - RB",
+      "dropped": "Tyjae Spears",
+      "drop_pos": "Ten - RB",
+      "date": "Sep 30"
+    },
+    {
+      "manager": "ANTHONY",
+      "added": "Ollie Gordon II",
+      "add_pos": "Mia - RB",
+      "dropped": "Khalil Shakir",
+      "drop_pos": "Buf - WR",
+      "date": "Sep 30"
+    }
+  ],
   "high_scores": [
     {
       "week": 1,
