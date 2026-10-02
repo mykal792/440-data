@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-02T00:15:22Z",
+  "updated": "2026-10-02T00:20:23Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 0.0,
+        "score": 0.2,
         "projected": 115.21
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 0.0,
+        "score": 0.4,
         "projected": 127.58
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 0.0,
+        "score": 10.0,
         "projected": 120.14
       },
       "away": {
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "0.20",
+          "detail": "beat SCHILLING"
         },
         {
           "rank": 2,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "0.40",
+          "detail": "beat SCOTTY"
         },
         {
           "rank": 3,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "10.00",
+          "detail": "beat GRAHAM"
         }
       ]
     },
@@ -113,29 +113,66 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "10.00",
+          "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "0.40",
+          "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "0.20",
+          "detail": "8 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
     {
       "name": "Joe Burrow",
       "position": "QB",
@@ -266,15 +303,6 @@
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -533,15 +561,6 @@
       "stats": []
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -554,15 +573,6 @@
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
