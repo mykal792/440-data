@@ -1,28 +1,19 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-02T00:55:20Z",
+  "updated": "2026-10-02T01:00:32Z",
   "players": [
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.0,
-      "stats": []
-    },
     {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.9,
+      "points": 6.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 29
+          "value": 35
         },
         {
           "stat": "REC YD",
@@ -35,12 +26,12 @@
       ]
     },
     {
-      "name": "Chris Boswell",
-      "position": "K",
+      "name": "Steelers",
+      "position": "DEF",
       "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.0,
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.0,
       "stats": []
     },
     {
@@ -49,13 +40,48 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.3,
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 3
+          "value": 6
+        },
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
+    },
+    {
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Joe Burrow",
@@ -169,15 +195,6 @@
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
