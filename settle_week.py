@@ -44,8 +44,67 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import yahoo_common as yc
+import pull_live as pl
 
 RULE = "-" * 52
+
+
+# ADDED [date] - nothing in the codebase wrote docs/weeks/wN.json, the file
+# the site's back-arrow history reads. pull_live.py never claimed to (see its
+# own docstring: it writes exactly four files, none of them in weeks/).
+# backfill_week.py expected a function called update_week_archive() to
+# exist for this - it doesn't, anywhere. This is that function, called from
+# the one place a week's real, final result is already being computed: the
+# --apply path below, which is what the unattended Tuesday job runs. No new
+# schedule, no new manual step - it rides on the automation that already runs.
+def write_week_archive(week, status, matchups, rosters, standings,
+                       stat_buckets, bonus_category, bonus_high,
+                       out_dir="docs"):
+    out_dir = Path(out_dir)
+    weeks_dir = out_dir / "weeks"
+    weeks_dir.mkdir(parents=True, exist_ok=True)
+    target = weeks_dir / ("w%d.json" % week)
+
+    if target.exists():
+        # Same rule settle() already follows for the ledger: never silently
+        # overwrite a week that's already archived. If a real correction is
+        # needed, that's a deliberate act (delete the file), not something
+        # a retried or re-triggered run should do by accident.
+        print("  docs/weeks/w%d.json already exists - leaving it alone."
+             % week)
+        return
+
+    scoreboard = pl.build_scoreboard(week, status, matchups, {})
+    top_players = pl.build_top_players(week, status, rosters, stat_buckets)
+
+    snapshot = {
+        "week": week,
+        "status": status,
+        "updated": yc.now_iso(),
+        "matchups": scoreboard["matchups"],
+        "bonus": {"category": bonus_category, "high": bonus_high},
+        "top_players": top_players["players"],
+    }
+    tmp = str(target) + ".tmp"
+    with open(tmp, "w") as fh:
+        fh.write(json.dumps(snapshot, indent=2) + "\n")
+    Path(tmp).replace(target)
+
+    # index.json: add this week to the known list, but do NOT touch
+    # "current" - by the time a week is settled, the live week may already
+    # be the next one, and this function has no business overwriting that.
+    # (Same reasoning backfill_week.py already applies for the same reason.)
+    index_path = weeks_dir / "index.json"
+    try:
+        idx = json.loads(index_path.read_text())
+    except Exception:                                    # noqa: BLE001
+        idx = {"current": week, "weeks": []}
+    if week not in idx.get("weeks", []):
+        idx.setdefault("weeks", []).append(week)
+        idx["weeks"].sort()
+    index_path.write_text(json.dumps(idx, indent=2) + "\n")
+
+    print("  wrote docs/weeks/w%d.json and updated the index." % week)
 
 
 def settle(week, yf_dir=None, apply_it=False, force=False):
@@ -53,6 +112,11 @@ def settle(week, yf_dir=None, apply_it=False, force=False):
     cat = meta["_by_week"].get(week)
 
     token = yc.get_token(yf_dir)
+    # Needed for the archive's per-player stat lines ("312 PASS YD - 2 TD").
+    # pull_live.py already loads this every run; settle_week.py never did,
+    # because it never used to need per-player stat text - only totals.
+    stat_categories = yc.load_stat_categories(token=token)
+    stat_buckets = yc.resolve_stat_buckets(stat_categories)
     sb_week, status, matchups = yc.parse_scoreboard(yc.fetch_scoreboard(token, week))
     if not matchups:
         sys.exit("No matchups returned for week %d." % week)
@@ -96,7 +160,7 @@ def settle(week, yf_dir=None, apply_it=False, force=False):
     if not cat:
         print("  CATEGORY    ->  no bonus defined for week %d" % week)
     else:
-        rows, ascending = yc.compute_bonus(week, rosters, matchups, standings)
+        rows, ascending = yc.compute_bonus(week, rosters, matchups, standings, status)
         leaders = yc.rank_rows(rows, ascending=ascending)
         winners = [l for l in leaders if l["rank"] == 1]
         print("\n  %s ($%d) - %s"
@@ -167,6 +231,35 @@ def settle(week, yf_dir=None, apply_it=False, force=False):
                  % (week, status))
 
     print("\n  " + yc.write_ledger_week(week, entry) + "\n")
+
+    # The ledger write above is the part that pays people - it just
+    # succeeded and must not be undone by anything below. If the archive
+    # write hits a problem this run hasn't been tested against, it's logged
+    # and the run still exits clean; the week just stays backfill-able,
+    # same as any other missing week, rather than turning a successful
+    # payout into a failed, alarming workflow run.
+    try:
+        write_week_archive(week, status, matchups, rosters, standings,
+                           stat_buckets,
+                           bonus_category={
+                               "key": cat.get("key", "no-bonus") if cat else "no-bonus",
+                               "label": cat["label"] if cat else "No Bonus",
+                               "description": cat.get("description", "") if cat else "",
+                               "amount": meta.get("category_amount", 25),
+                               "leaders": leaders if cat else [],
+                           },
+                           bonus_high={
+                               "key": "high-score",
+                               "label": meta["high_score"]["label"],
+                               "description": meta["high_score"]["description"],
+                               "amount": meta["high_score"]["amount"],
+                               "leaders": high,
+                           })
+    except Exception as e:                                # noqa: BLE001
+        print("  ! week %d settled and paid, but the archive snapshot failed:\n"
+             "    %r\n"
+             "    Fix the cause, then: python3 backfill_week.py %d --force"
+             % (week, e, week))
 
 
 def unsettled_weeks(token):
