@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-02T00:35:22Z",
+  "updated": "2026-10-02T00:40:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 0.0,
+        "score": 1.0,
         "projected": 114.19
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 2.8,
+        "score": 3.7,
         "projected": 127.58
       },
       "away": {
@@ -84,16 +84,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "0.20",
-          "detail": "beat SCHILLING"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "1.00",
+          "detail": "beat GANGUS"
         },
         {
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "2.80",
+          "value": "3.70",
           "detail": "beat SCOTTY"
         },
         {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "2.80",
+          "value": "3.70",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "0.20",
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "1.00",
           "detail": "8 to play"
         }
       ]
@@ -151,11 +151,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 2.8,
+      "points": 3.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 12
+          "value": 21
         },
         {
           "stat": "REC YD",
@@ -166,6 +166,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Quinshon Judkins",
@@ -239,15 +248,6 @@
       "name": "Josh Downs",
       "position": "WR",
       "team": "Ind",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
