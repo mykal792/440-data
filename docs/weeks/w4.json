@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-02T01:35:22Z",
+  "updated": "2026-10-02T01:40:24Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 11.8,
+        "score": 12.6,
         "projected": 115.17
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 10.9,
+        "score": 17.6,
         "projected": 128.77
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 3.0,
+        "score": 1.0,
         "projected": 120.14
       },
       "away": {
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "3.00",
+          "value": "1.00",
           "detail": "beat GRAHAM"
         },
         {
           "rank": 2,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "10.90",
-          "detail": "beat SCOTTY"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "12.60",
+          "detail": "beat SCHILLING"
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "11.80",
-          "detail": "beat SCHILLING"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "17.60",
+          "detail": "beat SCOTTY"
         }
       ]
     },
@@ -113,23 +113,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "11.80",
-          "detail": "8 to play"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "17.60",
+          "detail": "7 to play"
         },
         {
           "rank": 2,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "10.90",
-          "detail": "7 to play"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "12.60",
+          "detail": "8 to play"
         },
         {
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "3.00",
+          "value": "1.00",
           "detail": "8 to play"
         }
       ]
@@ -142,19 +142,19 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 11.8,
+      "points": 12.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 14
         },
         {
           "stat": "REC YD",
-          "value": 28
+          "value": 32
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 4
         },
         {
           "stat": "TD",
@@ -185,31 +185,35 @@
       ]
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.0,
-      "stats": []
-    },
-    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 1.8,
+      "points": 8.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 13
+          "value": 15
         },
         {
           "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Joe Burrow",
