@@ -552,7 +552,11 @@ function formatAgo(ms){
   if (m === 1) return "UPD 1 MIN AGO";
   if (m < 60) return "UPD " + m + " MIN AGO";
   const h = Math.floor(m / 60);
-  return "UPD " + h + (h === 1 ? " HR AGO" : " HRS AGO");
+  if (h < 24) return "UPD " + h + (h === 1 ? " HR AGO" : " HRS AGO");
+  // was missing entirely - hours just kept counting up forever past 24,
+  // which is exactly how you get "UPD 412 HOURS AGO" for an old week
+  const d = Math.floor(h / 24);
+  return "UPD " + d + (d === 1 ? " DAY AGO" : " DAYS AGO");
 }
 function tickAgo(){
   const el = document.getElementById("rbUpd");
