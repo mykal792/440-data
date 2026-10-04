@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T20:25:21Z",
+  "updated": "2026-10-04T20:30:29Z",
   "matchups": [
     {
       "home": {
@@ -14,7 +14,7 @@
         "name": "GANGUS",
         "face": "gangus",
         "score": 99.98,
-        "projected": 105.13
+        "projected": 114.87
       }
     },
     {
@@ -22,26 +22,26 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 77.2,
-        "projected": 128.9
+        "projected": 128.89
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 59.18,
-        "projected": 88.32
+        "projected": 100.65
       }
     },
     {
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 64.78,
-        "projected": 121.7
+        "score": 75.68,
+        "projected": 121.67
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 70.96,
+        "score": 71.26,
         "projected": 112.48
       }
     },
@@ -50,13 +50,13 @@
         "name": "GREG",
         "face": "greg",
         "score": 126.3,
-        "projected": 119.83
+        "projected": 119.54
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 66.2,
-        "projected": 124.54
+        "projected": 124.48
       }
     },
     {
@@ -69,8 +69,8 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 70.6,
-        "projected": 118.15
+        "score": 82.6,
+        "projected": 118.14
       }
     }
   ],
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "70.60",
-          "detail": "beating SCARPITTI"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "75.68",
+          "detail": "beating ANTHONY"
         },
         {
           "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "70.96",
-          "detail": "beating HAYDEN"
-        },
-        {
-          "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
           "value": "77.20",
           "detail": "beating SCOTTY"
+        },
+        {
+          "rank": 3,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "82.60",
+          "detail": "beating SCARPITTI"
         }
       ]
     },
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "80.92",
-          "detail": "3 to play"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "82.60",
+          "detail": "4 to play"
         }
       ]
     }
@@ -701,6 +701,15 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -817,6 +826,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "Chiefs",
@@ -1267,6 +1285,34 @@
       ]
     },
     {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "name": "Omarion Hampton",
+      "position": "RB",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1321,15 +1367,6 @@
       "stats": []
     },
     {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -1342,15 +1379,6 @@
       "name": "Brock Bowers",
       "position": "TE",
       "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
@@ -1438,15 +1466,6 @@
       "stats": []
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -1495,15 +1514,6 @@
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
