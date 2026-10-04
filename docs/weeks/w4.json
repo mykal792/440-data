@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T20:50:24Z",
+  "updated": "2026-10-04T20:55:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 92.92,
+        "score": 93.12,
         "projected": 116.07
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 71.96,
+        "score": 72.06,
         "projected": 112.48
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 123.84,
+        "score": 129.92,
         "projected": 119.54
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 68.2,
+        "score": 68.36,
         "projected": 124.48
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 60.82,
+        "score": 62.22,
         "projected": 124.24
       },
       "away": {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "123.84",
+          "value": "129.92",
           "detail": "All played"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "92.92",
+          "value": "93.12",
           "detail": "1 to play"
         }
       ]
@@ -921,6 +921,28 @@
       "stats": []
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 8.62,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 63
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -1145,11 +1167,11 @@
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 8
         },
         {
           "stat": "REC YD",
-          "value": 18
+          "value": 17
         },
         {
           "stat": "REC",
@@ -1271,34 +1293,16 @@
       "stats": []
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.54,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 61
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 1.5,
+      "points": 1.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 17
         }
       ]
     },
@@ -1353,6 +1357,24 @@
         {
           "stat": "REC YD",
           "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
         },
         {
           "stat": "REC",
@@ -1429,15 +1451,15 @@
       "team": "Min",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 0.7,
+      "points": 0.8,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 2
+          "value": -2
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -1447,11 +1469,11 @@
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.6,
+      "points": 0.76,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 10
+          "value": 14
         },
         {
           "stat": "RUSH YD",
@@ -1538,15 +1560,6 @@
       "team": "LV",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 0.0,
       "stats": []
     },
