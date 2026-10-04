@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T22:00:31Z",
+  "updated": "2026-10-04T22:05:25Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 80.06,
+        "score": 79.96,
         "projected": 112.48
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 132.96,
+        "score": 133.96,
         "projected": 119.54
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 77.62,
+        "score": 81.72,
         "projected": 124.24
       },
       "away": {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "132.96",
+          "value": "133.96",
           "detail": "All played"
         },
         {
@@ -525,6 +525,15 @@
       "stats": []
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 17.1,
+      "stats": []
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -725,15 +734,6 @@
           "value": 7
         }
       ]
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.0,
-      "stats": []
     },
     {
       "name": "Brandon Aubrey",
@@ -1184,6 +1184,15 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Jeremiyah Love",
       "position": "RB",
       "team": "Ari",
@@ -1280,15 +1289,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Evan McPherson",
@@ -1440,8 +1440,12 @@
       "team": "Min",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 3.1,
+      "points": 3.0,
       "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        },
         {
           "stat": "REC YD",
           "value": 21
