@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T21:25:23Z",
+  "updated": "2026-10-04T21:30:28Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -757,6 +757,28 @@
       "stats": []
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.98,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 97
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -784,28 +806,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 77
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -899,6 +899,28 @@
       "stats": []
     },
     {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 60
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -981,28 +1003,6 @@
         {
           "stat": "REC YD",
           "value": -8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 47
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
         },
         {
           "stat": "REC",
@@ -1195,6 +1195,20 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        }
+      ]
+    },
+    {
       "name": "Josh Downs",
       "position": "WR",
       "team": "Ind",
@@ -1258,16 +1272,38 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.2,
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.5,
       "stats": [
         {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.34,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 36
+        },
+        {
           "stat": "RUSH YD",
-          "value": 22
+          "value": 9
         }
       ]
     },
@@ -1307,24 +1343,6 @@
         },
         {
           "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.64,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 36
-        },
-        {
-          "stat": "RUSH YD",
           "value": 2
         }
       ]
@@ -1384,24 +1402,6 @@
         {
           "stat": "REC YD",
           "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
         },
         {
           "stat": "REC",
