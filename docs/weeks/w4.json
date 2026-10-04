@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T22:40:27Z",
+  "updated": "2026-10-04T22:45:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 107.32,
+        "score": 109.52,
         "projected": 116.07
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 66.18,
+        "score": 67.78,
         "projected": 100.65
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 134.64,
+        "score": 140.96,
         "projected": 119.54
       },
       "away": {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "134.64",
+          "value": "140.96",
           "detail": "All played"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "107.32",
+          "value": "109.52",
           "detail": "1 to play"
         },
         {
@@ -341,6 +341,32 @@
       ]
     },
     {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 23.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 59
+        },
+        {
+          "stat": "REC YD",
+          "value": 39
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -429,32 +455,6 @@
       ]
     },
     {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 21.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 55
-        },
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -488,6 +488,28 @@
       "manager_display": "SCARPITTI",
       "points": 20.0,
       "stats": []
+    },
+    {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 18.66,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 164
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Quinshon Judkins",
@@ -789,28 +811,6 @@
       "stats": []
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.34,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 156
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -1005,6 +1005,28 @@
       "stats": []
     },
     {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 16
+        },
+        {
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -1114,28 +1136,6 @@
       "manager_display": "SCARPITTI",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "Den",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 7.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
     },
     {
       "name": "Trey McBride",
