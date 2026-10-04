@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T20:55:21Z",
+  "updated": "2026-10-04T21:00:33Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -616,6 +616,41 @@
       ]
     },
     {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 17
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
@@ -632,32 +667,6 @@
       "manager_display": "COYNE",
       "points": 11.0,
       "stats": []
-    },
-    {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 17
-        },
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Harold Fannin Jr.",
@@ -728,15 +737,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.0,
-      "stats": []
     },
     {
       "name": "Jaguars",
@@ -1165,11 +1165,11 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 1.7,
+      "points": 2.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 20
         }
       ]
     },
@@ -1313,24 +1313,6 @@
       ]
     },
     {
-      "name": "Jordan Addison",
-      "position": "WR",
-      "team": "Min",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": -2
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -1345,6 +1327,24 @@
         {
           "stat": "RUSH YD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jordan Addison",
+      "position": "WR",
+      "team": "Min",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
