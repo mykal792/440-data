@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T17:55:19Z",
+  "updated": "2026-10-04T18:00:31Z",
   "players": [
     {
       "name": "Jonathan Taylor",
@@ -246,11 +246,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 8.2,
+      "points": 8.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 11
+          "value": 12
         },
         {
           "stat": "REC YD",
@@ -287,15 +287,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.0,
-      "stats": []
     },
     {
       "name": "Ravens",
@@ -423,6 +414,15 @@
       "stats": []
     },
     {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -430,6 +430,20 @@
       "manager_display": "GARRETT",
       "points": 5.5,
       "stats": []
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 129
+        }
+      ]
     },
     {
       "name": "Tucker Kraft",
@@ -566,20 +580,6 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 90
-        }
-      ]
-    },
-    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -665,6 +665,20 @@
       "stats": []
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 73
+        }
+      ]
+    },
+    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -714,20 +728,6 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 65
-        }
-      ]
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -764,6 +764,38 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        }
+      ]
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -771,6 +803,24 @@
       "manager_display": "GREG",
       "points": 2.0,
       "stats": []
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "TreVeyon Henderson",
@@ -783,20 +833,6 @@
         {
           "stat": "RUSH YD",
           "value": 18
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 17
         }
       ]
     },
@@ -841,24 +877,6 @@
       ]
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Cam Skattebo",
       "position": "RB",
       "team": "NYG",
@@ -869,24 +887,6 @@
         {
           "stat": "RUSH YD",
           "value": 11
-        }
-      ]
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
