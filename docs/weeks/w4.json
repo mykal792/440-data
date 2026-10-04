@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T19:35:25Z",
+  "updated": "2026-10-04T19:40:24Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 99.7,
+        "score": 98.18,
         "projected": 105.13
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 58.54,
+        "score": 59.64,
         "projected": 121.73
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 54.64,
+        "score": 55.34,
         "projected": 112.49
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 42.62,
+        "score": 44.62,
         "projected": 124.24
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 39.4,
+        "score": 40.1,
         "projected": 118.13
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "42.62",
+          "value": "44.62",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "58.54",
+          "value": "59.64",
           "detail": "beating ANTHONY"
         },
         {
@@ -113,16 +113,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "99.70",
+          "manager": "GREG",
+          "face": "greg",
+          "value": "99.20",
           "detail": "2 to play"
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "99.20",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "98.18",
           "detail": "2 to play"
         },
         {
@@ -307,28 +307,6 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 19.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 185
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -368,6 +346,32 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 18.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 197
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -420,6 +424,28 @@
       "manager_display": "GARRETT",
       "points": 14.7,
       "stats": []
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 14.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 201
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Joe Burrow",
@@ -475,15 +501,11 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 13.82,
+      "points": 13.52,
       "stats": [
         {
           "stat": "PASS YD",
           "value": 188
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
         },
         {
           "stat": "TD",
@@ -523,11 +545,11 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 13.2,
+      "points": 13.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 56
+          "value": 55
         },
         {
           "stat": "REC YD",
@@ -596,16 +618,24 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 13.04,
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.0,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 176
+          "stat": "RUSH YD",
+          "value": 48
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
@@ -645,28 +675,6 @@
       ]
     },
     {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 11.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 48
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
@@ -692,6 +700,28 @@
       "manager_display": "GANGUS",
       "points": 11.0,
       "stats": []
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 75
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Harold Fannin Jr.",
@@ -796,28 +826,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 66
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -1141,11 +1149,11 @@
       "team": "Hou",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 1.7,
+      "points": 2.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 24
         }
       ]
     },
