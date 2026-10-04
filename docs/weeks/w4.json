@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T21:05:24Z",
+  "updated": "2026-10-04T21:10:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 94.22,
+        "score": 94.12,
         "projected": 116.07
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 130.0,
+        "score": 130.48,
         "projected": 119.54
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 68.36,
+        "score": 71.52,
         "projected": 124.48
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 67.22,
+        "score": 68.12,
         "projected": 124.24
       },
       "away": {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "130.00",
+          "value": "130.48",
           "detail": "All played"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "94.22",
+          "value": "94.12",
           "detail": "1 to play"
         }
       ]
@@ -626,6 +626,15 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 14.0,
+      "stats": []
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -754,11 +763,11 @@
       "team": "Sea",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 11.3,
+      "points": 11.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 16
         },
         {
           "stat": "REC YD",
@@ -789,15 +798,6 @@
       "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 11.0,
-      "stats": []
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 11.0,
       "stats": []
     },
@@ -921,25 +921,16 @@
       ]
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.0,
-      "stats": []
-    },
-    {
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 8.7,
+      "points": 9.18,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 65
+          "value": 77
         },
         {
           "stat": "RUSH YD",
@@ -950,6 +941,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.0,
+      "stats": []
     },
     {
       "name": "George Pickens",
@@ -1343,6 +1343,24 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -1450,34 +1468,16 @@
       "stats": []
     },
     {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.76,
+      "points": 0.92,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 14
+          "value": 18
         },
         {
           "stat": "RUSH YD",
