@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T23:15:24Z",
+  "updated": "2026-10-04T23:20:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 117.42,
+        "score": 120.72,
         "projected": 116.07
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 103.88,
+        "score": 110.08,
         "projected": 121.67
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 94.76,
+        "score": 95.76,
         "projected": 112.48
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 141.4,
+        "score": 143.4,
         "projected": 119.54
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 91.52,
+        "score": 100.32,
         "projected": 124.48
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 88.32,
+        "score": 100.42,
         "projected": 124.24
       },
       "away": {
@@ -91,16 +91,16 @@
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "90.60",
-          "detail": "beating SCARPITTI"
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "100.42",
+          "detail": "beating GRAHAM"
         },
         {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "103.88",
+          "value": "110.08",
           "detail": "beating ANTHONY"
         }
       ]
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "141.40",
+          "value": "143.40",
           "detail": "All played"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "117.42",
+          "value": "120.72",
           "detail": "1 to play"
         },
         {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "103.88",
+          "value": "110.08",
           "detail": "1 to play"
         }
       ]
@@ -159,6 +159,32 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 32.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 175
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -293,6 +319,32 @@
       ]
     },
     {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 25.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 79
+        },
+        {
+          "stat": "REC YD",
+          "value": 39
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -319,28 +371,24 @@
       ]
     },
     {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 24.0,
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 23.82,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 218
+        },
+        {
           "stat": "RUSH YD",
-          "value": 153
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "value": 31
         },
         {
           "stat": "TD",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -363,32 +411,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 23.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 62
-        },
-        {
-          "stat": "REC YD",
-          "value": 39
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -652,20 +674,20 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
+      "name": "George Kittle",
+      "position": "TE",
       "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 15.02,
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 15.0,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 153
+          "stat": "REC YD",
+          "value": 70
         },
         {
-          "stat": "RUSH YD",
-          "value": 29
+          "stat": "REC",
+          "value": 4
         },
         {
           "stat": "TD",
@@ -707,6 +729,32 @@
       "manager_display": "GARRETT",
       "points": 14.7,
       "stats": []
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 14.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 52
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "RJ Harvey",
@@ -815,32 +863,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 12.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 50
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1293,11 +1315,11 @@
       ]
     },
     {
-      "name": "Broncos",
+      "name": "Chiefs",
       "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 6.0,
       "stats": []
     },
@@ -1333,6 +1355,15 @@
       "stats": []
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.4,
+      "stats": []
+    },
+    {
       "name": "Davante Adams",
       "position": "WR",
       "team": "LAR",
@@ -1357,15 +1388,6 @@
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 4.9,
-      "stats": []
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.4,
       "stats": []
     },
     {
@@ -1446,11 +1468,11 @@
       "stats": []
     },
     {
-      "name": "Chiefs",
+      "name": "Broncos",
       "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
       "points": 4.0,
       "stats": []
     },
@@ -1489,24 +1511,6 @@
       "manager_display": "SCHILLING",
       "points": 3.1,
       "stats": []
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Travis Kelce",
