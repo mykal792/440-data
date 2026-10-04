@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T20:30:29Z",
+  "updated": "2026-10-04T20:35:23Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -625,6 +625,15 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -718,15 +727,6 @@
       "team": "Jax",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 10.0,
       "stats": []
     },
@@ -1090,6 +1090,20 @@
       "stats": []
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -1157,11 +1171,65 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.9,
+      "points": 1.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 9
+          "value": 10
+        }
+      ]
+    },
+    {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 10
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
         }
       ]
     },
@@ -1180,13 +1248,18 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 5
+        }
+      ]
     },
     {
       "name": "Emanuel Wilson",
@@ -1252,27 +1325,9 @@
       "stats": []
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
@@ -1315,29 +1370,11 @@
       "stats": []
     },
     {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 0.0,
       "stats": []
     },
