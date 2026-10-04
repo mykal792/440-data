@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T14:35:26Z",
+  "updated": "2026-10-04T14:40:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 5.2,
+        "score": 6.1,
         "projected": 115.44
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 0.0,
+        "score": 1.7,
         "projected": 112.33
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 2.7,
+        "score": 3.0,
         "projected": 124.29
       }
     },
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "2.70",
-          "detail": "beating GREG"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "1.70",
+          "detail": "beating HAYDEN"
         },
         {
           "rank": 2,
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "3.00",
+          "detail": "beating GREG"
+        },
+        {
+          "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "7.00",
           "detail": "beating GRAHAM"
-        },
-        {
-          "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "18.60",
-          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -225,16 +225,34 @@
       "stats": []
     },
     {
+      "name": "Josh Downs",
+      "position": "WR",
+      "team": "Ind",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.7,
+      "points": 3.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 20
+          "value": 23
         },
         {
           "stat": "REC YD",
@@ -247,20 +265,20 @@
       ]
     },
     {
-      "name": "Josh Downs",
-      "position": "WR",
+      "name": "Tyler Warren",
+      "position": "TE",
       "team": "Ind",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.1,
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.7,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 11
+          "value": 12
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 1
         }
       ]
     },
@@ -970,15 +988,6 @@
       "name": "Jordan Addison",
       "position": "WR",
       "team": "Min",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "team": "Ind",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
