@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T22:30:26Z",
+  "updated": "2026-10-04T22:35:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 107.42,
+        "score": 107.32,
         "projected": 116.07
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 89.08,
+        "score": 87.08,
         "projected": 121.67
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 79.96,
+        "score": 81.76,
         "projected": 112.48
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 79.24,
+        "score": 86.62,
         "projected": 124.48
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "89.08",
+          "value": "87.08",
           "detail": "beating ANTHONY"
         },
         {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "107.42",
+          "value": "107.32",
           "detail": "1 to play"
         },
         {
@@ -718,6 +718,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 13.02,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 103
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 29
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Michael Wilson",
       "position": "WR",
       "team": "Ari",
@@ -903,15 +925,6 @@
       ]
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -1017,6 +1030,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.0,
+      "stats": []
     },
     {
       "name": "Kenneth Walker III",
@@ -1152,6 +1174,24 @@
       ]
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -1180,24 +1220,6 @@
         {
           "stat": "RUSH YD",
           "value": 61
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1233,34 +1255,16 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.64,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 96
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        }
-      ]
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 5.4,
+      "points": 5.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 35
+          "value": 34
         },
         {
           "stat": "REC YD",
@@ -1386,16 +1390,38 @@
       "stats": []
     },
     {
+      "name": "Jordan Addison",
+      "position": "WR",
+      "team": "Min",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        },
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 3.6,
+      "points": 3.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 26
+          "value": 25
         },
         {
           "stat": "REC YD",
@@ -1406,6 +1432,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.4,
+      "stats": []
     },
     {
       "name": "Josh Downs",
@@ -1433,28 +1468,6 @@
       "manager_display": "SCHILLING",
       "points": 3.1,
       "stats": []
-    },
-    {
-      "name": "Jordan Addison",
-      "position": "WR",
-      "team": "Min",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -1
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "George Kittle",
@@ -1491,15 +1504,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.4,
-      "stats": []
     },
     {
       "name": "Jason Myers",
