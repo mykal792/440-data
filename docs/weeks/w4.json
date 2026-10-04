@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T21:15:24Z",
+  "updated": "2026-10-04T21:20:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 94.12,
+        "score": 94.72,
         "projected": 116.07
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 83.48,
+        "score": 84.68,
         "projected": 121.67
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 83.6,
+        "score": 84.6,
         "projected": 118.14
       }
     }
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "83.48",
-          "detail": "beating ANTHONY"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "84.60",
+          "detail": "beating SCARPITTI"
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "83.60",
-          "detail": "beating SCARPITTI"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "84.68",
+          "detail": "beating ANTHONY"
         }
       ]
     },
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "94.12",
+          "value": "94.72",
           "detail": "1 to play"
         }
       ]
@@ -710,6 +710,15 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -724,6 +733,32 @@
         {
           "stat": "REC YD",
           "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
         },
         {
           "stat": "REC",
@@ -758,46 +793,11 @@
       ]
     },
     {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 11.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 16
-        },
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 11.0,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 11.0,
       "stats": []
     },
@@ -1288,6 +1288,24 @@
       "stats": []
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Josh Downs",
       "position": "WR",
       "team": "Ind",
@@ -1351,24 +1369,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
