@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T18:35:20Z",
+  "updated": "2026-10-04T18:40:27Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 64.4,
+        "score": 65.64,
         "projected": 105.12
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 39.34,
+        "score": 40.44,
         "projected": 112.49
       }
     },
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "64.40",
+          "value": "65.64",
           "detail": "2 to play"
         },
         {
@@ -374,6 +374,28 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 96
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -502,28 +524,6 @@
       "stats": []
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 9.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 65
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -581,6 +581,32 @@
       ]
     },
     {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bills",
       "position": "DEF",
       "team": "Buf",
@@ -608,32 +634,6 @@
         {
           "stat": "REC",
           "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
