@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T15:20:27Z",
+  "updated": "2026-10-04T15:25:22Z",
   "matchups": [
     {
       "home": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 16.1,
+        "score": 23.6,
         "projected": 124.29
       }
     },
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "16.10",
-          "detail": "beating GREG"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "18.60",
+          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "23.60",
+          "detail": "7 to play"
+        },
+        {
+          "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
           "value": "18.60",
           "detail": "8 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "16.10",
-          "detail": "7 to play"
         }
       ]
     }
@@ -163,6 +163,32 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 16.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 41
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -181,32 +207,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -247,7 +247,7 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 5.8,
+      "points": 6.8,
       "stats": []
     },
     {
