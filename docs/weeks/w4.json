@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T22:05:25Z",
+  "updated": "2026-10-04T22:10:24Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 87.28,
+        "score": 87.88,
         "projected": 121.67
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 133.96,
+        "score": 134.64,
         "projected": 119.54
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 79.26,
+        "score": 79.36,
         "projected": 124.48
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "87.28",
+          "value": "87.88",
           "detail": "beating ANTHONY"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "133.96",
+          "value": "134.64",
           "detail": "All played"
         },
         {
@@ -745,6 +745,28 @@
       "stats": []
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.34,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 156
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -789,28 +811,6 @@
         {
           "stat": "INT",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.66,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 139
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1019,6 +1019,28 @@
       ]
     },
     {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Cam Skattebo",
       "position": "RB",
       "team": "NYG",
@@ -1048,28 +1070,6 @@
       "manager_display": "SCARPITTI",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 62
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Ashton Jeanty",
@@ -1238,7 +1238,7 @@
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 5.26,
+      "points": 5.36,
       "stats": [
         {
           "stat": "PASS YD",
@@ -1246,7 +1246,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 18
         }
       ]
     },
