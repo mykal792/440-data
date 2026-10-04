@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T21:30:28Z",
+  "updated": "2026-10-04T21:35:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 95.92,
+        "score": 97.42,
         "projected": 116.07
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 85.98,
+        "score": 86.18,
         "projected": 121.67
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 132.36,
+        "score": 132.96,
         "projected": 119.54
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 74.64,
+        "score": 75.42,
         "projected": 124.48
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 69.22,
+        "score": 75.82,
         "projected": 124.24
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 86.1,
+        "score": 85.1,
         "projected": 118.14
       }
     }
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "85.98",
-          "detail": "beating ANTHONY"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "85.10",
+          "detail": "beating SCARPITTI"
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "86.10",
-          "detail": "beating SCARPITTI"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "86.18",
+          "detail": "beating ANTHONY"
         }
       ]
     },
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "132.36",
+          "value": "132.96",
           "detail": "All played"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "95.92",
+          "value": "97.42",
           "detail": "1 to play"
         }
       ]
@@ -683,6 +683,32 @@
       ]
     },
     {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 13.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Michael Wilson",
       "position": "WR",
       "team": "Ari",
@@ -699,6 +725,15 @@
           "value": 7
         }
       ]
+    },
+    {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.0,
+      "stats": []
     },
     {
       "name": "Brandon Aubrey",
@@ -745,32 +780,6 @@
       ]
     },
     {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 11.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
-        },
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -789,6 +798,28 @@
         {
           "stat": "INT",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 11.66,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 139
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -887,37 +918,6 @@
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.98,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 97
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.7,
       "stats": []
     },
     {
@@ -1037,11 +1037,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 6.7,
+      "points": 6.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 60
+          "value": 62
         },
         {
           "stat": "REC YD",
@@ -1140,6 +1140,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 43
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -1342,6 +1360,24 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 48
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
       "name": "Josh Downs",
       "position": "WR",
       "team": "Ind",
@@ -1387,24 +1423,6 @@
       ]
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -1419,24 +1437,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.34,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 36
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 9
         }
       ]
     },
@@ -1543,15 +1543,6 @@
       ]
     },
     {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.0,
-      "stats": []
-    },
-    {
       "name": "Kenyon Sadiq",
       "position": "TE",
       "team": "NYJ",
@@ -1627,6 +1618,15 @@
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.0,
+      "stats": []
+    },
+    {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
