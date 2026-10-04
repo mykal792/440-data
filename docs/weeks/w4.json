@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T22:45:22Z",
+  "updated": "2026-10-04T22:50:30Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 109.52,
+        "score": 109.82,
         "projected": 116.07
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 96.68,
+        "score": 99.28,
         "projected": 121.67
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 81.76,
+        "score": 84.96,
         "projected": 112.48
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 88.1,
+        "score": 91.6,
         "projected": 118.14
       }
     }
@@ -91,16 +91,16 @@
         },
         {
           "rank": 2,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "88.32",
-          "detail": "beating GRAHAM"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "91.60",
+          "detail": "beating SCARPITTI"
         },
         {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "96.68",
+          "value": "99.28",
           "detail": "beating ANTHONY"
         }
       ]
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "109.52",
+          "value": "109.82",
           "detail": "1 to play"
         },
         {
@@ -346,11 +346,11 @@
       "team": "Sea",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 23.3,
+      "points": 23.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 59
+          "value": 62
         },
         {
           "stat": "REC YD",
@@ -987,6 +987,24 @@
       ]
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 9.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 66
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -1018,11 +1036,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 35
+          "value": 30
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 8
         }
       ]
     },
@@ -1129,6 +1147,28 @@
       ]
     },
     {
+      "name": "Jordan Addison",
+      "position": "WR",
+      "team": "Min",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        },
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -1170,24 +1210,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1253,6 +1275,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.5,
+      "stats": []
     },
     {
       "name": "Christian McCaffrey",
@@ -1390,28 +1421,6 @@
       "stats": []
     },
     {
-      "name": "Jordan Addison",
-      "position": "WR",
-      "team": "Min",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -1
-        },
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
@@ -1504,15 +1513,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.0,
-      "stats": []
     },
     {
       "name": "Parker Washington",
