@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T21:40:23Z",
+  "updated": "2026-10-04T21:45:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 97.42,
+        "score": 97.32,
         "projected": 116.07
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 75.82,
+        "score": 77.82,
         "projected": 124.24
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 85.1,
+        "score": 86.1,
         "projected": 118.14
       }
     }
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "85.10",
-          "detail": "beating SCARPITTI"
-        },
-        {
-          "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
           "value": "85.28",
           "detail": "beating ANTHONY"
+        },
+        {
+          "rank": 3,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "86.10",
+          "detail": "beating SCARPITTI"
         }
       ]
     },
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "97.42",
+          "value": "97.32",
           "detail": "1 to play"
         }
       ]
@@ -688,11 +688,11 @@
       "team": "Sea",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 13.3,
+      "points": 13.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 37
+          "value": 36
         },
         {
           "stat": "REC YD",
@@ -736,21 +736,21 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 13.0,
+      "stats": []
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 12.9,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 12.0,
       "stats": []
     },
     {
@@ -979,6 +979,24 @@
       "stats": []
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 58
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -1162,24 +1180,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 43
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
