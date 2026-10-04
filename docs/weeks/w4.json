@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T19:30:30Z",
+  "updated": "2026-10-04T19:35:25Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 55.64,
+        "score": 58.54,
         "projected": 121.73
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 98.2,
+        "score": 99.2,
         "projected": 119.89
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 54.2,
+        "score": 54.0,
         "projected": 124.62
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 41.62,
+        "score": 42.62,
         "projected": 124.24
       },
       "away": {
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "41.62",
+          "value": "42.62",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "55.64",
+          "value": "58.54",
           "detail": "beating ANTHONY"
         },
         {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "98.20",
+          "value": "99.20",
           "detail": "2 to play"
         },
         {
@@ -470,6 +470,28 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.82,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 188
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -488,6 +510,58 @@
         {
           "stat": "REC",
           "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 13.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 56
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 13.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 53
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
@@ -532,54 +606,6 @@
         {
           "stat": "PASS YD",
           "value": 176
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.82,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 163
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 2
         },
         {
           "stat": "TD",
@@ -666,32 +692,6 @@
       "manager_display": "GANGUS",
       "points": 11.0,
       "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 41
-        },
-        {
-          "stat": "REC YD",
-          "value": -3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Harold Fannin Jr.",
@@ -889,16 +889,25 @@
       ]
     },
     {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Jeremiyah Love",
       "position": "RB",
       "team": "Ari",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 6.2,
+      "points": 6.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 65
+          "value": 63
         },
         {
           "stat": "REC YD",
@@ -909,15 +918,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.0,
-      "stats": []
     },
     {
       "name": "Texans",
