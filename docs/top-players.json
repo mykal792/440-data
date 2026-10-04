@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T20:40:23Z",
+  "updated": "2026-10-04T20:45:28Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -616,6 +616,15 @@
       ]
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -623,6 +632,32 @@
       "manager_display": "COYNE",
       "points": 11.0,
       "stats": []
+    },
+    {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 17
+        },
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Harold Fannin Jr.",
@@ -749,15 +784,6 @@
       "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 9.0,
       "stats": []
     },
@@ -1090,6 +1116,28 @@
       "stats": []
     },
     {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1166,24 +1214,6 @@
       ]
     },
     {
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "Den",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Kenneth Walker III",
       "position": "RB",
       "team": "KC",
@@ -1214,6 +1244,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "George Kittle",
@@ -1284,6 +1323,20 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
@@ -1296,29 +1349,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
     },
     {
       "name": "Kenyon Sadiq",
@@ -1414,15 +1444,6 @@
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,

@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T20:40:23Z",
+  "updated": "2026-10-04T20:45:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 82.42,
+        "score": 92.92,
         "projected": 116.07
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 60.28,
+        "score": 61.78,
         "projected": 100.65
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 121.5,
+        "score": 121.66,
         "projected": 119.54
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 80.6,
+        "score": 83.6,
         "projected": 118.14
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "80.60",
+          "value": "83.60",
           "detail": "beating SCARPITTI"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "121.50",
+          "value": "121.66",
           "detail": "All played"
         },
         {
@@ -129,8 +129,8 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "82.42",
-          "detail": "2 to play"
+          "value": "92.92",
+          "detail": "1 to play"
         }
       ]
     }
@@ -749,6 +749,15 @@
       ]
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -756,6 +765,32 @@
       "manager_display": "COYNE",
       "points": 11.0,
       "stats": []
+    },
+    {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 17
+        },
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Harold Fannin Jr.",
@@ -882,15 +917,6 @@
       "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 9.0,
       "stats": []
     },
@@ -1223,6 +1249,28 @@
       "stats": []
     },
     {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1299,24 +1347,6 @@
       ]
     },
     {
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "Den",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Kenneth Walker III",
       "position": "RB",
       "team": "KC",
@@ -1347,6 +1377,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "George Kittle",
@@ -1417,6 +1456,20 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
@@ -1429,29 +1482,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
     },
     {
       "name": "Kenyon Sadiq",
@@ -1547,15 +1577,6 @@
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
