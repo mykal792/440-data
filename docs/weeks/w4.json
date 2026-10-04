@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T22:55:26Z",
+  "updated": "2026-10-04T23:00:35Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 109.82,
+        "score": 111.32,
         "projected": 116.07
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 139.08,
+        "score": 139.2,
         "projected": 119.54
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 87.26,
+        "score": 88.54,
         "projected": 124.48
       }
     },
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "139.08",
+          "value": "139.20",
           "detail": "All played"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "109.82",
+          "value": "111.32",
           "detail": "1 to play"
         },
         {
@@ -495,11 +495,11 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 18.78,
+      "points": 18.9,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 167
+          "value": 170
         },
         {
           "stat": "RUSH YD",
@@ -683,6 +683,28 @@
       "stats": []
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 14.34,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 136
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 29
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -701,28 +723,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 13.66,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 119
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1036,6 +1036,28 @@
       "stats": []
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 35
+        },
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -1070,28 +1092,6 @@
       "manager_display": "GREG",
       "points": 8.4,
       "stats": []
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 8.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        },
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Broncos",
@@ -1176,6 +1176,28 @@
       "manager_display": "SCARPITTI",
       "points": 7.0,
       "stats": []
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 49
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Trey McBride",
@@ -1275,28 +1297,6 @@
       "manager_display": "GRAHAM",
       "points": 5.5,
       "stats": []
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 34
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Davante Adams",
