@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T21:45:26Z",
+  "updated": "2026-10-04T21:50:27Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -436,6 +436,15 @@
       ]
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 15.0,
+      "stats": []
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -599,15 +608,6 @@
       "team": "Min",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 13.0,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 13.0,
       "stats": []
     },
@@ -846,24 +846,6 @@
       "stats": []
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 58
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -882,6 +864,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -1123,6 +1123,24 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 76
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -1173,6 +1191,28 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 4.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bills",
       "position": "DEF",
       "team": "Buf",
@@ -1209,38 +1249,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.12,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 48
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
         }
       ]
     },
