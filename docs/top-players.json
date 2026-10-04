@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T19:55:56Z",
+  "updated": "2026-10-04T20:00:40Z",
   "players": [
     {
       "name": "Nico Collins",
@@ -104,6 +104,28 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 23.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -6
+        },
+        {
+          "stat": "REC YD",
+          "value": 154
+        },
+        {
+          "stat": "REC",
+          "value": 14
+        }
+      ]
+    },
+    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -144,24 +166,32 @@
       ]
     },
     {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 22.2,
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 22.96,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 234
+        },
+        {
           "stat": "RUSH YD",
-          "value": -6
+          "value": 56
         },
         {
-          "stat": "REC YD",
-          "value": 148
+          "stat": "TD",
+          "value": 2
         },
         {
-          "stat": "REC",
-          "value": 12
+          "stat": "INT",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -214,36 +244,6 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 22.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 215
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 56
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -283,32 +283,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 18.28,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 197
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -358,6 +332,32 @@
       "stats": []
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 17.08,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 197
+        },
+        {
+          "stat": "RUSH YD",
+          "value": -8
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
@@ -375,6 +375,28 @@
         },
         {
           "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 15.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 220
+        },
+        {
+          "stat": "RUSH YD",
           "value": 2
         },
         {
@@ -417,28 +439,6 @@
       "manager_display": "GARRETT",
       "points": 14.7,
       "stats": []
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 14.24,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 201
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Jaylen Warren",
@@ -551,11 +551,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 11.14,
+      "points": 11.66,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 261
+          "value": 274
         },
         {
           "stat": "RUSH YD",
@@ -564,26 +564,13 @@
       ]
     },
     {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 75
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 11.0,
+      "stats": []
     },
     {
       "name": "Harold Fannin Jr.",
@@ -634,13 +621,26 @@
       ]
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 10.0,
-      "stats": []
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 73
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Luther Burden III",
@@ -665,21 +665,12 @@
       ]
     },
     {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 9.0,
-      "stats": []
-    },
-    {
       "name": "Michael Wilson",
       "position": "WR",
       "team": "Ari",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 8.7,
+      "points": 9.2,
       "stats": [
         {
           "stat": "REC YD",
@@ -687,9 +678,18 @@
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 5
         }
       ]
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 9.0,
+      "stats": []
     },
     {
       "name": "Tyler Loop",
@@ -719,6 +719,28 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 58
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -777,28 +799,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Cam Skattebo",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 52
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
