@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T23:10:24Z",
+  "updated": "2026-10-04T23:15:24Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -178,6 +178,32 @@
         {
           "stat": "REC",
           "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 24.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 153
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
         },
         {
           "stat": "TD",
@@ -405,28 +431,6 @@
       ]
     },
     {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 17.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 151
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -572,6 +576,28 @@
       "stats": []
     },
     {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 14.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 68
+        },
+        {
+          "stat": "REC",
+          "value": 10
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -592,15 +618,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 14.0,
-      "stats": []
     },
     {
       "name": "Chase Brown",
@@ -704,26 +721,39 @@
       "stats": []
     },
     {
-      "name": "RJ Harvey",
+      "name": "Omarion Hampton",
       "position": "RB",
-      "team": "Den",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 12.7,
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 16
+          "value": 45
         },
         {
           "stat": "REC YD",
-          "value": 61
+          "value": 8
         },
         {
           "stat": "REC",
-          "value": 10
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.0,
+      "stats": []
     },
     {
       "name": "Tony Pollard",
@@ -1126,28 +1156,6 @@
         {
           "stat": "RUSH YD",
           "value": 61
-        }
-      ]
-    },
-    {
-      "name": "Omarion Hampton",
-      "position": "RB",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 6.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
