@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T19:40:24Z",
+  "updated": "2026-10-04T19:45:25Z",
   "players": [
     {
       "name": "Javonte Williams",
@@ -9,11 +9,11 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 27.7,
+      "points": 27.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 60
+          "value": 62
         },
         {
           "stat": "REC YD",
@@ -149,7 +149,7 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 20.54,
+      "points": 20.64,
       "stats": [
         {
           "stat": "PASS YD",
@@ -157,7 +157,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 55
+          "value": 56
         },
         {
           "stat": "TD",
@@ -267,7 +267,7 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 15.2,
+      "points": 15.9,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -275,11 +275,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 49
+          "value": 51
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 8
         }
       ]
     },
@@ -291,6 +291,32 @@
       "manager_display": "GARRETT",
       "points": 14.7,
       "stats": []
+    },
+    {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 14.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 58
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Trevor Lawrence",
@@ -412,11 +438,11 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 13.1,
+      "points": 13.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 55
+          "value": 58
         },
         {
           "stat": "REC YD",
@@ -451,32 +477,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 13.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "REC YD",
-          "value": 49
-        },
-        {
-          "stat": "REC",
-          "value": 4
         },
         {
           "stat": "TD",
@@ -547,11 +547,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 11.06,
+      "points": 11.14,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 259
+          "value": 261
         },
         {
           "stat": "RUSH YD",
@@ -728,6 +728,15 @@
       "stats": []
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -760,6 +769,20 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 61
         }
       ]
     },
@@ -804,15 +827,6 @@
       "stats": []
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -836,11 +850,11 @@
       "team": "NYG",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.1,
+      "points": 5.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 38
+          "value": 42
         },
         {
           "stat": "REC YD",
@@ -867,20 +881,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
         }
       ]
     },
@@ -939,6 +939,20 @@
       ]
     },
     {
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 40
+        }
+      ]
+    },
+    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -953,11 +967,11 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 3.38,
+      "points": 3.82,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 177
+          "value": 188
         },
         {
           "stat": "RUSH YD",
@@ -995,20 +1009,6 @@
       "manager_display": "SCHILLING",
       "points": 3.1,
       "stats": []
-    },
-    {
-      "name": "TreVeyon Henderson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 28
-        }
-      ]
     },
     {
       "name": "David Montgomery",
