@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T21:10:27Z",
+  "updated": "2026-10-04T21:15:24Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -1182,25 +1182,69 @@
       "stats": []
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        }
-      ]
-    },
-    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
       "manager": "anthony",
       "manager_display": "ANTHONY",
+      "points": 3.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
       "points": 2.0,
       "stats": [
         {
@@ -1272,24 +1316,6 @@
       ]
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Dalton Kincaid",
       "position": "TE",
       "team": "Buf",
@@ -1304,6 +1330,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
         }
       ]
     },
@@ -1371,20 +1411,6 @@
       ]
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Kenyon Sadiq",
       "position": "TE",
       "team": "NYJ",
@@ -1424,15 +1450,6 @@
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
