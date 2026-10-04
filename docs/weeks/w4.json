@@ -1,13 +1,13 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T14:05:25Z",
+  "updated": "2026-10-04T14:10:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 3.8,
+        "score": 5.2,
         "projected": 115.44
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 1.0,
+        "score": 2.0,
         "projected": 124.29
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "1.00",
+          "value": "2.00",
           "detail": "beating GREG"
         },
         {
@@ -225,35 +225,35 @@
       "stats": []
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Josh Downs",
       "position": "WR",
       "team": "Ind",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.7,
+      "points": 2.1,
       "stats": [
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
         {
           "stat": "REC YD",
           "value": 2
