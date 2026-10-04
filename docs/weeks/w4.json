@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-04T21:35:23Z",
+  "updated": "2026-10-04T21:40:23Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 63.88,
+        "score": 65.78,
         "projected": 100.65
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 86.18,
+        "score": 85.28,
         "projected": 121.67
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 77.66,
+        "score": 80.06,
         "projected": 112.48
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 75.42,
+        "score": 75.52,
         "projected": 124.48
       }
     },
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "86.18",
+          "value": "85.28",
           "detail": "beating ANTHONY"
         }
       ]
@@ -824,15 +824,6 @@
       ]
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -979,6 +970,15 @@
       "stats": []
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -1068,6 +1068,28 @@
         {
           "stat": "REC",
           "value": 7
+        }
+      ]
+    },
+    {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -1162,6 +1184,24 @@
       ]
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Davante Adams",
       "position": "WR",
       "team": "LAR",
@@ -1196,28 +1236,6 @@
       "manager_display": "HAYDEN",
       "points": 4.9,
       "stats": []
-    },
-    {
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "Den",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        },
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
     },
     {
       "name": "David Montgomery",
@@ -1328,24 +1346,6 @@
       ]
     },
     {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1441,16 +1441,25 @@
       ]
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.4,
+      "stats": []
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.1,
+      "points": 2.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 12
+          "value": 13
         },
         {
           "stat": "REC YD",
@@ -1654,15 +1663,6 @@
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
