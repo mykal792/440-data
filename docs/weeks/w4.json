@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T00:50:28Z",
+  "updated": "2026-10-05T00:55:24Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 107.88,
+        "score": 110.48,
         "projected": 115.13
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 93.52,
+        "score": 102.22,
         "projected": 118.51
       }
     }
@@ -91,10 +91,10 @@
         },
         {
           "rank": 2,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "100.42",
-          "detail": "beating GRAHAM"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "102.22",
+          "detail": "beating SCARPITTI"
         },
         {
           "rank": 3,
@@ -1127,6 +1127,32 @@
       ]
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 9.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ravens",
       "position": "DEF",
       "team": "Bal",
@@ -1190,6 +1216,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -1389,24 +1433,6 @@
       "manager_display": "HAYDEN",
       "points": 4.9,
       "stats": []
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 31
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "David Montgomery",
@@ -1679,20 +1705,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
         }
       ]
     },
