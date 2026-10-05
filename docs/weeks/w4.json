@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T00:55:24Z",
+  "updated": "2026-10-05T01:00:37Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 79.1,
+        "score": 79.5,
         "projected": 129.2
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 102.22,
+        "score": 102.58,
         "projected": 118.51
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "79.10",
+          "value": "79.50",
           "detail": "beating SCOTTY"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "102.22",
+          "value": "102.58",
           "detail": "beating SCARPITTI"
         },
         {
@@ -1598,11 +1598,11 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 1.9,
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 14
         },
         {
           "stat": "REC YD",
@@ -1611,6 +1611,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.68,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 42
         }
       ]
     },
@@ -1655,20 +1669,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 33
         }
       ]
     },
