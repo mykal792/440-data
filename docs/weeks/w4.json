@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T00:45:24Z",
+  "updated": "2026-10-05T00:50:28Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 106.48,
+        "score": 107.88,
         "projected": 115.13
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 92.62,
+        "score": 93.52,
         "projected": 118.51
       }
     }
@@ -1391,6 +1391,24 @@
       "stats": []
     },
     {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
@@ -1496,24 +1514,6 @@
         {
           "stat": "REC YD",
           "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 22
         },
         {
           "stat": "REC",
@@ -1683,6 +1683,20 @@
       ]
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Kenyon Sadiq",
       "position": "TE",
       "team": "NYJ",
@@ -1735,20 +1749,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": -0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -3
-        }
-      ]
     }
   ]
 }
