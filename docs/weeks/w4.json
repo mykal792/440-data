@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T03:20:22Z",
+  "updated": "2026-10-05T03:25:22Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 146.68,
+        "score": 147.68,
         "projected": 115.13
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 135.14,
+        "score": 142.78,
         "projected": 118.51
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "135.14",
+          "value": "142.78",
           "detail": "beating SCARPITTI"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "146.68",
+          "value": "147.68",
           "detail": "All played"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "135.14",
+          "value": "142.78",
           "detail": "All played"
         }
       ]
@@ -419,6 +419,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 23.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 397
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -692,20 +710,6 @@
         {
           "stat": "INT",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 16.24,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 356
         }
       ]
     },
@@ -1105,6 +1109,24 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 72
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -1209,24 +1231,6 @@
       "manager_display": "ANTHONY",
       "points": 10.0,
       "stats": []
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 9.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 67
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
     },
     {
       "name": "Luther Burden III",
