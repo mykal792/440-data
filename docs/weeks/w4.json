@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T03:00:33Z",
+  "updated": "2026-10-05T03:05:25Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 89.7,
+        "score": 91.0,
         "projected": 129.2
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 128.64,
+        "score": 129.96,
         "projected": 118.51
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "89.70",
+          "value": "91.00",
           "detail": "beating SCOTTY"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "128.64",
+          "value": "129.96",
           "detail": "beating SCARPITTI"
         },
         {
@@ -889,6 +889,32 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 13.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 46
+        },
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -973,32 +999,6 @@
       "stats": []
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 12.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
@@ -1069,6 +1069,20 @@
         {
           "stat": "INT",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 284
         }
       ]
     },
@@ -1175,20 +1189,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 251
         }
       ]
     },
