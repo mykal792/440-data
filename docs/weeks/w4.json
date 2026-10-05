@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T03:35:25Z",
+  "updated": "2026-10-05T03:40:28Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 150.88,
+        "score": 151.68,
         "projected": 115.13
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 142.88,
+        "score": 145.48,
         "projected": 118.51
       }
     }
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "142.88",
-          "detail": "beating SCARPITTI"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "143.30",
+          "detail": "beating COYNE"
         }
       ]
     },
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "150.88",
+          "value": "151.68",
           "detail": "All played"
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "143.30",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "145.48",
           "detail": "All played"
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "142.88",
+          "manager": "GREG",
+          "face": "greg",
+          "value": "143.30",
           "detail": "All played"
         }
       ]
@@ -367,6 +367,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 26.48,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 412
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Emanuel Wilson",
       "position": "RB",
       "team": "Sea",
@@ -411,24 +429,6 @@
         {
           "stat": "REC",
           "value": 9
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 23.88,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 397
         },
         {
           "stat": "TD",
@@ -1114,15 +1114,15 @@
       "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 10.7,
+      "points": 11.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 72
+          "value": 75
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 8
         }
       ]
     },
