@@ -100,13 +100,12 @@ def norm_team(abbr):
 
 
 def nfl_team_of(player):
-    """The player's NFL team abbreviation, wherever parse_rosters put it.
+    """The player's NFL team abbreviation.
 
-    Yahoo calls it editorial_team_abbr. If parse_rosters doesn't carry it
-    through yet, add it there (see the note in the reply); until then every
-    player falls to rule 3 and behaviour is unchanged.
+    yahoo_common.parse_rosters stores Yahoo's editorial_team_abbr as "team".
+    The other keys are only a guard against that being renamed later.
     """
-    for key in ("nfl_team", "editorial_team_abbr", "team_abbr", "pro_team"):
+    for key in ("team", "nfl_team", "editorial_team_abbr"):
         if player.get(key):
             return player[key]
     return None
