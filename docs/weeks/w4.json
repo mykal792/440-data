@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T02:20:27Z",
+  "updated": "2026-10-05T02:25:20Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 89.5,
+        "score": 89.3,
         "projected": 129.2
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 109.04,
+        "score": 111.32,
         "projected": 118.51
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "89.50",
+          "value": "89.30",
           "detail": "beating SCOTTY"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "109.04",
+          "value": "111.32",
           "detail": "beating SCARPITTI"
         },
         {
@@ -947,32 +947,6 @@
       "stats": []
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 12.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 44
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Omarion Hampton",
       "position": "RB",
       "team": "LAC",
@@ -987,6 +961,32 @@
         {
           "stat": "REC YD",
           "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 42
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
         },
         {
           "stat": "REC",
@@ -1237,6 +1237,20 @@
       "stats": []
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 218
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -1371,20 +1385,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 6.44,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 161
         }
       ]
     },
