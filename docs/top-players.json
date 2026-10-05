@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T00:40:23Z",
+  "updated": "2026-10-05T00:45:24Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -1353,6 +1353,24 @@
       "stats": []
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -1416,16 +1434,20 @@
       ]
     },
     {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
       "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.3,
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.9,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
           "stat": "REC YD",
-          "value": 18
+          "value": 4
         },
         {
           "stat": "REC",
@@ -1478,6 +1500,20 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 33
+        }
+      ]
+    },
+    {
       "name": "Dalton Kincaid",
       "position": "TE",
       "team": "Buf",
@@ -1510,34 +1546,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 24
         }
       ]
     },
