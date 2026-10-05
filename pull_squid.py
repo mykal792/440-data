@@ -29,16 +29,30 @@ REMAINING
 
     Yahoo has a team_remaining_games field on live scoreboards, but it is absent
     outside game windows, so it could not be verified before the season (checked
-    2026-09-01, preseason). This script prefers it when present and otherwise
-    counts starters whose game has not produced a score yet. Both paths are
-    below; the fallback degrades in the right direction, converging on zero as
-    the week completes.
+    2026-09-01, preseason). This script prefers it when present.
+
+    Otherwise it counts starters whose NFL GAME IS NOT OVER, using the NFL
+    scoreboard's game state for each player's team. Points are not the test:
+    a starter who finished on 0.00 has played. (The old fallback counted
+    "starters with no points yet", which kept every zero-point performance
+    on the board as still to come - week 4, Sadiq.)
+
+    Per player, in order:
+      1. his NFL team's game is final, or his team is on bye   -> played
+      2. his team's game is scheduled or in progress           -> remaining
+      3. game state unknown (scoreboard unreachable, or a team
+         abbreviation we can't match)                          -> old rule:
+         remaining only if he has no points yet
+    Rule 3 keeps one bad lookup from zeroing a team's remaining count, which
+    the board would read as near-certainty. Every run prints how many starters
+    each rule decided, so a broken lookup is visible in the log.
 """
 
 import argparse
 import json
 import os
 import sys
+import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -53,6 +67,22 @@ except Exception:                                  # pragma: no cover
 
 STARTERS = yc.STARTING_SLOTS
 
+# ESPN's public NFL scoreboard (unofficial, no auth). Used only for game state.
+ESPN_SCOREBOARD = ("https://site.api.espn.com/apis/site/v2/sports/football/nfl/"
+                   "scoreboard?seasontype=2&week=%d")
+
+# All 32 teams as ESPN spells them. A player whose team is in this set but has
+# no game this week is on bye. A team NOT in this set is a spelling we failed
+# to match - that must never be mistaken for a bye.
+NFL_TEAMS = {
+    "ARI", "ATL", "BAL", "BUF", "CAR", "CHI", "CIN", "CLE", "DAL", "DEN", "DET",
+    "GB", "HOU", "IND", "JAX", "KC", "LAC", "LAR", "LV", "MIA", "MIN", "NE",
+    "NO", "NYG", "NYJ", "PHI", "PIT", "SEA", "SF", "TB", "TEN", "WSH",
+}
+# Yahoo editorial_team_abbr -> ESPN (after upper-casing). Yahoo writes "Was",
+# "Jax", "KC" ...; only the ones that differ once upper-cased need an entry.
+TEAM_ALIAS = {"WAS": "WSH", "JAC": "JAX", "LA": "LAR", "OAK": "LV", "SD": "LAC"}
+
 
 def display_stamp():
     """'SUN 4:12 PM' - what the board shows as UPD ..."""
@@ -60,6 +90,58 @@ def display_stamp():
     return "%s %d:%02d %s" % (now.strftime("%a").upper(),
                               int(now.strftime("%I")), now.minute,
                               now.strftime("%p"))
+
+
+def norm_team(abbr):
+    if not abbr:
+        return None
+    a = str(abbr).strip().upper()
+    return TEAM_ALIAS.get(a, a)
+
+
+def nfl_team_of(player):
+    """The player's NFL team abbreviation, wherever parse_rosters put it.
+
+    Yahoo calls it editorial_team_abbr. If parse_rosters doesn't carry it
+    through yet, add it there (see the note in the reply); until then every
+    player falls to rule 3 and behaviour is unchanged.
+    """
+    for key in ("nfl_team", "editorial_team_abbr", "team_abbr", "pro_team"):
+        if player.get(key):
+            return player[key]
+    return None
+
+
+def fetch_game_states(week, fixtures_dir=None):
+    """-> {ESPN team abbr: 'pre' | 'in' | 'post'} for this NFL week, or None.
+
+    None means "couldn't tell" and sends every player to rule 3; it is never
+    an empty dict, which would read as a league-wide bye.
+    """
+    try:
+        if fixtures_dir:
+            path = Path(fixtures_dir) / "espn_scoreboard.json"
+            if not path.exists():
+                return None
+            data = json.loads(path.read_text())
+        else:
+            req = urllib.request.Request(ESPN_SCOREBOARD % week,
+                                         headers={"User-Agent": "pull_squid/1.0"})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+        states = {}
+        for ev in data.get("events", []):
+            comp = (ev.get("competitions") or [{}])[0]
+            state = (((comp.get("status") or ev.get("status") or {})
+                      .get("type") or {}).get("state"))
+            for c in comp.get("competitors", []):
+                abbr = norm_team((c.get("team") or {}).get("abbreviation"))
+                if abbr and state:
+                    states[abbr] = state
+        return states or None
+    except Exception as exc:                                  # network, JSON
+        print("  ! NFL scoreboard unavailable (%s) - zero-point rule for all" % exc)
+        return None
 
 
 def remaining_from_yahoo(sb_payload):
@@ -92,24 +174,40 @@ def remaining_from_yahoo(sb_payload):
     return out
 
 
-def remaining_from_rosters(rosters):
-    """Fallback: starters with no score yet.
+def remaining_from_rosters(rosters, game_states):
+    """Fallback: starters whose NFL game is not over yet (rules 1-3 above).
 
-    Before kickoff every starter counts as remaining, which is correct. As
-    players score, the count falls. A genuine zero-point performance keeps a
-    player counted until the week goes final, which slightly overstates what is
-    left - safer than understating it, since the board treats a low `remaining`
-    as near-certainty.
+    -> ({manager: count}, {"final_or_bye": n, "to_play": n, "zero_rule": n},
+        [unmatched team abbreviations])
     """
     out = {}
+    tally = {"final_or_bye": 0, "to_play": 0, "zero_rule": 0}
+    unmatched = set()
     for manager, team in rosters.items():
-        out[manager] = sum(
-            1 for p in team["players"]
-            if p["slot"] in STARTERS and p["points"] == 0.0)
-    return out
+        n = 0
+        for p in team["players"]:
+            if p["slot"] not in STARTERS:
+                continue
+            raw = nfl_team_of(p)
+            abbr = norm_team(raw)
+            if game_states is not None and abbr in NFL_TEAMS:
+                state = game_states.get(abbr)
+                if state in (None, "post"):         # no game = bye, or final
+                    tally["final_or_bye"] += 1
+                    continue
+                tally["to_play"] += 1               # 'pre' or 'in'
+                n += 1
+                continue
+            if raw and abbr not in NFL_TEAMS:
+                unmatched.add(str(raw))
+            tally["zero_rule"] += 1                 # rule 3: old behaviour
+            if p["points"] == 0.0:
+                n += 1
+        out[manager] = n
+    return out, tally, sorted(unmatched)
 
 
-def build(week, status, matchups, rosters, sb_payload):
+def build(week, status, matchups, rosters, sb_payload, game_states=None):
     scores = {k: 0.0 for k in yc.MANAGER_KEYS}
     for m in matchups:
         for manager, score in (m["home"], m["away"]):
@@ -119,8 +217,11 @@ def build(week, status, matchups, rosters, sb_payload):
     remaining = remaining_from_yahoo(sb_payload) if sb_payload else {}
     source = "team_remaining_games"
     if len(remaining) < len(yc.MANAGER_KEYS):
-        remaining = remaining_from_rosters(rosters)
-        source = "unscored starters (fallback)"
+        remaining, tally, unmatched = remaining_from_rosters(rosters, game_states)
+        source = ("NFL game state - %d final/bye, %d to play, %d by zero-point rule"
+                  % (tally["final_or_bye"], tally["to_play"], tally["zero_rule"]))
+        if unmatched:
+            source += " | unmatched teams: %s (add to TEAM_ALIAS)" % ", ".join(unmatched)
 
     projected = yc.parse_projected(sb_payload) if sb_payload else {}
     proj_source = "team_projected_points" if projected else "absent - board will ESTIMATE"
@@ -175,7 +276,12 @@ def main():
         sb_week, status, matchups = (args.week or 1), "pregame", []
     week = args.week or sb_week or 1
 
-    payload, source, proj_source = build(week, status, matchups, rosters, sb_raw)
+    # The Squid Game week is the Yahoo fantasy week, which is the NFL
+    # regular-season week for a league that starts in week 1.
+    game_states = fetch_game_states(week, args.fixtures)
+
+    payload, source, proj_source = build(week, status, matchups, rosters, sb_raw,
+                                         game_states)
 
     print("week %d | %s | remaining via %s | projected via %s"
           % (week, status, source, proj_source))
