@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T01:25:23Z",
+  "updated": "2026-10-05T01:30:29Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 125.28,
+        "score": 127.18,
         "projected": 115.13
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 80.8,
+        "score": 82.5,
         "projected": 129.2
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 119.88,
+        "score": 121.18,
         "projected": 121.84
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 102.96,
+        "score": 104.72,
         "projected": 118.51
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "80.80",
+          "value": "82.50",
           "detail": "beating SCOTTY"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "102.96",
+          "value": "104.72",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "119.88",
+          "value": "121.18",
           "detail": "beating ANTHONY"
         }
       ]
@@ -122,15 +122,15 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "125.28",
+          "value": "127.18",
           "detail": "All played"
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "120.92",
-          "detail": "1 to play"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "121.18",
+          "detail": "All played"
         }
       ]
     }
@@ -1412,6 +1412,46 @@
       "stats": []
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Davante Adams",
       "position": "WR",
       "team": "LAR",
@@ -1534,42 +1574,16 @@
       "stats": []
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
+      "name": "Jared Goff",
+      "position": "QB",
       "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.6,
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.72,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 27
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 2
+          "stat": "PASS YD",
+          "value": 93
         }
       ]
     },
@@ -1619,16 +1633,20 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
+      "name": "Jameson Williams",
+      "position": "WR",
       "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.96,
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.4,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 49
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1687,24 +1705,6 @@
         {
           "stat": "REC YD",
           "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 6
         },
         {
           "stat": "REC",
