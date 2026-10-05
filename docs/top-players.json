@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T00:30:30Z",
+  "updated": "2026-10-05T00:35:26Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -1496,6 +1496,24 @@
       ]
     },
     {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -1551,24 +1569,6 @@
       "stats": []
     },
     {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -1594,6 +1594,20 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": -0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -4
+        }
+      ]
     }
   ]
 }
