@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T01:45:34Z",
+  "updated": "2026-10-05T01:50:24Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 122.78,
+        "score": 128.18,
         "projected": 121.84
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 105.56,
+        "score": 107.52,
         "projected": 118.51
       }
     }
@@ -93,14 +93,14 @@
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "105.56",
+          "value": "107.52",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "122.78",
+          "value": "128.18",
           "detail": "beating ANTHONY"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "122.78",
+          "value": "128.18",
           "detail": "All played"
         }
       ]
@@ -1179,6 +1179,24 @@
       ]
     },
     {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 74
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -1375,6 +1393,20 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 153
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -1551,20 +1583,6 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 4.16,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 104
-        }
-      ]
-    },
-    {
       "name": "Bills",
       "position": "DEF",
       "team": "Buf",
@@ -1572,24 +1590,6 @@
       "manager_display": "SCHILLING",
       "points": 4.0,
       "stats": []
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Broncos",
