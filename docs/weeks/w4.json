@@ -1,7 +1,7 @@
 {
   "week": 4,
   "status": "live",
-  "updated": "2026-10-05T00:25:21Z",
+  "updated": "2026-10-05T00:30:30Z",
   "matchups": [
     {
       "home": {
@@ -13,16 +13,16 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 99.98,
-        "projected": 115.02
+        "score": 102.28,
+        "projected": 115.13
       }
     },
     {
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 77.9,
-        "projected": 129.05
+        "score": 78.2,
+        "projected": 129.2
       },
       "away": {
         "name": "SCOTTY",
@@ -35,8 +35,8 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 118.78,
-        "projected": 121.78
+        "score": 119.88,
+        "projected": 121.84
       },
       "away": {
         "name": "ANTHONY",
@@ -69,8 +69,8 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 91.6,
-        "projected": 118.36
+        "score": 92.56,
+        "projected": 118.51
       }
     }
   ],
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "77.90",
+          "value": "78.20",
           "detail": "beating SCOTTY"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "118.78",
+          "value": "119.88",
           "detail": "beating ANTHONY"
         }
       ]
@@ -129,8 +129,8 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "118.78",
-          "detail": "1 to play"
+          "value": "119.88",
+          "detail": "All played"
         }
       ]
     }
@@ -1531,6 +1531,24 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -1593,16 +1611,48 @@
       ]
     },
     {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.7,
+      "points": 1.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 10
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 24
         }
       ]
     },
@@ -1634,38 +1684,11 @@
       "stats": []
     },
     {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
