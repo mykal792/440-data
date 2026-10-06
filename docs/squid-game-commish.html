@@ -111,16 +111,6 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
 }
 @container (max-width: 430px) {
   .field-grid { grid-template-columns: repeat(2, minmax(0, calc(140 * var(--u)))); gap: calc(18 * var(--u)) calc(20 * var(--u)); }
-  .brow { gap: calc(9 * var(--u)); }
-  .brow .hd { width: calc(32 * var(--u)); }
-  .brow .nm { font-size: calc(14 * var(--u)); }
-  .brow .odds { width: calc(38 * var(--u)); font-size: calc(11.5 * var(--u)); }
-  .brow .proj, .brow .pts { width: calc(48 * var(--u)); font-size: calc(13.5 * var(--u)); }
-  .brow .nm { font-size: calc(13.5 * var(--u)); }
-  .bb-list .colhead { gap: calc(9 * var(--u)); }
-  .bb-list .colhead .odds { width: calc(40 * var(--u)); }
-  .bb-list .colhead .proj, .bb-list .colhead .p { width: calc(50 * var(--u)); }
-  .bb-list .colhead .sortbtn { font-size: calc(9 * var(--u)); letter-spacing: calc(.5 * var(--u)); }
   .rrow .nm { font-size: calc(15 * var(--u)); }
   .rrow .pts { width: calc(58 * var(--u)); font-size: calc(15 * var(--u)); }
   .slot .who { font-size: calc(18 * var(--u)); }
@@ -133,12 +123,11 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
 .board[data-acc="mint"] { --acc: var(--mint); }
 .board[data-acc="gold"] { --acc: var(--gold); }
 
+/* One dash for every rule on the page, taken from the duel layout: round-capped
+   10.74u dashes on a 20.55u period, 3.26u tall. round keeps whole dashes only. */
 .dashrule {
-  height: calc(2.6 * var(--u));
-  background-image: repeating-linear-gradient(to right,
-    currentColor 0, currentColor calc(8 * var(--u)),
-    transparent calc(8 * var(--u)), transparent calc(16 * var(--u)));
-  opacity: .5;
+  height: calc(3.26 * var(--u));
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.55 3.26'%3E%3Crect width='10.74' height='3.26' rx='1.63' fill='%23808285'/%3E%3C/svg%3E") left center / calc(20.55 * var(--u)) calc(3.26 * var(--u)) round no-repeat;
 }
 
 .num { font-variant-numeric: tabular-nums; font-feature-settings: "tnum" 1; }
@@ -266,14 +255,21 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
   display: flex; flex-direction: column; align-items: center; text-align: center;
   box-shadow: inset 0 0 0 calc(2 * var(--u)) var(--pink); overflow: hidden; }
 .bb-hero > * { max-width: 100%; }
-.bb-hero .cap { display: flex; align-items: center; gap: calc(6 * var(--u)); align-self: stretch; min-height: calc(26 * var(--u)); }
-.bb-hero .cap .txt { font-size: calc(10.5 * var(--u)); font-weight: 800; letter-spacing: calc(1.1 * var(--u)); color: var(--pink); text-transform: uppercase; }
-.bb-hero .cap .rt { margin-left: auto; }
+.bb-hero .capgap { display: none; }
+.bb-hero .cap { display: flex; flex-direction: column; align-items: center; gap: calc(8 * var(--u)); align-self: stretch; padding-top: calc(4 * var(--u)); }
+/* The dot sits left of the label; an empty spacer of the same width on the
+   right keeps the label itself, not label + dot, centred over the portrait. */
+.bb-hero .capline { display: flex; align-items: center; justify-content: center; gap: calc(8 * var(--u)); }
+.bb-hero .capline .livedot, .bb-hero .capline::after { width: calc(9 * var(--u)); height: calc(9 * var(--u)); }
+.bb-hero .capline::after { content: ''; flex: none; }
+.bb-hero .cap .txt { font-size: calc(15 * var(--u)); line-height: 1; font-weight: 800; letter-spacing: calc(1.6 * var(--u)); color: var(--pink); text-transform: uppercase; white-space: nowrap; }
 .bb-hero .av { width: calc(124 * var(--u)); margin: calc(8 * var(--u)) auto 0; }
 .bb-hero .nm { font-family: var(--display); font-weight: 900; font-size: calc(21 * var(--u)); text-transform: uppercase; margin-top: calc(12 * var(--u)); line-height: 1.05; overflow-wrap: anywhere; }
 .bb-hero .pts { font-family: var(--display); font-weight: 900; font-size: calc(34 * var(--u)); color: var(--pink); margin-top: calc(5 * var(--u)); line-height: 1; }
 .bb-hero .need { font-family: var(--body); margin-top: calc(12 * var(--u)); text-align: center; font-size: calc(11 * var(--u)); font-weight: 500; color: var(--g3); line-height: 1.55; overflow-wrap: anywhere; }
 .bb-hero .need b { color: #fff; font-weight: 800; }
+.bb-hero .need .ln { display: inline-block; white-space: nowrap; }
+.bb-hero .need .ln:first-child { display: block; }
 .bb-hero .lifeline { display: flex; align-items: center; gap: calc(8 * var(--u)); margin-top: calc(12 * var(--u));
   background: var(--sunk); border-radius: calc(var(--r-in) - calc(4 * var(--u))); padding: calc(8 * var(--u)) calc(10 * var(--u)); }
 .bb-hero .lifeline .coin { width: calc(24 * var(--u)); height: calc(24 * var(--u)); flex: none; }
@@ -284,6 +280,7 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
 .bb-list .colhead .txt { font-size: calc(10 * var(--u)); font-weight: 800; letter-spacing: calc(1 * var(--u)); color: var(--g2); text-transform: uppercase; }
 .bb-list .colhead .dashrule { flex: 1; color: var(--g2); }
 .bb-list .colhead .sortbtn {
+  display: inline-flex; align-items: center; justify-content: flex-end;
   font-family: var(--ui); font-size: calc(10 * var(--u)); font-weight: 800;
   letter-spacing: calc(1 * var(--u)); color: var(--g2); text-transform: uppercase;
   background: none; border: 0; padding: calc(3 * var(--u)) 0; margin: 0;
@@ -292,7 +289,7 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
 .bb-list .colhead .sortbtn:hover { color: #fff; }
 .bb-list .colhead .sortbtn[aria-sort] { color: var(--mint); }
 /* Laro Soft has no triangle glyphs, so the sort caret is drawn, not typed */
-.bb-list .colhead .sortbtn i { display: inline-block; margin-left: calc(5 * var(--u)); vertical-align: calc(1 * var(--u));
+.bb-list .colhead .sortbtn i { display: block; flex: none; margin-left: calc(5 * var(--u));
   width: 0; height: 0; border-left: calc(3.5 * var(--u)) solid transparent;
   border-right: calc(3.5 * var(--u)) solid transparent; }
 .bb-list .colhead .sortbtn i.up { border-bottom: calc(4.5 * var(--u)) solid currentColor; }
@@ -449,56 +446,7 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
 .ply[aria-pressed="true"] .ply-play { display: none; }
 .ply[aria-pressed="true"] .ply-stop { display: block; }
 
-/* commish-css:start */
-/* ---------- token editor ---------- */
-.tokedit { border-top: calc(1.4 * var(--u)) solid var(--rule); padding-top: calc(12 * var(--u)); }
-.tokrows { display: grid; grid-template-columns: repeat(3, 1fr); gap: calc(10 * var(--u)); margin-bottom: calc(10 * var(--u)); }
-.tokrow { background: var(--inset); border-radius: calc(8 * var(--u)); padding: calc(10 * var(--u)); }
-.tokrow .wk { display: block; font-family: var(--ui); font-size: calc(10 * var(--u)); font-weight: 800;
-  letter-spacing: calc(1 * var(--u)); color: var(--g3); text-transform: uppercase; margin-bottom: calc(7 * var(--u)); }
-.tokrow select { margin-bottom: calc(6 * var(--u)); }
-.tokrow select:last-child { margin-bottom: 0; }
 
-/* ---------- commissioner overlay ---------- */
-/* in the flow, at the end of the status line — it used to sit absolute and
-   land on top of the prize label */
-.cog {
-  width: calc(22 * var(--u)); height: calc(22 * var(--u)); flex: none;
-  margin-left: calc(4 * var(--u));
-  border: 0; border-radius: 50%; background: var(--inset); color: var(--g2);
-  font-size: calc(11 * var(--u)); line-height: 1; cursor: pointer; padding: 0;
-  display: flex; align-items: center; justify-content: center;
-}
-.cog:hover { background: var(--mint); color: #14372a; }
-.sg[data-role="viewer"] .cog { display: none; }
-
-.commish {
-  position: absolute; inset: 0; z-index: 9;
-  background: rgba(20,20,20,.98); border-radius: var(--r-out);
-  padding: var(--pad); overflow: auto;
-  display: none; flex-direction: column; gap: calc(10 * var(--u));
-}
-.commish[data-open="1"] { display: flex; }
-.commish h3 { margin: 0; font-family: var(--display); font-weight: 900; font-size: calc(19 * var(--u)); text-transform: uppercase; }
-.commish label { display: block; font-size: calc(10 * var(--u)); font-weight: 800; letter-spacing: calc(1 * var(--u)); color: var(--g3); text-transform: uppercase; margin-bottom: calc(5 * var(--u)); }
-.commish .fields { display: grid; grid-template-columns: repeat(4, 1fr); gap: calc(10 * var(--u)); }
-.commish select, .commish input, .commish textarea {
-  width: 100%; font-family: var(--body); font-size: calc(12.5 * var(--u)); font-weight: 600;
-  color: #fff; background: var(--inset); border: calc(1.4 * var(--u)) solid var(--rule);
-  border-radius: calc(6 * var(--u)); padding: calc(8 * var(--u)) calc(10 * var(--u));
-}
-.commish textarea { min-height: calc(190 * var(--u)); font-family: ui-monospace, Menlo, Consolas, monospace; font-size: calc(10.5 * var(--u)); line-height: 1.5; resize: none; }
-.commish .btns { display: flex; gap: calc(8 * var(--u)); flex-wrap: wrap; }
-.commish button.act {
-  border: 0; border-radius: var(--r-pill); padding: calc(9 * var(--u)) calc(16 * var(--u));
-  font-family: var(--body); font-weight: 800; font-size: calc(11 * var(--u));
-  letter-spacing: calc(.9 * var(--u)); text-transform: uppercase; cursor: pointer;
-  background: var(--mint); color: #14372a;
-}
-.commish button.act.ghost { background: var(--inset); color: #fff; }
-.commish .hint { font-family: var(--body); font-size: calc(11.5 * var(--u)); font-weight: 500; color: var(--g2); line-height: 1.55; margin: 0; }
-
-/* commish-css:end */
 
 :focus-visible { outline: calc(2.5 * var(--u)) solid var(--mint); outline-offset: calc(2 * var(--u)); }
 
@@ -537,20 +485,27 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
   .head .seg { flex: none; }
   .rrow .tag { font-size: calc(10 * var(--u)); }
 
-  .bb { grid-template-columns: 1fr; gap: calc(18 * var(--u)); }
+  /* minmax(0, 1fr), not 1fr: a bare 1fr track grows to the list's widest
+     row, which at the 378 tier pushed both cards ~9px past the board's right
+     edge. min-width: 0 lets each card take the track instead of its content. */
+  .bb { grid-template-columns: minmax(0, 1fr); gap: calc(18 * var(--u)); }
+  .bb > * { min-width: 0; }
   .bb-hero .av { width: calc(146 * var(--u)); }
   .bb-hero .nm { font-size: calc(23 * var(--u)); }
   .bb-hero .pts { font-size: calc(36 * var(--u)); }
-  .brow { height: calc(50 * var(--u)); gap: calc(10 * var(--u)); }
+  .brow, .bb-list .colhead { gap: calc(10 * var(--u)); }
+  .brow { height: calc(50 * var(--u)); }
   .brow .hd { width: calc(32 * var(--u)); }
   /* Rotundo at these sizes swamps the row — Laro Soft carries the numbers */
   .brow .proj, .brow .pts { font-family: var(--ui); font-weight: 800; letter-spacing: 0; }
   .brow .bar { display: none; }
   .brow .nm { width: auto; flex: 1; min-width: 0; font-size: calc(14 * var(--u)); }
-  .brow .odds { font-size: calc(12.5 * var(--u)); width: calc(44 * var(--u)); }
-  .brow .proj, .brow .pts { font-size: calc(14 * var(--u)); width: calc(54 * var(--u)); }
-  .bb-list .colhead .odds { width: calc(46 * var(--u)); }
-  .bb-list .colhead .proj, .bb-list .colhead .p { width: calc(56 * var(--u)); }
+  .brow .odds { font-size: calc(12.5 * var(--u)); }
+  .brow .proj, .brow .pts { font-size: calc(14 * var(--u)); }
+  /* header and row use the same widths so each label sits over its numbers */
+  .brow .odds, .bb-list .colhead .odds { width: calc(62 * var(--u)); }
+  .brow .proj, .brow .pts, .bb-list .colhead .proj, .bb-list .colhead .p { width: calc(54 * var(--u)); }
+  .brow .nm em { white-space: normal; }
 
   .vsbody { grid-template-columns: 1fr; }
   .fighter.right { flex-direction: row; text-align: left; }
@@ -587,10 +542,257 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
   .tokenflow .lead .lbl { text-align: left; }
   .tokenflow .track { flex-direction: column; gap: calc(10 * var(--u)); }
   .tokenflow .arw { align-self: center; transform: rotate(90deg); }
+  
+}
+/* Desktop chopping-block card. The list beside it sets the row height and
+   loses a 52u row every week, so no one size fits the season: at 9 rows the
+   card stopped two thirds of the way down. --fill (set in renderBlock) is the
+   list's row count, less ~1.4 rows when the duel-token strip is showing; --t
+   runs 0 -> 1 from 5 rows to 9 and blends every size in the card between the
+   compact set (5 rows or fewer: the original sizes) and the large set.
+   Checked against the list height at every row count, with and without the
+   token strip. The two auto margins centre the group in what is left. */
+@container (min-width: 701px) {
+  .bb { --t: clamp(0, (var(--fill, 9) - 5) / 4, 1); }
+  /* The header sits midway between the pink ring and the portrait: ::before
+     and .capgap share one flex basis and grow equally, so the gap above the
+     label always equals the gap below it. Padding-top is only the 2u ring. */
+  .bb-hero { padding: calc(2 * var(--u)) calc((14 + 2 * var(--t)) * var(--u)) calc((14 + 2 * var(--t)) * var(--u)); }
+  .bb-hero::before, .bb-hero .capgap { display: block; content: ''; flex: 1 0 calc((12 + 4 * var(--t)) * var(--u)); }
+  .bb-hero::after { content: ''; flex: 1 0 0; }
+  .bb-hero .cap { padding-top: 0; }
+  .bb-hero .cap .txt { font-size: calc((13.5 + 2.5 * var(--t)) * var(--u)); letter-spacing: calc((1.4 + .3 * var(--t)) * var(--u)); }
+  .bb-hero .av { width: calc((124 + 88 * var(--t)) * var(--u)); margin: 0 auto; }
+  .bb-hero .nm { font-size: calc((21 + 9 * var(--t)) * var(--u)); margin-top: calc((12 + 4 * var(--t)) * var(--u)); }
+  .bb-hero .pts { font-size: calc((34 + 16 * var(--t)) * var(--u)); margin-top: calc((5 + 2 * var(--t)) * var(--u)); }
+  .bb-hero .need { font-size: calc((11 + 1.5 * var(--t)) * var(--u)); line-height: 1.6; margin-top: calc((12 + 6 * var(--t)) * var(--u)); }
+  .bb-hero .need .ln { display: block; }
+  .bb-hero .need .sep { display: none; }
+  .bb-hero .lifeline { margin-top: calc((12 + 4 * var(--t)) * var(--u)); }
+}
+
+/* ============================================================
+   REDEMPTION DUEL (live). Built to Redemption_Duel_Layout.svg.
+   The artboard is 1071 wide with a 3-unit ring, so its fill runs
+   3..1068; that span maps onto the board's 995u fill, 1 design unit
+   = 0.9343u. Every number below is a design coordinate converted by
+   that ratio. Baselines are set through line-height 1: Rotundo and
+   Laro both put the baseline 0.9em below the top of a 1em line box.
+   ============================================================ */
+.dx { --dx-grey: #BABABA; --dx-rule: #808285;
+  padding: calc(23.81 * var(--u)) calc(33.09 * var(--u)) calc(27.49 * var(--u)); }
+.dx * { line-height: 1; }
+/* Line-height 1 puts Laro's baseline 0.9em down and Rotundo's about 0.79em;
+   the Rotundo margins below were corrected against probed baselines. */
+.dx .dx-head { display: flex; align-items: flex-start; height: calc(31.77 * var(--u)); }
+.dx .dx-head h2 { margin: calc(7.9 * var(--u)) 0 0 calc(1.5 * var(--u)); font-family: var(--display); font-weight: 900; font-size: calc(22.66 * var(--u));
+  letter-spacing: .0213em; text-transform: uppercase; white-space: nowrap; }
+/* round-capped dashes, 11.49 on / 22 period in design units */
+.dx .dx-rule { flex: 1; align-self: flex-start; height: calc(3.26 * var(--u)); margin: calc(15.55 * var(--u)) calc(6.15 * var(--u)) 0 calc(14 * var(--u));
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.55 3.26'%3E%3Crect width='10.74' height='3.26' rx='1.63' fill='%23808285'/%3E%3C/svg%3E") left center / calc(20.55 * var(--u)) calc(3.26 * var(--u)) round no-repeat; }
+.dx-rules { flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: calc(103.4 * var(--u)); height: calc(31.77 * var(--u)); margin-right: calc(3.6 * var(--u));
+  border: 0; border-radius: var(--r-pill); background: var(--pink); color: #fff; cursor: pointer;
+  font-family: var(--ui); font-weight: 800; font-size: calc(11.2 * var(--u)); letter-spacing: .015em; text-transform: uppercase; white-space: nowrap; }
+.dx-rules:hover { background: #ff4a93; }
+.dx-rules:focus-visible { outline: calc(2 * var(--u)) solid #fff; outline-offset: calc(2 * var(--u)); }
+.dx-rules[aria-expanded="true"] { background: #fff; color: var(--pink); }
+
+.dx .dx-body { display: grid; grid-template-columns: minmax(0, 1fr) calc(135.3 * var(--u)) minmax(0, 1fr); margin-top: calc(25.02 * var(--u)); }
+.dx-card { display: flex; height: calc(157.97 * var(--u)); box-sizing: border-box; min-width: 0;
+  /* ring as an inset shadow: a 2.8u border gets snapped to whole device pixels */
+  --ring: var(--pink); box-shadow: inset 0 0 0 calc(2.8 * var(--u)) var(--ring); border-radius: calc(11.87 * var(--u)); }
+.dx-card.b { --ring: var(--mint); flex-direction: row-reverse; text-align: right; }
+.dx-card .av { width: calc(115.2 * var(--u)); align-self: flex-end; margin: 0 0 calc(24.12 * var(--u)) calc(24.76 * var(--u)); }
+.dx-card.b .av { width: calc(115.46 * var(--u)); margin: 0 calc(23.04 * var(--u)) calc(23.02 * var(--u)) 0; }
+.dx-card .meta { min-width: 0; flex: 1; margin: calc(22.37 * var(--u)) calc(12 * var(--u)) 0 calc(18.05 * var(--u)); }
+.dx-card.b .meta { margin: calc(22.37 * var(--u)) calc(14.4 * var(--u)) 0 calc(12 * var(--u)); }
+.dx-card .role { display: flex; align-items: center; gap: calc(4.4 * var(--u)); height: calc(8.95 * var(--u));
+  font-family: var(--ui); font-weight: 800; font-size: calc(8.95 * var(--u)); letter-spacing: .015em; color: var(--dx-grey); text-transform: uppercase; white-space: nowrap; }
+.dx-card.b .role { justify-content: flex-end; }
+/* Laro has no bullet glyph; drawn, like the sort carets */
+.dx-card .role i { width: calc(3.14 * var(--u)); height: calc(3.14 * var(--u)); border-radius: 50%; background: currentColor; flex: none; }
+/* The longest name, SCARPITTI, is 6.035em in Rotundo; a score is at most 3.6em.
+   Both shrink only when the card is too narrow to hold them at full size.
+   Card width is derived from 100cqw (the page) rather than by making the card
+   a size container: --u is itself written in cqw, so inside a container it
+   would re-resolve against the card and shrink everything in it. */
+.dx-card .nm { display: block; margin-top: calc(10.77 * var(--u)); font-family: var(--display); font-weight: 900;
+  font-size: min(calc(33.2 * var(--u)), calc((100cqw - 595.1 * var(--u)) / 12.2)); height: calc(33.2 * var(--u));
+  letter-spacing: .015em; text-transform: uppercase; white-space: nowrap; }
+.dx-card .pts { display: block; margin-top: calc(1.18 * var(--u)); font-family: var(--display); font-weight: 900;
+  font-size: min(calc(40.3 * var(--u)), calc((100cqw - 595.1 * var(--u)) / 7.2)); height: calc(40.3 * var(--u)); letter-spacing: .015em; color: var(--pink); }
+.dx-card.b .pts { color: var(--mint); }
+.dx-card .toplay { display: block; margin-top: calc(4.58 * var(--u)); font-family: var(--ui); font-weight: 800; font-size: calc(8.95 * var(--u));
+  letter-spacing: .015em; color: var(--dx-grey); text-transform: uppercase; white-space: nowrap; }
+.dx-card .toplay b { color: #fff; }
+.dx-card.a .toplay { padding-left: calc(4.5 * var(--u)); }
+.dx-card[data-lost="1"] { --ring: var(--g2); }
+.dx-card[data-lost="1"] .nm, .dx-card[data-lost="1"] .pts { color: var(--g2); }
+
+.dx .dx-mid { display: flex; justify-content: center; align-items: flex-start; }
+.dx .dx-mid .coin { width: calc(95.67 * var(--u)); height: calc(95.67 * var(--u)); margin-top: calc(24.2 * var(--u)); }
+
+.dx .dx-bar { display: flex; height: calc(12.46 * var(--u)); margin: calc(36.73 * var(--u)) calc(-2.19 * var(--u)) 0 calc(1.83 * var(--u));
+  border-radius: var(--r-pill); overflow: hidden; background: var(--sunk); }
+.dx .dx-bar i { display: block; height: 100%; background: var(--pink); }
+.dx .dx-bar i + i { background: var(--mint); }
+.dx .dx-bar[data-done="1"] i[data-lost="1"] { background: var(--g2); }
+.dx .dx-legend { display: flex; align-items: baseline; justify-content: space-between; margin-top: calc(18.67 * var(--u)); height: calc(22.68 * var(--u)); }
+.dx .dx-legend > span { display: flex; align-items: baseline; gap: calc(5.9 * var(--u)); min-width: 0; }
+.dx .dx-legend .a { margin-left: calc(3.59 * var(--u)); }
+.dx .dx-legend .b { gap: calc(6.2 * var(--u)); margin-right: calc(-3.2 * var(--u)); }
+.dx .dx-legend b { font-family: var(--display); font-weight: 900; font-size: calc(22.68 * var(--u)); letter-spacing: .015em; color: #fff; }
+.dx .dx-legend em { font-style: normal; font-family: var(--display); font-weight: 900; font-size: calc(14.66 * var(--u)); letter-spacing: .015em;
+  text-transform: uppercase; color: var(--pink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dx .dx-legend .b em { color: var(--mint); }
+.dx .dx-legend em[data-lost="1"] { color: var(--g2); }
+
+/* ---------- duel rules popup ---------- */
+/* Anchored under its button, not centred on screen: inside the Wix embed the
+   iframe is as tall as the whole page, so "centre of the viewport" can be
+   thousands of pixels from where the reader is looking. */
+.dx-pop { position: absolute; z-index: 20; width: calc(468 * var(--u)); max-width: calc(100% - 28 * var(--u)); box-sizing: border-box;
+  background: var(--board); border-radius: var(--r-out); padding: calc(18 * var(--u)) calc(20 * var(--u)) calc(20 * var(--u));
+  box-shadow: 0 0 0 calc(2.5 * var(--u)) var(--pink), 0 calc(18 * var(--u)) calc(44 * var(--u)) rgba(0,0,0,.55);
+  transform-origin: top right; animation: dxpop .16s ease-out; }
+.dx-pop[hidden] { display: none; }
+@keyframes dxpop { from { opacity: 0; transform: translateY(calc(-6 * var(--u))) scale(.98); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .dx-pop { animation: none; } }
+.dx-pop .dx-ph { display: flex; align-items: center; gap: calc(10 * var(--u)); }
+.dx-pop h3 { margin: 0; font-family: var(--display); font-weight: 900; font-size: calc(20 * var(--u)); line-height: 1; text-transform: uppercase; }
+.dx-pop .dx-ph .dashrule { flex: 1; color: var(--g2); }
+.dx-pop .dx-x { flex: none; position: relative; width: calc(28 * var(--u)); height: calc(28 * var(--u)); border: 0; border-radius: 50%;
+  background: var(--inset); cursor: pointer; }
+.dx-pop .dx-x::before, .dx-pop .dx-x::after { content: ''; position: absolute; left: 50%; top: 50%; width: calc(12 * var(--u)); height: calc(2 * var(--u));
+  border-radius: var(--r-pill); background: #fff; transform: translate(-50%, -50%) rotate(45deg); }
+.dx-pop .dx-x::after { transform: translate(-50%, -50%) rotate(-45deg); }
+.dx-pop .dx-x:hover { background: #444; }
+.dx-pop .dx-x:focus-visible { outline: calc(2 * var(--u)) solid #fff; outline-offset: calc(2 * var(--u)); }
+.dx-pop p { font-family: var(--body); font-size: calc(13 * var(--u)); font-weight: 500; line-height: 1.45; color: var(--g3); margin: 0; }
+.dx-pop p b { color: #fff; font-weight: 800; }
+.dx-pop .dx-lead { margin-top: calc(12 * var(--u)); }
+.dx-pop .dx-lbl { display: block; font-family: var(--ui); font-weight: 800; font-size: calc(10 * var(--u)); letter-spacing: calc(1 * var(--u));
+  line-height: 1; text-transform: uppercase; color: var(--g1); margin-bottom: calc(7 * var(--u)); }
+.dx-pop .dx-two { display: grid; grid-template-columns: 1fr 1fr; gap: calc(8 * var(--u)); margin-top: calc(14 * var(--u)); }
+.dx-pop .dx-oc { background: var(--inset); border-radius: var(--r-in); padding: calc(12 * var(--u)); box-shadow: inset 0 0 0 calc(1.6 * var(--u)) var(--mint); }
+.dx-pop .dx-oc.lose { box-shadow: inset 0 0 0 calc(1.6 * var(--u)) var(--pink); }
+.dx-pop .dx-oc .dx-lbl { color: var(--mint); }
+.dx-pop .dx-oc.lose .dx-lbl { color: var(--pink); }
+.dx-pop ul { list-style: none; margin: 0; padding: 0; display: grid; gap: calc(6 * var(--u)); }
+.dx-pop li { position: relative; padding-left: calc(12 * var(--u)); font-family: var(--body); font-size: calc(12.5 * var(--u)); font-weight: 600; line-height: 1.35; color: #fff; }
+.dx-pop li::before { content: ''; position: absolute; left: 0; top: .5em; width: calc(5 * var(--u)); height: calc(5 * var(--u)); border-radius: 50%; background: var(--g2); }
+.dx-pop li small { display: block; font-size: calc(11.5 * var(--u)); font-weight: 500; color: var(--g3); margin-top: calc(2 * var(--u)); }
+.dx-pop .dx-cut { margin-top: calc(8 * var(--u)); background: var(--inset); border-radius: var(--r-in); padding: calc(12 * var(--u)); box-shadow: inset 0 0 0 calc(1.6 * var(--u)) var(--pink); }
+.dx-pop .dx-cut .dx-lbl { color: var(--pink); }
+.dx-pop .dx-cut p { color: #d8d8d8; }
+.dx-pop .dx-rows { margin-top: calc(14 * var(--u)); display: grid; gap: calc(12 * var(--u)); }
+.dx-pop .dx-rows > div { display: grid; grid-template-columns: calc(112 * var(--u)) 1fr; gap: calc(12 * var(--u)); align-items: baseline; }
+.dx-pop .dx-rows .dx-lbl { margin: 0; white-space: nowrap; }
+
+@container (max-width: 700px) {
+  .dx { padding: var(--pad); }
+  .dx .dx-head { height: auto; align-items: center; gap: calc(10 * var(--u)); }
+  /* sized to fit the 378 tier's 318u with room to spare: 18u heading ≈ 195u,
+     button ≈ 80u, 10u gap */
+  .dx .dx-head h2 { margin: 0; flex: 1; min-width: 0; font-size: calc(18 * var(--u)); }
+  .dx .dx-rule { display: none; }
+  .dx-rules { margin: 0; width: auto; padding: 0 calc(10 * var(--u)); height: calc(24 * var(--u)); font-size: calc(9.5 * var(--u)); letter-spacing: .03em; }
+  .dx .dx-body { grid-template-columns: minmax(0, 1fr); gap: calc(10 * var(--u)); margin-top: calc(16 * var(--u)); }
+  .dx-card, .dx-card.b { height: auto; align-items: center; flex-direction: row; text-align: left; padding: calc(12 * var(--u)); }
+  .dx-card.b { order: 3; }
+  .dx .dx-mid { order: 2; }
+  .dx .dx-mid .coin { width: calc(52 * var(--u)); height: calc(52 * var(--u)); margin: calc(-2 * var(--u)) 0; }
+  .dx-card .av, .dx-card.b .av { width: calc(88 * var(--u)); align-self: center; margin: 0; }
+  .dx-card .meta, .dx-card.b .meta { margin: 0 0 0 calc(14 * var(--u)); }
+  .dx-card.b .role { justify-content: flex-start; }
+  .dx-card .nm { font-size: min(calc(25 * var(--u)), calc((100cqw - 191.6 * var(--u)) / 6.1)); height: auto; margin-top: calc(6 * var(--u)); }
+  .dx-card .pts { font-size: min(calc(32 * var(--u)), calc((100cqw - 191.6 * var(--u)) / 3.6)); height: auto; margin-top: calc(3 * var(--u)); }
+  .dx-card .toplay { margin-top: calc(7 * var(--u)); }
+  .dx .dx-bar { margin: calc(20 * var(--u)) 0 0; height: calc(11 * var(--u)); }
+  .dx .dx-legend { margin-top: calc(12 * var(--u)); height: auto; }
+  .dx .dx-legend .a, .dx .dx-legend .b { margin: 0; }
+  .dx .dx-legend b { font-size: calc(20 * var(--u)); }
+  .dx .dx-legend em { font-size: calc(13 * var(--u)); }
+  .dx-pop { width: auto; left: calc(14 * var(--u)) !important; right: calc(14 * var(--u)); max-width: none; padding: calc(16 * var(--u)); }
+  .dx-pop .dx-two { grid-template-columns: 1fr; }
+  .dx-pop .dx-rows > div { grid-template-columns: 1fr; gap: calc(5 * var(--u)); }
+}
+
+/* commish-css:start */
+/* ---------- commissioner panel ---------- */
+.cog {
+  width: calc(22 * var(--u)); height: calc(22 * var(--u)); flex: none;
+  margin-left: calc(4 * var(--u));
+  border: 0; border-radius: 50%; background: var(--inset); color: var(--g2);
+  font-size: calc(11 * var(--u)); line-height: 1; cursor: pointer; padding: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.cog:hover { background: var(--mint); color: #14372a; }
+.sg[data-role="viewer"] .cog { display: none; }
+.commish {
+  position: absolute; inset: 0; z-index: 30; box-sizing: border-box;
+  background: rgba(20,20,20,.985); border-radius: var(--r-out);
+  padding: var(--pad); overflow: auto;
+  display: none; flex-direction: column; gap: calc(14 * var(--u));
+}
+.commish[data-open="1"] { display: flex; }
+.commish .cm-top { display: flex; align-items: center; gap: calc(10 * var(--u)); }
+.commish h3 { margin: 0; font-family: var(--display); font-weight: 900; font-size: calc(22 * var(--u)); line-height: 1; text-transform: uppercase; }
+.commish .cm-top .dashrule { flex: 1; }
+.commish .cm-sec { background: var(--board); border-radius: var(--r-in); padding: calc(14 * var(--u)); display: flex; flex-direction: column; gap: calc(10 * var(--u)); }
+.commish h4 { margin: 0; font-family: var(--ui); font-weight: 800; font-size: calc(11 * var(--u)); letter-spacing: calc(1.2 * var(--u)); line-height: 1; text-transform: uppercase; color: var(--pink); }
+.commish h4.mint { color: var(--mint); } .commish h4.gold { color: var(--gold); }
+.commish label { display: block; font-family: var(--ui); font-size: calc(9.5 * var(--u)); font-weight: 800; letter-spacing: calc(1 * var(--u)); line-height: 1; color: var(--g1); text-transform: uppercase; margin-bottom: calc(6 * var(--u)); }
+.commish .fields { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: calc(10 * var(--u)); }
+.commish .fields.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.commish select, .commish input, .commish textarea {
+  width: 100%; box-sizing: border-box; font-family: var(--body); font-size: calc(12.5 * var(--u)); font-weight: 600;
+  color: #fff; background: var(--inset); border: calc(1.4 * var(--u)) solid #444;
+  border-radius: calc(6 * var(--u)); padding: calc(8 * var(--u)) calc(10 * var(--u));
+}
+.commish select:focus, .commish input:focus, .commish textarea:focus { outline: none; border-color: var(--mint); }
+.commish select[data-set="1"] { border-color: var(--pink); }
+.commish .wk.past select:not([data-set="1"]) { border-color: #6b5a2a; }
+.commish .dl { margin-top: calc(6 * var(--u)); font-family: var(--ui); font-weight: 800; font-size: calc(9.5 * var(--u)); letter-spacing: calc(.6 * var(--u)); color: var(--g1); text-transform: uppercase; }
+.commish .dl b { color: var(--pink); }
+.commish textarea { min-height: calc(170 * var(--u)); font-family: ui-monospace, Menlo, Consolas, monospace; font-size: calc(10.5 * var(--u)); line-height: 1.5; resize: vertical; }
+.commish .btns { display: flex; gap: calc(8 * var(--u)); flex-wrap: wrap; }
+.commish button.act {
+  border: 0; border-radius: var(--r-pill); padding: calc(9 * var(--u)) calc(16 * var(--u));
+  font-family: var(--ui); font-weight: 800; font-size: calc(10.5 * var(--u));
+  letter-spacing: calc(.9 * var(--u)); text-transform: uppercase; cursor: pointer;
+  background: var(--mint); color: #14372a;
+}
+.commish button.act.pink { background: var(--pink); color: #fff; }
+.commish button.act.ghost { background: var(--inset); color: #fff; }
+.commish button.act:disabled { opacity: .35; cursor: default; }
+.commish .hint { font-family: var(--body); font-size: calc(12 * var(--u)); font-weight: 500; color: var(--g3); line-height: 1.5; margin: 0; }
+.commish .hint b { color: #fff; }
+.commish .hint.warn { color: var(--gold); }
+.commish .status { font-family: var(--ui); font-weight: 800; font-size: calc(10 * var(--u)); letter-spacing: calc(1 * var(--u)); text-transform: uppercase; color: var(--g2); white-space: nowrap; }
+.commish .status[data-on="1"] { color: var(--mint); }
+.commish details summary { cursor: pointer; font-family: var(--ui); font-weight: 800; font-size: calc(10.5 * var(--u)); letter-spacing: calc(1 * var(--u)); text-transform: uppercase; color: var(--g2); }
+.commish details[open] summary { margin-bottom: calc(10 * var(--u)); }
+/* commish-css:end */
+
+/* Phone tiers. After the ≤700 block on purpose: equal specificity, so source
+   order decides, and these used to sit above it and never apply. Sized from
+   measured widths at u=1: SCARPITTI 13.5u = 80.5u + 14u coin = 94.5u, inside
+   the 98u name column at the 378 tier. SURVIVAL header 50.7u in a 54u column. */
+@container (max-width: 430px) {
   /* commish-css:start */
-  .commish .fields { grid-template-columns: 1fr 1fr; }
-  .tokrows { grid-template-columns: 1fr; }
+  .commish .fields, .commish .fields.three { grid-template-columns: 1fr 1fr; }
   /* commish-css:end */
+  .brow, .bb-list .colhead { gap: calc(8 * var(--u)); }
+  .brow .nm { font-size: calc(13.5 * var(--u)); }
+  .brow .tokdot { width: calc(9 * var(--u)); height: calc(9 * var(--u)); margin-left: calc(5 * var(--u)); }
+  .brow .odds { font-size: calc(11.5 * var(--u)); }
+  .brow .proj, .brow .pts { font-size: calc(13.5 * var(--u)); }
+  .brow .odds, .bb-list .colhead .odds { width: calc(54 * var(--u)); }
+  .brow .proj, .brow .pts, .bb-list .colhead .proj, .bb-list .colhead .p { width: calc(50 * var(--u)); }
+  .bb-list .colhead .sortbtn { font-size: calc(9 * var(--u)); letter-spacing: calc(.5 * var(--u)); }
+  .bb-list .colhead .sortbtn i { margin-left: calc(4 * var(--u)); }
 }
 </style>
 </head>
@@ -630,54 +832,64 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
       <div class="sg-meta" id="sgMeta">
         <span class="metaitem strong" id="weekPill">WEEK 1</span>
         <span class="spacer"></span>
+<!-- commish:start -->
+        <button class="cog" id="cog" type="button" title="Commissioner tools" aria-label="Commissioner tools">&#9881;</button>
+<!-- commish:end -->
         <button class="ply" id="ply" type="button" aria-pressed="false" aria-label="Play the theme" hidden>
           <svg class="ply-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3.2v9.6l8-4.8z"/></svg>
           <svg class="ply-stop" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.6 3.4h2.5v9.2H4.6zM8.9 3.4h2.5v9.2H8.9z"/></svg>
         </button>
-<!-- commish:start -->
-        <button class="cog" id="cog" type="button" title="Commissioner tools" aria-label="Commissioner tools">&#9881;</button>
-<!-- commish:end -->
+
       </div>
     </div>
 
     <div id="stage"></div>
 
 <!-- commish:start -->
-    <div class="commish" id="commish" data-open="0">
-      <h3>Commissioner tools</h3>
-      <div class="fields">
-        <div><label for="cWeek">Week</label><input id="cWeek" type="number" min="0" max="12" step="1"></div>
-        <div><label for="cChallenger">Challenger</label><select id="cChallenger"></select></div>
-        <div><label for="cChallenged">Challenged</label><select id="cChallenged"></select></div>
-        <div><label for="cFinal">Week status</label><select id="cFinal"><option value="0">In progress</option><option value="1">Final</option></select></div>
-      </div>
-      <div class="btns">
-        <button class="act" id="cSet" type="button">Set duel</button>
-        <button class="act ghost" id="cClear" type="button">Clear duel</button>
-        <button class="act ghost" id="cClose" type="button">Close</button>
+    <div class="commish" id="commish" data-open="0" role="dialog" aria-label="Commissioner tools">
+      <div class="cm-top"><h3>Commissioner</h3><span class="dashrule"></span><span class="status" id="cStatus">PREVIEW ONLY</span>
+        <button class="act ghost" id="cClose" type="button">Close</button></div>
+
+      <div class="cm-sec">
+        <h4>Eliminations · lowest score each week</h4>
+        <div class="fields" id="cElim"></div>
+        <p class="hint" id="cElimHint">Pick the team that finished lowest once each week is final. Saving puts them out on the board.</p>
       </div>
 
-      <div class="tokedit">
-        <label>Duel tokens \u2014 record the week\u2019s high scorer before the feed rolls over</label>
-        <div class="tokrows" id="cTokens"></div>
-        <div class="btns">
-          <button class="act" id="cAward" type="button">Award this week to the leader</button>
-          <button class="act ghost" id="cSaveTokens" type="button">Save tokens</button>
+      <div class="cm-sec">
+        <h4>Redemption duel</h4>
+        <div class="fields three">
+          <div><label for="cDuelWeek">Week</label><select id="cDuelWeek"></select></div>
+          <div><label for="cChallenger">Challenger</label><select id="cChallenger"></select></div>
+          <div><label for="cChallenged">Challenged</label><select id="cChallenged"></select></div>
         </div>
-        <p class="hint" id="cAwardHint"></p>
+        <div class="btns">
+          <button class="act" id="cSet" type="button">Set duel</button>
+          <button class="act ghost" id="cClear" type="button">Clear duel</button>
+          <button class="act pink" id="cWon" type="button">Challenger won</button>
+          <button class="act pink" id="cLost" type="button">Challenger lost</button>
+        </div>
+        <p class="hint" id="cDuelHint"></p>
       </div>
-      <div>
-        <label for="cJson">Week data — edit and apply, or copy into squid_game.json</label>
+
+      <div class="cm-sec">
+        <h4 class="gold">Duel tokens</h4>
+        <div class="fields three" id="cTok"></div>
+      </div>
+
+      <details class="cm-sec">
+        <summary>Raw data (advanced)</summary>
         <textarea id="cJson" spellcheck="false"></textarea>
-      </div>
-      <div class="btns">
-        <button class="act" id="cApply" type="button">Apply JSON</button>
-        <button class="act ghost" id="cCopy" type="button">Copy JSON</button>
-      </div>
-      <p class="hint" id="commishHint">Preview only — nothing is saved. Paste the JSON into <b>squid_game.json</b> to make it stick.</p>
-      <p class="hint" id="feedHint"></p>
+        <div class="btns" style="margin-top:calc(10 * var(--u))">
+          <button class="act" id="cApply" type="button">Apply JSON</button>
+          <button class="act ghost" id="cCopy" type="button">Copy JSON</button>
+        </div>
+      </details>
+      <p class="hint" id="commishHint">Preview only — nothing is saved outside the commissioner page.</p>
     </div>
 <!-- commish:end -->
+
+
 
   </div>
 </div>
@@ -844,11 +1056,31 @@ function left(id) { var r = S.d.remaining || {}; return r[id] != null ? r[id] : 
    per unplayed starter. The flat version gives every team the same number
    before kickoff, which is honest about knowing nothing but useless to read —
    real projections are worth wiring up. */
-function proj(id) {
-  var p = S.d.projected;
-  if (p && typeof p[id] === 'number' && isFinite(p[id])) return p[id];
-  return score(id) + left(id) * (S.d.pointsPerPlayer > 0 ? S.d.pointsPerPlayer : 11);
+/* Live projection. Yahoo only publishes the pregame team projection and it
+   never moves, so the board rebuilds a live one: points already scored, plus
+   the pregame projection's share for each starter still to play. Before
+   kickoff that is exactly Yahoo's number; once everyone has played it is
+   exactly the score. Every starter is treated as worth the same share, so a
+   team whose unplayed starter is its QB reads a little low until he plays.
+   starters: lineup size at kickoff, a number or {id: n}; default 9. */
+function startersOf(d, id) {
+  var s = d.starters;
+  var n = s && typeof s === 'object' ? s[id] : s;
+  return n > 0 ? n : 9;
 }
+function projFrom(d, id) {
+  var sc = d.scores && d.scores[id] != null ? d.scores[id] : 0;
+  if (d.final) return sc;
+  var rem = d.remaining || {};
+  var left = Math.max(0, rem[id] || 0);
+  var p = d.projected;
+  if (p && typeof p[id] === 'number' && isFinite(p[id])) {
+    var st = startersOf(d, id);
+    return sc + p[id] * Math.min(left, st) / st;
+  }
+  return sc + left * (d.pointsPerPlayer > 0 ? d.pointsPerPlayer : 11);
+}
+function proj(id) { return projFrom(S.d, id); }
 function hasRealProj() {
   var p = S.d.projected;
   if (!p) return false;
@@ -883,11 +1115,10 @@ function derive(d) {
   var active = d.players.filter(function (p) { return !outIds[p.id]; });
   var duel = d.duel && d.duel.challenger && d.duel.challenged ? d.duel : null;
 
-  var ppp = d.pointsPerPlayer > 0 ? d.pointsPerPlayer : 11;
-  var rem = d.remaining || {};
-  var projOf = function (id) {
-    return (d.scores[id] || 0) + (rem[id] || 0) * (d.final ? 0 : ppp);
-  };
+  /* The same projection the board displays. Ranking on a private flat
+     estimate while showing Yahoo's numbers put the wrong team in the card:
+     before kickoff the flat estimate ties everyone, so roster order won. */
+  var projOf = function (id) { return projFrom(d, id); };
 
   /* Rule (v): a challenger who wins takes the challenged team's slot and is
      then ranked for the same week's elimination. Rank the projected field. */
@@ -898,7 +1129,9 @@ function derive(d) {
   }
   /* Ranked on where each team should finish, not where it sits right now — a
      team with five starters left is not in the trouble its raw score suggests. */
-  var ranked = field.slice().sort(function (a, b) { return projOf(a.id) - projOf(b.id); });
+  var ranked = field.slice().sort(function (a, b) {
+    return (projOf(a.id) - projOf(b.id)) || ((d.scores[a.id] || 0) - (d.scores[b.id] || 0));
+  });
 
   var phase = d.week < 1 ? 'pre'
             : (d.week <= 3 ? 'earn'
@@ -1121,14 +1354,14 @@ function renderBlock(spot) {
   b.setAttribute('data-acc', 'pink');
   var h = el('div', 'head');
   h.innerHTML = '<h2>CHOPPING BLOCK</h2><span class="dashrule"></span>' +
-    '<span class="cnt">' + (S.d.final ? 'WEEK ' + S.d.week + ' \u00B7 FINAL' : 'WEEK ' + S.d.week + ' \u00B7 LIVE') + '</span>';
+    '<span class="cnt">WEEK ' + S.d.week + '</span>';
   b.appendChild(h);
   var settledNote = S.d.final || allPlayed(S.ranked);
   b.appendChild(el('p', 'sub', S.swapped
     ? 'Projected field \u2014 <b>' + esc(nameOf(S.swapped)) + '</b> is winning the duel and would take ' + esc(nameOf(S.duel.challenged)) + '\u2019s spot before this ranking settles.'
     : (settledNote
         ? 'Lowest score goes home. Every starter has played.'
-        : 'Lowest score goes home when the week is final. <b>Ranked on projected finish</b>, so a team with starters left sits higher than its raw score.')));
+        : 'Lowest score is eliminated. <b>Ranked on projected finish</b>: points scored so far, plus Yahoo\u2019s pregame projection for the starters still to play.')));
 
   var ranked = S.ranked;
   if (!ranked.length) return b;
@@ -1141,19 +1374,25 @@ function renderBlock(spot) {
   var lowTok = lt && (lt.status === 'held' || lt.status === 'active');
 
   var bb = el('div', 'bb');
+  /* rows the list beside the card will hold, less the height of the token
+     strip; the desktop card sizes its contents from this (see .bb --t) */
+  bb.style.setProperty('--fill', String(Math.max(ranked.length - 1, 1) - (lowTok ? 1.4 : 0)));
   var hero = el('div', 'bb-hero');
   hero.innerHTML =
-    '<span class="cap"><span class="livedot" style="background:var(--pink)"></span><span class="txt">' +
-      (S.d.final ? 'ELIMINATED' : (settled ? 'ON THE BLOCK' : 'PROJECTED LOW')) + '</span>' +
+    '<span class="cap"><span class="capline"><span class="livedot" style="background:var(--pink)"></span><span class="txt">' +
+      (S.d.final ? 'ELIMINATED' : (settled ? 'ON THE BLOCK' : 'PROJECTED LOW')) + '</span></span>' +
       (low.id === S.swapped ? '<span class="rt pill pill-ghost">VIA DUEL</span>' : '') + '</span>' +
+    '<span class="capgap" aria-hidden="true"></span>' +
     av(low.id, S.d.final ? 'out' : '') +
     '<span class="nm">' + esc(low.name) + '</span>' +
     '<span class="pts num">' + fmt(lowS) + '</span>' +
-    (next ? '<span class="need">SURVIVAL <b>' + oddsTxt(low.id) + '</b> \u00B7 ' + toPlay(low.id).replace(/<\/?b>/g, '') +
-            '<br>' + (settled
-              ? 'NEEDS <b>+' + fmt(score(next.id) - lowS) + '</b> TO PASS ' + esc(next.name)
-              : 'PROJECTS TO <b>' + fmt(lowP) + '</b>, ' + fmt(proj(next.id) - lowP) + ' BEHIND ' + esc(next.name)) + '</span>'
-          : '<span class="need">LAST TEAM STANDING</span>') +
+    /* One clause per .ln, never broken inside. Desktop stacks all three; the
+       wider mobile card lets the last two share a line when they fit. */
+    (next ? '<span class="need"><span class="ln">SURVIVAL <b>' + oddsTxt(low.id) + '</b> \u00B7 ' + toPlay(low.id).replace(/<\/?b>/g, '') + '</span> ' +
+            (settled
+              ? '<span class="ln">NEEDS <b>+' + fmt(score(next.id) - lowS) + '</b></span> <span class="ln">TO PASS ' + esc(next.name) + '</span>'
+              : '<span class="ln">PROJECTS TO <b>' + fmt(lowP) + '</b><span class="sep">,</span></span> <span class="ln">' + fmt(proj(next.id) - lowP) + ' BEHIND ' + esc(next.name) + '</span>') + '</span>'
+          : '<span class="need"><span class="ln">LAST TEAM STANDING</span></span>') +
     (lowTok ? '<span class="lifeline">' + coin(true) + '<span>HOLDS A DUEL TOKEN \u2014 ' +
               (S.d.final ? 'MUST CHALLENGE BACK' : 'GETS A CHALLENGE IF THIS HOLDS') + '</span></span>' : '');
   bb.appendChild(hero);
@@ -1209,9 +1448,9 @@ function renderBlock(spot) {
   list.appendChild(el('p', 'oddsnote', (S.d.final || allPlayed(ranked)
     ? 'Every starter has played. Low score is out.'
     : (hasRealProj()
-        ? 'Survival reads each team\u2019s projected finish, then spreads the field by how much scoring is left. It sharpens as the week runs down.'
+        ? 'Survival reads each team\u2019s projected finish, then spreads the field by how much scoring is left. Each unplayed starter counts for an equal share of the team\u2019s pregame projection, so it sharpens as the week runs down.'
         : 'No projections in the feed yet, so each team is carried forward at a flat rate per unplayed starter. Survival spreads the field by how much scoring is left.')) +
-    ' ' + esc(low.name) + ' is held in the card at left and is not ranked in this list.'));
+    ' ' + esc(low.name) + ' has its own card and is not ranked in this list.'));
   bb.appendChild(list);
   b.appendChild(bb);
   return b;
@@ -1223,7 +1462,7 @@ function renderDuel() {
   if (!duel) {
     var e = el('div', 'board');
     var eh = el('div', 'head');
-    eh.innerHTML = '<h3>REDEMPTION DUEL</h3><span class="dashrule"></span><span class="cnt">NONE THIS WEEK</span>';
+    eh.innerHTML = '<h3>REDEMPTION DUEL</h3><span class="dashrule"></span><span class="cnt">NONE THIS WEEK</span>' + rulesButton('pill');
     e.appendChild(eh);
     var held = (d.tokens || []).filter(function (t) { return tokenStatus(t) === 'held'; }).length;
     e.appendChild(el('p', 'sub', tokensDead()
@@ -1236,50 +1475,50 @@ function renderDuel() {
 
   var a = duel.challenger, b2 = duel.challenged;
   var sa = score(a), sb = score(b2), final = !!d.final;
-  /* the ring marks who is ahead on the board right now; the bar underneath is
-     the separate question of who is likely to finish ahead */
-  var aWins = sa > sb, bWins = sb > sa;
+  var aWins = sa > sb;
+  var outA = final && !aWins, outB = final && aWins;
 
-  var wrap = el('div', 'board spot');
+  var wrap = el('div', 'board spot dx');
   wrap.setAttribute('data-acc', 'pink');
-  var h = el('div', 'head');
-  h.className = 'head duelhead';
-  h.innerHTML = '<h2>REDEMPTION DUEL</h2>' + coin(!final).replace('class="coin', 'class="duel-coin coin') +
-    '<span class="dashrule"></span>' +
-    '<span class="pill pill-pink">' + (final ? 'SETTLED' : 'WINNER TAKES THE SPOT') + '</span>';
+  var h = el('div', 'dx-head');
+  h.innerHTML = '<h2>REDEMPTION DUEL</h2><span class="dx-rule" aria-hidden="true"></span>' + rulesButton();
   wrap.appendChild(h);
-  wrap.appendChild(el('p', 'sub', 'Week ' + (duel.week || d.week) + ' scoring decides it. <b>' + esc(nameOf(a)) + '</b> spent a Duel Token to challenge <b>' + esc(nameOf(b2)) + '</b>.'));
 
-  var body = el('div', 'vsbody');
-
-  var fa = el('div', 'fighter');
-  fa.setAttribute('data-lead', aWins ? '1' : '0');
-  if (final && !aWins) fa.setAttribute('data-lost', '1');
-  fa.innerHTML = av(a, final && !aWins ? 'out' : '') +
-    '<span class="meta"><span class="role">CHALLENGER \u00B7 OUT W' + (S.out[a] ? S.out[a].week : '?') + '</span>' +
-    '<span class="nm">' + esc(nameOf(a)) + '</span><span class="pts num">' + fmt(sa) + '</span>' +
-    '<span class="projline">PROJ <b class="num">' + fmt(proj(a)) + '</b></span>' +
-    '<span class="toplay">' + toPlay(a) + '</span></span>';
-
-  var mid = el('div', 'vsmid');
-  mid.innerHTML = coin(!final) + '<span class="vs">VS</span>';
-
-  var fb = el('div', 'fighter right');
-  fb.setAttribute('data-lead', bWins ? '1' : '0');
-  if (final && !bWins) fb.setAttribute('data-lost', '1');
-  fb.innerHTML = av(b2, final && !bWins ? 'out' : '') +
-    '<span class="meta"><span class="role">CHALLENGED \u00B7 ACTIVE</span>' +
-    '<span class="nm">' + esc(nameOf(b2)) + '</span><span class="pts num">' + fmt(sb) + '</span>' +
-    '<span class="projline">PROJ <b class="num">' + fmt(proj(b2)) + '</b></span>' +
-    '<span class="toplay">' + toPlay(b2) + '</span></span>';
-
-  body.appendChild(fa); body.appendChild(mid); body.appendChild(fb);
+  var role = function (who, state) { return '<span class="role"><span>' + who + '</span><i aria-hidden="true"></i><span>' + state + '</span></span>'; };
+  var meta = function (id, r) {
+    return '<span class="meta">' + r + '<span class="nm">' + esc(nameOf(id)) + '</span>' +
+      '<span class="pts num">' + fmt(score(id)) + '</span><span class="toplay">' + toPlay(id) + '</span></span>';
+  };
+  var body = el('div', 'dx-body');
+  var ca = el('div', 'dx-card a');
+  if (outA) ca.setAttribute('data-lost', '1');
+  ca.innerHTML = av(a, outA ? 'out' : '') + meta(a, role('CHALLENGER',
+    final ? (aWins ? 'BACK IN' : 'ELIMINATED') : 'OUT W' + (S.out[a] ? S.out[a].week : '?')));
+  var mid = el('div', 'dx-mid');
+  mid.innerHTML = coin(!final);
+  var cb = el('div', 'dx-card b');
+  if (outB) cb.setAttribute('data-lost', '1');
+  cb.innerHTML = av(b2, outB ? 'out' : '') + meta(b2, role('DEFENDER', final ? (aWins ? 'ELIMINATED' : 'SURVIVES') : 'ACTIVE'));
+  body.appendChild(ca); body.appendChild(mid); body.appendChild(cb);
   wrap.appendChild(body);
-  wrap.appendChild(meter(a, b2));
 
-  wrap.appendChild(el('p', 'vsfoot', final
-    ? '<b>' + esc(nameOf(aWins ? a : b2)) + '</b> takes the spot. <b>' + esc(nameOf(aWins ? b2 : a)) + '</b> is out of Squid Game for good.'
-    : 'If <b>' + esc(nameOf(a)) + '</b> wins they take <b>' + esc(nameOf(b2)) + '</b>\u2019s spot and the token leaves play \u2014 and they can still be low score this same week. If they lose they are out for good.'));
+  /* win chance, challenger pink on the left, defender mint on the right;
+     once final it is the result, and the loser's half goes grey */
+  var pa = final ? (aWins ? 100 : 0) : duelOdds(a, b2), pb = 100 - pa;
+  var bar = el('div', 'dx-bar');
+  bar.setAttribute('role', 'img');
+  bar.setAttribute('aria-label', nameOf(a) + ' ' + pct(pa) + ', ' + nameOf(b2) + ' ' + pct(pb) + (final ? ', final' : ' to win'));
+  if (final) bar.setAttribute('data-done', '1');
+  bar.innerHTML = '<i style="width:' + pa.toFixed(1) + '%"' + (outA ? ' data-lost="1"' : '') + '></i>' +
+                  '<i style="width:' + pb.toFixed(1) + '%"' + (outB ? ' data-lost="1"' : '') + '></i>';
+  wrap.appendChild(bar);
+  var lg = el('div', 'dx-legend');
+  lg.setAttribute('aria-hidden', 'true');
+  /* live: each side's chance to win; final: the verdict instead of 100% / 0% */
+  var va = final ? (aWins ? 'WON' : 'OUT') : pct(pa), vb = final ? (aWins ? 'OUT' : 'WON') : pct(pb);
+  lg.innerHTML = '<span class="a"><b class="num">' + va + '</b><em' + (outA ? ' data-lost="1"' : '') + '>' + esc(nameOf(a)) + '</em></span>' +
+                 '<span class="b"><em' + (outB ? ' data-lost="1"' : '') + '>' + esc(nameOf(b2)) + '</em><b class="num">' + vb + '</b></span>';
+  wrap.appendChild(lg);
   return wrap;
 }
 
@@ -1448,6 +1687,7 @@ function render() {
   }
   stage.appendChild(renderHow());
   if (typeof syncCommish === 'function') syncCommish();
+  placeRules();
   postHeight();
 }
 function boot(d) { derive(d); render(); }
@@ -1485,6 +1725,91 @@ function pullFeed() {
     .catch(function () {});
 }
 
+
+/* ---------- duel rules popup ----------
+   Lives on .sg, outside #stage, so the 60-second re-render never destroys
+   it; after each render it re-anchors to the new button. */
+function rulesButton(extra) {
+  var open = !!(RULES.pop && !RULES.pop.hidden);
+  return '<button type="button" class="dx-rules' + (extra ? ' ' + extra : '') + '" aria-haspopup="dialog" aria-controls="dxPop" aria-expanded="' + open + '"><span>DUEL RULES</span></button>';
+}
+var RULES = { pop: null, btn: null };
+function rulesPop() {
+  if (RULES.pop) return RULES.pop;
+  var p = el('div', 'dx-pop');
+  p.id = 'dxPop';
+  p.hidden = true;
+  p.setAttribute('role', 'dialog');
+  p.setAttribute('aria-labelledby', 'dxPopT');
+  p.tabIndex = -1;
+  p.innerHTML =
+    '<div class="dx-ph"><h3 id="dxPopT">DUEL RULES</h3><span class="dashrule"></span>' +
+      '<button type="button" class="dx-x" aria-label="Close duel rules"></button></div>' +
+    '<p class="dx-lead">Get eliminated while holding a Duel Token and it fires. The next week you challenge an active team, head to head. <b>Higher score wins.</b></p>' +
+    '<div class="dx-two">' +
+      '<div class="dx-oc win"><span class="dx-lbl">CHALLENGER WINS</span><ul>' +
+        '<li>Takes the defender\u2019s spot</li><li>Defender is eliminated</li><li>Token leaves play</li></ul></div>' +
+      '<div class="dx-oc lose"><span class="dx-lbl">CHALLENGER LOSES</span><ul>' +
+        '<li>Challenger is out for good</li><li>Defender stays alive</li>' +
+        '<li>Token goes to the defender<small>Only if they\u2019ve never held one. Otherwise it leaves play.</small></li></ul></div>' +
+    '</div>' +
+    '<div class="dx-cut"><span class="dx-lbl">THEN THE WEEKLY CUT</span>' +
+      '<p>Every active team is ranked on the same week\u2019s score \u2014 including a challenger who just won its way back. Lowest is eliminated. <b>You can win the duel and still go home.</b></p></div>' +
+    '<div class="dx-rows">' +
+      '<div><span class="dx-lbl">ONE PER SEASON</span><p>Once you\u2019ve held a token \u2014 earned, received, used or lost \u2014 you never get another. <b>No stacking.</b></p></div>' +
+      '<div><span class="dx-lbl">ENDGAME</span><p>Tokens expire at the final three. A semifinal loser can\u2019t challenge the finalists. <b>No duels in the championship.</b> Week 12 is final: high score wins.</p></div>' +
+    '</div>';
+  document.getElementById('sg').appendChild(p);
+  p.querySelector('.dx-x').addEventListener('click', function () { closeRules(true); });
+  RULES.pop = p;
+  return p;
+}
+function placeRules() {
+  var p = RULES.pop, b = document.querySelector('#stage .dx-rules');
+  if (!p || p.hidden) return;
+  if (!b) { closeRules(false); return; }
+  RULES.btn = b;
+  var sg = document.getElementById('sg').getBoundingClientRect(), r = b.getBoundingClientRect();
+  var u = parseFloat(getComputedStyle(document.getElementById('sg')).fontSize) / 14;
+  p.style.top = (r.bottom - sg.top + 10 * u) + 'px';
+  var left = r.right - sg.left - p.offsetWidth;
+  p.style.left = Math.max(14 * u, left) + 'px';
+  var all = document.querySelectorAll('#stage .dx-rules');
+  for (var i = 0; i < all.length; i++) all[i].setAttribute('aria-expanded', 'true');
+}
+function openRules(btn) {
+  var p = rulesPop();
+  p.hidden = false;
+  RULES.btn = btn;
+  placeRules();
+  p.focus({ preventScroll: true });
+  postHeight();
+}
+function closeRules(refocus) {
+  var p = RULES.pop;
+  if (!p || p.hidden) return;
+  p.hidden = true;
+  var all = document.querySelectorAll('#stage .dx-rules');
+  for (var i = 0; i < all.length; i++) all[i].setAttribute('aria-expanded', 'false');
+  if (refocus) { var b = document.querySelector('#stage .dx-rules'); if (b) b.focus({ preventScroll: true }); }
+  postHeight();
+}
+$('#stage').addEventListener('click', function (e) {
+  var btn = e.target && e.target.closest ? e.target.closest('.dx-rules') : null;
+  if (!btn) return;
+  if (RULES.pop && !RULES.pop.hidden) closeRules(false); else openRules(btn);
+});
+document.addEventListener('click', function (e) {
+  var p = RULES.pop;
+  if (!p || p.hidden) return;
+  if (p.contains(e.target) || (e.target.closest && e.target.closest('.dx-rules'))) return;
+  closeRules(false);
+});
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && RULES.pop && !RULES.pop.hidden) { closeRules(true); }
+});
+window.addEventListener('resize', placeRules);
+
 /* one delegated listener, so re-rendering the list never leaks handlers */
 $('#stage').addEventListener('click', function (e) {
   var btn = e.target && e.target.closest ? e.target.closest('.sortbtn') : null;
@@ -1500,157 +1825,7 @@ $('#stage').addEventListener('click', function (e) {
   render();
 });
 
-/* commish:start */
-/* ---------- commissioner ---------- */
-/* 0 is a real week here — preseason — so it cannot be treated as empty */
-function weekFromField() {
-  var v = parseInt($('#cWeek').value, 10);
-  return isNaN(v) || v < 0 || v > 12 ? BASE.week : v;
-}
-function syncCommish() {
-  $('#cWeek').value = BASE.week;
-  $('#cFinal').value = BASE.final ? '1' : '0';
-  var ch = $('#cChallenger'), cd = $('#cChallenged'), i;
-  ch.innerHTML = ''; cd.innerHTML = '';
-  ch.appendChild(new Option('\u2014 none \u2014', ''));
-  for (i = 0; i < S.outList.length; i++) ch.appendChild(new Option(nameOf(S.outList[i].id), S.outList[i].id));
-  for (i = 0; i < S.active.length; i++) cd.appendChild(new Option(S.active[i].name, S.active[i].id));
-  if (S.duel) { ch.value = S.duel.challenger; cd.value = S.duel.challenged; }
-  $('#cJson').value = JSON.stringify(BASE, null, 2);
-  tokenRows();
-  var fh = document.getElementById('feedHint');
-  if (fh) {
-    fh.innerHTML = FEED
-      ? 'Scores feed connected \u2014 <b>' + FEED_KEYS.join(', ') + '</b> come from Yahoo and are not saved here. '
-        + (BASE.pinWeek ? 'Week is <b>pinned</b> to this page.' : 'Week follows the feed; set <b>"pinWeek": true</b> above to hold it.')
-      : 'Scores feed not reachable \u2014 showing the scores stored in this state.';
-  }
-}
-$('#cog').addEventListener('click', function () {
-  var c = $('#commish');
-  c.setAttribute('data-open', c.getAttribute('data-open') === '1' ? '0' : '1');
-});
-$('#cClose').addEventListener('click', function () { $('#commish').setAttribute('data-open', '0'); });
-$('#cSet').addEventListener('click', function () {
-  var a = $('#cChallenger').value, b = $('#cChallenged').value;
-  BASE.week = weekFromField();
-  BASE.final = $('#cFinal').value === '1';
-  BASE.duel = a && b ? { week: BASE.week, challenger: a, challenged: b } : null;
-  apply();
-  pushState();
-});
-$('#cClear').addEventListener('click', function () {
-  BASE.week = weekFromField();
-  BASE.final = $('#cFinal').value === '1';
-  BASE.duel = null;
-  apply();
-  pushState();
-});
-$('#cApply').addEventListener('click', function () {
-  try {
-    var edited = JSON.parse($('#cJson').value);
-    if (!edited || !Array.isArray(edited.players) || !edited.players.length) {
-      alert('That JSON has no players — not applying it.');
-      return;
-    }
-    BASE = edited;
-    apply();
-    pushState();
-  } catch (e) { alert('That JSON will not parse: ' + e.message); }
-});
-$('#cCopy').addEventListener('click', function () {
-  $('#cJson').select();
-  try { document.execCommand('copy'); } catch (e) {}
-});
 
-/* ---------- token editor ----------
-   The board displays tokens, it never awards them: the award depends on a
-   week's final scores, and the feed only ever carries the current week. Once
-   it rolls over, that week's numbers are gone. So the award has to be captured
-   while the numbers are still on screen, and this is where that happens. */
-var TOKEN_STATES = ['held', 'active', 'spent', 'expired'];
-
-function tokenRows() {
-  var wrap = $('#cTokens');
-  if (!wrap) return;
-  wrap.innerHTML = '';
-  for (var w = 1; w <= 3; w++) {
-    var t = null, list = BASE.tokens || [], i;
-    for (i = 0; i < list.length; i++) if (list[i].week === w) t = list[i];
-
-    var row = el('div', 'tokrow');
-    var who = document.createElement('select');
-    who.id = 'tokWho' + w;
-    who.appendChild(new Option('\u2014 not awarded \u2014', ''));
-    for (i = 0; i < BASE.players.length; i++) {
-      who.appendChild(new Option(BASE.players[i].name, BASE.players[i].id));
-    }
-    who.value = t && t.holder ? t.holder : '';
-
-    var st = document.createElement('select');
-    st.id = 'tokState' + w;
-    for (i = 0; i < TOKEN_STATES.length; i++) {
-      st.appendChild(new Option(TOKEN_LABEL[TOKEN_STATES[i]], TOKEN_STATES[i]));
-    }
-    st.value = t && t.status ? t.status : 'held';
-
-    row.innerHTML = '<span class="wk">WEEK ' + w + '</span>';
-    row.appendChild(who);
-    row.appendChild(st);
-    wrap.appendChild(row);
-  }
-}
-
-/* Read the three rows back into BASE. A row with nobody selected drops out,
-   so clearing a mistake is just setting it back to "not awarded". */
-function collectTokens() {
-  var out = [], w, who, st;
-  for (w = 1; w <= 3; w++) {
-    who = document.getElementById('tokWho' + w);
-    st = document.getElementById('tokState' + w);
-    if (!who || !who.value) continue;
-    out.push({ week: w, holder: who.value, status: st ? st.value : 'held' });
-  }
-  return out;
-}
-
-function tokenNote(msg) {
-  var n = $('#cAwardHint');
-  if (n) n.innerHTML = msg;
-}
-
-$('#cSaveTokens').addEventListener('click', function () {
-  BASE.tokens = collectTokens();
-  apply();
-  pushState();
-  tokenNote('Saved. ' + BASE.tokens.length + ' token' + (BASE.tokens.length === 1 ? '' : 's') + ' recorded.');
-});
-
-/* One click while the standings are still on screen: take the current week's
-   leader, skipping anyone who already holds a token, exactly as the board
-   highlights it. */
-$('#cAward').addEventListener('click', function () {
-  var w = BASE.week;
-  if (w < 1 || w > 3) {
-    tokenNote('Tokens are only awarded in Weeks 1\u20133. The week is currently ' + w + '.');
-    return;
-  }
-  var winner = liveWinnerId();
-  if (!winner) {
-    tokenNote('Nobody has scored yet, so there is no leader to award to.');
-    return;
-  }
-  var sel = document.getElementById('tokWho' + w);
-  var st = document.getElementById('tokState' + w);
-  if (sel) sel.value = winner;
-  if (st) st.value = 'held';
-  BASE.tokens = collectTokens();
-  apply();
-  pushState();
-  tokenNote('Week ' + w + ' token awarded to <b>' + esc(nameOf(winner)) + '</b> on ' +
-            fmt(score(winner)) + ' points. Saved.');
-});
-/* commish:end */
 
 /* ---------- theme ----------
    Press to play, never on load: browsers block audio until the reader acts,
@@ -1699,11 +1874,225 @@ var AUDIO_URL = "https://mykal792.github.io/440-data/squid-theme.m4a";
     .catch(function () {});
 })();
 
+/* commish:start */
+/* ---------- commissioner ----------
+   Everything here edits BASE (the Wix collection) and nothing else; the feed
+   keys are never written back. Every change saves straight away. */
+var ELIM_WEEKS = [4, 5, 6, 7, 8, 9, 10, 11];
+function cmOpts(sel, list, value, blank) {
+  sel.innerHTML = '';
+  sel.appendChild(new Option(blank || '— none —', ''));
+  for (var i = 0; i < list.length; i++) {
+    var o = new Option(list[i].name, list[i].id);
+    if (list[i].off) o.disabled = true;
+    sel.appendChild(o);
+  }
+  sel.value = value || '';
+  sel.setAttribute('data-set', value ? '1' : '0');
+}
+function cmElims() { return BASE.eliminated || (BASE.eliminated = []); }
+function cmTokOf(id) {
+  var t = BASE.tokens || [];
+  for (var i = 0; i < t.length; i++) if (t[i].holder === id) return t[i];
+  return null;
+}
+function cmEverHeld(id) {
+  var t = BASE.tokens || [];
+  for (var i = 0; i < t.length; i++) if (t[i].holder === id || t[i].from === id) return true;
+  return false;
+}
+function cmCommit(msg) {
+  apply();                 /* re-render from BASE + feed */
+  pushState();
+  var st = $('#cStatus');
+  if (APP_ROLE === 'editor' && window.self !== window.top) { st.textContent = msg || 'SAVED'; st.setAttribute('data-on', '1'); }
+  else { st.textContent = 'PREVIEW ONLY'; st.setAttribute('data-on', '0'); }
+}
+function syncCommish() {
+  var panel = $('#commish');
+  /* a 60-second refresh must not rebuild a dropdown the commissioner is using */
+  if (panel.contains(document.activeElement) && document.activeElement.tagName === 'SELECT') return;
+  var players = BASE.players || [], elims = cmElims(), curWeek = S.d.week, i, j;
+
+  /* ---- eliminations: one dropdown per week ---- */
+  var box = $('#cElim'); box.innerHTML = '';
+  for (i = 0; i < ELIM_WEEKS.length; i++) {
+    var w = ELIM_WEEKS[i], low = '', duelOut = [];
+    for (j = 0; j < elims.length; j++) {
+      if (elims[j].week !== w) continue;
+      if (elims[j].how === 'duel') duelOut.push(nameOf(elims[j].id)); else low = elims[j].id;
+    }
+    var taken = {};
+    for (j = 0; j < elims.length; j++) if (!(elims[j].week === w && elims[j].how !== 'duel')) taken[elims[j].id] = 1;
+    var list = players.map(function (p) { return { id: p.id, name: p.name, off: !!taken[p.id] }; });
+    var cell = el('div', 'wk' + (w < curWeek ? ' past' : ''));
+    cell.innerHTML = '<label for="cElim' + w + '">Week ' + w + (w === curWeek ? ' · now' : '') + '</label>';
+    var sel = document.createElement('select');
+    sel.id = 'cElim' + w; sel.setAttribute('data-week', w);
+    cmOpts(sel, list, low, w > curWeek ? '— not played —' : '— none —');
+    if (w > curWeek) sel.disabled = true;
+    cell.appendChild(sel);
+    if (duelOut.length) cell.insertAdjacentHTML('beforeend', '<div class="dl">Lost duel: <b>' + duelOut.map(esc).join(', ') + '</b></div>');
+    box.appendChild(cell);
+  }
+  var missing = ELIM_WEEKS.filter(function (w) {
+    if (w >= curWeek) return false;
+    for (var k = 0; k < elims.length; k++) if (elims[k].week === w && elims[k].how !== 'duel') return false;
+    return true;
+  });
+  var eh = $('#cElimHint');
+  if (missing.length) { eh.className = 'hint warn'; eh.innerHTML = '<b>Week ' + missing.join(', ') + '</b> is over with nobody recorded as eliminated.'; }
+  else { eh.className = 'hint'; eh.innerHTML = 'Pick the team that finished lowest once each week is final. The board updates for everyone within about 30 seconds.'; }
+
+  /* ---- duel ---- */
+  var dw = $('#cDuelWeek'); dw.innerHTML = '';
+  for (i = 5; i <= 11; i++) dw.appendChild(new Option('Week ' + i, String(i)));
+  var duel = BASE.duel;
+  dw.value = String(duel && duel.week ? duel.week : Math.min(Math.max(curWeek, 5), 11));
+  var outs = elims.map(function (e) { return { id: e.id, name: nameOf(e.id) + ' (out W' + e.week + ')' }; });
+  var alive = players.filter(function (p) { for (var k = 0; k < elims.length; k++) if (elims[k].id === p.id) return false; return true; });
+  cmOpts($('#cChallenger'), outs, duel ? duel.challenger : '');
+  cmOpts($('#cChallenged'), alive, duel ? duel.challenged : '');
+  $('#cWon').disabled = $('#cLost').disabled = !duel;
+  $('#cDuelHint').innerHTML = duel
+    ? '<b>' + esc(nameOf(duel.challenger)) + '</b> vs <b>' + esc(nameOf(duel.challenged)) + '</b>, Week ' + duel.week +
+      '. When it’s final, press who won. The weekly low still gets picked above.'
+    : 'An eliminated token holder challenges an active team the following week.';
+
+  /* ---- tokens ---- */
+  var tb = $('#cTok'); tb.innerHTML = '';
+  var toks = BASE.tokens || [];
+  for (i = 1; i <= 3; i++) {
+    var t = null;
+    for (j = 0; j < toks.length; j++) if (toks[j].week === i) t = toks[j];
+    var c = el('div', '');
+    c.innerHTML = '<label>Week ' + i + ' token</label>';
+    var hs = document.createElement('select'); hs.setAttribute('data-tok', i); hs.setAttribute('data-f', 'holder');
+    cmOpts(hs, players, t ? t.holder : '', '— not awarded —');
+    var ss = document.createElement('select'); ss.setAttribute('data-tok', i); ss.setAttribute('data-f', 'status');
+    ss.style.marginTop = 'calc(6 * var(--u))';
+    [['held', 'Held'], ['active', 'Active (duel this week)'], ['spent', 'Spent / out of play']].forEach(function (o) { ss.appendChild(new Option(o[1], o[0])); });
+    ss.value = t ? t.status : 'held'; ss.disabled = !t;
+    c.appendChild(hs); c.appendChild(ss);
+    tb.appendChild(c);
+  }
+  $('#cJson').value = JSON.stringify(BASE, null, 2);
+}
+
+/* weekly low: rewrite only that week's low-score entry; duel losses are kept */
+$('#cElim').addEventListener('change', function (e) {
+  var sel = e.target, w = parseInt(sel.getAttribute('data-week'), 10), id = sel.value;
+  var prev = null, elims = cmElims();
+  BASE.eliminated = elims.filter(function (x) {
+    if (x.week === w && x.how !== 'duel') { prev = x.id; return false; }
+    return true;
+  });
+  /* undoing a pick puts an untouched active token back in hand */
+  var pt = prev && cmTokOf(prev);
+  if (pt && pt.status === 'active' && !(BASE.duel && BASE.duel.challenger === prev)) pt.status = 'held';
+  var msg = 'SAVED';
+  if (id) {
+    BASE.eliminated.push({ id: id, week: w, how: 'low' });
+    BASE.eliminated.sort(function (a, b) { return a.week - b.week; });
+    /* an eliminated token holder must duel next week: activate it and pre-fill */
+    var t = cmTokOf(id);
+    if (t && t.status === 'held' && w < 11) {
+      t.status = 'active';
+      if (!BASE.duel) BASE.duel = { week: w + 1, challenger: id, challenged: '' };
+      msg = 'SAVED · TOKEN ACTIVE';
+    }
+  }
+  if (BASE.duel && !BASE.duel.challenged) {
+    /* a half-filled duel isn't shown on the board; keep it only in the form */
+    var pend = BASE.duel; BASE.duel = null; cmCommit(msg); BASE.duel = null;
+    syncCommish(); $('#cDuelWeek').value = String(pend.week); $('#cChallenger').value = pend.challenger;
+    $('#cDuelHint').innerHTML = '<b>' + esc(nameOf(pend.challenger)) + '</b> holds a token. Pick who they challenge and press <b>Set duel</b>.';
+    return;
+  }
+  cmCommit(msg);
+});
+
+$('#cTok').addEventListener('change', function (e) {
+  var s2 = e.target, wk = parseInt(s2.getAttribute('data-tok'), 10), f = s2.getAttribute('data-f');
+  BASE.tokens = BASE.tokens || [];
+  var t = null, i;
+  for (i = 0; i < BASE.tokens.length; i++) if (BASE.tokens[i].week === wk) t = BASE.tokens[i];
+  if (f === 'holder') {
+    if (!s2.value) BASE.tokens = BASE.tokens.filter(function (x) { return x.week !== wk; });
+    else if (t) t.holder = s2.value;
+    else BASE.tokens.push({ week: wk, holder: s2.value, status: 'held' });
+    BASE.tokens.sort(function (a, b) { return a.week - b.week; });
+  } else if (t) t.status = s2.value;
+  cmCommit();
+});
+
+$('#cog').addEventListener('click', function () {
+  var c = $('#commish'), open = c.getAttribute('data-open') !== '1';
+  c.setAttribute('data-open', open ? '1' : '0');
+  if (open) { syncCommish(); c.scrollTop = 0; }
+  postHeight();
+});
+$('#cClose').addEventListener('click', function () { $('#commish').setAttribute('data-open', '0'); postHeight(); });
+$('#cSet').addEventListener('click', function () {
+  var a = $('#cChallenger').value, b = $('#cChallenged').value;
+  if (!a || !b) { $('#cDuelHint').innerHTML = 'Pick both a challenger and a team to challenge.'; return; }
+  BASE.duel = { week: parseInt($('#cDuelWeek').value, 10), challenger: a, challenged: b };
+  var t = cmTokOf(a); if (t && t.status === 'held') t.status = 'active';
+  cmCommit('SAVED · DUEL SET');
+});
+$('#cClear').addEventListener('click', function () {
+  var d = BASE.duel;
+  if (d) { var t = cmTokOf(d.challenger); if (t && t.status === 'active') t.status = 'held'; }
+  BASE.duel = null;
+  cmCommit('SAVED · DUEL CLEARED');
+});
+/* Rule (iv). Won: challenger back in, challenged out, token gone.
+   Lost: challenger stays out; the token moves to the challenged team only if
+   it has never held one, otherwise it leaves play. */
+function cmResolve(won) {
+  var d = BASE.duel; if (!d) return;
+  var t = cmTokOf(d.challenger), w = d.week;
+  if (won) {
+    BASE.eliminated = cmElims().filter(function (x) { return x.id !== d.challenger; });
+    BASE.eliminated.push({ id: d.challenged, week: w, how: 'duel' });
+    if (t) t.status = 'spent';
+  } else if (t) {
+    if (!cmEverHeld(d.challenged)) { t.from = t.holder; t.holder = d.challenged; t.status = 'held'; }
+    else t.status = 'spent';
+  }
+  BASE.eliminated.sort(function (a, b) { return a.week - b.week; });
+  BASE.duel = null;
+  cmCommit(won ? 'SAVED · CHALLENGER BACK IN' : 'SAVED · CHALLENGER OUT');
+}
+$('#cWon').addEventListener('click', function () {
+  var d = BASE.duel;
+  if (d && confirm(nameOf(d.challenger) + ' beat ' + nameOf(d.challenged) + '? ' + nameOf(d.challenged) + ' will be eliminated and ' + nameOf(d.challenger) + ' returns.')) cmResolve(true);
+});
+$('#cLost').addEventListener('click', function () {
+  var d = BASE.duel;
+  if (d && confirm(nameOf(d.challenged) + ' beat ' + nameOf(d.challenger) + '? ' + nameOf(d.challenger) + ' stays out.')) cmResolve(false);
+});
+$('#cApply').addEventListener('click', function () {
+  try {
+    var j = JSON.parse($('#cJson').value);
+    if (!j || !j.players) throw new Error('no players list');
+    BASE = j; cmCommit();
+  } catch (e) { alert('That JSON will not parse: ' + e.message); }
+});
+$('#cCopy').addEventListener('click', function () {
+  $('#cJson').select();
+  try { document.execCommand('copy'); } catch (e) {}
+});
+/* commish:end */
+
 /* ---------- go ---------- */
 function postHeight() {
   var r = document.querySelector('.sg-root');
   if (!r) return;
-  try { window.parent.postMessage({ sgHeight: Math.ceil(r.getBoundingClientRect().height) + 4 }, '*'); } catch (e) {}
+  var hgt = r.getBoundingClientRect().height;
+  var p = typeof RULES !== 'undefined' && RULES.pop;
+  if (p && !p.hidden) hgt = Math.max(hgt, p.getBoundingClientRect().bottom - r.getBoundingClientRect().top + 16);
+  try { window.parent.postMessage({ sgHeight: Math.ceil(hgt) + 4 }, '*'); } catch (e) {}
 }
 /* Set true only once this is pasted into the Wix embed at a fixed height, so
    a stray scrollbar cannot make the iframe height stop being true. Leave it
@@ -1734,6 +2123,8 @@ function applyRole() {
   if (hint && APP_ROLE === 'editor') {
     hint.innerHTML = 'Saved to the league page. Changes appear for everyone within about 30 seconds.';
   }
+  var st = document.getElementById('cStatus');
+  if (st && APP_ROLE === 'editor' && window.self !== window.top) st.textContent = 'SAVES AUTOMATICALLY';
 }
 
 /* the commissioner build pushes state up; every other build never calls this */
