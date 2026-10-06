@@ -1,17 +1,17 @@
 {
   "season": 2026,
-  "updated": "2026-10-06T05:55:20Z",
+  "updated": "2026-10-06T11:00:34Z",
   "pot": {
     "total": 300,
     "dot_value": 5,
-    "paid_out": 60,
-    "remaining": 240
+    "paid_out": 80,
+    "remaining": 220
   },
   "totals": {
     "schilling": {
       "QB": 0,
       "RB": 0,
-      "WR": 1,
+      "WR": 2,
       "TE": 0
     },
     "garrett": {
@@ -24,7 +24,7 @@
       "QB": 0,
       "RB": 1,
       "WR": 0,
-      "TE": 1
+      "TE": 2
     },
     "greg": {
       "QB": 0,
@@ -46,7 +46,7 @@
     },
     "graham": {
       "QB": 0,
-      "RB": 0,
+      "RB": 1,
       "WR": 0,
       "TE": 1
     },
@@ -63,7 +63,7 @@
       "TE": 0
     },
     "anthony": {
-      "QB": 0,
+      "QB": 1,
       "RB": 0,
       "WR": 0,
       "TE": 0
@@ -189,6 +189,47 @@
             "HAYDEN"
           ],
           "value": "24.60",
+          "detail": "Brock Bowers"
+        }
+      }
+    },
+    {
+      "week": 4,
+      "positions": {
+        "QB": {
+          "manager": "anthony",
+          "manager_display": "ANTHONY",
+          "managers": [
+            "ANTHONY"
+          ],
+          "value": "32.16",
+          "detail": "Drake Maye"
+        },
+        "RB": {
+          "manager": "graham",
+          "manager_display": "GRAHAM",
+          "managers": [
+            "GRAHAM"
+          ],
+          "value": "31.70",
+          "detail": "Kyren Williams"
+        },
+        "WR": {
+          "manager": "schilling",
+          "manager_display": "SCHILLING",
+          "managers": [
+            "SCHILLING"
+          ],
+          "value": "34.80",
+          "detail": "CeeDee Lamb"
+        },
+        "TE": {
+          "manager": "hayden",
+          "manager_display": "HAYDEN",
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "17.60",
           "detail": "Brock Bowers"
         }
       }
