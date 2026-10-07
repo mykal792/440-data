@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "tax_per_move": 0.5,
-  "updated": "2026-10-07T05:55:28Z",
+  "updated": "2026-10-07T11:00:39Z",
   "high_score_bonus": "15.00",
   "managers": [
     {
@@ -29,6 +29,10 @@
       "moves": 5
     },
     {
+      "name": "GREG",
+      "moves": 3
+    },
+    {
       "name": "GRAHAM",
       "moves": 2
     },
@@ -39,13 +43,26 @@
     {
       "name": "GARRETT",
       "moves": 1
-    },
-    {
-      "name": "GREG",
-      "moves": 1
     }
   ],
-  "transactions": [],
+  "transactions": [
+    {
+      "manager": "GREG",
+      "added": "Bengals",
+      "add_pos": "Cin - DEF",
+      "dropped": "Chiefs",
+      "drop_pos": "KC - DEF",
+      "date": "Oct 7"
+    },
+    {
+      "manager": "GREG",
+      "added": "Carnell Tate",
+      "add_pos": "Ten - WR",
+      "dropped": "Marvin Harrison Jr.",
+      "drop_pos": "Ari - WR",
+      "date": "Oct 7"
+    }
+  ],
   "high_scores": [
     {
       "week": 1,
