@@ -258,15 +258,16 @@
   .db-inner { --u: calc(100cqw / 520); }
   .db-grid     { grid-template-columns: repeat(2, 1fr); }
 
-  /* 520-unit board, 455.67 of usable header. The title alone is 788.9 units,
-     so on a phone the illustration stands down and the words take the width —
-     at 0.60 the heading reads about a fifth larger than it would with the
-     laptop still in the row. */
-  .db-header   { height: calc(70 * var(--u)); }
+  /* 520-unit board, 455.67 of usable header. On a phone the lockup is the
+     words alone: the illustration and the rule both stand down, which lets the
+     heading run about a fifth larger than it could with the laptop in the row.
+     With the rule gone the lockup is just the cap band, so the header closes up
+     around it rather than leaving the rule's old space empty. */
+  .db-header   { height: calc(54 * var(--u)); }
   .db-lockup   { --lk: 0.60; top: calc(16 * var(--u)); }
   .db-illus    { display: none; }
+  .db-rule     { display: none; }
   .db-title    { margin-top: 0; }
-  .db-rule     { margin-top: calc(18.43 * var(--lu)); }   /* baseline-to-rule gap, from the artwork */
 }
 
 /* ---------- year navigation --------------------------------------------- */
