@@ -374,6 +374,14 @@ a.dl-row:hover { background:#fafafa; }
      behave normally. */
 
   var NAV_MSG = '440:navigate';
+
+  /* What happens when the host page does not answer - no Velo listener, and a
+     sandbox that blocks top navigation. The three possible behaviours are a
+     new tab, loading inside the embed, or nothing; 'none' ships because the
+     other two are the ones we are trying to avoid. With the Velo snippet in
+     place this never comes up. */
+  var NAV_FALLBACK = 'none';          /* 'none' | 'tab' | 'iframe' */
+
   var navTimer = null;
 
   function cancelNav() { if (navTimer) { clearTimeout(navTimer); navTimer = null; } }
@@ -390,11 +398,20 @@ a.dl-row:hover { background:#fafafa; }
   function goTo(url) {
     if (!url) { return; }
     cancelNav();
+
+    /* Route 1: ask the Wix page to navigate. Velo answers this and the page
+       changes in the same tab, which is the behaviour we want. */
     try { window.parent.postMessage({ type: NAV_MSG, url: url }, '*'); } catch (e) {}
+
+    /* Route 2: do it ourselves. Works only where the embed's sandbox allows
+       top-level navigation, which Wix's does not - harmless where it does. */
     try { (window.top || window).location.href = url; } catch (e) {}
+
+    if (NAV_FALLBACK === 'none') { return; }
     navTimer = setTimeout(function () {
       navTimer = null;
-      window.open(url, '_blank', 'noopener');
+      if (NAV_FALLBACK === 'tab') { window.open(url, '_blank', 'noopener'); }
+      else if (NAV_FALLBACK === 'iframe') { window.location.href = url; }
     }, 1500);
   }
 
@@ -410,9 +427,12 @@ a.dl-row:hover { background:#fafafa; }
     return a;
   }
 
-/* VELO - optional, and the only route that is guaranteed to stay in the same
-   tab. Add this to the page code of each Wix page carrying one of these
-   embeds, changing #html1 to that embed element's own ID:
+/* VELO - REQUIRED. Wix's embed blocks top-level navigation, so this is the
+   only way these links can change the page without opening a tab or loading
+   inside the embed. Turn on Dev Mode in the Wix editor, click the embed to
+   read its element ID from the properties panel, and paste this into the page
+   code of every page carrying one of these embeds, with #html1 swapped for
+   that ID:
 
      import wixLocation from 'wix-location';
 
