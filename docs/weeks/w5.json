@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-09T00:15:24Z",
+  "updated": "2026-10-09T00:20:21Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 0.0,
+        "score": 1.48,
         "projected": 114.29
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 0.0,
+        "score": 3.9,
         "projected": 121.89
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 0.0,
+        "score": 3.9,
         "projected": 121.17
       },
       "away": {
@@ -84,20 +84,20 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "1.48",
+          "detail": "Dak Prescott"
+        },
+        {
+          "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "0.00",
           "detail": "Joe Burrow"
         },
         {
-          "rank": 1,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "0.00",
-          "detail": "Dak Prescott"
-        },
-        {
-          "rank": 1,
+          "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
           "value": "0.00",
@@ -113,29 +113,83 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "3.90",
+          "detail": "8 to play"
+        },
+        {
+          "rank": 1,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "3.90",
+          "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
-        },
-        {
-          "rank": 3,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "1.48",
+          "detail": "8 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.48,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 37
+        }
+      ]
+    },
     {
       "name": "Joe Burrow",
       "position": "QB",
@@ -214,15 +268,6 @@
       "team": "Cle",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
       "points": 0.0,
       "stats": []
     },
@@ -497,15 +542,6 @@
       "stats": []
     },
     {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "George Kittle",
       "position": "TE",
       "team": "SF",
@@ -545,15 +581,6 @@
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
