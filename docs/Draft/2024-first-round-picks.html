@@ -477,14 +477,13 @@
     var strip = document.getElementById('yrFolders');
     if (!strip) { return; }
 
-    /* First folder in the row is the way back to the landing page. It is the
-       one link here that opens a new tab rather than replacing this one. */
+    /* First folder in the row is the way back to the landing page. Same tab
+       and same iframe breakout as the year folders beside it. */
     var home = document.createElement('a');
     home.className = 'yr-folder yr-folder--home';
     home.href = HOME_URL;
-    home.target = '_blank';
-    home.rel = 'noopener';
-    home.setAttribute('aria-label', 'Draft home (opens in a new tab)');
+    home.target = '_top';
+    home.setAttribute('aria-label', 'Draft home');
     home.appendChild(folderShape());
     var hs = document.createElement('span');
     hs.appendChild(document.createTextNode('DRAFT'));
