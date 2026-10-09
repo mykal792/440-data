@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-09T01:30:30Z",
+  "updated": "2026-10-09T01:35:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 0.0,
+        "score": 0.9,
         "projected": 117.35
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 2.2,
+        "score": 4.56,
         "projected": 114.35
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 3.9,
+        "score": 5.1,
         "projected": 121.9
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 1.0,
+        "score": 5.1,
         "projected": 99.29
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "2.20",
+          "value": "4.56",
           "detail": "Dak Prescott"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "3.90",
+          "value": "5.10",
           "detail": "8 to play"
         }
       ]
@@ -194,29 +194,15 @@
       "team": "Dal",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 3.9,
+      "points": 5.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 29
+          "value": 36
         },
         {
           "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 55
+          "value": 3
         }
       ]
     },
@@ -226,8 +212,40 @@
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.0,
+      "points": 5.1,
       "stats": []
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.56,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 114
+        }
+      ]
+    },
+    {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Joe Burrow",
@@ -251,15 +269,6 @@
       "name": "Emanuel Wilson",
       "position": "RB",
       "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
