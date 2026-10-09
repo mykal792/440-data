@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-09T02:55:22Z",
+  "updated": "2026-10-09T03:00:28Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 7.2,
+        "score": 14.2,
         "projected": 121.68
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 12.6,
+        "score": 22.8,
         "projected": 121.9
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "7.20",
+          "value": "14.20",
           "detail": "Dak Prescott"
         },
         {
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "13.00",
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "22.80",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "12.60",
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "14.20",
           "detail": "8 to play"
         }
       ]
@@ -163,6 +163,50 @@
       ]
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 22.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 113
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 14.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 255
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -184,42 +228,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 96
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 230
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
