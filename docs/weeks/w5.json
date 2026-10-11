@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T19:50:21Z",
+  "updated": "2026-10-11T19:55:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 90.7,
+        "score": 88.7,
         "projected": 118.41
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 77.84,
+        "score": 78.44,
         "projected": 127.81
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 94.6,
+        "score": 104.9,
         "projected": 122.71
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 34.8,
+        "score": 36.8,
         "projected": 120.78
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 66.1,
+        "score": 68.1,
         "projected": 104.27
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 104.38,
+        "score": 112.08,
         "projected": 117.84
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 99.66,
+        "score": 106.26,
         "projected": 111.0
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "43.26",
+          "value": "49.86",
           "detail": "Drake Maye"
         },
         {
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "104.38",
+          "value": "112.08",
           "detail": "2 to play"
         },
         {
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "99.66",
+          "value": "106.26",
           "detail": "3 to play"
         },
         {
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "94.60",
+          "value": "104.90",
           "detail": "3 to play"
         }
       ]
@@ -142,11 +142,11 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 43.26,
+      "points": 49.86,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 359
+          "value": 374
         },
         {
           "stat": "RUSH YD",
@@ -154,7 +154,7 @@
         },
         {
           "stat": "TD",
-          "value": 4
+          "value": 5
         }
       ]
     },
@@ -181,6 +181,32 @@
       ]
     },
     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 32.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 90
+        },
+        {
+          "stat": "REC YD",
+          "value": 87
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -199,32 +225,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 32.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 84
-        },
-        {
-          "stat": "REC YD",
-          "value": 87
-        },
-        {
-          "stat": "REC",
-          "value": 6
         },
         {
           "stat": "TD",
@@ -347,6 +347,28 @@
       ]
     },
     {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 25.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 86
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -399,6 +421,28 @@
         },
         {
           "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 19.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 110
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -487,26 +531,13 @@
       ]
     },
     {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 17.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 69
-        },
-        {
-          "stat": "REC",
-          "value": 9
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 17.0,
+      "stats": []
     },
     {
       "name": "Will Reichard",
@@ -614,15 +645,6 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 15.0,
-      "stats": []
-    },
-    {
       "name": "Ollie Gordon II",
       "position": "RB",
       "team": "Mia",
@@ -665,15 +687,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Browns",
-      "position": "DEF",
-      "team": "Cle",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 13.0,
-      "stats": []
     },
     {
       "name": "Vikings",
@@ -729,6 +742,24 @@
       ]
     },
     {
+      "name": "Browns",
+      "position": "DEF",
+      "team": "Cle",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.0,
+      "stats": []
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -773,24 +804,6 @@
       ]
     },
     {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 87
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -820,15 +833,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.0,
-      "stats": []
     },
     {
       "name": "Chris Boswell",
