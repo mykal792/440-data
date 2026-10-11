@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T14:50:24Z",
+  "updated": "2026-10-11T14:55:22Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 44.38,
+        "score": 44.62,
         "projected": 110.0
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 41.5,
+        "score": 43.8,
         "projected": 122.66
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "11.88",
+          "value": "12.12",
           "detail": "Trevor Lawrence"
         },
         {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "44.38",
+          "value": "44.62",
           "detail": "7 to play"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "41.50",
+          "value": "43.80",
           "detail": "6 to play"
         },
         {
@@ -260,11 +260,11 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 11.88,
+      "points": 12.12,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 132
+          "value": 138
         },
         {
           "stat": "RUSH YD",
@@ -293,6 +293,28 @@
       "manager_display": "GANGUS",
       "points": 4.0,
       "stats": []
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jakobi Meyers",
@@ -327,20 +349,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 11
         }
       ]
     },
