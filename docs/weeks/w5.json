@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T19:05:22Z",
+  "updated": "2026-10-11T19:10:25Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 87.3,
+        "score": 88.2,
         "projected": 122.71
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 29.3,
+        "score": 34.3,
         "projected": 120.78
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 70.56,
+        "score": 72.56,
         "projected": 117.84
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 52.6,
+        "score": 63.4,
         "projected": 114.72
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 64.72,
+        "score": 67.42,
         "projected": 111.0
       }
     }
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "87.30",
+          "value": "88.20",
           "detail": "3 to play"
         },
         {
@@ -330,11 +330,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 20.96,
+      "points": 22.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 209
+          "value": 249
         },
         {
           "stat": "RUSH YD",
@@ -345,6 +345,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Spencer Shrader",
+      "position": "K",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 18.5,
+      "stats": []
     },
     {
       "name": "Brock Bowers",
@@ -470,15 +479,6 @@
       ]
     },
     {
-      "name": "Spencer Shrader",
-      "position": "K",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 14.5,
-      "stats": []
-    },
-    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -531,6 +531,54 @@
       ]
     },
     {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 13.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 71
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 62
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -551,6 +599,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.4,
+      "stats": []
     },
     {
       "name": "Texans",
@@ -584,15 +641,6 @@
       ]
     },
     {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.4,
-      "stats": []
-    },
-    {
       "name": "Browns",
       "position": "DEF",
       "team": "Cle",
@@ -611,24 +659,6 @@
       "stats": []
     },
     {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 9.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 35
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -636,6 +666,28 @@
       "manager_display": "GARRETT",
       "points": 9.1,
       "stats": []
+    },
+    {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 64
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
     },
     {
       "name": "Vikings",
@@ -714,32 +766,6 @@
       ]
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 63
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -798,6 +824,28 @@
       ]
     },
     {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 28
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Jakobi Meyers",
       "position": "WR",
       "team": "Jax",
@@ -812,28 +860,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -856,28 +882,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "REC YD",
-          "value": 24
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
