@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T18:40:25Z",
+  "updated": "2026-10-11T18:45:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 55.64,
+        "score": 69.44,
         "projected": 118.41
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 86.3,
+        "score": 87.1,
         "projected": 122.71
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 24.5,
+        "score": 25.5,
         "projected": 120.78
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 42.8,
+        "score": 44.9,
         "projected": 114.02
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 58.9,
+        "score": 67.02,
         "projected": 117.84
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 40.6,
+        "score": 42.1,
         "projected": 114.72
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 47.4,
+        "score": 48.44,
         "projected": 111.0
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "20.20",
+          "value": "21.24",
           "detail": "Drake Maye"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "86.30",
+          "value": "87.10",
           "detail": "3 to play"
         },
         {
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "61.74",
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "69.44",
           "detail": "4 to play"
         }
       ]
@@ -177,6 +177,28 @@
         {
           "stat": "REC",
           "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 29.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 131
+        },
+        {
+          "stat": "REC",
+          "value": 4
         },
         {
           "stat": "TD",
@@ -260,15 +282,37 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 20.2,
+      "points": 21.24,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 160
+          "value": 186
         },
         {
           "stat": "RUSH YD",
           "value": 18
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 20.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 193
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
         },
         {
           "stat": "TD",
@@ -325,6 +369,28 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 16.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 80
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -356,28 +422,6 @@
       ]
     },
     {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 15.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 78
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brock Bowers",
       "position": "TE",
       "team": "LV",
@@ -392,28 +436,6 @@
         {
           "stat": "REC",
           "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 14.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 70
-        },
-        {
-          "stat": "REC",
-          "value": 3
         },
         {
           "stat": "TD",
@@ -481,28 +503,6 @@
       "manager_display": "COYNE",
       "points": 12.3,
       "stats": []
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 140
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Hunter Henry",
@@ -638,6 +638,24 @@
       "stats": []
     },
     {
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "Hou",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 50
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -656,20 +674,16 @@
       "stats": []
     },
     {
-      "name": "Nico Collins",
-      "position": "WR",
-      "team": "Hou",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 6.0,
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 6.2,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 3
+          "stat": "RUSH YD",
+          "value": 62
         }
       ]
     },
@@ -701,20 +715,6 @@
       "stats": []
     },
     {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 54
-        }
-      ]
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -731,6 +731,24 @@
       "manager_display": "SCARPITTI",
       "points": 5.0,
       "stats": []
+    },
+    {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Jakobi Meyers",
@@ -961,24 +979,6 @@
           "stat": "RUSH YD",
           "value": 1
         },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.9,
-      "stats": [
         {
           "stat": "REC YD",
           "value": 19
