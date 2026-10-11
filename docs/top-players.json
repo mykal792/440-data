@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T20:35:22Z",
+  "updated": "2026-10-11T20:40:24Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -214,6 +214,28 @@
       ]
     },
     {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 25.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 121
+        },
+        {
+          "stat": "REC",
+          "value": 11
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -228,28 +250,6 @@
         {
           "stat": "REC",
           "value": 9
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 25.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 122
-        },
-        {
-          "stat": "REC",
-          "value": 10
         },
         {
           "stat": "TD",
@@ -711,6 +711,32 @@
       ]
     },
     {
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 58
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -758,6 +784,15 @@
           "value": 5
         }
       ]
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Luther Burden III",
@@ -875,15 +910,6 @@
       "stats": []
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "Jakobi Meyers",
       "position": "WR",
       "team": "Jax",
@@ -996,11 +1022,11 @@
       "team": "Den",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.16,
+      "points": 2.36,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 54
+          "value": 59
         }
       ]
     },
@@ -1041,20 +1067,6 @@
       ]
     },
     {
-      "name": "Jacoby Brissett",
-      "position": "QB",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.72,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 43
-        }
-      ]
-    },
-    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -1065,6 +1077,28 @@
         {
           "stat": "REC YD",
           "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.58,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
         },
         {
           "stat": "REC",
@@ -1113,6 +1147,34 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
       "name": "T.J. Hockenson",
       "position": "TE",
       "team": "Min",
@@ -1127,20 +1189,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 11
         }
       ]
     },
@@ -1186,24 +1234,6 @@
       ]
     },
     {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jeremiyah Love",
       "position": "RB",
       "team": "Ari",
@@ -1214,20 +1244,6 @@
         {
           "stat": "RUSH YD",
           "value": 8
-        }
-      ]
-    },
-    {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
         }
       ]
     },
