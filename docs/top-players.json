@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T16:45:25Z",
+  "updated": "2026-10-11T16:50:21Z",
   "players": [
     {
       "name": "Bucky Irving",
@@ -52,6 +52,32 @@
       ]
     },
     {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 20.66,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 304
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -69,32 +95,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 17.9,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 285
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -153,11 +153,11 @@
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 9.3,
+      "points": 9.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 59
+          "value": 64
         },
         {
           "stat": "REC YD",
@@ -188,6 +188,24 @@
       "stats": []
     },
     {
+      "name": "Jakobi Meyers",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -195,24 +213,6 @@
       "manager_display": "GARRETT",
       "points": 4.4,
       "stats": []
-    },
-    {
-      "name": "Jakobi Meyers",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "CeeDee Lamb",
