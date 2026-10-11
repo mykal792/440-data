@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T18:00:32Z",
+  "updated": "2026-10-11T18:05:19Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 36.98,
+        "score": 39.72,
         "projected": 118.41
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 52.14,
+        "score": 58.24,
         "projected": 127.81
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 73.44,
+        "score": 75.74,
         "projected": 109.58
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 18.2,
+        "score": 19.9,
         "projected": 120.78
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 34.6,
+        "score": 35.2,
         "projected": 114.72
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "14.38",
+          "value": "16.12",
           "detail": "Joe Burrow"
         }
       ]
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "73.44",
+          "value": "75.74",
           "detail": "4 to play"
         },
         {
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "52.14",
+          "value": "58.24",
           "detail": "4 to play"
         }
       ]
@@ -255,6 +255,28 @@
       ]
     },
     {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 16.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 73
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -303,28 +325,6 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 14.38,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 57
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -339,6 +339,54 @@
         {
           "stat": "REC YD",
           "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 13.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 35
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
         },
         {
           "stat": "REC",
@@ -411,28 +459,6 @@
       "manager_display": "SCOTTY",
       "points": 11.0,
       "stats": []
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 37
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Bhayshul Tuten",
@@ -546,7 +572,7 @@
       "team": "Cle",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 7.0,
+      "points": 8.0,
       "stats": []
     },
     {
@@ -557,28 +583,6 @@
       "manager_display": "GREG",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 34
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Jaguars",
@@ -667,6 +671,28 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -832,23 +858,27 @@
       ]
     },
     {
-      "name": "Chase Brown",
+      "name": "Aaron Jones Sr.",
       "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.5,
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 36
         },
         {
           "stat": "REC YD",
-          "value": 6
+          "value": 2
         },
         {
           "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -890,32 +920,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
     },
