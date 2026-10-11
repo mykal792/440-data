@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T22:20:25Z",
+  "updated": "2026-10-11T22:25:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 115.4,
+        "score": 115.9,
         "projected": 118.6
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 101.64,
+        "score": 103.34,
         "projected": 127.85
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 102.64,
+        "score": 113.04,
         "projected": 109.7
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 87.8,
+        "score": 87.9,
         "projected": 114.02
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 117.88,
+        "score": 118.18,
         "projected": 117.93
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 61.9,
+        "score": 69.38,
         "projected": 120.81
       }
     },
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "117.88",
+          "value": "118.18",
           "detail": "All played"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "115.40",
+          "value": "115.90",
           "detail": "All played"
         },
         {
@@ -391,6 +391,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 25.48,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 187
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -448,6 +466,32 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 20.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 81
+        },
+        {
+          "stat": "REC YD",
+          "value": 48
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -488,32 +532,6 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 19.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 64
-        },
-        {
-          "stat": "REC YD",
-          "value": 48
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
@@ -540,24 +558,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 18.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 150
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -593,6 +593,28 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 17.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -817,6 +839,32 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Browns",
       "position": "DEF",
       "team": "Cle",
@@ -833,32 +881,6 @@
       "manager_display": "GRAHAM",
       "points": 10.9,
       "stats": []
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 34
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Bhayshul Tuten",
@@ -1030,28 +1052,6 @@
       "manager_display": "GRAHAM",
       "points": 8.0,
       "stats": []
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 7.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Luther Burden III",
@@ -1338,6 +1338,24 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Jeremiyah Love",
       "position": "RB",
       "team": "Ari",
@@ -1348,24 +1366,6 @@
         {
           "stat": "RUSH YD",
           "value": 26
-        }
-      ]
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1563,11 +1563,11 @@
       "team": "Den",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.6,
+      "points": 0.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 6
+          "value": 7
         }
       ]
     },
