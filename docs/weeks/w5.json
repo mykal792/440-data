@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T21:00:30Z",
+  "updated": "2026-10-11T21:05:21Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 106.5,
+        "score": 110.8,
         "projected": 122.84
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 89.56,
+        "score": 89.66,
         "projected": 114.73
       },
       "away": {
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "108.36",
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "110.80",
           "detail": "2 to play"
         },
         {
           "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "106.50",
-          "detail": "3 to play"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "108.36",
+          "detail": "2 to play"
         }
       ]
     }
@@ -1087,6 +1087,24 @@
       ]
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "TreVeyon Henderson",
       "position": "RB",
       "team": "NE",
@@ -1181,11 +1199,15 @@
       "team": "Den",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.36,
+      "points": 2.56,
       "stats": [
         {
           "stat": "PASS YD",
           "value": 59
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
         }
       ]
     },
@@ -1212,20 +1234,6 @@
       ]
     },
     {
-      "name": "Jeremiyah Love",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        }
-      ]
-    },
-    {
       "name": "Romeo Doubs",
       "position": "WR",
       "team": "NE",
@@ -1240,6 +1248,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jeremiyah Love",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 20
         }
       ]
     },
@@ -1504,15 +1526,6 @@
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
