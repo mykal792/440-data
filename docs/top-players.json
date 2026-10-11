@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T21:45:23Z",
+  "updated": "2026-10-11T21:50:25Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -429,6 +429,24 @@
       "stats": []
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 16.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 124
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -482,34 +500,16 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 16.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 113
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 16.2,
+      "points": 16.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 57
+          "value": 60
         },
         {
           "stat": "REC YD",
@@ -707,11 +707,11 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 10.6,
+      "points": 10.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 33
+          "value": 34
         },
         {
           "stat": "REC YD",
@@ -1202,6 +1202,24 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jaylen Waddle",
       "position": "WR",
       "team": "Den",
@@ -1373,24 +1391,6 @@
         {
           "stat": "REC YD",
           "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 3
         },
         {
           "stat": "REC",
