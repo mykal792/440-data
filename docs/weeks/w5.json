@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T20:20:27Z",
+  "updated": "2026-10-11T20:25:19Z",
   "matchups": [
     {
       "home": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 113.18,
+        "score": 113.88,
         "projected": 117.93
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 86.1,
+        "score": 87.46,
         "projected": 114.73
       },
       "away": {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "113.18",
+          "value": "113.88",
           "detail": "2 to play"
         },
         {
@@ -330,15 +330,15 @@
       "team": "NYG",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 26.2,
+      "points": 26.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 92
+          "value": 94
         },
         {
           "stat": "REC",
-          "value": 10
+          "value": 11
         },
         {
           "stat": "TD",
@@ -1115,6 +1115,20 @@
       ]
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 59
+        }
+      ]
+    },
+    {
       "name": "Romeo Doubs",
       "position": "WR",
       "team": "NE",
@@ -1219,20 +1233,6 @@
         {
           "stat": "RUSH YD",
           "value": 11
-        }
-      ]
-    },
-    {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 25
         }
       ]
     },
