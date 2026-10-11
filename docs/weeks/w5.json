@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T20:55:21Z",
+  "updated": "2026-10-11T21:00:30Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 105.2,
+        "score": 105.7,
         "projected": 118.6
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 102.34,
+        "score": 99.34,
         "projected": 109.7
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 33.28,
+        "score": 34.28,
         "projected": 120.81
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 88.66,
+        "score": 89.56,
         "projected": 114.73
       },
       "away": {
@@ -720,15 +720,6 @@
       ]
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 13.0,
-      "stats": []
-    },
-    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -811,6 +802,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "Bengals",
@@ -950,7 +950,7 @@
       "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 7.0,
+      "points": 8.0,
       "stats": []
     },
     {
@@ -1212,6 +1212,20 @@
       ]
     },
     {
+      "name": "Jeremiyah Love",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        }
+      ]
+    },
+    {
       "name": "Romeo Doubs",
       "position": "WR",
       "team": "NE",
@@ -1244,6 +1258,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 17
         }
       ]
     },
@@ -1328,20 +1356,6 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        }
-      ]
-    },
-    {
       "name": "T.J. Hockenson",
       "position": "TE",
       "team": "Min",
@@ -1356,20 +1370,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jeremiyah Love",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
         }
       ]
     },
