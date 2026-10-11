@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T23:05:21Z",
+  "updated": "2026-10-11T23:10:29Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 113.34,
+        "score": 119.64,
         "projected": 127.88
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 125.6,
+        "score": 126.3,
         "projected": 122.84
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 130.88,
+        "score": 132.68,
         "projected": 117.93
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 92.42,
+        "score": 90.94,
         "projected": 120.81
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "34.42",
+          "value": "34.94",
           "detail": "Jared Goff"
         },
         {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "130.88",
+          "value": "132.68",
           "detail": "All played"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "125.60",
+          "value": "126.30",
           "detail": "1 to play"
         },
         {
@@ -159,6 +159,32 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 37.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 151
+        },
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -190,11 +216,11 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 34.42,
+      "points": 34.94,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 258
+          "value": 271
         },
         {
           "stat": "RUSH YD",
@@ -295,32 +321,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 30.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 148
-        },
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -925,15 +925,6 @@
       ]
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 12.0,
-      "stats": []
-    },
-    {
       "name": "Emanuel Wilson",
       "position": "RB",
       "team": "Sea",
@@ -1026,6 +1017,15 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Bo Nix",
       "position": "QB",
       "team": "Den",
@@ -1048,6 +1048,24 @@
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 9.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 69
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -1128,24 +1146,6 @@
       "team": "Hou",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 8.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 8.1,
       "stats": [
         {
@@ -1296,6 +1296,24 @@
       "stats": []
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 24
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Jakobi Meyers",
       "position": "WR",
       "team": "Jax",
@@ -1332,24 +1350,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },

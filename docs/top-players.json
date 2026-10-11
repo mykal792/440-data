@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T23:05:21Z",
+  "updated": "2026-10-11T23:10:29Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -22,6 +22,32 @@
         {
           "stat": "TD",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 37.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 151
+        },
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -57,11 +83,11 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 34.42,
+      "points": 34.94,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 258
+          "value": 271
         },
         {
           "stat": "RUSH YD",
@@ -162,32 +188,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 30.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 148
-        },
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -792,15 +792,6 @@
       ]
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 12.0,
-      "stats": []
-    },
-    {
       "name": "Emanuel Wilson",
       "position": "RB",
       "team": "Sea",
@@ -893,6 +884,15 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Bo Nix",
       "position": "QB",
       "team": "Den",
@@ -915,6 +915,24 @@
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 9.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 69
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -995,24 +1013,6 @@
       "team": "Hou",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 8.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 8.1,
       "stats": [
         {
@@ -1163,6 +1163,24 @@
       "stats": []
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 24
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Jakobi Meyers",
       "position": "WR",
       "team": "Jax",
@@ -1199,24 +1217,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
