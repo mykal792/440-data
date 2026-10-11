@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T16:50:21Z",
+  "updated": "2026-10-11T16:55:22Z",
   "players": [
     {
       "name": "Bucky Irving",
@@ -30,6 +30,54 @@
       ]
     },
     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 29.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 124
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 27.74,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 331
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -44,54 +92,6 @@
         {
           "stat": "REC",
           "value": 9
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 20.66,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 304
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 18.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 97
-        },
-        {
-          "stat": "REC",
-          "value": 5
         },
         {
           "stat": "TD",
@@ -170,21 +170,21 @@
       ]
     },
     {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 5.1,
-      "stats": []
-    },
-    {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.0,
       "stats": []
     },
     {
@@ -211,7 +211,7 @@
       "team": "Jax",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 4.4,
+      "points": 3.4,
       "stats": []
     },
     {
