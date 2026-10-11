@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T20:25:19Z",
+  "updated": "2026-10-11T20:30:29Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -689,6 +689,15 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -1032,6 +1041,24 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Mike Washington Jr.",
       "position": "RB",
       "team": "LV",
@@ -1127,8 +1154,13 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
+      "points": 0.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 8
+        }
+      ]
     },
     {
       "name": "Emanuel Wilson",
@@ -1136,8 +1168,13 @@
       "team": "Sea",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
+      "points": 0.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        }
+      ]
     },
     {
       "name": "Jahmyr Gibbs",
@@ -1145,8 +1182,41 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
+      "points": 0.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Jeremiyah Love",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.44,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 11
+        }
+      ]
     },
     {
       "name": "Drake London",
@@ -1190,15 +1260,6 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jacoby Brissett",
-      "position": "QB",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 0.0,
       "stats": []
     },
@@ -1266,15 +1327,6 @@
       "stats": []
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -1307,24 +1359,6 @@
       "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jeremiyah Love",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 0.0,
       "stats": []
     },
