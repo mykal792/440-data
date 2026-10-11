@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T20:40:24Z",
+  "updated": "2026-10-11T20:45:25Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -587,6 +587,15 @@
       ]
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 13.0,
+      "stats": []
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -616,15 +625,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 12.0,
-      "stats": []
     },
     {
       "name": "Hunter Henry",
@@ -764,6 +764,32 @@
         {
           "stat": "REC",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -1107,6 +1133,28 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Mike Washington Jr.",
       "position": "RB",
       "team": "LV",
@@ -1161,20 +1209,6 @@
       ]
     },
     {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        }
-      ]
-    },
-    {
       "name": "T.J. Hockenson",
       "position": "TE",
       "team": "Min",
@@ -1205,6 +1239,15 @@
           "value": 11
         }
       ]
+    },
+    {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Eddy Pineiro",
@@ -1248,15 +1291,15 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
+      "name": "Jared Goff",
+      "position": "QB",
       "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.5,
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.2,
       "stats": [
         {
-          "stat": "RUSH YD",
+          "stat": "PASS YD",
           "value": 5
         }
       ]
@@ -1361,15 +1404,6 @@
       "stats": []
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -1382,15 +1416,6 @@
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
