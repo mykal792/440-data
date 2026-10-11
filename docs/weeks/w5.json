@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T17:15:26Z",
+  "updated": "2026-10-11T17:20:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 25.0,
+        "score": 26.0,
         "projected": 118.4
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 33.84,
+        "score": 48.34,
         "projected": 127.79
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 61.24,
+        "score": 71.94,
         "projected": 109.53
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 14.9,
+        "score": 11.9,
         "projected": 120.78
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 12.1,
+        "score": 13.3,
         "projected": 114.01
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 30.78,
+        "score": 32.48,
         "projected": 117.84
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 17.14,
+        "score": 23.34,
         "projected": 110.95
       }
     }
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "61.24",
-          "detail": "6 to play"
+          "value": "71.94",
+          "detail": "5 to play"
         },
         {
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "33.84",
+          "value": "48.34",
           "detail": "4 to play"
         }
       ]
@@ -255,6 +255,28 @@
       ]
     },
     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 15.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 75
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -325,6 +347,28 @@
       ]
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -345,15 +389,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 10.0,
-      "stats": []
     },
     {
       "name": "Vikings",
@@ -396,6 +431,24 @@
       "stats": []
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 31
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -412,6 +465,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Steelers",
@@ -535,20 +597,6 @@
       ]
     },
     {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        }
-      ]
-    },
-    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -617,6 +665,28 @@
         {
           "stat": "RUSH YD",
           "value": 20
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -693,6 +763,24 @@
       ]
     },
     {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -709,6 +797,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Evan McPherson",
@@ -752,24 +849,6 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": -5
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
@@ -808,28 +887,6 @@
         {
           "stat": "RUSH YD",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -4
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -878,15 +935,6 @@
       "name": "Jaylen Waddle",
       "position": "WR",
       "team": "Den",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -950,15 +998,6 @@
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
@@ -1229,15 +1268,6 @@
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
