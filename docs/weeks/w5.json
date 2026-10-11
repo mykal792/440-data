@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T22:45:26Z",
+  "updated": "2026-10-11T22:50:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 120.3,
+        "score": 121.2,
         "projected": 118.6
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 60.4,
+        "score": 61.04,
         "projected": 120.91
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 125.68,
+        "score": 128.28,
         "projected": 117.93
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 86.58,
+        "score": 91.38,
         "projected": 120.81
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 91.08,
+        "score": 96.88,
         "projected": 114.73
       },
       "away": {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "125.68",
+          "value": "128.28",
           "detail": "All played"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "120.30",
+          "value": "121.20",
           "detail": "All played"
         }
       ]
@@ -496,6 +496,15 @@
       ]
     },
     {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 21.0,
+      "stats": []
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -518,34 +527,16 @@
       ]
     },
     {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 19.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 123
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
-    },
-    {
       "name": "Jacoby Brissett",
       "position": "QB",
       "team": "Ari",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 19.22,
+      "points": 19.86,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 198
+          "value": 214
         },
         {
           "stat": "RUSH YD",
@@ -566,6 +557,24 @@
         {
           "stat": "INT",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 19.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 123
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -717,15 +726,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 16.2,
-      "stats": []
     },
     {
       "name": "Justin Jefferson",
@@ -890,6 +890,45 @@
       ]
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.0,
+      "stats": []
+    },
+    {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 58
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -938,36 +977,6 @@
       ]
     },
     {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 11.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 56
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Browns",
       "position": "DEF",
       "team": "Cle",
@@ -1008,15 +1017,6 @@
       "stats": []
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -1035,6 +1035,32 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.58,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 117
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -1095,6 +1121,24 @@
       "manager_display": "HAYDEN",
       "points": 8.0,
       "stats": []
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
     },
     {
       "name": "Amon-Ra St. Brown",
@@ -1252,24 +1296,6 @@
       "stats": []
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 29
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Jakobi Meyers",
       "position": "WR",
       "team": "Jax",
@@ -1363,28 +1389,6 @@
       ]
     },
     {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.38,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 112
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -1453,11 +1457,11 @@
       "team": "Ari",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.6,
+      "points": 2.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 26
+          "value": 22
         }
       ]
     },
