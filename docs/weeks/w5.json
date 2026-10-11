@@ -1,33 +1,33 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T22:55:23Z",
+  "updated": "2026-10-11T23:00:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 121.2,
+        "score": 121.6,
         "projected": 118.6
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 109.54,
-        "projected": 127.85
+        "score": 111.44,
+        "projected": 127.88
       }
     },
     {
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 118.04,
-        "projected": 109.7
+        "score": 119.04,
+        "projected": 109.73
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 124.6,
+        "score": 125.6,
         "projected": 122.84
       }
     },
@@ -36,7 +36,7 @@
         "name": "GREG",
         "face": "greg",
         "score": 61.76,
-        "projected": 120.91
+        "projected": 120.93
       },
       "away": {
         "name": "SCOTTY",
@@ -70,7 +70,7 @@
         "name": "ANTHONY",
         "face": "anthony",
         "score": 110.36,
-        "projected": 110.98
+        "projected": 111.0
       }
     }
   ],
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "124.60",
+          "value": "125.60",
           "detail": "1 to play"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "121.20",
+          "value": "121.60",
           "detail": "All played"
         }
       ]
@@ -321,6 +321,32 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 29.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 129
+        },
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -342,32 +368,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 27.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 110
-        },
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -890,6 +890,41 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 47
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
@@ -951,46 +986,11 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 11.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Browns",
       "position": "DEF",
       "team": "Cle",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 11.0,
-      "stats": []
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
       "points": 11.0,
       "stats": []
     },
@@ -1336,6 +1336,24 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -1403,24 +1421,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
