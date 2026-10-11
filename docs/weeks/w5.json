@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T21:15:24Z",
+  "updated": "2026-10-11T21:20:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 108.0,
+        "score": 108.7,
         "projected": 118.6
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 39.66,
+        "score": 40.66,
         "projected": 120.81
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 90.14,
+        "score": 90.04,
         "projected": 114.73
       },
       "away": {
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "108.36",
-          "detail": "2 to play"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "108.70",
+          "detail": "All played"
         }
       ]
     }
@@ -953,6 +953,15 @@
       ]
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -969,15 +978,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 8.0,
-      "stats": []
     },
     {
       "name": "Luther Burden III",
@@ -1197,6 +1197,28 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -1220,7 +1242,7 @@
       "team": "Den",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 3.04,
+      "points": 2.94,
       "stats": [
         {
           "stat": "PASS YD",
@@ -1228,28 +1250,6 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 17
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
           "value": 1
         }
       ]
@@ -1278,11 +1278,11 @@
       "team": "Den",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 2.2,
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 8
+          "value": 9
         },
         {
           "stat": "REC YD",

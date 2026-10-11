@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T21:15:24Z",
+  "updated": "2026-10-11T21:20:22Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -820,6 +820,15 @@
       ]
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -836,15 +845,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 8.0,
-      "stats": []
     },
     {
       "name": "Luther Burden III",
@@ -1064,6 +1064,28 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -1087,7 +1109,7 @@
       "team": "Den",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 3.04,
+      "points": 2.94,
       "stats": [
         {
           "stat": "PASS YD",
@@ -1095,28 +1117,6 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 17
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
           "value": 1
         }
       ]
@@ -1145,11 +1145,11 @@
       "team": "Den",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 2.2,
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 8
+          "value": 9
         },
         {
           "stat": "REC YD",
