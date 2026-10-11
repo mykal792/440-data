@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T19:35:22Z",
+  "updated": "2026-10-11T19:40:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 84.68,
+        "score": 85.68,
         "projected": 118.41
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 77.34,
+        "score": 77.84,
         "projected": 127.81
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 36.8,
+        "score": 34.8,
         "projected": 120.78
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 61.8,
+        "score": 63.4,
         "projected": 104.27
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 89.76,
+        "score": 92.66,
         "projected": 117.84
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 71.3,
+        "score": 72.3,
         "projected": 114.72
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 98.76,
+        "score": 99.06,
         "projected": 111.0
       }
     }
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "98.76",
+          "value": "99.06",
           "detail": "3 to play"
         },
         {
           "rank": 2,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "92.66",
+          "detail": "2 to play"
+        },
+        {
+          "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "92.50",
           "detail": "3 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "89.76",
-          "detail": "2 to play"
         }
       ]
     }
@@ -212,11 +212,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 31.6,
+      "points": 32.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 79
+          "value": 84
         },
         {
           "stat": "REC YD",
@@ -623,6 +623,24 @@
       "stats": []
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 13.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 73
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -641,24 +659,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 13.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 70
         },
         {
           "stat": "TD",
@@ -689,15 +689,6 @@
       ]
     },
     {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -725,6 +716,15 @@
       "team": "Cle",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 10.0,
       "stats": []
     },
@@ -778,12 +778,21 @@
       ]
     },
     {
-      "name": "Vikings",
+      "name": "Bengals",
       "position": "DEF",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 9.0,
+      "stats": []
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.8,
       "stats": []
     },
     {
@@ -827,15 +836,6 @@
       ]
     },
     {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.8,
-      "stats": []
-    },
-    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -854,6 +854,46 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 46
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 44
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -900,46 +940,6 @@
       "manager_display": "SCOTTY",
       "points": 5.1,
       "stats": []
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 35
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 28
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Malik Nabers",
@@ -1049,6 +1049,24 @@
       ]
     },
     {
+      "name": "Denzel Boston",
+      "position": "WR",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Romeo Doubs",
       "position": "WR",
       "team": "NE",
@@ -1099,24 +1117,6 @@
         {
           "stat": "REC YD",
           "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Denzel Boston",
-      "position": "WR",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
         },
         {
           "stat": "REC",
