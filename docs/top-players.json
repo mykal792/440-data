@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T19:45:22Z",
+  "updated": "2026-10-11T19:50:21Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -9,11 +9,11 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 42.66,
+      "points": 43.26,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 344
+          "value": 359
         },
         {
           "stat": "RUSH YD",
@@ -127,11 +127,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 30.96,
+      "points": 31.28,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 359
+          "value": 367
         },
         {
           "stat": "RUSH YD",
@@ -214,6 +214,28 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 21.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 104
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -267,6 +289,36 @@
       ]
     },
     {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 19.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 113
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -302,20 +354,20 @@
       ]
     },
     {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 17.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 89
+          "value": 69
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 9
         },
         {
           "stat": "TD",
@@ -331,28 +383,6 @@
       "manager_display": "SCARPITTI",
       "points": 16.9,
       "stats": []
-    },
-    {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 16.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 69
-        },
-        {
-          "stat": "REC",
-          "value": 8
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Ja'Marr Chase",
@@ -425,36 +455,6 @@
       ]
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 15.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 97
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -486,7 +486,7 @@
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 14.0,
+      "points": 15.0,
       "stats": []
     },
     {
@@ -534,6 +534,24 @@
       ]
     },
     {
+      "name": "Browns",
+      "position": "DEF",
+      "team": "Cle",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 13.0,
+      "stats": []
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 13.0,
+      "stats": []
+    },
+    {
       "name": "Denzel Boston",
       "position": "WR",
       "team": "Cle",
@@ -578,15 +596,6 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -609,15 +618,6 @@
       ]
     },
     {
-      "name": "Browns",
-      "position": "DEF",
-      "team": "Cle",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -636,6 +636,24 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 87
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -667,24 +685,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 86
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -938,6 +938,15 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.0,
+      "stats": []
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -972,15 +981,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.0,
-      "stats": []
     },
     {
       "name": "CeeDee Lamb",
