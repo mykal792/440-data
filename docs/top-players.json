@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T19:30:27Z",
+  "updated": "2026-10-11T19:35:22Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -74,20 +74,24 @@
       ]
     },
     {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 30.6,
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 31.6,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 79
+        },
+        {
           "stat": "REC YD",
-          "value": 141
+          "value": 87
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 6
         },
         {
           "stat": "TD",
@@ -96,24 +100,42 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 29.4,
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 31.3,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 68
-        },
-        {
           "stat": "REC YD",
-          "value": 81
+          "value": 143
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 30.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 359
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
         },
         {
           "stat": "TD",
@@ -135,28 +157,6 @@
         },
         {
           "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 28.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 300
-        },
-        {
-          "stat": "RUSH YD",
           "value": 6
         },
         {
@@ -228,11 +228,11 @@
       "team": "LV",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 21.1,
+      "points": 21.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 111
+          "value": 110
         },
         {
           "stat": "REC",
@@ -245,6 +245,24 @@
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 19.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 123
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -306,6 +324,15 @@
       ]
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 16.9,
+      "stats": []
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -355,11 +382,15 @@
       "team": "Min",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 16.1,
+      "points": 15.8,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": -11
+        },
+        {
           "stat": "REC YD",
-          "value": 71
+          "value": 79
         },
         {
           "stat": "REC",
@@ -450,6 +481,15 @@
       ]
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 14.0,
+      "stats": []
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -481,26 +521,17 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 12.5,
+      "points": 13.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 65
+          "value": 70
         },
         {
           "stat": "TD",
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 12.0,
-      "stats": []
     },
     {
       "name": "Hunter Henry",
@@ -523,15 +554,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 11.4,
-      "stats": []
     },
     {
       "name": "Bengals",
@@ -561,24 +583,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 10.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 66
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -623,6 +627,24 @@
       ]
     },
     {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 86
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -650,24 +672,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 77
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
