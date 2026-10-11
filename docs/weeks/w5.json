@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T19:40:24Z",
+  "updated": "2026-10-11T19:45:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 85.68,
+        "score": 87.7,
         "projected": 118.41
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 92.5,
+        "score": 93.5,
         "projected": 122.71
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 63.4,
+        "score": 65.1,
         "projected": 104.27
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 92.66,
+        "score": 103.56,
         "projected": 117.84
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 72.3,
+        "score": 75.0,
         "projected": 114.72
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "32.48",
+          "value": "32.80",
           "detail": "Joe Burrow"
         },
         {
@@ -113,23 +113,23 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "103.56",
+          "detail": "2 to play"
+        },
+        {
+          "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
           "value": "99.06",
           "detail": "3 to play"
         },
         {
-          "rank": 2,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "92.66",
-          "detail": "2 to play"
-        },
-        {
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "92.50",
+          "value": "93.50",
           "detail": "3 to play"
         }
       ]
@@ -151,6 +151,28 @@
         {
           "stat": "RUSH YD",
           "value": 29
+        },
+        {
+          "stat": "TD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 32.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 190
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
         },
         {
           "stat": "TD",
@@ -181,28 +203,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 32.48,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 182
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "TD",
-          "value": 4
         }
       ]
     },
@@ -466,6 +466,28 @@
       "stats": []
     },
     {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 16.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 69
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -536,23 +558,31 @@
       ]
     },
     {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 15.4,
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 15.6,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 97
+        },
+        {
           "stat": "REC YD",
-          "value": 59
+          "value": 4
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 3
         },
         {
           "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -579,36 +609,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 15.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 93
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
@@ -667,6 +667,28 @@
       ]
     },
     {
+      "name": "Denzel Boston",
+      "position": "WR",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 46
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -687,6 +709,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.0,
+      "stats": []
     },
     {
       "name": "Bhayshul Tuten",
@@ -720,13 +751,26 @@
       "stats": []
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 10.0,
-      "stats": []
+      "points": 9.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 45
+        },
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Cam Little",
@@ -794,28 +838,6 @@
       "manager_display": "SCHILLING",
       "points": 8.8,
       "stats": []
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 8.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 45
-        },
-        {
-          "stat": "REC YD",
-          "value": 29
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Nico Collins",
@@ -898,6 +920,24 @@
       ]
     },
     {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -940,24 +980,6 @@
       "manager_display": "SCOTTY",
       "points": 5.1,
       "stats": []
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Jakobi Meyers",
@@ -1049,16 +1071,16 @@
       ]
     },
     {
-      "name": "Denzel Boston",
-      "position": "WR",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.7,
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 17
+          "value": 19
         },
         {
           "stat": "REC",
@@ -1083,6 +1105,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.0,
+      "stats": []
     },
     {
       "name": "CeeDee Lamb",
@@ -1125,24 +1156,6 @@
       ]
     },
     {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "T.J. Hockenson",
       "position": "TE",
       "team": "Min",
@@ -1173,15 +1186,6 @@
           "value": 11
         }
       ]
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Christian McCaffrey",
