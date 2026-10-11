@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T22:40:26Z",
+  "updated": "2026-10-11T22:45:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 118.8,
+        "score": 120.3,
         "projected": 118.6
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 105.24,
+        "score": 109.54,
         "projected": 127.85
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 114.04,
+        "score": 115.04,
         "projected": 109.7
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 122.8,
+        "score": 124.6,
         "projected": 122.84
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 78.48,
+        "score": 86.58,
         "projected": 120.81
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 89.46,
+        "score": 91.08,
         "projected": 114.73
       },
       "away": {
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "33.38",
+          "detail": "Jared Goff"
+        },
+        {
+          "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "32.60",
           "detail": "Joe Burrow"
-        },
-        {
-          "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "31.28",
-          "detail": "Jordan Love"
         }
       ]
     },
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "122.80",
+          "value": "124.60",
           "detail": "1 to play"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "118.80",
+          "value": "120.30",
           "detail": "All played"
         }
       ]
@@ -181,6 +181,28 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 33.38,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 232
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 4
         }
       ]
     },
@@ -325,20 +347,28 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
       "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 27.28,
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 27.1,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 232
+          "stat": "RUSH YD",
+          "value": 110
+        },
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 5
         },
         {
           "stat": "TD",
-          "value": 3
+          "value": 1
         }
       ]
     },
@@ -401,32 +431,6 @@
         {
           "stat": "REC",
           "value": 9
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 22.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 87
-        },
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 5
         },
         {
           "stat": "TD",
@@ -1089,7 +1093,7 @@
       "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 7.0,
+      "points": 8.0,
       "stats": []
     },
     {
@@ -1315,6 +1319,28 @@
       "stats": []
     },
     {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "Den",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -1337,6 +1363,28 @@
       ]
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.38,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 112
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -1351,6 +1399,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -1396,28 +1462,6 @@
       ]
     },
     {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "team": "Den",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Romeo Doubs",
       "position": "WR",
       "team": "NE",
@@ -1454,28 +1498,6 @@
       ]
     },
     {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.76,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 89
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Mike Washington Jr.",
       "position": "RB",
       "team": "LV",
@@ -1494,24 +1516,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
