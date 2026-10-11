@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T18:20:22Z",
+  "updated": "2026-10-11T18:25:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 40.28,
+        "score": 40.84,
         "projected": 118.41
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 60.94,
+        "score": 61.74,
         "projected": 127.81
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 30.8,
+        "score": 33.9,
         "projected": 114.02
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 54.56,
+        "score": 55.96,
         "projected": 117.84
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 39.92,
+        "score": 40.96,
         "projected": 111.0
       }
     }
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "16.72",
+          "value": "17.24",
           "detail": "Joe Burrow"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "60.94",
+          "value": "61.74",
           "detail": "4 to play"
         }
       ]
@@ -238,11 +238,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 17.1,
+      "points": 17.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 13
         },
         {
           "stat": "REC YD",
@@ -264,11 +264,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 16.72,
+      "points": 17.24,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 88
+          "value": 101
         },
         {
           "stat": "RUSH YD",
@@ -356,6 +356,28 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 13.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 149
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -400,28 +422,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 12.72,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 123
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 18
         },
         {
           "stat": "TD",
@@ -698,6 +698,24 @@
       ]
     },
     {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "TreVeyon Henderson",
       "position": "RB",
       "team": "NE",
@@ -716,6 +734,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Hunter Henry",
+      "position": "TE",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -892,24 +928,6 @@
       ]
     },
     {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -1067,24 +1085,6 @@
       "team": "Min",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Hunter Henry",
-      "position": "TE",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 1.2,
       "stats": [
         {
