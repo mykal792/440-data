@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T16:40:24Z",
+  "updated": "2026-10-11T16:45:25Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 50.04,
+        "score": 50.4,
         "projected": 109.57
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 51.6,
+        "score": 53.0,
         "projected": 122.7
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "17.54",
+          "value": "17.90",
           "detail": "Trevor Lawrence"
         },
         {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "51.60",
+          "value": "53.00",
           "detail": "6 to play"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "50.04",
+          "value": "50.40",
           "detail": "7 to play"
         },
         {
@@ -185,16 +185,38 @@
       ]
     },
     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 18.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 97
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 17.54,
+      "points": 17.9,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 276
+          "value": 285
         },
         {
           "stat": "RUSH YD",
@@ -206,28 +228,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 16.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 88
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
