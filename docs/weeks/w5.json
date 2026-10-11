@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T20:00:28Z",
+  "updated": "2026-10-11T20:05:23Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 78.44,
+        "score": 79.04,
         "projected": 127.87
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 104.9,
+        "score": 106.3,
         "projected": 122.85
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 106.26,
+        "score": 107.46,
         "projected": 111.01
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "49.86",
+          "value": "49.56",
           "detail": "Drake Maye"
         },
         {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "106.26",
+          "value": "107.46",
           "detail": "3 to play"
         },
         {
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "104.90",
+          "value": "106.30",
           "detail": "3 to play"
         }
       ]
@@ -142,7 +142,7 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 49.86,
+      "points": 49.56,
       "stats": [
         {
           "stat": "PASS YD",
@@ -150,11 +150,37 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 29
+          "value": 26
         },
         {
           "stat": "TD",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 33.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 96
+        },
+        {
+          "stat": "REC YD",
+          "value": 87
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -177,32 +203,6 @@
         {
           "stat": "TD",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 32.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 90
-        },
-        {
-          "stat": "REC YD",
-          "value": 87
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -431,11 +431,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 19.5,
+      "points": 19.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 110
+          "value": 114
         },
         {
           "stat": "REC",
@@ -645,6 +645,24 @@
       ]
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 88
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -652,24 +670,6 @@
       "manager_display": "SCHILLING",
       "points": 14.2,
       "stats": []
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 13.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 73
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Javonte Williams",
@@ -1035,6 +1035,15 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -1073,15 +1082,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.0,
-      "stats": []
     },
     {
       "name": "Colston Loveland",
