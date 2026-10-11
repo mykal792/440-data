@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T22:25:23Z",
+  "updated": "2026-10-11T22:30:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 115.9,
+        "score": 117.7,
         "projected": 118.6
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 113.04,
+        "score": 114.04,
         "projected": 109.7
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 49.46,
+        "score": 52.62,
         "projected": 120.91
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 118.18,
+        "score": 119.48,
         "projected": 117.93
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 69.38,
+        "score": 73.72,
         "projected": 120.81
       }
     },
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "118.18",
+          "value": "119.48",
           "detail": "All played"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "115.90",
+          "value": "117.70",
           "detail": "All played"
         },
         {
@@ -369,6 +369,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 25.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 188
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -387,24 +405,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 25.48,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 187
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -733,6 +733,15 @@
       ]
     },
     {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 15.2,
+      "stats": []
+    },
+    {
       "name": "Ollie Gordon II",
       "position": "RB",
       "team": "Mia",
@@ -839,6 +848,36 @@
       ]
     },
     {
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 11.44,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 156
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -874,15 +913,6 @@
       "stats": []
     },
     {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.9,
-      "stats": []
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -905,20 +935,20 @@
       ]
     },
     {
-      "name": "Jacoby Brissett",
-      "position": "QB",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 10.48,
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.3,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 132
+          "stat": "RUSH YD",
+          "value": 49
         },
         {
           "stat": "REC YD",
-          "value": 7
+          "value": 9
         },
         {
           "stat": "REC",
@@ -929,7 +959,7 @@
           "value": 1
         },
         {
-          "stat": "INT",
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -997,36 +1027,6 @@
       ]
     },
     {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 31
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -1051,6 +1051,15 @@
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.0,
       "stats": []
     },
     {
@@ -1147,15 +1156,6 @@
       ]
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -1187,6 +1187,28 @@
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -1289,28 +1311,6 @@
       ]
     },
     {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.08,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1343,15 +1343,33 @@
       "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 2.7,
+      "points": 2.8,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 12
+          "value": 13
         },
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1445,24 +1463,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
           "value": 1
         }
       ]
