@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T22:30:26Z",
+  "updated": "2026-10-11T22:35:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 117.7,
+        "score": 118.1,
         "projected": 118.6
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 114.3,
+        "score": 114.7,
         "projected": 122.84
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 52.62,
+        "score": 60.4,
         "projected": 120.91
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 119.48,
+        "score": 121.58,
         "projected": 117.93
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 89.34,
+        "score": 89.46,
         "projected": 114.73
       },
       "away": {
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "119.48",
+          "value": "121.58",
           "detail": "All played"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "117.70",
+          "value": "118.10",
           "detail": "All played"
         },
         {
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "114.30",
+          "value": "114.70",
           "detail": "1 to play"
         }
       ]
@@ -532,6 +532,40 @@
       ]
     },
     {
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 19.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 198
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
@@ -848,46 +882,16 @@
       ]
     },
     {
-      "name": "Jacoby Brissett",
-      "position": "QB",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.44,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 156
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 11.2,
+      "points": 11.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 39
+          "value": 43
         },
         {
           "stat": "REC YD",
@@ -1222,6 +1226,24 @@
       "stats": []
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Jakobi Meyers",
       "position": "WR",
       "team": "Jax",
@@ -1356,24 +1378,6 @@
       ]
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Jeremiyah Love",
       "position": "RB",
       "team": "Ari",
@@ -1451,11 +1455,11 @@
       "team": "Den",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 1.64,
+      "points": 1.76,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 86
+          "value": 89
         },
         {
           "stat": "RUSH YD",
@@ -1490,6 +1494,24 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "T.J. Hockenson",
       "position": "TE",
       "team": "Min",
@@ -1518,24 +1540,6 @@
         {
           "stat": "RUSH YD",
           "value": 11
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
