@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T20:30:29Z",
+  "updated": "2026-10-11T20:35:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 96.8,
+        "score": 97.1,
         "projected": 118.6
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 36.34,
+        "score": 38.52,
         "projected": 120.91
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 80.3,
+        "score": 86.8,
         "projected": 114.02
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 35.0,
+        "score": 30.0,
         "projected": 120.81
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 87.96,
+        "score": 88.06,
         "projected": 114.73
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 107.36,
+        "score": 108.36,
         "projected": 110.98
       }
     }
@@ -122,8 +122,8 @@
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "107.36",
-          "detail": "3 to play"
+          "value": "108.36",
+          "detail": "2 to play"
         },
         {
           "rank": 3,
@@ -369,6 +369,28 @@
       ]
     },
     {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 25.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 122
+        },
+        {
+          "stat": "REC",
+          "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -491,28 +513,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 18.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 87
-        },
-        {
-          "stat": "REC",
-          "value": 8
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -822,15 +822,6 @@
       "stats": []
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -1017,6 +1008,15 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "Jakobi Meyers",
       "position": "WR",
       "team": "Jax",
@@ -1129,11 +1129,11 @@
       "team": "Den",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.36,
+      "points": 2.16,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 59
+          "value": 54
         }
       ]
     },
@@ -1170,6 +1170,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 43
         }
       ]
     },
@@ -1250,6 +1264,20 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        }
+      ]
+    },
+    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
@@ -1262,6 +1290,15 @@
           "value": 11
         }
       ]
+    },
+    {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Harold Fannin Jr.",
@@ -1282,11 +1319,29 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jeremiyah Love",
       "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
+      "team": "Ari",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 0.8,
       "stats": [
         {
@@ -1320,34 +1375,6 @@
         {
           "stat": "RUSH YD",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Jeremiyah Love",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Jacoby Brissett",
-      "position": "QB",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.44,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 11
         }
       ]
     },
@@ -1400,15 +1427,6 @@
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
@@ -1535,15 +1553,6 @@
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
