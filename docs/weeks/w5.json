@@ -1,20 +1,20 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T20:10:31Z",
+  "updated": "2026-10-11T20:15:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 94.1,
-        "projected": 118.63
+        "score": 95.3,
+        "projected": 118.6
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
         "score": 82.44,
-        "projected": 127.87
+        "projected": 127.84
       }
     },
     {
@@ -22,13 +22,13 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 99.34,
-        "projected": 109.63
+        "projected": 109.64
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 106.5,
-        "projected": 122.85
+        "projected": 122.84
       }
     },
     {
@@ -36,7 +36,7 @@
         "name": "GREG",
         "face": "greg",
         "score": 35.9,
-        "projected": 120.87
+        "projected": 120.89
       },
       "away": {
         "name": "SCOTTY",
@@ -50,21 +50,21 @@
         "name": "GANGUS",
         "face": "gangus",
         "score": 113.18,
-        "projected": 117.92
+        "projected": 117.93
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 25.0,
-        "projected": 101.63
+        "projected": 120.81
       }
     },
     {
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 85.42,
-        "projected": 114.75
+        "score": 86.06,
+        "projected": 114.73
       },
       "away": {
         "name": "ANTHONY",
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "32.80",
+          "value": "32.60",
           "detail": "Joe Burrow"
         },
         {
@@ -190,7 +190,7 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 32.8,
+      "points": 32.6,
       "stats": [
         {
           "stat": "PASS YD",
@@ -198,7 +198,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 12
+          "value": 10
         },
         {
           "stat": "TD",
@@ -1173,6 +1173,24 @@
       ]
     },
     {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "Den",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "T.J. Hockenson",
       "position": "TE",
       "team": "Min",
@@ -1205,6 +1223,20 @@
       ]
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 24
+        }
+      ]
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -1223,20 +1255,6 @@
       ]
     },
     {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 8
-        }
-      ]
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1249,15 +1267,6 @@
       "name": "Emanuel Wilson",
       "position": "RB",
       "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "team": "Den",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
