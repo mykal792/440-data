@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T21:25:23Z",
+  "updated": "2026-10-11T21:30:31Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -684,11 +684,11 @@
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 34
+          "value": 33
         },
         {
           "stat": "REC YD",
-          "value": 7
+          "value": 8
         },
         {
           "stat": "REC",
@@ -820,13 +820,22 @@
       ]
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 9.0,
-      "stats": []
+      "points": 8.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 68
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Nico Collins",
@@ -875,6 +884,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Luther Burden III",
@@ -1094,6 +1112,24 @@
       ]
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 78
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -1108,24 +1144,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.94,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 71
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
         }
       ]
     },
@@ -1224,6 +1242,15 @@
       ]
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
@@ -1282,20 +1309,6 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 30
-        }
-      ]
-    },
-    {
       "name": "T.J. Hockenson",
       "position": "TE",
       "team": "Min",
@@ -1326,15 +1339,6 @@
           "value": 11
         }
       ]
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Harold Fannin Jr.",
