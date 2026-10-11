@@ -1,13 +1,13 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T22:15:23Z",
+  "updated": "2026-10-11T22:20:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 115.2,
+        "score": 115.4,
         "projected": 118.6
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 104.64,
+        "score": 102.64,
         "projected": 109.7
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 48.4,
+        "score": 49.46,
         "projected": 120.91
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 61.58,
+        "score": 61.9,
         "projected": 120.81
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 91.24,
+        "score": 89.34,
         "projected": 114.73
       },
       "away": {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "115.20",
+          "value": "115.40",
           "detail": "All played"
         },
         {
@@ -544,6 +544,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 18.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 150
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -575,24 +593,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 17.68,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 142
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -888,11 +888,11 @@
       "team": "Ari",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.32,
+      "points": 10.48,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 128
+          "value": 132
         },
         {
           "stat": "REC YD",
@@ -980,11 +980,11 @@
       "team": "Sea",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 8.3,
+      "points": 8.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 29
+          "value": 31
         },
         {
           "stat": "REC YD",
@@ -1021,15 +1021,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 8.0,
-      "stats": []
     },
     {
       "name": "Seahawks",
@@ -1156,6 +1147,15 @@
       ]
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -1271,24 +1271,6 @@
       ]
     },
     {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.54,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 86
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -1303,6 +1285,28 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.08,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -1388,28 +1392,6 @@
       ]
     },
     {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Romeo Doubs",
       "position": "WR",
       "team": "NE",
@@ -1442,6 +1424,28 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 86
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
