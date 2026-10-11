@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T18:55:22Z",
+  "updated": "2026-10-11T19:00:29Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 71.14,
+        "score": 72.3,
         "projected": 118.41
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 63.04,
+        "score": 74.04,
         "projected": 127.81
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 85.1,
+        "score": 86.7,
         "projected": 122.71
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 27.6,
+        "score": 29.2,
         "projected": 120.78
       },
       "away": {
@@ -49,27 +49,27 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 69.92,
+        "score": 70.12,
         "projected": 117.84
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 21.6,
-        "projected": 112.75
+        "projected": 101.51
       }
     },
     {
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 47.6,
+        "score": 49.0,
         "projected": 114.72
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 60.3,
+        "score": 60.62,
         "projected": 111.0
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "28.60",
+          "value": "28.92",
           "detail": "Drake Maye"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "23.84",
+          "value": "24.00",
           "detail": "Joe Burrow"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "85.10",
+          "value": "86.70",
           "detail": "3 to play"
         },
         {
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "71.14",
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "74.04",
           "detail": "4 to play"
         }
       ]
@@ -185,6 +185,32 @@
       ]
     },
     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 29.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
+          "stat": "REC YD",
+          "value": 81
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -212,11 +238,11 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 28.6,
+      "points": 28.92,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 220
+          "value": 228
         },
         {
           "stat": "RUSH YD",
@@ -282,11 +308,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 23.84,
+      "points": 24.0,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 116
+          "value": 120
         },
         {
           "stat": "RUSH YD",
@@ -304,11 +330,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 20.72,
+      "points": 20.92,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 203
+          "value": 208
         },
         {
           "stat": "RUSH YD",
@@ -321,20 +347,16 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 18.4,
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 17.4,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
           "stat": "REC YD",
-          "value": 81
+          "value": 89
         },
         {
           "stat": "REC",
@@ -374,28 +396,6 @@
         {
           "stat": "INT",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 16.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 80
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -665,6 +665,29 @@
       "stats": []
     },
     {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.8,
+      "stats": []
+    },
+    {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 78
+        }
+      ]
+    },
+    {
       "name": "Isaiah Likely",
       "position": "TE",
       "team": "NYG",
@@ -679,29 +702,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.8,
-      "stats": []
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 6.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 62
         }
       ]
     },
@@ -826,6 +826,28 @@
       ]
     },
     {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
@@ -840,6 +862,32 @@
         {
           "stat": "REC YD",
           "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
         },
         {
           "stat": "REC",
@@ -932,32 +980,6 @@
       ]
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 17
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -983,28 +1005,6 @@
       "manager_display": "HAYDEN",
       "points": 3.0,
       "stats": []
-    },
-    {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Steelers",
