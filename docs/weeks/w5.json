@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T17:20:26Z",
+  "updated": "2026-10-11T17:25:23Z",
   "matchups": [
     {
       "home": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 11.9,
+        "score": 9.9,
         "projected": 120.78
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 13.3,
+        "score": 14.4,
         "projected": 114.01
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 32.48,
+        "score": 34.62,
         "projected": 117.84
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 1.8,
+        "score": 5.2,
         "projected": 120.69
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 31.3,
+        "score": 37.9,
         "projected": 114.67
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 23.34,
+        "score": 24.02,
         "projected": 110.95
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "9.28",
+          "value": "9.52",
           "detail": "Jordan Love"
         }
       ]
@@ -347,6 +347,15 @@
       ]
     },
     {
+      "name": "Spencer Shrader",
+      "position": "K",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.3,
+      "stats": []
+    },
+    {
       "name": "Brock Bowers",
       "position": "TE",
       "team": "LV",
@@ -405,11 +414,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 9.28,
+      "points": 9.52,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 67
+          "value": 73
         },
         {
           "stat": "RUSH YD",
@@ -454,26 +463,17 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 8.04,
+      "points": 8.72,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 51
+          "value": 68
         },
         {
           "stat": "TD",
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.0,
-      "stats": []
     },
     {
       "name": "Steelers",
@@ -521,15 +521,6 @@
       "stats": []
     },
     {
-      "name": "Spencer Shrader",
-      "position": "K",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.7,
-      "stats": []
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -544,6 +535,15 @@
       "team": "Cle",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 5.0,
+      "stats": []
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 5.0,
       "stats": []
     },
@@ -573,6 +573,24 @@
       "manager_display": "SCARPITTI",
       "points": 4.0,
       "stats": []
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 24
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "D'Andre Swift",
@@ -611,6 +629,28 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -669,28 +709,6 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Isaiah Likely",
       "position": "TE",
       "team": "NYG",
@@ -737,6 +755,46 @@
         {
           "stat": "REC YD",
           "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Denzel Boston",
+      "position": "WR",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
         },
         {
           "stat": "REC",
@@ -799,6 +857,20 @@
       ]
     },
     {
+      "name": "TreVeyon Henderson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        }
+      ]
+    },
+    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -835,25 +907,25 @@
       ]
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        }
-      ]
-    },
-    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
       "manager": "graham",
       "manager_display": "GRAHAM",
+      "points": 0.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 0.5,
       "stats": [
         {
@@ -873,20 +945,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
         }
       ]
     },
@@ -1094,15 +1152,6 @@
       "stats": []
     },
     {
-      "name": "Denzel Boston",
-      "position": "WR",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -1151,15 +1200,6 @@
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
@@ -1223,15 +1263,6 @@
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "TreVeyon Henderson",
-      "position": "RB",
-      "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
