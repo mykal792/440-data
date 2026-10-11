@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T17:40:27Z",
+  "updated": "2026-10-11T17:45:21Z",
   "players": [
     {
       "name": "Bucky Irving",
@@ -298,11 +298,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 10.36,
+      "points": 10.6,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 94
+          "value": 100
         },
         {
           "stat": "RUSH YD",
@@ -360,16 +360,25 @@
       "stats": []
     },
     {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 7.56,
+      "points": 7.84,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 39
+          "value": 46
         },
         {
           "stat": "TD",
@@ -441,13 +450,18 @@
       ]
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 4.5,
-      "stats": []
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 45
+        }
+      ]
     },
     {
       "name": "Will Reichard",
@@ -593,20 +607,20 @@
       ]
     },
     {
-      "name": "DK Metcalf",
+      "name": "Chris Olave",
       "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 2.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 14
+          "value": 19
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 2
         }
       ]
     },
@@ -647,6 +661,28 @@
       ]
     },
     {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Romeo Doubs",
       "position": "WR",
       "team": "NE",
@@ -663,6 +699,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.0,
+      "stats": []
     },
     {
       "name": "Tucker Kraft",
@@ -683,20 +728,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
         }
       ]
     },
@@ -741,16 +772,20 @@
       ]
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.9,
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.7,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
           "stat": "REC YD",
-          "value": 14
+          "value": 6
         },
         {
           "stat": "REC",
@@ -773,28 +808,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -879,13 +892,18 @@
       ]
     },
     {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.0,
-      "stats": []
+      "name": "David Montgomery",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        }
+      ]
     },
     {
       "name": "Evan McPherson",
@@ -895,20 +913,6 @@
       "manager_display": "HAYDEN",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "David Montgomery",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
-        }
-      ]
     },
     {
       "name": "Mike Washington Jr.",
