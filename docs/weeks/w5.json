@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T23:00:28Z",
+  "updated": "2026-10-11T23:05:21Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 111.44,
+        "score": 113.34,
         "projected": 127.88
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 119.04,
+        "score": 122.04,
         "projected": 109.73
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 129.68,
+        "score": 130.88,
         "projected": 117.93
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 91.38,
+        "score": 92.42,
         "projected": 120.81
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "33.38",
+          "value": "34.42",
           "detail": "Jared Goff"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "129.68",
+          "value": "130.88",
           "detail": "All played"
         },
         {
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "121.60",
-          "detail": "All played"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "122.04",
+          "detail": "2 to play"
         }
       ]
     }
@@ -190,11 +190,11 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 33.38,
+      "points": 34.42,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 232
+          "value": 258
         },
         {
           "stat": "RUSH YD",
@@ -299,6 +299,32 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 30.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 148
+        },
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -317,32 +343,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 29.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 129
-        },
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -780,6 +780,15 @@
       ]
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 15.0,
+      "stats": []
+    },
+    {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "team": "Sea",
@@ -914,15 +923,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 12.0,
-      "stats": []
     },
     {
       "name": "Seahawks",
@@ -1146,15 +1146,15 @@
       "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 6.9,
+      "points": 8.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 49
+          "value": 56
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 5
         }
       ]
     },
