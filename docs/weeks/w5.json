@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T21:05:21Z",
+  "updated": "2026-10-11T21:10:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 105.7,
+        "score": 106.8,
         "projected": 118.6
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 84.64,
+        "score": 93.34,
         "projected": 127.85
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 110.8,
+        "score": 112.4,
         "projected": 122.84
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 87.2,
+        "score": 87.8,
         "projected": 114.02
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 34.28,
+        "score": 34.76,
         "projected": 120.81
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 89.66,
+        "score": 90.14,
         "projected": 114.73
       },
       "away": {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "110.80",
+          "value": "112.40",
           "detail": "2 to play"
         },
         {
@@ -782,6 +782,32 @@
       "stats": []
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -906,11 +932,11 @@
       "team": "Sea",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 8.7,
+      "points": 9.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 16
         },
         {
           "stat": "REC YD",
@@ -1034,6 +1060,28 @@
       "stats": []
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 16
+        },
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -1083,24 +1131,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -1176,6 +1206,24 @@
       ]
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 71
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -1194,42 +1242,24 @@
       ]
     },
     {
-      "name": "Bo Nix",
-      "position": "QB",
+      "name": "Jaylen Waddle",
+      "position": "WR",
       "team": "Den",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 59
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
       "points": 2.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 8
         },
         {
           "stat": "REC YD",
-          "value": 7
+          "value": 9
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 1
         }
       ]
     },
@@ -1360,24 +1390,6 @@
       ]
     },
     {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "team": "Den",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "T.J. Hockenson",
       "position": "TE",
       "team": "Min",
@@ -1451,11 +1463,25 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 0.28,
+      "points": 0.76,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 7
+          "value": 19
+        }
+      ]
+    },
+    {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
         }
       ]
     },
@@ -1589,15 +1615,6 @@
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "Den",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
