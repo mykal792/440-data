@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T13:35:20Z",
+  "updated": "2026-10-11T13:40:21Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 32.5,
+        "score": 32.98,
         "projected": 109.36
       },
       "away": {
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "0.48",
+          "detail": "Trevor Lawrence"
+        },
+        {
+          "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "0.00",
           "detail": "Joe Burrow"
-        },
-        {
-          "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "0.00",
-          "detail": "Trevor Lawrence"
         }
       ]
     },
@@ -115,8 +115,8 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "32.50",
-          "detail": "8 to play"
+          "value": "32.98",
+          "detail": "7 to play"
         },
         {
           "rank": 2,
@@ -269,6 +269,20 @@
       ]
     },
     {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.48,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 12
+        }
+      ]
+    },
+    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -409,15 +423,6 @@
       "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
       "points": 0.0,
       "stats": []
     },
