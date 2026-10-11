@@ -1,19 +1,19 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T17:05:22Z",
+  "updated": "2026-10-11T17:10:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 12.14,
+        "score": 18.3,
         "projected": 118.4
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 25.54,
+        "score": 28.14,
         "projected": 127.62
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 60.24,
+        "score": 61.24,
         "projected": 109.55
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 75.5,
+        "score": 77.5,
         "projected": 122.7
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 11.1,
+        "score": 12.9,
         "projected": 120.8
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 15.1,
+        "score": 12.1,
         "projected": 114.04
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 19.5,
+        "score": 20.62,
         "projected": 117.83
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 10.6,
+        "score": 15.9,
         "projected": 114.66
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 0.0,
+        "score": 13.64,
         "projected": 110.94
       }
     }
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "0.24",
-          "detail": "Joe Burrow"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "8.04",
+          "detail": "Drake Maye"
         }
       ]
     },
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "75.50",
-          "detail": "5 to play"
+          "value": "77.50",
+          "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "60.24",
-          "detail": "7 to play"
+          "value": "61.24",
+          "detail": "6 to play"
         },
         {
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "25.54",
+          "value": "28.14",
           "detail": "4 to play"
         }
       ]
@@ -339,13 +339,49 @@
       "stats": []
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 51
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 10.0,
+      "points": 7.0,
       "stats": []
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jaguars",
@@ -364,6 +400,24 @@
       "manager_display": "SCOTTY",
       "points": 5.1,
       "stats": []
+    },
+    {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Jakobi Meyers",
@@ -393,6 +447,78 @@
       "stats": []
     },
     {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tyler Warren",
+      "position": "TE",
+      "team": "Ind",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Romeo Doubs",
+      "position": "WR",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        }
+      ]
+    },
+    {
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
@@ -407,6 +533,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -429,6 +573,24 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 13
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -447,18 +609,13 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
       "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
+      "stats": []
     },
     {
       "name": "Aaron Jones Sr.",
@@ -466,25 +623,57 @@
       "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.6,
+      "points": 0.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 6
+          "value": 7
         }
       ]
     },
     {
-      "name": "D'Andre Swift",
+      "name": "Jaylen Warren",
       "position": "RB",
-      "team": "Chi",
+      "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.5,
       "stats": [
         {
+          "stat": "REC YD",
+          "value": -5
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.5,
+      "stats": [
+        {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
         }
       ]
     },
@@ -511,16 +700,16 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.24,
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.2,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 6
+          "stat": "RUSH YD",
+          "value": 2
         }
       ]
     },
@@ -674,15 +863,6 @@
       "stats": []
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -728,15 +908,6 @@
       "stats": []
     },
     {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -758,15 +929,6 @@
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
@@ -796,15 +958,6 @@
       "team": "Min",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 0.0,
       "stats": []
     },
@@ -926,27 +1079,9 @@
       "stats": []
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jeremiyah Love",
       "position": "RB",
       "team": "Ari",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
@@ -1043,15 +1178,6 @@
       "stats": []
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -1061,45 +1187,9 @@
       "stats": []
     },
     {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Romeo Doubs",
-      "position": "WR",
-      "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
