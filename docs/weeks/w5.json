@@ -1,47 +1,47 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T19:55:24Z",
+  "updated": "2026-10-11T20:00:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 88.7,
-        "projected": 118.41
+        "score": 94.1,
+        "projected": 118.63
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
         "score": 78.44,
-        "projected": 127.81
+        "projected": 127.87
       }
     },
     {
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 86.74,
-        "projected": 109.58
+        "score": 89.34,
+        "projected": 109.63
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 104.9,
-        "projected": 122.71
+        "projected": 122.85
       }
     },
     {
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 36.8,
-        "projected": 120.78
+        "score": 37.9,
+        "projected": 120.87
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 68.1,
+        "score": 72.1,
         "projected": 104.27
       }
     },
@@ -49,14 +49,14 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 112.08,
-        "projected": 117.84
+        "score": 113.18,
+        "projected": 117.92
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 25.0,
-        "projected": 101.51
+        "projected": 101.63
       }
     },
     {
@@ -64,13 +64,13 @@
         "name": "COYNE",
         "face": "coyne",
         "score": 85.1,
-        "projected": 114.72
+        "projected": 114.75
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 106.26,
-        "projected": 111.0
+        "projected": 111.01
       }
     }
   ],
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "112.08",
+          "value": "113.18",
           "detail": "2 to play"
         },
         {
@@ -325,6 +325,28 @@
       ]
     },
     {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 26.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 92
+        },
+        {
+          "stat": "REC",
+          "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -343,28 +365,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 25.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 86
-        },
-        {
-          "stat": "REC",
-          "value": 9
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -645,6 +645,15 @@
       ]
     },
     {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 14.2,
+      "stats": []
+    },
+    {
       "name": "Ollie Gordon II",
       "position": "RB",
       "team": "Mia",
@@ -720,6 +729,15 @@
       ]
     },
     {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -751,15 +769,6 @@
       "stats": []
     },
     {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -778,6 +787,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 70
+        },
+        {
+          "stat": "REC",
+          "value": 7
         }
       ]
     },
@@ -835,15 +862,6 @@
       ]
     },
     {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.8,
-      "stats": []
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -882,6 +900,15 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.6,
+      "stats": []
     },
     {
       "name": "Chris Olave",
@@ -924,24 +951,6 @@
       ]
     },
     {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -956,11 +965,11 @@
       "team": "Cin",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 5.4,
+      "points": 5.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 38
+          "value": 39
         },
         {
           "stat": "REC YD",
@@ -1024,15 +1033,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.0,
-      "stats": []
     },
     {
       "name": "DK Metcalf",
