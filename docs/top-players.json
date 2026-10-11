@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T19:10:25Z",
+  "updated": "2026-10-11T19:15:25Z",
   "players": [
     {
       "name": "Bucky Irving",
@@ -26,6 +26,28 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 31.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 275
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "TD",
+          "value": 3
         }
       ]
     },
@@ -96,28 +118,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 28.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 228
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -245,6 +245,15 @@
       ]
     },
     {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 17.9,
+      "stats": []
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -291,15 +300,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 16.9,
-      "stats": []
     },
     {
       "name": "Dak Prescott",
@@ -351,7 +351,7 @@
       "team": "Chi",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 14.2,
+      "points": 15.3,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -359,11 +359,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 24
+          "value": 30
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 4
         },
         {
           "stat": "TD",
@@ -433,11 +433,11 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 12.2,
+      "points": 12.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 62
+          "value": 63
         },
         {
           "stat": "TD",
@@ -477,6 +477,15 @@
       "stats": []
     },
     {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -513,15 +522,6 @@
       "team": "Cle",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 10.0,
       "stats": []
     },
@@ -566,16 +566,34 @@
       "stats": []
     },
     {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 8.4,
+      "points": 8.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 78
+          "value": 77
         },
         {
           "stat": "REC YD",
@@ -613,24 +631,6 @@
       "manager_display": "SCHILLING",
       "points": 7.8,
       "stats": []
-    },
-    {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 51
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Jaguars",
@@ -705,6 +705,24 @@
         {
           "stat": "REC YD",
           "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 33
         },
         {
           "stat": "REC",
@@ -833,24 +851,6 @@
         {
           "stat": "REC YD",
           "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 27
         },
         {
           "stat": "REC",
