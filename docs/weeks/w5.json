@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-11T15:40:21Z",
+  "updated": "2026-10-11T15:45:22Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 47.08,
+        "score": 47.8,
         "projected": 109.51
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 43.8,
+        "score": 46.0,
         "projected": 122.68
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "14.58",
+          "value": "15.30",
           "detail": "Trevor Lawrence"
         },
         {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "47.08",
+          "value": "47.80",
           "detail": "7 to play"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "43.80",
+          "value": "46.00",
           "detail": "6 to play"
         },
         {
@@ -207,6 +207,28 @@
       ]
     },
     {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 15.3,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 210
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -221,28 +243,6 @@
         {
           "stat": "REC",
           "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 14.58,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 192
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 9
         },
         {
           "stat": "TD",
@@ -277,6 +277,28 @@
       ]
     },
     {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "REC YD",
+          "value": 24
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -293,28 +315,6 @@
       "manager_display": "GANGUS",
       "points": 4.0,
       "stats": []
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Jakobi Meyers",
