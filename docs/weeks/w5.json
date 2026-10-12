@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-12T01:30:28Z",
+  "updated": "2026-10-12T01:35:27Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 132.74,
+        "score": 134.44,
         "projected": 110.35
       },
       "away": {
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "134.44",
+          "detail": "All played"
+        },
+        {
+          "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "133.70",
           "detail": "1 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "132.74",
-          "detail": "All played"
         }
       ]
     }
@@ -1270,6 +1270,28 @@
       "stats": []
     },
     {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -1395,28 +1417,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
