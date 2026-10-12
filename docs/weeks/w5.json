@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-12T03:40:28Z",
+  "updated": "2026-10-12T03:45:23Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 139.44,
+        "score": 143.94,
         "projected": 127.86
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 153.84,
+        "score": 156.14,
         "projected": 110.35
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 84.26,
+        "score": 85.26,
         "projected": 120.91
       },
       "away": {
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "153.84",
+          "value": "156.14",
           "detail": "All played"
         },
         {
           "rank": 2,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "140.88",
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "143.94",
           "detail": "All played"
         },
         {
           "rank": 3,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "139.44",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "140.88",
           "detail": "All played"
         }
       ]
@@ -482,6 +482,32 @@
       "stats": []
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 22.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 102
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "team": "Sea",
@@ -560,32 +586,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 20.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 99
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -714,6 +714,24 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 17.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 118
+        },
+        {
+          "stat": "REC",
+          "value": 7
         }
       ]
     },
@@ -938,6 +956,15 @@
       ]
     },
     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 13.3,
+      "stats": []
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -970,33 +997,6 @@
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 13.0,
-      "stats": []
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 12.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 98
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.3,
       "stats": []
     },
     {
