@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T01:10:22Z",
+  "updated": "2026-10-13T01:15:24Z",
   "matchups": [
     {
       "home": {
@@ -28,7 +28,7 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 137.92,
-        "projected": 122.97
+        "projected": 122.89
       }
     },
     {
@@ -36,13 +36,13 @@
         "name": "GREG",
         "face": "greg",
         "score": 97.76,
-        "projected": 121.0
+        "projected": 120.98
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 96.94,
-        "projected": 114.16
+        "projected": 114.11
       }
     },
     {
@@ -55,8 +55,8 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 103.84,
-        "projected": 123.2
+        "score": 104.54,
+        "projected": 123.16
       }
     },
     {
@@ -64,12 +64,12 @@
         "name": "COYNE",
         "face": "coyne",
         "score": 104.12,
-        "projected": 115.72
+        "projected": 115.68
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 136.56,
+        "score": 134.56,
         "projected": 111.03
       }
     }
@@ -1313,15 +1313,6 @@
       ]
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1451,6 +1442,15 @@
       "team": "Jax",
       "manager": "gangus",
       "manager_display": "GANGUS",
+      "points": 6.0,
+      "stats": []
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 6.0,
       "stats": []
     },
@@ -1659,6 +1659,24 @@
       ]
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -1673,24 +1691,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
