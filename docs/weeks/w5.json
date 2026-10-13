@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T03:35:20Z",
+  "updated": "2026-10-13T03:40:21Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 123.02,
+        "score": 123.22,
         "projected": 114.11
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 141.74,
+        "score": 142.74,
         "projected": 123.16
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "35.12",
+          "value": "35.32",
           "detail": "Matthew Stafford"
         },
         {
@@ -216,11 +216,11 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 35.12,
+      "points": 35.32,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 378
+          "value": 383
         },
         {
           "stat": "TD",
@@ -343,6 +343,32 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 31.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "REC YD",
+          "value": 138
+        },
+        {
+          "stat": "REC",
+          "value": 17
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jacoby Brissett",
       "position": "QB",
       "team": "Ari",
@@ -372,32 +398,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 30.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": 133
-        },
-        {
-          "stat": "REC",
-          "value": 16
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
