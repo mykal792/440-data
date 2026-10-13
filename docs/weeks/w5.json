@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T00:20:26Z",
+  "updated": "2026-10-13T00:25:23Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 87.9,
+        "score": 88.34,
         "projected": 114.16
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 94.94,
+        "score": 97.44,
         "projected": 123.2
       }
     },
@@ -1621,6 +1621,24 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Mike Washington Jr.",
       "position": "RB",
       "team": "LV",
@@ -1693,6 +1711,20 @@
       ]
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "RJ Harvey",
       "position": "RB",
       "team": "Den",
@@ -1703,6 +1735,20 @@
         {
           "stat": "RUSH YD",
           "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.44,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 11
         }
       ]
     },
@@ -1730,24 +1776,6 @@
       "stats": []
     },
     {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Davante Adams",
       "position": "WR",
       "team": "LAR",
@@ -1762,15 +1790,6 @@
       "team": "Buf",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 0.0,
       "stats": []
     }
