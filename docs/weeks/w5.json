@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T01:25:24Z",
+  "updated": "2026-10-13T01:30:31Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 137.92,
+        "score": 138.2,
         "projected": 122.89
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 97.76,
+        "score": 97.96,
         "projected": 120.98
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 104.12,
+        "score": 105.32,
         "projected": 115.68
       },
       "away": {
@@ -1005,11 +1005,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 12.5,
+      "points": 12.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 53
+          "value": 55
         },
         {
           "stat": "REC YD",
@@ -1548,6 +1548,24 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 60
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        }
+      ]
+    },
+    {
       "name": "TreVeyon Henderson",
       "position": "RB",
       "team": "NE",
@@ -1566,24 +1584,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.22,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 53
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
         }
       ]
     },
@@ -1789,6 +1789,24 @@
       ]
     },
     {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "Buf",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
@@ -1833,15 +1851,6 @@
           "value": 7
         }
       ]
-    },
-    {
-      "name": "Dalton Kincaid",
-      "position": "TE",
-      "team": "Buf",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
     }
   ]
 }
