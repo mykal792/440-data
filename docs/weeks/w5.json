@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T02:05:28Z",
+  "updated": "2026-10-13T02:10:22Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 99.66,
+        "score": 99.78,
         "projected": 114.11
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 111.14,
+        "score": 112.24,
         "projected": 123.16
       }
     },
@@ -1078,6 +1078,28 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "REC YD",
+          "value": 66
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -1105,37 +1127,15 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 11.76,
+      "points": 11.88,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 144
+          "value": 147
         },
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 11.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": 63
-        },
-        {
-          "stat": "REC",
-          "value": 8
         }
       ]
     },
@@ -1481,6 +1481,28 @@
       ]
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 28
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Michael Wilson",
       "position": "WR",
       "team": "Ari",
@@ -1510,28 +1532,6 @@
       "manager_display": "SCOTTY",
       "points": 5.1,
       "stats": []
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        },
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "George Kittle",
