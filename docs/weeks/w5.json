@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T01:20:26Z",
+  "updated": "2026-10-13T01:25:24Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 97.1,
+        "score": 97.3,
         "projected": 114.11
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 104.54,
+        "score": 105.54,
         "projected": 123.16
       }
     },
@@ -1242,11 +1242,11 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 9.2,
+      "points": 9.4,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 80
+          "value": 85
         },
         {
           "stat": "TD",
@@ -1597,6 +1597,28 @@
       "stats": []
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jaylen Waddle",
       "position": "WR",
       "team": "Den",
@@ -1655,24 +1677,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
