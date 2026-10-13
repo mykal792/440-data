@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T00:15:24Z",
+  "updated": "2026-10-13T00:20:26Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 85.26,
+        "score": 85.56,
         "projected": 121.0
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 128.56,
+        "score": 136.56,
         "projected": 111.02
       }
     }
@@ -1269,6 +1269,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1703,8 +1712,13 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Josh Allen",
@@ -1757,15 +1771,6 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     }

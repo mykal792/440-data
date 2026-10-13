@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T00:15:24Z",
+  "updated": "2026-10-13T00:20:26Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -1136,6 +1136,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1570,8 +1579,13 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Josh Allen",
@@ -1624,15 +1638,6 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     }
