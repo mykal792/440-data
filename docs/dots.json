@@ -1,22 +1,22 @@
 {
   "season": 2026,
-  "updated": "2026-10-13T05:55:15Z",
+  "updated": "2026-10-13T11:00:30Z",
   "pot": {
     "total": 300,
     "dot_value": 5,
-    "paid_out": 80,
-    "remaining": 220
+    "paid_out": 100,
+    "remaining": 200
   },
   "totals": {
     "schilling": {
       "QB": 0,
       "RB": 0,
-      "WR": 1,
+      "WR": 2,
       "TE": 0
     },
     "garrett": {
       "QB": 0,
-      "RB": 1,
+      "RB": 2,
       "WR": 0,
       "TE": 0
     },
@@ -24,7 +24,7 @@
       "QB": 0,
       "RB": 2,
       "WR": 0,
-      "TE": 2
+      "TE": 3
     },
     "greg": {
       "QB": 0,
@@ -63,7 +63,7 @@
       "TE": 0
     },
     "anthony": {
-      "QB": 1,
+      "QB": 2,
       "RB": 0,
       "WR": 0,
       "TE": 0
@@ -230,6 +230,47 @@
             "HAYDEN"
           ],
           "value": "17.60",
+          "detail": "Brock Bowers"
+        }
+      }
+    },
+    {
+      "week": 5,
+      "positions": {
+        "QB": {
+          "manager": "anthony",
+          "manager_display": "ANTHONY",
+          "managers": [
+            "ANTHONY"
+          ],
+          "value": "49.46",
+          "detail": "Drake Maye"
+        },
+        "RB": {
+          "manager": "garrett",
+          "manager_display": "GARRETT",
+          "managers": [
+            "GARRETT"
+          ],
+          "value": "37.20",
+          "detail": "Jahmyr Gibbs"
+        },
+        "WR": {
+          "manager": "schilling",
+          "manager_display": "SCHILLING",
+          "managers": [
+            "SCHILLING"
+          ],
+          "value": "31.30",
+          "detail": "Christian Watson"
+        },
+        "TE": {
+          "manager": "hayden",
+          "manager_display": "HAYDEN",
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "21.00",
           "detail": "Brock Bowers"
         }
       }
