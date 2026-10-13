@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T02:45:21Z",
+  "updated": "2026-10-13T02:50:25Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 148.06,
+        "score": 156.16,
         "projected": 122.89
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 107.12,
+        "score": 109.12,
         "projected": 115.68
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 134.56,
+        "score": 132.56,
         "projected": 111.03
       }
     }
@@ -113,16 +113,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "156.14",
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "156.16",
           "detail": "All played"
         },
         {
           "rank": 2,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "148.06",
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "156.14",
           "detail": "All played"
         },
         {
@@ -503,6 +503,32 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 22.46,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 129
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 53
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -995,32 +1021,6 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 14.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 129
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 52
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -1476,15 +1476,6 @@
       "stats": []
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -1631,6 +1622,15 @@
       "stats": []
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Jaylen Waddle",
       "position": "WR",
       "team": "Den",
@@ -1689,6 +1689,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "Buf",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1788,24 +1806,6 @@
       "team": "Min",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Dalton Kincaid",
-      "position": "TE",
-      "team": "Buf",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 1.2,
       "stats": [
         {
