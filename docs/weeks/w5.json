@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T03:00:30Z",
+  "updated": "2026-10-13T03:05:22Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 156.16,
+        "score": 157.9,
         "projected": 122.89
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 101.46,
+        "score": 104.46,
         "projected": 120.98
       },
       "away": {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "156.16",
+          "value": "157.90",
           "detail": "All played"
         },
         {
@@ -500,6 +500,32 @@
       "stats": []
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 24.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 135
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -547,32 +573,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 22.46,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 129
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 53
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -697,6 +697,32 @@
         {
           "stat": "REC",
           "value": 6
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 19.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 100
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -886,32 +912,6 @@
         {
           "stat": "INT",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 16.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 90
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
