@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T03:40:21Z",
+  "updated": "2026-10-13T03:45:22Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 163.0,
+        "score": 168.2,
         "projected": 122.89
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 109.26,
+        "score": 109.56,
         "projected": 120.98
       },
       "away": {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "163.00",
+          "value": "168.20",
           "detail": "All played"
         },
         {
@@ -247,6 +247,32 @@
         {
           "stat": "TD",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 34.5,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 210
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 121
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -425,32 +451,6 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 29.3,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 210
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 89
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -557,11 +557,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 24.0,
+      "points": 24.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 108
+          "value": 111
         },
         {
           "stat": "REC YD",
