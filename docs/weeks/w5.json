@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T01:05:19Z",
+  "updated": "2026-10-13T01:10:22Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 136.08,
+        "score": 137.92,
         "projected": 122.97
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 90.06,
+        "score": 97.76,
         "projected": 121.0
       },
       "away": {
@@ -1000,6 +1000,32 @@
       "stats": []
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 53
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Emanuel Wilson",
       "position": "RB",
       "team": "Sea",
@@ -1504,28 +1530,6 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jakobi Meyers",
       "position": "WR",
       "team": "Jax",
@@ -1562,6 +1566,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 53
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
         }
       ]
     },
@@ -1651,24 +1673,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.38,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 7
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
         }
       ]
     },
