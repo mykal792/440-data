@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T03:30:29Z",
+  "updated": "2026-10-13T03:35:20Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 121.34,
+        "score": 123.02,
         "projected": 114.11
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 138.84,
+        "score": 141.74,
         "projected": 123.16
       }
     },
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "35.12",
+          "detail": "Matthew Stafford"
+        },
+        {
+          "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
           "value": "34.94",
           "detail": "Jared Goff"
-        },
-        {
-          "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "33.44",
-          "detail": "Matthew Stafford"
         }
       ]
     },
@@ -211,6 +211,24 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 35.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 378
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -229,24 +247,6 @@
         {
           "stat": "TD",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 33.44,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 336
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -377,6 +377,32 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 30.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "REC YD",
+          "value": 133
+        },
+        {
+          "stat": "REC",
+          "value": 16
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -446,32 +472,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 27.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": 112
-        },
-        {
-          "stat": "REC",
-          "value": 15
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -947,11 +947,11 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 16.3,
+      "points": 16.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 46
+          "value": 49
         },
         {
           "stat": "REC YD",
