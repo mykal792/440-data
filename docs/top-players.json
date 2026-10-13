@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T01:35:25Z",
+  "updated": "2026-10-13T01:40:25Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -1038,6 +1038,24 @@
       "stats": []
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 99
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bo Nix",
       "position": "QB",
       "team": "Den",
@@ -1059,24 +1077,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 98
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -1437,21 +1437,12 @@
       ]
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.0,
-      "stats": []
-    },
-    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 4.0,
+      "points": 4.1,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -1459,13 +1450,22 @@
         },
         {
           "stat": "REC YD",
-          "value": 5
+          "value": 6
         },
         {
           "stat": "REC",
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.0,
+      "stats": []
     },
     {
       "name": "Jaylen Waddle",
