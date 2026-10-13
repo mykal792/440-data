@@ -1,7 +1,7 @@
 {
   "week": 5,
   "status": "live",
-  "updated": "2026-10-13T03:25:22Z",
+  "updated": "2026-10-13T03:30:29Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 160.68,
+        "score": 163.0,
         "projected": 122.89
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 110.96,
+        "score": 109.26,
         "projected": 120.98
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 130.56,
+        "score": 132.56,
         "projected": 111.03
       }
     }
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "160.68",
+          "value": "163.00",
           "detail": "All played"
         },
         {
@@ -399,6 +399,32 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 29.3,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 210
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 89
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -451,32 +477,6 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 26.98,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 152
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 89
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Isaiah Likely",
       "position": "TE",
       "team": "NYG",
@@ -491,32 +491,6 @@
         {
           "stat": "REC",
           "value": 11
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 25.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 105
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -576,6 +550,36 @@
       "manager_display": "GRAHAM",
       "points": 25.0,
       "stats": []
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 24.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 108
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Derrick Henry",
@@ -1626,6 +1630,15 @@
       "stats": []
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Jaylen Waddle",
       "position": "WR",
       "team": "Den",
@@ -1754,15 +1767,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.0,
-      "stats": []
     },
     {
       "name": "CeeDee Lamb",
