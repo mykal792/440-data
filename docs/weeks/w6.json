@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-16T01:15:23Z",
+  "updated": "2026-10-16T01:20:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 1.9,
+        "score": 3.0,
         "projected": 118.37
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 9.0,
+        "score": 11.0,
         "projected": 123.19
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "7.10",
+          "value": "8.00",
           "detail": "beating SCHILLING"
         },
         {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "9.00",
+          "value": "11.00",
           "detail": "8 to play"
         },
         {
@@ -168,7 +168,7 @@
       "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 9.0,
+      "points": 11.0,
       "stats": []
     },
     {
@@ -179,6 +179,20 @@
       "manager_display": "GRAHAM",
       "points": 5.5,
       "stats": []
+    },
+    {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 30
+        }
+      ]
     },
     {
       "name": "Seahawks",
@@ -204,20 +218,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 19
         }
       ]
     },
