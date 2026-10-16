@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-16T01:05:33Z",
+  "updated": "2026-10-16T01:10:25Z",
   "matchups": [
     {
       "home": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 4.6,
+        "score": 5.5,
         "projected": 105.5
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "4.60",
+          "value": "5.50",
           "detail": "beating GANGUS"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "4.60",
+          "value": "5.50",
           "detail": "8 to play"
         }
       ]
@@ -155,22 +155,17 @@
       "stats": []
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "RJ Harvey",
       "position": "RB",
       "team": "Den",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 4.6,
+      "points": 5.5,
       "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
         {
           "stat": "REC YD",
           "value": 31
@@ -180,6 +175,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Jaxon Smith-Njigba",
