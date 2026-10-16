@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-16T02:00:31Z",
+  "updated": "2026-10-16T02:05:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 3.0,
+        "score": 3.3,
         "projected": 118.37
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 11.0,
+        "score": 12.0,
         "projected": 123.21
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 8.5,
+        "score": 7.5,
         "projected": 125.76
       },
       "away": {
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "8.00",
-          "detail": "beating SCHILLING"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "7.50",
+          "detail": "beating COYNE"
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "8.50",
-          "detail": "beating COYNE"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "8.70",
+          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -113,29 +113,38 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "12.00",
+          "detail": "8 to play"
+        },
+        {
+          "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
           "value": "11.70",
           "detail": "8 to play"
         },
         {
-          "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "11.00",
-          "detail": "8 to play"
-        },
-        {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "8.50",
+          "value": "7.50",
           "detail": "7 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 12.0,
+      "stats": []
+    },
     {
       "name": "RJ Harvey",
       "position": "RB",
@@ -163,21 +172,12 @@
       ]
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 5.5,
+      "points": 4.5,
       "stats": []
     },
     {
@@ -204,11 +204,11 @@
       "team": "Sea",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 3.0,
+      "points": 3.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 30
+          "value": 33
         }
       ]
     },
