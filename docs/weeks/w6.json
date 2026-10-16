@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-16T00:40:25Z",
+  "updated": "2026-10-16T00:45:33Z",
   "matchups": [
     {
       "home": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 0.1,
+        "score": 2.9,
         "projected": 105.5
       }
     },
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "0.10",
-          "detail": "beating GANGUS"
-        },
-        {
-          "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "2.10",
           "detail": "beating GARRETT"
+        },
+        {
+          "rank": 2,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "2.90",
+          "detail": "beating GANGUS"
         },
         {
           "rank": 3,
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "2.10",
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "2.90",
           "detail": "8 to play"
         }
       ]
@@ -164,6 +164,24 @@
       "stats": []
     },
     {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "team": "Sea",
@@ -192,24 +210,6 @@
         {
           "stat": "RUSH YD",
           "value": 13
-        }
-      ]
-    },
-    {
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "Den",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": -4
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
