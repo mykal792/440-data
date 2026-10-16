@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-16T00:30:27Z",
+  "updated": "2026-10-16T00:35:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 0.5,
+        "score": 1.3,
         "projected": 118.52
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 12.0,
+        "score": 9.0,
         "projected": 123.2
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 10.0,
+        "score": 15.5,
         "projected": 125.65
       },
       "away": {
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "10.00",
-          "detail": "beating COYNE"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "7.70",
+          "detail": "beating SCHILLING"
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "11.50",
-          "detail": "beating SCHILLING"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "15.50",
+          "detail": "beating COYNE"
         }
       ]
     },
@@ -113,16 +113,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "12.00",
-          "detail": "8 to play"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "15.50",
+          "detail": "7 to play"
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "10.00",
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "9.00",
           "detail": "8 to play"
         },
         {
@@ -137,21 +137,30 @@
   },
   "top_players": [
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 12.0,
-      "stats": []
-    },
-    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 9.0,
+      "stats": []
+    },
+    {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.5,
       "stats": []
     },
     {
@@ -178,11 +187,11 @@
       "team": "Sea",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.5,
+      "points": 1.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 13
         }
       ]
     },
@@ -703,15 +712,6 @@
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
