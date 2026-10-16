@@ -1,20 +1,20 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-16T03:25:21Z",
+  "updated": "2026-10-16T03:30:30Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 4.5,
+        "score": 5.2,
         "projected": 118.37
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 12.0,
-        "projected": 123.21
+        "score": 14.0,
+        "projected": 123.25
       }
     },
     {
@@ -22,12 +22,12 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 0.0,
-        "projected": 115.33
+        "projected": 115.35
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 20.4,
+        "score": 21.4,
         "projected": 129.22
       }
     },
@@ -50,12 +50,12 @@
         "name": "GANGUS",
         "face": "gangus",
         "score": 0.0,
-        "projected": 111.28
+        "projected": 111.27
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 12.6,
+        "score": 13.1,
         "projected": 105.39
       }
     },
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "7.50",
+          "value": "8.80",
           "detail": "beating SCHILLING"
         },
         {
           "rank": 2,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "12.60",
-          "detail": "beating GANGUS"
-        },
-        {
-          "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
           "value": "12.90",
           "detail": "beating COYNE"
+        },
+        {
+          "rank": 3,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "13.10",
+          "detail": "beating GANGUS"
         }
       ]
     },
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "20.40",
+          "value": "21.40",
           "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "12.90",
-          "detail": "7 to play"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "14.00",
+          "detail": "8 to play"
         },
         {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "12.60",
+          "value": "13.10",
           "detail": "8 to play"
         }
       ]
@@ -142,17 +142,26 @@
       "team": "Sea",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 20.4,
+      "points": 21.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 129
+          "value": 134
         },
         {
           "stat": "REC",
-          "value": 11
+          "value": 12
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 14.0,
+      "stats": []
     },
     {
       "name": "RJ Harvey",
@@ -160,11 +169,11 @@
       "team": "Den",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 12.6,
+      "points": 13.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 20
+          "value": 25
         },
         {
           "stat": "REC YD",
@@ -181,15 +190,6 @@
       ]
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 12.0,
-      "stats": []
-    },
-    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -199,6 +199,20 @@
       "stats": []
     },
     {
+      "name": "Emanuel Wilson",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 52
+        }
+      ]
+    },
+    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
@@ -206,20 +220,6 @@
       "manager_display": "GRAHAM",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Emanuel Wilson",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 45
-        }
-      ]
     },
     {
       "name": "Aaron Rodgers",
