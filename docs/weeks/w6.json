@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-16T00:35:21Z",
+  "updated": "2026-10-16T00:40:25Z",
   "matchups": [
     {
       "home": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 0.0,
+        "score": 0.1,
         "projected": 105.5
       }
     },
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "0.10",
+          "detail": "beating GANGUS"
+        },
+        {
+          "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "2.10",
           "detail": "beating GARRETT"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
           "value": "7.70",
           "detail": "beating SCHILLING"
-        },
-        {
-          "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "15.50",
-          "detail": "beating COYNE"
         }
       ]
     },
@@ -192,6 +192,24 @@
         {
           "stat": "RUSH YD",
           "value": 13
+        }
+      ]
+    },
+    {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": -4
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -802,15 +820,6 @@
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "Den",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
