@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-16T00:50:24Z",
+  "updated": "2026-10-16T00:55:25Z",
   "matchups": [
     {
       "home": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 2.9,
+        "score": 4.6,
         "projected": 105.5
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 15.5,
+        "score": 10.5,
         "projected": 125.65
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "2.90",
+          "value": "4.60",
           "detail": "beating GANGUS"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "15.50",
+          "value": "10.50",
           "detail": "7 to play"
         },
         {
@@ -129,22 +129,13 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "2.90",
+          "value": "4.60",
           "detail": "8 to play"
         }
       ]
     }
   },
   "top_players": [
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.0,
-      "stats": []
-    },
     {
       "name": "Broncos",
       "position": "DEF",
@@ -164,20 +155,29 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "RJ Harvey",
       "position": "RB",
       "team": "Den",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 2.9,
+      "points": 4.6,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 19
+          "value": 31
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         }
       ]
     },
