@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T18:35:21Z",
+  "updated": "2026-10-18T18:40:23Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -122,6 +122,15 @@
       ]
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 15.0,
+      "stats": []
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -177,15 +186,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 13.0,
-      "stats": []
     },
     {
       "name": "Colts",
@@ -263,6 +263,24 @@
       ]
     },
     {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -294,28 +312,6 @@
       "stats": []
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 9.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 53
-        },
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -334,6 +330,24 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Jalen Coker",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 9.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 65
+        },
+        {
+          "stat": "REC",
+          "value": 5
         }
       ]
     },
@@ -365,6 +379,32 @@
       "stats": []
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 57
+        },
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -381,42 +421,6 @@
       "manager_display": "GRAHAM",
       "points": 7.9,
       "stats": []
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 58
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Jalen Coker",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
     },
     {
       "name": "Malik Nabers",
@@ -587,6 +591,24 @@
       "manager_display": "GREG",
       "points": 4.4,
       "stats": []
+    },
+    {
+      "name": "Carnell Tate",
+      "position": "WR",
+      "team": "Ten",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Chris Boswell",
@@ -803,16 +825,16 @@
       "stats": []
     },
     {
-      "name": "Carnell Tate",
+      "name": "Darius Cooper",
       "position": "WR",
-      "team": "Ten",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.9,
+      "team": "Phi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 14
+          "value": 9
         },
         {
           "stat": "REC",
@@ -821,9 +843,9 @@
       ]
     },
     {
-      "name": "Darius Cooper",
-      "position": "WR",
-      "team": "Phi",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 1.4,
@@ -910,15 +932,6 @@
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
