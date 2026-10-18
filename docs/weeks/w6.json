@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T23:15:21Z",
+  "updated": "2026-10-18T23:20:26Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 99.78,
+        "score": 100.46,
         "projected": 129.92
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 80.48,
+        "score": 83.58,
         "projected": 109.91
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "10.68",
+          "value": "13.78",
           "detail": "beating ANTHONY"
         },
         {
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "99.98",
-          "detail": "1 to play"
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "100.46",
+          "detail": "2 to play"
         }
       ]
     }
@@ -251,6 +251,32 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 22.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 95
+        },
+        {
+          "stat": "REC YD",
+          "value": 58
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -282,11 +308,11 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 21.88,
+      "points": 22.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 237
+          "value": 254
         },
         {
           "stat": "RUSH YD",
@@ -295,32 +321,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 21.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 84
-        },
-        {
-          "stat": "REC YD",
-          "value": 58
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -518,6 +518,15 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 16.0,
+      "stats": []
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -585,15 +594,6 @@
       "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 14.0,
-      "stats": []
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 14.0,
       "stats": []
     },
