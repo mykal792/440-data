@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T19:10:22Z",
+  "updated": "2026-10-18T19:15:25Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -26,6 +26,28 @@
         {
           "stat": "INT",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 25.9,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 115
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 33
+        },
+        {
+          "stat": "TD",
+          "value": 3
         }
       ]
     },
@@ -74,6 +96,28 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 21.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 174
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 24
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -92,50 +136,6 @@
         {
           "stat": "REC",
           "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 20.44,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 151
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 19.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 115
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 32
         },
         {
           "stat": "TD",
@@ -246,11 +246,11 @@
       "team": "Phi",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 10.5,
+      "points": 10.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 27
+          "value": 29
         },
         {
           "stat": "REC YD",
@@ -325,6 +325,32 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 72
+        },
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -372,32 +398,6 @@
       "manager_display": "COYNE",
       "points": 9.0,
       "stats": []
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 8.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 65
-        },
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Parker Washington",
@@ -452,6 +452,24 @@
       "manager_display": "GRAHAM",
       "points": 7.9,
       "stats": []
+    },
+    {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
     },
     {
       "name": "Carnell Tate",
@@ -517,34 +535,16 @@
       "stats": []
     },
     {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 42
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 5.5,
+      "points": 5.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 53
+          "value": 57
         },
         {
           "stat": "REC YD",
@@ -621,11 +621,11 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 4.7,
+      "points": 4.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 41
+          "value": 43
         },
         {
           "stat": "REC YD",
@@ -724,6 +724,20 @@
       "stats": []
     },
     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        }
+      ]
+    },
+    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -738,20 +752,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 30
         }
       ]
     },
