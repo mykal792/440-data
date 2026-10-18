@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T14:15:24Z",
+  "updated": "2026-10-18T14:20:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 16.36,
+        "score": 15.16,
         "projected": 126.11
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 24.1,
+        "score": 26.1,
         "projected": 106.59
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "11.16",
+          "value": "9.96",
           "detail": "beating SCHILLING"
         },
         {
@@ -113,23 +113,23 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "26.10",
+          "detail": "7 to play"
+        },
+        {
+          "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "24.10",
           "detail": "6 to play"
         },
         {
-          "rank": 1,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "24.10",
-          "detail": "7 to play"
-        },
-        {
-          "rank": 2,
+          "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "16.36",
+          "value": "15.16",
           "detail": "7 to play"
         }
       ]
@@ -195,7 +195,7 @@
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 11.0,
+      "points": 13.0,
       "stats": []
     },
     {
@@ -258,24 +258,6 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 49
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -303,6 +285,28 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 49
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
