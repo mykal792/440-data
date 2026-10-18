@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T17:30:26Z",
+  "updated": "2026-10-18T17:35:24Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 32.9,
+        "score": 34.9,
         "projected": 106.67
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 2.4,
+        "score": 10.58,
         "projected": 114.57
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 20.5,
+        "score": 22.3,
         "projected": 123.77
       },
       "away": {
@@ -84,10 +84,10 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "7.50",
-          "detail": "beating COYNE"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "5.12",
+          "detail": "beating ANTHONY"
         },
         {
           "rank": 2,
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "13.30",
-          "detail": "beating ANTHONY"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "9.30",
+          "detail": "beating COYNE"
         }
       ]
     },
@@ -129,8 +129,8 @@
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "32.90",
-          "detail": "5 to play"
+          "value": "34.90",
+          "detail": "4 to play"
         }
       ]
     }
@@ -242,6 +242,15 @@
       ]
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -271,15 +280,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 11.0,
-      "stats": []
     },
     {
       "name": "Cam Little",
@@ -384,6 +384,28 @@
       "stats": []
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.98,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 42
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -479,6 +501,28 @@
       ]
     },
     {
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -566,20 +610,16 @@
       ]
     },
     {
-      "name": "Dameon Pierce",
+      "name": "Tony Pollard",
       "position": "RB",
-      "team": "Phi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 1.8,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 2
+          "stat": "RUSH YD",
+          "value": 18
         }
       ]
     },
@@ -589,20 +629,6 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 15
-        }
-      ]
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 1.5,
       "stats": [
         {
@@ -648,6 +674,24 @@
       ]
     },
     {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -671,6 +715,28 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "REC YD",
+          "value": -8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Tyler Shough",
       "position": "QB",
       "team": "NO",
@@ -681,28 +747,6 @@
         {
           "stat": "PASS YD",
           "value": 16
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "REC YD",
-          "value": -5
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -735,20 +779,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
         }
       ]
     },
@@ -801,15 +831,6 @@
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
