@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T17:45:22Z",
+  "updated": "2026-10-18T17:50:24Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 36.1,
+        "score": 36.3,
         "projected": 106.67
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 11.48,
+        "score": 14.88,
         "projected": 114.57
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 26.2,
+        "score": 26.1,
         "projected": 107.84
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 18.5,
+        "score": 19.5,
         "projected": 106.48
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 22.7,
+        "score": 22.4,
         "projected": 123.77
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 17.7,
+        "score": 18.7,
         "projected": 124.42
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "4.22",
+          "value": "0.82",
           "detail": "beating ANTHONY"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "5.00",
+          "value": "3.70",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "7.70",
+          "value": "6.60",
           "detail": "beating SCOTTY"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "36.10",
+          "value": "36.30",
           "detail": "4 to play"
         }
       ]
@@ -567,16 +567,38 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 38
+        },
+        {
+          "stat": "REC YD",
+          "value": -8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Dameon Pierce",
       "position": "RB",
       "team": "Phi",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 3.6,
+      "points": 3.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 18
+          "value": 15
         },
         {
           "stat": "REC YD",
@@ -630,11 +652,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 2.0,
+      "points": 2.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 20
+          "value": 22
         }
       ]
     },
@@ -712,24 +734,16 @@
       ]
     },
     {
-      "name": "Bijan Robinson",
+      "name": "Rhamondre Stevenson",
       "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.7,
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
-        },
-        {
-          "stat": "REC YD",
-          "value": -8
-        },
-        {
-          "stat": "REC",
-          "value": 2
+          "value": 14
         }
       ]
     },
@@ -770,6 +784,24 @@
       ]
     },
     {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -797,6 +829,15 @@
       "stats": []
     },
     {
+      "name": "Spencer Shrader",
+      "position": "K",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.0,
+      "stats": []
+    },
+    {
       "name": "Tyler Shough",
       "position": "QB",
       "team": "NO",
@@ -807,20 +848,6 @@
         {
           "stat": "PASS YD",
           "value": 16
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
         }
       ]
     },
@@ -1050,15 +1077,6 @@
       "stats": []
     },
     {
-      "name": "Brian Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -1149,15 +1167,6 @@
       "stats": []
     },
     {
-      "name": "Spencer Shrader",
-      "position": "K",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -1212,15 +1221,6 @@
       "stats": []
     },
     {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Pat Freiermuth",
       "position": "TE",
       "team": "Pit",
@@ -1255,6 +1255,20 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Brian Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": -0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        }
+      ]
     }
   ]
 }
