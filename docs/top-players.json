@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T23:05:22Z",
+  "updated": "2026-10-18T23:10:22Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -79,19 +79,19 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 25.8,
+      "points": 28.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 107
+          "value": 128
         },
         {
           "stat": "REC YD",
-          "value": 6
+          "value": 11
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         },
         {
           "stat": "TD",
@@ -140,6 +140,54 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 21.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 237
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 21.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 84
+        },
+        {
+          "stat": "REC YD",
+          "value": 58
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -280,28 +328,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 20.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 190
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -606,28 +632,6 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 80
-        },
-        {
-          "stat": "REC YD",
-          "value": 32
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -700,15 +704,37 @@
       "team": "KC",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 10.5,
+      "points": 10.8,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 75
+          "value": 73
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.78,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 272
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 19
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -727,28 +753,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 10.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 257
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 19
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -963,6 +967,42 @@
       ]
     },
     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 53
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "Buf",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -1025,24 +1065,6 @@
       ]
     },
     {
-      "name": "Dalton Kincaid",
-      "position": "TE",
-      "team": "Buf",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        }
-      ]
-    },
-    {
       "name": "Davante Adams",
       "position": "WR",
       "team": "LAR",
@@ -1089,24 +1111,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
