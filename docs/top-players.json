@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T22:10:26Z",
+  "updated": "2026-10-18T22:15:22Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -70,6 +70,32 @@
         {
           "stat": "TD",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 25.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 101
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -180,32 +206,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 20.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 75
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -364,11 +364,11 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 14.3,
+      "points": 14.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 27
+          "value": 25
         },
         {
           "stat": "REC YD",
@@ -802,6 +802,24 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 53
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -829,24 +847,6 @@
       "stats": []
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 51
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -861,13 +861,26 @@
       ]
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.0,
-      "stats": []
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 210
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Garrett Wilson",
@@ -906,28 +919,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 6.16,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 179
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -986,20 +977,6 @@
       ]
     },
     {
-      "name": "Kirk Cousins",
-      "position": "QB",
-      "team": "LV",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 126
-        }
-      ]
-    },
-    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -1025,6 +1002,33 @@
       "manager_display": "GRAHAM",
       "points": 5.0,
       "stats": []
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.0,
+      "stats": []
+    },
+    {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Derrick Henry",
@@ -1134,20 +1138,20 @@
       ]
     },
     {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.2,
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "team": "LV",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.04,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 22
+          "stat": "PASS YD",
+          "value": 126
         },
         {
-          "stat": "REC",
-          "value": 2
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
