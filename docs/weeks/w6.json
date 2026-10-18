@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T19:25:25Z",
+  "updated": "2026-10-18T19:30:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 61.04,
+        "score": 64.04,
         "projected": 119.42
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 69.74,
+        "score": 70.44,
         "projected": 127.11
       }
     },
@@ -21,14 +21,14 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 53.4,
+        "score": 53.5,
         "projected": 106.48
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 70.7,
-        "projected": 129.72
+        "projected": 129.85
       }
     },
     {
@@ -36,7 +36,7 @@
         "name": "GREG",
         "face": "greg",
         "score": 28.8,
-        "projected": 109.9
+        "projected": 110.0
       },
       "away": {
         "name": "ANTHONY",
@@ -49,8 +49,8 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 39.4,
-        "projected": 107.75
+        "score": 44.3,
+        "projected": 107.77
       },
       "away": {
         "name": "SCOTTY",
@@ -63,14 +63,14 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 41.2,
-        "projected": 123.92
+        "score": 42.4,
+        "projected": 123.87
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 29.7,
-        "projected": 124.78
+        "score": 32.9,
+        "projected": 124.88
       }
     }
   ],
@@ -84,23 +84,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "3.70",
-          "detail": "beating GANGUS"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "1.20",
+          "detail": "beating SCOTTY"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "8.70",
+          "value": "6.40",
           "detail": "beating SCHILLING"
         },
         {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "11.50",
+          "value": "9.50",
           "detail": "beating COYNE"
         }
       ]
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "69.74",
+          "value": "70.44",
           "detail": "4 to play"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "61.04",
+          "value": "64.04",
           "detail": "4 to play"
         }
       ]
@@ -256,11 +256,11 @@
       "team": "Chi",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 20.8,
+      "points": 20.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 42
+          "value": 43
         },
         {
           "stat": "REC YD",
@@ -356,6 +356,33 @@
       ]
     },
     {
+      "name": "Jalen Coker",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 97
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -370,6 +397,24 @@
         {
           "stat": "REC",
           "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 11.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 86
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -453,33 +498,6 @@
       ]
     },
     {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 79
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -496,6 +514,32 @@
       "manager_display": "GARRETT",
       "points": 10.0,
       "stats": []
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 77
+        },
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Malik Nabers",
@@ -538,32 +582,6 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 9.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 72
-        },
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -582,24 +600,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jalen Coker",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 9.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 65
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -685,6 +685,20 @@
       "stats": []
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 66
+        }
+      ]
+    },
+    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -730,20 +744,6 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 54
-        }
-      ]
-    },
-    {
       "name": "Emanuel Wilson",
       "position": "RB",
       "team": "Sea",
@@ -756,6 +756,15 @@
           "value": 52
         }
       ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.2,
+      "stats": []
     },
     {
       "name": "Seahawks",
@@ -789,6 +798,50 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 58
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -805,15 +858,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.2,
-      "stats": []
     },
     {
       "name": "A.J. Brown",
@@ -848,32 +892,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 51
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
     },
@@ -947,24 +965,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
