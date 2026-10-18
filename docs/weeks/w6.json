@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T20:45:22Z",
+  "updated": "2026-10-18T20:50:24Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 78.7,
+        "score": 81.18,
         "projected": 129.93
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 42.92,
+        "score": 43.32,
         "projected": 110.18
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 75.76,
+        "score": 77.16,
         "projected": 106.04
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 63.56,
+        "score": 65.16,
         "projected": 123.93
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 65.8,
+        "score": 68.9,
         "projected": 124.92
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "2.24",
+          "value": "3.74",
           "detail": "beating GRAHAM"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "10.46",
+          "value": "11.86",
           "detail": "beating GANGUS"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "78.70",
+          "value": "81.18",
           "detail": "2 to play"
         }
       ]
@@ -1053,6 +1053,24 @@
       ]
     },
     {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "Buf",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -1085,6 +1103,24 @@
       "stats": []
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 77
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -1104,6 +1140,28 @@
         {
           "stat": "PASS YD",
           "value": 73
+        }
+      ]
+    },
+    {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1171,42 +1229,30 @@
       ]
     },
     {
-      "name": "Kyren Williams",
-      "position": "RB",
+      "name": "Matthew Stafford",
+      "position": "QB",
       "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.6,
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.76,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 8
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "stat": "PASS YD",
+          "value": 44
         }
       ]
     },
     {
-      "name": "Dalton Kincaid",
-      "position": "TE",
+      "name": "James Cook III",
+      "position": "RB",
       "team": "Buf",
-      "manager": "coyne",
-      "manager_display": "COYNE",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 1.6,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 2
+          "stat": "RUSH YD",
+          "value": 16
         }
       ]
     },
@@ -1247,16 +1293,20 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.2,
+      "name": "Davante Adams",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.1,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 12
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1279,30 +1329,20 @@
       "stats": []
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 20
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
+      "name": "Puka Nacua",
+      "position": "WR",
       "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.36,
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.9,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 9
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1442,15 +1482,6 @@
       "stats": []
     },
     {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -1463,15 +1494,6 @@
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Davante Adams",
-      "position": "WR",
-      "team": "LAR",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
