@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T20:20:25Z",
+  "updated": "2026-10-18T20:25:22Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -79,15 +79,15 @@
       "team": "NYG",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 23.1,
+      "points": 24.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 156
+          "value": 165
         },
         {
           "stat": "REC",
-          "value": 11
+          "value": 12
         }
       ]
     },
@@ -162,6 +162,54 @@
       ]
     },
     {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 20.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 99
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 20.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 120
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -187,54 +235,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 19.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 111
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 18.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 79
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -434,6 +434,24 @@
       ]
     },
     {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -454,15 +472,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 12.0,
-      "stats": []
     },
     {
       "name": "Tetairoa McMillan",
@@ -521,24 +530,6 @@
       "manager_display": "SCARPITTI",
       "points": 11.0,
       "stats": []
-    },
-    {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 10.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 63
-        },
-        {
-          "stat": "REC",
-          "value": 8
-        }
-      ]
     },
     {
       "name": "Drake London",
@@ -639,6 +630,15 @@
       "stats": []
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -725,11 +725,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.8,
+      "points": 5.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 37
+          "value": 34
         },
         {
           "stat": "REC YD",
