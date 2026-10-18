@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T20:40:23Z",
+  "updated": "2026-10-18T20:45:22Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -386,6 +386,15 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.0,
+      "stats": []
+    },
+    {
       "name": "Dameon Pierce",
       "position": "RB",
       "team": "Phi",
@@ -492,6 +501,24 @@
       ]
     },
     {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 11.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 55
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -520,15 +547,6 @@
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 11.4,
-      "stats": []
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 11.0,
       "stats": []
     },
     {
@@ -670,6 +688,32 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -769,6 +813,28 @@
       ]
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 46
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -797,28 +863,6 @@
         {
           "stat": "RUSH YD",
           "value": 52
-        }
-      ]
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -858,15 +902,6 @@
       ]
     },
     {
-      "name": "Harrison Butker",
-      "position": "K",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.4,
-      "stats": []
-    },
-    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
@@ -899,6 +934,15 @@
       ]
     },
     {
+      "name": "Harrison Butker",
+      "position": "K",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.4,
+      "stats": []
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -927,20 +971,6 @@
         {
           "stat": "PASS YD",
           "value": 73
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
         }
       ]
     },
@@ -994,20 +1024,16 @@
       "stats": []
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
+      "name": "Kirk Cousins",
+      "position": "QB",
       "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.9,
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.96,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "stat": "PASS YD",
+          "value": 49
         }
       ]
     },
@@ -1084,20 +1110,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kirk Cousins",
-      "position": "QB",
-      "team": "LV",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 33
         }
       ]
     },
