@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T19:15:25Z",
+  "updated": "2026-10-18T19:20:26Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -35,11 +35,11 @@
       "team": "NO",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 25.9,
+      "points": 26.02,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 115
+          "value": 118
         },
         {
           "stat": "RUSH YD",
@@ -267,6 +267,24 @@
       ]
     },
     {
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "Chi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 76
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -301,6 +319,24 @@
       "manager_display": "GARRETT",
       "points": 10.0,
       "stats": []
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 63
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
     },
     {
       "name": "Zay Flowers",
@@ -400,6 +436,24 @@
       "stats": []
     },
     {
+      "name": "Carnell Tate",
+      "position": "WR",
+      "team": "Ten",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 8.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 62
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -425,24 +479,6 @@
       "manager_display": "COYNE",
       "points": 8.0,
       "stats": []
-    },
-    {
-      "name": "Luther Burden III",
-      "position": "WR",
-      "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 54
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Jason Myers",
@@ -472,24 +508,6 @@
       ]
     },
     {
-      "name": "Carnell Tate",
-      "position": "WR",
-      "team": "Ten",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 53
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -504,24 +522,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -557,24 +557,16 @@
       ]
     },
     {
-      "name": "Derrick Henry",
+      "name": "Chuba Hubbard",
       "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.3,
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "value": 54
         }
       ]
     },
@@ -638,20 +630,6 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 45
-        }
-      ]
-    },
-    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -693,6 +671,32 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 52
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
