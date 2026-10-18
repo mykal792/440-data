@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T22:45:24Z",
+  "updated": "2026-10-18T22:50:22Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 97.3,
+        "score": 97.74,
         "projected": 129.95
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 63.3,
+        "score": 64.3,
         "projected": 110.0
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 92.28,
+        "score": 93.64,
         "projected": 105.72
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 86.8,
+        "score": 90.1,
         "projected": 123.93
       },
       "away": {
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "6.50",
+          "value": "5.50",
           "detail": "beating GREG"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "6.70",
+          "value": "10.00",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "23.88",
+          "value": "25.24",
           "detail": "beating GANGUS"
         }
       ]
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "97.30",
+          "value": "97.74",
           "detail": "2 to play"
         },
         {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "92.28",
+          "value": "93.64",
           "detail": "1 to play"
         }
       ]
@@ -404,11 +404,11 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 19.4,
+      "points": 19.84,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 175
+          "value": 186
         },
         {
           "stat": "RUSH YD",
@@ -496,6 +496,24 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 14.84,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 221
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -563,24 +581,6 @@
         {
           "stat": "REC",
           "value": 8
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 13.48,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 187
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -708,6 +708,15 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -757,13 +766,22 @@
       "stats": []
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.0,
-      "stats": []
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
     },
     {
       "name": "James Cook III",
@@ -953,24 +971,6 @@
       ]
     },
     {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 8.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 63
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -985,6 +985,28 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 50
+        },
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -1030,28 +1052,6 @@
         {
           "stat": "RUSH YD",
           "value": 76
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 50
-        },
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
