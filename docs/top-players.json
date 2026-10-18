@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T14:30:25Z",
+  "updated": "2026-10-18T14:35:18Z",
   "players": [
     {
       "name": "Jaxon Smith-Njigba",
@@ -57,12 +57,64 @@
       ]
     },
     {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 126
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 13.0,
+      "points": 8.0,
       "stats": []
     },
     {
@@ -143,40 +195,13 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
+      "name": "Cam Little",
+      "position": "K",
       "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 104
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        }
-      ]
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -296,9 +321,9 @@
       "stats": []
     },
     {
-      "name": "Rashee Rice",
+      "name": "Darius Cooper",
       "position": "WR",
-      "team": "KC",
+      "team": "Phi",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -317,15 +342,6 @@
       "name": "Cam Skattebo",
       "position": "RB",
       "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,

@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T14:30:25Z",
+  "updated": "2026-10-18T14:35:18Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 17.36,
+        "score": 24.24,
         "projected": 126.11
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 0.0,
-        "projected": 104.0
+        "score": 1.0,
+        "projected": 106.82
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 30.4,
+        "score": 39.6,
         "projected": 130.02
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 26.1,
+        "score": 21.1,
         "projected": 106.59
       }
     },
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "12.16",
-          "detail": "beating SCHILLING"
-        },
-        {
-          "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
           "value": "12.90",
           "detail": "beating COYNE"
+        },
+        {
+          "rank": 3,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "15.10",
+          "detail": "beating GANGUS"
         }
       ]
     },
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "30.40",
+          "value": "39.60",
           "detail": "6 to play"
         },
         {
           "rank": 2,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "26.10",
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "24.24",
           "detail": "7 to play"
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "17.36",
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "21.10",
           "detail": "7 to play"
         }
       ]
@@ -190,12 +190,64 @@
       ]
     },
     {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 126
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 13.0,
+      "points": 8.0,
       "stats": []
     },
     {
@@ -276,40 +328,13 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
+      "name": "Cam Little",
+      "position": "K",
       "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 104
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        }
-      ]
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -429,9 +454,9 @@
       "stats": []
     },
     {
-      "name": "Rashee Rice",
+      "name": "Darius Cooper",
       "position": "WR",
-      "team": "KC",
+      "team": "Phi",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -450,15 +475,6 @@
       "name": "Cam Skattebo",
       "position": "RB",
       "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
