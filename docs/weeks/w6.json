@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T17:25:20Z",
+  "updated": "2026-10-18T17:30:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 25.3,
+        "score": 25.94,
         "projected": 119.37
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 24.3,
+        "score": 32.9,
         "projected": 106.67
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 12.3,
+        "score": 15.7,
         "projected": 109.74
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 12.8,
+        "score": 13.0,
         "projected": 124.42
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "7.70",
+          "value": "7.50",
           "detail": "beating COYNE"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GREG",
           "face": "greg",
-          "value": "9.90",
+          "value": "13.30",
           "detail": "beating ANTHONY"
         }
       ]
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "25.30",
-          "detail": "6 to play"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "32.90",
+          "detail": "5 to play"
         }
       ]
     }
@@ -300,6 +300,32 @@
       "stats": []
     },
     {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -426,6 +452,15 @@
       "stats": []
     },
     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.4,
+      "stats": []
+    },
+    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -436,28 +471,6 @@
         {
           "stat": "REC YD",
           "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 14
         },
         {
           "stat": "REC",
@@ -490,6 +503,20 @@
         {
           "stat": "RUSH YD",
           "value": 21
+        }
+      ]
+    },
+    {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 20
         }
       ]
     },
@@ -621,15 +648,6 @@
       ]
     },
     {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.0,
-      "stats": []
-    },
-    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -644,11 +662,25 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.8,
+      "points": 1.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 8
+          "value": 10
+        }
+      ]
+    },
+    {
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 16
         }
       ]
     },
@@ -719,29 +751,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
     },
     {
       "name": "Christian McCaffrey",
