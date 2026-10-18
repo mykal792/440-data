@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T22:50:22Z",
+  "updated": "2026-10-18T22:55:21Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 109.84,
+        "score": 109.94,
         "projected": 127.12
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 97.74,
+        "score": 97.94,
         "projected": 129.95
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 64.3,
+        "score": 65.82,
         "projected": 110.0
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 93.64,
+        "score": 99.68,
         "projected": 105.72
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 90.1,
+        "score": 90.6,
         "projected": 123.93
       },
       "away": {
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "5.50",
+          "value": "3.98",
           "detail": "beating GREG"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "10.00",
+          "value": "10.50",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "25.24",
-          "detail": "beating GANGUS"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "28.38",
+          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "109.84",
+          "value": "109.94",
           "detail": "1 to play"
         },
         {
           "rank": 2,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "97.74",
-          "detail": "2 to play"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "99.68",
+          "detail": "1 to play"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "93.64",
-          "detail": "1 to play"
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "97.94",
+          "detail": "2 to play"
         }
       ]
     }
@@ -212,11 +212,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 25.7,
+      "points": 25.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 106
+          "value": 107
         },
         {
           "stat": "REC YD",
@@ -343,6 +343,24 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 20.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 222
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -404,11 +422,11 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 19.84,
+      "points": 20.04,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 186
+          "value": 191
         },
         {
           "stat": "RUSH YD",
@@ -488,24 +506,6 @@
         {
           "stat": "REC",
           "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 14.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 221
         },
         {
           "stat": "TD",
@@ -771,11 +771,11 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 10.9,
+      "points": 11.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 79
+          "value": 80
         },
         {
           "stat": "REC",
@@ -922,6 +922,28 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 233
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 19
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -1018,28 +1040,6 @@
       "manager_display": "GRAHAM",
       "points": 7.9,
       "stats": []
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.7,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 215
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Tony Pollard",
