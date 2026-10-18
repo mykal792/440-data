@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T22:55:21Z",
+  "updated": "2026-10-18T23:00:29Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 81.56,
-        "projected": 119.17
+        "projected": 119.12
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 109.94,
+        "score": 115.64,
         "projected": 127.12
       }
     },
@@ -28,7 +28,7 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 97.94,
-        "projected": 129.95
+        "projected": 129.91
       }
     },
     {
@@ -36,13 +36,13 @@
         "name": "GREG",
         "face": "greg",
         "score": 65.82,
-        "projected": 110.0
+        "projected": 109.91
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 69.8,
-        "projected": 114.43
+        "projected": 114.41
       }
     },
     {
@@ -63,14 +63,14 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 90.6,
-        "projected": 123.93
+        "score": 98.96,
+        "projected": 123.96
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 80.1,
-        "projected": 124.92
+        "projected": 124.36
       }
     }
   ],
@@ -93,15 +93,15 @@
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "10.50",
+          "value": "18.86",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "28.38",
-          "detail": "beating SCHILLING"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "31.28",
+          "detail": "beating GANGUS"
         }
       ]
     },
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "109.94",
+          "value": "115.64",
           "detail": "1 to play"
         },
         {
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "97.94",
-          "detail": "2 to play"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "98.96",
+          "detail": "All played"
         }
       ]
     }
@@ -528,6 +528,28 @@
         {
           "stat": "REC",
           "value": 11
+        }
+      ]
+    },
+    {
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "team": "LV",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 14.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 269
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -944,6 +966,24 @@
       ]
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 9.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 70
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -1092,24 +1132,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Kirk Cousins",
-      "position": "QB",
-      "team": "LV",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 6.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 200
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -1305,24 +1327,6 @@
       "manager_display": "GREG",
       "points": 3.4,
       "stats": []
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Colts",
