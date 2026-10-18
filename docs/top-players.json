@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T18:45:26Z",
+  "updated": "2026-10-18T18:50:27Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -105,15 +105,37 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 19.6,
+      "points": 20.08,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 130
+          "value": 142
         },
         {
           "stat": "RUSH YD",
           "value": 24
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 19.08,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 97
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 32
         },
         {
           "stat": "TD",
@@ -142,15 +164,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 14.0,
-      "stats": []
     },
     {
       "name": "Broncos",
@@ -188,28 +201,6 @@
       ]
     },
     {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 11.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 58
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -224,6 +215,15 @@
       "team": "NE",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 11.0,
+      "stats": []
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 11.0,
       "stats": []
     },
@@ -477,6 +477,28 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 53
+        },
+        {
+          "stat": "REC YD",
+          "value": -8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -508,33 +530,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 32
+          "value": 27
         },
         {
           "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 5.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 51
-        },
-        {
-          "stat": "REC YD",
-          "value": -8
-        },
-        {
-          "stat": "REC",
-          "value": 2
+          "value": 5
         }
       ]
     },
@@ -567,11 +567,11 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 4.8,
+      "points": 4.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 41
+          "value": 42
         },
         {
           "stat": "REC YD",
@@ -693,11 +693,11 @@
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 2.7,
+      "points": 3.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 27
+          "value": 30
         }
       ]
     },
@@ -707,11 +707,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 2.5,
+      "points": 2.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 25
+          "value": 27
         }
       ]
     },
