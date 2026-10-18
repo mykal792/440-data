@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T20:35:21Z",
+  "updated": "2026-10-18T20:40:23Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 76.64,
+        "score": 77.34,
         "projected": 127.12
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 41.84,
+        "score": 42.92,
         "projected": 110.18
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 64.8,
+        "score": 65.3,
         "projected": 107.77
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 72.66,
+        "score": 75.76,
         "projected": 106.04
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 61.6,
+        "score": 62.92,
         "projected": 123.93
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 57.1,
+        "score": 59.0,
         "projected": 124.92
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "4.50",
+          "value": "3.92",
           "detail": "beating COYNE"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "4.92",
+          "value": "4.22",
           "detail": "beating HAYDEN"
         },
         {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "7.86",
+          "value": "10.46",
           "detail": "beating GANGUS"
         }
       ]
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "76.70",
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "77.34",
           "detail": "2 to play"
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "76.64",
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "76.70",
           "detail": "2 to play"
         }
       ]
@@ -844,6 +844,24 @@
       ]
     },
     {
+      "name": "Xavier Worthy",
+      "position": "WR",
+      "team": "KC",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 51
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -884,6 +902,24 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Emanuel Wilson",
       "position": "RB",
       "team": "Sea",
@@ -916,28 +952,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1004,24 +1018,6 @@
       ]
     },
     {
-      "name": "Xavier Worthy",
-      "position": "WR",
-      "team": "KC",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -1052,6 +1048,34 @@
       "manager_display": "COYNE",
       "points": 3.0,
       "stats": []
+    },
+    {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 73
+        }
+      ]
+    },
+    {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        }
+      ]
     },
     {
       "name": "Pat Freiermuth",
@@ -1103,16 +1127,20 @@
       "stats": []
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.84,
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.9,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 46
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1157,20 +1185,6 @@
       ]
     },
     {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 15
-        }
-      ]
-    },
-    {
       "name": "Darius Cooper",
       "position": "WR",
       "team": "Phi",
@@ -1203,6 +1217,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "team": "LV",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 33
         }
       ]
     },
@@ -1402,15 +1430,6 @@
       "stats": []
     },
     {
-      "name": "Kirk Cousins",
-      "position": "QB",
-      "team": "LV",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -1432,15 +1451,6 @@
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
