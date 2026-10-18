@@ -1,20 +1,20 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T20:10:28Z",
+  "updated": "2026-10-18T20:15:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 80.66,
-        "projected": 119.42
+        "projected": 119.41
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
         "score": 70.64,
-        "projected": 127.11
+        "projected": 127.12
       }
     },
     {
@@ -28,7 +28,7 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 75.9,
-        "projected": 129.85
+        "projected": 129.93
       }
     },
     {
@@ -36,12 +36,12 @@
         "name": "GREG",
         "face": "greg",
         "score": 28.8,
-        "projected": 110.0
+        "projected": 110.18
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 72.4,
+        "score": 72.3,
         "projected": 114.64
       }
     },
@@ -56,21 +56,21 @@
         "name": "SCOTTY",
         "face": "scotty",
         "score": 67.14,
-        "projected": 106.05
+        "projected": 106.04
       }
     },
     {
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 55.6,
-        "projected": 123.88
+        "score": 56.1,
+        "projected": 123.93
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 52.8,
-        "projected": 124.86
+        "score": 55.5,
+        "projected": 124.92
       }
     }
   ],
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "2.80",
+          "value": "0.60",
           "detail": "beating COYNE"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "72.40",
+          "value": "72.30",
           "detail": "2 to play"
         }
       ]
@@ -190,7 +190,7 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 29.9,
+      "points": 29.8,
       "stats": [
         {
           "stat": "PASS YD",
@@ -198,7 +198,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 25
+          "value": 24
         },
         {
           "stat": "TD",
@@ -347,6 +347,28 @@
       ]
     },
     {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 17.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 75
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -354,6 +376,32 @@
       "manager_display": "SCHILLING",
       "points": 16.9,
       "stats": []
+    },
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 16.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 98
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Carnell Tate",
@@ -378,32 +426,6 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 15.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 93
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -418,28 +440,6 @@
         {
           "stat": "REC",
           "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 14.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 58
-        },
-        {
-          "stat": "REC",
-          "value": 5
         },
         {
           "stat": "TD",
