@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T19:55:23Z",
+  "updated": "2026-10-18T20:00:33Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -174,6 +174,28 @@
       ]
     },
     {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 18.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Carnell Tate",
       "position": "WR",
       "team": "Ten",
@@ -223,11 +245,11 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 15.2,
+      "points": 15.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 86
+          "value": 88
         },
         {
           "stat": "REC YD",
@@ -242,6 +264,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 14.9,
+      "stats": []
     },
     {
       "name": "DeVonta Smith",
@@ -337,6 +368,32 @@
       ]
     },
     {
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 13.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 35
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -399,32 +456,6 @@
       ]
     },
     {
-      "name": "Dameon Pierce",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 12.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 35
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -474,15 +505,6 @@
       "stats": []
     },
     {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -501,6 +523,24 @@
       ]
     },
     {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 62
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -513,6 +553,15 @@
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 10.0,
@@ -541,24 +590,6 @@
       ]
     },
     {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 9.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 55
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -581,15 +612,6 @@
       ]
     },
     {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.1,
-      "stats": []
-    },
-    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -609,24 +631,6 @@
         {
           "stat": "REC YD",
           "value": 64
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 62
         },
         {
           "stat": "REC",
@@ -818,6 +822,20 @@
       ]
     },
     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 36
+        }
+      ]
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -825,20 +843,6 @@
       "manager_display": "GREG",
       "points": 3.4,
       "stats": []
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 34
-        }
-      ]
     },
     {
       "name": "Colts",
