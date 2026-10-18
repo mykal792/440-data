@@ -1,14 +1,14 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T21:55:20Z",
+  "updated": "2026-10-18T22:00:31Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 81.56,
-        "projected": 119.41
+        "projected": 119.17
       },
       "away": {
         "name": "HAYDEN",
@@ -22,13 +22,13 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 62.8,
-        "projected": 106.48
+        "projected": 107.09
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 89.86,
-        "projected": 129.93
+        "projected": 129.95
       }
     },
     {
@@ -36,13 +36,13 @@
         "name": "GREG",
         "face": "greg",
         "score": 53.26,
-        "projected": 110.18
+        "projected": 110.0
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 71.8,
-        "projected": 114.64
+        "projected": 114.43
       }
     },
     {
@@ -50,13 +50,13 @@
         "name": "GANGUS",
         "face": "gangus",
         "score": 67.2,
-        "projected": 107.77
+        "projected": 107.89
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 87.32,
-        "projected": 106.04
+        "score": 87.64,
+        "projected": 105.72
       }
     },
     {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "87.32",
+          "value": "87.64",
           "detail": "1 to play"
         }
       ]
@@ -784,6 +784,24 @@
       "stats": []
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.84,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 96
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -802,24 +820,6 @@
         {
           "stat": "REC",
           "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 88
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
