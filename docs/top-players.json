@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T16:10:26Z",
+  "updated": "2026-10-18T16:15:21Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -9,11 +9,11 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 27.26,
+      "points": 33.82,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 254
+          "value": 268
         },
         {
           "stat": "RUSH YD",
@@ -21,11 +21,37 @@
         },
         {
           "stat": "TD",
-          "value": 3
+          "value": 4
         },
         {
           "stat": "INT",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 21.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -44,32 +70,6 @@
         {
           "stat": "REC",
           "value": 12
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 21.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 37
-        },
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -186,21 +186,21 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.0,
-      "stats": []
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 3.0,
+      "points": 4.0,
+      "stats": []
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.0,
       "stats": []
     },
     {
