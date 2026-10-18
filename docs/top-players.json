@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T20:30:26Z",
+  "updated": "2026-10-18T20:35:21Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -240,6 +240,15 @@
       ]
     },
     {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 17.9,
+      "stats": []
+    },
+    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -260,15 +269,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 16.9,
-      "stats": []
     },
     {
       "name": "Carnell Tate",
@@ -630,28 +630,6 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "REC YD",
-          "value": 35
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -668,6 +646,28 @@
       "manager_display": "ANTHONY",
       "points": 9.0,
       "stats": []
+    },
+    {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 8.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 50
+        },
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Parker Washington",
@@ -770,11 +770,11 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 5.1,
+      "points": 5.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 45
+          "value": 46
         },
         {
           "stat": "REC YD",
@@ -783,6 +783,28 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -820,6 +842,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Harrison Butker",
+      "position": "K",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.4,
+      "stats": []
     },
     {
       "name": "A.J. Brown",
@@ -881,24 +912,6 @@
       "stats": []
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -957,6 +970,20 @@
       "stats": []
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.84,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 46
+        }
+      ]
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -975,6 +1002,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dalton Kincaid",
+      "position": "TE",
+      "team": "Buf",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1029,20 +1074,6 @@
       ]
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 30
-        }
-      ]
-    },
-    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
@@ -1075,34 +1106,16 @@
       "stats": []
     },
     {
-      "name": "Dalton Kincaid",
-      "position": "TE",
-      "team": "Buf",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.64,
+      "points": 0.8,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 16
+          "value": 20
         }
       ]
     },
@@ -1187,15 +1200,6 @@
       "name": "Brock Bowers",
       "position": "TE",
       "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Harrison Butker",
-      "position": "K",
-      "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
