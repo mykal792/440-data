@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T17:55:20Z",
+  "updated": "2026-10-18T18:00:30Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -180,8 +180,30 @@
       "team": "NE",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 10.0,
+      "points": 11.0,
       "stats": []
+    },
+    {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 65
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Cam Little",
@@ -238,28 +260,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 65
-        },
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -407,6 +407,24 @@
       ]
     },
     {
+      "name": "Jalen Coker",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -430,6 +448,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -478,24 +514,6 @@
       ]
     },
     {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Tyler Shough",
       "position": "QB",
       "team": "NO",
@@ -524,24 +542,6 @@
         {
           "stat": "RUSH YD",
           "value": 26
-        }
-      ]
-    },
-    {
-      "name": "Jalen Coker",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
