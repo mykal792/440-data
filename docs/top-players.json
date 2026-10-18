@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T19:00:30Z",
+  "updated": "2026-10-18T19:05:19Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -127,11 +127,11 @@
       "team": "NO",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 19.08,
+      "points": 19.8,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 97
+          "value": 115
         },
         {
           "stat": "RUSH YD",
@@ -219,6 +219,28 @@
       "stats": []
     },
     {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 77
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Dameon Pierce",
       "position": "RB",
       "team": "Phi",
@@ -241,28 +263,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 68
-        },
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -292,6 +292,28 @@
       "manager_display": "GARRETT",
       "points": 10.0,
       "stats": []
+    },
+    {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 9.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "REC YD",
+          "value": 67
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
     },
     {
       "name": "Nico Collins",
@@ -396,15 +418,6 @@
       ]
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -421,6 +434,24 @@
       "manager_display": "GRAHAM",
       "points": 7.9,
       "stats": []
+    },
+    {
+      "name": "Carnell Tate",
+      "position": "WR",
+      "team": "Ten",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 53
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
     },
     {
       "name": "Drake London",
@@ -477,26 +508,13 @@
       ]
     },
     {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "REC YD",
-          "value": 35
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 6.0,
+      "stats": []
     },
     {
       "name": "Isaiah Likely",
@@ -544,11 +562,11 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 5.4,
+      "points": 5.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 47
+          "value": 46
         },
         {
           "stat": "REC YD",
@@ -584,6 +602,20 @@
       "stats": []
     },
     {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 50
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -606,6 +638,20 @@
       ]
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 45
+        }
+      ]
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -613,24 +659,6 @@
       "manager_display": "GREG",
       "points": 4.4,
       "stats": []
-    },
-    {
-      "name": "Carnell Tate",
-      "position": "WR",
-      "team": "Ten",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Chris Boswell",
@@ -660,6 +688,24 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -674,20 +720,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 34
         }
       ]
     },
@@ -734,38 +766,6 @@
         {
           "stat": "RUSH YD",
           "value": 27
-        }
-      ]
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
         }
       ]
     },
