@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T17:40:24Z",
+  "updated": "2026-10-18T17:45:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 25.94,
+        "score": 26.94,
         "projected": 119.37
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 67.8,
+        "score": 66.1,
         "projected": 129.93
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 10.58,
+        "score": 11.48,
         "projected": 114.57
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 15.8,
+        "score": 18.5,
         "projected": 106.48
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 13.4,
+        "score": 17.7,
         "projected": 124.42
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "5.12",
+          "value": "4.22",
           "detail": "beating ANTHONY"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "9.30",
+          "value": "5.00",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "10.40",
+          "value": "7.70",
           "detail": "beating SCOTTY"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "67.80",
+          "value": "66.10",
           "detail": "4 to play"
         },
         {
@@ -308,6 +308,15 @@
       ]
     },
     {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -346,24 +355,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.0,
-      "stats": []
     },
     {
       "name": "Parker Washington",
@@ -415,16 +406,25 @@
       "stats": []
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 6.3,
+      "points": 6.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 48
+          "value": 51
         },
         {
           "stat": "REC YD",
@@ -469,6 +469,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -563,6 +585,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -672,16 +712,24 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
+      "name": "Bijan Robinson",
       "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.4,
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": -8
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -749,28 +797,6 @@
       "stats": []
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "REC YD",
-          "value": -8
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Tyler Shough",
       "position": "QB",
       "team": "NO",
@@ -795,24 +821,6 @@
         {
           "stat": "RUSH YD",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": -2
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
