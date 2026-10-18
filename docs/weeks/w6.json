@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T19:05:19Z",
+  "updated": "2026-10-18T19:10:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 53.7,
+        "score": 54.7,
         "projected": 119.42
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 71.14,
+        "score": 71.04,
         "projected": 127.11
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 70.8,
+        "score": 70.7,
         "projected": 129.72
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 21.1,
+        "score": 20.1,
         "projected": 109.9
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 35.0,
+        "score": 35.8,
         "projected": 123.92
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "4.00",
+          "value": "4.80",
           "detail": "beating COYNE"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "15.40",
+          "value": "15.30",
           "detail": "beating GARRETT"
         }
       ]
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "71.14",
+          "value": "71.04",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "70.80",
+          "value": "70.70",
           "detail": "3 to play"
         },
         {
@@ -357,11 +357,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 11.3,
+      "points": 11.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 77
+          "value": 76
         },
         {
           "stat": "REC YD",
@@ -418,6 +418,15 @@
       ]
     },
     {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -432,7 +441,7 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 9.8,
+      "points": 9.7,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -440,7 +449,7 @@
         },
         {
           "stat": "REC YD",
-          "value": 67
+          "value": 66
         },
         {
           "stat": "REC",
@@ -469,15 +478,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.0,
-      "stats": []
     },
     {
       "name": "Jalen Coker",
@@ -560,6 +560,24 @@
       "stats": []
     },
     {
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "Chi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 54
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -601,24 +619,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Luther Burden III",
-      "position": "WR",
-      "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 51
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -785,15 +785,6 @@
       ]
     },
     {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.4,
-      "stats": []
-    },
-    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -855,6 +846,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.4,
+      "stats": []
     },
     {
       "name": "DeVonta Smith",
