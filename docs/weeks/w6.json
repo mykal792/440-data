@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T20:05:20Z",
+  "updated": "2026-10-18T20:10:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 78.66,
+        "score": 80.66,
         "projected": 119.42
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 74.9,
+        "score": 75.9,
         "projected": 129.85
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 60.0,
+        "score": 72.4,
         "projected": 114.64
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 58.0,
+        "score": 67.14,
         "projected": 106.05
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 55.3,
+        "score": 55.6,
         "projected": 123.88
       },
       "away": {
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "0.90",
-          "detail": "beating GANGUS"
-        },
-        {
-          "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "2.50",
+          "value": "2.80",
           "detail": "beating COYNE"
         },
         {
-          "rank": 3,
+          "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "8.02",
+          "value": "10.02",
           "detail": "beating HAYDEN"
+        },
+        {
+          "rank": 3,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "10.04",
+          "detail": "beating GANGUS"
         }
       ]
     },
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "78.66",
+          "value": "80.66",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "74.90",
+          "value": "75.90",
           "detail": "3 to play"
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "70.64",
-          "detail": "4 to play"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "72.40",
+          "detail": "2 to play"
         }
       ]
     }
@@ -203,6 +203,24 @@
         {
           "stat": "TD",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 23.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 156
+        },
+        {
+          "stat": "REC",
+          "value": 11
         }
       ]
     },
@@ -329,6 +347,15 @@
       ]
     },
     {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 16.9,
+      "stats": []
+    },
+    {
       "name": "Carnell Tate",
       "position": "WR",
       "team": "Ten",
@@ -399,15 +426,6 @@
       ]
     },
     {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 14.9,
-      "stats": []
-    },
-    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -426,24 +444,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 14.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 97
-        },
-        {
-          "stat": "REC",
-          "value": 9
         }
       ]
     },
@@ -589,6 +589,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -635,6 +644,15 @@
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 11.4,
+      "stats": []
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.0,
       "stats": []
     },
     {
@@ -697,15 +715,6 @@
       "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 10.0,
       "stats": []
     },
@@ -827,11 +836,11 @@
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 5.9,
+      "points": 6.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 57
+          "value": 61
         },
         {
           "stat": "REC YD",
@@ -1090,6 +1099,34 @@
       "stats": []
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1297,15 +1334,6 @@
       "stats": []
     },
     {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -1360,15 +1388,6 @@
       "stats": []
     },
     {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Xavier Worthy",
       "position": "WR",
       "team": "KC",
@@ -1399,15 +1418,6 @@
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
