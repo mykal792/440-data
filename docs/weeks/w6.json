@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T23:25:24Z",
+  "updated": "2026-10-18T23:30:27Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 85.58,
+        "score": 85.28,
         "projected": 109.91
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 101.26,
+        "score": 111.02,
         "projected": 123.96
       },
       "away": {
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "15.78",
+          "value": "15.48",
           "detail": "beating ANTHONY"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "19.26",
+          "value": "29.02",
           "detail": "beating COYNE"
         },
         {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "101.26",
+          "value": "111.02",
           "detail": "All played"
         },
         {
@@ -229,6 +229,28 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "team": "LV",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 24.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 313
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -567,28 +589,6 @@
       ]
     },
     {
-      "name": "Kirk Cousins",
-      "position": "QB",
-      "team": "LV",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 14.76,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 269
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -864,7 +864,7 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.78,
+      "points": 10.48,
       "stats": [
         {
           "stat": "PASS YD",
@@ -872,7 +872,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 19
+          "value": 16
         },
         {
           "stat": "INT",
