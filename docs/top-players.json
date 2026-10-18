@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T21:05:19Z",
+  "updated": "2026-10-18T21:10:25Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -665,15 +665,6 @@
       ]
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.0,
-      "stats": []
-    },
-    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -789,6 +780,15 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Garrett Wilson",
@@ -920,6 +920,46 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.44,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 106
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 31
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
@@ -986,24 +1026,6 @@
       "manager_display": "GREG",
       "points": 3.4,
       "stats": []
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.28,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 77
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Patrick Mahomes",
@@ -1132,16 +1154,20 @@
       "stats": []
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 1.6,
+      "points": 1.5,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 16
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1293,15 +1319,6 @@
       "name": "Rachaad White",
       "position": "RB",
       "team": "Was",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
