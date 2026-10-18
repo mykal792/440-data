@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T20:50:24Z",
+  "updated": "2026-10-18T20:55:20Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 43.32,
+        "score": 40.48,
         "projected": 110.18
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 77.16,
+        "score": 83.8,
         "projected": 106.04
       }
     },
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "11.86",
-          "detail": "beating GANGUS"
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "18.38",
+          "detail": "beating GARRETT"
         }
       ]
     },
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "83.80",
+          "detail": "1 to play"
+        },
+        {
+          "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "81.56",
           "detail": "4 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "81.18",
-          "detail": "2 to play"
         }
       ]
     }
@@ -728,15 +728,6 @@
       "stats": []
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -865,6 +856,24 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 60
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -904,6 +913,15 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Garrett Wilson",
@@ -1121,6 +1139,20 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.08,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 77
+        }
+      ]
+    },
+    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -1128,20 +1160,6 @@
       "manager_display": "COYNE",
       "points": 3.0,
       "stats": []
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 73
-        }
-      ]
     },
     {
       "name": "Kyren Williams",
@@ -1225,20 +1243,6 @@
         {
           "stat": "PASS YD",
           "value": 49
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.76,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 44
         }
       ]
     },
