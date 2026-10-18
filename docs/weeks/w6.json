@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T17:50:24Z",
+  "updated": "2026-10-18T17:55:20Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 26.94,
+        "score": 28.96,
         "projected": 119.37
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 58.64,
+        "score": 60.94,
         "projected": 127.1
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 66.1,
+        "score": 67.5,
         "projected": 129.93
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 14.88,
+        "score": 15.28,
         "projected": 114.57
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 19.5,
+        "score": 20.7,
         "projected": 106.48
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 22.4,
+        "score": 22.3,
         "projected": 123.77
       },
       "away": {
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "0.82",
+          "value": "0.42",
           "detail": "beating ANTHONY"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "3.70",
+          "value": "3.60",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "6.60",
+          "value": "5.40",
           "detail": "beating SCOTTY"
         }
       ]
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "66.10",
+          "value": "67.50",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "58.64",
+          "value": "60.94",
           "detail": "4 to play"
         },
         {
@@ -375,6 +375,28 @@
       ]
     },
     {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 65
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -413,28 +435,6 @@
       "manager_display": "SCARPITTI",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 6.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 51
-        },
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Tetairoa McMillan",
@@ -594,11 +594,11 @@
       "team": "Phi",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 3.3,
+      "points": 3.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 14
         },
         {
           "stat": "REC YD",
@@ -629,6 +629,38 @@
       ]
     },
     {
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.66,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 44
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        }
+      ]
+    },
+    {
       "name": "Jalen Coker",
       "position": "WR",
       "team": "Car",
@@ -652,6 +684,42 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        }
+      ]
+    },
+    {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 2.2,
       "stats": [
         {
@@ -720,66 +788,16 @@
       ]
     },
     {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        }
-      ]
-    },
-    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.4,
+      "points": 1.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
-        }
-      ]
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        }
-      ]
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "value": 18
         }
       ]
     },
@@ -838,16 +856,20 @@
       "stats": []
     },
     {
-      "name": "Tyler Shough",
-      "position": "QB",
+      "name": "Chris Olave",
+      "position": "WR",
       "team": "NO",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.64,
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.8,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 16
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1170,15 +1192,6 @@
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
