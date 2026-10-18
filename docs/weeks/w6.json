@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T21:25:26Z",
+  "updated": "2026-10-18T21:30:30Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 87.84,
+        "score": 88.14,
         "projected": 127.12
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 48.24,
+        "score": 49.34,
         "projected": 110.18
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "6.28",
+          "value": "6.58",
           "detail": "beating SCHILLING"
         },
         {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "87.84",
+          "value": "88.14",
           "detail": "2 to play"
         },
         {
@@ -519,6 +519,24 @@
       ]
     },
     {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 13.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 73
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "RJ Harvey",
       "position": "RB",
       "team": "Den",
@@ -537,24 +555,6 @@
         {
           "stat": "REC",
           "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 13.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 70
         },
         {
           "stat": "TD",
@@ -910,11 +910,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 7.7,
+      "points": 7.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 35
+          "value": 36
         },
         {
           "stat": "REC YD",
@@ -1228,6 +1228,28 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 81
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Pat Freiermuth",
       "position": "TE",
       "team": "Pit",
@@ -1326,24 +1348,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.24,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 81
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
