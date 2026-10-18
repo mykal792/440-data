@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T16:25:22Z",
+  "updated": "2026-10-18T16:30:31Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -109,6 +109,28 @@
       ]
     },
     {
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "Hou",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "REC YD",
+          "value": 74
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -134,24 +156,6 @@
       "manager_display": "GRAHAM",
       "points": 7.9,
       "stats": []
-    },
-    {
-      "name": "Nico Collins",
-      "position": "WR",
-      "team": "Hou",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 63
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -201,6 +205,15 @@
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 2.0,
+      "stats": []
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.0,
       "stats": []
     },
     {
@@ -885,15 +898,6 @@
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": -1.0,
       "stats": []
     }
   ]

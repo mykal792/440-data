@@ -1,20 +1,20 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T16:25:22Z",
+  "updated": "2026-10-18T16:30:31Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 5.2,
-        "projected": 119.3
+        "projected": 119.35
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
         "score": 47.82,
-        "projected": 127.2
+        "projected": 127.22
       }
     },
     {
@@ -22,41 +22,41 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 4.0,
-        "projected": 106.53
+        "projected": 106.54
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 51.2,
-        "projected": 129.84
+        "projected": 129.88
       }
     },
     {
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 7.3,
-        "projected": 109.79
+        "score": 9.4,
+        "projected": 109.76
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 0.0,
-        "projected": 106.79
+        "projected": 106.8
       }
     },
     {
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 5.5,
-        "projected": 102.03
+        "score": 7.5,
+        "projected": 102.01
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 15.1,
-        "projected": 106.4
+        "projected": 106.31
       }
     },
     {
@@ -64,13 +64,13 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 12.9,
-        "projected": 123.85
+        "projected": 123.75
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 0.0,
-        "projected": 124.44
+        "projected": 124.4
       }
     }
   ],
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "7.30",
-          "detail": "beating ANTHONY"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "7.60",
+          "detail": "beating GANGUS"
         },
         {
           "rank": 2,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "9.60",
-          "detail": "beating GANGUS"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "9.40",
+          "detail": "beating ANTHONY"
         },
         {
           "rank": 3,
@@ -242,6 +242,28 @@
       ]
     },
     {
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "Hou",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "REC YD",
+          "value": 74
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -267,24 +289,6 @@
       "manager_display": "GRAHAM",
       "points": 7.9,
       "stats": []
-    },
-    {
-      "name": "Nico Collins",
-      "position": "WR",
-      "team": "Hou",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 63
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -334,6 +338,15 @@
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 2.0,
+      "stats": []
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.0,
       "stats": []
     },
     {
@@ -1018,15 +1031,6 @@
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": -1.0,
       "stats": []
     }
   ]
