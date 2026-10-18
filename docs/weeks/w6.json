@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T21:00:32Z",
+  "updated": "2026-10-18T21:05:19Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 40.48,
+        "score": 42.64,
         "projected": 110.18
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 83.8,
+        "score": 84.28,
         "projected": 106.04
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 65.36,
+        "score": 67.06,
         "projected": 123.93
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "4.64",
+          "value": "2.94",
           "detail": "beating GRAHAM"
         },
         {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "83.80",
+          "value": "84.28",
           "detail": "1 to play"
         },
         {
@@ -798,6 +798,15 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -814,6 +823,24 @@
       "manager_display": "ANTHONY",
       "points": 9.0,
       "stats": []
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 72
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jaylen Warren",
@@ -852,24 +879,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.4,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 60
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -913,15 +922,6 @@
           "value": 4
         }
       ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.0,
-      "stats": []
     },
     {
       "name": "Garrett Wilson",
@@ -1144,11 +1144,11 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 3.08,
+      "points": 3.24,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 77
+          "value": 81
         }
       ]
     },
@@ -1160,6 +1160,24 @@
       "manager_display": "COYNE",
       "points": 3.0,
       "stats": []
+    },
+    {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Kyren Williams",
@@ -1331,24 +1349,6 @@
       "manager_display": "GANGUS",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Christian McCaffrey",
