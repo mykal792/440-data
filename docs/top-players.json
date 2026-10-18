@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T21:15:22Z",
+  "updated": "2026-10-18T21:20:22Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -360,6 +360,32 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 13.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": 36
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "RJ Harvey",
       "position": "RB",
       "team": "Den",
@@ -639,32 +665,6 @@
       ]
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 9.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 15
-        },
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -701,15 +701,6 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 9.0,
       "stats": []
     },
@@ -833,6 +824,15 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Garrett Wilson",
@@ -982,6 +982,20 @@
       ]
     },
     {
+      "name": "Kirk Cousins",
+      "position": "QB",
+      "team": "LV",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 90
+        }
+      ]
+    },
+    {
       "name": "Dalton Kincaid",
       "position": "TE",
       "team": "Buf",
@@ -1032,20 +1046,6 @@
       "stats": []
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.24,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 81
-        }
-      ]
-    },
-    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -1091,20 +1091,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kirk Cousins",
-      "position": "QB",
-      "team": "LV",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.16,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 54
         }
       ]
     },
@@ -1207,6 +1193,24 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 81
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
