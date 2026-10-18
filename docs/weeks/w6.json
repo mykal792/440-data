@@ -1,19 +1,19 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T17:00:29Z",
+  "updated": "2026-10-18T17:05:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 5.2,
+        "score": 17.3,
         "projected": 119.31
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 51.34,
+        "score": 55.44,
         "projected": 127.18
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 10.0,
+        "score": 21.5,
         "projected": 106.61
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 52.5,
+        "score": 63.9,
         "projected": 129.93
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 15.1,
+        "score": 15.4,
         "projected": 106.48
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 12.9,
+        "score": 13.4,
         "projected": 123.77
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 0.0,
+        "score": 10.0,
         "projected": 124.42
       }
     }
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "2.70",
+          "value": "3.00",
           "detail": "beating GANGUS"
         },
         {
           "rank": 2,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "3.40",
+          "detail": "beating COYNE"
+        },
+        {
+          "rank": 3,
           "manager": "GREG",
           "face": "greg",
           "value": "9.40",
           "detail": "beating ANTHONY"
-        },
-        {
-          "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "12.90",
-          "detail": "beating COYNE"
         }
       ]
     },
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "52.50",
-          "detail": "6 to play"
+          "value": "63.90",
+          "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "51.34",
-          "detail": "7 to play"
+          "value": "55.44",
+          "detail": "4 to play"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "15.10",
-          "detail": "7 to play"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "21.50",
+          "detail": "6 to play"
         }
       ]
     }
@@ -251,11 +251,47 @@
       "stats": []
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.0,
+      "stats": []
+    },
+    {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
       "manager": "garrett",
       "manager_display": "GARRETT",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 10.0,
       "stats": []
     },
@@ -332,6 +368,24 @@
       "stats": []
     },
     {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -341,6 +395,60 @@
       "stats": []
     },
     {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        }
+      ]
+    },
+    {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -348,6 +456,66 @@
       "manager_display": "GANGUS",
       "points": 1.0,
       "stats": []
+    },
+    {
+      "name": "Dameon Pierce",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.5,
+      "stats": [
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": -2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Tyler Shough",
@@ -386,15 +554,6 @@
       "stats": []
     },
     {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "MarShawn Lloyd",
       "position": "RB",
       "team": "GB",
@@ -413,27 +572,9 @@
       "stats": []
     },
     {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -481,42 +622,6 @@
       "team": "NYG",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
       "points": 0.0,
       "stats": []
     },
@@ -638,15 +743,6 @@
       "stats": []
     },
     {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -668,15 +764,6 @@
       "name": "Nick Folk",
       "position": "K",
       "team": "Atl",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
@@ -800,15 +887,6 @@
       "stats": []
     },
     {
-      "name": "Dameon Pierce",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -881,15 +959,6 @@
       "stats": []
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -911,15 +980,6 @@
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
