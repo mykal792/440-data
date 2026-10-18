@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T17:10:21Z",
+  "updated": "2026-10-18T17:15:22Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -118,21 +118,34 @@
       "stats": []
     },
     {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 36
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 11.0,
-      "stats": []
-    },
-    {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.0,
       "stats": []
     },
     {
@@ -212,6 +225,15 @@
       "stats": []
     },
     {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "Emanuel Wilson",
       "position": "RB",
       "team": "Sea",
@@ -235,38 +257,6 @@
       "stats": []
     },
     {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 31
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -281,6 +271,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 30
         }
       ]
     },
@@ -349,6 +353,46 @@
       "team": "Phi",
       "manager": "graham",
       "manager_display": "GRAHAM",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 1.6,
       "stats": [
         {
@@ -367,33 +411,11 @@
       "team": "Ten",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 1.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 16
-        }
-      ]
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
       "points": 1.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "value": 15
         }
       ]
     },
@@ -452,6 +474,15 @@
       ]
     },
     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.0,
+      "stats": []
+    },
+    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -459,6 +490,20 @@
       "manager_display": "GANGUS",
       "points": 1.0,
       "stats": []
+    },
+    {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        }
+      ]
     },
     {
       "name": "Malik Nabers",
@@ -489,20 +534,6 @@
         {
           "stat": "RUSH YD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 1
         }
       ]
     },
@@ -687,15 +718,6 @@
       "stats": []
     },
     {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
@@ -771,15 +793,6 @@
       "name": "Jalen Coker",
       "position": "WR",
       "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
