@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T22:20:24Z",
+  "updated": "2026-10-18T22:25:20Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -266,6 +266,28 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 19.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 175
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -473,28 +495,6 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 163
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -611,11 +611,11 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 10.64,
+      "points": 10.84,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 116
+          "value": 121
         },
         {
           "stat": "TD",
@@ -629,11 +629,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.5,
+      "points": 10.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 63
+          "value": 65
         },
         {
           "stat": "REC YD",
@@ -687,6 +687,15 @@
       "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 10.0,
       "stats": []
     },
@@ -760,15 +769,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.0,
-      "stats": []
     },
     {
       "name": "Spencer Shrader",
