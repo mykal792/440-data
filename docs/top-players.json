@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T19:50:24Z",
+  "updated": "2026-10-18T19:55:23Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -244,6 +244,28 @@
       ]
     },
     {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 14.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 58
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -382,11 +404,11 @@
       "team": "Phi",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 11.7,
+      "points": 12.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 31
+          "value": 35
         },
         {
           "stat": "REC YD",
@@ -452,6 +474,33 @@
       "stats": []
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 11.0,
+      "stats": []
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 10.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 63
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        }
+      ]
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -464,15 +513,6 @@
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 10.0,
@@ -501,20 +541,20 @@
       ]
     },
     {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 9.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 60
+          "value": 55
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 4
         }
       ]
     },
@@ -613,34 +653,16 @@
       "stats": []
     },
     {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 55
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 6.7,
+      "points": 7.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 67
+          "value": 71
         }
       ]
     },
@@ -690,11 +712,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.4,
+      "points": 5.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 33
+          "value": 35
         },
         {
           "stat": "REC YD",
@@ -752,15 +774,6 @@
       "stats": []
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -783,24 +796,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -844,6 +839,15 @@
           "value": 34
         }
       ]
+    },
+    {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.0,
+      "stats": []
     },
     {
       "name": "Pat Freiermuth",
