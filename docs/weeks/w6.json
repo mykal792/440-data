@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-18T15:50:25Z",
+  "updated": "2026-10-18T15:55:22Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 33.34,
+        "score": 39.82,
         "projected": 126.74
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 2.0,
+        "score": 3.0,
         "projected": 105.8
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 47.3,
+        "score": 48.9,
         "projected": 129.97
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 19.1,
+        "score": 17.1,
         "projected": 106.69
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "12.60",
+          "value": "10.60",
           "detail": "beating GANGUS"
         },
         {
@@ -115,27 +115,53 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "47.30",
+          "value": "48.90",
           "detail": "6 to play"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "33.34",
+          "value": "39.82",
           "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "19.10",
+          "value": "17.10",
           "detail": "7 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 25.82,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 218
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
@@ -155,38 +181,12 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 19.34,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 206
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 19.0,
+      "points": 20.6,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -194,11 +194,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 29
+          "value": 40
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         },
         {
           "stat": "TD",
@@ -269,15 +269,6 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -328,12 +319,21 @@
       ]
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 2.0,
+      "points": 3.0,
       "stats": []
     },
     {
