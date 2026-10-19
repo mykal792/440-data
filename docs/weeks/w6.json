@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T03:10:24Z",
+  "updated": "2026-10-19T03:15:26Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 65.34,
+        "score": 66.66,
         "projected": 106.7
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 103.5,
+        "score": 106.7,
         "projected": 129.99
       }
     },
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "103.50",
+          "value": "106.70",
           "detail": "1 to play"
         }
       ]
@@ -1246,6 +1246,24 @@
       ]
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 6.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -1438,6 +1456,28 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.86,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 179
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -1461,24 +1501,6 @@
       "stats": []
     },
     {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -1486,28 +1508,6 @@
       "manager_display": "COYNE",
       "points": 3.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.54,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 146
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Pat Freiermuth",
