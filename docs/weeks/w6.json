@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T02:15:24Z",
+  "updated": "2026-10-19T02:20:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 93.86,
+        "score": 95.26,
         "projected": 119.37
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 99.02,
+        "score": 99.62,
         "projected": 108.15
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "1.96",
+          "value": "1.36",
           "detail": "beating GANGUS"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "27.88",
+          "value": "26.48",
           "detail": "beating SCHILLING"
         }
       ]
@@ -492,11 +492,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 19.12,
+      "points": 19.72,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 193
+          "value": 208
         },
         {
           "stat": "RUSH YD",
@@ -1151,6 +1151,24 @@
       ]
     },
     {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 64
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Jason Myers",
       "position": "K",
       "team": "Sea",
@@ -1206,24 +1224,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 55
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
