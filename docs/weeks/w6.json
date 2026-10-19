@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T01:25:21Z",
+  "updated": "2026-10-19T01:30:27Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 62.48,
+        "score": 63.36,
         "projected": 106.7
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 81.52,
+        "score": 83.82,
         "projected": 108.15
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "18.46",
+          "value": "16.16",
           "detail": "beating GANGUS"
         },
         {
@@ -1376,6 +1376,28 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 19
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -1475,24 +1497,6 @@
       "stats": []
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Darius Cooper",
       "position": "WR",
       "team": "Phi",
@@ -1545,6 +1549,24 @@
       "manager_display": "GANGUS",
       "points": 1.0,
       "stats": []
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 0.56,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 64
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Tucker Kraft",
@@ -1652,24 +1674,6 @@
         {
           "stat": "RUSH YD",
           "value": -2
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": -0.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 42
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     }
