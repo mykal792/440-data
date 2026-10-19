@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T02:35:24Z",
+  "updated": "2026-10-19T02:40:22Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -298,6 +298,32 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 20.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 235
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -319,32 +345,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 20.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 229
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -1243,6 +1243,24 @@
       "stats": []
     },
     {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -1279,24 +1297,6 @@
         {
           "stat": "REC YD",
           "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
         },
         {
           "stat": "REC",
@@ -1494,11 +1494,11 @@
       "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.2,
+      "points": 0.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 4
         }
       ]
     },
