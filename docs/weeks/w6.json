@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T02:45:22Z",
+  "updated": "2026-10-19T02:50:23Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 64.74,
+        "score": 65.34,
         "projected": 106.7
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 102.3,
+        "score": 103.5,
         "projected": 129.94
       }
     },
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "102.30",
+          "value": "103.50",
           "detail": "1 to play"
         }
       ]
@@ -1461,6 +1461,24 @@
       "stats": []
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -1470,20 +1488,24 @@
       "stats": []
     },
     {
-      "name": "George Pickens",
-      "position": "WR",
+      "name": "Dak Prescott",
+      "position": "QB",
       "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.1,
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.54,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 16
+          "stat": "PASS YD",
+          "value": 146
         },
         {
-          "stat": "REC",
-          "value": 1
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 2
         }
       ]
     },
@@ -1535,28 +1557,6 @@
       "manager_display": "SCOTTY",
       "points": 2.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.94,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 131
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Darius Cooper",

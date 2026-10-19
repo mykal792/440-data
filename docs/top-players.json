@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T02:45:22Z",
+  "updated": "2026-10-19T02:50:23Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -1328,6 +1328,24 @@
       "stats": []
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -1337,20 +1355,24 @@
       "stats": []
     },
     {
-      "name": "George Pickens",
-      "position": "WR",
+      "name": "Dak Prescott",
+      "position": "QB",
       "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.1,
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.54,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 16
+          "stat": "PASS YD",
+          "value": 146
         },
         {
-          "stat": "REC",
-          "value": 1
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 2
         }
       ]
     },
@@ -1402,28 +1424,6 @@
       "manager_display": "SCOTTY",
       "points": 2.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.94,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 131
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Darius Cooper",
