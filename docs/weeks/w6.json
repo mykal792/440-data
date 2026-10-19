@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T01:10:25Z",
+  "updated": "2026-10-19T01:15:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 87.76,
+        "score": 91.06,
         "projected": 119.37
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 78.66,
+        "score": 80.06,
         "projected": 108.15
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "21.32",
+          "value": "19.92",
           "detail": "beating GANGUS"
         },
         {
@@ -921,6 +921,28 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 154
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -1059,28 +1081,6 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 8.76,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 119
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -1176,6 +1176,24 @@
         {
           "stat": "REC",
           "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1391,24 +1409,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
