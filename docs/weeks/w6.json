@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T01:30:27Z",
+  "updated": "2026-10-19T01:35:21Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 63.36,
+        "score": 64.0,
         "projected": 106.7
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 100.2,
+        "score": 102.3,
         "projected": 129.94
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 83.82,
+        "score": 84.02,
         "projected": 108.15
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "16.16",
+          "value": "15.96",
           "detail": "beating GANGUS"
         },
         {
@@ -129,8 +129,8 @@
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "100.20",
-          "detail": "2 to play"
+          "value": "102.30",
+          "detail": "1 to play"
         }
       ]
     }
@@ -1381,11 +1381,11 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 3.8,
+      "points": 4.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 19
+          "value": 21
         },
         {
           "stat": "REC YD",
@@ -1446,6 +1446,24 @@
       "manager_display": "COYNE",
       "points": 3.0,
       "stats": []
+    },
+    {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Pat Freiermuth",
@@ -1533,6 +1551,24 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 80
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Nick Folk",
       "position": "K",
       "team": "Atl",
@@ -1549,24 +1585,6 @@
       "manager_display": "GANGUS",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 64
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Tucker Kraft",
@@ -1615,15 +1633,6 @@
       "team": "Was",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 0.0,
       "stats": []
     },
