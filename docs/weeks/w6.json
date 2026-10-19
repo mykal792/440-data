@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T03:15:26Z",
+  "updated": "2026-10-19T03:20:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 98.26,
+        "score": 98.76,
         "projected": 119.42
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 66.66,
+        "score": 67.1,
         "projected": 106.7
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "23.48",
+          "value": "22.98",
           "detail": "beating SCHILLING"
         }
       ]
@@ -1071,6 +1071,24 @@
       "stats": []
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 54
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -1107,24 +1125,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 54
-        },
-        {
-          "stat": "REC",
-          "value": 6
         }
       ]
     },
@@ -1438,6 +1438,28 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 190
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
@@ -1452,28 +1474,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.86,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 179
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
