@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T02:20:24Z",
+  "updated": "2026-10-19T02:25:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 95.26,
+        "score": 95.66,
         "projected": 119.37
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 87.18,
+        "score": 89.08,
         "projected": 110.16
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 99.62,
+        "score": 100.46,
         "projected": 108.15
       },
       "away": {
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "1.36",
+          "value": "0.52",
           "detail": "beating GANGUS"
         },
         {
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "2.28",
+          "value": "4.18",
           "detail": "beating ANTHONY"
         },
         {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "26.48",
+          "value": "26.08",
           "detail": "beating SCHILLING"
         }
       ]
@@ -457,6 +457,32 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 20.56,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 229
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -482,32 +508,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 19.72,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 208
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -1420,6 +1420,24 @@
       ]
     },
     {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -1519,24 +1537,6 @@
       "stats": []
     },
     {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Darius Cooper",
       "position": "WR",
       "team": "Phi",
@@ -1622,6 +1622,20 @@
       "stats": []
     },
     {
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1683,20 +1697,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "MarShawn Lloyd",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": -0.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -2
-        }
-      ]
     }
   ]
 }
