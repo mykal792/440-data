@@ -1,20 +1,20 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T02:55:23Z",
+  "updated": "2026-10-19T03:00:33Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 98.26,
-        "projected": 119.37
+        "projected": 119.42
       },
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
         "score": 121.74,
-        "projected": 127.12
+        "projected": 127.13
       }
     },
     {
@@ -28,7 +28,7 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 103.5,
-        "projected": 129.94
+        "projected": 129.99
       }
     },
     {
@@ -36,20 +36,20 @@
         "name": "GREG",
         "face": "greg",
         "score": 90.18,
-        "projected": 110.16
+        "projected": 110.17
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 87.5,
-        "projected": 114.65
+        "score": 91.2,
+        "projected": 114.67
       }
     },
     {
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 101.54,
+        "score": 102.02,
         "projected": 108.15
       },
       "away": {
@@ -70,7 +70,7 @@
         "name": "COYNE",
         "face": "coyne",
         "score": 82.0,
-        "projected": 124.36
+        "projected": 124.47
       }
     }
   ],
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "0.56",
-          "detail": "beating SCOTTY"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "1.02",
+          "detail": "beating GREG"
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "2.68",
-          "detail": "beating ANTHONY"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "1.04",
+          "detail": "beating SCOTTY"
         },
         {
           "rank": 3,
@@ -352,11 +352,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 21.64,
+      "points": 22.12,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 256
+          "value": 268
         },
         {
           "stat": "RUSH YD",
@@ -387,6 +387,28 @@
         {
           "stat": "REC",
           "value": 12
+        }
+      ]
+    },
+    {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 21.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 104
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -529,28 +551,6 @@
       "manager_display": "SCHILLING",
       "points": 17.9,
       "stats": []
-    },
-    {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 17.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 92
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "DeVonta Smith",
