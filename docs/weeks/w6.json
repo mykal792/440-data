@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T03:35:20Z",
+  "updated": "2026-10-19T03:40:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 100.76,
+        "score": 101.96,
         "projected": 119.42
       },
       "away": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 68.06,
+        "score": 69.58,
         "projected": 106.7
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 106.7,
+        "score": 110.5,
         "projected": 129.99
       }
     },
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "20.98",
+          "value": "19.78",
           "detail": "beating SCHILLING"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "106.70",
+          "value": "110.50",
           "detail": "1 to play"
         }
       ]
@@ -866,6 +866,24 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 70
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -955,20 +973,20 @@
       ]
     },
     {
-      "name": "CeeDee Lamb",
+      "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 10.3,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 63
+          "value": 73
         },
         {
           "stat": "REC",
-          "value": 8
+          "value": 6
         }
       ]
     },
@@ -1246,20 +1264,24 @@
       ]
     },
     {
-      "name": "George Pickens",
-      "position": "WR",
+      "name": "Dak Prescott",
+      "position": "QB",
       "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 6.5,
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.78,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 45
+          "stat": "PASS YD",
+          "value": 252
         },
         {
-          "stat": "REC",
-          "value": 4
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 2
         }
       ]
     },
@@ -1358,28 +1380,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.26,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 214
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
