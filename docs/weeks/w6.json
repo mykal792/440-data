@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T00:35:20Z",
+  "updated": "2026-10-19T00:40:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 84.26,
+        "score": 84.56,
         "projected": 119.37
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 73.34,
+        "score": 73.9,
         "projected": 108.15
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "26.64",
+          "value": "26.08",
           "detail": "beating GANGUS"
         },
         {
@@ -1328,6 +1328,20 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 100
+        }
+      ]
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -1338,20 +1352,6 @@
         {
           "stat": "RUSH YD",
           "value": 36
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.44,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 86
         }
       ]
     },
