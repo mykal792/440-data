@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T00:25:20Z",
+  "updated": "2026-10-19T00:30:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 81.56,
+        "score": 81.36,
         "projected": 119.37
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 69.0,
+        "score": 70.18,
         "projected": 108.15
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "30.98",
+          "value": "29.80",
           "detail": "beating GANGUS"
         }
       ]
@@ -1391,6 +1391,24 @@
       "stats": []
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Darius Cooper",
       "position": "WR",
       "team": "Phi",
@@ -1445,20 +1463,6 @@
       "stats": []
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        }
-      ]
-    },
-    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
@@ -1469,6 +1473,20 @@
         {
           "stat": "PASS YD",
           "value": 9
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 7
         }
       ]
     },
@@ -1493,15 +1511,6 @@
     {
       "name": "Christian Watson",
       "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "MarShawn Lloyd",
-      "position": "RB",
       "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
@@ -1563,15 +1572,6 @@
       "stats": []
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -1606,6 +1606,20 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "MarShawn Lloyd",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": -0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -2
+        }
+      ]
     }
   ]
 }
