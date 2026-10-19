@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T02:30:27Z",
+  "updated": "2026-10-19T02:35:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 95.66,
+        "score": 98.06,
         "projected": 119.37
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 63.9,
+        "score": 64.46,
         "projected": 106.7
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "26.08",
+          "value": "23.68",
           "detail": "beating SCHILLING"
         }
       ]
@@ -1111,6 +1111,24 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 54
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -1264,24 +1282,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1537,6 +1537,28 @@
       "stats": []
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.66,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 124
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Darius Cooper",
       "position": "WR",
       "team": "Phi",
@@ -1569,28 +1591,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 110
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
