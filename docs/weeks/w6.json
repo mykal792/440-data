@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T01:40:27Z",
+  "updated": "2026-10-19T01:45:23Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 82.3,
+        "score": 84.9,
         "projected": 114.65
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 84.38,
+        "score": 85.3,
         "projected": 108.15
       },
       "away": {
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "GREG",
           "face": "greg",
-          "value": "4.88",
+          "value": "2.28",
           "detail": "beating ANTHONY"
         },
         {
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "15.60",
+          "value": "14.68",
           "detail": "beating GANGUS"
         },
         {
@@ -571,6 +571,28 @@
       ]
     },
     {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 15.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 71
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -703,6 +725,32 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.9,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 190
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -743,28 +791,6 @@
       ]
     },
     {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 12.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 50
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Harrison Butker",
       "position": "K",
       "team": "KC",
@@ -791,32 +817,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.98,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 167
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
