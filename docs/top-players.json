@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T01:00:30Z",
+  "updated": "2026-10-19T01:05:21Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -1338,20 +1338,6 @@
       "stats": []
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.68,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 42
-        }
-      ]
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -1524,6 +1510,24 @@
         {
           "stat": "RUSH YD",
           "value": -2
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": -0.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 42
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     }

@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-19T01:00:30Z",
+  "updated": "2026-10-19T01:05:21Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 64.48,
+        "score": 62.48,
         "projected": 106.7
       },
       "away": {
@@ -1471,20 +1471,6 @@
       "stats": []
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.68,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 42
-        }
-      ]
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -1657,6 +1643,24 @@
         {
           "stat": "RUSH YD",
           "value": -2
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": -0.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 42
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     }
