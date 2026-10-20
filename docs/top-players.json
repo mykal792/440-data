@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-20T00:35:23Z",
+  "updated": "2026-10-20T00:40:28Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -808,6 +808,54 @@
       "stats": []
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.26,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 114
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -902,24 +950,6 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.08,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 102
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -987,6 +1017,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -1123,28 +1175,6 @@
       "manager_display": "GRAHAM",
       "points": 7.9,
       "stats": []
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Tony Pollard",
@@ -1343,28 +1373,6 @@
       "manager_display": "ANTHONY",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
     },
     {
       "name": "Derrick Henry",
@@ -1587,15 +1595,6 @@
       "stats": []
     },
     {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.0,
-      "stats": []
-    },
-    {
       "name": "Rachaad White",
       "position": "RB",
       "team": "Was",
@@ -1615,6 +1614,15 @@
       "team": "NYG",
       "manager": "garrett",
       "manager_display": "GARRETT",
+      "points": 0.0,
+      "stats": []
+    },
+    {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     }
