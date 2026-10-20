@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-20T01:15:25Z",
+  "updated": "2026-10-20T01:20:25Z",
   "players": [
     {
       "name": "Trevor Lawrence",
@@ -504,6 +504,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 14.06,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 184
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -539,23 +561,31 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
+      "name": "Christian McCaffrey",
+      "position": "RB",
       "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 13.54,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 13.7,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 171
+          "stat": "RUSH YD",
+          "value": 29
         },
         {
-          "stat": "RUSH YD",
-          "value": 7
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 6
         },
         {
           "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -758,36 +788,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 11.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        },
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
@@ -1558,6 +1558,28 @@
       ]
     },
     {
+      "name": "Rachaad White",
+      "position": "RB",
+      "team": "Was",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "MarShawn Lloyd",
       "position": "RB",
       "team": "GB",
@@ -1597,20 +1619,6 @@
       "manager_display": "SCOTTY",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Rachaad White",
-      "position": "RB",
-      "team": "Was",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Cam Skattebo",
