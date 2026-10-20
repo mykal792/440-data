@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-20T01:25:25Z",
+  "updated": "2026-10-20T01:30:29Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 116.56,
+        "score": 117.06,
         "projected": 119.49
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 97.56,
+        "score": 98.2,
         "projected": 110.91
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "8.38",
+          "value": "7.88",
           "detail": "beating SCHILLING"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "116.56",
+          "value": "117.06",
           "detail": "All played"
         }
       ]
@@ -575,6 +575,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 16.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 210
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Carnell Tate",
       "position": "WR",
       "team": "Ten",
@@ -589,28 +611,6 @@
         {
           "stat": "REC",
           "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 15.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 194
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 18
         },
         {
           "stat": "TD",
@@ -641,34 +641,16 @@
       ]
     },
     {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 14.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 93
-        },
-        {
-          "stat": "REC",
-          "value": 11
-        }
-      ]
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 14.6,
+      "points": 15.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 38
+          "value": 43
         },
         {
           "stat": "REC YD",
@@ -685,6 +667,24 @@
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 93
+        },
+        {
+          "stat": "REC",
+          "value": 11
         }
       ]
     },
