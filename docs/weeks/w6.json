@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-20T01:55:21Z",
+  "updated": "2026-10-20T02:00:33Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 91.68,
+        "score": 92.28,
         "projected": 109.85
       },
       "away": {
@@ -84,10 +84,10 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "0.52",
-          "detail": "beating GREG"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "0.08",
+          "detail": "beating ANTHONY"
         },
         {
           "rank": 2,
@@ -1655,6 +1655,28 @@
       "stats": []
     },
     {
+      "name": "Rachaad White",
+      "position": "RB",
+      "team": "Was",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 8
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Darius Cooper",
       "position": "WR",
       "team": "Phi",
@@ -1683,28 +1705,6 @@
         {
           "stat": "REC YD",
           "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rachaad White",
-      "position": "RB",
-      "team": "Was",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "REC YD",
-          "value": 5
         },
         {
           "stat": "REC",
