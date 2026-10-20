@@ -1,7 +1,7 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-20T00:25:23Z",
+  "updated": "2026-10-20T00:30:27Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 121.74,
+        "score": 124.94,
         "projected": 127.0
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 90.48,
+        "score": 90.68,
         "projected": 109.85
       },
       "away": {
@@ -84,23 +84,23 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "1.52",
+          "detail": "beating GREG"
+        },
+        {
+          "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
           "value": "1.66",
           "detail": "beating SCOTTY"
         },
         {
-          "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "1.72",
-          "detail": "beating GREG"
-        },
-        {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "15.58",
+          "value": "18.78",
           "detail": "beating SCHILLING"
         }
       ]
@@ -115,8 +115,8 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "121.74",
-          "detail": "1 to play"
+          "value": "124.94",
+          "detail": "All played"
         },
         {
           "rank": 2,
@@ -1567,6 +1567,24 @@
       "stats": []
     },
     {
+      "name": "Terry McLaurin",
+      "position": "WR",
+      "team": "Was",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -1711,29 +1729,25 @@
       "stats": []
     },
     {
-      "name": "Cam Skattebo",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Terry McLaurin",
-      "position": "WR",
-      "team": "Was",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Rachaad White",
       "position": "RB",
       "team": "Was",
       "manager": "greg",
       "manager_display": "GREG",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 0.0,
       "stats": []
     }
