@@ -2061,6 +2061,10 @@ function cmResolve(won) {
     else t.status = 'spent';
   }
   BASE.eliminated.sort(function (a, b) { return a.week - b.week; });
+  /* kept so the homepage widget can show the result after the duel is closed */
+  var sc = {}; sc[d.challenger] = score(d.challenger); sc[d.challenged] = score(d.challenged);
+  BASE.lastDuel = { week: w, challenger: d.challenger, challenged: d.challenged,
+                    winner: won ? d.challenger : d.challenged, scores: sc };
   BASE.duel = null;
   cmCommit(won ? 'SAVED · CHALLENGER BACK IN' : 'SAVED · CHALLENGER OUT');
 }
