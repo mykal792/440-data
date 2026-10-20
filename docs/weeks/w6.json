@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-20T02:30:30Z",
+  "updated": "2026-10-20T02:35:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 125.66,
+        "score": 126.86,
         "projected": 119.49
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 100.16,
+        "score": 100.64,
         "projected": 110.91
       }
     }
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "0.72",
-          "detail": "beating HAYDEN"
-        },
-        {
-          "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
           "value": "1.66",
           "detail": "beating SCOTTY"
+        },
+        {
+          "rank": 2,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "1.92",
+          "detail": "beating HAYDEN"
         },
         {
           "rank": 3,
@@ -113,16 +113,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "125.90",
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "126.86",
           "detail": "All played"
         },
         {
           "rank": 2,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "125.66",
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "125.90",
           "detail": "All played"
         },
         {
@@ -233,6 +233,36 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 24.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 59
+        },
+        {
+          "stat": "REC YD",
+          "value": 50
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Kirk Cousins",
       "position": "QB",
       "team": "LV",
@@ -269,36 +299,6 @@
         {
           "stat": "REC",
           "value": 12
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 23.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 59
-        },
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 8
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
     },
@@ -570,11 +570,11 @@
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 18.16,
+      "points": 18.64,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 249
+          "value": 261
         },
         {
           "stat": "RUSH YD",
