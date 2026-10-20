@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-20T00:20:26Z",
+  "updated": "2026-10-20T00:25:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 105.06,
+        "score": 106.16,
         "projected": 119.49
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 110.5,
+        "score": 118.1,
         "projected": 130.13
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 91.2,
+        "score": 92.2,
         "projected": 114.55
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 83.36,
+        "score": 90.04,
         "projected": 110.91
       }
     }
@@ -84,23 +84,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "0.72",
-          "detail": "beating GREG"
-        },
-        {
-          "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
           "value": "1.66",
           "detail": "beating SCOTTY"
         },
         {
+          "rank": 2,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "1.72",
+          "detail": "beating GREG"
+        },
+        {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "16.68",
+          "value": "15.58",
           "detail": "beating SCHILLING"
         }
       ]
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "111.02",
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "118.10",
           "detail": "All played"
         },
         {
           "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "110.50",
-          "detail": "1 to play"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "111.02",
+          "detail": "All played"
         }
       ]
     }
@@ -1213,6 +1213,24 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 51
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -1238,6 +1256,28 @@
       "manager_display": "GRAHAM",
       "points": 7.9,
       "stats": []
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Tony Pollard",
@@ -1464,6 +1504,28 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
@@ -1503,28 +1565,6 @@
       "manager_display": "GREG",
       "points": 3.4,
       "stats": []
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Colts",
@@ -1621,20 +1661,6 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 34
-        }
-      ]
-    },
-    {
       "name": "MarShawn Lloyd",
       "position": "RB",
       "team": "GB",
@@ -1676,6 +1702,15 @@
       "stats": []
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.0,
+      "stats": []
+    },
+    {
       "name": "Cam Skattebo",
       "position": "RB",
       "team": "NYG",
@@ -1699,24 +1734,6 @@
       "team": "Was",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     }
