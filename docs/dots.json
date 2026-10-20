@@ -1,18 +1,18 @@
 {
   "season": 2026,
-  "updated": "2026-10-20T05:55:19Z",
+  "updated": "2026-10-20T11:00:33Z",
   "pot": {
     "total": 300,
     "dot_value": 5,
-    "paid_out": 100,
-    "remaining": 200
+    "paid_out": 120,
+    "remaining": 180
   },
   "totals": {
     "schilling": {
       "QB": 0,
       "RB": 0,
       "WR": 2,
-      "TE": 0
+      "TE": 1
     },
     "garrett": {
       "QB": 0,
@@ -21,8 +21,8 @@
       "TE": 0
     },
     "hayden": {
-      "QB": 0,
-      "RB": 2,
+      "QB": 1,
+      "RB": 3,
       "WR": 0,
       "TE": 2
     },
@@ -59,7 +59,7 @@
     "scotty": {
       "QB": 0,
       "RB": 0,
-      "WR": 0,
+      "WR": 1,
       "TE": 0
     },
     "anthony": {
@@ -272,6 +272,47 @@
           ],
           "value": "26.90",
           "detail": "Isaiah Likely"
+        }
+      }
+    },
+    {
+      "week": 6,
+      "positions": {
+        "QB": {
+          "manager": "hayden",
+          "manager_display": "HAYDEN",
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "37.34",
+          "detail": "Trevor Lawrence"
+        },
+        "RB": {
+          "manager": "hayden",
+          "manager_display": "HAYDEN",
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "28.90",
+          "detail": "Kenneth Walker III"
+        },
+        "WR": {
+          "manager": "scotty",
+          "manager_display": "SCOTTY",
+          "managers": [
+            "SCOTTY"
+          ],
+          "value": "24.50",
+          "detail": "Malik Nabers"
+        },
+        "TE": {
+          "manager": "schilling",
+          "manager_display": "SCHILLING",
+          "managers": [
+            "SCHILLING"
+          ],
+          "value": "15.50",
+          "detail": "Colston Loveland"
         }
       }
     }
