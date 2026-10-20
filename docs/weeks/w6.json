@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-20T01:20:25Z",
+  "updated": "2026-10-20T01:25:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 116.66,
+        "score": 116.56,
         "projected": 119.49
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 96.06,
+        "score": 97.56,
         "projected": 110.91
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "8.28",
+          "value": "8.38",
           "detail": "beating SCHILLING"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "116.66",
+          "value": "116.56",
           "detail": "All played"
         }
       ]
@@ -597,6 +597,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 15.56,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 194
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -637,23 +659,31 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
+      "name": "Christian McCaffrey",
+      "position": "RB",
       "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 14.06,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 14.6,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 184
+          "stat": "RUSH YD",
+          "value": 38
         },
         {
-          "stat": "RUSH YD",
-          "value": 7
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 6
         },
         {
           "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -689,36 +719,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 13.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        },
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
