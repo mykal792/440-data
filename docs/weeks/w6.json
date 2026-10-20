@@ -1,13 +1,13 @@
 {
   "week": 6,
   "status": "live",
-  "updated": "2026-10-20T01:30:29Z",
+  "updated": "2026-10-20T01:35:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 117.06,
+        "score": 123.16,
         "projected": 119.49
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 121.0,
+        "score": 121.9,
         "projected": 130.13
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 98.2,
+        "score": 98.56,
         "projected": 110.91
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "7.88",
+          "value": "1.78",
           "detail": "beating SCHILLING"
         }
       ]
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "121.00",
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "123.16",
           "detail": "All played"
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "117.06",
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "121.90",
           "detail": "All played"
         }
       ]
@@ -413,6 +413,36 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 21.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 44
+        },
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -580,15 +610,15 @@
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 16.2,
+      "points": 16.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 210
+          "value": 214
         },
         {
           "stat": "RUSH YD",
-          "value": 18
+          "value": 20
         },
         {
           "stat": "TD",
@@ -636,36 +666,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 15.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
@@ -984,6 +984,28 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 34
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -1025,28 +1047,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
