@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-23T01:10:24Z",
+  "updated": "2026-10-23T01:15:25Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 7.6,
+        "score": 8.6,
         "projected": 120.73
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 9.4,
+        "score": 10.1,
         "projected": 129.86
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "9.40",
+          "value": "10.10",
           "detail": "Luther Burden III"
         },
         {
@@ -113,29 +113,51 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "10.10",
+          "detail": "8 to play"
+        },
+        {
+          "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
           "value": "9.74",
           "detail": "8 to play"
         },
         {
-          "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "9.40",
-          "detail": "8 to play"
-        },
-        {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
+          "manager": "GARRETT",
+          "face": "garrett",
           "value": "8.60",
-          "detail": "7 to play"
+          "detail": "8 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "Chi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 84
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
     {
       "name": "Drake Maye",
       "position": "QB",
@@ -159,34 +181,16 @@
       ]
     },
     {
-      "name": "Luther Burden III",
-      "position": "WR",
-      "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 9.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 84
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 7.6,
+      "points": 8.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 11
+          "value": 21
         },
         {
           "stat": "REC",
