@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-23T00:20:24Z",
+  "updated": "2026-10-23T00:25:21Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 0.0,
+        "score": 0.3,
         "projected": 120.74
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 0.0,
+        "score": 3.1,
         "projected": 129.86
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 2.4,
+        "score": 2.5,
         "projected": 110.96
       }
     },
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "3.10",
+          "detail": "Luther Burden III"
+        },
+        {
+          "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "0.00",
           "detail": "Christian Watson"
         },
         {
-          "rank": 1,
+          "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
           "value": "0.00",
           "detail": "Jahmyr Gibbs"
-        },
-        {
-          "rank": 1,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "0.00",
-          "detail": "Kenneth Walker III"
         }
       ]
     },
@@ -113,37 +113,59 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "2.40",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "3.10",
           "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "1.32",
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "2.50",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "0.00",
-          "detail": "9 to play"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "1.32",
+          "detail": "8 to play"
         }
       ]
     }
   },
   "top_players": [
     {
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "Chi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 2.4,
+      "points": 2.5,
       "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
         {
           "stat": "REC YD",
           "value": 19
@@ -165,6 +187,20 @@
         {
           "stat": "PASS YD",
           "value": 33
+        }
+      ]
+    },
+    {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
         }
       ]
     },
@@ -253,15 +289,6 @@
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -703,15 +730,6 @@
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Luther Burden III",
-      "position": "WR",
-      "team": "Chi",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
