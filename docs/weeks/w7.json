@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-23T01:00:29Z",
+  "updated": "2026-10-23T01:05:24Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 7.3,
+        "score": 8.6,
         "projected": 110.96
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 3.04,
+        "score": 9.74,
         "projected": 117.44
       }
     }
@@ -113,29 +113,51 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "9.74",
+          "detail": "8 to play"
+        },
+        {
+          "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
           "value": "9.40",
           "detail": "8 to play"
         },
         {
-          "rank": 2,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "7.60",
-          "detail": "8 to play"
-        },
-        {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "7.30",
+          "value": "8.60",
           "detail": "7 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.74,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 76
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Luther Burden III",
       "position": "WR",
@@ -182,11 +204,11 @@
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 5.2,
+      "points": 6.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 18
         },
         {
           "stat": "REC YD",
@@ -195,20 +217,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 76
         }
       ]
     },
