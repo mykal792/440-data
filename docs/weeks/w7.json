@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-23T01:20:26Z",
+  "updated": "2026-10-23T01:25:24Z",
   "matchups": [
     {
       "home": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 9.74,
+        "score": 12.32,
         "projected": 117.44
       }
     }
@@ -113,16 +113,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "10.10",
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "12.32",
           "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "9.74",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "10.10",
           "detail": "8 to play"
         },
         {
@@ -136,6 +136,28 @@
     }
   },
   "top_players": [
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 103
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Luther Burden III",
       "position": "WR",
@@ -155,28 +177,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 9.74,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 76
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
