@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-23T02:20:24Z",
+  "updated": "2026-10-23T02:25:20Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 14.3,
+        "score": 15.0,
         "projected": 118.42
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 25.52,
+        "score": 32.72,
         "projected": 117.44
       }
     }
@@ -113,16 +113,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "26.00",
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "32.72",
           "detail": "7 to play"
         },
         {
           "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "25.52",
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "26.00",
           "detail": "7 to play"
         },
         {
@@ -136,6 +136,32 @@
     }
   },
   "top_players": [
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 28.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 253
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Luther Burden III",
       "position": "WR",
@@ -158,32 +184,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 21.12,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 223
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 22
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -220,15 +220,15 @@
       "team": "Chi",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 14.3,
+      "points": 15.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 58
+          "value": 60
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 6
         },
         {
           "stat": "TD",
