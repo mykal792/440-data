@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-23T00:15:25Z",
+  "updated": "2026-10-23T00:20:24Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 0.0,
+        "score": 2.4,
         "projected": 110.96
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 0.0,
+        "score": 1.32,
         "projected": 117.45
       }
     }
@@ -113,29 +113,61 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "2.40",
+          "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "NAME",
-          "face": "",
-          "value": "0.00",
-          "detail": ""
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "1.32",
+          "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "NAME",
-          "face": "",
+          "manager": "SCHILLING",
+          "face": "schilling",
           "value": "0.00",
-          "detail": ""
+          "detail": "9 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 33
+        }
+      ]
+    },
     {
       "name": "Joe Burrow",
       "position": "QB",
@@ -803,15 +835,6 @@
       "stats": []
     },
     {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -862,15 +885,6 @@
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     },
