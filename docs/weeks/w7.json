@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-23T01:30:31Z",
+  "updated": "2026-10-23T01:35:23Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 10.1,
+        "score": 14.8,
         "projected": 129.86
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "10.10",
+          "value": "14.80",
           "detail": "Luther Burden III"
         },
         {
@@ -113,16 +113,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "10.32",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "14.80",
           "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "10.10",
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "10.32",
           "detail": "8 to play"
         },
         {
@@ -136,6 +136,28 @@
     }
   },
   "top_players": [
+    {
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "Chi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 14.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 106
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
     {
       "name": "Drake Maye",
       "position": "QB",
@@ -159,28 +181,6 @@
         {
           "stat": "INT",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Luther Burden III",
-      "position": "WR",
-      "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 84
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
