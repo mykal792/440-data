@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-23T00:45:24Z",
+  "updated": "2026-10-23T00:50:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 0.0,
+        "score": 1.6,
         "projected": 118.42
       },
       "away": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 1.1,
+        "score": 7.6,
         "projected": 120.73
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 3.1,
+        "score": 9.4,
         "projected": 129.86
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "3.10",
+          "value": "9.40",
           "detail": "Luther Burden III"
         },
         {
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "3.10",
+          "value": "9.40",
           "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "2.50",
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "7.60",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "1.28",
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "2.50",
           "detail": "8 to play"
         }
       ]
@@ -142,14 +142,36 @@
       "team": "Chi",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 3.1,
+      "points": 9.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 26
+          "value": 84
         },
         {
           "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -177,6 +199,24 @@
       ]
     },
     {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -187,24 +227,6 @@
         {
           "stat": "PASS YD",
           "value": 32
-        }
-      ]
-    },
-    {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -248,15 +270,6 @@
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
