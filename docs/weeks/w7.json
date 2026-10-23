@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-23T02:45:23Z",
+  "updated": "2026-10-23T02:50:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 15.0,
+        "score": 16.4,
         "projected": 118.42
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 16.1,
+        "score": 16.0,
         "projected": 120.73
       },
       "away": {
@@ -215,24 +215,20 @@
       ]
     },
     {
-      "name": "D'Andre Swift",
-      "position": "RB",
+      "name": "Colston Loveland",
+      "position": "TE",
       "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 16.1,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 16.4,
       "stats": [
         {
-          "stat": "RUSH YD",
+          "stat": "REC YD",
           "value": 69
         },
         {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
           "stat": "REC",
-          "value": 4
+          "value": 7
         },
         {
           "stat": "TD",
@@ -241,20 +237,24 @@
       ]
     },
     {
-      "name": "Colston Loveland",
-      "position": "TE",
+      "name": "D'Andre Swift",
+      "position": "RB",
       "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 15.0,
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 16.0,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
           "stat": "REC YD",
-          "value": 60
+          "value": 12
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 4
         },
         {
           "stat": "TD",
