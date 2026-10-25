@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T18:35:22Z",
+  "updated": "2026-10-25T18:40:23Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -249,11 +249,11 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 12.9,
+      "points": 13.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 69
+          "value": 74
         },
         {
           "stat": "TD",
@@ -374,6 +374,15 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -401,25 +410,16 @@
       ]
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 7.8,
+      "points": 8.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 42
+          "value": 46
         },
         {
           "stat": "REC YD",
@@ -432,21 +432,21 @@
       ]
     },
     {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 7.5,
-      "stats": []
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.0,
       "stats": []
     },
     {
@@ -531,6 +531,32 @@
       ]
     },
     {
+      "name": "Bryce Young",
+      "position": "QB",
+      "team": "Car",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 107
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Omar Cooper Jr.",
       "position": "WR",
       "team": "NYJ",
@@ -549,28 +575,20 @@
       ]
     },
     {
-      "name": "Bryce Young",
-      "position": "QB",
-      "team": "Car",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.8,
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.3,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 95
+          "stat": "REC YD",
+          "value": 33
         },
         {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -582,6 +600,24 @@
       "manager_display": "COYNE",
       "points": 5.3,
       "stats": []
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 96
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
     },
     {
       "name": "49ers",
@@ -633,6 +669,64 @@
       ]
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 17
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Kendre Miller",
       "position": "RB",
       "team": "NO",
@@ -665,28 +759,6 @@
         {
           "stat": "REC YD",
           "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
         },
         {
           "stat": "REC",
@@ -744,6 +816,24 @@
       "stats": []
     },
     {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
@@ -768,24 +858,6 @@
         {
           "stat": "PASS YD",
           "value": 90
-        }
-      ]
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -822,60 +894,6 @@
         {
           "stat": "REC YD",
           "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 43
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        }
-      ]
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 12
         },
         {
           "stat": "REC",
@@ -930,6 +948,24 @@
         {
           "stat": "RUSH YD",
           "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
         },
         {
           "stat": "REC",
@@ -1049,15 +1085,6 @@
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
@@ -1193,15 +1220,6 @@
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
