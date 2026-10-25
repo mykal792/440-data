@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T14:40:24Z",
+  "updated": "2026-10-25T14:45:24Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -175,7 +175,7 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 8.0,
+      "points": 10.0,
       "stats": []
     },
     {
@@ -242,28 +242,6 @@
       "stats": []
     },
     {
-      "name": "Kendre Miller",
-      "position": "RB",
-      "team": "NO",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Germie Bernard",
       "position": "WR",
       "team": "Pit",
@@ -277,6 +255,32 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Kendre Miller",
+      "position": "RB",
+      "team": "NO",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
