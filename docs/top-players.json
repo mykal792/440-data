@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T14:45:24Z",
+  "updated": "2026-10-25T14:50:23Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -170,15 +170,6 @@
       ]
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -215,6 +206,15 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -242,6 +242,28 @@
       "stats": []
     },
     {
+      "name": "Kendre Miller",
+      "position": "RB",
+      "team": "NO",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Germie Bernard",
       "position": "WR",
       "team": "Pit",
@@ -255,32 +277,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kendre Miller",
-      "position": "RB",
-      "team": "NO",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
