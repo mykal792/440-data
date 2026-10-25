@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T20:30:29Z",
+  "updated": "2026-10-25T20:35:21Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -1059,6 +1059,20 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 58
+        }
+      ]
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -1095,16 +1109,20 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 1.24,
+      "points": 1.0,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 31
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1127,6 +1145,24 @@
       "stats": []
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -1136,11 +1172,11 @@
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 3
         },
         {
           "stat": "REC YD",
-          "value": -1
+          "value": -2
         },
         {
           "stat": "REC",
@@ -1154,11 +1190,11 @@
       "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.1,
+      "points": 0.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 1
+          "value": 4
         }
       ]
     },
@@ -1168,11 +1204,11 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.04,
+      "points": 0.2,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 1
+          "value": 5
         }
       ]
     },
@@ -1294,15 +1330,6 @@
       "stats": []
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -1323,15 +1350,6 @@
     {
       "name": "Kyren Williams",
       "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
