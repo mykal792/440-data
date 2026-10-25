@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T19:45:24Z",
+  "updated": "2026-10-25T19:50:26Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -388,6 +388,28 @@
       ]
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 15.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 94
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -402,28 +424,6 @@
         {
           "stat": "REC",
           "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 14.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 80
-        },
-        {
-          "stat": "REC",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -454,6 +454,32 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 13.86,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 239
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -468,11 +494,11 @@
       "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 13.52,
+      "points": 13.6,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 133
+          "value": 135
         },
         {
           "stat": "RUSH YD",
@@ -521,6 +547,15 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -555,15 +590,6 @@
           "value": 6
         }
       ]
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.0,
-      "stats": []
     },
     {
       "name": "Browns",
@@ -611,15 +637,6 @@
       ]
     },
     {
-      "name": "Titans",
-      "position": "DEF",
-      "team": "Ten",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -638,28 +655,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 7.82,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 238
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -779,6 +774,37 @@
       ]
     },
     {
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Titans",
+      "position": "DEF",
+      "team": "Ten",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -846,33 +872,11 @@
       "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 4.9,
+      "points": 5.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 49
-        }
-      ]
-    },
-    {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 44
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "FUM",
-          "value": 1
+          "value": 50
         }
       ]
     },
@@ -989,15 +993,6 @@
       ]
     },
     {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.0,
-      "stats": []
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -1039,6 +1034,15 @@
       "team": "SF",
       "manager": "gangus",
       "manager_display": "GANGUS",
+      "points": 1.0,
+      "stats": []
+    },
+    {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 1.0,
       "stats": []
     },
