@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T19:00:32Z",
+  "updated": "2026-10-25T19:05:22Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 35.7,
+        "score": 38.1,
         "projected": 132.64
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 54.04,
+        "score": 56.34,
         "projected": 125.98
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 41.7,
+        "score": 43.3,
         "projected": 103.02
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 71.52,
+        "score": 72.06,
         "projected": 123.25
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 77.34,
+        "score": 78.74,
         "projected": 119.34
       }
     }
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "77.34",
+          "value": "78.74",
           "detail": "1 to play"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "71.52",
+          "value": "72.06",
           "detail": "2 to play"
         }
       ]
@@ -469,6 +469,46 @@
       ]
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 13.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 70
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.56,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 114
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -478,52 +518,16 @@
       "stats": []
     },
     {
-      "name": "C.J. Stroud",
-      "position": "QB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 108
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 12.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 63
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 11.7,
+      "points": 11.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 57
+          "value": 59
         },
         {
           "stat": "REC YD",
@@ -720,6 +724,28 @@
       "stats": []
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 33
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -792,24 +818,50 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
+      "name": "Bryce Young",
+      "position": "QB",
       "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.6,
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.48,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 137
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 23
+          "value": 45
         },
         {
           "stat": "REC YD",
-          "value": 18
+          "value": 4
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 1
         }
       ]
     },
@@ -852,32 +904,6 @@
       "manager_display": "SCOTTY",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Bryce Young",
-      "position": "QB",
-      "team": "Car",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 121
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Ja'Marr Chase",
@@ -956,38 +982,16 @@
       ]
     },
     {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 3.6,
+      "points": 3.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 36
+          "value": 39
         }
       ]
     },
@@ -1075,6 +1079,24 @@
       "manager_display": "ANTHONY",
       "points": 2.0,
       "stats": []
+    },
+    {
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "Hou",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Jalen Coker",
@@ -1251,15 +1273,6 @@
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Nico Collins",
-      "position": "WR",
-      "team": "Hou",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
