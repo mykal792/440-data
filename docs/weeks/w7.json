@@ -1,19 +1,19 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T17:05:24Z",
+  "updated": "2026-10-25T17:10:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 43.5,
+        "score": 50.8,
         "projected": 119.29
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 10.9,
+        "score": 13.5,
         "projected": 108.83
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 1.9,
+        "score": 14.8,
         "projected": 126.21
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 14.3,
+        "score": 12.3,
         "projected": 102.85
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 10.46,
+        "score": 10.86,
         "projected": 123.17
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 61.84,
+        "score": 56.64,
         "projected": 119.34
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "0.90",
+          "value": "0.80",
           "detail": "Aaron Jones Sr."
         }
       ]
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "61.84",
+          "value": "56.64",
           "detail": "3 to play"
         },
         {
           "rank": 2,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "50.80",
+          "detail": "4 to play"
+        },
+        {
+          "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
           "value": "49.20",
           "detail": "5 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "44.20",
-          "detail": "6 to play"
         }
       ]
     }
@@ -294,6 +294,37 @@
       "stats": []
     },
     {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 48
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -330,15 +361,6 @@
       "stats": []
     },
     {
-      "name": "Browns",
-      "position": "DEF",
-      "team": "Cle",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "49ers",
       "position": "DEF",
       "team": "SF",
@@ -348,29 +370,11 @@
       "stats": []
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Jets",
-      "position": "DEF",
-      "team": "NYJ",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 10.0,
       "stats": []
     },
@@ -398,6 +402,28 @@
         {
           "stat": "REC",
           "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 28
+        },
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -436,6 +462,24 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Browns",
+      "position": "DEF",
+      "team": "Cle",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.0,
+      "stats": []
+    },
+    {
+      "name": "Jets",
+      "position": "DEF",
+      "team": "NYJ",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Kendre Miller",
@@ -478,6 +522,20 @@
       ]
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        }
+      ]
+    },
+    {
       "name": "Pat Freiermuth",
       "position": "TE",
       "team": "Pit",
@@ -501,25 +559,43 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 2.5,
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 25
+          "value": 23
         }
       ]
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.8,
+      "name": "Carnell Tate",
+      "position": "WR",
+      "team": "Ten",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.0,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 18
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 40
         }
       ]
     },
@@ -538,30 +614,25 @@
       ]
     },
     {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.0,
+      "stats": []
+    },
+    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.9,
+      "points": 0.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 9
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
+          "value": 8
         }
       ]
     },
@@ -571,11 +642,11 @@
       "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.36,
+      "points": 0.76,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 9
+          "value": 19
         }
       ]
     },
@@ -585,6 +656,20 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
+      "points": 0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 0.1,
       "stats": [
         {
@@ -693,15 +778,6 @@
       "stats": []
     },
     {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -765,15 +841,6 @@
       "stats": []
     },
     {
-      "name": "Carnell Tate",
-      "position": "WR",
-      "team": "Ten",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -795,15 +862,6 @@
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
@@ -1004,24 +1062,6 @@
       "team": "Sea",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 0.0,
       "stats": []
     },
