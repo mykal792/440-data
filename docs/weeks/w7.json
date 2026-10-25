@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T20:05:24Z",
+  "updated": "2026-10-25T20:10:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 50.46,
+        "score": 52.02,
         "projected": 108.84
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 62.3,
+        "score": 68.9,
         "projected": 122.0
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 64.02,
+        "score": 74.02,
         "projected": 125.96
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 69.3,
+        "score": 73.1,
         "projected": 110.61
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 40.8,
+        "score": 41.8,
         "projected": 122.63
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 102.42,
+        "score": 103.02,
         "projected": 123.25
       },
       "away": {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "102.42",
+          "value": "103.02",
           "detail": "2 to play"
         },
         {
@@ -565,6 +565,24 @@
       ]
     },
     {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 15.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 102
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -609,29 +627,20 @@
       ]
     },
     {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.7,
-      "stats": []
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 12.46,
+      "points": 14.02,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 254
+          "value": 288
         },
         {
           "stat": "RUSH YD",
-          "value": 3
+          "value": 5
         },
         {
           "stat": "TD",
@@ -644,6 +653,24 @@
       ]
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.7,
+      "stats": []
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.5,
+      "stats": []
+    },
+    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -653,33 +680,6 @@
       "stats": []
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.5,
-      "stats": []
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 11.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 94
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -687,6 +687,28 @@
       "manager_display": "SCHILLING",
       "points": 11.0,
       "stats": []
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 88
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Hunter Henry",
@@ -707,22 +729,35 @@
       ]
     },
     {
-      "name": "George Kittle",
+      "name": "Harold Fannin Jr.",
       "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.2,
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 67
+          "value": 91
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 6
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "Steelers",
@@ -951,28 +986,6 @@
       ]
     },
     {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 55
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Titans",
       "position": "DEF",
       "team": "Ten",
@@ -1134,6 +1147,24 @@
       ]
     },
     {
+      "name": "Courtland Sutton",
+      "position": "WR",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -1224,15 +1255,6 @@
       "stats": []
     },
     {
-      "name": "Courtland Sutton",
-      "position": "WR",
-      "team": "Den",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -1281,15 +1303,6 @@
       "name": "Harrison Butker",
       "position": "K",
       "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
