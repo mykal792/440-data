@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T18:40:23Z",
+  "updated": "2026-10-25T18:45:22Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -294,11 +294,11 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 11.8,
+      "points": 12.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 58
+          "value": 63
         },
         {
           "stat": "TD",
@@ -330,6 +330,28 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 102
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -580,11 +602,11 @@
       "team": "Atl",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.3,
+      "points": 5.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 33
+          "value": 34
         },
         {
           "stat": "REC",
@@ -602,31 +624,26 @@
       "stats": []
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
+      "name": "Chase Brown",
+      "position": "RB",
       "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.04,
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.9,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 96
+          "stat": "RUSH YD",
+          "value": 21
         },
         {
-          "stat": "RUSH YD",
-          "value": 12
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
-    },
-    {
-      "name": "49ers",
-      "position": "DEF",
-      "team": "SF",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Chuba Hubbard",
@@ -661,28 +678,6 @@
         {
           "stat": "REC YD",
           "value": 32
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 17
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
         },
         {
           "stat": "REC",
@@ -785,6 +780,20 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 105
+        }
+      ]
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -848,20 +857,6 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 90
-        }
-      ]
-    },
-    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -882,6 +877,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "49ers",
+      "position": "DEF",
+      "team": "SF",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.0,
+      "stats": []
     },
     {
       "name": "Pat Freiermuth",
