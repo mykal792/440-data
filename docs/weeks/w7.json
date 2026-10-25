@@ -1,19 +1,19 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T19:25:26Z",
+  "updated": "2026-10-25T19:30:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 77.92,
-        "projected": 119.29
+        "projected": 119.31
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 44.06,
+        "score": 44.56,
         "projected": 108.83
       }
     },
@@ -28,7 +28,7 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 38.1,
-        "projected": 132.64
+        "projected": 132.63
       }
     },
     {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 42.4,
+        "score": 42.3,
         "projected": 122.61
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 80.74,
+        "score": 82.14,
         "projected": 123.25
       },
       "away": {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "80.74",
+          "value": "82.14",
           "detail": "2 to play"
         },
         {
@@ -242,11 +242,11 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 22.5,
+      "points": 22.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 92
+          "value": 91
         },
         {
           "stat": "REC YD",
@@ -268,15 +268,15 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 21.2,
+      "points": 22.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 112
+          "value": 115
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 5
         },
         {
           "stat": "TD",
@@ -355,6 +355,54 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 18.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 95
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 17.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 104
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -395,54 +443,6 @@
         {
           "stat": "REC",
           "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 16.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 104
-        },
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 16.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 80
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 2
         },
         {
           "stat": "TD",
@@ -926,15 +926,6 @@
       ]
     },
     {
-      "name": "Spencer Shrader",
-      "position": "K",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.3,
-      "stats": []
-    },
-    {
       "name": "Carnell Tate",
       "position": "WR",
       "team": "Ten",
@@ -1018,6 +1009,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Spencer Shrader",
+      "position": "K",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.3,
+      "stats": []
     },
     {
       "name": "Germie Bernard",
