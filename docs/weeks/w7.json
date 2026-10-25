@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T20:00:30Z",
+  "updated": "2026-10-25T20:05:24Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 50.1,
+        "score": 50.46,
         "projected": 108.84
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 62.7,
+        "score": 60.7,
         "projected": 103.05
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 42.8,
+        "score": 40.8,
         "projected": 122.63
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 96.3,
+        "score": 102.42,
         "projected": 123.25
       },
       "away": {
@@ -113,17 +113,17 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "102.42",
+          "detail": "2 to play"
+        },
+        {
+          "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "99.88",
           "detail": "3 to play"
-        },
-        {
-          "rank": 2,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "96.30",
-          "detail": "2 to play"
         },
         {
           "rank": 3,
@@ -325,6 +325,28 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 20.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 153
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -587,28 +609,6 @@
       ]
     },
     {
-      "name": "C.J. Stroud",
-      "position": "QB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 14.4,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 150
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -618,25 +618,16 @@
       "stats": []
     },
     {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 12.4,
-      "stats": []
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 12.1,
+      "points": 12.46,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 245
+          "value": 254
         },
         {
           "stat": "RUSH YD",
@@ -651,6 +642,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.4,
+      "stats": []
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -723,15 +723,6 @@
           "value": 7
         }
       ]
-    },
-    {
-      "name": "Browns",
-      "position": "DEF",
-      "team": "Cle",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.0,
-      "stats": []
     },
     {
       "name": "Steelers",
@@ -886,6 +877,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Browns",
+      "position": "DEF",
+      "team": "Cle",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Tyler Loop",
@@ -1168,15 +1168,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "49ers",
-      "position": "DEF",
-      "team": "SF",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Eddy Pineiro",
@@ -1491,6 +1482,15 @@
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
+      "stats": []
+    },
+    {
+      "name": "49ers",
+      "position": "DEF",
+      "team": "SF",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": -1.0,
       "stats": []
     }
   ]
