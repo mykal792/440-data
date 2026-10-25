@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T17:00:31Z",
+  "updated": "2026-10-25T17:05:24Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -179,6 +179,69 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Titans",
+      "position": "DEF",
+      "team": "Ten",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Browns",
+      "position": "DEF",
+      "team": "Cle",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "49ers",
+      "position": "DEF",
+      "team": "SF",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Jets",
+      "position": "DEF",
+      "team": "NYJ",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -300,18 +363,107 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        }
+      ]
+    },
+    {
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        }
+      ]
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        }
+      ]
     },
     {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -339,15 +491,6 @@
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -408,36 +551,9 @@
       "stats": []
     },
     {
-      "name": "Titans",
-      "position": "DEF",
-      "team": "Ten",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Bryce Young",
       "position": "QB",
       "team": "Car",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
@@ -561,36 +677,9 @@
       "stats": []
     },
     {
-      "name": "Browns",
-      "position": "DEF",
-      "team": "Cle",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "C.J. Stroud",
-      "position": "QB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Woody Marks",
-      "position": "RB",
-      "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
@@ -708,15 +797,6 @@
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "49ers",
-      "position": "DEF",
-      "team": "SF",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
@@ -849,26 +929,8 @@
       "stats": []
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Spencer Shrader",
       "position": "K",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Colts",
-      "position": "DEF",
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
@@ -921,27 +983,9 @@
       "stats": []
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
@@ -960,15 +1004,6 @@
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jets",
-      "position": "DEF",
-      "team": "NYJ",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
