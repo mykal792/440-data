@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T14:25:53Z",
+  "updated": "2026-10-25T14:30:27Z",
   "matchups": [
     {
       "home": {
@@ -21,8 +21,8 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 27.8,
-        "projected": 122.25
+        "score": 28.4,
+        "projected": 121.97
       },
       "away": {
         "name": "GRAHAM",
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 40.74,
+        "score": 46.34,
         "projected": 119.52
       }
     }
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "1.00",
+          "value": "6.60",
           "detail": "DK Metcalf"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "40.74",
+          "value": "46.34",
           "detail": "6 to play"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "27.80",
+          "value": "28.40",
           "detail": "7 to play"
         }
       ]
@@ -268,11 +268,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 10.8,
+      "points": 11.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 57
+          "value": 63
         },
         {
           "stat": "REC YD",
@@ -310,6 +310,24 @@
       "manager_display": "SCARPITTI",
       "points": 8.0,
       "stats": []
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "A.J. Brown",
@@ -397,24 +415,6 @@
       ]
     },
     {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -487,9 +487,9 @@
       "stats": []
     },
     {
-      "name": "Malik Washington",
+      "name": "Courtland Sutton",
       "position": "WR",
-      "team": "Mia",
+      "team": "Den",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
