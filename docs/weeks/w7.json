@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T21:35:22Z",
+  "updated": "2026-10-25T21:40:22Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 84.0,
+        "score": 85.0,
         "projected": 122.13
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 68.92,
+        "score": 70.0,
         "projected": 132.73
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 85.72,
+        "score": 87.72,
         "projected": 125.99
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 98.44,
+        "score": 98.74,
         "projected": 110.66
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 69.34,
+        "score": 74.54,
         "projected": 122.58
       }
     },
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "15.10",
+          "detail": "Amon-Ra St. Brown"
+        },
+        {
+          "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
           "value": "14.70",
           "detail": "Ja'Marr Chase"
-        },
-        {
-          "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "9.90",
-          "detail": "Amon-Ra St. Brown"
         }
       ]
     },
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "98.44",
+          "value": "98.74",
           "detail": "1 to play"
         }
       ]
@@ -627,6 +627,24 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 15.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 106
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -724,6 +742,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 13.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 175
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -762,24 +798,6 @@
       "manager_display": "SCHILLING",
       "points": 12.4,
       "stats": []
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 11.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 148
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Tucker Kraft",
@@ -882,24 +900,6 @@
       "manager_display": "GARRETT",
       "points": 10.1,
       "stats": []
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 9.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 84
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Steelers",
@@ -1204,6 +1204,28 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 16
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Kendre Miller",
       "position": "RB",
       "team": "NO",
@@ -1298,28 +1320,6 @@
       "stats": []
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 16
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Courtland Sutton",
       "position": "WR",
       "team": "Den",
@@ -1370,6 +1370,24 @@
         {
           "stat": "REC YD",
           "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 21
         },
         {
           "stat": "REC",
@@ -1486,16 +1504,20 @@
       ]
     },
     {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.1,
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.2,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
           "stat": "REC YD",
-          "value": 6
+          "value": 2
         },
         {
           "stat": "REC",
@@ -1520,28 +1542,6 @@
       "manager_display": "ANTHONY",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "Den",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "CeeDee Lamb",
