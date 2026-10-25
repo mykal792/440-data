@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T22:50:28Z",
+  "updated": "2026-10-25T22:55:20Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 119.38,
+        "score": 121.38,
         "projected": 119.3
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 96.7,
+        "score": 96.8,
         "projected": 122.13
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 100.56,
+        "score": 106.02,
         "projected": 122.58
       }
     },
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "119.38",
+          "value": "121.38",
           "detail": "1 to play"
         },
         {
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "103.02",
-          "detail": "2 to play"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "106.02",
+          "detail": "1 to play"
         }
       ]
     }
@@ -347,6 +347,28 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 22.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 103
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Omar Cooper Jr.",
       "position": "WR",
       "team": "NYJ",
@@ -466,11 +488,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 19.36,
+      "points": 19.72,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 234
+          "value": 243
         },
         {
           "stat": "TD",
@@ -571,28 +593,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 17.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 77
-        },
-        {
-          "stat": "REC",
-          "value": 8
         },
         {
           "stat": "TD",
@@ -820,6 +820,32 @@
       ]
     },
     {
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 14.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "REC YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -842,32 +868,6 @@
         {
           "stat": "INT",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 13.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "REC YD",
-          "value": 42
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1023,11 +1023,11 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 9.1,
+      "points": 9.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 78
+          "value": 79
         },
         {
           "stat": "REC YD",
@@ -1229,6 +1229,24 @@
       ]
     },
     {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Browns",
       "position": "DEF",
       "team": "Cle",
@@ -1342,24 +1360,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 43
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
