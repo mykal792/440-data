@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T22:40:24Z",
+  "updated": "2026-10-25T22:45:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 118.58,
+        "score": 119.38,
         "projected": 119.3
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 72.5,
+        "score": 73.5,
         "projected": 103.1
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 102.36,
+        "score": 102.56,
         "projected": 122.58
       }
     },
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "118.58",
+          "value": "119.38",
           "detail": "1 to play"
         },
         {
@@ -396,11 +396,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 21.16,
+      "points": 21.36,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 229
+          "value": 234
         },
         {
           "stat": "TD",
@@ -833,25 +833,16 @@
       ]
     },
     {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.7,
-      "stats": []
-    },
-    {
       "name": "Josh Jacobs",
       "position": "RB",
       "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 12.9,
+      "points": 13.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 12
+          "value": 20
         },
         {
           "stat": "REC YD",
@@ -866,6 +857,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.7,
+      "stats": []
     },
     {
       "name": "RJ Harvey",
@@ -886,6 +886,28 @@
         {
           "stat": "REC",
           "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 12.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 48
+        },
+        {
+          "stat": "REC",
+          "value": 4
         },
         {
           "stat": "TD",
@@ -919,28 +941,6 @@
       "manager_display": "GARRETT",
       "points": 12.1,
       "stats": []
-    },
-    {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 43
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Vikings",
