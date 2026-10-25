@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T19:15:25Z",
+  "updated": "2026-10-25T19:20:23Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -126,6 +126,50 @@
       ]
     },
     {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 21.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 105
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 20.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 193
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -157,33 +201,11 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 19.2,
+      "points": 19.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 72
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 19.16,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 149
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
+          "value": 77
         },
         {
           "stat": "TD",
@@ -236,6 +258,28 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 16.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 104
+        },
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -315,11 +359,11 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 14.7,
+      "points": 15.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 27
+          "value": 30
         },
         {
           "stat": "REC YD",
@@ -332,50 +376,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 14.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 61
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 14.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 95
-        },
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -407,11 +407,15 @@
       "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 12.84,
+      "points": 13.04,
       "stats": [
         {
           "stat": "PASS YD",
           "value": 121
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
         },
         {
           "stat": "TD",
@@ -786,6 +790,24 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 178
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Carnell Tate",
       "position": "WR",
       "team": "Ten",
@@ -815,24 +837,6 @@
       "manager_display": "SCOTTY",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 170
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Ja'Marr Chase",
@@ -907,6 +911,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -996,24 +1018,6 @@
       "stats": [
         {
           "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
           "value": 9
         },
         {
