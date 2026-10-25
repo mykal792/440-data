@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T17:40:27Z",
+  "updated": "2026-10-25T17:45:23Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 26.2,
+        "score": 23.8,
         "projected": 108.83
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 29.56,
+        "score": 29.74,
         "projected": 126.21
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 23.0,
+        "score": 24.2,
         "projected": 122.61
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 25.08,
+        "score": 28.28,
         "projected": 123.17
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 65.24,
+        "score": 67.94,
         "projected": 119.34
       }
     }
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "65.24",
+          "value": "67.94",
           "detail": "1 to play"
         },
         {
@@ -263,6 +263,28 @@
       ]
     },
     {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 16.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 85
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -277,28 +299,6 @@
         {
           "stat": "REC",
           "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 15.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 76
-        },
-        {
-          "stat": "REC",
-          "value": 3
         },
         {
           "stat": "TD",
@@ -368,15 +368,6 @@
       ]
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -395,6 +386,24 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 45
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -405,24 +414,6 @@
         {
           "stat": "RUSH YD",
           "value": 42
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 9.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 39
         },
         {
           "stat": "TD",
@@ -474,6 +465,15 @@
           "value": 6
         }
       ]
+    },
+    {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.0,
+      "stats": []
     },
     {
       "name": "Titans",
@@ -591,6 +591,28 @@
       "manager_display": "SCOTTY",
       "points": 5.0,
       "stats": []
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Braelon Allen",
@@ -745,6 +767,37 @@
       "stats": []
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.8,
+      "stats": []
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -781,28 +834,6 @@
       ]
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "REC YD",
-          "value": -3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -810,28 +841,6 @@
       "manager_display": "ANTHONY",
       "points": 2.0,
       "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Harold Fannin Jr.",
@@ -848,6 +857,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
         }
       ]
     },
@@ -928,16 +951,20 @@
       ]
     },
     {
-      "name": "Woody Marks",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.1,
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.2,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 11
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -970,20 +997,6 @@
         {
           "stat": "PASS YD",
           "value": 22
-        }
-      ]
-    },
-    {
-      "name": "Bryce Young",
-      "position": "QB",
-      "team": "Car",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.76,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 19
         }
       ]
     },
@@ -1159,15 +1172,6 @@
       "stats": []
     },
     {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -1187,15 +1191,6 @@
     },
     {
       "name": "Jalen Coker",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
       "manager": "gangus",
@@ -1346,6 +1341,24 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Bryce Young",
+      "position": "QB",
+      "team": "Car",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": -0.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 26
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     }
   ]
 }
