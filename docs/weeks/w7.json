@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T20:45:21Z",
+  "updated": "2026-10-25T20:50:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 100.28,
+        "score": 101.78,
         "projected": 119.3
       },
       "away": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 74.9,
+        "score": 79.2,
         "projected": 122.13
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 50.22,
+        "score": 51.62,
         "projected": 132.73
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 75.74,
+        "score": 82.22,
         "projected": 110.66
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 60.7,
+        "score": 64.6,
         "projected": 103.05
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 48.42,
+        "score": 50.14,
         "projected": 122.58
       }
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "100.28",
+          "value": "101.78",
           "detail": "2 to play"
         },
         {
@@ -782,6 +782,15 @@
       "stats": []
     },
     {
+      "name": "Wil Lutz",
+      "position": "K",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.1,
+      "stats": []
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -898,6 +907,24 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 38
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -1075,13 +1102,26 @@
       ]
     },
     {
-      "name": "Wil Lutz",
-      "position": "K",
-      "team": "Den",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
       "points": 4.8,
-      "stats": []
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Kendre Miller",
@@ -1133,6 +1173,20 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 101
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -1140,6 +1194,24 @@
       "manager_display": "SCOTTY",
       "points": 4.0,
       "stats": []
+    },
+    {
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Matthew Golden",
@@ -1170,28 +1242,6 @@
         {
           "stat": "REC YD",
           "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 17
         },
         {
           "stat": "REC",
@@ -1272,16 +1322,24 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
+      "name": "Josh Jacobs",
+      "position": "RB",
       "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.32,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.9,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 58
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1332,20 +1390,6 @@
         {
           "stat": "RUSH YD",
           "value": 12
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 26
         }
       ]
     },
@@ -1404,20 +1448,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
         }
       ]
     },
@@ -1493,15 +1523,6 @@
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
