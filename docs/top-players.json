@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T18:15:25Z",
+  "updated": "2026-10-25T18:20:22Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -83,11 +83,11 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 20.9,
+      "points": 21.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 80
+          "value": 84
         },
         {
           "stat": "REC YD",
@@ -126,6 +126,24 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 17.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 55
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -280,24 +298,6 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 49
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -314,15 +314,6 @@
           "value": 7
         }
       ]
-    },
-    {
-      "name": "Titans",
-      "position": "DEF",
-      "team": "Ten",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.0,
-      "stats": []
     },
     {
       "name": "Steelers",
@@ -388,12 +379,61 @@
       "stats": []
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.0,
+      "stats": []
+    },
+    {
+      "name": "Titans",
+      "position": "DEF",
+      "team": "Ten",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "Browns",
       "position": "DEF",
       "team": "Cle",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 7.0,
+      "stats": []
+    },
+    {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 6.8,
       "stats": []
     },
     {
@@ -451,15 +491,6 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Omar Cooper Jr.",
       "position": "WR",
       "team": "NYJ",
@@ -470,28 +501,6 @@
         {
           "stat": "REC YD",
           "value": 49
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 5.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 37
-        },
-        {
-          "stat": "REC YD",
-          "value": 12
         },
         {
           "stat": "REC",
@@ -548,6 +557,15 @@
       ]
     },
     {
+      "name": "Spencer Shrader",
+      "position": "K",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.3,
+      "stats": []
+    },
+    {
       "name": "49ers",
       "position": "DEF",
       "team": "SF",
@@ -595,15 +613,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.4,
-      "stats": []
     },
     {
       "name": "Kendre Miller",
@@ -695,15 +704,6 @@
       "stats": []
     },
     {
-      "name": "Jets",
-      "position": "DEF",
-      "team": "NYJ",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.0,
-      "stats": []
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -714,6 +714,38 @@
         {
           "stat": "PASS YD",
           "value": 90
+        }
+      ]
+    },
+    {
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -736,16 +768,24 @@
       ]
     },
     {
-      "name": "Woody Marks",
+      "name": "Chase Brown",
       "position": "RB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 2.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 29
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -768,6 +808,24 @@
       ]
     },
     {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 35
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -786,28 +844,6 @@
       ]
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -817,22 +853,13 @@
       "stats": []
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 19
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        }
-      ]
+      "name": "Jets",
+      "position": "DEF",
+      "team": "NYJ",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.0,
+      "stats": []
     },
     {
       "name": "C.J. Stroud",
@@ -885,43 +912,16 @@
       ]
     },
     {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Spencer Shrader",
-      "position": "K",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.0,
-      "stats": []
-    },
-    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.3,
+      "points": 0.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 13
+          "value": 14
         },
         {
           "stat": "REC",
