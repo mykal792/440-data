@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T19:50:26Z",
+  "updated": "2026-10-25T19:55:19Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -222,6 +222,54 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 19.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 61
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 18.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 103
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -240,32 +288,6 @@
         {
           "stat": "REC",
           "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 18.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 39
-        },
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -388,28 +410,6 @@
       ]
     },
     {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 15.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 94
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -432,38 +432,16 @@
       ]
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 14.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 59
-        },
-        {
-          "stat": "REC YD",
-          "value": 59
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 13.86,
+      "points": 14.1,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 239
+          "value": 245
         },
         {
           "stat": "RUSH YD",
@@ -476,6 +454,28 @@
         {
           "stat": "INT",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 57
+        },
+        {
+          "stat": "REC YD",
+          "value": 59
+        },
+        {
+          "stat": "REC",
+          "value": 5
         }
       ]
     },
@@ -579,15 +579,15 @@
       "team": "SF",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 9.6,
+      "points": 10.2,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 66
+          "value": 67
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 7
         }
       ]
     },
@@ -930,6 +930,15 @@
       ]
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -964,15 +973,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.0,
-      "stats": []
     },
     {
       "name": "Pat Freiermuth",
