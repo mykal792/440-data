@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T18:30:27Z",
+  "updated": "2026-10-25T18:35:22Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 29.6,
+        "score": 31.2,
         "projected": 108.83
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 54.7,
+        "score": 57.9,
         "projected": 110.6
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 46.72,
+        "score": 52.32,
         "projected": 123.31
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 72.44,
+        "score": 72.94,
         "projected": 119.34
       }
     }
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "72.44",
+          "value": "72.94",
           "detail": "1 to play"
         },
         {
           "rank": 2,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "57.82",
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "57.90",
           "detail": "3 to play"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "54.70",
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "57.82",
           "detail": "3 to play"
         }
       ]
@@ -377,6 +377,24 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 12.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 69
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -384,6 +402,24 @@
       "manager_display": "SCHILLING",
       "points": 12.4,
       "stats": []
+    },
+    {
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 108
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Ollie Gordon II",
@@ -413,20 +449,20 @@
       "stats": []
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 11.3,
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.4,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 53
+          "stat": "REC YD",
+          "value": 94
         },
         {
-          "stat": "TD",
-          "value": 1
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -449,20 +485,24 @@
       ]
     },
     {
-      "name": "C.J. Stroud",
-      "position": "QB",
-      "team": "Hou",
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 10.32,
+      "points": 9.3,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 108
+          "stat": "RUSH YD",
+          "value": 59
         },
         {
-          "stat": "TD",
-          "value": 1
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -494,24 +534,6 @@
       ]
     },
     {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 67
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -521,25 +543,16 @@
       "stats": []
     },
     {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.5,
-      "stats": []
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 7.3,
+      "points": 7.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 37
+          "value": 42
         },
         {
           "stat": "REC YD",
@@ -550,6 +563,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.5,
+      "stats": []
     },
     {
       "name": "Vikings",
@@ -682,28 +704,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
