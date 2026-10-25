@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T18:45:22Z",
+  "updated": "2026-10-25T18:50:23Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -83,11 +83,11 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 21.3,
+      "points": 22.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 84
+          "value": 91
         },
         {
           "stat": "REC YD",
@@ -135,11 +135,11 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 17.5,
+      "points": 17.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 55
+          "value": 59
         },
         {
           "stat": "TD",
@@ -218,16 +218,42 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 15.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 75
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 14.9,
+      "points": 14.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 29
+          "value": 27
         },
         {
           "stat": "REC YD",
@@ -244,20 +270,20 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 13.4,
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 14.4,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 74
+          "stat": "REC YD",
+          "value": 109
         },
         {
-          "stat": "TD",
-          "value": 1
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -379,11 +405,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 9.3,
+      "points": 9.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 59
+          "value": 62
         },
         {
           "stat": "REC YD",
@@ -470,6 +496,24 @@
       "manager_display": "SCARPITTI",
       "points": 7.5,
       "stats": []
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
     },
     {
       "name": "Titans",
@@ -579,24 +623,6 @@
       ]
     },
     {
-      "name": "Omar Cooper Jr.",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 49
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -664,24 +690,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 32
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -780,42 +788,6 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 105
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -843,6 +815,28 @@
       ]
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 28
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
@@ -853,6 +847,24 @@
         {
           "stat": "RUSH YD",
           "value": 36
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 135
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
