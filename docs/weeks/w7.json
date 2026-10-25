@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T17:55:21Z",
+  "updated": "2026-10-25T18:00:32Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 23.9,
+        "score": 24.6,
         "projected": 108.83
       }
     },
@@ -28,15 +28,15 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 34.6,
-        "projected": 132.85
+        "projected": 132.64
       }
     },
     {
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 38.0,
-        "projected": 126.21
+        "score": 40.5,
+        "projected": 126.1
       },
       "away": {
         "name": "SCOTTY",
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 18.1,
-        "projected": 102.85
+        "score": 20.1,
+        "projected": 103.04
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 23.6,
+        "score": 29.3,
         "projected": 122.61
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 31.08,
-        "projected": 123.17
+        "score": 37.58,
+        "projected": 123.31
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 68.14,
+        "score": 68.84,
         "projected": 119.34
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "1.40",
+          "value": "1.50",
           "detail": "Aaron Jones Sr."
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "68.14",
+          "value": "68.84",
           "detail": "1 to play"
         },
         {
@@ -333,25 +333,16 @@
       ]
     },
     {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 12.4,
-      "stats": []
-    },
-    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 11.9,
+      "points": 14.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 50
+          "value": 72
         },
         {
           "stat": "REC YD",
@@ -366,6 +357,24 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.4,
+      "stats": []
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 11.5,
+      "stats": []
     },
     {
       "name": "Hunter Henry",
@@ -422,6 +431,24 @@
       ]
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 36
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -429,24 +456,6 @@
       "manager_display": "SCARPITTI",
       "points": 9.0,
       "stats": []
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Chris Olave",
@@ -473,6 +482,15 @@
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.5,
       "stats": []
     },
     {
@@ -615,15 +633,6 @@
       ]
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.8,
-      "stats": []
-    },
-    {
       "name": "Braelon Allen",
       "position": "RB",
       "team": "NYJ",
@@ -644,6 +653,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Browns",
+      "position": "DEF",
+      "team": "Cle",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "49ers",
@@ -673,6 +691,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -766,43 +802,16 @@
       ]
     },
     {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 28
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Browns",
-      "position": "DEF",
-      "team": "Cle",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.0,
-      "stats": []
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 3.0,
+      "points": 3.6,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 75
+          "value": 90
         }
       ]
     },
@@ -834,13 +843,18 @@
       "stats": []
     },
     {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 2.8,
-      "stats": []
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 29
+        }
+      ]
     },
     {
       "name": "Derrick Henry",
@@ -848,11 +862,11 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 2.2,
+      "points": 2.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 16
         },
         {
           "stat": "REC YD",
@@ -883,20 +897,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Woody Marks",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
         }
       ]
     },
@@ -960,6 +960,24 @@
       ]
     },
     {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jalen Coker",
       "position": "WR",
       "team": "Car",
@@ -969,24 +987,6 @@
       "stats": [
         {
           "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
           "value": 9
         },
         {
