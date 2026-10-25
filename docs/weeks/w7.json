@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T22:35:19Z",
+  "updated": "2026-10-25T22:40:24Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 90.7,
+        "score": 91.2,
         "projected": 122.13
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 88.84,
+        "score": 90.04,
         "projected": 132.78
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 97.82,
+        "score": 99.82,
         "projected": 126.03
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 111.56,
+        "score": 111.8,
         "projected": 110.66
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 99.16,
+        "score": 102.36,
         "projected": 122.58
       }
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "111.56",
+          "value": "111.80",
           "detail": "1 to play"
         },
         {
@@ -260,11 +260,11 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 24.16,
+      "points": 24.4,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 154
+          "value": 160
         },
         {
           "stat": "TD",
@@ -575,6 +575,28 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 17.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 77
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -755,23 +777,31 @@
       ]
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 14.5,
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 14.4,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 72
+        },
+        {
           "stat": "REC YD",
-          "value": 50
+          "value": 22
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 2
         },
         {
           "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -810,36 +840,6 @@
       "manager_display": "SCARPITTI",
       "points": 13.7,
       "stats": []
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 13.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 60
-        },
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Josh Jacobs",
@@ -1014,6 +1014,32 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 78
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -1054,32 +1080,6 @@
       "stats": []
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 73
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
@@ -1118,6 +1118,15 @@
           "value": 6
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.0,
+      "stats": []
     },
     {
       "name": "Chuba Hubbard",
@@ -1293,15 +1302,6 @@
       "team": "Ten",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 6.0,
-      "stats": []
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
       "points": 6.0,
       "stats": []
     },
