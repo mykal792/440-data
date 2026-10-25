@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T13:30:28Z",
+  "updated": "2026-10-25T13:35:26Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -148,6 +148,15 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
@@ -162,6 +171,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 38
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -241,15 +272,6 @@
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -538,15 +560,6 @@
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
