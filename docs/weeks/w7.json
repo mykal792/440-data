@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T23:30:29Z",
+  "updated": "2026-10-25T23:35:22Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 111.3,
+        "score": 111.0,
         "projected": 110.66
       }
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "111.30",
+          "value": "111.00",
           "detail": "1 to play"
         },
         {
@@ -303,28 +303,6 @@
       ]
     },
     {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 23.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 195
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -369,6 +347,32 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 23.5,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 195
+        },
+        {
+          "stat": "RUSH YD",
+          "value": -3
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
