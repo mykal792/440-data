@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T22:05:22Z",
+  "updated": "2026-10-25T22:10:29Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 109.58,
+        "score": 118.58,
         "projected": 119.3
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 85.8,
+        "score": 86.8,
         "projected": 122.13
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 99.62,
+        "score": 111.32,
         "projected": 110.66
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 80.66,
+        "score": 87.66,
         "projected": 122.58
       }
     },
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "109.58",
+          "value": "118.58",
           "detail": "1 to play"
         },
         {
           "rank": 2,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "111.32",
+          "detail": "1 to play"
+        },
+        {
+          "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "103.02",
           "detail": "2 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "99.62",
-          "detail": "1 to play"
         }
       ]
     }
@@ -343,6 +343,24 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 21.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 229
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -715,24 +733,6 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 14.16,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 204
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -766,6 +766,58 @@
       "manager_display": "SCARPITTI",
       "points": 13.7,
       "stats": []
+    },
+    {
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "REC YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "RJ Harvey",
+      "position": "RB",
+      "team": "Den",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 12.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "REC YD",
+          "value": 54
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jameson Williams",
@@ -852,6 +904,15 @@
       ]
     },
     {
+      "name": "Wil Lutz",
+      "position": "K",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 11.1,
+      "stats": []
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -921,15 +982,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Wil Lutz",
-      "position": "K",
-      "team": "Den",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 10.1,
-      "stats": []
     },
     {
       "name": "Steelers",
@@ -1376,28 +1428,6 @@
       "stats": []
     },
     {
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Courtland Sutton",
       "position": "WR",
       "team": "Den",
@@ -1516,28 +1546,6 @@
         {
           "stat": "REC YD",
           "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "RJ Harvey",
-      "position": "RB",
-      "team": "Den",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
         },
         {
           "stat": "REC",
