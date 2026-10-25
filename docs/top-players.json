@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T18:10:24Z",
+  "updated": "2026-10-25T18:15:25Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -61,15 +61,15 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 20.9,
+      "points": 23.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 104
+          "value": 120
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 6
         },
         {
           "stat": "TD",
@@ -83,11 +83,11 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 20.5,
+      "points": 20.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 76
+          "value": 80
         },
         {
           "stat": "REC YD",
@@ -235,6 +235,24 @@
       "stats": []
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 11.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 58
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -244,16 +262,16 @@
       "stats": []
     },
     {
-      "name": "Ollie Gordon II",
+      "name": "Jonathan Taylor",
       "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 11.4,
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 54
+          "value": 53
         },
         {
           "stat": "TD",
@@ -262,16 +280,16 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
+      "name": "Quinshon Judkins",
       "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.7,
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 47
+          "value": 49
         },
         {
           "stat": "TD",
@@ -294,24 +312,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 44
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -420,11 +420,11 @@
       "team": "Min",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 6.3,
+      "points": 6.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 43
+          "value": 44
         },
         {
           "stat": "REC",
@@ -460,15 +460,6 @@
       "stats": []
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Omar Cooper Jr.",
       "position": "WR",
       "team": "NYJ",
@@ -479,6 +470,28 @@
         {
           "stat": "REC YD",
           "value": 49
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
+        },
+        {
+          "stat": "REC YD",
+          "value": 12
         },
         {
           "stat": "REC",
@@ -531,28 +544,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        },
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -673,6 +664,37 @@
       ]
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Jets",
       "position": "DEF",
       "team": "NYJ",
@@ -692,28 +714,6 @@
         {
           "stat": "PASS YD",
           "value": 90
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -849,24 +849,6 @@
       ]
     },
     {
-      "name": "Aaron Jones Sr.",
-      "position": "RB",
-      "team": "Min",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jalen Coker",
       "position": "WR",
       "team": "Car",
@@ -876,6 +858,24 @@
       "stats": [
         {
           "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Aaron Jones Sr.",
+      "position": "RB",
+      "team": "Min",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
           "value": 9
         },
         {
@@ -917,11 +917,11 @@
       "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.5,
+      "points": 0.3,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 15
+          "value": 13
         },
         {
           "stat": "REC",
