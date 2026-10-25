@@ -1,28 +1,28 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T13:55:21Z",
+  "updated": "2026-10-25T14:00:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 19.2,
-        "projected": 119.12
+        "score": 20.3,
+        "projected": 119.16
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 0.0,
-        "projected": 108.53
+        "projected": 108.95
       }
     },
     {
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 23.4,
-        "projected": 122.24
+        "score": 24.3,
+        "projected": 122.25
       },
       "away": {
         "name": "GRAHAM",
@@ -50,13 +50,13 @@
         "name": "GREG",
         "face": "greg",
         "score": 0.0,
-        "projected": 102.22
+        "projected": 102.36
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
         "score": 0.0,
-        "projected": 122.39
+        "projected": 122.37
       }
     },
     {
@@ -64,13 +64,13 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 10.0,
-        "projected": 121.31
+        "projected": 123.19
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 39.74,
-        "projected": 121.81
+        "score": 40.74,
+        "projected": 119.52
       }
     }
   ],
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "1.00",
+          "detail": "DK Metcalf"
+        },
+        {
+          "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "0.00",
           "detail": "Christian Watson"
-        },
-        {
-          "rank": 2,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "0.00",
-          "detail": "Jahmyr Gibbs"
         }
       ]
     },
@@ -115,8 +115,8 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "39.74",
-          "detail": "7 to play"
+          "value": "40.74",
+          "detail": "6 to play"
         },
         {
           "rank": 2,
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "23.70",
-          "detail": "8 to play"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "24.30",
+          "detail": "7 to play"
         }
       ]
     }
@@ -295,11 +295,11 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 6.4,
+      "points": 7.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 44
+          "value": 53
         },
         {
           "stat": "REC YD",
@@ -357,6 +357,42 @@
       ]
     },
     {
+      "name": "Germie Bernard",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -378,15 +414,6 @@
       "name": "Josh Jacobs",
       "position": "RB",
       "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Germie Bernard",
-      "position": "WR",
-      "team": "Pit",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1034,15 +1061,6 @@
     {
       "name": "Pat Freiermuth",
       "position": "TE",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "DK Metcalf",
-      "position": "WR",
       "team": "Pit",
       "manager": "anthony",
       "manager_display": "ANTHONY",
