@@ -1,20 +1,20 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T15:55:25Z",
+  "updated": "2026-10-25T16:00:29Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 33.0,
-        "projected": 119.19
+        "projected": 119.17
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 0.0,
-        "projected": 108.83
+        "projected": 108.91
       }
     },
     {
@@ -28,7 +28,7 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 23.7,
-        "projected": 132.41
+        "projected": 132.66
       }
     },
     {
@@ -36,27 +36,27 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 0.0,
-        "projected": 125.36
+        "projected": 126.11
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 35.7,
-        "projected": 110.53
+        "score": 37.3,
+        "projected": 110.5
       }
     },
     {
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 3.3,
-        "projected": 102.4
+        "score": 4.3,
+        "projected": 102.82
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
         "score": 0.0,
-        "projected": 122.38
+        "projected": 122.63
       }
     },
     {
@@ -64,13 +64,13 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 8.0,
-        "projected": 123.2
+        "projected": 123.24
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 49.34,
-        "projected": 119.51
+        "projected": 119.43
       }
     }
   ],
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "35.70",
+          "value": "37.30",
           "detail": "6 to play"
         },
         {
@@ -321,6 +321,24 @@
       "stats": []
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -357,20 +375,24 @@
       ]
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
+      "name": "Kendre Miller",
+      "position": "RB",
       "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.1,
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.3,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
           "stat": "REC YD",
-          "value": 31
+          "value": 22
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 3
         }
       ]
     },
@@ -389,28 +411,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Kendre Miller",
-      "position": "RB",
-      "team": "NO",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T15:55:25Z",
+  "updated": "2026-10-25T16:00:29Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -188,6 +188,24 @@
       "stats": []
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -224,20 +242,24 @@
       ]
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
+      "name": "Kendre Miller",
+      "position": "RB",
       "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.1,
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.3,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
           "stat": "REC YD",
-          "value": 31
+          "value": 22
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 3
         }
       ]
     },
@@ -256,28 +278,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Kendre Miller",
-      "position": "RB",
-      "team": "NO",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
