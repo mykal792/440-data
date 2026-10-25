@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T18:55:22Z",
+  "updated": "2026-10-25T19:00:32Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 35.3,
+        "score": 36.3,
         "projected": 108.83
       }
     },
@@ -35,14 +35,14 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 53.64,
-        "projected": 126.1
+        "score": 54.04,
+        "projected": 125.98
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 59.1,
-        "projected": 110.6
+        "score": 60.1,
+        "projected": 110.61
       }
     },
     {
@@ -50,7 +50,7 @@
         "name": "GREG",
         "face": "greg",
         "score": 41.7,
-        "projected": 103.04
+        "projected": 103.02
       },
       "away": {
         "name": "GANGUS",
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 64.72,
-        "projected": 123.31
+        "score": 71.52,
+        "projected": 123.25
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 74.24,
+        "score": 77.34,
         "projected": 119.34
       }
     }
@@ -113,23 +113,23 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "77.34",
+          "detail": "1 to play"
+        },
+        {
+          "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "75.62",
           "detail": "3 to play"
         },
         {
-          "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "74.24",
-          "detail": "1 to play"
-        },
-        {
           "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "64.72",
+          "value": "71.52",
           "detail": "2 to play"
         }
       ]
@@ -233,6 +233,28 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 21.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 112
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -425,24 +447,6 @@
       ]
     },
     {
-      "name": "Omar Cooper Jr.",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 14.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 109
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -506,6 +510,28 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 11.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 57
+        },
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -595,6 +621,15 @@
       "stats": []
     },
     {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -613,42 +648,11 @@
       ]
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 50
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Titans",
       "position": "DEF",
       "team": "Ten",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 8.0,
-      "stats": []
-    },
-    {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 8.0,
       "stats": []
     },
@@ -841,6 +845,15 @@
       "stats": []
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "Bryce Young",
       "position": "QB",
       "team": "Car",
@@ -943,25 +956,16 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.0,
-      "stats": []
-    },
-    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 3.7,
+      "points": 4.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 28
+          "value": 32
         },
         {
           "stat": "REC YD",
