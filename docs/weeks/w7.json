@@ -1,19 +1,19 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T19:35:22Z",
+  "updated": "2026-10-25T19:40:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 80.84,
+        "score": 88.14,
         "projected": 119.31
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 44.56,
+        "score": 46.58,
         "projected": 108.83
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 63.6,
+        "score": 70.3,
         "projected": 110.61
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 82.14,
+        "score": 83.04,
         "projected": 123.25
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 83.14,
+        "score": 81.14,
         "projected": 119.34
       }
     }
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "8.00",
+          "value": "14.70",
           "detail": "Ja'Marr Chase"
         },
         {
@@ -113,24 +113,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "83.14",
-          "detail": "1 to play"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "88.14",
+          "detail": "3 to play"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "82.14",
+          "value": "83.04",
           "detail": "2 to play"
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "80.84",
-          "detail": "3 to play"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "81.14",
+          "detail": "1 to play"
         }
       ]
     }
@@ -159,6 +159,28 @@
         {
           "stat": "INT",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 30.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 276
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "TD",
+          "value": 3
         }
       ]
     },
@@ -229,28 +251,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 23.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 266
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -355,6 +355,28 @@
       ]
     },
     {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 18.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 104
+        },
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -377,28 +399,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 17.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 104
-        },
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -500,11 +500,11 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 15.0,
+      "points": 15.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 30
+          "value": 39
         },
         {
           "stat": "REC YD",
@@ -513,6 +513,28 @@
         {
           "stat": "REC",
           "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 14.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 62
+        },
+        {
+          "stat": "REC",
+          "value": 5
         },
         {
           "stat": "TD",
@@ -623,6 +645,15 @@
       ]
     },
     {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -639,15 +670,6 @@
           "value": 7
         }
       ]
-    },
-    {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.0,
-      "stats": []
     },
     {
       "name": "Vikings",
@@ -727,24 +749,6 @@
         {
           "stat": "REC YD",
           "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 60
         },
         {
           "stat": "REC",
@@ -850,6 +854,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 6.58,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 207
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -900,24 +926,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 189
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -1114,15 +1122,6 @@
       ]
     },
     {
-      "name": "Jets",
-      "position": "DEF",
-      "team": "NYJ",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.0,
-      "stats": []
-    },
-    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1173,6 +1172,15 @@
       "team": "SF",
       "manager": "gangus",
       "manager_display": "GANGUS",
+      "points": 1.0,
+      "stats": []
+    },
+    {
+      "name": "Jets",
+      "position": "DEF",
+      "team": "NYJ",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 1.0,
       "stats": []
     },
