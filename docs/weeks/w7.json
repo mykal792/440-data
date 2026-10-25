@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T21:05:21Z",
+  "updated": "2026-10-25T21:10:25Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 55.84,
+        "score": 57.44,
         "projected": 132.73
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 82.66,
+        "score": 83.5,
         "projected": 110.66
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 61.48,
+        "score": 61.72,
         "projected": 122.58
       }
     },
@@ -702,6 +702,24 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 11.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 128
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -725,24 +743,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.88,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 122
         },
         {
           "stat": "TD",
@@ -858,6 +858,24 @@
       "stats": []
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 70
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
@@ -916,24 +934,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 7.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 49
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1374,6 +1374,20 @@
       ]
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        }
+      ]
+    },
+    {
       "name": "Josh Jacobs",
       "position": "RB",
       "team": "GB",
@@ -1484,20 +1498,6 @@
       "manager_display": "ANTHONY",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "RJ Harvey",
