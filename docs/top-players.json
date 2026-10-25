@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T19:05:22Z",
+  "updated": "2026-10-25T19:10:27Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -152,6 +152,24 @@
       ]
     },
     {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 19.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 72
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -166,24 +184,6 @@
         {
           "stat": "RUSH YD",
           "value": 12
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 18.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 69
         },
         {
           "stat": "TD",
@@ -280,6 +280,28 @@
         {
           "stat": "REC",
           "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 15.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 64
+        },
+        {
+          "stat": "REC",
+          "value": 6
         },
         {
           "stat": "TD",
@@ -416,6 +438,28 @@
       "stats": []
     },
     {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 69
+        },
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -426,28 +470,6 @@
         {
           "stat": "REC YD",
           "value": 94
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 62
-        },
-        {
-          "stat": "REC YD",
-          "value": 25
         },
         {
           "stat": "REC",
@@ -483,20 +505,20 @@
       "stats": []
     },
     {
+      "name": "Browns",
+      "position": "DEF",
+      "team": "Cle",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 9.0,
       "stats": []
     },
@@ -519,6 +541,15 @@
       ]
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.5,
+      "stats": []
+    },
+    {
       "name": "Titans",
       "position": "DEF",
       "team": "Ten",
@@ -528,13 +559,56 @@
       "stats": []
     },
     {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.5,
-      "stats": []
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 33
+        },
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Bryce Young",
+      "position": "QB",
+      "team": "Car",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 163
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "George Kittle",
@@ -555,31 +629,13 @@
       ]
     },
     {
-      "name": "Browns",
+      "name": "Colts",
       "position": "DEF",
-      "team": "Cle",
-      "manager": "greg",
-      "manager_display": "GREG",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 43
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Tyler Loop",
@@ -589,28 +645,6 @@
       "manager_display": "GREG",
       "points": 6.8,
       "stats": []
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 6.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 33
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "DK Metcalf",
@@ -681,32 +715,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Bryce Young",
-      "position": "QB",
-      "team": "Car",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.48,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 137
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
     },
@@ -836,15 +844,19 @@
       "team": "Ten",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 4.2,
+      "points": 4.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 32
+          "value": 45
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -903,15 +915,6 @@
       ]
     },
     {
-      "name": "49ers",
-      "position": "DEF",
-      "team": "SF",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.0,
-      "stats": []
-    },
-    {
       "name": "Pat Freiermuth",
       "position": "TE",
       "team": "Pit",
@@ -930,18 +933,18 @@
       ]
     },
     {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.0,
-      "stats": []
-    },
-    {
       "name": "Jets",
       "position": "DEF",
       "team": "NYJ",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.0,
+      "stats": []
+    },
+    {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 2.0,
@@ -1018,6 +1021,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "49ers",
+      "position": "DEF",
+      "team": "SF",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Josh Jacobs",
