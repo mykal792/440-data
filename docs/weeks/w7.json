@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T17:35:21Z",
+  "updated": "2026-10-25T17:40:27Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 28.0,
+        "score": 29.8,
         "projected": 132.85
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 26.7,
+        "score": 29.56,
         "projected": 126.21
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 23.1,
+        "score": 23.0,
         "projected": 122.61
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 22.08,
+        "score": 25.08,
         "projected": 123.17
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 64.24,
+        "score": 65.24,
         "projected": 119.34
       }
     }
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "64.24",
+          "value": "65.24",
           "detail": "1 to play"
         },
         {
@@ -285,6 +285,28 @@
       ]
     },
     {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 15.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 76
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -303,28 +325,6 @@
         {
           "stat": "REC",
           "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 12.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 2
         },
         {
           "stat": "TD",
@@ -400,11 +400,11 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 10.3,
+      "points": 10.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 43
+          "value": 42
         },
         {
           "stat": "TD",
@@ -593,6 +593,28 @@
       "stats": []
     },
     {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 4.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Kendre Miller",
       "position": "RB",
       "team": "NO",
@@ -643,6 +665,28 @@
         {
           "stat": "REC YD",
           "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
         },
         {
           "stat": "REC",
@@ -737,28 +781,6 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -779,6 +801,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.0,
+      "stats": []
     },
     {
       "name": "Derrick Henry",
@@ -813,28 +844,6 @@
         {
           "stat": "REC YD",
           "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
         },
         {
           "stat": "REC",
@@ -951,15 +960,6 @@
       "stats": []
     },
     {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.0,
-      "stats": []
-    },
-    {
       "name": "C.J. Stroud",
       "position": "QB",
       "team": "Hou",
@@ -979,11 +979,11 @@
       "team": "Car",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.4,
+      "points": 0.76,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 10
+          "value": 19
         }
       ]
     },
