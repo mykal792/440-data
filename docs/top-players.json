@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T21:20:24Z",
+  "updated": "2026-10-25T21:25:20Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -428,6 +428,24 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 16.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 105
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -446,24 +464,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 15.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 98
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -565,6 +565,24 @@
       "stats": []
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 156
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -592,29 +610,11 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 11.52,
+      "points": 11.48,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 138
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.12,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 128
+          "value": 137
         },
         {
           "stat": "TD",
@@ -716,31 +716,31 @@
       ]
     },
     {
+      "name": "Wil Lutz",
+      "position": "K",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.1,
+      "stats": []
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 10.0,
+      "points": 9.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 85
+          "value": 84
         },
         {
           "stat": "REC",
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Wil Lutz",
-      "position": "K",
-      "team": "Den",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.1,
-      "stats": []
     },
     {
       "name": "Steelers",
@@ -759,6 +759,28 @@
       "manager_display": "COYNE",
       "points": 9.0,
       "stats": []
+    },
+    {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
     },
     {
       "name": "Woody Marks",
@@ -841,28 +863,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -1241,6 +1241,24 @@
       ]
     },
     {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Courtland Sutton",
       "position": "WR",
       "team": "Den",
@@ -1278,11 +1296,11 @@
       "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 2.0,
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 8
         },
         {
           "stat": "REC YD",
@@ -1323,24 +1341,6 @@
         {
           "stat": "REC YD",
           "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 7
         },
         {
           "stat": "REC",
