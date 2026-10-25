@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T22:45:25Z",
+  "updated": "2026-10-25T22:50:28Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 91.2,
+        "score": 96.7,
         "projected": 122.13
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 111.8,
+        "score": 111.9,
         "projected": 110.66
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 102.56,
+        "score": 100.56,
         "projected": 122.58
       }
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "111.80",
+          "value": "111.90",
           "detail": "1 to play"
         },
         {
@@ -391,24 +391,6 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 21.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 234
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -474,6 +456,28 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 19.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 234
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -733,6 +737,15 @@
       ]
     },
     {
+      "name": "Wil Lutz",
+      "position": "K",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 15.2,
+      "stats": []
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -873,11 +886,11 @@
       "team": "Den",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 12.9,
+      "points": 13.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 6
         },
         {
           "stat": "REC YD",
@@ -931,15 +944,6 @@
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 12.4,
-      "stats": []
-    },
-    {
-      "name": "Wil Lutz",
-      "position": "K",
-      "team": "Den",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 12.1,
       "stats": []
     },
     {
@@ -1297,6 +1301,24 @@
       ]
     },
     {
+      "name": "Courtland Sutton",
+      "position": "WR",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Titans",
       "position": "DEF",
       "team": "Ten",
@@ -1456,24 +1478,6 @@
       "manager_display": "SCOTTY",
       "points": 4.0,
       "stats": []
-    },
-    {
-      "name": "Courtland Sutton",
-      "position": "WR",
-      "team": "Den",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Garrett Wilson",
