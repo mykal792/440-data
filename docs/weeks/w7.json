@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T21:00:31Z",
+  "updated": "2026-10-25T21:05:21Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 80.4,
+        "score": 82.2,
         "projected": 122.13
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 53.22,
+        "score": 55.84,
         "projected": 132.73
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 82.22,
+        "score": 82.66,
         "projected": 110.66
       }
     },
@@ -751,6 +751,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.84,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 121
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "George Kittle",
       "position": "TE",
       "team": "SF",
@@ -787,24 +805,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 108
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -920,6 +920,24 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 49
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -956,24 +974,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 7.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 38
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1075,6 +1075,28 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -1160,28 +1182,6 @@
       ]
     },
     {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Kendre Miller",
       "position": "RB",
       "team": "NO",
@@ -1227,6 +1227,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 19
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1352,20 +1374,6 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        }
-      ]
-    },
-    {
       "name": "Josh Jacobs",
       "position": "RB",
       "team": "GB",
@@ -1478,6 +1486,20 @@
       "stats": []
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "RJ Harvey",
       "position": "RB",
       "team": "Den",
@@ -1569,15 +1591,6 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
