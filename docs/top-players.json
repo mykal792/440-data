@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T21:30:26Z",
+  "updated": "2026-10-25T21:35:22Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -591,6 +591,28 @@
       ]
     },
     {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 12.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 51
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -607,6 +629,24 @@
       "manager_display": "SCHILLING",
       "points": 12.4,
       "stats": []
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 148
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Tucker Kraft",
@@ -631,24 +671,6 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 11.48,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 137
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -656,28 +678,6 @@
       "manager_display": "SCHILLING",
       "points": 11.0,
       "stats": []
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 11.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "George Kittle",
@@ -827,6 +827,15 @@
       ]
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -921,15 +930,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 7.0,
-      "stats": []
     },
     {
       "name": "Browns",
@@ -1120,24 +1120,20 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 4.2,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 19
-        },
-        {
           "stat": "REC YD",
-          "value": 13
+          "value": 27
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         }
       ]
     },
@@ -1169,16 +1165,20 @@
       "stats": []
     },
     {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.7,
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.9,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 16
+        },
+        {
           "stat": "REC YD",
-          "value": 27
+          "value": 13
         },
         {
           "stat": "REC",
@@ -1353,6 +1353,24 @@
       ]
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -1376,11 +1394,19 @@
       "team": "Den",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.2,
+      "points": 0.9,
       "stats": [
         {
           "stat": "RUSH YD",
           "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1399,15 +1425,6 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
       "points": 0.0,
       "stats": []
     },
