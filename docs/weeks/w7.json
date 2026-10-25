@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T21:10:25Z",
+  "updated": "2026-10-25T21:15:24Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 57.44,
+        "score": 59.72,
         "projected": 132.73
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 83.5,
+        "score": 90.62,
         "projected": 110.66
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 61.72,
+        "score": 65.82,
         "projected": 122.58
       }
     },
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "7.80",
+          "value": "10.00",
           "detail": "Amon-Ra St. Brown"
         }
       ]
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "88.54",
-          "detail": "All played"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "90.62",
+          "detail": "1 to play"
         }
       ]
     }
@@ -583,6 +583,24 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 15.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 98
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -702,6 +720,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 138
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -743,24 +779,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 121
         },
         {
           "stat": "TD",
@@ -831,6 +849,24 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 85
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Wil Lutz",
       "position": "K",
       "team": "Den",
@@ -856,24 +892,6 @@
       "manager_display": "COYNE",
       "points": 9.0,
       "stats": []
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 70
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Woody Marks",
@@ -960,20 +978,24 @@
       ]
     },
     {
-      "name": "Amon-Ra St. Brown",
+      "name": "Puka Nacua",
       "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.8,
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.7,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
           "stat": "REC YD",
-          "value": 68
+          "value": 45
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 5
         }
       ]
     },
@@ -1071,28 +1093,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 6.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 37
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1356,6 +1356,24 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Courtland Sutton",
       "position": "WR",
       "team": "Den",
@@ -1379,11 +1397,11 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 2.1,
+      "points": 2.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 21
+          "value": 24
         }
       ]
     },
@@ -1456,24 +1474,6 @@
         {
           "stat": "REC YD",
           "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
         },
         {
           "stat": "REC",
