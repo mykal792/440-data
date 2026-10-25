@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T17:50:24Z",
+  "updated": "2026-10-25T17:55:21Z",
   "players": [
     {
       "name": "Drake Maye",
@@ -343,20 +343,33 @@
       "stats": []
     },
     {
+      "name": "Bryce Young",
+      "position": "QB",
+      "team": "Car",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 85
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Titans",
       "position": "DEF",
       "team": "Ten",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 7.0,
-      "stats": []
-    },
-    {
-      "name": "49ers",
-      "position": "DEF",
-      "team": "SF",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 7.0,
       "stats": []
     },
@@ -375,6 +388,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 43
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -433,6 +464,24 @@
       "stats": []
     },
     {
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 49
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -442,22 +491,35 @@
       "stats": []
     },
     {
-      "name": "Omar Cooper Jr.",
-      "position": "WR",
+      "name": "Braelon Allen",
+      "position": "RB",
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 5.7,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
           "stat": "REC YD",
-          "value": 52
+          "value": 19
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 3
         }
       ]
+    },
+    {
+      "name": "49ers",
+      "position": "DEF",
+      "team": "SF",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Bijan Robinson",
@@ -474,28 +536,6 @@
         {
           "stat": "REC YD",
           "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
         },
         {
           "stat": "REC",
@@ -670,24 +710,6 @@
       "stats": []
     },
     {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -710,6 +732,42 @@
       ]
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        }
+      ]
+    },
+    {
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
@@ -717,6 +775,38 @@
       "manager_display": "ANTHONY",
       "points": 2.0,
       "stats": []
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 19
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 47
+        }
+      ]
     },
     {
       "name": "Harold Fannin Jr.",
@@ -733,20 +823,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Woody Marks",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 15
         }
       ]
     },
@@ -805,46 +881,6 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.38,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 12
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -888,20 +924,6 @@
       "manager_display": "COYNE",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "C.J. Stroud",
-      "position": "QB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.88,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 22
-        }
-      ]
     },
     {
       "name": "Josh Jacobs",
@@ -1226,24 +1248,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Bryce Young",
-      "position": "QB",
-      "team": "Car",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": -0.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 35
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     }
   ]
 }
