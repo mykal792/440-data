@@ -1,20 +1,20 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T19:55:19Z",
+  "updated": "2026-10-25T20:00:30Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 99.88,
-        "projected": 119.31
+        "projected": 119.34
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 52.1,
-        "projected": 108.83
+        "score": 50.1,
+        "projected": 108.84
       }
     },
     {
@@ -22,13 +22,13 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 62.3,
-        "projected": 121.97
+        "projected": 122.0
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 38.1,
-        "projected": 132.63
+        "projected": 132.65
       }
     },
     {
@@ -36,7 +36,7 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 64.02,
-        "projected": 125.98
+        "projected": 125.96
       },
       "away": {
         "name": "SCOTTY",
@@ -49,27 +49,27 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 60.4,
-        "projected": 103.02
+        "score": 62.7,
+        "projected": 103.05
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
         "score": 42.8,
-        "projected": 122.61
+        "projected": 122.63
       }
     },
     {
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 91.9,
+        "score": 96.3,
         "projected": 123.25
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 84.24,
+        "score": 84.84,
         "projected": 119.34
       }
     }
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "91.90",
+          "value": "96.30",
           "detail": "2 to play"
         },
         {
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "84.24",
+          "value": "84.84",
           "detail": "1 to play"
         }
       ]
@@ -565,12 +565,74 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
+        },
+        {
+          "stat": "REC YD",
+          "value": 59
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "C.J. Stroud",
+      "position": "QB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 14.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 150
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.7,
+      "stats": []
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.4,
+      "stats": []
+    },
+    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 14.1,
+      "points": 12.1,
       "stats": [
         {
           "stat": "PASS YD",
@@ -586,71 +648,9 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 14.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 57
-        },
-        {
-          "stat": "REC YD",
-          "value": 59
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.7,
-      "stats": []
-    },
-    {
-      "name": "C.J. Stroud",
-      "position": "QB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 135
-        },
-        {
-          "stat": "RUSH YD",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
-    },
-    {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 12.4,
-      "stats": []
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -752,6 +752,28 @@
       "stats": []
     },
     {
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 66
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -836,6 +858,28 @@
         {
           "stat": "INT",
           "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Carnell Tate",
+      "position": "WR",
+      "team": "Ten",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 69
+        },
+        {
+          "stat": "REC",
+          "value": 5
         },
         {
           "stat": "FUM",
@@ -974,42 +1018,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Carnell Tate",
-      "position": "WR",
-      "team": "Ten",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 51
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Woody Marks",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 50
         }
       ]
     },
