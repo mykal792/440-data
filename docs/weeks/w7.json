@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T20:55:22Z",
+  "updated": "2026-10-25T21:00:31Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 53.52,
+        "score": 55.12,
         "projected": 108.94
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 79.2,
+        "score": 80.4,
         "projected": 122.13
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 51.62,
+        "score": 53.22,
         "projected": 132.73
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 85.02,
+        "score": 82.02,
         "projected": 126.0
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 56.98,
+        "score": 61.48,
         "projected": 122.58
       }
     },
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "6.60",
-          "detail": "DK Metcalf"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "7.80",
+          "detail": "Amon-Ra St. Brown"
         }
       ]
     },
@@ -791,6 +791,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 108
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -811,15 +829,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.0,
-      "stats": []
     },
     {
       "name": "Wil Lutz",
@@ -847,24 +856,6 @@
       "manager_display": "COYNE",
       "points": 9.0,
       "stats": []
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 8.72,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 68
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Woody Marks",
@@ -951,6 +942,24 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 68
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -1019,6 +1028,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Browns",
@@ -1258,20 +1276,24 @@
       ]
     },
     {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.3,
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.1,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
           "stat": "REC YD",
-          "value": 28
+          "value": 7
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 3
         }
       ]
     },
@@ -1330,6 +1352,20 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 24
+        }
+      ]
+    },
+    {
       "name": "Josh Jacobs",
       "position": "RB",
       "team": "GB",
@@ -1370,28 +1406,6 @@
       ]
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "REC YD",
-          "value": -2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jalen Coker",
       "position": "WR",
       "team": "Car",
@@ -1424,20 +1438,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
         }
       ]
     },
