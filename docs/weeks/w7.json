@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T17:15:23Z",
+  "updated": "2026-10-25T17:20:26Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 23.7,
+        "score": 25.7,
         "projected": 132.85
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 23.0,
+        "score": 23.7,
         "projected": 126.21
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 50.6,
+        "score": 51.9,
         "projected": 110.6
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 12.8,
+        "score": 10.8,
         "projected": 102.85
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 16.6,
+        "score": 13.6,
         "projected": 122.61
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 57.64,
+        "score": 59.14,
         "projected": 119.34
       }
     }
@@ -115,8 +115,8 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "57.64",
-          "detail": "2 to play"
+          "value": "59.14",
+          "detail": "1 to play"
         },
         {
           "rank": 2,
@@ -129,8 +129,8 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "50.60",
-          "detail": "4 to play"
+          "value": "51.90",
+          "detail": "3 to play"
         }
       ]
     }
@@ -320,6 +320,15 @@
       "stats": []
     },
     {
+      "name": "Titans",
+      "position": "DEF",
+      "team": "Ten",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -395,24 +404,6 @@
       ]
     },
     {
-      "name": "Titans",
-      "position": "DEF",
-      "team": "Ten",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "49ers",
-      "position": "DEF",
-      "team": "SF",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -465,6 +456,15 @@
           "value": 6
         }
       ]
+    },
+    {
+      "name": "49ers",
+      "position": "DEF",
+      "team": "SF",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "DK Metcalf",
@@ -539,15 +539,6 @@
       "stats": []
     },
     {
-      "name": "Browns",
-      "position": "DEF",
-      "team": "Cle",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "Jets",
       "position": "DEF",
       "team": "NYJ",
@@ -595,6 +586,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Browns",
+      "position": "DEF",
+      "team": "Cle",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.0,
+      "stats": []
     },
     {
       "name": "Pat Freiermuth",
@@ -647,6 +647,28 @@
       ]
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -661,6 +683,20 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -671,6 +707,24 @@
         {
           "stat": "REC YD",
           "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 8
         },
         {
           "stat": "REC",
@@ -794,16 +848,30 @@
       ]
     },
     {
+      "name": "Bryce Young",
+      "position": "QB",
+      "team": "Car",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 10
+        }
+      ]
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.1,
+      "points": 0.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 1
+          "value": 4
         }
       ]
     },
@@ -899,15 +967,6 @@
       "team": "Den",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Bryce Young",
-      "position": "QB",
-      "team": "Car",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
       "points": 0.0,
       "stats": []
     },
@@ -1101,15 +1160,6 @@
       "stats": []
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -1209,29 +1259,11 @@
       "stats": []
     },
     {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     },
