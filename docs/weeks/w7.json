@@ -1,19 +1,19 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-25T19:40:25Z",
+  "updated": "2026-10-25T19:45:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 88.14,
+        "score": 96.88,
         "projected": 119.31
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 46.58,
+        "score": 45.82,
         "projected": 108.83
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 61.3,
+        "score": 62.7,
         "projected": 121.97
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 62.92,
+        "score": 64.02,
         "projected": 125.98
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 70.3,
+        "score": 68.3,
         "projected": 110.61
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 42.3,
+        "score": 42.8,
         "projected": 122.61
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 83.04,
+        "score": 91.12,
         "projected": 123.25
       },
       "away": {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "88.14",
+          "value": "96.88",
           "detail": "3 to play"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "83.04",
+          "value": "91.12",
           "detail": "2 to play"
         },
         {
@@ -136,6 +136,28 @@
     }
   },
   "top_players": [
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 36.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 292
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "TD",
+          "value": 4
+        }
+      ]
+    },
     {
       "name": "Drake Maye",
       "position": "QB",
@@ -163,28 +185,6 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 30.24,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 276
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -199,6 +199,28 @@
         {
           "stat": "REC",
           "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 25.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 137
+        },
+        {
+          "stat": "REC",
+          "value": 8
         },
         {
           "stat": "TD",
@@ -229,28 +251,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 24.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 131
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -286,11 +286,11 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 22.4,
+      "points": 22.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 91
+          "value": 96
         },
         {
           "stat": "REC YD",
@@ -373,6 +373,32 @@
         {
           "stat": "REC",
           "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 18.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -495,32 +521,6 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 15.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 39
-        },
-        {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -587,16 +587,25 @@
       ]
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.7,
+      "stats": []
+    },
+    {
       "name": "C.J. Stroud",
       "position": "QB",
       "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 13.04,
+      "points": 13.52,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 121
+          "value": 133
         },
         {
           "stat": "RUSH YD",
@@ -645,15 +654,6 @@
       ]
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -668,6 +668,24 @@
         {
           "stat": "REC",
           "value": 7
+        }
+      ]
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 66
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -699,6 +717,15 @@
       "stats": []
     },
     {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -715,15 +742,6 @@
           "value": 6
         }
       ]
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.5,
-      "stats": []
     },
     {
       "name": "Titans",
@@ -753,6 +771,28 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.82,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 238
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -809,24 +849,6 @@
       ]
     },
     {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 52
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -850,28 +872,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.58,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 207
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -974,15 +974,6 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
@@ -993,6 +984,28 @@
         {
           "stat": "RUSH YD",
           "value": 49
+        }
+      ]
+    },
+    {
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 44
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -1082,26 +1095,13 @@
       ]
     },
     {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 3.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 35
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
+      "stats": []
     },
     {
       "name": "Pat Freiermuth",
