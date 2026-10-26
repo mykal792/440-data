@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-26T02:40:26Z",
+  "updated": "2026-10-26T02:45:22Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 117.22,
+        "score": 119.62,
         "projected": 131.84
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 75.86,
+        "score": 79.26,
         "projected": 103.21
       },
       "away": {
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "118.22",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "119.62",
           "detail": "All played"
         }
       ]
@@ -1482,6 +1482,46 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 159
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -1589,24 +1629,6 @@
       ]
     },
     {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Aaron Jones Sr.",
       "position": "RB",
       "team": "Min",
@@ -1639,24 +1661,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 109
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
