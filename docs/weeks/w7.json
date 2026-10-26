@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-26T02:15:24Z",
+  "updated": "2026-10-26T02:20:24Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 116.02,
+        "score": 116.92,
         "projected": 131.84
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 110.82,
+        "score": 112.22,
         "projected": 126.11
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 74.22,
+        "score": 75.02,
         "projected": 103.21
       },
       "away": {
@@ -129,8 +129,8 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "116.02",
-          "detail": "1 to play"
+          "value": "116.92",
+          "detail": "All played"
         }
       ]
     }
@@ -1397,6 +1397,28 @@
       ]
     },
     {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 30
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
@@ -1478,28 +1500,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 28
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1652,6 +1652,24 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 88
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jalen Coker",
       "position": "WR",
       "team": "Car",
@@ -1688,19 +1706,19 @@
       "stats": []
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
+      "name": "Travis Kelce",
+      "position": "TE",
       "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.72,
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.9,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 68
+          "stat": "REC YD",
+          "value": 4
         },
         {
-          "stat": "INT",
+          "stat": "REC",
           "value": 1
         }
       ]
@@ -1747,15 +1765,6 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
