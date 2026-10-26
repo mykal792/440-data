@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-26T21:35:24Z",
+  "updated": "2026-10-26T21:40:30Z",
   "matchups": [
     {
       "home": {
@@ -123,7 +123,7 @@
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "125.68",
-          "detail": "6 to play"
+          "detail": "1 to play"
         },
         {
           "rank": 3,
@@ -543,6 +543,32 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 19.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 61
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ollie Gordon II",
       "position": "RB",
       "team": "Mia",
@@ -631,6 +657,32 @@
         {
           "stat": "REC",
           "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 17.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 36
+        },
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 5
         },
         {
           "stat": "TD",
@@ -783,6 +835,28 @@
         {
           "stat": "REC",
           "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 16.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 69
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -954,6 +1028,24 @@
       "stats": []
     },
     {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.4,
+      "stats": []
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
@@ -1043,24 +1135,6 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 39
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -1115,6 +1189,24 @@
         {
           "stat": "REC",
           "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 57
+        },
+        {
+          "stat": "REC",
+          "value": 5
         }
       ]
     },
@@ -1483,6 +1575,24 @@
       "stats": []
     },
     {
+      "name": "Germie Bernard",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Harrison Butker",
       "position": "K",
       "team": "KC",
@@ -1499,20 +1609,6 @@
       "manager_display": "SCOTTY",
       "points": 4.0,
       "stats": []
-    },
-    {
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        }
-      ]
     },
     {
       "name": "Garrett Wilson",
@@ -1641,54 +1737,9 @@
       "stats": []
     },
     {
-      "name": "Germie Bernard",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
