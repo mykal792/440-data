@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-27T01:05:23Z",
+  "updated": "2026-10-27T01:10:24Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 112.56,
+        "score": 113.76,
         "projected": 121.98
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 114.36,
+        "score": 114.76,
         "projected": 122.53
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 131.82,
+        "score": 133.22,
         "projected": 123.71
       },
       "away": {
@@ -122,8 +122,8 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "131.82",
-          "detail": "1 to play"
+          "value": "133.22",
+          "detail": "All played"
         },
         {
           "rank": 3,
@@ -1135,6 +1135,28 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 69
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -1229,24 +1251,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.16,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 54
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1504,6 +1508,20 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 62
+        }
+      ]
+    },
+    {
       "name": "Courtland Sutton",
       "position": "WR",
       "team": "Den",
@@ -1567,20 +1585,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 58
         }
       ]
     },
@@ -1782,6 +1786,24 @@
       ]
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jalen Coker",
       "position": "WR",
       "team": "Car",
@@ -1815,15 +1837,6 @@
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 1.0,
-      "stats": []
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
       "stats": []
     },
     {
