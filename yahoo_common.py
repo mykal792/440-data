@@ -1048,9 +1048,9 @@ def pad_leaders(leaders, size=3):
     for i in range(len(out), size):
         out.append({
             "rank": i + 1,
-            "manager": "NAME",
+            "manager": "TBD",
             "face": "",
-            "value": "0.00",
+            "value": "--",
             "detail": "",
         })
     return out
