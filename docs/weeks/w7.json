@@ -1,7 +1,7 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-27T02:40:25Z",
+  "updated": "2026-10-27T02:45:23Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 133.44,
+        "score": 133.68,
         "projected": 121.98
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 117.36,
+        "score": 123.76,
         "projected": 122.53
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 144.42,
+        "score": 145.52,
         "projected": 123.71
       },
       "away": {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "144.42",
+          "value": "145.52",
           "detail": "All played"
         },
         {
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "133.44",
+          "value": "133.68",
           "detail": "All played"
         }
       ]
@@ -190,11 +190,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 29.04,
+      "points": 29.28,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 206
+          "value": 212
         },
         {
           "stat": "RUSH YD",
@@ -936,6 +936,20 @@
       "stats": []
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 15.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 132
+        }
+      ]
+    },
+    {
       "name": "Makai Lemon",
       "position": "WR",
       "team": "Phi",
@@ -1028,6 +1042,28 @@
       ]
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 57
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -1077,28 +1113,6 @@
         {
           "stat": "REC",
           "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 51
-        },
-        {
-          "stat": "REC",
-          "value": 3
         },
         {
           "stat": "TD",
@@ -1248,20 +1262,6 @@
       "manager_display": "COYNE",
       "points": 9.0,
       "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 8.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 88
-        }
-      ]
     },
     {
       "name": "Woody Marks",
