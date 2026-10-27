@@ -353,9 +353,17 @@ window.addEventListener('resize', post);
 render();
 pullFeed();
 setInterval(pullFeed, FEED_MS);
+/* Announce until the page code answers: on a fast homepage the iframe can
+   load before Wix is listening, and one missed 'ready' leaves the widget on
+   its built-in duel. Stops as soon as the collection state arrives. */
 (function ready() {
-  function go() { try { if (window.self !== window.top) window.parent.postMessage({ type: 'ready' }, '*'); } catch (e) {} }
-  if (document.readyState === 'complete') go(); else window.addEventListener('load', go);
+  var tries = 0, t = null;
+  function go() {
+    if (GOT_STATE || tries++ > 20) { clearInterval(t); return; }
+    try { if (window.self !== window.top) window.parent.postMessage({ type: 'ready' }, '*'); } catch (e) {}
+  }
+  function start() { go(); t = setInterval(go, 750); }
+  if (document.readyState === 'complete') start(); else window.addEventListener('load', start);
 })();
 </script>
 </body>
