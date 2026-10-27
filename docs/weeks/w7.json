@@ -1,13 +1,13 @@
 {
   "week": 7,
   "status": "live",
-  "updated": "2026-10-27T01:00:32Z",
+  "updated": "2026-10-27T01:05:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 133.08,
+        "score": 134.08,
         "projected": 119.33
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 112.36,
+        "score": 112.56,
         "projected": 121.98
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 112.56,
+        "score": 114.36,
         "projected": 122.53
       }
     },
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "133.08",
+          "value": "134.08",
           "detail": "All played"
         },
         {
@@ -1193,6 +1193,28 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -1207,6 +1229,24 @@
         {
           "stat": "REC",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 8.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 54
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -1249,24 +1289,6 @@
       "manager_display": "GRAHAM",
       "points": 8.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 49
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Chase Brown",
@@ -1338,28 +1360,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -1571,6 +1571,20 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 58
+        }
+      ]
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -1649,20 +1663,6 @@
       "manager_display": "HAYDEN",
       "points": 4.0,
       "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 40
-        }
-      ]
     },
     {
       "name": "Texans",
