@@ -423,7 +423,7 @@ var hasData = false;
 var dpSection = document.getElementById('dp');
 
 function placeholderRow(pos) {
-  return { name: 'NAME', position: pos, team: '', manager: '',
+  return { name: 'TBD', position: pos, team: '', manager: '',
            manager_display: '', points: 0, stats: [], placeholder: true };
 }
 
@@ -537,7 +537,7 @@ function render() {
     main.appendChild(stats);
     row.appendChild(main);
 
-    row.appendChild(el('span', 'dp__pts', p.points.toFixed(2)));
+    row.appendChild(el('span', 'dp__pts', p.placeholder ? '--' : p.points.toFixed(2)));
     list.appendChild(row);
 
     fitTicker(stats, track, statLine(p));   // stats only - names never scroll
