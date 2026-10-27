@@ -88,7 +88,13 @@ def build_bonus(week, status, rosters, matchups, standings, meta, show_pregame,
     if status == "pregame" and not show_pregame:
         cat_leaders, high_leaders = [], []
     else:
-        cat_leaders = yc.rank_rows(rows, ascending=ascending)
+        # Same all-zero guard as High Score below: if nobody has scored yet
+        # (e.g. Tuesday before Thursday kickoff) the "leader" is just whoever
+        # sorts first, so show placeholders instead of a fake #1.
+        if rows and all(r[1] == 0 for r in rows):
+            cat_leaders = []
+        else:
+            cat_leaders = yc.rank_rows(rows, ascending=ascending)
         high_rows = yc.high_score_rows(rosters, matchups, standings, remaining)
         # high_score_rows() builds a row for every manager regardless of
         # whether they've actually scored - it has no "nobody's played yet"
