@@ -1,15 +1,15 @@
 {
   "season": 2026,
-  "updated": "2026-10-27T05:55:17Z",
+  "updated": "2026-10-27T11:00:32Z",
   "pot": {
     "total": 300,
     "dot_value": 5,
-    "paid_out": 120,
-    "remaining": 180
+    "paid_out": 140,
+    "remaining": 160
   },
   "totals": {
     "schilling": {
-      "QB": 0,
+      "QB": 1,
       "RB": 0,
       "WR": 2,
       "TE": 0
@@ -22,7 +22,7 @@
     },
     "hayden": {
       "QB": 1,
-      "RB": 3,
+      "RB": 4,
       "WR": 0,
       "TE": 2
     },
@@ -35,14 +35,14 @@
     "scarpitti": {
       "QB": 2,
       "RB": 0,
-      "WR": 2,
+      "WR": 3,
       "TE": 0
     },
     "gangus": {
       "QB": 0,
       "RB": 0,
       "WR": 1,
-      "TE": 3
+      "TE": 4
     },
     "graham": {
       "QB": 0,
@@ -313,6 +313,47 @@
           ],
           "value": "20.90",
           "detail": "Isaiah Likely"
+        }
+      }
+    },
+    {
+      "week": 7,
+      "positions": {
+        "QB": {
+          "manager": "schilling",
+          "manager_display": "SCHILLING",
+          "managers": [
+            "SCHILLING"
+          ],
+          "value": "36.88",
+          "detail": "Joe Burrow"
+        },
+        "RB": {
+          "manager": "hayden",
+          "manager_display": "HAYDEN",
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "25.50",
+          "detail": "Bucky Irving"
+        },
+        "WR": {
+          "manager": "scarpitti",
+          "manager_display": "SCARPITTI",
+          "managers": [
+            "SCARPITTI"
+          ],
+          "value": "28.80",
+          "detail": "Jaxon Smith-Njigba"
+        },
+        "TE": {
+          "manager": "gangus",
+          "manager_display": "GANGUS",
+          "managers": [
+            "GANGUS"
+          ],
+          "value": "24.10",
+          "detail": "Trey McBride"
         }
       }
     }
