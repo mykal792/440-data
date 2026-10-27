@@ -648,6 +648,8 @@ body { background: #191919; -webkit-font-smoothing: antialiased; }
 .dx .dx-legend .b em { color: var(--mint); }
 .dx .dx-legend em[data-lost="1"] { color: var(--g2); }
 
+.dx .dx-pending b { color: #fff; font-weight: 800; }
+.dx .dx-pending { margin: calc(26 * var(--u)) 0 0; font-family: var(--body); font-weight: 500; font-size: calc(13 * var(--u)); line-height: 1.5; color: var(--g3); text-align: center; }
 /* ---------- duel rules popup ---------- */
 /* Anchored under its button, not centred on screen: inside the Wix embed the
    iframe is as tall as the whole page, so "centre of the viewport" can be
@@ -1350,9 +1352,17 @@ function renderBlock(spot) {
 }
 
 /* ---------- duel ---------- */
+/* the last resolved duel, shown through the week after it was played */
+function recentDuelResult() {
+  var l = S.d.lastDuel;
+  return l && l.challenger && l.challenged && S.d.week - l.week <= 1 ? l : null;
+}
 function renderDuel() {
   var duel = S.duel, d = S.d;
-  if (!duel) {
+  /* A resolved duel is kept as lastDuel (written by the commissioner panel)
+     and shown through the following week. */
+  var ld = !duel ? recentDuelResult() : null;
+  if (!duel && !ld) {
     var e = el('div', 'board');
     var eh = el('div', 'head');
     eh.innerHTML = '<h3>REDEMPTION DUEL</h3><span class="dashrule"></span><span class="cnt">NONE THIS WEEK</span>' + rulesButton('pill');
@@ -1366,12 +1376,21 @@ function renderDuel() {
     return e;
   }
 
-  var a = duel.challenger, b2 = duel.challenged;
-  var sa = score(a), sb = score(b2), final = !!d.final;
-  var aWins = sa > sb;
+  var src = duel || ld;
+  var a = src.challenger, b2 = src.challenged;
+  /* once Yahoo rolls to the next week, the feed's scores belong to that week:
+     an unresolved duel then shows no numbers until it is recorded */
+  var stale = !!duel && !!duel.week && d.week > duel.week;
+  var scOf = function (id) {
+    if (ld) return ld.scores && ld.scores[id] != null ? ld.scores[id] : null;
+    return stale ? null : score(id);
+  };
+  var sa = scOf(a), sb = scOf(b2), final = !!ld || (!stale && !!d.final);
+  var aWins = ld ? ld.winner === a : sa > sb;
   var outA = final && !aWins, outB = final && aWins;
 
-  var wrap = el('div', 'board spot dx');
+  /* a past result sits at the top but leaves the spotlight to the chopping block */
+  var wrap = el('div', ld ? 'board dx' : 'board spot dx');
   wrap.setAttribute('data-acc', 'pink');
   var h = el('div', 'dx-head');
   h.innerHTML = '<h2>REDEMPTION DUEL</h2><span class="dx-rule" aria-hidden="true"></span>' + rulesButton();
@@ -1380,13 +1399,15 @@ function renderDuel() {
   var role = function (who, state) { return '<span class="role"><span>' + who + '</span><i aria-hidden="true"></i><span>' + state + '</span></span>'; };
   var meta = function (id, r) {
     return '<span class="meta">' + r + '<span class="nm">' + esc(nameOf(id)) + '</span>' +
-      '<span class="pts num">' + fmt(score(id)) + '</span><span class="toplay">' + toPlay(id) + '</span></span>';
+      '<span class="pts num">' + (scOf(id) == null ? '\u2014' : fmt(scOf(id))) + '</span>' +
+      (final || stale ? '' : '<span class="toplay">' + toPlay(id) + '</span>') + '</span>';
   };
   var body = el('div', 'dx-body');
   var ca = el('div', 'dx-card a');
   if (outA) ca.setAttribute('data-lost', '1');
   ca.innerHTML = av(a, outA ? 'out' : '') + meta(a, role('CHALLENGER',
     final ? (aWins ? 'BACK IN' : 'ELIMINATED') : 'OUT W' + (S.out[a] ? S.out[a].week : '?')));
+  if (ld) wrap.setAttribute('data-result', '1');
   var mid = el('div', 'dx-mid');
   mid.innerHTML = coin(!final);
   var cb = el('div', 'dx-card b');
@@ -1397,6 +1418,10 @@ function renderDuel() {
 
   /* win chance, challenger pink on the left, defender mint on the right;
      once final it is the result, and the loser's half goes grey */
+  if (stale) {
+    wrap.appendChild(el('p', 'dx-pending', 'Week ' + duel.week + ' is over. The result will show here once it\u2019s recorded.'));
+    return wrap;
+  }
   var pa = final ? (aWins ? 100 : 0) : duelOdds(a, b2), pb = 100 - pa;
   var bar = el('div', 'dx-bar');
   bar.setAttribute('role', 'img');
@@ -1412,6 +1437,9 @@ function renderDuel() {
   lg.innerHTML = '<span class="a"><b class="num">' + va + '</b><em' + (outA ? ' data-lost="1"' : '') + '>' + esc(nameOf(a)) + '</em></span>' +
                  '<span class="b"><em' + (outB ? ' data-lost="1"' : '') + '>' + esc(nameOf(b2)) + '</em><b class="num">' + vb + '</b></span>';
   wrap.appendChild(lg);
+  if (final) wrap.appendChild(el('p', 'dx-pending', 'Week ' + (src.week || d.week) + ' final: ' + (aWins
+    ? '<b>' + esc(nameOf(a)) + '</b> is back in Squid Game. <b>' + esc(nameOf(b2)) + '</b> is eliminated.'
+    : '<b>' + esc(nameOf(b2)) + '</b> survives. <b>' + esc(nameOf(a)) + '</b> is eliminated.')));
   return wrap;
 }
 
@@ -1572,10 +1600,11 @@ function render() {
     stage.appendChild(renderField());
     stage.appendChild(renderTokenStrip());
   } else {
-    if (S.duel) stage.appendChild(renderDuel());
+    var duelOnTop = !!(S.duel || recentDuelResult());
+    if (duelOnTop) stage.appendChild(renderDuel());
     stage.appendChild(renderBlock(!S.duel));
     stage.appendChild(renderField());
-    if (!S.duel) stage.appendChild(renderDuel());
+    if (!duelOnTop) stage.appendChild(renderDuel());
     stage.appendChild(renderTokenStrip());
   }
   stage.appendChild(renderHow());
@@ -1643,7 +1672,7 @@ function rulesPop() {
       '<div class="dx-oc win"><span class="dx-lbl">CHALLENGER WINS</span><ul>' +
         '<li>Takes the defender\u2019s spot</li><li>Defender is eliminated</li><li>Token leaves play</li></ul></div>' +
       '<div class="dx-oc lose"><span class="dx-lbl">CHALLENGER LOSES</span><ul>' +
-        '<li>Challenger is out for good</li><li>Defender stays alive</li>' +
+        '<li>Challenger is eliminated</li><li>Defender stays alive</li>' +
         '<li>Token goes to the defender<small>Only if they\u2019ve never held one. Otherwise it leaves play.</small></li></ul></div>' +
     '</div>' +
     '<div class="dx-cut"><span class="dx-lbl">THEN THE WEEKLY CUT</span>' +

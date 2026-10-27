@@ -109,6 +109,44 @@ html, body { margin: 0; padding: 0; background: transparent; }
   .coin { width: 30px; height: 30px; }
   .role, .tp { font-size: 8.5px; letter-spacing: .1em; }
 }
+
+/* ---------- chopping block card (no duel this week) ---------- */
+.cb { display: flex; align-items: center; gap: 22px; margin-top: 26px; }
+.cb .av { width: 92px; }
+.cb .meta { flex: 1; min-width: 0; }
+.cb .cap { display: flex; align-items: center; gap: 7px; font-weight: 800; font-size: 10px; letter-spacing: .14em; color: var(--pink); text-transform: uppercase; white-space: nowrap; }
+.cb .cap i { width: 7px; height: 7px; border-radius: 50%; background: var(--pink); flex: none; }
+.cb .nm { font-size: 22px; margin-top: 10px; }
+.cb .pts { font-size: 32px; margin-top: 6px; }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 10px; margin-top: 24px; }
+.stat { background: #333; border-radius: 12px; padding: 14px 14px 13px; min-width: 0; }
+.stat span { display: block; font-weight: 800; font-size: 9px; letter-spacing: .14em; color: var(--g1); text-transform: uppercase; white-space: nowrap; }
+.stat b { display: block; margin-top: 8px; font-family: var(--display); font-weight: 900; font-size: 20px; letter-spacing: .02em; color: #fff; white-space: nowrap; }
+.stat b.mint { color: var(--mint); } .stat b.pink { color: var(--pink); }
+.next { margin: 20px 0 0; font-family: var(--body); font-weight: 500; font-size: 14px; line-height: 1.5; color: var(--g3); }
+.next b { color: #fff; font-weight: 800; }
+.tokline { display: flex; align-items: center; gap: 9px; margin-top: 14px; font-weight: 800; font-size: 10px; letter-spacing: .1em; color: var(--gold); text-transform: uppercase; line-height: 1.35; }
+.tokline .coin { width: 22px; height: 22px; flex: none; }
+.recap { display: flex; align-items: center; gap: 12px; margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.08); }
+.recap .coin { width: 26px; height: 26px; flex: none; }
+.recap p { margin: 0; font-family: var(--body); font-weight: 500; font-size: 13px; line-height: 1.45; color: var(--g3); }
+.recap p b { color: #fff; font-weight: 800; }
+.recap p .win { color: var(--mint); }
+@container (max-width: 500px) {
+  .cb { gap: 18px; margin-top: 22px; }
+  .cb .av { width: 80px; }
+  .cb .nm { font-size: 19px; } .cb .pts { font-size: 28px; }
+  .stats { gap: 8px; margin-top: 20px; }
+  .stat { padding: 12px 11px 11px; }
+  .stat b { font-size: 17px; }
+}
+@container (max-width: 360px) {
+  .cb .av { width: 66px; } .cb { gap: 14px; }
+  .cb .nm { font-size: 17px; } .cb .pts { font-size: 24px; }
+  .stat span { font-size: 8px; letter-spacing: .1em; }
+  .stat b { font-size: 15px; }
+  .next, .recap p { font-size: 13px; }
+}
 </style>
 </head>
 <body>
@@ -176,11 +214,72 @@ function avatar(id, out) {
 function hqLink() { return HQ_URL ? '<a class="hq" href="' + esc(HQ_URL) + '" target="_top">Open Squid Game HQ</a>' : ''; }
 function toPlay(H, id) { var n = H.left(id); return n === 0 ? 'ALL PLAYED' : '<b>' + n + '</b> LEFT TO PLAY'; }
 
+/* ---------- chopping block: the team projected to go home ----------
+   Same model as HQ: active teams ranked on projected finish (score as the
+   tiebreak); risk falls off exponentially with the margin over the low, and
+   the spread widens with the starters still to play. */
+function blockCard(d, H, last) {
+  var out = {}; (d.eliminated || []).forEach(function (e) { out[e.id] = 1; });
+  var act = (d.players || []).filter(function (p) { return !out[p.id]; });
+  var ranked = act.slice().sort(function (x, y) { return (H.proj(x.id) - H.proj(y.id)) || (H.score(x.id) - H.score(y.id)); });
+  if (ranked.length < 2) return null;
+  var allPlayed = ranked.every(function (p) { return H.left(p.id) === 0; });
+  var settled = !!d.final || allPlayed;
+  if (settled) ranked.sort(function (x, y) { return H.score(x.id) - H.score(y.id); });
+  var low = ranked[0], next = ranked[1];
+
+  var surv;
+  if (settled) surv = 0;
+  else {
+    var pr = ranked.map(function (p) { return H.proj(p.id); }), mn = Math.min.apply(null, pr);
+    var avg = ranked.reduce(function (t, p) { return t + H.left(p.id); }, 0) / ranked.length;
+    var vol = Math.max(2.5, (d.sdPerPlayer > 0 ? d.sdPerPlayer : 7) * Math.sqrt(avg));
+    var wts = pr.map(function (v) { return Math.exp(-(v - mn) / vol); }), sum = wts.reduce(function (t, v) { return t + v; }, 0);
+    surv = (1 - wts[0] / sum) * 100;
+  }
+  var cap = d.final ? 'ELIMINATED' : (settled ? 'ON THE BLOCK' : 'PROJECTED LOW');
+  var lowTok = (d.tokens || []).some(function (t) { return t.holder === low.id && (t.status === 'held' || t.status === 'active'); });
+  var gap = settled ? H.score(next.id) - H.score(low.id) : H.proj(next.id) - H.proj(low.id);
+  var left = H.left(low.id);
+
+  var html =
+    '<div class="hd"><h2>Chopping Block</h2><span class="rule"></span>' +
+      '<span class="tag ' + (d.final ? 'final' : (d.live ? 'live' : '')) + '"><i></i>WEEK ' + esc(d.week) + ' · ' + (d.final ? 'FINAL' : (d.live ? 'LIVE' : 'UP NEXT')) + '</span></div>' +
+    '<div class="cb">' + avatar(low.id, !!d.final) +
+      '<div class="meta"><span class="cap"><i></i>' + cap + '</span>' +
+        '<span class="nm">' + esc(H.name(low.id)) + '</span><span class="pts">' + fmt(H.score(low.id)) + '</span></div></div>' +
+    '<div class="stats">' +
+      '<div class="stat"><span>' + (settled ? 'Final' : 'Projects to') + '</span><b>' + fmt(settled ? H.score(low.id) : H.proj(low.id)) + '</b></div>' +
+      '<div class="stat"><span>Survival</span><b class="pink">' + pct(surv) + '</b></div>' +
+      '<div class="stat"><span>Left to play</span><b>' + left + '</b></div>' +
+    '</div>' +
+    '<p class="next"><b>' + esc(H.name(next.id)) + '</b> is next up, ' + fmt(gap) + ' ' + (settled ? 'points clear.' : 'ahead on projection.') + '</p>' +
+    (lowTok ? '<div class="tokline"><span class="coin live"></span>Holds a duel token — ' + (d.final ? 'must challenge next week' : 'gets a challenge if this holds') + '</div>' : '');
+
+  if (last) {
+    var a = last.challenger, b = last.challenged, aw = last.winner === a, wn = aw ? a : b, ls = aw ? b : a;
+    var sc = last.scores || {};
+    var line = sc[wn] != null && sc[ls] != null ? ' <span style="white-space:nowrap">' + fmt(sc[wn]) + '\u2013' + fmt(sc[ls]) + '</span>' : '';
+    html += '<div class="recap"><span class="coin spent"></span><p>Week ' + esc(last.week) + ' duel: <b class="win">' + esc(H.name(wn)) + '</b> beat <b>' + esc(H.name(ls)) + '</b>' + line + '. ' +
+      (aw ? esc(H.name(a)) + ' is back in.' : esc(H.name(a)) + ' is eliminated.') + '</p></div>';
+  }
+  return html + hqLink();
+}
+
 function render() {
   var d = merged(), H = maker(d), w = document.getElementById('w');
   var duel = d.duel && d.duel.challenger && d.duel.challenged ? d.duel : null;
   var last = !duel && d.lastDuel && d.lastDuel.challenger && d.week - d.lastDuel.week <= 1 ? d.lastDuel : null;
 
+  /* no live duel: weeks 4-11 show the chopping block, with last week's duel
+     result as a one-line recap */
+  if (!duel) {
+    var outN = (d.eliminated || []).length, actN = (d.players || []).length - outN;
+    if (d.week >= 4 && d.week <= 11 && actN > 2) {
+      var cbh = blockCard(d, H, last);
+      if (cbh) { w.innerHTML = cbh; return post(); }
+    }
+  }
   if (!duel && !last) {
     var held = (d.tokens || []).filter(function (t) { return t.status === 'held'; }).length;
     w.innerHTML = '<div class="hd"><h2>Redemption Duel</h2><span class="rule"></span><span class="tag">WEEK ' + esc(d.week || '') + '</span></div>' +
@@ -188,10 +287,13 @@ function render() {
     return post();
   }
 
-  var a, b, sa, sb, done, aWins, wk;
+  var a, b, sa, sb, done, aWins, wk, pending = false;
   if (duel) {
     a = duel.challenger; b = duel.challenged; wk = duel.week || d.week;
-    sa = H.score(a); sb = H.score(b); done = !!d.final;
+    /* once Yahoo rolls to the next week the feed's scores belong to that week:
+       show no numbers until the result is recorded */
+    pending = !!duel.week && d.week > duel.week;
+    sa = pending ? null : H.score(a); sb = pending ? null : H.score(b); done = !pending && !!d.final;
   } else {
     a = last.challenger; b = last.challenged; wk = last.week;
     sa = last.scores ? last.scores[a] : null; sb = last.scores ? last.scores[b] : null; done = true;
@@ -205,16 +307,18 @@ function render() {
     return '<div class="side ' + cls + '"' + (lost ? ' data-lost="1"' : '') + '>' + avatar(id, lost) +
       '<span class="meta">' + r + '<span class="nm">' + esc(H.name(id)) + '</span>' +
       (s != null ? '<span class="pts">' + fmt(s) + '</span>' : '') +
-      (duel && !done ? '<span class="tp">' + toPlay(H, id) + '</span>' : '') + '</span></div>';
+      (duel && !done && !pending ? '<span class="tp">' + toPlay(H, id) + '</span>' : '') + '</span></div>';
   };
   var html =
     '<div class="hd"><h2>Redemption Duel</h2><span class="rule"></span>' +
-      '<span class="tag ' + (done ? 'final' : (d.live ? 'live' : '')) + '"><i></i>WEEK ' + esc(wk) + ' · ' + (done ? 'FINAL' : (d.live ? 'LIVE' : 'UP NEXT')) + '</span></div>' +
+      '<span class="tag ' + (done || pending ? 'final' : (d.live ? 'live' : '')) + '"><i></i>WEEK ' + esc(wk) + ' · ' + (done || pending ? 'FINAL' : (d.live ? 'LIVE' : 'UP NEXT')) + '</span></div>' +
     '<div class="vs">' +
       side(a, 'a', role('CHALLENGER'), sa, outA) +
-      '<div class="mid"><span class="coin ' + (done ? 'spent' : 'live') + '"></span></div>' +
+      '<div class="mid"><span class="coin ' + (done || pending ? 'spent' : 'live') + '"></span></div>' +
       side(b, 'b', role('DEFENDER'), sb, outB) +
     '</div>' +
+    (pending ? '<p class="verdict">Week ' + esc(wk) + ' is over. The result will show here once it\u2019s recorded.</p>' + hqLink() : '') +
+    (pending ? '' :
     '<div class="bar" role="img" aria-label="' + esc(H.name(a) + ' ' + pct(pa) + ', ' + H.name(b) + ' ' + pct(pb) + (done ? ', final' : ' to win')) + '">' +
       '<i style="width:' + pa.toFixed(1) + '%"' + (outA ? ' data-lost="1"' : '') + '></i><i style="width:' + pb.toFixed(1) + '%"' + (outB ? ' data-lost="1"' : '') + '></i></div>' +
     '<div class="lg" aria-hidden="true"><span class="a"><b>' + (done ? (aWins ? 'WON' : 'OUT') : pct(pa)) + '</b><em' + (outA ? ' data-lost="1"' : '') + '>' + esc(H.name(a)) + '</em></span>' +
@@ -223,9 +327,9 @@ function render() {
     (done
       ? '<p class="verdict">' + (aWins
           ? '<b>' + esc(H.name(a)) + '</b> is back in Squid Game. <b>' + esc(H.name(b)) + '</b> is eliminated.'
-          : '<b>' + esc(H.name(b)) + '</b> survives. <b>' + esc(H.name(a)) + '</b> is out for good.') + '</p>'
+          : '<b>' + esc(H.name(b)) + '</b> survives. <b>' + esc(H.name(a)) + '</b> is eliminated.') + '</p>'
       : '') +
-    hqLink();
+    hqLink());
   w.innerHTML = html;
   post();
 }
