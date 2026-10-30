@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T01:35:24Z",
+  "updated": "2026-10-30T01:40:28Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 12.7,
+        "score": 13.1,
         "projected": 124.81
       }
     },
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "12.70",
+          "value": "13.10",
           "detail": "8 to play"
         }
       ]
@@ -155,6 +155,32 @@
       ]
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 13.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -172,32 +198,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 12.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 30
-        },
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
