@@ -1,13 +1,13 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T01:05:21Z",
+  "updated": "2026-10-30T01:10:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 6.2,
+        "score": 15.3,
         "projected": 115.3
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 7.7,
+        "score": 8.5,
         "projected": 118.37
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 10.1,
+        "score": 12.58,
         "projected": 120.44
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "4.10",
+          "value": "13.00",
           "detail": "Christian Watson"
         },
         {
@@ -113,29 +113,51 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "12.00",
-          "detail": "8 to play"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "15.30",
+          "detail": "7 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "10.10",
+          "value": "12.58",
           "detail": "7 to play"
         },
         {
           "rank": 3,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "7.70",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "12.00",
           "detail": "8 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 13.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 100
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Chuba Hubbard",
       "position": "RB",
@@ -168,11 +190,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 8.6,
+      "points": 11.08,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 65
+          "value": 127
         },
         {
           "stat": "TD",
@@ -186,40 +208,18 @@
       "team": "GB",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 7.7,
+      "points": 8.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 12
+          "value": 15
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
@@ -230,11 +230,11 @@
       "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 2.1,
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 8
+          "value": 10
         },
         {
           "stat": "REC YD",
