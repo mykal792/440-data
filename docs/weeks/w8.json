@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T02:15:26Z",
+  "updated": "2026-10-30T02:20:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 14.6,
+        "score": 17.3,
         "projected": 124.73
       }
     },
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "14.90",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "17.30",
           "detail": "8 to play"
         }
       ]
@@ -181,16 +181,20 @@
       ]
     },
     {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 14.9,
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 17.3,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 67
+        },
+        {
           "stat": "REC YD",
-          "value": 64
+          "value": 21
         },
         {
           "stat": "REC",
@@ -203,20 +207,16 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 14.6,
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.9,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 40
-        },
-        {
           "stat": "REC YD",
-          "value": 21
+          "value": 64
         },
         {
           "stat": "REC",
