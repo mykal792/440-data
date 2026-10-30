@@ -1,19 +1,19 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T02:35:19Z",
+  "updated": "2026-10-30T02:40:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 31.6,
+        "score": 32.7,
         "projected": 115.25
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 17.4,
+        "score": 18.0,
         "projected": 124.73
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 33.18,
+        "score": 33.22,
         "projected": 120.44
       }
     },
@@ -93,14 +93,14 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "13.00",
+          "value": "14.10",
           "detail": "Christian Watson"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "4.70",
+          "value": "6.50",
           "detail": "Tetairoa McMillan"
         }
       ]
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "33.18",
+          "value": "33.22",
           "detail": "7 to play"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "31.60",
+          "value": "32.70",
           "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "17.40",
+          "value": "18.00",
           "detail": "8 to play"
         }
       ]
@@ -142,15 +142,19 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 28.48,
+      "points": 26.72,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 262
+          "value": 268
         },
         {
           "stat": "TD",
           "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -186,11 +190,11 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 17.4,
+      "points": 18.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 68
+          "value": 74
         },
         {
           "stat": "REC YD",
@@ -234,15 +238,15 @@
       "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 13.0,
+      "points": 14.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 100
+          "value": 106
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 7
         },
         {
           "stat": "FUM",
@@ -278,15 +282,15 @@
       "team": "Car",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 4.7,
+      "points": 6.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 32
+          "value": 45
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 4
         }
       ]
     },
