@@ -1,13 +1,13 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T00:20:26Z",
+  "updated": "2026-10-30T00:25:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 0.0,
+        "score": 0.9,
         "projected": 115.3
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 0.0,
+        "score": 0.16,
         "projected": 120.44
       }
     },
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "0.90",
+          "detail": "Christian Watson"
         },
         {
           "rank": 2,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "0.00",
+          "detail": "Drake London"
         },
         {
-          "rank": 3,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "rank": 2,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "0.00",
+          "detail": "Zay Flowers"
         }
       ]
     },
@@ -122,15 +122,15 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "0.00",
-          "detail": "9 to play"
+          "value": "0.90",
+          "detail": "8 to play"
         },
         {
-          "rank": 2,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "0.00",
-          "detail": "9 to play"
+          "rank": 3,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "0.16",
+          "detail": "8 to play"
         }
       ]
     }
@@ -151,6 +151,38 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 4
         }
       ]
     },
@@ -185,15 +217,6 @@
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -556,15 +579,6 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 0.0,
       "stats": []
     },
