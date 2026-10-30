@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T02:45:24Z",
+  "updated": "2026-10-30T02:50:28Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 18.0,
+        "score": 18.8,
         "projected": 124.73
       }
     },
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "18.00",
+          "value": "18.80",
           "detail": "8 to play"
         }
       ]
@@ -159,6 +159,32 @@
       ]
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 18.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 82
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Josh Jacobs",
       "position": "RB",
       "team": "GB",
@@ -181,32 +207,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 18.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 74
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
