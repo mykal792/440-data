@@ -1,8 +1,26 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T01:30:33Z",
+  "updated": "2026-10-30T01:35:24Z",
   "players": [
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 19.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 175
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
     {
       "name": "Christian Watson",
       "position": "WR",
@@ -52,16 +70,20 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
+      "name": "Matthew Golden",
+      "position": "WR",
       "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.04,
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 10.5,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 151
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
@@ -113,24 +135,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
           "value": 1
         }
       ]
