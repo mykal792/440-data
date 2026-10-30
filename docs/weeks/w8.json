@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T00:15:25Z",
+  "updated": "2026-10-30T00:20:26Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 0.0,
+        "score": 1.9,
         "projected": 124.74
       }
     },
@@ -113,29 +113,47 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "1.90",
+          "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "0.00",
+          "detail": "9 to play"
         },
         {
-          "rank": 3,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "rank": 2,
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "0.00",
+          "detail": "9 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Joe Burrow",
       "position": "QB",
@@ -635,15 +653,6 @@
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
