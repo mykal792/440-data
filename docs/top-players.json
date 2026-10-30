@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T01:10:27Z",
+  "updated": "2026-10-30T01:15:30Z",
   "players": [
     {
       "name": "Christian Watson",
@@ -57,11 +57,37 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 11.08,
+      "points": 11.12,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 127
+          "value": 128
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 3
         },
         {
           "stat": "TD",
@@ -88,28 +114,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
