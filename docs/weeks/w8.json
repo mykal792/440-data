@@ -1,19 +1,19 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-10-30T00:25:27Z",
+  "updated": "2026-10-30T00:30:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 0.9,
+        "score": 1.7,
         "projected": 115.3
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 1.9,
+        "score": 2.8,
         "projected": 124.74
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 0.16,
+        "score": 0.28,
         "projected": 120.44
       }
     },
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "1.90",
+          "value": "2.80",
           "detail": "8 to play"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "0.90",
-          "detail": "8 to play"
+          "value": "1.70",
+          "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "0.16",
+          "value": "0.28",
           "detail": "8 to play"
         }
       ]
@@ -142,15 +142,19 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 1.9,
+      "points": 2.8,
       "stats": [
         {
           "stat": "RUSH YD",
           "value": 14
         },
         {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
           "stat": "REC",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -173,16 +177,34 @@
       ]
     },
     {
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.16,
+      "points": 0.28,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 4
+          "value": 7
         }
       ]
     },
@@ -190,15 +212,6 @@
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
