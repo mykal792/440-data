@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T18:50:28Z",
+  "updated": "2026-11-01T18:55:22Z",
   "players": [
     {
       "name": "Jordan Love",
@@ -193,6 +193,15 @@
       "team": "Jax",
       "manager": "coyne",
       "manager_display": "COYNE",
+      "points": 14.0,
+      "stats": []
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
       "points": 12.0,
       "stats": []
     },
@@ -241,15 +250,6 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Rico Dowdle",
       "position": "RB",
       "team": "Pit",
@@ -295,11 +295,11 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 8.9,
+      "points": 9.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 23
+          "value": 25
         },
         {
           "stat": "REC YD",
@@ -453,6 +453,24 @@
       ]
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 76
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -534,20 +552,42 @@
       ]
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.3,
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.7,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 63
+          "stat": "REC YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 4
         },
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 4.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 36
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -566,28 +606,6 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -598,6 +616,24 @@
         {
           "stat": "RUSH YD",
           "value": 34
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.02,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 68
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
         }
       ]
     },
@@ -665,16 +701,28 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.64,
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.7,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 66
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -716,11 +764,65 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 1.8,
+      "points": 2.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 18
+          "value": 20
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "name": "Ryan Flournoy",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -739,28 +841,6 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Germie Bernard",
       "position": "WR",
       "team": "Pit",
@@ -775,24 +855,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -883,6 +945,15 @@
       "stats": []
     },
     {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.0,
+      "stats": []
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -919,34 +990,20 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
+      "name": "Jared Goff",
       "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.7,
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.64,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 10
+          "value": 66
         },
         {
-          "stat": "RUSH YD",
-          "value": 3
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -972,15 +1029,6 @@
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ryan Flournoy",
-      "position": "WR",
-      "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -1239,15 +1287,6 @@
       "stats": []
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Rams",
       "position": "DEF",
       "team": "LAR",
@@ -1255,28 +1294,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": -1.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     }
   ]
 }
