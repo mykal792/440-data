@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T19:20:24Z",
+  "updated": "2026-11-01T19:25:24Z",
   "players": [
     {
       "name": "Jordan Love",
@@ -123,6 +123,24 @@
         {
           "stat": "REC",
           "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 15.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 94
         },
         {
           "stat": "TD",
@@ -264,6 +282,20 @@
       "stats": []
     },
     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 102
+        }
+      ]
+    },
+    {
       "name": "Chase McLaughlin",
       "position": "K",
       "team": "TB",
@@ -313,6 +345,32 @@
       ]
     },
     {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.7,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 170
+        },
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -353,27 +411,27 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.98,
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 10.3,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 152
+          "stat": "RUSH YD",
+          "value": 26
         },
         {
-          "stat": "RUSH YD",
-          "value": -1
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -401,28 +459,20 @@
       ]
     },
     {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 9.2,
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.6,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 26
-        },
-        {
           "stat": "REC YD",
-          "value": 1
+          "value": 71
         },
         {
           "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
+          "value": 5
         }
       ]
     },
@@ -519,16 +569,24 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 7.9,
+      "points": 7.5,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 79
+          "stat": "REC YD",
+          "value": 65
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -542,38 +600,6 @@
       "stats": []
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 6.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 69
-        }
-      ]
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 6.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 53
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -581,6 +607,20 @@
       "manager_display": "SCHILLING",
       "points": 6.7,
       "stats": []
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 67
+        }
+      ]
     },
     {
       "name": "CeeDee Lamb",
@@ -597,28 +637,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
     },
@@ -645,16 +663,16 @@
       ]
     },
     {
-      "name": "Bhayshul Tuten",
+      "name": "James Cook III",
       "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.5,
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 55
+          "value": 54
         }
       ]
     },
@@ -775,6 +793,15 @@
       ]
     },
     {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.0,
+      "stats": []
+    },
+    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -793,20 +820,6 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        }
-      ]
-    },
-    {
       "name": "KC Concepcion Jr.",
       "position": "WR",
       "team": "Cle",
@@ -820,32 +833,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
@@ -879,6 +866,32 @@
         {
           "stat": "RUSH YD",
           "value": 27
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -917,15 +930,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.0,
-      "stats": []
     },
     {
       "name": "Brandon Aubrey",
