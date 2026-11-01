@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T23:15:28Z",
+  "updated": "2026-11-01T23:20:25Z",
   "matchups": [
     {
       "home": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 78.08,
+        "score": 86.8,
         "projected": 120.48
       }
     }
@@ -956,11 +956,42 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 10.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 100
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 10.0,
       "stats": []
     },
@@ -1041,15 +1072,6 @@
       "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 9.0,
       "stats": []
     },
@@ -1478,24 +1500,6 @@
       "manager_display": "HAYDEN",
       "points": 3.0,
       "stats": []
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.88,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 57
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        }
-      ]
     },
     {
       "name": "Jeremiyah Love",
