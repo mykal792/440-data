@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T23:35:25Z",
+  "updated": "2026-11-01T23:40:28Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 77.54,
+        "score": 77.64,
         "projected": 126.49
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 114.0,
+        "score": 114.3,
         "projected": 127.9
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 77.64,
+        "score": 78.34,
         "projected": 109.09
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 89.66,
+        "score": 97.46,
         "projected": 120.48
       }
     }
@@ -622,6 +622,28 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 18.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 149
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -850,26 +872,13 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 11.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 134
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "points": 12.0,
+      "stats": []
     },
     {
       "name": "Justin Jefferson",
@@ -976,15 +985,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 11.0,
-      "stats": []
     },
     {
       "name": "Matthew Stafford",
@@ -1151,16 +1151,38 @@
       ]
     },
     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 69
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 8.3,
+      "points": 8.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 16
         },
         {
           "stat": "REC YD",
@@ -1173,28 +1195,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 62
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1436,7 +1436,7 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 3.9,
+      "points": 4.2,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -1444,11 +1444,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 3
+          "value": 1
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         }
       ]
     },
