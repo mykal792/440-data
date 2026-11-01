@@ -1,13 +1,13 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T18:00:32Z",
+  "updated": "2026-11-01T18:05:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 35.5,
+        "score": 45.5,
         "projected": 117.8
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 14.3,
+        "score": 14.7,
         "projected": 119.66
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 44.92,
+        "score": 55.32,
         "projected": 121.34
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 0.0,
+        "score": 12.82,
         "projected": 136.6
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 0.0,
+        "score": 16.1,
         "projected": 105.96
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 0.0,
+        "score": 10.0,
         "projected": 108.61
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 17.4,
+        "score": 18.3,
         "projected": 120.52
       }
     }
@@ -115,15 +115,15 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "44.92",
-          "detail": "6 to play"
+          "value": "55.32",
+          "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "35.50",
-          "detail": "7 to play"
+          "value": "45.50",
+          "detail": "6 to play"
         },
         {
           "rank": 3,
@@ -277,6 +277,51 @@
       ]
     },
     {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.0,
+      "stats": []
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -317,6 +362,136 @@
         {
           "stat": "FUM",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        }
+      ]
+    },
+    {
+      "name": "Braelon Allen",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Jeremiyah Love",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
         }
       ]
     },
@@ -369,15 +544,6 @@
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -564,15 +730,6 @@
       "stats": []
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -618,27 +775,9 @@
       "stats": []
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Braelon Allen",
-      "position": "RB",
-      "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
@@ -690,27 +829,9 @@
       "stats": []
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
@@ -737,15 +858,6 @@
     {
       "name": "Chase McLaughlin",
       "position": "K",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Buccaneers",
-      "position": "DEF",
       "team": "TB",
       "manager": "gangus",
       "manager_display": "GANGUS",
@@ -834,33 +946,6 @@
       "stats": []
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jeremiyah Love",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -891,15 +976,6 @@
       "name": "Brandon McManus",
       "position": "K",
       "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
@@ -978,27 +1054,9 @@
       "stats": []
     },
     {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
@@ -1026,15 +1084,6 @@
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
