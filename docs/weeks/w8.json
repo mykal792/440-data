@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T23:25:23Z",
+  "updated": "2026-11-01T23:30:27Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 75.94,
+        "score": 76.24,
         "projected": 126.49
       }
     },
@@ -22,13 +22,13 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 113.1,
-        "projected": 124.77
+        "projected": 124.76
       },
       "away": {
         "name": "GREG",
         "face": "greg",
         "score": 114.4,
-        "projected": 119.58
+        "projected": 119.54
       }
     },
     {
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 75.62,
+        "score": 77.14,
         "projected": 109.09
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 87.3,
+        "score": 88.58,
         "projected": 120.48
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "19.20",
+          "value": "19.50",
           "detail": "Puka Nacua"
         }
       ]
@@ -605,15 +605,15 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 19.2,
+      "points": 19.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 82
+          "value": 80
         },
         {
           "stat": "REC",
-          "value": 10
+          "value": 11
         },
         {
           "stat": "TD",
@@ -850,6 +850,28 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 11.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 132
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -956,38 +978,16 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 10.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 100
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 10.12,
+      "points": 10.04,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 153
+          "value": 151
         },
         {
           "stat": "TD",
@@ -1191,6 +1191,28 @@
       ]
     },
     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 57
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -1272,28 +1294,6 @@
         {
           "stat": "REC YD",
           "value": 48
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 41
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
         },
         {
           "stat": "REC",
