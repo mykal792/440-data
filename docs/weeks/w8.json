@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T21:40:27Z",
+  "updated": "2026-11-01T21:45:25Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 116.4,
+        "score": 117.4,
         "projected": 119.58
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 117.9,
+        "score": 112.9,
         "projected": 127.9
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 53.48,
+        "score": 56.78,
         "projected": 109.09
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 74.5,
+        "score": 74.74,
         "projected": 120.48
       }
     }
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "117.90",
-          "detail": "1 to play"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "117.40",
+          "detail": "2 to play"
         }
       ]
     }
@@ -802,6 +802,15 @@
       ]
     },
     {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 13.0,
+      "stats": []
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -826,15 +835,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.0,
-      "stats": []
     },
     {
       "name": "Justin Jefferson",
@@ -941,15 +941,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.0,
-      "stats": []
     },
     {
       "name": "CeeDee Lamb",
@@ -1130,6 +1121,15 @@
       "stats": []
     },
     {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -1206,6 +1206,15 @@
       ]
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "Sam LaPorta",
       "position": "TE",
       "team": "Det",
@@ -1226,15 +1235,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Evan McPherson",
@@ -1299,6 +1299,24 @@
       ]
     },
     {
+      "name": "Hunter Henry",
+      "position": "TE",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -1346,24 +1364,6 @@
       "manager_display": "COYNE",
       "points": 3.0,
       "stats": []
-    },
-    {
-      "name": "Hunter Henry",
-      "position": "TE",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Jeremiyah Love",
@@ -1425,6 +1425,38 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 31
+        }
+      ]
+    },
+    {
+      "name": "Xavier Worthy",
+      "position": "WR",
+      "team": "KC",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -1444,20 +1476,6 @@
         {
           "stat": "RUSH YD",
           "value": 10
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 25
         }
       ]
     },
@@ -1633,15 +1651,6 @@
       "name": "Zach Charbonnet",
       "position": "RB",
       "team": "Sea",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Xavier Worthy",
-      "position": "WR",
-      "team": "KC",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
