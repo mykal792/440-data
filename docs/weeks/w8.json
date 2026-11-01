@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T22:55:22Z",
+  "updated": "2026-11-01T23:00:38Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 65.04,
+        "score": 67.14,
         "projected": 126.49
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 64.26,
+        "score": 64.82,
         "projected": 109.09
       },
       "away": {
@@ -1094,30 +1094,16 @@
       ]
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 76
-        }
-      ]
-    },
-    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 7.0,
+      "points": 7.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 11
         },
         {
           "stat": "REC YD",
@@ -1130,6 +1116,20 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 76
         }
       ]
     },
@@ -1343,6 +1343,24 @@
       ]
     },
     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1436,20 +1454,20 @@
       ]
     },
     {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.9,
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.92,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 19
+          "stat": "PASS YD",
+          "value": 123
         },
         {
-          "stat": "REC",
-          "value": 2
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -1468,24 +1486,6 @@
         {
           "stat": "RUSH YD",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 109
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
