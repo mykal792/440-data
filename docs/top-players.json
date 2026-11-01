@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T18:20:25Z",
+  "updated": "2026-11-01T18:25:20Z",
   "players": [
     {
       "name": "Jordan Love",
@@ -153,12 +153,56 @@
       ]
     },
     {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 53
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 12.0,
+      "stats": []
+    },
+    {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.0,
+      "stats": []
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.0,
       "stats": []
     },
     {
@@ -184,22 +228,44 @@
       ]
     },
     {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.0,
-      "stats": []
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 33
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.0,
-      "stats": []
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.98,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 72
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Tetairoa McMillan",
@@ -268,34 +334,12 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.34,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 56
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bengals",
       "position": "DEF",
       "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 7.0,
+      "points": 5.0,
       "stats": []
     },
     {
@@ -331,11 +375,11 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 2.9,
+      "points": 3.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 29
+          "value": 32
         }
       ]
     },
@@ -364,28 +408,6 @@
         {
           "stat": "RUSH YD",
           "value": 28
-        }
-      ]
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -444,6 +466,24 @@
       ]
     },
     {
+      "name": "Germie Bernard",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -464,6 +504,29 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        }
+      ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Cam Little",
@@ -507,6 +570,20 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -517,6 +594,24 @@
         {
           "stat": "RUSH YD",
           "value": 9
+        }
+      ]
+    },
+    {
+      "name": "Tyler Warren",
+      "position": "TE",
+      "team": "Ind",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -567,9 +662,27 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 0.66,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 9
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Jaylen Warren",
       "position": "RB",
-      "team": "Det",
+      "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.6,
@@ -595,52 +708,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.46,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 9
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
         }
       ]
     },
@@ -673,36 +740,9 @@
       ]
     },
     {
-      "name": "Rico Dowdle",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Germie Bernard",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1081,15 +1121,6 @@
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "team": "Ind",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
