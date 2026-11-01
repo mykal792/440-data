@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T23:05:21Z",
+  "updated": "2026-11-01T23:10:25Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -467,6 +467,28 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 19.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 82
+        },
+        {
+          "stat": "REC",
+          "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -801,24 +823,6 @@
       ]
     },
     {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 64
-        },
-        {
-          "stat": "REC",
-          "value": 9
-        }
-      ]
-    },
-    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -826,6 +830,28 @@
       "manager_display": "GREG",
       "points": 10.0,
       "stats": []
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 141
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Wil Lutz",
@@ -882,6 +908,15 @@
       "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 9.0,
+      "stats": []
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 9.0,
       "stats": []
     },
@@ -966,11 +1001,11 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 7.9,
+      "points": 8.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 11
+          "value": 15
         },
         {
           "stat": "REC YD",
@@ -1001,15 +1036,6 @@
       ]
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -1037,6 +1063,15 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
+      "points": 6.0,
+      "stats": []
+    },
+    {
+      "name": "Brandon McManus",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 6.0,
       "stats": []
     },
@@ -1146,15 +1181,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Evan McPherson",
@@ -1321,24 +1347,6 @@
       "stats": []
     },
     {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 123
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -1376,11 +1384,11 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 2.2,
+      "points": 2.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 22
+          "value": 23
         }
       ]
     },
