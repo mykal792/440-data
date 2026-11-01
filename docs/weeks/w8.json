@@ -1,13 +1,13 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T21:15:26Z",
+  "updated": "2026-11-01T21:20:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 114.38,
+        "score": 123.74,
         "projected": 117.66
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 73.3,
+        "score": 99.3,
         "projected": 119.6
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 71.9,
+        "score": 72.9,
         "projected": 120.56
       }
     }
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GREG",
+          "face": "greg",
+          "value": "31.90",
+          "detail": "Tee Higgins"
+        },
+        {
+          "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
           "value": "23.50",
           "detail": "Ja'Marr Chase"
-        },
-        {
-          "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "21.50",
-          "detail": "Tee Higgins"
         },
         {
           "rank": 3,
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "123.74",
+          "detail": "1 to play"
+        },
+        {
+          "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
           "value": "115.52",
           "detail": "All played"
-        },
-        {
-          "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "114.38",
-          "detail": "1 to play"
         }
       ]
     }
@@ -142,11 +142,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 34.78,
+      "points": 44.14,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 367
+          "value": 401
         },
         {
           "stat": "RUSH YD",
@@ -154,11 +154,33 @@
         },
         {
           "stat": "TD",
-          "value": 4
+          "value": 5
         },
         {
           "stat": "INT",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 31.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 134
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -385,6 +407,28 @@
       ]
     },
     {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 23.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 111
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -456,28 +500,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 21.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 100
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1055,24 +1077,6 @@
       ]
     },
     {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 50
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -1237,6 +1241,15 @@
       "stats": []
     },
     {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1275,15 +1288,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.0,
-      "stats": []
     },
     {
       "name": "Jeremiyah Love",
