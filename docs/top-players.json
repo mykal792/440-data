@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T20:25:22Z",
+  "updated": "2026-11-01T20:30:27Z",
   "players": [
     {
       "name": "Bhayshul Tuten",
@@ -105,11 +105,11 @@
       "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 23.3,
+      "points": 23.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 173
+          "value": 171
         },
         {
           "stat": "TD",
@@ -122,42 +122,16 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 22.66,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 214
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 22.6,
+      "points": 22.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 83
+          "value": 86
         },
         {
           "stat": "REC YD",
@@ -179,11 +153,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 22.2,
+      "points": 22.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 142
+          "value": 147
         },
         {
           "stat": "TD",
@@ -236,6 +210,32 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 20.74,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 216
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 3
         }
       ]
     },
@@ -376,6 +376,32 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 15.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 67
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -429,38 +455,16 @@
       "stats": []
     },
     {
-      "name": "Tucker Kraft",
-      "position": "TE",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 14.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 53
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 14.24,
+      "points": 14.88,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 181
+          "value": 197
         },
         {
           "stat": "RUSH YD",
@@ -477,24 +481,20 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
+      "name": "Tucker Kraft",
+      "position": "TE",
+      "team": "GB",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 13.9,
+      "points": 14.3,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 62
-        },
-        {
           "stat": "REC YD",
-          "value": 12
+          "value": 53
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 6
         },
         {
           "stat": "TD",
@@ -609,6 +609,28 @@
       ]
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 44
+        },
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -627,28 +649,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 42
-        },
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -921,6 +921,24 @@
       ]
     },
     {
+      "name": "KC Concepcion Jr.",
+      "position": "WR",
+      "team": "Cle",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 36
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Michael Wilson",
       "position": "WR",
       "team": "Ari",
@@ -1019,24 +1037,6 @@
         {
           "stat": "INT",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "KC Concepcion Jr.",
-      "position": "WR",
-      "team": "Cle",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 29
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
