@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T19:40:22Z",
+  "updated": "2026-11-01T19:45:24Z",
   "matchups": [
     {
       "home": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 61.28,
+        "score": 62.78,
         "projected": 136.54
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 42.9,
+        "score": 43.7,
         "projected": 120.49
       }
     }
@@ -508,6 +508,32 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.48,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 112
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 30
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -569,32 +595,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.98,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 112
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 15
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -737,6 +737,20 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 75
+        }
+      ]
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -762,20 +776,6 @@
       "manager_display": "SCOTTY",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 6.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 67
-        }
-      ]
     },
     {
       "name": "CeeDee Lamb",
