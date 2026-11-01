@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T23:00:38Z",
+  "updated": "2026-11-01T23:05:21Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 67.14,
+        "score": 67.24,
         "projected": 126.49
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 64.82,
+        "score": 65.12,
         "projected": 109.09
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 75.72,
+        "score": 75.82,
         "projected": 120.48
       }
     }
@@ -1348,11 +1348,11 @@
       "team": "KC",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 4.1,
+      "points": 4.2,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 26
+          "value": 27
         },
         {
           "stat": "REC",
@@ -1401,6 +1401,28 @@
       ]
     },
     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -1432,28 +1454,6 @@
       "stats": []
     },
     {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -1477,7 +1477,7 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 2.62,
+      "points": 2.72,
       "stats": [
         {
           "stat": "PASS YD",
@@ -1485,7 +1485,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 6
         }
       ]
     },
