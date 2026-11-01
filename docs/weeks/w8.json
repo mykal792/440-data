@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T21:35:22Z",
+  "updated": "2026-11-01T21:40:27Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 47.54,
+        "score": 49.54,
         "projected": 126.49
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 103.7,
+        "score": 107.6,
         "projected": 124.77
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 115.4,
+        "score": 116.4,
         "projected": 119.58
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 117.5,
+        "score": 117.9,
         "projected": 127.9
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 77.4,
+        "score": 74.5,
         "projected": 120.48
       }
     }
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "117.50",
+          "value": "117.90",
           "detail": "1 to play"
         }
       ]
@@ -828,11 +828,11 @@
       ]
     },
     {
-      "name": "Rams",
+      "name": "Patriots",
       "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
+      "team": "NE",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 12.0,
       "stats": []
     },
@@ -943,15 +943,6 @@
       ]
     },
     {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -1006,6 +997,15 @@
       "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 9.0,
+      "stats": []
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 9.0,
       "stats": []
     },
@@ -1272,6 +1272,15 @@
       ]
     },
     {
+      "name": "Wil Lutz",
+      "position": "K",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.9,
+      "stats": []
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1371,6 +1380,24 @@
       ]
     },
     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -1453,30 +1480,30 @@
       ]
     },
     {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Kenneth Walker III",
       "position": "RB",
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.4,
+      "points": 0.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 4
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
         }
       ]
     },
@@ -1507,15 +1534,6 @@
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Wil Lutz",
-      "position": "K",
-      "team": "Den",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -1563,15 +1581,6 @@
       "team": "Sea",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
