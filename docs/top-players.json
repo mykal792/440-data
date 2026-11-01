@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T23:30:27Z",
+  "updated": "2026-11-01T23:35:25Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -722,11 +722,11 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 11.88,
+      "points": 11.96,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 132
+          "value": 134
         },
         {
           "stat": "RUSH YD",
@@ -845,6 +845,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -872,15 +881,6 @@
       "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 10.0,
       "stats": []
     },
@@ -1044,6 +1044,28 @@
       ]
     },
     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 62
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -1054,28 +1076,6 @@
         {
           "stat": "RUSH YD",
           "value": 76
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 7.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 57
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1187,6 +1187,24 @@
       ]
     },
     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "KC Concepcion Jr.",
       "position": "WR",
       "team": "Cle",
@@ -1280,20 +1298,24 @@
       ]
     },
     {
-      "name": "Travis Kelce",
-      "position": "TE",
+      "name": "Kenneth Walker III",
+      "position": "RB",
       "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 4.2,
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 3.9,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 31
+        },
+        {
           "stat": "REC YD",
-          "value": 27
+          "value": 3
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 1
         }
       ]
     },
@@ -1312,28 +1334,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
