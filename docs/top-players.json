@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T22:20:26Z",
+  "updated": "2026-11-01T22:25:20Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -957,6 +957,50 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Rams",
       "position": "DEF",
       "team": "LAR",
@@ -1042,24 +1086,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 6
         }
       ]
     },
@@ -1184,6 +1210,15 @@
       ]
     },
     {
+      "name": "Brandon McManus",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1224,15 +1259,6 @@
       ]
     },
     {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.0,
-      "stats": []
-    },
-    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -1251,6 +1277,46 @@
       ]
     },
     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.62,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 53
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Jeremiyah Love",
       "position": "RB",
       "team": "Ari",
@@ -1261,38 +1327,6 @@
         {
           "stat": "RUSH YD",
           "value": 23
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 39
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
         }
       ]
     },
@@ -1316,6 +1350,24 @@
         {
           "stat": "RUSH YD",
           "value": 16
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 85
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -1379,28 +1431,6 @@
       ]
     },
     {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -1414,24 +1444,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.88,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 72
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
