@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T20:45:28Z",
+  "updated": "2026-11-01T20:50:28Z",
   "players": [
     {
       "name": "Bhayshul Tuten",
@@ -48,6 +48,32 @@
         {
           "stat": "INT",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 27.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 110
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -148,42 +174,16 @@
       ]
     },
     {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 22.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 83
-        },
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 21.9,
+      "points": 22.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 134
+          "value": 143
         },
         {
           "stat": "REC",
@@ -192,6 +192,37 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 22.0,
+      "stats": []
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 21.9,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 195
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -244,24 +275,28 @@
       ]
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 21.16,
+      "points": 21.2,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 194
+          "stat": "RUSH YD",
+          "value": 107
         },
         {
-          "stat": "RUSH YD",
-          "value": 14
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
-          "value": 2
+          "value": 1
         }
       ]
     },
@@ -271,15 +306,6 @@
       "team": "TB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 21.0,
-      "stats": []
-    },
-    {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 21.0,
       "stats": []
     },
@@ -349,32 +375,6 @@
       "stats": []
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 17.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 90
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -397,16 +397,42 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 16.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 248
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 30
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 16.2,
+      "points": 16.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 71
+          "value": 76
         },
         {
           "stat": "REC YD",
@@ -462,32 +488,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 15.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 208
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 30
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -573,11 +573,11 @@
       "team": "Pit",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 12.7,
+      "points": 12.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 67
+          "value": 66
         },
         {
           "stat": "TD",
@@ -689,6 +689,15 @@
           "value": 6
         }
       ]
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.6,
+      "stats": []
     },
     {
       "name": "CeeDee Lamb",
@@ -824,15 +833,6 @@
       ]
     },
     {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -883,20 +883,20 @@
       ]
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.1,
-      "stats": []
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
+      "points": 6.0,
+      "stats": []
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 6.0,
       "stats": []
     },
@@ -1017,6 +1017,24 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 169
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -1038,24 +1056,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 4.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 164
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
