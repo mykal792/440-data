@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T21:55:24Z",
+  "updated": "2026-11-01T22:00:33Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -1139,6 +1139,24 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Wil Lutz",
       "position": "K",
       "team": "Den",
@@ -1180,24 +1198,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1347,6 +1347,20 @@
       ]
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        }
+      ]
+    },
+    {
       "name": "Kenneth Walker III",
       "position": "RB",
       "team": "KC",
@@ -1375,20 +1389,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
         }
       ]
     },
@@ -1529,11 +1529,11 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": -1.52,
+      "points": -1.2,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 12
+          "value": 20
         },
         {
           "stat": "INT",
