@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T20:00:31Z",
+  "updated": "2026-11-01T20:05:27Z",
   "players": [
     {
       "name": "Jordan Love",
@@ -33,6 +33,50 @@
       "manager_display": "COYNE",
       "points": 24.0,
       "stats": []
+    },
+    {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 23.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 173
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 22.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 78
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Joe Burrow",
@@ -75,28 +119,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 21.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 69
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -149,6 +171,24 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 19.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 119
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -224,24 +264,6 @@
       ]
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 16.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 167
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -273,11 +295,11 @@
       "team": "Ten",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 16.1,
+      "points": 16.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 78
+          "value": 79
         },
         {
           "stat": "REC YD",
@@ -369,18 +391,13 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 13.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 118
-        }
-      ]
+      "name": "Chase McLaughlin",
+      "position": "K",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.2,
+      "stats": []
     },
     {
       "name": "Vikings",
@@ -414,15 +431,6 @@
       ]
     },
     {
-      "name": "Chase McLaughlin",
-      "position": "K",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.2,
-      "stats": []
-    },
-    {
       "name": "Rico Dowdle",
       "position": "RB",
       "team": "Pit",
@@ -433,6 +441,32 @@
         {
           "stat": "RUSH YD",
           "value": 57
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 11.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
@@ -511,32 +545,6 @@
       ]
     },
     {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 26
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bengals",
       "position": "DEF",
       "team": "Cin",
@@ -584,6 +592,15 @@
           "value": 6
         }
       ]
+    },
+    {
+      "name": "Chris Boswell",
+      "position": "K",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.7,
+      "stats": []
     },
     {
       "name": "CeeDee Lamb",
@@ -680,15 +697,6 @@
       ]
     },
     {
-      "name": "Chris Boswell",
-      "position": "K",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.7,
-      "stats": []
-    },
-    {
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
@@ -783,6 +791,24 @@
       "stats": []
     },
     {
+      "name": "Michael Wilson",
+      "position": "WR",
+      "team": "Ari",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 34
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -837,24 +863,6 @@
         {
           "stat": "INT",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
