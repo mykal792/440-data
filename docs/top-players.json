@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T21:00:34Z",
+  "updated": "2026-11-01T21:05:25Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -56,6 +56,32 @@
       ]
     },
     {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 29.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 117
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -78,20 +104,20 @@
       ]
     },
     {
-      "name": "Tony Pollard",
+      "name": "Jahmyr Gibbs",
       "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 27.3,
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 25.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 110
+          "value": 153
         },
         {
           "stat": "REC YD",
-          "value": 13
+          "value": 15
         },
         {
           "stat": "REC",
@@ -99,7 +125,7 @@
         },
         {
           "stat": "TD",
-          "value": 2
+          "value": 1
         }
       ]
     },
@@ -125,32 +151,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 25.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 147
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -468,11 +468,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 16.7,
+      "points": 17.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 76
+          "value": 80
         },
         {
           "stat": "REC YD",
@@ -481,6 +481,28 @@
         {
           "stat": "REC",
           "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 15.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 64
+        },
+        {
+          "stat": "REC",
+          "value": 6
         },
         {
           "stat": "TD",
@@ -639,11 +661,11 @@
       "team": "Pit",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 11.7,
+      "points": 11.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 57
+          "value": 56
         },
         {
           "stat": "TD",
@@ -674,6 +696,24 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 83
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -749,24 +789,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 9.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 68
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -909,24 +931,6 @@
       ]
     },
     {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 50
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -1048,8 +1052,12 @@
       "team": "Det",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 4.8,
+      "points": 5.0,
       "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
         {
           "stat": "REC YD",
           "value": 33
