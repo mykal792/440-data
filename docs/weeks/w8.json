@@ -1,20 +1,20 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T21:10:26Z",
+  "updated": "2026-11-01T21:15:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 112.78,
+        "score": 114.38,
         "projected": 117.66
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 45.64,
-        "projected": 126.23
+        "projected": 126.49
       }
     },
     {
@@ -28,7 +28,7 @@
         "name": "GREG",
         "face": "greg",
         "score": 73.3,
-        "projected": 119.58
+        "projected": 119.6
       }
     },
     {
@@ -41,8 +41,8 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 115.22,
-        "projected": 121.3
+        "score": 115.52,
+        "projected": 121.33
       }
     },
     {
@@ -56,21 +56,21 @@
         "name": "COYNE",
         "face": "coyne",
         "score": 55.1,
-        "projected": 105.95
+        "projected": 95.83
       }
     },
     {
       "home": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 38.46,
+        "score": 44.76,
         "projected": 109.11
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 71.9,
-        "projected": 120.52
+        "projected": 120.56
       }
     }
   ],
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "23.50",
+          "detail": "Ja'Marr Chase"
+        },
+        {
+          "rank": 2,
           "manager": "GREG",
           "face": "greg",
           "value": "21.50",
           "detail": "Tee Higgins"
-        },
-        {
-          "rank": 2,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "19.30",
-          "detail": "Ja'Marr Chase"
         },
         {
           "rank": 3,
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "115.22",
+          "value": "115.52",
           "detail": "All played"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "112.78",
+          "value": "114.38",
           "detail": "1 to play"
         }
       ]
@@ -142,11 +142,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 33.18,
+      "points": 34.78,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 327
+          "value": 367
         },
         {
           "stat": "RUSH YD",
@@ -363,6 +363,28 @@
       ]
     },
     {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 23.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 110
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -552,28 +574,6 @@
       ]
     },
     {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 19.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 93
-        },
-        {
-          "stat": "REC",
-          "value": 8
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -730,6 +730,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 13.7,
+      "stats": []
     },
     {
       "name": "Chase McLaughlin",
@@ -908,15 +917,6 @@
       "stats": []
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.6,
-      "stats": []
-    },
-    {
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
@@ -1082,6 +1082,28 @@
       "stats": []
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 54
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -1118,28 +1140,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 51
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -1372,20 +1372,6 @@
       ]
     },
     {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 9
-        }
-      ]
-    },
-    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -1609,6 +1595,24 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": -1.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 9
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     }
   ]
 }
