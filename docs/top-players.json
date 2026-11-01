@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T21:45:25Z",
+  "updated": "2026-11-01T21:50:25Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -669,15 +669,6 @@
       ]
     },
     {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 13.0,
-      "stats": []
-    },
-    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -808,6 +799,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "CeeDee Lamb",
@@ -1274,6 +1274,20 @@
       "stats": []
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 35
+        }
+      ]
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -1288,20 +1302,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.24,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 31
         }
       ]
     },
@@ -1384,11 +1384,11 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 0.6,
+      "points": 0.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 6
+          "value": 3
         }
       ]
     },
