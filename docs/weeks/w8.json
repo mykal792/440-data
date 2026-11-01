@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T22:10:25Z",
+  "updated": "2026-11-01T22:15:27Z",
   "matchups": [
     {
       "home": {
@@ -56,20 +56,20 @@
         "name": "COYNE",
         "face": "coyne",
         "score": 58.1,
-        "projected": 95.83
+        "projected": 102.85
       }
     },
     {
       "home": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 57.1,
+        "score": 58.3,
         "projected": 109.09
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 75.9,
+        "score": 74.06,
         "projected": 120.48
       }
     }
@@ -992,15 +992,6 @@
       "stats": []
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 9.0,
-      "stats": []
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -1097,6 +1088,15 @@
           "value": 76
         }
       ]
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Javonte Williams",
@@ -1281,6 +1281,24 @@
       ]
     },
     {
+      "name": "Hunter Henry",
+      "position": "TE",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -1313,24 +1331,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Hunter Henry",
-      "position": "TE",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1426,11 +1426,11 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 1.4,
+      "points": 1.56,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 35
+          "value": 39
         }
       ]
     },
@@ -1449,6 +1449,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
         }
       ]
     },
@@ -1478,20 +1492,6 @@
       "manager_display": "SCARPITTI",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        }
-      ]
     },
     {
       "name": "Kenneth Walker III",
