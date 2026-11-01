@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T23:20:25Z",
+  "updated": "2026-11-01T23:25:23Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -845,6 +845,28 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 153
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Patriots",
       "position": "DEF",
       "team": "NE",
@@ -861,28 +883,6 @@
       "manager_display": "ANTHONY",
       "points": 10.0,
       "stats": []
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.64,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 141
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Wil Lutz",
@@ -1321,11 +1321,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 3.4,
+      "points": 3.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 26
+          "value": 29
         },
         {
           "stat": "REC YD",
@@ -1369,6 +1369,38 @@
       "stats": []
     },
     {
+      "name": "Xavier Worthy",
+      "position": "WR",
+      "team": "KC",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 28
+        }
+      ]
+    },
+    {
       "name": "Jeremiyah Love",
       "position": "RB",
       "team": "Ari",
@@ -1379,38 +1411,6 @@
         {
           "stat": "RUSH YD",
           "value": 23
-        }
-      ]
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        }
-      ]
-    },
-    {
-      "name": "Xavier Worthy",
-      "position": "WR",
-      "team": "KC",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
