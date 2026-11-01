@@ -1,13 +1,13 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T19:45:24Z",
+  "updated": "2026-11-01T19:50:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 95.82,
+        "score": 97.08,
         "projected": 117.66
       },
       "away": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 42.9,
+        "score": 45.24,
         "projected": 124.74
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 37.8,
+        "score": 37.7,
         "projected": 119.5
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 63.22,
+        "score": 69.92,
         "projected": 127.89
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 90.72,
+        "score": 91.62,
         "projected": 121.3
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 62.78,
+        "score": 63.08,
         "projected": 136.54
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 36.5,
+        "score": 38.5,
         "projected": 105.9
       }
     },
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "95.82",
+          "value": "97.08",
           "detail": "1 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "90.72",
+          "value": "91.62",
           "detail": "All played"
         },
         {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "63.22",
+          "value": "69.92",
           "detail": "3 to play"
         }
       ]
@@ -166,6 +166,28 @@
       "manager_display": "COYNE",
       "points": 22.0,
       "stats": []
+    },
+    {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 21.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 69
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Chuba Hubbard",
@@ -256,11 +278,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 17.22,
+      "points": 17.18,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 178
+          "value": 177
         },
         {
           "stat": "RUSH YD",
@@ -308,11 +330,11 @@
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 15.4,
+      "points": 15.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 94
+          "value": 97
         },
         {
           "stat": "TD",
@@ -370,28 +392,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 14.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 67
-        },
-        {
-          "stat": "REC",
-          "value": 4
         },
         {
           "stat": "TD",
@@ -458,6 +458,20 @@
       ]
     },
     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 13.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 113
+        }
+      ]
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -465,20 +479,6 @@
       "manager_display": "SCHILLING",
       "points": 13.0,
       "stats": []
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 12.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 102
-        }
-      ]
     },
     {
       "name": "Chase McLaughlin",
@@ -552,6 +552,28 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.94,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 116
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -600,38 +622,16 @@
       ]
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.7,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 85
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 9.6,
+      "points": 9.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 71
+          "value": 70
         },
         {
           "stat": "REC",
@@ -706,6 +706,24 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Chris Boswell",
       "position": "K",
       "team": "Pit",
@@ -751,6 +769,24 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 53
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -776,24 +812,6 @@
       "manager_display": "SCOTTY",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 44
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
     },
     {
       "name": "Amon-Ra St. Brown",
@@ -850,20 +868,24 @@
       ]
     },
     {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.3,
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.5,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
           "stat": "REC YD",
-          "value": 38
+          "value": 1
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 1
         }
       ]
     },
@@ -915,28 +937,6 @@
       "manager_display": "HAYDEN",
       "points": 4.0,
       "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 30
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Michael Wilson",
