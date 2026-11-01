@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-01T20:10:25Z",
+  "updated": "2026-11-01T20:15:26Z",
   "players": [
     {
       "name": "Jordan Love",
@@ -26,13 +26,26 @@
       ]
     },
     {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 24.0,
-      "stats": []
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 24.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 92
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Bucky Irving",
@@ -53,28 +66,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 22.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 78
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -110,11 +101,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 22.58,
+      "points": 22.66,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 212
+          "value": 214
         },
         {
           "stat": "RUSH YD",
@@ -217,6 +208,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 19.0,
+      "stats": []
     },
     {
       "name": "Bhayshul Tuten",
@@ -342,6 +342,28 @@
       ]
     },
     {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 15.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 64
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -371,28 +393,6 @@
       "manager_display": "SCARPITTI",
       "points": 15.0,
       "stats": []
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 14.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 62
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Tucker Kraft",
@@ -448,6 +448,24 @@
       ]
     },
     {
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 62
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -474,34 +492,16 @@
       ]
     },
     {
-      "name": "Rico Dowdle",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 11.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 57
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 11.48,
+      "points": 11.96,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 112
+          "value": 124
         },
         {
           "stat": "RUSH YD",
@@ -740,6 +740,28 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 57
+        },
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -767,16 +789,20 @@
       "stats": []
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.4,
+      "name": "Germie Bernard",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.5,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 54
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 5
         }
       ]
     },
@@ -839,32 +865,6 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        },
-        {
-          "stat": "REC YD",
-          "value": 24
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Sam LaPorta",
       "position": "TE",
       "team": "Det",
@@ -883,6 +883,32 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 24
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -897,24 +923,6 @@
         {
           "stat": "INT",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Germie Bernard",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1008,20 +1016,6 @@
       "stats": []
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        }
-      ]
-    },
-    {
       "name": "KC Concepcion Jr.",
       "position": "WR",
       "team": "Cle",
@@ -1036,6 +1030,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 28
         }
       ]
     },
@@ -1070,6 +1078,15 @@
           "value": 23
         }
       ]
+    },
+    {
+      "name": "Tyler Loop",
+      "position": "K",
+      "team": "Bal",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.6,
+      "stats": []
     },
     {
       "name": "George Pickens",
@@ -1375,15 +1392,6 @@
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Loop",
-      "position": "K",
-      "team": "Bal",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": -1.0,
       "stats": []
     }
   ]
