@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-02T03:20:26Z",
+  "updated": "2026-11-02T03:25:22Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 129.64,
+        "score": 130.76,
         "projected": 119.46
       }
     },
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "GREG",
+          "face": "greg",
+          "value": "130.76",
+          "detail": "All played"
+        },
+        {
+          "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "130.46",
           "detail": "1 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "129.64",
-          "detail": "All played"
         }
       ]
     }
@@ -811,6 +811,28 @@
       "stats": []
     },
     {
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 13.26,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 124
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chase McLaughlin",
       "position": "K",
       "team": "TB",
@@ -864,28 +886,6 @@
         {
           "stat": "REC",
           "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.14,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 96
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 23
         },
         {
           "stat": "TD",
