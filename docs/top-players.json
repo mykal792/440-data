@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-02T00:15:26Z",
+  "updated": "2026-11-02T00:20:24Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -765,15 +765,6 @@
       ]
     },
     {
-      "name": "Patriots",
-      "position": "DEF",
-      "team": "NE",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 12.0,
-      "stats": []
-    },
-    {
       "name": "Rams",
       "position": "DEF",
       "team": "LAR",
@@ -909,6 +900,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Patriots",
+      "position": "DEF",
+      "team": "NE",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "Wil Lutz",
@@ -1066,6 +1066,28 @@
       ]
     },
     {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 54
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -1076,6 +1098,20 @@
         {
           "stat": "RUSH YD",
           "value": 76
+        }
+      ]
+    },
+    {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 69
         }
       ]
     },
@@ -1161,42 +1197,6 @@
         {
           "stat": "REC YD",
           "value": 48
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 58
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "REC YD",
-          "value": 1
         },
         {
           "stat": "REC",
@@ -1406,6 +1406,15 @@
       ]
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "Tyler Loop",
       "position": "K",
       "team": "Bal",
@@ -1431,15 +1440,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Will Reichard",
