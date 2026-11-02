@@ -25,9 +25,13 @@ Anyone whose guid never appears in 2026 - managers who left the league, or a
 current manager who once played on a different Yahoo account - comes out as
 "former-<nickname>" and is listed at the end of the run. Cam and Steve, who
 left before Hayden and Scotty joined, are recognised by name (FORMER_MANAGERS). To fix one, add it to
-history-managers.json at the repo root (hand-owned, no script writes it):
+history-managers.json at the repo root (hand-owned, no script writes it),
+by account or by season and team number:
 
-    { "<guid>": "graham" }
+    { "<guid>": "graham",  "2015:3": "hayden" }
+
+In this league Yahoo hides the accounts (every team returns the same
+placeholder guid), so in practice the season:team_id form is the one used.
 
 ONLY FINISHED WEEKS are written. A week still in progress is skipped, so the
 weekly run never publishes a half-played score.
@@ -197,6 +201,24 @@ def slug(text):
     return re.sub(r"[^a-z0-9]+", "-", (text or "unknown").lower()).strip("-")
 
 
+def blank_hidden_guids(teams):
+    """Yahoo hides other managers' accounts in some leagues: every team comes
+    back with the SAME placeholder guid (and some nicknames as "--hidden--").
+    Matching on that placeholder put every team in every season on one
+    manager - the first run did exactly this. A guid shared by more than one
+    team in a season can't identify anyone, so drop it."""
+    counts = {}
+    for t in teams.values():
+        if t["guid"]:
+            counts[t["guid"]] = counts.get(t["guid"], 0) + 1
+    hidden = 0
+    for t in teams.values():
+        if t["guid"] and (counts[t["guid"]] > 1 or t["guid"].startswith("--")):
+            t["guid"] = ""
+            hidden += 1
+    return hidden
+
+
 def build_guid_map(current_teams, overrides):
     """guid -> manager key, seeded from this season's TEAM_MAP."""
     gmap = {}
@@ -204,7 +226,7 @@ def build_guid_map(current_teams, overrides):
         mgr = yc.TEAM_MAP.get(t["team_id"])
         if mgr and t["guid"]:
             gmap[t["guid"]] = mgr
-    gmap.update(overrides)
+    gmap.update({k: v for k, v in overrides.items() if ":" not in k})
     return gmap
 
 
@@ -226,9 +248,12 @@ def hinted_manager(team):
     return None
 
 
-def resolve(team, gmap, is_current):
+def resolve(team, gmap, is_current, season=None, overrides=None):
     if is_current and team["team_id"] in yc.TEAM_MAP:
         return yc.TEAM_MAP[team["team_id"]]
+    pinned = (overrides or {}).get("%s:%s" % (season, team["team_id"]))
+    if pinned:
+        return pinned
     if team["guid"] and team["guid"] in gmap:
         return gmap[team["guid"]]
     return hinted_manager(team) or "former-" + slug(team["nickname"] or team["team_name"])
@@ -268,6 +293,7 @@ def main():
         settings = parse_settings(get("league/%s/settings" % key, token))
         teams = parse_teams(get("league/%s/standings" % key, token))
         calls += 2
+        hidden = blank_hidden_guids(teams)
 
         is_current = key == yc.LEAGUE_KEY
         if gmap is None:
@@ -308,6 +334,7 @@ def main():
                             key=lambda t: (t["final_rank"] or 99)),
         }
         seasons[season]["_incomplete"] = incomplete
+        seasons[season]["_hidden"] = hidden
         games.extend(season_games)
         print("  pulled %d (%s)" % (season, key))
         key = renew_to_key(meta.get("renew"))
@@ -325,7 +352,7 @@ def main():
         s = seasons[season]
         by_key = {}
         for t in s["teams"]:
-            t["manager"] = resolve(t, gmap, t.pop("_current"))
+            t["manager"] = resolve(t, gmap, t.pop("_current"), season, overrides)
             by_key[t["team_key"]] = t["manager"]
         n = 0
         for g in games:
@@ -337,10 +364,17 @@ def main():
             g["winner_manager"] = by_key.get(g["winner"]) if g["winner"] else None
         champ = next((t for t in s["teams"] if t["final_rank"] == 1), None)
         inc = s.pop("_incomplete")
-        print("%d  %-14s %2d teams  %3d games  champ: %s%s" % (
+        hid = s.pop("_hidden")
+        print("%d  %-14s %2d teams  %3d games  champ: %s%s%s" % (
             season, s["league_key"], len(s["teams"]), n,
             champ["manager"] if champ and s["finished"] else "-",
-            ("   (unfinished weeks: %s)" % inc) if inc else ""))
+            ("   (unfinished weeks: %s)" % inc) if inc else "",
+            ("   (%d hidden accounts)" % hid) if hid else ""))
+        for t in sorted(s["teams"], key=lambda t: int(t["team_id"] or 0)):
+            print("      t%-3s %-26s %-18s %2d-%-2d  PF %8.2f  rank %-3s -> %s" % (
+                t["team_id"], t["team_name"][:26], t["nickname"][:18],
+                t["wins"], t["losses"], t["points_for"],
+                t["final_rank"] or "-", t["manager"]))
 
     # Merge with what's already published when only part of history was pulled.
     seasons_path = out_dir / "seasons.json"
