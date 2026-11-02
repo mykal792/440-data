@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-02T02:25:22Z",
+  "updated": "2026-11-02T02:30:28Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 120.68,
+        "score": 127.0,
         "projected": 119.46
       }
     },
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "121.50",
-          "detail": "1 to play"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "127.00",
+          "detail": "All played"
         }
       ]
     }
@@ -1066,6 +1066,28 @@
       ]
     },
     {
+      "name": "Jayden Daniels",
+      "position": "QB",
+      "team": "Was",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 75
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -1490,24 +1512,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Jayden Daniels",
-      "position": "QB",
-      "team": "Was",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.08,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 67
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 14
         }
       ]
     },
