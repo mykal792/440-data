@@ -1,15 +1,15 @@
 {
   "season": 2026,
-  "updated": "2026-11-03T06:55:24Z",
+  "updated": "2026-11-03T12:00:35Z",
   "pot": {
     "total": 300,
     "dot_value": 5,
-    "paid_out": 140,
-    "remaining": 160
+    "paid_out": 160,
+    "remaining": 140
   },
   "totals": {
     "schilling": {
-      "QB": 1,
+      "QB": 2,
       "RB": 0,
       "WR": 2,
       "TE": 0
@@ -24,17 +24,17 @@
       "QB": 1,
       "RB": 4,
       "WR": 0,
-      "TE": 2
+      "TE": 3
     },
     "greg": {
       "QB": 0,
       "RB": 0,
-      "WR": 0,
+      "WR": 1,
       "TE": 0
     },
     "scarpitti": {
       "QB": 2,
-      "RB": 0,
+      "RB": 1,
       "WR": 3,
       "TE": 0
     },
@@ -354,6 +354,47 @@
           ],
           "value": "24.10",
           "detail": "Trey McBride"
+        }
+      }
+    },
+    {
+      "week": 8,
+      "positions": {
+        "QB": {
+          "manager": "schilling",
+          "manager_display": "SCHILLING",
+          "managers": [
+            "SCHILLING"
+          ],
+          "value": "53.48",
+          "detail": "Joe Burrow"
+        },
+        "RB": {
+          "manager": "scarpitti",
+          "manager_display": "SCARPITTI",
+          "managers": [
+            "SCARPITTI"
+          ],
+          "value": "30.90",
+          "detail": "Bhayshul Tuten"
+        },
+        "WR": {
+          "manager": "greg",
+          "manager_display": "GREG",
+          "managers": [
+            "GREG"
+          ],
+          "value": "34.50",
+          "detail": "Tee Higgins"
+        },
+        "TE": {
+          "manager": "hayden",
+          "manager_display": "HAYDEN",
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "24.70",
+          "detail": "Brock Bowers"
         }
       }
     }
