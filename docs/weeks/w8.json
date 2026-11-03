@@ -1,19 +1,19 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-03T01:25:22Z",
+  "updated": "2026-11-03T01:30:37Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 135.28,
+        "score": 137.28,
         "projected": 116.99
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 95.34,
+        "score": 99.04,
         "projected": 125.53
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 69.8,
+        "score": 71.28,
         "projected": 102.1
       }
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "135.28",
+          "value": "137.28",
           "detail": "All played"
         },
         {
@@ -1551,6 +1551,24 @@
       ]
     },
     {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -1574,6 +1592,24 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "Chi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -1632,20 +1668,16 @@
       ]
     },
     {
-      "name": "Colston Loveland",
-      "position": "TE",
+      "name": "Caleb Williams",
+      "position": "QB",
       "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.2,
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.28,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 2
+          "stat": "PASS YD",
+          "value": 57
         }
       ]
     },
@@ -1726,20 +1758,6 @@
       ]
     },
     {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 20
-        }
-      ]
-    },
-    {
       "name": "Zach Charbonnet",
       "position": "RB",
       "team": "Sea",
@@ -1768,15 +1786,6 @@
       "team": "Sea",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Luther Burden III",
-      "position": "WR",
-      "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
