@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-03T03:35:26Z",
+  "updated": "2026-11-03T03:40:28Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -625,6 +625,28 @@
       ]
     },
     {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 15.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 235
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -642,28 +664,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 15.28,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 227
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -1287,24 +1287,6 @@
       ]
     },
     {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Ollie Gordon II",
       "position": "RB",
       "team": "Mia",
@@ -1315,6 +1297,28 @@
         {
           "stat": "RUSH YD",
           "value": 69
+        }
+      ]
+    },
+    {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 53
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -1346,6 +1350,15 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
+      "points": 6.0,
+      "stats": []
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
       "points": 6.0,
       "stats": []
     },
@@ -1546,15 +1559,6 @@
       "team": "Den",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 4.0,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 4.0,
       "stats": []
     },
