@@ -1,7 +1,7 @@
 {
   "week": 8,
   "status": "live",
-  "updated": "2026-11-03T03:10:26Z",
+  "updated": "2026-11-03T03:15:24Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -647,6 +647,28 @@
       ]
     },
     {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 15.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 227
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -692,28 +714,6 @@
         {
           "stat": "REC",
           "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 14.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 218
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
         },
         {
           "stat": "TD",
@@ -895,6 +895,32 @@
       "manager_display": "ANTHONY",
       "points": 12.0,
       "stats": []
+    },
+    {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 11.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Justin Jefferson",
@@ -1418,37 +1444,6 @@
       ]
     },
     {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 30
-        },
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "Sam LaPorta",
       "position": "TE",
       "team": "Det",
@@ -1571,6 +1566,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.0,
+      "stats": []
     },
     {
       "name": "Xavier Worthy",
