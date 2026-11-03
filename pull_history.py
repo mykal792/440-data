@@ -259,6 +259,43 @@ def resolve(team, gmap, is_current, season=None, overrides=None):
     return hinted_manager(team) or "former-" + slug(team["nickname"] or team["team_name"])
 
 
+# --- cheap "anything new?" check ------------------------------------------
+
+def behind_check(args, out_dir, token):
+    """True means up to date - skip the pull. Costs one Yahoo call.
+
+    Pulls when the week that should be finished isn't in the file yet, or when
+    the file is a day old (which also picks up Yahoo's stat corrections, a few
+    days after a week ends)."""
+    from datetime import datetime, timezone
+    path = out_dir / "matchups.json"
+    if not path.exists():
+        return False
+    data = json.loads(path.read_text())
+    meta = league_meta(get("league/" + yc.LEAGUE_KEY, token))
+    season = int(yc.fnum(meta.get("season")))
+    if str(meta.get("is_finished", "0")) == "1":
+        due = int(yc.fnum(meta.get("end_week")))
+    else:
+        due = int(yc.fnum(meta.get("current_week"))) - 1
+    have = max([g["week"] for g in data["games"] if g["season"] == season] or [0])
+    try:
+        age_h = (datetime.now(timezone.utc) - datetime.strptime(
+            data["updated"], "%Y-%m-%dT%H:%M:%SZ").replace(
+            tzinfo=timezone.utc)).total_seconds() / 3600
+    except Exception:                                   # noqa: BLE001
+        age_h = 99
+    if have >= due and age_h < 24:
+        print("history up to date (%d week %d, pulled %.0fh ago) - skipping"
+              % (season, have, age_h))
+        return True
+    print("history behind (have week %d, week %d is due, %.0fh old) - pulling"
+          % (have, due, age_h))
+    if not args.since:
+        args.since = season
+    return False
+
+
 # --- main --------------------------------------------------------------------
 
 def main():
@@ -271,6 +308,10 @@ def main():
     ap.add_argument("--out-dir", default=str(OUT_DIR))
     ap.add_argument("--yf-dir")
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--if-behind", action="store_true",
+                    help="one Yahoo call to check; only pull when a finished "
+                         "week is missing or the last pull is a day old "
+                         "(for the 5-minute live workflow)")
     args = ap.parse_args()
 
     repo_cwd = Path.cwd()
@@ -281,6 +322,9 @@ def main():
     if OVERRIDES_FILE.exists():
         overrides = {k: v for k, v in json.loads(OVERRIDES_FILE.read_text()).items()
                      if not k.startswith("_")}
+
+    if args.if_behind and behind_check(args, out_dir, token):
+        return
 
     seasons, games, calls = {}, [], 0
     key, gmap, seen = args.start_key, None, set()

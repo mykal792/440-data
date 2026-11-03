@@ -1,0 +1,29 @@
+{
+ "_note": "Hand-owned. Totals up to the END of through_season, copied from the stats spreadsheet (Career Stats 'Bank' column and the Bonus Wins tab). build_profiles.py adds the current season on top: this season's bank (from the ledger) for earnings, and this season's weekly category wins. season_dues is subtracted from earnings once, for the current season, so earnings stay a net balance like the spreadsheet. ONCE A YEAR, after the season's payouts are in the ledger: replace these numbers with the end-of-season totals and bump through_season.",
+ "through_season": 2025,
+ "season_dues": 210,
+ "earnings": {
+  "schilling": 1694.0,
+  "hayden": -165.0,
+  "anthony": 96.0,
+  "scotty": -163.5,
+  "coyne": -387.5,
+  "greg": 614.0,
+  "garrett": -236.0,
+  "gangus": -169.5,
+  "scarpitti": -425.0,
+  "graham": -766.0
+ },
+ "weekly_category": {
+  "scotty": 17,
+  "scarpitti": 17,
+  "garrett": 15,
+  "coyne": 14,
+  "greg": 13,
+  "hayden": 12,
+  "anthony": 12,
+  "graham": 11,
+  "gangus": 10,
+  "schilling": 10
+ }
+}
