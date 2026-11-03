@@ -86,6 +86,18 @@ jobs:
         continue-on-error: true
         run: python pull_standings.py
 
+      - name: Pull league history
+        # One Yahoo call to check; only pulls (about 17 calls) when a finished
+        # week is missing from docs/history/, or once a day for stat
+        # corrections. Most runs print "up to date" and do nothing.
+        continue-on-error: true
+        run: python pull_history.py --if-behind
+      - name: Build player profiles
+        # No Yahoo calls. Runs last because it reads history, standings,
+        # dots and the bank. Only rewrites files whose numbers changed.
+        continue-on-error: true
+        run: python build_profiles.py
+
       - name: Publish if changed
         # EVERY file a step above writes must be listed here. A file written
         # but not listed is generated on the runner and thrown away, and the
@@ -95,7 +107,7 @@ jobs:
         # which is also why "docs/weeks" (a DIRECTORY, staged whole) is here.
         if: always()
         run: |
-          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/weeks docs/dots.json docs/dk.json docs/squid-scores.json docs/season.json bank-ledger.json"
+          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/weeks docs/dots.json docs/dk.json docs/squid-scores.json docs/season.json bank-ledger.json docs/history docs/profiles"
           # Stage first, THEN compare. "git diff" alone can't see files that
           # have never been committed, so a brand-new output (dots.json in
           # week 2) was written every run and silently discarded as "no change"
