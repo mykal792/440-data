@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-06T01:40:22Z",
+  "updated": "2026-11-06T01:45:22Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 7.74,
+        "score": 11.78,
         "projected": 123.81
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 7.1,
+        "score": 9.2,
         "projected": 127.59
       },
       "away": {
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "7.74",
+          "value": "11.78",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "7.10",
+          "value": "9.20",
           "detail": "beating GANGUS"
         },
         {
@@ -115,15 +115,15 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "7.74",
+          "value": "11.78",
           "detail": "5 to play"
         },
         {
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "7.10",
-          "detail": "8 to play"
+          "value": "9.20",
+          "detail": "7 to play"
         },
         {
           "rank": 3,
@@ -142,11 +142,11 @@
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 7.1,
+      "points": 7.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 11
+          "value": 16
         },
         {
           "stat": "TD",
@@ -155,16 +155,25 @@
       ]
     },
     {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.6,
+      "stats": []
+    },
+    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 3.56,
+      "points": 4.0,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 89
+          "value": 100
         }
       ]
     },
@@ -183,6 +192,24 @@
         {
           "stat": "RUSH YD",
           "value": 22
+        }
+      ]
+    },
+    {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -207,15 +234,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Joe Burrow",
@@ -518,15 +536,6 @@
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
