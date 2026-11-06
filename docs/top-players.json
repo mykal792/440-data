@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-06T02:10:24Z",
+  "updated": "2026-11-06T02:15:23Z",
   "players": [
     {
       "name": "Bhayshul Tuten",
@@ -18,6 +18,24 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": -3
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 50
         }
       ]
     },
@@ -45,20 +63,24 @@
       ]
     },
     {
-      "name": "Derrick Henry",
-      "position": "RB",
+      "name": "Zay Flowers",
+      "position": "WR",
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 4.28,
+      "points": 1.8,
       "stats": [
         {
-          "stat": "PASS YD",
+          "stat": "RUSH YD",
+          "value": 16
+        },
+        {
+          "stat": "REC YD",
           "value": -3
         },
         {
-          "stat": "RUSH YD",
-          "value": 44
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -73,28 +95,6 @@
         {
           "stat": "REC YD",
           "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": -3
         },
         {
           "stat": "REC",
