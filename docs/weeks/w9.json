@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-06T01:30:26Z",
+  "updated": "2026-11-06T01:35:19Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 6.48,
+        "score": 7.06,
         "projected": 123.81
       },
       "away": {
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "7.06",
+          "detail": "beating GRAHAM"
+        },
+        {
+          "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "6.50",
           "detail": "beating GANGUS"
-        },
-        {
-          "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "6.48",
-          "detail": "beating GRAHAM"
         },
         {
           "rank": 3,
@@ -113,17 +113,17 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "7.06",
+          "detail": "5 to play"
+        },
+        {
+          "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "6.50",
           "detail": "8 to play"
-        },
-        {
-          "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "6.48",
-          "detail": "5 to play"
         },
         {
           "rank": 3,
@@ -174,11 +174,37 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 1.7,
+      "points": 2.08,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": -3
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        }
+      ]
+    },
+    {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 17
+          "value": 9
+        },
+        {
+          "stat": "REC YD",
+          "value": -3
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -190,20 +216,6 @@
       "manager_display": "HAYDEN",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        }
-      ]
     },
     {
       "name": "Joe Burrow",
