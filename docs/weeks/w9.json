@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T16:20:27Z",
+  "updated": "2026-11-08T16:25:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 27.66,
+        "score": 27.62,
         "projected": 123.82
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 13.6,
+        "score": 14.3,
         "projected": 116.83
       },
       "away": {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "27.66",
+          "value": "27.62",
           "detail": "8 to play"
         }
       ]
@@ -142,11 +142,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 27.66,
+      "points": 27.62,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 239
+          "value": 238
         },
         {
           "stat": "RUSH YD",
@@ -323,6 +323,28 @@
       ]
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 19
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Bengals",
       "position": "DEF",
       "team": "Cin",
@@ -330,28 +352,6 @@
       "manager_display": "SCOTTY",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 16
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Zay Flowers",
