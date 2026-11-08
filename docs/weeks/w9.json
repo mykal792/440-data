@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T22:20:22Z",
+  "updated": "2026-11-08T22:25:19Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 92.84,
+        "score": 93.94,
         "projected": 127.97
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 105.8,
+        "score": 113.0,
         "projected": 124.1
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 85.52,
+        "score": 95.02,
         "projected": 113.45
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 95.36,
+        "score": 95.56,
         "projected": 123.88
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 57.16,
+        "score": 57.82,
         "projected": 108.79
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 55.9,
+        "score": 57.1,
         "projected": 126.43
       },
       "away": {
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "33.52",
+          "value": "32.32",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "17.56",
-          "detail": "beating GRAHAM"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "19.06",
+          "detail": "beating SCHILLING"
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "12.96",
-          "detail": "beating SCHILLING"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "17.76",
+          "detail": "beating GRAHAM"
         }
       ]
     },
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "105.80",
+          "value": "113.00",
           "detail": "1 to play"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "95.36",
+          "value": "95.56",
           "detail": "1 to play"
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "92.84",
-          "detail": "2 to play"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "95.02",
+          "detail": "All played"
         }
       ]
     }
@@ -368,15 +368,15 @@
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 20.86,
+      "points": 20.92,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 124
+          "value": 123
         },
         {
           "stat": "RUSH YD",
-          "value": 39
+          "value": 40
         },
         {
           "stat": "TD",
@@ -759,6 +759,32 @@
       ]
     },
     {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -1067,6 +1093,28 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 90
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -1081,6 +1129,24 @@
         {
           "stat": "RUSH YD",
           "value": 57
+        }
+      ]
+    },
+    {
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 44
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1214,24 +1280,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Tyler Allgeier",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1379,8 +1427,12 @@
       "team": "LV",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 2.5,
+      "points": 2.7,
       "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
         {
           "stat": "REC YD",
           "value": 20
@@ -1388,6 +1440,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
         }
       ]
     },
@@ -1410,16 +1476,16 @@
       ]
     },
     {
-      "name": "Woody Marks",
+      "name": "Ashton Jeanty",
       "position": "RB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.4,
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 15
         }
       ]
     },
@@ -1458,34 +1524,6 @@
       "manager_display": "GRAHAM",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 10
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        }
-      ]
     },
     {
       "name": "Josh Jacobs",
@@ -1635,24 +1673,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": -1.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 60
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
     }
   ]
 }
