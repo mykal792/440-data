@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T22:55:22Z",
+  "updated": "2026-11-08T23:00:33Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 123.02,
+        "score": 123.34,
         "projected": 124.1
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 95.56,
+        "score": 98.06,
         "projected": 123.88
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 61.32,
+        "score": 62.92,
         "projected": 108.79
       }
     },
@@ -93,14 +93,14 @@
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "18.08",
+          "value": "18.40",
           "detail": "beating SCHILLING"
         },
         {
           "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "14.76",
+          "value": "17.26",
           "detail": "beating GRAHAM"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "123.02",
+          "value": "123.34",
           "detail": "1 to play"
         },
         {
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "97.72",
-          "detail": "All played"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "98.06",
+          "detail": "1 to play"
         }
       ]
     }
@@ -702,11 +702,11 @@
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 12.72,
+      "points": 13.04,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 168
+          "value": 176
         },
         {
           "stat": "TD",
@@ -1240,6 +1240,28 @@
       ]
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Sam LaPorta",
       "position": "TE",
       "team": "Det",
@@ -1373,6 +1395,28 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 24
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -1467,42 +1511,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
         }
       ]
     },
