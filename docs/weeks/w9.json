@@ -1,20 +1,20 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T15:55:22Z",
+  "updated": "2026-11-08T16:00:29Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 25.86,
-        "projected": 123.62
+        "score": 27.66,
+        "projected": 123.82
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 12.6,
-        "projected": 123.75
+        "score": 18.3,
+        "projected": 124.02
       }
     },
     {
@@ -22,13 +22,13 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 3.4,
-        "projected": 117.4
+        "projected": 117.21
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 32.5,
-        "projected": 113.7
+        "projected": 113.69
       }
     },
     {
@@ -36,13 +36,13 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 44.06,
-        "projected": 124.24
+        "projected": 124.1
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 0.0,
-        "projected": 131.89
+        "projected": 131.7
       }
     },
     {
@@ -50,13 +50,13 @@
         "name": "GREG",
         "face": "greg",
         "score": 13.6,
-        "projected": 116.97
+        "projected": 116.83
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 0.0,
-        "projected": 108.39
+        "projected": 108.53
       }
     },
     {
@@ -64,13 +64,13 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 22.0,
-        "projected": 126.05
+        "projected": 126.06
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
         "score": 0.0,
-        "projected": 113.41
+        "projected": 113.43
       }
     }
   ],
@@ -129,13 +129,35 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "25.86",
+          "value": "27.66",
           "detail": "8 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 27.66,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 239
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
     {
       "name": "Ja'Marr Chase",
       "position": "WR",
@@ -155,28 +177,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 25.86,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 194
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -296,6 +296,15 @@
       ]
     },
     {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.7,
+      "stats": []
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -383,15 +392,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.0,
-      "stats": []
     },
     {
       "name": "Kyle Pitts Sr.",

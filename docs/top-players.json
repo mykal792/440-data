@@ -1,8 +1,30 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T15:55:22Z",
+  "updated": "2026-11-08T16:00:29Z",
   "players": [
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 27.66,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 239
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
     {
       "name": "Ja'Marr Chase",
       "position": "WR",
@@ -22,28 +44,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 25.86,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 194
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -163,6 +163,15 @@
       ]
     },
     {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.7,
+      "stats": []
+    },
+    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -250,15 +259,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.0,
-      "stats": []
     },
     {
       "name": "Kyle Pitts Sr.",
