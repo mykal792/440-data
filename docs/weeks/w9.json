@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T23:00:33Z",
+  "updated": "2026-11-08T23:05:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 104.94,
+        "score": 106.14,
         "projected": 127.97
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 123.34,
+        "score": 123.64,
         "projected": 124.1
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 88.3,
+        "score": 89.3,
         "projected": 125.22
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 98.06,
+        "score": 106.66,
         "projected": 123.88
       },
       "away": {
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "18.40",
-          "detail": "beating SCHILLING"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "25.86",
+          "detail": "beating GRAHAM"
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "17.26",
-          "detail": "beating GRAHAM"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "17.50",
+          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "123.34",
+          "value": "123.64",
           "detail": "1 to play"
         },
         {
           "rank": 2,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "104.94",
-          "detail": "2 to play"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "106.66",
+          "detail": "1 to play"
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "98.06",
-          "detail": "1 to play"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "106.14",
+          "detail": "2 to play"
         }
       ]
     }
@@ -438,11 +438,11 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 19.5,
+      "points": 19.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 58
+          "value": 60
         },
         {
           "stat": "REC YD",
@@ -591,6 +591,32 @@
       "stats": []
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 13.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -627,6 +653,32 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 13.34,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 176
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 3
         }
       ]
     },
@@ -693,28 +745,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 13.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 176
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 3
         }
       ]
     },
@@ -816,6 +846,15 @@
       "stats": []
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Omar Cooper Jr.",
       "position": "WR",
       "team": "NYJ",
@@ -859,15 +898,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.0,
-      "stats": []
     },
     {
       "name": "Chase Brown",
@@ -1049,6 +1079,15 @@
       "stats": []
     },
     {
+      "name": "Matt Gay",
+      "position": "K",
+      "team": "LV",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -1155,15 +1194,6 @@
       ]
     },
     {
-      "name": "Matt Gay",
-      "position": "K",
-      "team": "LV",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -1236,28 +1266,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "REC YD",
-          "value": 35
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
