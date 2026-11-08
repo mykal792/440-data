@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T17:20:21Z",
+  "updated": "2026-11-08T17:25:22Z",
   "matchups": [
     {
       "home": {
@@ -22,12 +22,12 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 9.3,
-        "projected": 116.23
+        "projected": 125.16
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 33.9,
+        "score": 37.3,
         "projected": 113.41
       }
     },
@@ -49,8 +49,8 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 26.5,
-        "projected": 116.77
+        "score": 26.7,
+        "projected": 119.96
       },
       "away": {
         "name": "COYNE",
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "26.50",
-          "detail": "beating COYNE"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "28.00",
+          "detail": "beating GARRETT"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "24.60",
-          "detail": "beating GARRETT"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "26.70",
+          "detail": "beating COYNE"
         }
       ]
     },
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "35.64",
-          "detail": "8 to play"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "37.30",
+          "detail": "6 to play"
         }
       ]
     }
@@ -309,6 +309,28 @@
       ]
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 57
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -323,28 +345,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 8.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 55
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -365,6 +365,15 @@
           "value": 57
         }
       ]
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Zay Flowers",
@@ -389,29 +398,20 @@
       ]
     },
     {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.0,
-      "stats": []
-    },
-    {
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "team": "Atl",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 2.4,
+      "points": 3.8,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 14
+          "value": 23
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         }
       ]
     },
@@ -533,9 +533,9 @@
       "stats": []
     },
     {
-      "name": "Cam Skattebo",
-      "position": "RB",
-      "team": "NYG",
+      "name": "Malik Washington",
+      "position": "WR",
+      "team": "Mia",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -641,9 +641,9 @@
       "stats": []
     },
     {
-      "name": "Michael Wilson",
-      "position": "WR",
-      "team": "Ari",
+      "name": "Devin Singletary",
+      "position": "RB",
+      "team": "NYG",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
