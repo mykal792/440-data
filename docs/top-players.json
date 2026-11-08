@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T19:15:24Z",
+  "updated": "2026-11-08T19:20:23Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -74,25 +74,16 @@
       ]
     },
     {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 19.1,
-      "stats": []
-    },
-    {
       "name": "Kenneth Walker III",
       "position": "RB",
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 18.8,
+      "points": 19.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 21
         },
         {
           "stat": "REC YD",
@@ -107,6 +98,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 19.1,
+      "stats": []
     },
     {
       "name": "Tee Higgins",
@@ -202,13 +202,26 @@
       ]
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.0,
-      "stats": []
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 86
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Saints",
@@ -278,26 +291,13 @@
       ]
     },
     {
-      "name": "Puka Nacua",
-      "position": "WR",
+      "name": "Rams",
+      "position": "DEF",
       "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 64
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.0,
+      "stats": []
     },
     {
       "name": "Saquon Barkley",
@@ -314,6 +314,24 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -336,34 +354,16 @@
       ]
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.0,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 6.84,
+      "points": 7.12,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 66
+          "value": 73
         },
         {
           "stat": "RUSH YD",
@@ -380,16 +380,25 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 5.7,
+      "points": 5.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 32
+          "value": 34
         },
         {
           "stat": "REC YD",
@@ -429,6 +438,37 @@
       "stats": []
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 47
+        },
+        {
+          "stat": "REC YD",
+          "value": -1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "Bengals",
       "position": "DEF",
       "team": "Cin",
@@ -461,11 +501,11 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 4.5,
+      "points": 4.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 45
+          "value": 46
         }
       ]
     },
@@ -564,6 +604,24 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.78,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 92
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -613,6 +671,46 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brandon McManus",
       "position": "K",
       "team": "LAR",
@@ -636,46 +734,6 @@
       ]
     },
     {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 70
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -686,28 +744,6 @@
         {
           "stat": "REC YD",
           "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
-        },
-        {
-          "stat": "REC YD",
-          "value": -1
         },
         {
           "stat": "REC",
@@ -734,24 +770,6 @@
       ]
     },
     {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -770,16 +788,16 @@
       ]
     },
     {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.6,
+      "name": "Malik Washington",
+      "position": "WR",
+      "team": "Mia",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 11
+          "value": 14
         },
         {
           "stat": "REC",
@@ -788,11 +806,11 @@
       ]
     },
     {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "team": "Det",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 1.6,
       "stats": [
         {
@@ -925,15 +943,6 @@
       "name": "Harold Fannin Jr.",
       "position": "TE",
       "team": "Cle",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Malik Washington",
-      "position": "WR",
-      "team": "Mia",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
