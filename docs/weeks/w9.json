@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T22:30:27Z",
+  "updated": "2026-11-08T22:35:23Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 113.0,
+        "score": 114.32,
         "projected": 124.1
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 86.3,
+        "score": 87.3,
         "projected": 125.22
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 58.72,
+        "score": 61.32,
         "projected": 108.79
       }
     },
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "12.86",
+          "value": "14.18",
           "detail": "beating SCHILLING"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "113.00",
+          "value": "114.32",
           "detail": "1 to play"
         },
         {
@@ -897,6 +897,15 @@
       ]
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -982,13 +991,26 @@
       "stats": []
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.0,
-      "stats": []
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 123
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Jonathan Taylor",
@@ -1057,6 +1079,28 @@
       ]
     },
     {
+      "name": "Jadarian Price",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 6.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1098,28 +1142,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 5.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 90
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
@@ -1307,28 +1329,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jadarian Price",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
