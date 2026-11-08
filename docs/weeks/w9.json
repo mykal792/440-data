@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T19:45:21Z",
+  "updated": "2026-11-08T19:50:23Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 60.46,
+        "score": 60.98,
         "projected": 113.52
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 69.36,
+        "score": 73.26,
         "projected": 123.85
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 31.18,
+        "score": 31.98,
         "projected": 132.03
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 43.7,
+        "score": 44.74,
         "projected": 119.92
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 23.7,
+        "score": 25.7,
         "projected": 108.84
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 31.0,
+        "score": 30.8,
         "projected": 113.58
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "38.18",
+          "value": "41.28",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "20.00",
+          "value": "19.04",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "16.90",
+          "value": "17.42",
           "detail": "beating GARRETT"
         }
       ]
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "69.36",
+          "value": "73.26",
           "detail": "2 to play"
         },
         {
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "60.46",
+          "value": "60.98",
           "detail": "2 to play"
         },
         {
@@ -212,19 +212,19 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 19.4,
+      "points": 23.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 21
+          "value": 52
         },
         {
           "stat": "REC YD",
-          "value": 38
+          "value": 41
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 4
         },
         {
           "stat": "TD",
@@ -308,6 +308,32 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 16.54,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 146
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
@@ -356,32 +382,6 @@
       ]
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 15.5,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 120
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -418,7 +418,7 @@
       "team": "NO",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 10.0,
+      "points": 11.0,
       "stats": []
     },
     {
@@ -592,19 +592,50 @@
       "stats": []
     },
     {
+      "name": "Brandon McManus",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 6.3,
+      "stats": []
+    },
+    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 5.66,
+      "points": 6.18,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 139
+          "value": 152
         },
         {
           "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 55
+        },
+        {
+          "stat": "REC YD",
+          "value": -1
+        },
+        {
+          "stat": "REC",
           "value": 1
         }
       ]
@@ -624,37 +655,6 @@
         {
           "stat": "RUSH YD",
           "value": 57
-        }
-      ]
-    },
-    {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.3,
-      "stats": []
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 47
-        },
-        {
-          "stat": "REC YD",
-          "value": -1
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -861,20 +861,6 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        }
-      ]
-    },
-    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -889,6 +875,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
         }
       ]
     },
