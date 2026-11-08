@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T16:40:22Z",
+  "updated": "2026-11-08T16:45:22Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -9,11 +9,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 27.62,
+      "points": 34.42,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 238
+          "value": 258
         },
         {
           "stat": "RUSH YD",
@@ -21,7 +21,7 @@
         },
         {
           "stat": "TD",
-          "value": 3
+          "value": 4
         }
       ]
     },
@@ -83,6 +83,28 @@
       "stats": []
     },
     {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 17.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -127,26 +149,13 @@
       ]
     },
     {
-      "name": "Tee Higgins",
-      "position": "WR",
+      "name": "Evan McPherson",
+      "position": "K",
       "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 10.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 24
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.7,
+      "stats": []
     },
     {
       "name": "Bhayshul Tuten",
@@ -167,13 +176,26 @@
       ]
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
+      "name": "Chase Brown",
+      "position": "RB",
       "team": "Cin",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.7,
-      "stats": []
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 8.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 55
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Derrick Henry",
@@ -190,28 +212,6 @@
         {
           "stat": "RUSH YD",
           "value": 57
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 19
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },

@@ -1,20 +1,20 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T16:40:22Z",
+  "updated": "2026-11-08T16:45:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 27.94,
-        "projected": 123.82
+        "score": 34.42,
+        "projected": 124.16
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 29.7,
-        "projected": 124.04
+        "score": 30.7,
+        "projected": 124.05
       }
     },
     {
@@ -22,13 +22,13 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 4.8,
-        "projected": 117.22
+        "projected": 117.1
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 30.5,
-        "projected": 113.68
+        "projected": 113.74
       }
     },
     {
@@ -36,27 +36,27 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 44.06,
-        "projected": 124.11
+        "projected": 124.1
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 0.0,
-        "projected": 131.75
+        "projected": 131.74
       }
     },
     {
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 15.6,
+        "score": 26.5,
         "projected": 116.84
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 0.0,
-        "projected": 108.54
+        "projected": 108.55
       }
     },
     {
@@ -70,7 +70,7 @@
         "name": "GANGUS",
         "face": "gangus",
         "score": 0.0,
-        "projected": 113.43
+        "projected": 113.39
       }
     }
   ],
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "GREG",
+          "face": "greg",
+          "value": "26.50",
+          "detail": "beating COYNE"
+        },
+        {
+          "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
           "value": "25.70",
           "detail": "beating GARRETT"
-        },
-        {
-          "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "22.00",
-          "detail": "beating GANGUS"
         }
       ]
     },
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "30.50",
-          "detail": "6 to play"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "34.42",
+          "detail": "8 to play"
         },
         {
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "29.70",
+          "value": "30.70",
           "detail": "7 to play"
         }
       ]
@@ -142,11 +142,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 27.62,
+      "points": 34.42,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 238
+          "value": 258
         },
         {
           "stat": "RUSH YD",
@@ -154,7 +154,7 @@
         },
         {
           "stat": "TD",
-          "value": 3
+          "value": 4
         }
       ]
     },
@@ -216,6 +216,28 @@
       "stats": []
     },
     {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 17.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -260,26 +282,13 @@
       ]
     },
     {
-      "name": "Tee Higgins",
-      "position": "WR",
+      "name": "Evan McPherson",
+      "position": "K",
       "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 10.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 24
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.7,
+      "stats": []
     },
     {
       "name": "Bhayshul Tuten",
@@ -300,13 +309,26 @@
       ]
     },
     {
-      "name": "Evan McPherson",
-      "position": "K",
+      "name": "Chase Brown",
+      "position": "RB",
       "team": "Cin",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.7,
-      "stats": []
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 8.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 55
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Derrick Henry",
@@ -323,28 +345,6 @@
         {
           "stat": "RUSH YD",
           "value": 57
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 19
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
