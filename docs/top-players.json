@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T19:40:25Z",
+  "updated": "2026-11-08T19:45:21Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -356,6 +356,24 @@
       "stats": []
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
@@ -406,24 +424,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 47
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -728,6 +728,20 @@
       ]
     },
     {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 36
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -768,20 +782,6 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        }
-      ]
-    },
-    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -813,6 +813,28 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.68,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 77
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -853,28 +875,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.48,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 72
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
