@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T20:20:22Z",
+  "updated": "2026-11-08T20:25:20Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 63.5,
+        "score": 65.4,
         "projected": 124.05
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 53.76,
+        "score": 54.2,
         "projected": 125.22
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 62.48,
+        "score": 63.24,
         "projected": 113.52
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 80.46,
+        "score": 86.66,
         "projected": 123.85
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 51.5,
+        "score": 55.18,
         "projected": 132.03
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 49.06,
+        "score": 49.84,
         "projected": 119.93
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 30.6,
+        "score": 31.6,
         "projected": 108.84
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 37.4,
+        "score": 37.7,
         "projected": 113.58
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "28.96",
+          "value": "31.48",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "18.46",
+          "value": "18.24",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "8.72",
+          "value": "9.04",
           "detail": "beating GARRETT"
         }
       ]
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "80.46",
+          "value": "86.66",
           "detail": "2 to play"
         },
         {
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "63.50",
+          "value": "65.40",
           "detail": "3 to play"
         },
         {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "62.48",
+          "value": "63.24",
           "detail": "2 to play"
         }
       ]
@@ -159,6 +159,32 @@
       ]
     },
     {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 33.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 90
+        },
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -177,32 +203,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 26.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 88
-        },
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -255,6 +255,28 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 20.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 143
+        },
+        {
+          "stat": "REC",
+          "value": 13
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -269,11 +291,11 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 18.56,
+      "points": 18.84,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 194
+          "value": 201
         },
         {
           "stat": "RUSH YD",
@@ -282,28 +304,6 @@
         {
           "stat": "TD",
           "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 18.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 124
-        },
-        {
-          "stat": "REC",
-          "value": 12
         },
         {
           "stat": "FUM",
@@ -339,11 +339,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 16.64,
+      "points": 17.6,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 161
+          "value": 185
         },
         {
           "stat": "RUSH YD",
@@ -444,7 +444,7 @@
       "team": "NO",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 12.0,
+      "points": 13.0,
       "stats": []
     },
     {
@@ -466,6 +466,28 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 66
+        },
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -480,28 +502,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 60
-        },
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -622,16 +622,25 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 8.2,
+      "points": 7.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 22
+          "value": 19
         },
         {
           "stat": "TD",
@@ -640,13 +649,70 @@
       ]
     },
     {
-      "name": "Rams",
-      "position": "DEF",
+      "name": "Kyren Williams",
+      "position": "RB",
       "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 46
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 8.0,
-      "stats": []
+      "points": 7.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.94,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 221
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Ollie Gordon II",
@@ -667,28 +733,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 6.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        },
-        {
-          "stat": "REC YD",
-          "value": 16
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -731,50 +775,6 @@
       "manager_display": "COYNE",
       "points": 6.3,
       "stats": []
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 202
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Derrick Henry",
@@ -853,6 +853,28 @@
       ]
     },
     {
+      "name": "Devin Singletary",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -911,6 +933,28 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.08,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 137
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -947,50 +991,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Devin Singletary",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 130
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
