@@ -1,33 +1,33 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T20:25:20Z",
+  "updated": "2026-11-08T20:30:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 57.24,
-        "projected": 127.46
+        "projected": 127.82
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 65.4,
-        "projected": 124.05
+        "score": 72.4,
+        "projected": 124.06
       }
     },
     {
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 54.2,
+        "score": 54.5,
         "projected": 125.22
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 63.24,
+        "score": 73.92,
         "projected": 113.52
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 55.18,
+        "score": 63.42,
         "projected": 132.03
       }
     },
@@ -50,27 +50,27 @@
         "name": "GREG",
         "face": "greg",
         "score": 49.84,
-        "projected": 119.93
+        "projected": 119.94
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 31.6,
-        "projected": 108.84
+        "score": 35.0,
+        "projected": 108.85
       }
     },
     {
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 36.9,
-        "projected": 126.39
+        "score": 39.7,
+        "projected": 126.37
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 37.7,
-        "projected": 113.58
+        "score": 40.1,
+        "projected": 113.6
       }
     }
   ],
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "31.48",
+          "value": "23.24",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "18.24",
-          "detail": "beating COYNE"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "19.42",
+          "detail": "beating GARRETT"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "9.04",
-          "detail": "beating GARRETT"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "15.16",
+          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "65.40",
-          "detail": "3 to play"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "73.92",
+          "detail": "2 to play"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "63.24",
-          "detail": "2 to play"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "72.40",
+          "detail": "3 to play"
         }
       ]
     }
@@ -207,6 +207,32 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 28.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 150
+        },
+        {
+          "stat": "REC",
+          "value": 14
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -250,28 +276,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 20.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 143
-        },
-        {
-          "stat": "REC",
-          "value": 13
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
@@ -382,6 +386,32 @@
       ]
     },
     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 35
+        },
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -417,6 +447,32 @@
       "stats": []
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 13.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 228
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -448,16 +504,34 @@
       "stats": []
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 86
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        }
+      ]
+    },
+    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 11.8,
+      "points": 12.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 58
+          "value": 61
         },
         {
           "stat": "TD",
@@ -471,11 +545,11 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 10.9,
+      "points": 11.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 66
+          "value": 68
         },
         {
           "stat": "REC YD",
@@ -484,24 +558,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 69
-        },
-        {
-          "stat": "REC",
-          "value": 7
         }
       ]
     },
@@ -531,6 +587,15 @@
           "value": 5
         }
       ]
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.3,
+      "stats": []
     },
     {
       "name": "Chase Brown",
@@ -649,6 +714,24 @@
       ]
     },
     {
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -671,48 +754,35 @@
       ]
     },
     {
-      "name": "Jonah Coleman",
+      "name": "Jonathan Taylor",
       "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.7,
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 26
+          "value": 33
         },
         {
           "stat": "REC YD",
-          "value": 31
+          "value": 18
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 5
         }
       ]
     },
     {
-      "name": "Matthew Stafford",
-      "position": "QB",
+      "name": "Brandon McManus",
+      "position": "K",
       "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.94,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 221
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.3,
+      "stats": []
     },
     {
       "name": "Ollie Gordon II",
@@ -720,11 +790,11 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 6.8,
+      "points": 6.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 54
+          "value": 55
         },
         {
           "stat": "REC YD",
@@ -737,44 +807,22 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.6,
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.8,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 33
-        },
-        {
           "stat": "REC YD",
-          "value": 13
+          "value": 38
         },
         {
           "stat": "REC",
           "value": 4
         }
       ]
-    },
-    {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.5,
-      "stats": []
-    },
-    {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.3,
-      "stats": []
     },
     {
       "name": "Derrick Henry",
@@ -795,6 +843,28 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 163
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -811,24 +881,6 @@
       "manager_display": "SCOTTY",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Omar Cooper Jr.",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 24
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Jameson Williams",
@@ -915,16 +967,16 @@
       ]
     },
     {
-      "name": "Malik Nabers",
+      "name": "Rashee Rice",
       "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.2,
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 27
+          "value": 25
         },
         {
           "stat": "REC",
@@ -933,33 +985,11 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
+      "name": "Sam LaPorta",
+      "position": "TE",
       "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 4.08,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 137
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 4.0,
       "stats": [
         {
@@ -1059,24 +1089,6 @@
         {
           "stat": "REC YD",
           "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 16
         },
         {
           "stat": "REC",
