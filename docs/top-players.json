@@ -1,8 +1,34 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T20:35:22Z",
+  "updated": "2026-11-08T20:40:22Z",
   "players": [
+    {
+      "name": "Kenneth Walker III",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 36.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 102
+        },
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
     {
       "name": "Joe Burrow",
       "position": "QB",
@@ -22,32 +48,6 @@
         {
           "stat": "TD",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Kenneth Walker III",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 33.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 91
-        },
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -153,11 +153,11 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 19.32,
+      "points": 19.44,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 213
+          "value": 216
         },
         {
           "stat": "RUSH YD",
@@ -183,6 +183,32 @@
       "stats": []
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 18.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 201
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -201,32 +227,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 17.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 185
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
     },
@@ -362,15 +362,6 @@
       ]
     },
     {
-      "name": "Saints",
-      "position": "DEF",
-      "team": "NO",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 13.0,
-      "stats": []
-    },
-    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -436,6 +427,15 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Saints",
+      "position": "DEF",
+      "team": "NO",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.0,
+      "stats": []
     },
     {
       "name": "Drake London",
@@ -852,6 +852,24 @@
       ]
     },
     {
+      "name": "Antonio Williams",
+      "position": "WR",
+      "team": "Was",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Sam LaPorta",
       "position": "TE",
       "team": "Det",
@@ -933,24 +951,6 @@
       "team": "Mia",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Antonio Williams",
-      "position": "WR",
-      "team": "Was",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 3.1,
       "stats": [
         {
