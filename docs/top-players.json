@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T18:05:23Z",
+  "updated": "2026-11-08T18:10:27Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -158,6 +158,15 @@
       ]
     },
     {
+      "name": "Saints",
+      "position": "DEF",
+      "team": "NO",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -172,15 +181,6 @@
       "team": "KC",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Saints",
-      "position": "DEF",
-      "team": "NO",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 10.0,
       "stats": []
     },
@@ -279,6 +279,15 @@
       "stats": []
     },
     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.5,
+      "stats": []
+    },
+    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -324,43 +333,15 @@
       "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.9,
+      "points": 3.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 4
+          "value": 20
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Devin Singletary",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
+          "value": 2
         }
       ]
     },
@@ -370,11 +351,65 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.2,
+      "points": 2.5,
       "stats": [
         {
           "stat": "RUSH YD",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "REC YD",
           "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -384,11 +419,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.16,
+      "points": 1.16,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 4
+          "value": 29
         }
       ]
     },
@@ -398,11 +433,25 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 0.16,
+      "points": 1.16,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 4
+          "value": 29
+        }
+      ]
+    },
+    {
+      "name": "Devin Singletary",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
         }
       ]
     },
@@ -653,15 +702,6 @@
       "name": "George Kittle",
       "position": "TE",
       "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Omar Cooper Jr.",
-      "position": "WR",
-      "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
@@ -929,15 +969,6 @@
       "stats": []
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -977,15 +1008,6 @@
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
