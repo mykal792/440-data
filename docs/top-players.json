@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T16:25:21Z",
+  "updated": "2026-11-08T16:30:26Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -79,6 +79,28 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 70
+        },
+        {
+          "stat": "REC YD",
+          "value": 50
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -97,28 +119,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 9.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 59
-        },
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -221,6 +221,24 @@
       "stats": []
     },
     {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -239,24 +257,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 24
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
