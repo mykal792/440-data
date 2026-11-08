@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T14:30:27Z",
+  "updated": "2026-11-08T14:35:22Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 0.0,
+        "score": 10.0,
         "projected": 113.7
       }
     },
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "10.00",
+          "detail": "beating GARRETT"
         }
       ]
     },
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "0.00",
-          "detail": "9 to play"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "10.00",
+          "detail": "8 to play"
         }
       ]
     }
@@ -188,6 +188,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "Bhayshul Tuten",
@@ -908,15 +917,6 @@
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
