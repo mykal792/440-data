@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T23:20:23Z",
+  "updated": "2026-11-08T23:25:20Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 106.44,
+        "score": 111.64,
         "projected": 127.97
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 123.64,
+        "score": 125.04,
         "projected": 124.1
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 91.3,
+        "score": 93.3,
         "projected": 125.22
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 97.82,
+        "score": 98.12,
         "projected": 113.45
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 64.44,
+        "score": 65.6,
         "projected": 108.79
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 96.16,
+        "score": 97.8,
         "projected": 113.69
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "31.06",
+          "value": "32.70",
           "detail": "beating SCARPITTI"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "17.20",
+          "value": "13.40",
           "detail": "beating SCHILLING"
         }
       ]
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "123.64",
+          "value": "125.04",
           "detail": "1 to play"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "106.44",
+          "value": "111.64",
           "detail": "2 to play"
         },
         {
@@ -268,15 +268,15 @@
       "team": "GB",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 26.5,
+      "points": 27.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 150
+          "value": 154
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 9
         },
         {
           "stat": "TD",
@@ -337,6 +337,28 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 23.7,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 260
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -363,24 +385,28 @@
       ]
     },
     {
-      "name": "Jordan Love",
+      "name": "Brock Purdy",
       "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 22.06,
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 20.6,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 219
+          "value": 165
         },
         {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 40
         },
         {
           "stat": "TD",
           "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -411,42 +437,16 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 19.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 146
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 40
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 19.5,
+      "points": 20.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 58
+          "value": 63
         },
         {
           "stat": "REC YD",
@@ -566,6 +566,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 14.0,
+      "stats": []
     },
     {
       "name": "Chiefs",
@@ -823,13 +832,22 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 12.0,
-      "stats": []
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 12.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 99
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
     },
     {
       "name": "Chuba Hubbard",
@@ -921,6 +939,28 @@
       "stats": []
     },
     {
+      "name": "Jadarian Price",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "REC YD",
+          "value": 54
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Wil Lutz",
       "position": "K",
       "team": "Den",
@@ -944,28 +984,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Jadarian Price",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 9.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "REC YD",
-          "value": 54
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1062,24 +1080,6 @@
       "manager_display": "COYNE",
       "points": 8.0,
       "stats": []
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 62
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Kyren Williams",
@@ -1420,11 +1420,11 @@
       "team": "Sea",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 4.2,
+      "points": 4.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 28
+          "value": 31
         },
         {
           "stat": "REC YD",
