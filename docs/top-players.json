@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T19:25:22Z",
+  "updated": "2026-11-08T19:30:27Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -158,11 +158,15 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 14.32,
+      "points": 15.5,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 108
+          "value": 120
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
         },
         {
           "stat": "TD",
@@ -295,6 +299,24 @@
       ]
     },
     {
+      "name": "Wil Lutz",
+      "position": "K",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 8.4,
+      "stats": []
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Rams",
       "position": "DEF",
       "team": "LAR",
@@ -309,11 +331,11 @@
       "team": "Phi",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 7.9,
+      "points": 7.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 19
+          "value": 18
         },
         {
           "stat": "TD",
@@ -382,15 +404,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.0,
-      "stats": []
     },
     {
       "name": "Javonte Williams",
@@ -545,6 +558,28 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 30
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -573,6 +608,24 @@
         {
           "stat": "REC YD",
           "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
         },
         {
           "stat": "REC",
@@ -653,33 +706,20 @@
       ]
     },
     {
-      "name": "Wil Lutz",
-      "position": "K",
-      "team": "Den",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.6,
-      "stats": []
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.6,
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.5,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 30
-        },
-        {
           "stat": "REC YD",
-          "value": 1
+          "value": 25
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -738,24 +778,6 @@
       ]
     },
     {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -766,24 +788,6 @@
         {
           "stat": "REC YD",
           "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 17
         },
         {
           "stat": "REC",
