@@ -130,25 +130,25 @@ html, body { margin: 0; padding: 0; background: transparent; }
 
 /* ---------- phones: a 340 x 320 box ---------- */
 @container (max-width: 599px) {
-  .w { --u: calc(100cqw / 340); height: calc(320 * var(--u)); border-width: calc(2.5 * var(--u)); border-radius: calc(22 * var(--u)); padding: calc(18 * var(--u)) calc(18 * var(--u)) 0; }
+  .w { --u: calc(100cqw / 340); height: calc(308 * var(--u)); border-width: calc(2.5 * var(--u)); border-radius: calc(22 * var(--u)); padding: calc(18 * var(--u)) calc(18 * var(--u)) 0; }
   .top { margin-left: 0; } .ttl { margin-left: calc(-0.5 * var(--u)); margin-top: calc(5 * var(--u)); }
   .wk { font-size: calc(10 * var(--u)); } .tag { font-size: calc(8.5 * var(--u)); }
   .ttl h2 { font-size: calc(17 * var(--u)); }
   .ttl .dash { height: calc(3 * var(--u)); background-size: calc(19 * var(--u)) calc(3 * var(--u)); }
   .hq { right: calc(18 * var(--u)); bottom: calc(8 * var(--u)); font-size: calc(8 * var(--u)); }
 
-  .row { flex-wrap: wrap; margin-top: calc(12 * var(--u)); }
-  .row > .av { width: calc(92 * var(--u)); margin-left: 0; }
-  .row .who { margin-left: calc(14 * var(--u)); padding-bottom: calc(12 * var(--u)); }
+  .row { flex-wrap: wrap; margin-top: calc(20 * var(--u)); }
+  .row > .av { width: calc(114 * var(--u)); margin-left: 0; }
+  .row .who { margin-left: calc(14 * var(--u)); padding-bottom: calc(14 * var(--u)); }
   .cap { font-size: calc(9.5 * var(--u)); letter-spacing: .02em; gap: calc(5 * var(--u)); }
   .cap i { width: calc(3.5 * var(--u)); height: calc(3.5 * var(--u)); }
-  .row .nm { font-size: calc(21 * var(--u)); margin-top: calc(7 * var(--u)); }
-  .row .pts { font-size: calc(27 * var(--u)); margin-top: calc(5 * var(--u)); }
-  .col { flex: 1 1 100%; margin: calc(14 * var(--u)) 0 0; }
+  .row .nm { font-size: calc(24 * var(--u)); margin-top: calc(8 * var(--u)); }
+  .row .pts { font-size: calc(31 * var(--u)); margin-top: calc(6 * var(--u)); }
+  .col { flex: 1 1 100%; margin: calc(20 * var(--u)) 0 0; }
   .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(8 * var(--u)); order: 1; }
-  .stat { height: calc(56 * var(--u)); border-width: calc(2.5 * var(--u)); border-radius: calc(11 * var(--u)); padding: calc(12 * var(--u)) calc(9 * var(--u)) 0; }
-  .stat span { font-size: calc(7.5 * var(--u)); letter-spacing: .03em; }
-  .stat b { font-size: calc(18 * var(--u)); margin-top: calc(6 * var(--u)); }
+  .stat { height: calc(68 * var(--u)); border-width: calc(2.5 * var(--u)); border-radius: calc(11 * var(--u)); padding: calc(16 * var(--u)) calc(9 * var(--u)) 0; }
+  .stat span { font-size: calc(8 * var(--u)); letter-spacing: .03em; }
+  .stat b { font-size: calc(17 * var(--u)); margin-top: calc(9 * var(--u)); }
   .notes { order: 2; margin: calc(14 * var(--u)) 0 0; gap: calc(8 * var(--u)); }
   .note { font-size: calc(11 * var(--u)); gap: calc(7 * var(--u)); }
   .note .coin { width: calc(15 * var(--u)); height: calc(15 * var(--u)); }
@@ -261,10 +261,9 @@ function blockCard(d, H, last) {
     var wts = pr.map(function (v) { return Math.exp(-(v - mn) / vol); }), sum = wts.reduce(function (t, v) { return t + v; }, 0);
     surv = (1 - wts[0] / sum) * 100;
   }
-  var lowTok = (d.tokens || []).some(function (t) { return t.holder === low.id && (t.status === 'held' || t.status === 'active'); });
   var cap = d.final ? 'Eliminated' : (settled ? 'On the block' : 'Projected low score');
-  var notes = (lowTok ? '<div class="note tok"><span class="coin live"></span><span><b>' + esc(H.name(low.id)) + '</b> holds a duel token</span></div>' : '') +
-              (last ? recapNote(H, last) : '');
+  /* no extra lines under the player: the card is exactly the artboard */
+  var notes = '';
   return head('Chopping Block', d.week, d.final ? 'final' : (d.live ? 'live' : '')) +
     '<div class="row">' + avatar(low.id, !!d.final) +
       '<div class="who"><span class="cap' + (d.final ? ' out' : '') + '"><i></i>' + cap + '</span>' +
