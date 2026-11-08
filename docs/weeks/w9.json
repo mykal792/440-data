@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T20:45:21Z",
+  "updated": "2026-11-08T20:50:22Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 60.86,
+        "score": 61.06,
         "projected": 125.22
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 65.2,
+        "score": 67.6,
         "projected": 132.03
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 50.44,
+        "score": 50.24,
         "projected": 119.94
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 35.1,
+        "score": 36.8,
         "projected": 108.85
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 40.6,
+        "score": 41.3,
         "projected": 113.6
       }
     }
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "25.66",
+          "value": "23.26",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "15.34",
-          "detail": "beating COYNE"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "13.86",
+          "detail": "beating GARRETT"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "14.06",
-          "detail": "beating GARRETT"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "13.44",
+          "detail": "beating COYNE"
         }
       ]
     },
@@ -455,6 +455,24 @@
       "stats": []
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 13.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 74
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -476,24 +494,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 13.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 72
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -548,6 +548,15 @@
       ]
     },
     {
+      "name": "Saints",
+      "position": "DEF",
+      "team": "NO",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -570,13 +579,26 @@
       ]
     },
     {
-      "name": "Saints",
-      "position": "DEF",
-      "team": "NO",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 11.0,
-      "stats": []
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 79
+        },
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Wil Lutz",
@@ -664,24 +686,24 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
+      "name": "Jonathan Taylor",
       "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 8.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 79
+          "value": 40
         },
         {
           "stat": "REC YD",
-          "value": -1
+          "value": 18
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 5
         }
       ]
     },
@@ -758,28 +780,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 7.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 33
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -883,7 +883,7 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 5.4,
+      "points": 5.3,
       "stats": [
         {
           "stat": "PASS YD",
@@ -891,7 +891,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 6
+          "value": 5
         },
         {
           "stat": "INT",
@@ -914,6 +914,28 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 43
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -949,50 +971,6 @@
       ]
     },
     {
-      "name": "Devin Singletary",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -1003,6 +981,28 @@
         {
           "stat": "REC YD",
           "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Devin Singletary",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
         },
         {
           "stat": "REC",
