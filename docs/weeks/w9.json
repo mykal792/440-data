@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T23:25:20Z",
+  "updated": "2026-11-08T23:30:27Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 98.12,
+        "score": 99.02,
         "projected": 113.45
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 81.8,
+        "score": 86.3,
         "projected": 132.03
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 65.6,
+        "score": 73.56,
         "projected": 108.79
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 65.1,
+        "score": 66.8,
         "projected": 126.43
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 97.8,
+        "score": 104.2,
         "projected": 113.69
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "32.70",
+          "value": "37.40",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "23.86",
+          "value": "19.36",
           "detail": "beating GRAHAM"
         },
         {
@@ -211,6 +211,28 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 30.1,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 270
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Puka Nacua",
       "position": "WR",
       "team": "LAR",
@@ -236,6 +258,32 @@
         },
         {
           "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 28.56,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 214
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 40
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -337,28 +385,6 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 23.7,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 260
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -380,32 +406,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 20.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 165
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 40
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -1188,6 +1188,24 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 6.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 53
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -1204,6 +1222,15 @@
           "value": 5
         }
       ]
+    },
+    {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.5,
+      "stats": []
     },
     {
       "name": "Tyler Warren",
@@ -1282,6 +1309,28 @@
       ]
     },
     {
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 40
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -1318,24 +1367,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1407,28 +1438,6 @@
         {
           "stat": "REC YD",
           "value": 31
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Zach Charbonnet",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 31
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
         },
         {
           "stat": "REC",
@@ -1551,15 +1560,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.0,
-      "stats": []
     },
     {
       "name": "Tucker Kraft",
