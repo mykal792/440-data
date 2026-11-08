@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T18:10:27Z",
+  "updated": "2026-11-08T18:15:22Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 12.96,
+        "score": 15.56,
         "projected": 125.22
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 1.16,
+        "score": 1.24,
         "projected": 131.97
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 11.0,
+        "score": 12.3,
         "projected": 108.84
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 33.3,
+        "score": 30.3,
         "projected": 126.4
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 4.2,
+        "score": 5.2,
         "projected": 113.58
       }
     }
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "52.90",
+          "value": "52.82",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 2,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "29.10",
-          "detail": "beating GANGUS"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "26.24",
+          "detail": "beating GARRETT"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "28.84",
-          "detail": "beating GARRETT"
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "25.10",
+          "detail": "beating GANGUS"
         }
       ]
     },
@@ -309,15 +309,6 @@
       "stats": []
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Rams",
       "position": "DEF",
       "team": "LAR",
@@ -383,6 +374,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Derrick Henry",
@@ -466,17 +466,26 @@
       "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 3.0,
+      "points": 3.7,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 20
+          "value": 22
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         }
       ]
+    },
+    {
+      "name": "Wil Lutz",
+      "position": "K",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.6,
+      "stats": []
     },
     {
       "name": "Jahmyr Gibbs",
@@ -525,6 +534,42 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 31
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -561,25 +606,25 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.16,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 29
-        }
-      ]
-    },
-    {
       "name": "Devin Singletary",
       "position": "RB",
       "team": "NYG",
       "manager": "greg",
       "manager_display": "GREG",
+      "points": 0.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 0.3,
       "stats": [
         {
@@ -691,15 +736,6 @@
       "name": "Malik Washington",
       "position": "WR",
       "team": "Mia",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Wil Lutz",
-      "position": "K",
-      "team": "Den",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -886,15 +922,6 @@
       "stats": []
     },
     {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -988,15 +1015,6 @@
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
