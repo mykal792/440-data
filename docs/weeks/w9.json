@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T22:45:22Z",
+  "updated": "2026-11-08T22:50:21Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 115.22,
+        "score": 123.02,
         "projected": 124.1
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 95.82,
+        "score": 97.72,
         "projected": 113.45
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 60.7,
+        "score": 63.0,
         "projected": 126.43
       },
       "away": {
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "33.46",
+          "value": "31.16",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 2,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "18.08",
+          "detail": "beating SCHILLING"
+        },
+        {
+          "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
           "value": "16.76",
           "detail": "beating GRAHAM"
-        },
-        {
-          "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "10.28",
-          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "115.22",
+          "value": "123.02",
           "detail": "1 to play"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "95.82",
+          "value": "97.72",
           "detail": "All played"
         }
       ]
@@ -697,6 +697,54 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 168
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 12.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -751,32 +799,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -884,6 +906,24 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 51
+        },
+        {
+          "stat": "REC",
+          "value": 7
         }
       ]
     },
@@ -1115,24 +1155,6 @@
       ]
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 6.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
-    },
-    {
       "name": "Matt Gay",
       "position": "K",
       "team": "LV",
@@ -1283,28 +1305,6 @@
       "manager_display": "SCOTTY",
       "points": 5.0,
       "stats": []
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 123
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Devin Singletary",
