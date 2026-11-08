@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T22:40:24Z",
+  "updated": "2026-11-08T22:45:22Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 87.3,
+        "score": 88.3,
         "projected": 125.22
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 95.32,
+        "score": 95.82,
         "projected": 113.45
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 58.0,
+        "score": 60.7,
         "projected": 126.43
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "36.16",
+          "value": "33.46",
           "detail": "beating SCARPITTI"
         },
         {
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "95.56",
-          "detail": "1 to play"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "95.82",
+          "detail": "All played"
         }
       ]
     }
@@ -839,6 +839,15 @@
       ]
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Chase Brown",
       "position": "RB",
       "team": "Cin",
@@ -904,15 +913,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.0,
-      "stats": []
     },
     {
       "name": "Broncos",
@@ -1111,6 +1111,24 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 6.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -1333,6 +1351,28 @@
       ]
     },
     {
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 27
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -1387,46 +1427,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 16
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Zach Charbonnet",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
