@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T21:40:23Z",
+  "updated": "2026-11-08T21:45:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 77.74,
+        "score": 79.64,
         "projected": 127.97
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 89.3,
+        "score": 96.5,
         "projected": 124.1
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 54.48,
+        "score": 55.88,
         "projected": 119.92
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 33.22,
+        "score": 34.9,
         "projected": 108.79
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 49.0,
+        "score": 55.2,
         "projected": 126.43
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 79.3,
+        "score": 85.5,
         "projected": 113.69
       }
     }
@@ -93,15 +93,15 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "21.26",
+          "value": "20.98",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "16.06",
-          "detail": "beating GRAHAM"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "16.86",
+          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -113,17 +113,17 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "96.50",
+          "detail": "1 to play"
+        },
+        {
+          "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
           "value": "92.86",
           "detail": "2 to play"
-        },
-        {
-          "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "89.30",
-          "detail": "1 to play"
         },
         {
           "rank": 3,
@@ -424,6 +424,28 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 16.1,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 70
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -464,6 +486,28 @@
         {
           "stat": "REC",
           "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 70
+        },
+        {
+          "stat": "REC",
+          "value": 3
         },
         {
           "stat": "TD",
@@ -676,20 +720,16 @@
       "stats": []
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
       "points": 9.9,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 65
-        },
-        {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 39
         },
         {
           "stat": "TD",
@@ -801,24 +841,6 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -864,24 +886,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 65
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1073,6 +1077,24 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -1188,6 +1210,24 @@
       ]
     },
     {
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "Hou",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "team": "Atl",
@@ -1246,20 +1286,38 @@
       ]
     },
     {
-      "name": "Nico Collins",
+      "name": "Jaxon Smith-Njigba",
       "position": "WR",
-      "team": "Hou",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.4,
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 19
+          "value": 15
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 65
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
         }
       ]
     },
@@ -1278,38 +1336,6 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.12,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 28
-        }
-      ]
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -1320,24 +1346,6 @@
         {
           "stat": "REC YD",
           "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 4
         },
         {
           "stat": "REC",
