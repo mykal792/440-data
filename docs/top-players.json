@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T23:30:27Z",
+  "updated": "2026-11-08T23:35:19Z",
   "players": [
     {
       "name": "Kenneth Walker III",
@@ -83,11 +83,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 30.1,
+      "points": 30.26,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 270
+          "value": 274
         },
         {
           "stat": "RUSH YD",
@@ -361,6 +361,15 @@
       ]
     },
     {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 17.0,
+      "stats": []
+    },
+    {
       "name": "Jonah Coleman",
       "position": "RB",
       "team": "Den",
@@ -435,15 +444,6 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 14.0,
-      "stats": []
-    },
-    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
@@ -469,6 +469,32 @@
       "manager_display": "ANTHONY",
       "points": 14.0,
       "stats": []
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 13.86,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 189
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Tetairoa McMillan",
@@ -533,28 +559,28 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
       "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 13.34,
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 13.3,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 176
+          "stat": "RUSH YD",
+          "value": 32
         },
         {
-          "stat": "RUSH YD",
-          "value": 3
+          "stat": "REC YD",
+          "value": 36
+        },
+        {
+          "stat": "REC",
+          "value": 1
         },
         {
           "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 3
+          "value": 1
         }
       ]
     },
@@ -650,32 +676,6 @@
         },
         {
           "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 12.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        },
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -1123,11 +1123,11 @@
       "team": "Ari",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 5.7,
+      "points": 5.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 47
+          "value": 46
         },
         {
           "stat": "REC",
@@ -1318,7 +1318,7 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 4.0,
+      "points": 4.2,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -1326,11 +1326,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 6
+          "value": 3
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         }
       ]
     },
@@ -1375,6 +1375,24 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Kyle Pitts Sr.",
       "position": "TE",
       "team": "Atl",
@@ -1407,24 +1425,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
