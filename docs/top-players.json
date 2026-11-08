@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T21:00:27Z",
+  "updated": "2026-11-08T21:05:22Z",
   "players": [
     {
       "name": "Kenneth Walker III",
@@ -57,11 +57,11 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 29.5,
+      "points": 30.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 20
         },
         {
           "stat": "REC YD",
@@ -239,6 +239,32 @@
       ]
     },
     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 15.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 48
+        },
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -287,30 +313,13 @@
       ]
     },
     {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 15.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 40
-        },
-        {
-          "stat": "REC YD",
-          "value": 31
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 14.0,
+      "stats": []
     },
     {
       "name": "Evan McPherson",
@@ -386,15 +395,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.0,
-      "stats": []
     },
     {
       "name": "Javonte Williams",
@@ -847,11 +847,11 @@
       "team": "NYG",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 4.7,
+      "points": 4.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 29
+          "value": 31
         },
         {
           "stat": "REC YD",
@@ -860,6 +860,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tyler Warren",
+      "position": "TE",
+      "team": "Ind",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 34
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -940,24 +958,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },

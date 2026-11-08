@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T21:00:27Z",
+  "updated": "2026-11-08T21:05:22Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 76.9,
+        "score": 79.4,
         "projected": 124.09
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 69.3,
+        "score": 69.8,
         "projected": 132.03
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 51.88,
+        "score": 52.08,
         "projected": 119.92
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 44.8,
+        "score": 45.8,
         "projected": 126.39
       },
       "away": {
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "20.56",
+          "value": "20.06",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "16.98",
+          "value": "17.18",
           "detail": "beating COYNE"
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "15.60",
-          "detail": "beating GARRETT"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "16.96",
+          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "79.40",
+          "detail": "3 to play"
+        },
+        {
+          "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
           "value": "78.72",
           "detail": "2 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "76.90",
-          "detail": "3 to play"
         }
       ]
     }
@@ -190,11 +190,11 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 29.5,
+      "points": 30.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 20
         },
         {
           "stat": "REC YD",
@@ -372,6 +372,32 @@
       ]
     },
     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 15.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 48
+        },
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -420,30 +446,13 @@
       ]
     },
     {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 15.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 40
-        },
-        {
-          "stat": "REC YD",
-          "value": 31
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 14.0,
+      "stats": []
     },
     {
       "name": "Evan McPherson",
@@ -519,15 +528,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.0,
-      "stats": []
     },
     {
       "name": "Javonte Williams",
@@ -980,11 +980,11 @@
       "team": "NYG",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 4.7,
+      "points": 4.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 29
+          "value": 31
         },
         {
           "stat": "REC YD",
@@ -993,6 +993,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tyler Warren",
+      "position": "TE",
+      "team": "Ind",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 34
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -1073,24 +1091,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
