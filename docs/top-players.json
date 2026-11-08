@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T21:30:26Z",
+  "updated": "2026-11-08T21:35:20Z",
   "players": [
     {
       "name": "Kenneth Walker III",
@@ -161,7 +161,7 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 25.6,
+      "points": 25.5,
       "stats": [
         {
           "stat": "PASS YD",
@@ -169,7 +169,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 1
         },
         {
           "stat": "TD",
@@ -655,6 +655,24 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -813,6 +831,15 @@
           "value": 5
         }
       ]
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.6,
+      "stats": []
     },
     {
       "name": "Tyler Warren",
@@ -1060,16 +1087,44 @@
       ]
     },
     {
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        }
+      ]
+    },
+    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 1.4,
+      "points": 1.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 13
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.08,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 27
         }
       ]
     },
@@ -1092,25 +1147,20 @@
       ]
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 1.0,
-      "stats": []
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.9,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 9
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1133,44 +1183,16 @@
       ]
     },
     {
-      "name": "Tyler Allgeier",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 14
-        }
-      ]
-    },
-    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.1,
+      "points": 0.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 1
+          "value": 4
         }
       ]
     },
@@ -1297,15 +1319,6 @@
       "team": "Min",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 0.0,
       "stats": []
     },
