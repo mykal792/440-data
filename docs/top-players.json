@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T18:55:19Z",
+  "updated": "2026-11-08T19:00:28Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -193,6 +193,24 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 83
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -207,24 +225,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 75
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -296,6 +296,24 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
@@ -347,24 +365,6 @@
       "manager_display": "SCOTTY",
       "points": 5.5,
       "stats": []
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
     },
     {
       "name": "Chiefs",
@@ -474,6 +474,42 @@
       ]
     },
     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -519,20 +555,6 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 34
-        }
-      ]
-    },
-    {
       "name": "Brandon McManus",
       "position": "K",
       "team": "LAR",
@@ -569,11 +591,11 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.7,
+      "points": 2.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 21
+          "value": 23
         },
         {
           "stat": "REC YD",
@@ -618,28 +640,6 @@
         {
           "stat": "REC YD",
           "value": -1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
         },
         {
           "stat": "REC",
@@ -748,6 +748,24 @@
       ]
     },
     {
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "team": "Det",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -771,14 +789,36 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.26,
+      "points": 1.42,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 29
+          "value": 33
         },
         {
           "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 68
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -1113,15 +1153,6 @@
       "stats": []
     },
     {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Jadarian Price",
       "position": "RB",
       "team": "Sea",
@@ -1183,24 +1214,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": -0.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 42
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     }
   ]
 }
