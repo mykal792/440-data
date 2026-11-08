@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T15:35:18Z",
+  "updated": "2026-11-08T15:40:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 18.66,
+        "score": 25.86,
         "projected": 123.62
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 8.4,
+        "score": 9.4,
         "projected": 123.75
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 28.9,
+        "score": 32.5,
         "projected": 113.7
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 6.7,
+        "score": 13.6,
         "projected": 116.97
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "26.90",
+          "value": "30.50",
           "detail": "beating GARRETT"
         },
         {
@@ -122,15 +122,15 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "28.90",
+          "value": "32.50",
           "detail": "6 to play"
         },
         {
           "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "22.00",
-          "detail": "7 to play"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "25.86",
+          "detail": "8 to play"
         }
       ]
     }
@@ -142,19 +142,41 @@
       "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 22.6,
+      "points": 26.2,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 116
+          "value": 142
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 8
         },
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 25.86,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 194
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 3
         }
       ]
     },
@@ -166,28 +188,6 @@
       "manager_display": "HAYDEN",
       "points": 19.1,
       "stats": []
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 18.66,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 164
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Trevor Lawrence",
@@ -226,6 +226,28 @@
         {
           "stat": "REC",
           "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 9.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 3
         },
         {
           "stat": "TD",
@@ -345,22 +367,13 @@
       ]
     },
     {
-      "name": "Tee Higgins",
-      "position": "WR",
+      "name": "Evan McPherson",
+      "position": "K",
       "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.0,
+      "stats": []
     },
     {
       "name": "Drake London",
@@ -379,15 +392,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.0,
-      "stats": []
     },
     {
       "name": "Kyle Pitts Sr.",
