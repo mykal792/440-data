@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T16:30:26Z",
+  "updated": "2026-11-08T16:35:18Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 22.7,
+        "score": 29.7,
         "projected": 124.04
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 32.5,
+        "score": 30.5,
         "projected": 113.68
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "27.70",
+          "value": "25.70",
           "detail": "beating GARRETT"
         },
         {
@@ -122,15 +122,15 @@
           "rank": 2,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "32.50",
+          "value": "30.50",
           "detail": "6 to play"
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "27.62",
-          "detail": "8 to play"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "29.70",
+          "detail": "7 to play"
         }
       ]
     }
@@ -181,6 +181,32 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 21.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 80
+        },
+        {
+          "stat": "REC YD",
+          "value": 50
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -208,28 +234,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 14.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 70
-        },
-        {
-          "stat": "REC YD",
-          "value": 50
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -345,15 +349,6 @@
       ]
     },
     {
-      "name": "Bengals",
-      "position": "DEF",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.0,
-      "stats": []
-    },
-    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -392,6 +387,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Bengals",
+      "position": "DEF",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.0,
+      "stats": []
     },
     {
       "name": "Kyle Pitts Sr.",
