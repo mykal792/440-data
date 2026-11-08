@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T19:20:23Z",
+  "updated": "2026-11-08T19:25:22Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -131,24 +131,6 @@
       ]
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 16.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 108
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
@@ -166,6 +148,28 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 14.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 108
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -305,11 +309,11 @@
       "team": "Phi",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 7.5,
+      "points": 7.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 19
         },
         {
           "stat": "TD",
@@ -438,6 +442,15 @@
       "stats": []
     },
     {
+      "name": "Brandon McManus",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.3,
+      "stats": []
+    },
+    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -496,6 +509,28 @@
       ]
     },
     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Ollie Gordon II",
       "position": "RB",
       "team": "Mia",
@@ -506,6 +541,24 @@
         {
           "stat": "RUSH YD",
           "value": 46
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.46,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 109
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
         }
       ]
     },
@@ -578,46 +631,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.78,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 92
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
         }
       ]
     },
@@ -709,15 +722,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.3,
-      "stats": []
     },
     {
       "name": "Quinshon Judkins",
