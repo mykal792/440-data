@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T21:50:21Z",
+  "updated": "2026-11-08T21:55:19Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 79.84,
+        "score": 81.64,
         "projected": 127.97
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 80.62,
+        "score": 80.72,
         "projected": 113.45
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 38.0,
+        "score": 44.3,
         "projected": 108.79
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 85.5,
+        "score": 85.9,
         "projected": 113.69
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "30.20",
+          "value": "30.60",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 2,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "17.88",
-          "detail": "beating COYNE"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "16.06",
+          "detail": "beating GRAHAM"
         },
         {
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "17.42",
+          "value": "15.62",
           "detail": "beating SCHILLING"
         }
       ]
@@ -429,11 +429,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 16.1,
+      "points": 16.5,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 70
+          "value": 80
         },
         {
           "stat": "RUSH YD",
@@ -667,6 +667,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 12.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 70
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -725,11 +747,11 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 9.9,
+      "points": 10.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 39
+          "value": 42
         },
         {
           "stat": "TD",
@@ -1019,24 +1041,6 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.9,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 70
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 31
-        }
-      ]
-    },
-    {
       "name": "Derrick Henry",
       "position": "RB",
       "team": "Bal",
@@ -1322,6 +1326,24 @@
       ]
     },
     {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
@@ -1382,13 +1404,18 @@
       ]
     },
     {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
+      "name": "Jadarian Price",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Colston Loveland",
@@ -1544,15 +1571,6 @@
       "stats": []
     },
     {
-      "name": "Jadarian Price",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Zach Charbonnet",
       "position": "RB",
       "team": "Sea",
@@ -1576,11 +1594,11 @@
       "team": "NE",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": -0.3,
+      "points": -0.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": -3
+          "value": -2
         }
       ]
     },
