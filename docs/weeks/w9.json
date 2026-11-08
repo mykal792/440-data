@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T22:25:19Z",
+  "updated": "2026-11-08T22:30:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 93.94,
+        "score": 100.14,
         "projected": 127.97
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 77.8,
+        "score": 78.8,
         "projected": 132.03
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 57.82,
+        "score": 58.72,
         "projected": 108.79
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 57.1,
+        "score": 58.0,
         "projected": 126.43
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 89.42,
+        "score": 89.78,
         "projected": 113.69
       }
     }
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "32.32",
+          "value": "31.78",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "19.06",
-          "detail": "beating SCHILLING"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "16.76",
+          "detail": "beating GRAHAM"
         },
         {
           "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "17.76",
-          "detail": "beating GRAHAM"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "12.86",
+          "detail": "beating SCHILLING"
         }
       ]
     },
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "100.14",
+          "detail": "2 to play"
+        },
+        {
+          "rank": 3,
           "manager": "HAYDEN",
           "face": "hayden",
           "value": "95.56",
           "detail": "1 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "95.02",
-          "detail": "All played"
         }
       ]
     }
@@ -437,25 +437,16 @@
       ]
     },
     {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 19.1,
-      "stats": []
-    },
-    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 19.02,
+      "points": 19.38,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 143
+          "value": 152
         },
         {
           "stat": "RUSH YD",
@@ -466,6 +457,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 19.1,
+      "stats": []
     },
     {
       "name": "Tee Higgins",
@@ -906,6 +906,15 @@
       "stats": []
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Saints",
       "position": "DEF",
       "team": "NO",
@@ -978,15 +987,6 @@
       "team": "Hou",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 7.0,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 7.0,
       "stats": []
     },
@@ -1075,6 +1075,15 @@
       ]
     },
     {
+      "name": "Matt Gay",
+      "position": "K",
+      "team": "LV",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -1133,24 +1142,6 @@
       ]
     },
     {
-      "name": "Tyler Allgeier",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 44
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -1169,6 +1160,24 @@
         {
           "stat": "INT",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1404,6 +1413,28 @@
       ]
     },
     {
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Malik Washington",
       "position": "WR",
       "team": "Mia",
@@ -1414,6 +1445,24 @@
         {
           "stat": "REC YD",
           "value": 21
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 19
         },
         {
           "stat": "REC",
@@ -1444,59 +1493,18 @@
       ]
     },
     {
-      "name": "Woody Marks",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 26
-        }
-      ]
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 1.5,
+      "points": 2.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 24
         }
       ]
-    },
-    {
-      "name": "Matt Gay",
-      "position": "K",
-      "team": "LV",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Trey McBride",
