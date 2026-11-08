@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T16:50:21Z",
+  "updated": "2026-11-08T16:55:22Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 31.8,
+        "score": 32.5,
         "projected": 124.05
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 4.8,
+        "score": 9.3,
         "projected": 117.1
       },
       "away": {
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "25.70",
-          "detail": "beating GARRETT"
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "22.00",
+          "detail": "beating GANGUS"
         }
       ]
     },
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "31.80",
+          "value": "32.50",
           "detail": "7 to play"
         }
       ]
@@ -186,11 +186,11 @@
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 22.1,
+      "points": 22.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 91
+          "value": 98
         },
         {
           "stat": "REC YD",
@@ -291,6 +291,24 @@
       "stats": []
     },
     {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 68
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -345,24 +363,6 @@
         {
           "stat": "RUSH YD",
           "value": 57
-        }
-      ]
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
