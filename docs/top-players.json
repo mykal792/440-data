@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T18:50:22Z",
+  "updated": "2026-11-08T18:55:19Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -283,11 +283,11 @@
       "team": "Phi",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 7.1,
+      "points": 7.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 11
+          "value": 14
         },
         {
           "stat": "TD",
@@ -296,25 +296,16 @@
       ]
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 6.8,
+      "points": 6.84,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 65
+          "value": 66
         },
         {
           "stat": "RUSH YD",
@@ -376,6 +367,15 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "Bengals",
       "position": "DEF",
       "team": "Cin",
@@ -404,6 +404,28 @@
         {
           "stat": "REC YD",
           "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
         },
         {
           "stat": "REC",
@@ -452,28 +474,6 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -501,6 +501,24 @@
       "stats": []
     },
     {
+      "name": "Omar Cooper Jr.",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -524,20 +542,24 @@
       "stats": []
     },
     {
-      "name": "Omar Cooper Jr.",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.2,
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.0,
       "stats": [
         {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
           "stat": "REC YD",
-          "value": 17
+          "value": 4
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 1
         }
       ]
     },
@@ -574,28 +596,6 @@
         {
           "stat": "REC YD",
           "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 16
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
         },
         {
           "stat": "REC",
@@ -707,11 +707,25 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 2.2,
+      "points": 2.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 22
+          "value": 21
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 19
         }
       ]
     },
@@ -775,20 +789,6 @@
       "team": "NYG",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 0.9,
       "stats": [
         {
