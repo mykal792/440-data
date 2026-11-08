@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T20:40:22Z",
+  "updated": "2026-11-08T20:45:21Z",
   "players": [
     {
       "name": "Kenneth Walker III",
@@ -52,6 +52,36 @@
       ]
     },
     {
+      "name": "Puka Nacua",
+      "position": "WR",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 29.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        },
+        {
+          "stat": "REC YD",
+          "value": 150
+        },
+        {
+          "stat": "REC",
+          "value": 14
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
@@ -69,32 +99,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Puka Nacua",
-      "position": "WR",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 28.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 150
-        },
-        {
-          "stat": "REC",
-          "value": 14
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
           "value": 1
         }
       ]
@@ -131,18 +135,48 @@
       "team": "Dal",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 21.7,
+      "points": 25.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 107
+          "value": 155
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 7
         },
         {
           "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 20.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 249
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -181,32 +215,6 @@
       "manager_display": "HAYDEN",
       "points": 19.1,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 18.24,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 201
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Tee Higgins",
@@ -258,11 +266,11 @@
       "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 14.6,
+      "points": 15.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 35
+          "value": 40
         },
         {
           "stat": "REC YD",
@@ -340,6 +348,24 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 13.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 72
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -362,6 +388,15 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.0,
+      "stats": []
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -380,43 +415,16 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 12.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 61
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.0,
-      "stats": []
-    },
-    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 11.1,
+      "points": 11.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 68
+          "value": 70
         },
         {
           "stat": "REC YD",
@@ -435,6 +443,15 @@
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 11.0,
+      "stats": []
+    },
+    {
+      "name": "Wil Lutz",
+      "position": "K",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.4,
       "stats": []
     },
     {
@@ -514,15 +531,6 @@
       ]
     },
     {
-      "name": "Wil Lutz",
-      "position": "K",
-      "team": "Den",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.4,
-      "stats": []
-    },
-    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -568,11 +576,11 @@
       "team": "Phi",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 7.9,
+      "points": 8.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 19
+          "value": 22
         },
         {
           "stat": "TD",
@@ -742,11 +750,11 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 5.12,
+      "points": 5.4,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 163
+          "value": 170
         },
         {
           "stat": "RUSH YD",
@@ -755,6 +763,24 @@
         {
           "stat": "INT",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "team": "Det",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -855,24 +881,6 @@
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 4.0,
