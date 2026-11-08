@@ -1,8 +1,30 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T23:45:24Z",
+  "updated": "2026-11-08T23:50:25Z",
   "players": [
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 43.78,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 362
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 4
+        }
+      ]
+    },
     {
       "name": "Kenneth Walker III",
       "position": "RB",
@@ -48,28 +70,6 @@
         {
           "stat": "TD",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 34.22,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 323
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -135,11 +135,11 @@
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 28.72,
+      "points": 29.24,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 218
+          "value": 231
         },
         {
           "stat": "RUSH YD",
@@ -151,6 +151,28 @@
         },
         {
           "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 28.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 171
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -278,6 +300,32 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 21.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 65
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Brock Bowers",
       "position": "TE",
       "team": "LV",
@@ -334,32 +382,6 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 20.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 65
-        },
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -367,24 +389,6 @@
       "manager_display": "HAYDEN",
       "points": 19.1,
       "stats": []
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 18.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 132
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
     },
     {
       "name": "Tee Higgins",
@@ -407,15 +411,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 17.0,
-      "stats": []
     },
     {
       "name": "Jonah Coleman",
@@ -442,6 +437,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 16.0,
+      "stats": []
     },
     {
       "name": "Trevor Lawrence",
@@ -492,6 +496,32 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.02,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 193
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
@@ -517,32 +547,6 @@
       "manager_display": "ANTHONY",
       "points": 14.0,
       "stats": []
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 13.86,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 189
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Tetairoa McMillan",
@@ -599,32 +603,6 @@
         {
           "stat": "RUSH YD",
           "value": 74
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 13.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        },
-        {
-          "stat": "REC YD",
-          "value": 36
-        },
-        {
-          "stat": "REC",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -713,6 +691,36 @@
         {
           "stat": "REC",
           "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 12.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "REC YD",
+          "value": 40
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
