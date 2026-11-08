@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T21:25:20Z",
+  "updated": "2026-11-08T21:30:26Z",
   "players": [
     {
       "name": "Kenneth Walker III",
@@ -177,6 +177,32 @@
         },
         {
           "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 22.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 101
+        },
+        {
+          "stat": "REC YD",
+          "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -362,28 +388,6 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 13.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 92
-        },
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -508,11 +512,42 @@
       ]
     },
     {
-      "name": "Saints",
+      "name": "Harold Fannin Jr.",
+      "position": "TE",
+      "team": "Cle",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 11.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.3,
+      "stats": []
+    },
+    {
+      "name": "Seahawks",
       "position": "DEF",
-      "team": "NO",
-      "manager": "coyne",
-      "manager_display": "COYNE",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
       "points": 10.0,
       "stats": []
     },
@@ -560,15 +595,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.3,
-      "stats": []
     },
     {
       "name": "Chase Brown",
@@ -647,6 +673,15 @@
       "stats": []
     },
     {
+      "name": "Saints",
+      "position": "DEF",
+      "team": "NO",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -683,6 +718,24 @@
         {
           "stat": "REC",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -1012,11 +1065,29 @@
       "team": "Hou",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 1.0,
+      "points": 1.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 14
+        }
+      ]
+    },
+    {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1030,18 +1101,83 @@
       "stats": []
     },
     {
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.56,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 14
+        }
+      ]
+    },
+    {
+      "name": "Rhamondre Stevenson",
+      "position": "RB",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1060,15 +1196,6 @@
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Allgeier",
-      "position": "RB",
-      "team": "Ari",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1096,15 +1223,6 @@
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Harold Fannin Jr.",
-      "position": "TE",
-      "team": "Cle",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -1174,38 +1292,11 @@
       "stats": []
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 0.0,
       "stats": []
     },
@@ -1255,24 +1346,6 @@
       "stats": []
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -1300,29 +1373,11 @@
       "stats": []
     },
     {
-      "name": "Rhamondre Stevenson",
-      "position": "RB",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Zach Charbonnet",
       "position": "RB",
       "team": "Sea",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     },
@@ -1343,6 +1398,20 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": -2.0,
+      "stats": [
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     }
   ]
 }
