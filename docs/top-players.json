@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T21:35:20Z",
+  "updated": "2026-11-08T21:40:23Z",
   "players": [
     {
       "name": "Kenneth Walker III",
@@ -543,13 +543,26 @@
       "stats": []
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.0,
-      "stats": []
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 9.9,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 65
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Omar Cooper Jr.",
@@ -660,11 +673,11 @@
       "team": "SF",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 8.1,
+      "points": 8.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 21
+          "value": 20
         },
         {
           "stat": "TD",
@@ -722,6 +735,24 @@
       ]
     },
     {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 65
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -740,30 +771,21 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brandon McManus",
       "position": "K",
       "team": "LAR",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 7.3,
+      "stats": []
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 7.0,
       "stats": []
     },
     {
@@ -1051,6 +1073,28 @@
       ]
     },
     {
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 24
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Malik Washington",
       "position": "WR",
       "team": "Mia",
@@ -1087,20 +1131,6 @@
       ]
     },
     {
-      "name": "Tyler Allgeier",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 23
-        }
-      ]
-    },
-    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
@@ -1120,11 +1150,11 @@
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 1.08,
+      "points": 1.12,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 27
+          "value": 28
         }
       ]
     },
@@ -1183,6 +1213,34 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "name": "Josh Jacobs",
+      "position": "RB",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Rhamondre Stevenson",
       "position": "RB",
       "team": "NE",
@@ -1195,15 +1253,6 @@
           "value": 4
         }
       ]
-    },
-    {
-      "name": "Josh Jacobs",
-      "position": "RB",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
     },
     {
       "name": "Christian Watson",
@@ -1359,15 +1408,6 @@
       "stats": []
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Adonai Mitchell",
       "position": "WR",
       "team": "NYJ",
@@ -1391,15 +1431,6 @@
       "team": "Sea",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
     },
