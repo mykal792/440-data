@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T15:15:21Z",
+  "updated": "2026-11-08T15:20:25Z",
   "players": [
     {
       "name": "Cam Little",
@@ -11,6 +11,28 @@
       "manager_display": "HAYDEN",
       "points": 19.1,
       "stats": []
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 16.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 108
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Trevor Lawrence",
@@ -35,6 +57,28 @@
       ]
     },
     {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 14.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 73
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -49,46 +93,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 13.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 60
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 95
         },
         {
           "stat": "TD",
@@ -249,7 +253,7 @@
       "team": "Cin",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 1.0,
+      "points": 2.0,
       "stats": []
     },
     {

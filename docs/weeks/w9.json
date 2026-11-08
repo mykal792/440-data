@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T15:15:21Z",
+  "updated": "2026-11-08T15:20:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 9.8,
+        "score": 16.42,
         "projected": 123.62
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 7.4,
+        "score": 8.4,
         "projected": 123.75
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 18.0,
+        "score": 19.8,
         "projected": 113.7
       }
     },
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "16.00",
+          "value": "17.80",
           "detail": "beating GARRETT"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "18.00",
+          "value": "19.80",
           "detail": "7 to play"
         }
       ]
@@ -144,6 +144,28 @@
       "manager_display": "HAYDEN",
       "points": 19.1,
       "stats": []
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 16.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 108
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Trevor Lawrence",
@@ -168,6 +190,28 @@
       ]
     },
     {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 14.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 73
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -182,46 +226,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 13.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 60
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 9.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 95
         },
         {
           "stat": "TD",
@@ -382,7 +386,7 @@
       "team": "Cin",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 1.0,
+      "points": 2.0,
       "stats": []
     },
     {
