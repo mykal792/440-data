@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T20:30:27Z",
+  "updated": "2026-11-08T20:35:22Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -31,11 +31,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 33.1,
+      "points": 33.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 90
+          "value": 91
         },
         {
           "stat": "REC YD",
@@ -148,25 +148,16 @@
       ]
     },
     {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 19.1,
-      "stats": []
-    },
-    {
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 18.84,
+      "points": 19.32,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 201
+          "value": 213
         },
         {
           "stat": "RUSH YD",
@@ -181,6 +172,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 19.1,
+      "stats": []
     },
     {
       "name": "Tee Higgins",
@@ -407,6 +407,15 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -427,15 +436,6 @@
           "value": 4
         }
       ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.0,
-      "stats": []
     },
     {
       "name": "Drake London",
@@ -485,6 +485,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.0,
+      "stats": []
     },
     {
       "name": "Bhayshul Tuten",
@@ -552,15 +561,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.0,
-      "stats": []
     },
     {
       "name": "Saquon Barkley",
@@ -679,11 +679,38 @@
       "team": "NYG",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 5.8,
+      "points": 6.8,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 38
+          "value": 43
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.0,
+      "stats": []
+    },
+    {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 37
         },
         {
           "stat": "REC",
@@ -730,15 +757,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Bengals",
@@ -830,24 +848,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
