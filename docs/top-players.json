@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T18:30:26Z",
+  "updated": "2026-11-08T18:35:18Z",
   "players": [
     {
       "name": "Joe Burrow",
@@ -346,6 +346,28 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -362,6 +384,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Wil Lutz",
+      "position": "K",
+      "team": "Den",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.6,
+      "stats": []
     },
     {
       "name": "Jahmyr Gibbs",
@@ -427,37 +458,6 @@
       ]
     },
     {
-      "name": "Wil Lutz",
-      "position": "K",
-      "team": "Den",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.6,
-      "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -480,6 +480,24 @@
       ]
     },
     {
+      "name": "Antonio Williams",
+      "position": "WR",
+      "team": "Was",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Omar Cooper Jr.",
       "position": "WR",
       "team": "NYJ",
@@ -494,6 +512,42 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -584,6 +638,20 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 23
+        }
+      ]
+    },
+    {
       "name": "Devin Singletary",
       "position": "RB",
       "team": "NYG",
@@ -648,16 +716,20 @@
       ]
     },
     {
-      "name": "Patrick Mahomes",
+      "name": "Dak Prescott",
       "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 0.24,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 6
+          "value": 56
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -674,15 +746,6 @@
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -950,15 +1013,6 @@
       "stats": []
     },
     {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -998,15 +1052,6 @@
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Antonio Williams",
-      "position": "WR",
-      "team": "Was",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
@@ -1092,24 +1137,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": -0.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 36
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Jared Goff",
