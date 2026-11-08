@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T15:05:23Z",
+  "updated": "2026-11-08T15:10:24Z",
   "players": [
     {
       "name": "Cam Little",
@@ -62,15 +62,33 @@
       "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 11.2,
+      "points": 13.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 47
+          "value": 60
         },
         {
           "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 85
         },
         {
           "stat": "TD",
@@ -89,24 +107,6 @@
         {
           "stat": "RUSH YD",
           "value": 29
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 59
         },
         {
           "stat": "TD",
@@ -182,6 +182,24 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -423,15 +441,6 @@
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,

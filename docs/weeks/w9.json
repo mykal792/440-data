@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T15:05:23Z",
+  "updated": "2026-11-08T15:10:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 8.36,
+        "score": 9.36,
         "projected": 123.62
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 16.2,
+        "score": 18.0,
         "projected": 113.7
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 0.0,
+        "score": 2.2,
         "projected": 116.97
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "14.20",
+          "value": "16.00",
           "detail": "beating GARRETT"
         }
       ]
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "16.20",
+          "value": "18.00",
           "detail": "7 to play"
         }
       ]
@@ -195,15 +195,33 @@
       "team": "Cin",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 11.2,
+      "points": 13.0,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 47
+          "value": 60
         },
         {
           "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 85
         },
         {
           "stat": "TD",
@@ -222,24 +240,6 @@
         {
           "stat": "RUSH YD",
           "value": 29
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 59
         },
         {
           "stat": "TD",
@@ -315,6 +315,24 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -556,15 +574,6 @@
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
