@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-09T02:05:19Z",
+  "updated": "2026-11-09T02:10:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 129.44,
+        "score": 130.54,
         "projected": 128.04
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 95.3,
+        "score": 96.5,
         "projected": 125.32
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "8.02",
+          "value": "6.92",
           "detail": "beating SCHILLING"
         }
       ]
@@ -129,8 +129,8 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "129.44",
-          "detail": "2 to play"
+          "value": "130.54",
+          "detail": "1 to play"
         }
       ]
     }
@@ -1632,6 +1632,20 @@
       ]
     },
     {
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        }
+      ]
+    },
+    {
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
@@ -1654,16 +1668,20 @@
       ]
     },
     {
-      "name": "D'Andre Swift",
-      "position": "RB",
+      "name": "Colston Loveland",
+      "position": "TE",
       "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.0,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.1,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 10
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1680,15 +1698,6 @@
           "value": 5
         }
       ]
-    },
-    {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
     },
     {
       "name": "Vikings",
