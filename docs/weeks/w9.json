@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-09T00:00:30Z",
+  "updated": "2026-11-09T00:05:21Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 134.8,
+        "score": 136.3,
         "projected": 124.1
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 86.3,
+        "score": 87.3,
         "projected": 132.06
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 128.18,
+        "score": 128.58,
         "projected": 113.35
       }
     }
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "58.08",
+          "value": "58.48",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "27.36",
+          "value": "26.36",
           "detail": "beating GRAHAM"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "134.80",
+          "value": "136.30",
           "detail": "1 to play"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "128.18",
+          "value": "128.58",
           "detail": "1 to play"
         }
       ]
@@ -142,11 +142,11 @@
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 43.78,
+      "points": 44.18,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 362
+          "value": 372
         },
         {
           "stat": "RUSH YD",
@@ -263,6 +263,28 @@
       ]
     },
     {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 29.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 164
+        },
+        {
+          "stat": "REC",
+          "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -325,28 +347,6 @@
         {
           "stat": "REC",
           "value": 10
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 27.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 154
-        },
-        {
-          "stat": "REC",
-          "value": 9
         },
         {
           "stat": "TD",
@@ -911,21 +911,21 @@
       ]
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 10.3,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.0,
       "stats": []
     },
     {
