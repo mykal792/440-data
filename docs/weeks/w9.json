@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-08T23:55:20Z",
+  "updated": "2026-11-09T00:00:30Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 129.64,
-        "projected": 127.97
+        "score": 129.44,
+        "projected": 127.96
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 126.28,
+        "score": 134.8,
         "projected": 124.1
       }
     },
@@ -22,7 +22,7 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 95.3,
-        "projected": 125.22
+        "projected": 125.25
       },
       "away": {
         "name": "SCOTTY",
@@ -36,13 +36,13 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 113.66,
-        "projected": 123.88
+        "projected": 123.9
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 86.3,
-        "projected": 132.03
+        "projected": 132.06
       }
     },
     {
@@ -50,12 +50,12 @@
         "name": "GREG",
         "face": "greg",
         "score": 66.98,
-        "projected": 119.92
+        "projected": 119.93
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 74.78,
+        "score": 74.98,
         "projected": 108.79
       }
     },
@@ -63,14 +63,14 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 69.5,
+        "score": 70.1,
         "projected": 126.43
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 123.08,
-        "projected": 113.69
+        "score": 128.18,
+        "projected": 113.35
       }
     }
   ],
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "53.58",
+          "value": "58.08",
           "detail": "beating SCARPITTI"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "7.80",
+          "value": "8.00",
           "detail": "beating GREG"
         }
       ]
@@ -113,23 +113,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "129.64",
-          "detail": "2 to play"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "134.80",
+          "detail": "1 to play"
         },
         {
           "rank": 2,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "126.28",
-          "detail": "1 to play"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "129.44",
+          "detail": "2 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "123.08",
+          "value": "128.18",
           "detail": "1 to play"
         }
       ]
@@ -407,6 +407,32 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 23.1,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 270
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -629,32 +655,6 @@
       ]
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 14.58,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 207
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
@@ -679,6 +679,15 @@
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 14.0,
+      "stats": []
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.7,
       "stats": []
     },
     {
@@ -902,15 +911,6 @@
       ]
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.6,
-      "stats": []
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -1036,6 +1036,24 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 54
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Jaxon Smith-Njigba",
       "position": "WR",
       "team": "Sea",
@@ -1088,6 +1106,28 @@
       "manager_display": "COYNE",
       "points": 8.0,
       "stats": []
+    },
+    {
+      "name": "Woody Marks",
+      "position": "RB",
+      "team": "Hou",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 70
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "George Kittle",
@@ -1148,28 +1188,6 @@
       ]
     },
     {
-      "name": "Woody Marks",
-      "position": "RB",
-      "team": "Hou",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 64
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brandon McManus",
       "position": "K",
       "team": "LAR",
@@ -1186,24 +1204,6 @@
       "manager_display": "SCHILLING",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 6.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 39
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
     },
     {
       "name": "Jonathan Taylor",
@@ -1299,24 +1299,6 @@
       ]
     },
     {
-      "name": "Tyler Allgeier",
-      "position": "RB",
-      "team": "Ari",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 48
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Zach Charbonnet",
       "position": "RB",
       "team": "Sea",
@@ -1335,6 +1317,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tyler Allgeier",
+      "position": "RB",
+      "team": "Ari",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 46
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1477,7 +1477,7 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 4.3,
+      "points": 4.5,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -1485,11 +1485,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 3
+          "value": -5
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 5
         }
       ]
     },
