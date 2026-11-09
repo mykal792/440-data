@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-09T00:05:21Z",
+  "updated": "2026-11-09T00:10:25Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 95.3,
+        "score": 93.3,
         "projected": 125.25
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 100.02,
+        "score": 102.42,
         "projected": 113.45
       }
     },
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "8.00",
-          "detail": "beating GREG"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "9.12",
+          "detail": "beating GARRETT"
         }
       ]
     },
@@ -1090,6 +1090,28 @@
       ]
     },
     {
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Broncos",
       "position": "DEF",
       "team": "Den",
@@ -1295,28 +1317,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Zach Charbonnet",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 44
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
