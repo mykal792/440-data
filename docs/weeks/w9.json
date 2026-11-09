@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-09T04:35:20Z",
+  "updated": "2026-11-09T04:40:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 132.54,
+        "score": 136.84,
         "projected": 127.99
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 146.68,
+        "score": 144.68,
         "projected": 113.34
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "76.58",
+          "value": "74.58",
           "detail": "beating SCARPITTI"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "146.68",
+          "value": "144.68",
           "detail": "All played"
         },
         {
@@ -734,15 +734,6 @@
       "stats": []
     },
     {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 14.0,
-      "stats": []
-    },
-    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -935,6 +926,15 @@
           "value": 8
         }
       ]
+    },
+    {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.0,
+      "stats": []
     },
     {
       "name": "Chuba Hubbard",
@@ -1258,6 +1258,24 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 54
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -1614,24 +1632,6 @@
         {
           "stat": "REC YD",
           "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 16
         },
         {
           "stat": "REC",
