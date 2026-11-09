@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-09T04:25:21Z",
+  "updated": "2026-11-09T04:30:28Z",
   "matchups": [
     {
       "home": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 132.46,
+        "score": 140.16,
         "projected": 123.82
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 105.6,
+        "score": 104.5,
         "projected": 132.12
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 84.98,
+        "score": 82.98,
         "projected": 119.95
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 144.68,
+        "score": 146.68,
         "projected": 113.34
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "74.58",
+          "value": "76.58",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "26.86",
+          "value": "35.66",
           "detail": "beating GRAHAM"
         },
         {
           "rank": 3,
           "manager": "GREG",
           "face": "greg",
-          "value": "10.00",
+          "value": "8.00",
           "detail": "beating COYNE"
         }
       ]
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "144.68",
+          "value": "146.68",
           "detail": "All played"
         },
         {
           "rank": 2,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "140.16",
+          "detail": "All played"
+        },
+        {
+          "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
           "value": "137.46",
           "detail": "1 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "132.46",
-          "detail": "All played"
         }
       ]
     }
@@ -355,6 +355,32 @@
       ]
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 26.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 97
+        },
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -550,63 +576,6 @@
       "stats": []
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 18.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 80
-        },
-        {
-          "stat": "REC YD",
-          "value": 28
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Luther Burden III",
-      "position": "WR",
-      "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 18.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 93
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bears",
-      "position": "DEF",
-      "team": "Chi",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 18.0,
-      "stats": []
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -638,6 +607,32 @@
       ]
     },
     {
+      "name": "Luther Burden III",
+      "position": "WR",
+      "team": "Chi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 17.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 97
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jonah Coleman",
       "position": "RB",
       "team": "Den",
@@ -662,6 +657,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Bears",
+      "position": "DEF",
+      "team": "Chi",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 16.0,
+      "stats": []
     },
     {
       "name": "Trevor Lawrence",
@@ -726,6 +730,15 @@
       "team": "KC",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
+      "points": 14.0,
+      "stats": []
+    },
+    {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 14.0,
       "stats": []
     },
@@ -922,15 +935,6 @@
           "value": 8
         }
       ]
-    },
-    {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.0,
-      "stats": []
     },
     {
       "name": "Chuba Hubbard",
