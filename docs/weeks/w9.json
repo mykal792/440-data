@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-09T04:10:24Z",
+  "updated": "2026-11-09T04:15:24Z",
   "matchups": [
     {
       "home": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 131.26,
+        "score": 132.46,
         "projected": 123.82
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 105.3,
+        "score": 105.6,
         "projected": 132.12
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "25.96",
+          "value": "26.86",
           "detail": "beating GRAHAM"
         },
         {
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "131.44",
-          "detail": "1 to play"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "132.46",
+          "detail": "All played"
         }
       ]
     }
@@ -550,20 +550,46 @@
       "stats": []
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 18.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 80
+        },
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 18.0,
+      "points": 18.3,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 95
+          "value": 93
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 6
         },
         {
           "stat": "TD",
@@ -599,32 +625,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 17.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 80
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -924,6 +924,15 @@
       ]
     },
     {
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -966,15 +975,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.0,
-      "stats": []
     },
     {
       "name": "Seahawks",
