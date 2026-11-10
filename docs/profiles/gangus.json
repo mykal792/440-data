@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-03T20:40:45Z",
+ "updated": "2026-11-10T12:00:51Z",
  "through": {
   "season": 2026,
-  "week": 8
+  "week": 9
  },
  "rules": {
   "ppr_from": 2018
@@ -24,31 +24,31 @@
  "team_name": "Gangus",
  "season": {
   "season": 2026,
-  "weeks_played": 8,
+  "weeks_played": 9,
   "standing": 5,
-  "wins": 4,
+  "wins": 5,
   "losses": 4,
   "ties": 0,
-  "avg": 122.06,
-  "avg_against": 117.49,
-  "high_scores": 1,
-  "streak": "L1",
-  "dots": 5,
-  "bank": 90,
+  "avg": 124.57,
+  "avg_against": 114.94,
+  "high_scores": 2,
+  "streak": "W1",
+  "dots": 6,
+  "bank": 135,
   "ranks": {
    "avg": "3",
-   "avg_against": "5",
-   "high_scores": "T-4",
-   "dots": "3",
-   "bank": "2"
+   "avg_against": "7",
+   "high_scores": "T-1",
+   "dots": "T-2",
+   "bank": "1"
   }
  },
  "career": {
-  "wins": 90,
+  "wins": 91,
   "losses": 105,
   "ties": 0,
-  "win_pct": 0.462,
-  "high_scores": 14,
+  "win_pct": 0.464,
+  "high_scores": 15,
   "weeks_first": 18,
   "blowout": {
    "value": 78.76,
@@ -57,9 +57,9 @@
    "opponent": "garrett",
    "opponent_name": "GARRETT"
   },
-  "earnings": -289.5,
-  "avg": 118.42,
-  "avg_against": 115.9,
+  "earnings": -244.5,
+  "avg": 118.63,
+  "avg_against": 115.73,
   "high": {
    "value": 182.5,
    "season": 2020,
@@ -76,7 +76,7 @@
   },
   "ranks": {
    "win_pct": "8",
-   "high_scores": "9",
+   "high_scores": "T-8",
    "weeks_first": "5",
    "blowout": "10",
    "earnings": "4",
@@ -90,12 +90,12 @@
   {
    "season": 2026,
    "team_name": "Gangus",
-   "wins": 4,
+   "wins": 5,
    "losses": 4,
    "ties": 0,
    "playoffs": false,
-   "avg": 122.06,
-   "avg_against": 117.49,
+   "avg": 124.57,
+   "avg_against": 114.94,
    "finish": 5,
    "in_progress": true,
    "games": [
@@ -178,6 +178,16 @@
      "opp_points": 121.5,
      "result": "L",
      "high_score": false
+    },
+    {
+     "week": 9,
+     "type": "regular",
+     "opponent": "scarpitti",
+     "opponent_name": "SCARPITTI",
+     "points": 144.68,
+     "opp_points": 94.56,
+     "result": "W",
+     "high_score": true
     }
    ]
   },
@@ -2454,7 +2464,7 @@
   {
    "opponent": "scarpitti",
    "opponent_name": "SCARPITTI",
-   "wins": 14,
+   "wins": 15,
    "losses": 11,
    "ties": 0
   },
@@ -2511,9 +2521,9 @@
   }
  ],
  "bonus": {
-  "weekly_category": 12,
+  "weekly_category": 13,
   "ranks": {
-   "weekly_category": "T-7"
+   "weekly_category": "T-6"
   }
  }
 }

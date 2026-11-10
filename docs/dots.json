@@ -1,17 +1,17 @@
 {
   "season": 2026,
-  "updated": "2026-11-10T06:55:16Z",
+  "updated": "2026-11-10T12:00:29Z",
   "pot": {
     "total": 300,
     "dot_value": 5,
-    "paid_out": 160,
-    "remaining": 140
+    "paid_out": 180,
+    "remaining": 120
   },
   "totals": {
     "schilling": {
       "QB": 2,
       "RB": 0,
-      "WR": 2,
+      "WR": 3,
       "TE": 0
     },
     "garrett": {
@@ -22,9 +22,9 @@
     },
     "hayden": {
       "QB": 1,
-      "RB": 4,
+      "RB": 5,
       "WR": 0,
-      "TE": 3
+      "TE": 4
     },
     "greg": {
       "QB": 0,
@@ -39,7 +39,7 @@
       "TE": 0
     },
     "gangus": {
-      "QB": 0,
+      "QB": 1,
       "RB": 0,
       "WR": 1,
       "TE": 4
@@ -394,6 +394,47 @@
             "HAYDEN"
           ],
           "value": "24.70",
+          "detail": "Brock Bowers"
+        }
+      }
+    },
+    {
+      "week": 9,
+      "positions": {
+        "QB": {
+          "manager": "gangus",
+          "manager_display": "GANGUS",
+          "managers": [
+            "GANGUS"
+          ],
+          "value": "44.18",
+          "detail": "Jordan Love"
+        },
+        "RB": {
+          "manager": "hayden",
+          "manager_display": "HAYDEN",
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "36.30",
+          "detail": "Kenneth Walker III"
+        },
+        "WR": {
+          "manager": "schilling",
+          "manager_display": "SCHILLING",
+          "managers": [
+            "SCHILLING"
+          ],
+          "value": "30.50",
+          "detail": "CeeDee Lamb"
+        },
+        "TE": {
+          "manager": "hayden",
+          "manager_display": "HAYDEN",
+          "managers": [
+            "HAYDEN"
+          ],
+          "value": "20.80",
           "detail": "Brock Bowers"
         }
       }

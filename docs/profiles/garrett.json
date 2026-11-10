@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-03T20:40:45Z",
+ "updated": "2026-11-10T12:00:51Z",
  "through": {
   "season": 2026,
-  "week": 8
+  "week": 9
  },
  "rules": {
   "ppr_from": 2018
@@ -24,30 +24,30 @@
  "team_name": "Anderton's Revenge",
  "season": {
   "season": 2026,
-  "weeks_played": 8,
-  "standing": 2,
+  "weeks_played": 9,
+  "standing": 3,
   "wins": 6,
-  "losses": 2,
+  "losses": 3,
   "ties": 0,
-  "avg": 121.58,
-  "avg_against": 118.97,
+  "avg": 118.89,
+  "avg_against": 117.23,
   "high_scores": 1,
-  "streak": "W2",
+  "streak": "L1",
   "dots": 2,
   "bank": 100,
   "ranks": {
-   "avg": "4",
+   "avg": "6",
    "avg_against": "4",
-   "high_scores": "T-4",
+   "high_scores": "5",
    "dots": "T-5",
-   "bank": "1"
+   "bank": "2"
   }
  },
  "career": {
   "wins": 94,
-  "losses": 101,
+  "losses": 102,
   "ties": 0,
-  "win_pct": 0.482,
+  "win_pct": 0.48,
   "high_scores": 18,
   "weeks_first": 8,
   "blowout": {
@@ -58,8 +58,8 @@
    "opponent_name": "SCOTTY"
   },
   "earnings": -346.0,
-  "avg": 116.02,
-  "avg_against": 118.33,
+  "avg": 115.87,
+  "avg_against": 118.21,
   "high": {
    "value": 181.5,
    "season": 2019,
@@ -91,12 +91,12 @@
    "season": 2026,
    "team_name": "Anderton's Revenge",
    "wins": 6,
-   "losses": 2,
+   "losses": 3,
    "ties": 0,
    "playoffs": false,
-   "avg": 121.58,
-   "avg_against": 118.97,
-   "finish": 2,
+   "avg": 118.89,
+   "avg_against": 117.23,
+   "finish": 3,
    "in_progress": true,
    "games": [
     {
@@ -178,6 +178,16 @@
      "opp_points": 144.38,
      "result": "W",
      "high_score": true
+    },
+    {
+     "week": 9,
+     "type": "regular",
+     "opponent": "scotty",
+     "opponent_name": "SCOTTY",
+     "points": 97.4,
+     "opp_points": 103.32,
+     "result": "L",
+     "high_score": false
     }
    ]
   },
@@ -2537,7 +2547,7 @@
    "opponent": "scotty",
    "opponent_name": "SCOTTY",
    "wins": 9,
-   "losses": 9,
+   "losses": 10,
    "ties": 0
   },
   {

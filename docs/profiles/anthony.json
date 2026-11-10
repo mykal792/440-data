@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-03T20:40:45Z",
+ "updated": "2026-11-10T12:00:51Z",
  "through": {
   "season": 2026,
-  "week": 8
+  "week": 9
  },
  "rules": {
   "ppr_from": 2018
@@ -24,15 +24,15 @@
  "team_name": "OTPHJ",
  "season": {
   "season": 2026,
-  "weeks_played": 8,
+  "weeks_played": 9,
   "standing": 8,
   "wins": 3,
-  "losses": 5,
+  "losses": 6,
   "ties": 0,
-  "avg": 102.73,
-  "avg_against": 110.37,
+  "avg": 106.59,
+  "avg_against": 114.09,
   "high_scores": 0,
-  "streak": "W1",
+  "streak": "L1",
   "dots": 2,
   "bank": 35,
   "ranks": {
@@ -45,9 +45,9 @@
  },
  "career": {
   "wins": 105,
-  "losses": 90,
+  "losses": 91,
   "ties": 0,
-  "win_pct": 0.538,
+  "win_pct": 0.536,
   "high_scores": 15,
   "weeks_first": 15,
   "blowout": {
@@ -58,8 +58,8 @@
    "opponent_name": "HAYDEN"
   },
   "earnings": -79.0,
-  "avg": 115.35,
-  "avg_against": 117.53,
+  "avg": 115.52,
+  "avg_against": 117.74,
   "high": {
    "value": 173.48,
    "season": 2025,
@@ -76,7 +76,7 @@
   },
   "ranks": {
    "win_pct": "3",
-   "high_scores": "8",
+   "high_scores": "T-8",
    "weeks_first": "6",
    "blowout": "6",
    "earnings": "3",
@@ -91,11 +91,11 @@
    "season": 2026,
    "team_name": "OTPHJ",
    "wins": 3,
-   "losses": 5,
+   "losses": 6,
    "ties": 0,
    "playoffs": false,
-   "avg": 102.73,
-   "avg_against": 110.37,
+   "avg": 106.59,
+   "avg_against": 114.09,
    "finish": 8,
    "in_progress": true,
    "games": [
@@ -177,6 +177,16 @@
      "points": 109.26,
      "opp_points": 84.98,
      "result": "W",
+     "high_score": false
+    },
+    {
+     "week": 9,
+     "type": "regular",
+     "opponent": "schilling",
+     "opponent_name": "SCHILLING",
+     "points": 137.46,
+     "opp_points": 143.84,
+     "result": "L",
      "high_score": false
     }
    ]
@@ -2485,7 +2495,7 @@
    "opponent": "schilling",
    "opponent_name": "SCHILLING",
    "wins": 7,
-   "losses": 11,
+   "losses": 12,
    "ties": 0
   },
   {
@@ -2571,7 +2581,7 @@
  "bonus": {
   "weekly_category": 13,
   "ranks": {
-   "weekly_category": "6"
+   "weekly_category": "T-6"
   }
  }
 }
