@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-10T03:50:30Z",
+  "updated": "2026-11-10T03:55:24Z",
   "players": [
     {
       "name": "Jordan Love",
@@ -592,6 +592,32 @@
       "stats": []
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 14.3,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 220
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
@@ -617,32 +643,6 @@
       "manager_display": "ANTHONY",
       "points": 14.0,
       "stats": []
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.76,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 209
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Tetairoa McMillan",
@@ -1111,6 +1111,20 @@
       "stats": []
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 79
+        }
+      ]
+    },
+    {
       "name": "Woody Marks",
       "position": "RB",
       "team": "Hou",
@@ -1325,20 +1339,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 57
         }
       ]
     },
