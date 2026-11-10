@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-10T02:35:23Z",
+  "updated": "2026-11-10T02:40:24Z",
   "players": [
     {
       "name": "Jordan Love",
@@ -1534,6 +1534,20 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 33
+        }
+      ]
+    },
+    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -1566,16 +1580,24 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
+      "name": "Josh Allen",
+      "position": "QB",
       "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.0,
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.58,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 97
+        },
+        {
           "stat": "RUSH YD",
-          "value": 30
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -1597,28 +1619,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 60
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
