@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-10T01:40:25Z",
+  "updated": "2026-11-10T01:45:25Z",
   "players": [
     {
       "name": "Jordan Love",
@@ -1553,11 +1553,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 1.4,
+      "points": 2.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 20
         }
       ]
     },
@@ -1594,6 +1594,28 @@
         {
           "stat": "RUSH YD",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 43
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -1641,28 +1663,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": -0.34,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 24
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     }
   ]
 }

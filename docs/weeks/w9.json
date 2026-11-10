@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-10T01:40:25Z",
+  "updated": "2026-11-10T01:45:25Z",
   "matchups": [
     {
       "home": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 84.38,
+        "score": 84.98,
         "projected": 120.31
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 69.76,
+        "score": 70.52,
         "projected": 126.49
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "74.92",
+          "value": "74.16",
           "detail": "beating SCARPITTI"
         },
         {
@@ -1686,11 +1686,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 1.4,
+      "points": 2.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 20
         }
       ]
     },
@@ -1727,6 +1727,28 @@
         {
           "stat": "RUSH YD",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 0.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 43
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -1774,28 +1796,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": -0.34,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 24
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     }
   ]
 }
