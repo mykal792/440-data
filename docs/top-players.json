@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-10T01:15:25Z",
+  "updated": "2026-11-10T01:20:24Z",
   "players": [
     {
       "name": "Jordan Love",
@@ -848,6 +848,15 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
@@ -1575,22 +1584,18 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
+      "points": 0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Tyler Bass",
