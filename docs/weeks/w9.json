@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-10T03:35:21Z",
+  "updated": "2026-11-10T03:40:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 146.84,
+        "score": 147.84,
         "projected": 114.28
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 91.9,
+        "score": 93.46,
         "projected": 126.49
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "52.78",
+          "value": "51.22",
           "detail": "beating SCARPITTI"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "146.84",
+          "value": "147.84",
           "detail": "All played"
         },
         {
@@ -752,6 +752,32 @@
       "stats": []
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 209
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -928,32 +954,6 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 170
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Buccaneers",
       "position": "DEF",
       "team": "TB",
@@ -1007,6 +1007,15 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Seahawks",
       "position": "DEF",
       "team": "Sea",
@@ -1022,15 +1031,6 @@
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 10.3,
-      "stats": []
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.0,
       "stats": []
     },
     {
