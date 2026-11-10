@@ -1,13 +1,13 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-10T02:40:24Z",
+  "updated": "2026-11-10T02:45:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 148.84,
+        "score": 146.84,
         "projected": 114.28
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 90.18,
+        "score": 91.18,
         "projected": 120.31
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 76.98,
+        "score": 83.98,
         "projected": 126.49
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "67.70",
+          "value": "60.70",
           "detail": "beating SCARPITTI"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GREG",
           "face": "greg",
-          "value": "15.20",
+          "value": "16.20",
           "detail": "beating COYNE"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "148.84",
+          "value": "146.84",
           "detail": "All played"
         },
         {
@@ -928,15 +928,6 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 12.0,
-      "stats": []
-    },
-    {
       "name": "Buccaneers",
       "position": "DEF",
       "team": "TB",
@@ -1008,6 +999,15 @@
       "stats": []
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Omar Cooper Jr.",
       "position": "WR",
       "team": "NYJ",
@@ -1044,6 +1044,32 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.58,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 122
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -1547,6 +1573,15 @@
       ]
     },
     {
+      "name": "Tyler Bass",
+      "position": "K",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.9,
+      "stats": []
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -1616,15 +1651,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Tyler Bass",
-      "position": "K",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.9,
-      "stats": []
     },
     {
       "name": "Zay Flowers",
@@ -1709,28 +1735,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.58,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 97
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
