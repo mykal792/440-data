@@ -1,19 +1,19 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-10T00:40:22Z",
+  "updated": "2026-11-10T00:45:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 136.84,
+        "score": 26.84,
         "projected": 114.35
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 137.46,
+        "score": 23.96,
         "projected": 123.98
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 97.4,
+        "score": 25.4,
         "projected": 125.48
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 103.32,
+        "score": 11.22,
         "projected": 113.5
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 140.16,
+        "score": 19.26,
         "projected": 123.85
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 104.5,
+        "score": 7.4,
         "projected": 132.32
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 82.98,
+        "score": 23.58,
         "projected": 120.15
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 74.98,
+        "score": 21.88,
         "projected": 108.66
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 70.1,
+        "score": 0.0,
         "projected": 126.18
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 144.68,
+        "score": 68.48,
         "projected": 113.33
       }
     }
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "74.58",
+          "value": "68.48",
           "detail": "beating SCARPITTI"
         },
         {
           "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "35.66",
-          "detail": "beating GRAHAM"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "14.18",
+          "detail": "beating SCOTTY"
         },
         {
           "rank": 3,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "8.00",
-          "detail": "beating COYNE"
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "11.86",
+          "detail": "beating GRAHAM"
         }
       ]
     },
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "144.68",
+          "value": "68.48",
           "detail": "All played"
         },
         {
           "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "140.16",
-          "detail": "All played"
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "26.84",
+          "detail": "1 to play"
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "137.46",
-          "detail": "1 to play"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "25.40",
+          "detail": "All played"
         }
       ]
     }
@@ -1017,28 +1017,6 @@
       ]
     },
     {
-      "name": "Jadarian Price",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 9.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "REC YD",
-          "value": 54
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Wil Lutz",
       "position": "K",
       "team": "Den",
@@ -1467,24 +1445,6 @@
       ]
     },
     {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 32
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -1765,6 +1725,24 @@
       "name": "Adonai Mitchell",
       "position": "WR",
       "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.0,
+      "stats": []
+    },
+    {
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "team": "Det",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.0,
+      "stats": []
+    },
+    {
+      "name": "Jadarian Price",
+      "position": "RB",
+      "team": "Sea",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
