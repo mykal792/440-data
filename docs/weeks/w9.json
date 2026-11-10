@@ -1,7 +1,7 @@
 {
   "week": 9,
   "status": "live",
-  "updated": "2026-11-10T03:15:24Z",
+  "updated": "2026-11-10T03:20:23Z",
   "matchups": [
     {
       "home": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 92.38,
+        "score": 92.58,
         "projected": 120.31
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 89.18,
+        "score": 90.62,
         "projected": 126.49
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "55.50",
+          "value": "54.06",
           "detail": "beating SCARPITTI"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GREG",
           "face": "greg",
-          "value": "17.40",
+          "value": "17.60",
           "detail": "beating COYNE"
         }
       ]
@@ -990,6 +990,32 @@
       "stats": []
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 158
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -1055,32 +1081,6 @@
       "manager_display": "SCARPITTI",
       "points": 9.6,
       "stats": []
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.48,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 122
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Wil Lutz",
@@ -1609,6 +1609,20 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 4.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 47
+        }
+      ]
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -1627,20 +1641,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 45
         }
       ]
     },
