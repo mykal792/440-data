@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-13T03:20:25Z",
+  "updated": "2026-11-13T03:25:20Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 22.3,
+        "score": 23.8,
         "projected": 124.04
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 7.9,
+        "score": 10.1,
         "projected": 115.36
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "1.70",
+          "value": "3.90",
           "detail": "losing to GANGUS"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "12.70",
+          "value": "14.20",
           "detail": "losing to GARRETT"
         }
       ]
@@ -115,21 +115,21 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "22.30",
+          "value": "23.80",
           "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "9.60",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "10.10",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "7.90",
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "9.60",
           "detail": "8 to play"
         }
       ]
@@ -142,23 +142,41 @@
       "team": "NYG",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 22.3,
+      "points": 23.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 56
+          "value": 59
         },
         {
           "stat": "REC YD",
-          "value": 37
+          "value": 44
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         },
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 61
+        },
+        {
+          "stat": "REC",
+          "value": 8
         }
       ]
     },
@@ -181,24 +199,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 49
-        },
-        {
-          "stat": "REC",
-          "value": 6
         }
       ]
     },
