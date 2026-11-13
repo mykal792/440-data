@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-13T03:05:24Z",
+  "updated": "2026-11-13T03:10:26Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 0.0,
+        "score": 9.6,
         "projected": 100.63
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 4.4,
+        "score": 5.4,
         "projected": 114.96
       }
     }
@@ -93,14 +93,14 @@
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "3.50",
+          "value": "2.50",
           "detail": "losing to GANGUS"
         },
         {
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "22.20",
+          "value": "12.60",
           "detail": "losing to GARRETT"
         }
       ]
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "7.90",
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "9.60",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "4.40",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "7.90",
           "detail": "8 to play"
         }
       ]
@@ -163,6 +163,28 @@
       ]
     },
     {
+      "name": "Antonio Williams",
+      "position": "WR",
+      "team": "Was",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Isaiah Likely",
       "position": "TE",
       "team": "NYG",
@@ -186,15 +208,15 @@
       "team": "Was",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 4.4,
+      "points": 5.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 34
+          "value": 39
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         }
       ]
     },
@@ -778,15 +800,6 @@
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Antonio Williams",
-      "position": "WR",
-      "team": "Was",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
