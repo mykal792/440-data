@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-13T01:30:27Z",
+  "updated": "2026-11-13T01:35:20Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 3.1,
+        "score": 7.0,
         "projected": 124.1
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 0.0,
+        "score": 0.2,
         "projected": 111.91
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 1.4,
+        "score": 2.5,
         "projected": 115.47
       },
       "away": {
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "0.50",
-          "detail": "losing to GANGUS"
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "0.20",
+          "detail": "losing to SCOTTY"
         },
         {
           "rank": 2,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "3.10",
-          "detail": "losing to GARRETT"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "1.60",
+          "detail": "losing to GANGUS"
         },
         {
           "rank": 3,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "7.00",
+          "detail": "losing to GARRETT"
         }
       ]
     },
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "3.10",
+          "value": "7.00",
           "detail": "8 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "1.40",
+          "value": "2.50",
           "detail": "8 to play"
         },
         {
@@ -142,7 +142,7 @@
       "team": "NYG",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 3.1,
+      "points": 7.0,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -150,11 +150,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 3
+          "value": 37
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -164,15 +164,33 @@
       "team": "NYG",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 1.4,
+      "points": 2.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 9
+          "value": 15
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -864,15 +882,6 @@
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
