@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-13T03:40:30Z",
+  "updated": "2026-11-13T03:45:26Z",
   "matchups": [
     {
       "home": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 10.1,
+        "score": 25.2,
         "projected": 115.36
       },
       "away": {
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "3.90",
-          "detail": "losing to GANGUS"
-        },
-        {
-          "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "4.90",
           "detail": "losing to SCOTTY"
         },
         {
-          "rank": 3,
+          "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
           "value": "14.50",
           "detail": "losing to GARRETT"
+        },
+        {
+          "rank": 3,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "19.00",
+          "detail": "losing to GANGUS"
         }
       ]
     },
@@ -113,16 +113,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "24.10",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "25.20",
           "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "10.10",
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "24.10",
           "detail": "8 to play"
         },
         {
@@ -136,6 +136,28 @@
     }
   },
   "top_players": [
+    {
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 25.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 127
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Cam Skattebo",
       "position": "RB",
@@ -159,24 +181,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 61
-        },
-        {
-          "stat": "REC",
-          "value": 8
         }
       ]
     },
