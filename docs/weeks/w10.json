@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-13T03:10:26Z",
+  "updated": "2026-11-13T03:15:22Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 22.2,
+        "score": 22.3,
         "projected": 124.04
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 2.3,
+        "score": 4.9,
         "projected": 111.87
       }
     },
@@ -84,23 +84,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "2.30",
-          "detail": "losing to SCOTTY"
-        },
-        {
-          "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
           "value": "2.50",
           "detail": "losing to GANGUS"
         },
         {
+          "rank": 2,
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "4.90",
+          "detail": "losing to SCOTTY"
+        },
+        {
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "12.60",
+          "value": "12.70",
           "detail": "losing to GARRETT"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "22.20",
+          "value": "22.30",
           "detail": "8 to play"
         },
         {
@@ -142,11 +142,11 @@
       "team": "NYG",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 22.2,
+      "points": 22.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 55
+          "value": 56
         },
         {
           "stat": "REC YD",
@@ -226,15 +226,19 @@
       "team": "NYG",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 2.3,
+      "points": 4.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 8
+          "value": 44
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 5
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
