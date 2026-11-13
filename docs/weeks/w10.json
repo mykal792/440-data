@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-13T04:10:23Z",
+  "updated": "2026-11-13T04:15:23Z",
   "matchups": [
     {
       "home": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 7.6,
+        "score": 17.3,
         "projected": 114.84
       }
     }
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "7.90",
+          "detail": "losing to GANGUS"
+        },
+        {
+          "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
           "value": "14.50",
           "detail": "losing to GARRETT"
-        },
-        {
-          "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "17.60",
-          "detail": "losing to GANGUS"
         }
       ]
     },
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "11.20",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "17.30",
           "detail": "8 to play"
         }
       ]
@@ -185,6 +185,28 @@
       ]
     },
     {
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "Was",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 17.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 83
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -203,24 +225,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Stefon Diggs",
-      "position": "WR",
-      "team": "Was",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 51
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
