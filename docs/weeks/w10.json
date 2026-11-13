@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-13T04:00:28Z",
+  "updated": "2026-11-13T04:05:20Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 25.0,
+        "score": 25.5,
         "projected": 123.96
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 6.2,
+        "score": 7.6,
         "projected": 114.84
       }
     }
@@ -93,14 +93,14 @@
           "rank": 2,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "13.80",
+          "value": "14.30",
           "detail": "losing to GARRETT"
         },
         {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "19.00",
+          "value": "17.60",
           "detail": "losing to GANGUS"
         }
       ]
@@ -113,16 +113,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "25.20",
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "25.50",
           "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "25.00",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "25.20",
           "detail": "8 to play"
         },
         {
@@ -136,6 +136,32 @@
     }
   },
   "top_players": [
+    {
+      "name": "Cam Skattebo",
+      "position": "RB",
+      "team": "NYG",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 25.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 76
+        },
+        {
+          "stat": "REC YD",
+          "value": 44
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
     {
       "name": "Isaiah Likely",
       "position": "TE",
@@ -155,32 +181,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Cam Skattebo",
-      "position": "RB",
-      "team": "NYG",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 25.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 71
-        },
-        {
-          "stat": "REC YD",
-          "value": 44
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -212,15 +212,15 @@
       "team": "Was",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 6.2,
+      "points": 7.6,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 42
+          "value": 51
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 5
         }
       ]
     },
