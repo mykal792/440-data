@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T19:15:23Z",
+  "updated": "2026-11-15T19:20:22Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 44.78,
+        "score": 48.66,
         "projected": 113.77
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 77.8,
+        "score": 77.7,
         "projected": 124.74
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 26.5,
+        "score": 26.4,
         "projected": 105.0
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 50.96,
+        "score": 56.36,
         "projected": 122.25
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 66.42,
+        "score": 66.92,
         "projected": 118.72
       }
     }
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "1.42",
+          "value": "1.92",
           "detail": "losing to GRAHAM"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "20.48",
+          "value": "24.36",
           "detail": "losing to GREG"
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "27.24",
-          "detail": "losing to HAYDEN"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "29.34",
+          "detail": "losing to SCARPITTI"
         }
       ]
     },
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "77.80",
+          "value": "77.70",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "66.42",
+          "value": "66.92",
           "detail": "3 to play"
         },
         {
@@ -286,15 +286,41 @@
       "team": "Hou",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 17.4,
+      "points": 19.2,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 79
+          "value": 92
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Emmett Johnson",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 18.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 50
+        },
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 4
         },
         {
           "stat": "TD",
@@ -339,19 +365,19 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 15.0,
+      "points": 15.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 62
+          "value": 63
         },
         {
           "stat": "REC YD",
-          "value": 18
+          "value": 17
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         },
         {
           "stat": "TD",
@@ -360,24 +386,20 @@
       ]
     },
     {
-      "name": "Emmett Johnson",
-      "position": "RB",
+      "name": "Patrick Mahomes",
+      "position": "QB",
       "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 14.5,
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 13.26,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 159
+        },
+        {
           "stat": "RUSH YD",
-          "value": 49
-        },
-        {
-          "stat": "REC YD",
-          "value": 21
-        },
-        {
-          "stat": "REC",
-          "value": 3
+          "value": 9
         },
         {
           "stat": "TD",
@@ -400,28 +422,6 @@
         {
           "stat": "REC",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 107
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 9
         },
         {
           "stat": "TD",
@@ -635,20 +635,6 @@
       "stats": []
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 49
-        }
-      ]
-    },
-    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -689,6 +675,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 48
         }
       ]
     },
@@ -764,11 +764,11 @@
       ]
     },
     {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "name": "Hunter Henry",
+      "position": "TE",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 3.2,
       "stats": [
         {
@@ -782,16 +782,16 @@
       ]
     },
     {
-      "name": "Hunter Henry",
-      "position": "TE",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.2,
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 22
+          "value": 21
         },
         {
           "stat": "REC",
@@ -841,6 +841,20 @@
       "team": "NE",
       "manager": "schilling",
       "manager_display": "SCHILLING",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Jordan Mason",
+      "position": "RB",
+      "team": "Min",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
       "points": 2.5,
       "stats": [
         {
@@ -1016,20 +1030,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Mason",
-      "position": "RB",
-      "team": "Min",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 11
         }
       ]
     },
