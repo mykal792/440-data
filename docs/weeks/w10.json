@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T18:35:21Z",
+  "updated": "2026-11-15T18:40:33Z",
   "matchups": [
     {
       "home": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 38.3,
+        "score": 39.54,
         "projected": 122.25
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 10.42,
+        "score": 10.82,
         "projected": 123.09
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 25.46,
+        "score": 32.46,
         "projected": 126.84
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 56.42,
+        "score": 59.52,
         "projected": 118.72
       }
     }
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "5.76",
-          "detail": "losing to SCARPITTI"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "7.98",
+          "detail": "losing to GANGUS"
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "11.08",
-          "detail": "losing to GANGUS"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "12.76",
+          "detail": "losing to SCARPITTI"
         },
         {
           "rank": 3,
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "56.42",
+          "value": "59.52",
           "detail": "3 to play"
         }
       ]
@@ -281,6 +281,28 @@
       ]
     },
     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 14.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 66
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Emmett Johnson",
       "position": "RB",
       "team": "KC",
@@ -369,28 +391,6 @@
       ]
     },
     {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 35
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
@@ -449,6 +449,54 @@
       "stats": []
     },
     {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 111
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 53
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -466,32 +514,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 7.4,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 80
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -531,28 +553,6 @@
       "manager_display": "GANGUS",
       "points": 5.5,
       "stats": []
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 5.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 36
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Malik Nabers",
@@ -604,6 +604,28 @@
       ]
     },
     {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -640,28 +662,6 @@
       ]
     },
     {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -672,6 +672,28 @@
         {
           "stat": "REC YD",
           "value": 23
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
         },
         {
           "stat": "REC",
@@ -848,6 +870,28 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 8
+        },
+        {
+          "stat": "REC YD",
+          "value": -1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brenton Strange",
       "position": "TE",
       "team": "Jax",
@@ -920,20 +964,6 @@
       ]
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
-        }
-      ]
-    },
-    {
       "name": "Jordan Mason",
       "position": "RB",
       "team": "Min",
@@ -958,20 +988,6 @@
         {
           "stat": "RUSH YD",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 1
         }
       ]
     },
