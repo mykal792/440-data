@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T22:20:23Z",
+  "updated": "2026-11-15T22:25:22Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -698,6 +698,28 @@
       "stats": []
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 144
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -721,11 +743,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 8.24,
+      "points": 8.52,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 51
+          "value": 58
         },
         {
           "stat": "RUSH YD",
@@ -745,6 +767,28 @@
       "manager_display": "SCHILLING",
       "points": 8.1,
       "stats": []
+    },
+    {
+      "name": "Blake Corum",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 46
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Brenton Strange",
@@ -776,28 +820,6 @@
       "manager_display": "GREG",
       "points": 7.7,
       "stats": []
-    },
-    {
-      "name": "Blake Corum",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 41
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -962,6 +984,24 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Packers",
       "position": "DEF",
       "team": "GB",
@@ -1052,24 +1092,6 @@
       ]
     },
     {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 3.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 139
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Darren Waller",
       "position": "TE",
       "team": "Car",
@@ -1086,6 +1108,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Brandon McManus",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 3.4,
+      "stats": []
     },
     {
       "name": "Christian McCaffrey",
@@ -1268,33 +1299,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.4,
-      "stats": []
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 13
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
