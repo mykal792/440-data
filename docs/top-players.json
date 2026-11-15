@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T18:40:33Z",
+  "updated": "2026-11-15T18:45:20Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -148,6 +148,15 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 15.0,
+      "stats": []
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -175,11 +184,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 13.3,
+      "points": 13.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 37
+          "value": 42
         },
         {
           "stat": "REC YD",
@@ -196,29 +205,20 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 13.0,
-      "stats": []
-    },
-    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 12.2,
+      "points": 13.5,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 47
+          "value": 55
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 4
         },
         {
           "stat": "TD",
@@ -258,6 +258,15 @@
       ]
     },
     {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
@@ -294,15 +303,6 @@
       "team": "Ind",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 10.0,
       "stats": []
     },
@@ -413,6 +413,15 @@
       "stats": []
     },
     {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.6,
+      "stats": []
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -453,6 +462,28 @@
       "stats": []
     },
     {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 22
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "A.J. Brown",
       "position": "WR",
       "team": "NE",
@@ -467,28 +498,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -665,20 +674,6 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 40
-        }
-      ]
-    },
-    {
       "name": "Audric Estime",
       "position": "RB",
       "team": "NO",
@@ -737,6 +732,24 @@
       ]
     },
     {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -777,11 +790,11 @@
       ]
     },
     {
-      "name": "Cam Little",
+      "name": "Spencer Shrader",
       "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
+      "team": "Ind",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
       "points": 1.0,
       "stats": []
     },
@@ -904,15 +917,6 @@
       "stats": []
     },
     {
-      "name": "Spencer Shrader",
-      "position": "K",
-      "team": "Ind",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
@@ -925,15 +929,6 @@
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -1226,6 +1221,24 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": -0.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 40
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     }
   ]
 }
