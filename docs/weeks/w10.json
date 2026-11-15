@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T15:15:22Z",
+  "updated": "2026-11-15T15:20:30Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 32.3,
+        "score": 32.5,
         "projected": 124.52
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 27.24,
+        "score": 33.72,
         "projected": 117.24
       }
     }
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "8.10",
-          "detail": "losing to SCOTTY"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "4.78",
+          "detail": "losing to GANGUS"
         }
       ]
     },
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "32.30",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "33.72",
           "detail": "7 to play"
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "27.24",
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "32.50",
           "detail": "7 to play"
         }
       ]
@@ -207,6 +207,28 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 16.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 103
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -251,38 +273,16 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 9.94,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 91
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 6.6,
+      "points": 6.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 57
+          "value": 59
         },
         {
           "stat": "REC YD",
