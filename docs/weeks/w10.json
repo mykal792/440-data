@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T14:55:21Z",
+  "updated": "2026-11-15T15:00:29Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 0.0,
+        "score": 0.9,
         "projected": 113.69
       }
     },
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "0.90",
-          "detail": "losing to SCHILLING"
-        },
-        {
-          "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
           "value": "3.02",
           "detail": "losing to ANTHONY"
         },
         {
-          "rank": 3,
+          "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "8.10",
           "detail": "losing to SCOTTY"
+        },
+        {
+          "rank": 3,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "12.68",
+          "detail": "losing to GANGUS"
         }
       ]
     },
@@ -351,6 +351,24 @@
         {
           "stat": "RUSH YD",
           "value": 9
+        }
+      ]
+    },
+    {
+      "name": "DeMario Douglas",
+      "position": "WR",
+      "team": "NE",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -619,15 +637,6 @@
       "name": "Tucker Kraft",
       "position": "TE",
       "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "DeMario Douglas",
-      "position": "WR",
-      "team": "NE",
       "manager": "greg",
       "manager_display": "GREG",
       "points": 0.0,
