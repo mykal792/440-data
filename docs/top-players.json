@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T20:40:22Z",
+  "updated": "2026-11-15T20:45:21Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -327,6 +327,15 @@
       ]
     },
     {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 16.0,
+      "stats": []
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -350,7 +359,7 @@
       "team": "Atl",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 15.6,
+      "points": 15.7,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -358,26 +367,17 @@
         },
         {
           "stat": "REC YD",
-          "value": 10
+          "value": 6
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 4
         },
         {
           "stat": "TD",
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 15.0,
-      "stats": []
     },
     {
       "name": "Colts",
@@ -429,6 +429,28 @@
       ]
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 11.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 58
+        },
+        {
+          "stat": "REC YD",
+          "value": 39
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -473,28 +495,6 @@
       ]
     },
     {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 11.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 52
-        },
-        {
-          "stat": "REC YD",
-          "value": 39
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -529,6 +529,15 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "Will Reichard",
@@ -589,13 +598,40 @@
       "stats": []
     },
     {
-      "name": "Bills",
-      "position": "DEF",
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
       "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.0,
-      "stats": []
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 8.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 83
+        }
+      ]
     },
     {
       "name": "Breece Hall",
@@ -620,28 +656,6 @@
       ]
     },
     {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 29
-        },
-        {
-          "stat": "REC YD",
-          "value": 28
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -649,20 +663,6 @@
       "manager_display": "SCHILLING",
       "points": 8.1,
       "stats": []
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 8.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 81
-        }
-      ]
     },
     {
       "name": "Brenton Strange",
@@ -728,11 +728,11 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 6.1,
+      "points": 6.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 32
+          "value": 33
         },
         {
           "stat": "REC YD",
@@ -743,6 +743,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.0,
+      "stats": []
     },
     {
       "name": "Jaguars",
@@ -779,15 +788,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Tetairoa McMillan",
@@ -835,11 +835,11 @@
       "team": "Min",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 4.4,
+      "points": 4.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 44
+          "value": 47
         }
       ]
     },
@@ -1007,11 +1007,11 @@
       "team": "NO",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.8,
+      "points": 1.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 8
+          "value": 6
         },
         {
           "stat": "REC YD",
