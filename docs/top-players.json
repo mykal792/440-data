@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T20:25:21Z",
+  "updated": "2026-11-15T20:30:25Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -35,11 +35,11 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 28.82,
+      "points": 37.38,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 233
+          "value": 297
         },
         {
           "stat": "RUSH YD",
@@ -47,7 +47,7 @@
         },
         {
           "stat": "TD",
-          "value": 3
+          "value": 4
         }
       ]
     },
@@ -78,16 +78,42 @@
       ]
     },
     {
+      "name": "Emmett Johnson",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 27.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 70
+        },
+        {
+          "stat": "REC YD",
+          "value": 61
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 25.82,
+      "points": 26.34,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 183
+          "value": 196
         },
         {
           "stat": "RUSH YD",
@@ -197,11 +223,11 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 20.88,
+      "points": 21.0,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 267
+          "value": 270
         },
         {
           "stat": "RUSH YD",
@@ -213,32 +239,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Emmett Johnson",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 20.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 68
-        },
-        {
-          "stat": "REC YD",
-          "value": 55
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -323,21 +323,21 @@
       ]
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 16.0,
-      "stats": []
-    },
-    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 15.0,
+      "stats": []
+    },
+    {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 14.0,
       "stats": []
     },
     {
@@ -425,6 +425,24 @@
       ]
     },
     {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 82
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -439,6 +457,24 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 63
+        },
+        {
+          "stat": "REC",
+          "value": 8
         }
       ]
     },
@@ -490,6 +526,28 @@
       "manager_display": "COYNE",
       "points": 9.0,
       "stats": []
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
+        },
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Will Reichard",
@@ -554,13 +612,18 @@
       "stats": []
     },
     {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 8.0,
-      "stats": []
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 8.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 81
+        }
+      ]
     },
     {
       "name": "Packers",
@@ -581,28 +644,6 @@
       "stats": []
     },
     {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 63
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brenton Strange",
       "position": "TE",
       "team": "Jax",
@@ -621,20 +662,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 78
         }
       ]
     },
@@ -719,6 +746,15 @@
       ]
     },
     {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -737,22 +773,13 @@
       ]
     },
     {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 32
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Tetairoa McMillan",
@@ -793,33 +820,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 4.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 31
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.0,
-      "stats": []
     },
     {
       "name": "Travis Kelce",
@@ -863,11 +863,11 @@
       "team": "Min",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 3.4,
+      "points": 3.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 34
+          "value": 36
         }
       ]
     },
