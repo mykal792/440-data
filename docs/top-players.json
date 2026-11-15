@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T20:20:23Z",
+  "updated": "2026-11-15T20:25:21Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -78,6 +78,28 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 25.82,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 183
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -122,28 +144,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 25.54,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 176
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
@@ -218,6 +218,32 @@
       ]
     },
     {
+      "name": "Emmett Johnson",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 20.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -232,32 +258,6 @@
         {
           "stat": "REC",
           "value": 9
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Emmett Johnson",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 19.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 56
-        },
-        {
-          "stat": "REC YD",
-          "value": 55
-        },
-        {
-          "stat": "REC",
-          "value": 4
         },
         {
           "stat": "TD",
@@ -323,6 +323,15 @@
       ]
     },
     {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 16.0,
+      "stats": []
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -332,25 +341,16 @@
       "stats": []
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 15.0,
-      "stats": []
-    },
-    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 12.76,
+      "points": 12.8,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 219
+          "value": 220
         },
         {
           "stat": "TD",
@@ -403,6 +403,28 @@
       ]
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 10.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 50
+        },
+        {
+          "stat": "REC YD",
+          "value": 39
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -439,28 +461,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 9.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 50
-        },
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 3
         }
       ]
     },
@@ -554,11 +554,29 @@
       "stats": []
     },
     {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Packers",
       "position": "DEF",
       "team": "GB",
       "manager": "greg",
       "manager_display": "GREG",
+      "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 8.0,
       "stats": []
     },
@@ -626,11 +644,11 @@
       "team": "NYJ",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 7.3,
+      "points": 7.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 15
+          "value": 17
         },
         {
           "stat": "REC YD",
@@ -661,15 +679,6 @@
       ]
     },
     {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Tyler Bass",
       "position": "K",
       "team": "Buf",
@@ -688,13 +697,26 @@
       "stats": []
     },
     {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.0,
-      "stats": []
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Christian Watson",
@@ -836,28 +858,6 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 32
-        },
-        {
-          "stat": "REC YD",
-          "value": -2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jordan Mason",
       "position": "RB",
       "team": "Min",
@@ -927,11 +927,11 @@
       "team": "GB",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 2.3,
+      "points": 2.4,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 18
+          "value": 19
         },
         {
           "stat": "REC",
