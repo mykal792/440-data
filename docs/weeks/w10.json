@@ -1,14 +1,14 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T21:25:19Z",
+  "updated": "2026-11-15T21:30:31Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 40.2,
-        "projected": 117.04
+        "projected": 117.01
       },
       "away": {
         "name": "GREG",
@@ -27,8 +27,8 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 46.4,
-        "projected": 105.13
+        "score": 49.7,
+        "projected": 105.1
       }
     },
     {
@@ -50,12 +50,12 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 95.64,
-        "projected": 127.09
+        "projected": 127.08
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 32.94,
+        "score": 33.78,
         "projected": 108.15
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 107.2,
+        "score": 107.6,
         "projected": 114.77
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 107.92,
+        "score": 109.22,
         "projected": 118.44
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "0.72",
+          "value": "1.62",
           "detail": "losing to GRAHAM"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "55.60",
+          "value": "52.30",
           "detail": "losing to GARRETT"
         }
       ]
@@ -113,24 +113,24 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "109.22",
+          "detail": "All played"
+        },
+        {
+          "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
           "value": "108.88",
           "detail": "2 to play"
         },
         {
-          "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "107.92",
-          "detail": "1 to play"
-        },
-        {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "107.20",
-          "detail": "1 to play"
+          "value": "107.60",
+          "detail": "All played"
         }
       ]
     }
@@ -1024,20 +1024,6 @@
       ]
     },
     {
-      "name": "Zach Charbonnet",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 4.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 41
-        }
-      ]
-    },
-    {
       "name": "Packers",
       "position": "DEF",
       "team": "GB",
@@ -1061,6 +1047,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
         }
       ]
     },
@@ -1169,6 +1169,15 @@
       ]
     },
     {
+      "name": "Brandon McManus",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.4,
+      "stats": []
+    },
+    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -1210,11 +1219,11 @@
       "team": "LAR",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 1.7,
+      "points": 2.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 8
         },
         {
           "stat": "REC YD",
@@ -1223,6 +1232,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 47
         }
       ]
     },
@@ -1307,6 +1330,15 @@
       ]
     },
     {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.0,
+      "stats": []
+    },
+    {
       "name": "DeMario Douglas",
       "position": "WR",
       "team": "NE",
@@ -1325,6 +1357,20 @@
       ]
     },
     {
+      "name": "Jadarian Price",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -1339,16 +1385,16 @@
       ]
     },
     {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.64,
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.4,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 16
+          "stat": "RUSH YD",
+          "value": 4
         }
       ]
     },
@@ -1488,45 +1534,9 @@
       "stats": []
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jadarian Price",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
