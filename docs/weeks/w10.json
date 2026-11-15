@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T14:30:25Z",
+  "updated": "2026-11-15T14:35:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 0.0,
+        "score": -0.1,
         "projected": 116.86
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 0.0,
+        "score": 1.1,
         "projected": 123.28
       }
     },
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "0.10",
+          "detail": "losing to GREG"
+        },
+        {
+          "rank": 2,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "1.10",
+          "detail": "losing to ANTHONY"
+        },
+        {
+          "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "4.90",
           "detail": "losing to SCOTTY"
-        },
-        {
-          "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "7.90",
-          "detail": "losing to GANGUS"
-        },
-        {
-          "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "14.50",
-          "detail": "losing to GARRETT"
         }
       ]
     },
@@ -251,6 +251,20 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        }
+      ]
+    },
+    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -263,15 +277,6 @@
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Corey Kiner",
-      "position": "RB",
-      "team": "NE",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -935,15 +940,6 @@
       "stats": []
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -1014,6 +1010,20 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Corey Kiner",
+      "position": "RB",
+      "team": "NE",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": -0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        }
+      ]
     }
   ]
 }

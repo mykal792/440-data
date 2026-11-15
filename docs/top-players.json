@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T14:30:25Z",
+  "updated": "2026-11-15T14:35:22Z",
   "players": [
     {
       "name": "Cam Skattebo",
@@ -118,6 +118,20 @@
       ]
     },
     {
+      "name": "Drake Maye",
+      "position": "QB",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        }
+      ]
+    },
+    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -130,15 +144,6 @@
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Corey Kiner",
-      "position": "RB",
-      "team": "NE",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -802,15 +807,6 @@
       "stats": []
     },
     {
-      "name": "Drake Maye",
-      "position": "QB",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -881,6 +877,20 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Corey Kiner",
+      "position": "RB",
+      "team": "NE",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": -0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        }
+      ]
     }
   ]
 }
