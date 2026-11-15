@@ -1,19 +1,19 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T19:41:22Z",
+  "updated": "2026-11-15T19:45:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 27.3,
+        "score": 28.3,
         "projected": 116.87
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 57.62,
+        "score": 57.9,
         "projected": 113.77
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 83.2,
+        "score": 84.2,
         "projected": 124.74
       },
       "away": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 62.66,
+        "score": 62.76,
         "projected": 122.25
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 66.28,
+        "score": 75.78,
         "projected": 114.49
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 69.12,
+        "score": 71.22,
         "projected": 118.74
       }
     }
@@ -84,16 +84,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "2.84",
-          "detail": "losing to GRAHAM"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "4.56",
+          "detail": "losing to GANGUS"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "30.32",
+          "value": "29.60",
           "detail": "losing to GREG"
         },
         {
@@ -115,22 +115,22 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "83.20",
+          "value": "84.20",
           "detail": "4 to play"
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "69.12",
-          "detail": "3 to play"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "75.78",
+          "detail": "2 to play"
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "66.28",
-          "detail": "2 to play"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "71.22",
+          "detail": "3 to play"
         }
       ]
     }
@@ -286,11 +286,11 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 20.22,
+      "points": 20.5,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 183
+          "value": 190
         },
         {
           "stat": "RUSH YD",
@@ -339,11 +339,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 18.5,
+      "points": 18.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 50
+          "value": 51
         },
         {
           "stat": "REC YD",
@@ -387,11 +387,11 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 15.5,
+      "points": 16.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 63
+          "value": 72
         },
         {
           "stat": "REC YD",
@@ -406,6 +406,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 15.0,
+      "stats": []
     },
     {
       "name": "Cam Little",
@@ -590,11 +599,11 @@
       "stats": []
     },
     {
-      "name": "Colts",
+      "name": "Texans",
       "position": "DEF",
-      "team": "Ind",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 6.0,
       "stats": []
     },
@@ -660,15 +669,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Malik Nabers",
@@ -818,6 +818,24 @@
       ]
     },
     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -890,22 +908,13 @@
       ]
     },
     {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
+      "name": "Spencer Shrader",
+      "position": "K",
+      "team": "Ind",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.0,
+      "stats": []
     },
     {
       "name": "Jordan Mason",
@@ -990,13 +999,26 @@
       ]
     },
     {
-      "name": "Spencer Shrader",
-      "position": "K",
-      "team": "Ind",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.0,
-      "stats": []
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 16
+        },
+        {
+          "stat": "REC YD",
+          "value": -2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Darren Waller",
@@ -1031,28 +1053,6 @@
         {
           "stat": "REC YD",
           "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 11
-        },
-        {
-          "stat": "REC YD",
-          "value": -2
         },
         {
           "stat": "REC",
