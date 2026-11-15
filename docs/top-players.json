@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T21:10:24Z",
+  "updated": "2026-11-15T21:15:24Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -406,6 +406,15 @@
       ]
     },
     {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 16.0,
+      "stats": []
+    },
+    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -496,15 +505,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 14.0,
-      "stats": []
     },
     {
       "name": "Bills",
@@ -680,15 +680,6 @@
       "stats": []
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -713,6 +704,15 @@
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 8.1,
+      "stats": []
+    },
+    {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.0,
       "stats": []
     },
     {
@@ -1022,6 +1022,24 @@
       ]
     },
     {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Sam LaPorta",
       "position": "TE",
       "team": "Det",
@@ -1054,24 +1072,6 @@
         {
           "stat": "REC YD",
           "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 10
         },
         {
           "stat": "REC",
@@ -1138,6 +1138,20 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Zach Charbonnet",
       "position": "RB",
       "team": "Sea",
@@ -1148,20 +1162,6 @@
         {
           "stat": "RUSH YD",
           "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
         }
       ]
     },
