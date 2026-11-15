@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T14:35:22Z",
+  "updated": "2026-11-15T14:40:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": -0.1,
+        "score": 0.9,
         "projected": 116.86
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 1.1,
+        "score": 3.02,
         "projected": 123.28
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 4.9,
+        "score": 8.1,
         "projected": 108.1
       }
     },
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "0.10",
-          "detail": "losing to GREG"
+          "manager": "GREG",
+          "face": "greg",
+          "value": "0.90",
+          "detail": "losing to SCHILLING"
         },
         {
           "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
-          "value": "1.10",
+          "value": "3.02",
           "detail": "losing to ANTHONY"
         },
         {
           "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "4.90",
-          "detail": "losing to SCOTTY"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "7.90",
+          "detail": "losing to GANGUS"
         }
       ]
     },
@@ -251,16 +251,52 @@
       ]
     },
     {
+      "name": "Hunter Henry",
+      "position": "TE",
+      "team": "NE",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 1.1,
+      "points": 3.02,
       "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 48
+        },
         {
           "stat": "RUSH YD",
           "value": 11
+        }
+      ]
+    },
+    {
+      "name": "Corey Kiner",
+      "position": "RB",
+      "team": "NE",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
         }
       ]
     },
@@ -913,15 +949,6 @@
       "stats": []
     },
     {
-      "name": "Hunter Henry",
-      "position": "TE",
-      "team": "NE",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -1010,20 +1037,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Corey Kiner",
-      "position": "RB",
-      "team": "NE",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": -0.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -1
-        }
-      ]
     }
   ]
 }
