@@ -1,19 +1,19 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T18:15:24Z",
+  "updated": "2026-11-15T18:20:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 14.5,
+        "score": 17.5,
         "projected": 116.87
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 27.6,
+        "score": 27.8,
         "projected": 113.77
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 6.72,
+        "score": 8.82,
         "projected": 123.09
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 13.62,
+        "score": 13.9,
         "projected": 126.84
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 60.46,
+        "score": 61.6,
         "projected": 114.44
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 51.02,
+        "score": 52.42,
         "projected": 118.72
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "5.88",
+          "value": "5.60",
           "detail": "losing to SCOTTY"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "9.44",
+          "value": "9.18",
           "detail": "losing to GANGUS"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "13.10",
+          "value": "10.30",
           "detail": "losing to GREG"
         }
       ]
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "60.46",
+          "value": "61.60",
           "detail": "3 to play"
         },
         {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "51.02",
+          "value": "52.42",
           "detail": "4 to play"
         }
       ]
@@ -286,7 +286,7 @@
       "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 12.0,
+      "points": 13.0,
       "stats": []
     },
     {
@@ -583,6 +583,28 @@
       ]
     },
     {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Travis Kelce",
       "position": "TE",
       "team": "KC",
@@ -655,16 +677,20 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.4,
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.0,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 14
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -687,6 +713,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
         }
       ]
     },
@@ -718,6 +758,38 @@
       "stats": []
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 20
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 25
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -727,16 +799,20 @@
       "stats": []
     },
     {
-      "name": "James Cook III",
+      "name": "Tony Pollard",
       "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.9,
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.0,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 9
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -759,20 +835,16 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.72,
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.8,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 13
-        },
-        {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 8
         }
       ]
     },
@@ -782,8 +854,12 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.3,
+      "points": 0.6,
       "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
         {
           "stat": "REC YD",
           "value": -2
@@ -809,16 +885,16 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.16,
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.3,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 4
+          "stat": "RUSH YD",
+          "value": 3
         }
       ]
     },
@@ -858,15 +934,6 @@
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1215,24 +1282,6 @@
       "stats": []
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -1245,15 +1294,6 @@
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
