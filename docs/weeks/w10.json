@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T18:25:21Z",
+  "updated": "2026-11-15T18:30:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 32.58,
+        "score": 30.68,
         "projected": 113.77
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 25.6,
+        "score": 26.2,
         "projected": 105.0
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 36.08,
+        "score": 35.6,
         "projected": 122.25
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 14.56,
+        "score": 24.46,
         "projected": 126.84
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 61.6,
+        "score": 66.9,
         "projected": 114.44
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 54.22,
+        "score": 56.02,
         "projected": 118.72
       }
     }
@@ -84,23 +84,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "4.94",
-          "detail": "losing to SCOTTY"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "4.96",
+          "detail": "losing to SCARPITTI"
         },
         {
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "7.38",
+          "value": "10.88",
           "detail": "losing to GANGUS"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "15.08",
+          "value": "13.18",
           "detail": "losing to GREG"
         }
       ]
@@ -122,15 +122,15 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "61.60",
+          "value": "66.90",
           "detail": "3 to play"
         },
         {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "54.22",
-          "detail": "4 to play"
+          "value": "56.02",
+          "detail": "3 to play"
         }
       ]
     }
@@ -369,6 +369,28 @@
       ]
     },
     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -418,20 +440,20 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
+      "name": "Josh Allen",
       "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 8.08,
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.46,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 47
+          "value": 24
         },
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 5
         },
         {
           "stat": "TD",
@@ -440,13 +462,30 @@
       ]
     },
     {
-      "name": "Packers",
-      "position": "DEF",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 8.0,
-      "stats": []
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 80
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jameson Williams",
@@ -476,26 +515,22 @@
       "stats": []
     },
     {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 6.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "name": "Packers",
+      "position": "DEF",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 6.0,
+      "stats": []
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.5,
+      "stats": []
     },
     {
       "name": "Malik Nabers",
@@ -664,11 +699,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 2.1,
+      "points": 2.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 21
+          "value": 22
         }
       ]
     },
@@ -709,6 +744,24 @@
       ]
     },
     {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ollie Gordon II",
       "position": "RB",
       "team": "Mia",
@@ -719,6 +772,28 @@
         {
           "stat": "RUSH YD",
           "value": 16
+        }
+      ]
+    },
+    {
+      "name": "Quinshon Judkins",
+      "position": "RB",
+      "team": "Cle",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 11
+        },
+        {
+          "stat": "REC YD",
+          "value": -2
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -741,24 +816,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 24
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
         }
       ]
     },
@@ -804,15 +861,6 @@
       ]
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.0,
-      "stats": []
-    },
-    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -849,6 +897,20 @@
       ]
     },
     {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -863,52 +925,16 @@
       ]
     },
     {
-      "name": "Quinshon Judkins",
-      "position": "RB",
-      "team": "Cle",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": -2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jordan Mason",
       "position": "RB",
       "team": "Min",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.4,
+      "points": 0.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
+          "value": 6
         }
       ]
     },
@@ -1164,15 +1190,6 @@
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
