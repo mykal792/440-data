@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T22:50:24Z",
+  "updated": "2026-11-15T22:55:23Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -297,11 +297,11 @@
       "team": "SF",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 21.44,
+      "points": 21.88,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 206
+          "value": 217
         },
         {
           "stat": "RUSH YD",
@@ -380,6 +380,28 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 19.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 230
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -401,28 +423,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 18.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 220
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -481,7 +481,7 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 16.36,
+      "points": 16.26,
       "stats": [
         {
           "stat": "PASS YD",
@@ -489,11 +489,37 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 1
         },
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Blake Corum",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 16.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 67
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -816,28 +842,6 @@
       ]
     },
     {
-      "name": "Blake Corum",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 57
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -962,6 +966,33 @@
           "value": 59
         }
       ]
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 39
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Brandon McManus",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.4,
+      "stats": []
     },
     {
       "name": "Zach Charbonnet",
@@ -1095,15 +1126,6 @@
       ]
     },
     {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.4,
-      "stats": []
-    },
-    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -1141,24 +1163,6 @@
         {
           "stat": "REC YD",
           "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 28
         },
         {
           "stat": "REC",
