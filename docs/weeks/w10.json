@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T21:30:31Z",
+  "updated": "2026-11-15T21:35:25Z",
   "matchups": [
     {
       "home": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 33.78,
+        "score": 38.98,
         "projected": 108.15
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 107.6,
+        "score": 108.7,
         "projected": 114.77
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "1.62",
+          "value": "0.52",
           "detail": "losing to GRAHAM"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "107.60",
+          "value": "108.70",
           "detail": "All played"
         }
       ]
@@ -948,6 +948,15 @@
       ]
     },
     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.2,
+      "stats": []
+    },
+    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -1272,6 +1281,20 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 15
+        }
+      ]
+    },
+    {
       "name": "Blake Corum",
       "position": "RB",
       "team": "LAR",
@@ -1381,20 +1404,6 @@
         {
           "stat": "RUSH YD",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
         }
       ]
     },
@@ -1546,15 +1555,6 @@
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
