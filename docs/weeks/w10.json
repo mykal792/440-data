@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T22:55:23Z",
+  "updated": "2026-11-15T23:00:43Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 79.72,
+        "score": 81.72,
         "projected": 123.02
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 123.64,
+        "score": 139.24,
         "projected": 127.1
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 57.9,
+        "score": 58.6,
         "projected": 108.15
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 113.32,
+        "score": 114.32,
         "projected": 118.44
       }
     }
@@ -84,16 +84,16 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "0.18",
-          "detail": "losing to GANGUS"
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "0.82",
+          "detail": "losing to GRAHAM"
         },
         {
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "30.86",
+          "value": "28.86",
           "detail": "losing to HAYDEN"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "123.64",
+          "value": "139.24",
           "detail": "1 to play"
         },
         {
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "113.50",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "114.32",
           "detail": "All played"
         }
       ]
@@ -425,6 +425,28 @@
       ]
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 23.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 135
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -710,6 +732,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 15.0,
+      "stats": []
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -787,15 +818,6 @@
           "value": 4
         }
       ]
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 13.0,
-      "stats": []
     },
     {
       "name": "Breece Hall",
@@ -984,24 +1006,6 @@
       "stats": []
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 64
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Brenton Strange",
       "position": "TE",
       "team": "Jax",
@@ -1087,6 +1091,20 @@
       "stats": []
     },
     {
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 60
+        }
+      ]
+    },
+    {
       "name": "Jordan Mason",
       "position": "RB",
       "team": "Min",
@@ -1126,20 +1144,6 @@
       "manager_display": "COYNE",
       "points": 5.4,
       "stats": []
-    },
-    {
-      "name": "Zach Charbonnet",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 53
-        }
-      ]
     },
     {
       "name": "Christian Watson",
@@ -1420,6 +1424,15 @@
       ]
     },
     {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.0,
+      "stats": []
+    },
+    {
       "name": "Brock Bowers",
       "position": "TE",
       "team": "LV",
@@ -1486,15 +1499,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.0,
-      "stats": []
     },
     {
       "name": "Audric Estime",
