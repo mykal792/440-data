@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T16:20:24Z",
+  "updated": "2026-11-15T16:25:21Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 50.8,
+        "score": 51.7,
         "projected": 124.51
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 34.04,
+        "score": 34.36,
         "projected": 117.24
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "5.66",
+          "value": "5.34",
           "detail": "losing to GANGUS"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "50.80",
+          "value": "51.70",
           "detail": "7 to play"
         },
         {
@@ -129,13 +129,39 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "34.04",
+          "value": "34.36",
           "detail": "7 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 26.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 93
+        },
+        {
+          "stat": "REC YD",
+          "value": 82
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Cam Skattebo",
       "position": "RB",
@@ -185,32 +211,6 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 25.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 93
-        },
-        {
-          "stat": "REC YD",
-          "value": 78
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Stefon Diggs",
       "position": "WR",
       "team": "Was",
@@ -238,11 +238,11 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 16.74,
+      "points": 17.06,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 211
+          "value": 219
         },
         {
           "stat": "RUSH YD",
