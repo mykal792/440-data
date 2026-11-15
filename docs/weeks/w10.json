@@ -1,33 +1,33 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T23:25:25Z",
+  "updated": "2026-11-15T23:30:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 57.7,
-        "projected": 117.01
+        "projected": 117.08
       },
       "away": {
         "name": "GREG",
         "face": "greg",
         "score": 106.02,
-        "projected": 113.8
+        "projected": 113.82
       }
     },
     {
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 125.34,
-        "projected": 124.89
+        "score": 126.34,
+        "projected": 124.92
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 90.5,
+        "score": 91.5,
         "projected": 105.1
       }
     },
@@ -41,29 +41,29 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 82.72,
-        "projected": 123.02
+        "score": 83.72,
+        "projected": 123.05
       }
     },
     {
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 150.04,
+        "score": 152.14,
         "projected": 127.1
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 73.76,
-        "projected": 108.15
+        "score": 73.96,
+        "projected": 108.18
       }
     },
     {
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 114.8,
+        "score": 116.0,
         "projected": 114.77
       },
       "away": {
@@ -86,14 +86,14 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "2.62",
+          "value": "1.42",
           "detail": "losing to GRAHAM"
         },
         {
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "27.86",
+          "value": "26.86",
           "detail": "losing to HAYDEN"
         },
         {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "150.04",
+          "value": "152.14",
           "detail": "1 to play"
         },
         {
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "125.34",
+          "value": "126.34",
           "detail": "2 to play"
         },
         {
@@ -263,6 +263,28 @@
       ]
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 29.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 171
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -285,28 +307,6 @@
         {
           "stat": "INT",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 27.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 155
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -403,6 +403,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 24.9,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 270
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -425,28 +447,6 @@
         {
           "stat": "INT",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 24.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 270
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -679,20 +679,20 @@
       ]
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 16.0,
-      "stats": []
-    },
-    {
       "name": "Rams",
       "position": "DEF",
       "team": "LAR",
       "manager": "anthony",
       "manager_display": "ANTHONY",
+      "points": 17.0,
+      "stats": []
+    },
+    {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 16.0,
       "stats": []
     },
@@ -953,25 +953,16 @@
       ]
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.4,
-      "stats": []
-    },
-    {
       "name": "Jadarian Price",
       "position": "RB",
       "team": "Sea",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 10.3,
+      "points": 10.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 30
+          "value": 31
         },
         {
           "stat": "REC YD",
@@ -986,6 +977,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.4,
+      "stats": []
     },
     {
       "name": "Matthew Golden",
@@ -1011,11 +1011,11 @@
       "team": "Sea",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 9.2,
+      "points": 9.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 92
+          "value": 94
         }
       ]
     },
@@ -1132,6 +1132,15 @@
       "stats": []
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.8,
+      "stats": []
+    },
+    {
       "name": "Brandon McManus",
       "position": "K",
       "team": "LAR",
@@ -1171,15 +1180,6 @@
           "value": 59
         }
       ]
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.8,
-      "stats": []
     },
     {
       "name": "Christian Watson",

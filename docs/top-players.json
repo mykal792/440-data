@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T23:25:25Z",
+  "updated": "2026-11-15T23:30:28Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -130,6 +130,28 @@
       ]
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 29.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 171
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -152,28 +174,6 @@
         {
           "stat": "INT",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 27.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 155
-        },
-        {
-          "stat": "REC",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -270,6 +270,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 24.9,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 270
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -292,28 +314,6 @@
         {
           "stat": "INT",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 24.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 270
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -546,20 +546,20 @@
       ]
     },
     {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 16.0,
-      "stats": []
-    },
-    {
       "name": "Rams",
       "position": "DEF",
       "team": "LAR",
       "manager": "anthony",
       "manager_display": "ANTHONY",
+      "points": 17.0,
+      "stats": []
+    },
+    {
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 16.0,
       "stats": []
     },
@@ -820,25 +820,16 @@
       ]
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.4,
-      "stats": []
-    },
-    {
       "name": "Jadarian Price",
       "position": "RB",
       "team": "Sea",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 10.3,
+      "points": 10.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 30
+          "value": 31
         },
         {
           "stat": "REC YD",
@@ -853,6 +844,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.4,
+      "stats": []
     },
     {
       "name": "Matthew Golden",
@@ -878,11 +878,11 @@
       "team": "Sea",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 9.2,
+      "points": 9.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 92
+          "value": 94
         }
       ]
     },
@@ -999,6 +999,15 @@
       "stats": []
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 6.8,
+      "stats": []
+    },
+    {
       "name": "Brandon McManus",
       "position": "K",
       "team": "LAR",
@@ -1038,15 +1047,6 @@
           "value": 59
         }
       ]
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.8,
-      "stats": []
     },
     {
       "name": "Christian Watson",
