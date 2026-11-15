@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T15:05:19Z",
+  "updated": "2026-11-15T15:10:24Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 27.0,
+        "score": 30.9,
         "projected": 124.52
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 25.82,
+        "score": 26.56,
         "projected": 117.24
       }
     }
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "27.00",
+          "value": "30.90",
           "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "25.82",
+          "value": "26.56",
           "detail": "7 to play"
         }
       ]
@@ -256,14 +256,40 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 8.52,
+      "points": 9.26,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 63
+          "value": 74
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 43
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
           "value": 1
         }
       ]
@@ -337,20 +363,6 @@
         {
           "stat": "RUSH YD",
           "value": 14
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
         }
       ]
     },
