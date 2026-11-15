@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T22:45:23Z",
+  "updated": "2026-11-15T22:50:24Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 76.2,
+        "score": 85.04,
         "projected": 105.1
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 113.94,
+        "score": 115.04,
         "projected": 127.1
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 55.74,
+        "score": 57.5,
         "projected": 108.15
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 112.02,
+        "score": 113.32,
         "projected": 118.44
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "1.48",
+          "value": "0.18",
           "detail": "losing to GANGUS"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "46.96",
+          "value": "38.12",
           "detail": "losing to GARRETT"
         }
       ]
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "113.94",
+          "value": "115.04",
           "detail": "1 to play"
         },
         {
@@ -425,6 +425,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 21.44,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 206
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Vikings",
       "position": "DEF",
       "team": "Min",
@@ -491,24 +513,6 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 19.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 195
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -530,6 +534,28 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 18.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 220
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -578,28 +604,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 17.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 176
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -901,6 +905,32 @@
       ]
     },
     {
+      "name": "Jadarian Price",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 9.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -919,25 +949,16 @@
       ]
     },
     {
-      "name": "Spencer Shrader",
-      "position": "K",
-      "team": "Ind",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.1,
-      "stats": []
-    },
-    {
       "name": "Blake Corum",
       "position": "RB",
       "team": "LAR",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 8.0,
+      "points": 9.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 46
+          "value": 57
         },
         {
           "stat": "REC YD",
@@ -948,6 +969,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Spencer Shrader",
+      "position": "K",
+      "team": "Ind",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 8.1,
+      "stats": []
     },
     {
       "name": "Jaxon Smith-Njigba",
@@ -1346,6 +1376,28 @@
       ]
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Drake Maye",
       "position": "QB",
       "team": "NE",
@@ -1378,50 +1430,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jadarian Price",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -1476,6 +1484,15 @@
       ]
     },
     {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "Audric Estime",
       "position": "RB",
       "team": "NO",
@@ -1518,15 +1535,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "DeMario Douglas",
