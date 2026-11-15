@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T22:25:22Z",
+  "updated": "2026-11-15T22:30:30Z",
   "matchups": [
     {
       "home": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 114.32,
+        "score": 122.16,
         "projected": 124.89
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 65.92,
+        "score": 66.92,
         "projected": 105.1
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 76.72,
+        "score": 78.72,
         "projected": 123.02
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 48.06,
+        "score": 54.34,
         "projected": 108.15
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 112.3,
+        "score": 112.7,
         "projected": 114.77
       },
       "away": {
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "0.28",
+          "value": "0.68",
           "detail": "losing to GANGUS"
         },
         {
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "33.86",
+          "value": "31.86",
           "detail": "losing to HAYDEN"
         },
         {
           "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "48.40",
-          "detail": "losing to GARRETT"
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "52.00",
+          "detail": "losing to SCARPITTI"
         }
       ]
     },
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "114.32",
+          "value": "122.16",
           "detail": "2 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "112.30",
+          "value": "112.70",
           "detail": "All played"
         },
         {
@@ -539,6 +539,50 @@
       ]
     },
     {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 17.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 176
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 16.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 104
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -715,6 +759,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 12.0,
+      "stats": []
+    },
+    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -822,37 +875,6 @@
       ]
     },
     {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.76,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 144
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -867,28 +889,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 8.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 58
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1009,15 +1009,6 @@
       "stats": []
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.2,
-      "stats": []
-    },
-    {
       "name": "Jordan Mason",
       "position": "RB",
       "team": "Min",
@@ -1048,6 +1039,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.2,
+      "stats": []
     },
     {
       "name": "Jaguars",
@@ -1115,6 +1115,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Brandon McManus",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.4,
+      "stats": []
     },
     {
       "name": "Trey McBride",
@@ -1185,6 +1194,20 @@
       "stats": []
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 37
+        }
+      ]
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -1243,15 +1266,6 @@
       ]
     },
     {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 3.4,
-      "stats": []
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1270,20 +1284,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 33
         }
       ]
     },
