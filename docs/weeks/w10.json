@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T15:00:29Z",
+  "updated": "2026-11-15T15:05:19Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 0.9,
+        "score": 1.4,
         "projected": 116.86
       },
       "away": {
@@ -84,24 +84,24 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GREG",
+          "face": "greg",
+          "value": "0.50",
+          "detail": "losing to SCHILLING"
+        },
+        {
+          "rank": 2,
           "manager": "HAYDEN",
           "face": "hayden",
           "value": "3.02",
           "detail": "losing to ANTHONY"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "8.10",
           "detail": "losing to SCOTTY"
-        },
-        {
-          "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "12.68",
-          "detail": "losing to GANGUS"
         }
       ]
     },
@@ -327,6 +327,20 @@
       ]
     },
     {
+      "name": "Corey Kiner",
+      "position": "RB",
+      "team": "NE",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        }
+      ]
+    },
+    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -337,20 +351,6 @@
         {
           "stat": "RUSH YD",
           "value": 13
-        }
-      ]
-    },
-    {
-      "name": "Corey Kiner",
-      "position": "RB",
-      "team": "NE",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 9
         }
       ]
     },
