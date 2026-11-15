@@ -1,19 +1,19 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T20:30:25Z",
+  "updated": "2026-11-15T20:35:20Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 36.6,
+        "score": 38.2,
         "projected": 116.88
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 83.38,
+        "score": 81.34,
         "projected": 113.81
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 95.1,
+        "score": 100.0,
         "projected": 124.78
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 80.2,
+        "score": 80.66,
         "projected": 122.24
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 43.82,
+        "score": 44.92,
         "projected": 123.07
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 85.32,
+        "score": 87.42,
         "projected": 118.43
       }
     }
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "8.08",
+          "value": "5.98",
           "detail": "losing to GANGUS"
         },
         {
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "36.38",
+          "value": "35.74",
           "detail": "losing to HAYDEN"
         },
         {
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "46.78",
+          "value": "43.14",
           "detail": "losing to GREG"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "95.10",
+          "value": "100.00",
           "detail": "4 to play"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "85.32",
+          "value": "87.42",
           "detail": "3 to play"
         }
       ]
@@ -168,11 +168,11 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 37.38,
+      "points": 37.34,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 297
+          "value": 296
         },
         {
           "stat": "RUSH YD",
@@ -237,42 +237,20 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 26.34,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 196
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 25.8,
+      "points": 26.7,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 148
+          "value": 152
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 7
         },
         {
           "stat": "TD",
@@ -329,6 +307,32 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 24.34,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 196
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -356,15 +360,15 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 21.0,
+      "points": 21.46,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 270
+          "value": 274
         },
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 5
         },
         {
           "stat": "TD",
@@ -413,11 +417,11 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 17.4,
+      "points": 17.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 82
+          "value": 87
         },
         {
           "stat": "REC YD",
@@ -452,6 +456,24 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 15.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 109
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -496,6 +518,24 @@
       ]
     },
     {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 74
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -514,24 +554,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 11.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 85
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -594,24 +616,6 @@
       ]
     },
     {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 63
-        },
-        {
-          "stat": "REC",
-          "value": 8
-        }
-      ]
-    },
-    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -634,6 +638,15 @@
       ]
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.6,
+      "stats": []
+    },
+    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -652,6 +665,28 @@
       ]
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 68
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Saints",
       "position": "DEF",
       "team": "NO",
@@ -666,46 +701,15 @@
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 8.7,
+      "points": 8.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 63
+          "value": 64
         },
         {
           "stat": "REC YD",
           "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.6,
-      "stats": []
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 68
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
         },
         {
           "stat": "REC",
@@ -757,15 +761,6 @@
           "value": 81
         }
       ]
-    },
-    {
-      "name": "Packers",
-      "position": "DEF",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 8.0,
-      "stats": []
     },
     {
       "name": "Bills",
@@ -888,6 +883,15 @@
       "stats": []
     },
     {
+      "name": "Packers",
+      "position": "DEF",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 6.0,
+      "stats": []
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -1005,6 +1009,24 @@
       ]
     },
     {
+      "name": "Darren Waller",
+      "position": "TE",
+      "team": "Car",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 24
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -1083,24 +1105,6 @@
         {
           "stat": "REC YD",
           "value": 16
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Darren Waller",
-      "position": "TE",
-      "team": "Car",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 13
         },
         {
           "stat": "REC",
