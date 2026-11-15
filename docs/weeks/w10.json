@@ -1,27 +1,27 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T17:10:24Z",
+  "updated": "2026-11-15T17:15:29Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 2.3,
-        "projected": 116.75
+        "projected": 116.71
       },
       "away": {
         "name": "GREG",
         "face": "greg",
         "score": 0.9,
-        "projected": 113.6
+        "projected": 113.54
       }
     },
     {
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 58.2,
+        "score": 59.6,
         "projected": 124.59
       },
       "away": {
@@ -35,14 +35,14 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 3.7,
-        "projected": 121.99
+        "score": 7.0,
+        "projected": 122.14
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 6.72,
-        "projected": 98.43
+        "projected": 98.34
       }
     },
     {
@@ -50,13 +50,13 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 0.0,
-        "projected": 126.99
+        "projected": 126.91
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 8.1,
-        "projected": 108.13
+        "projected": 108.04
       }
     },
     {
@@ -64,13 +64,13 @@
         "name": "GANGUS",
         "face": "gangus",
         "score": 49.0,
-        "projected": 114.38
+        "projected": 114.33
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 42.48,
-        "projected": 117.95
+        "score": 45.72,
+        "projected": 118.49
       }
     }
   ],
@@ -84,23 +84,23 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "0.28",
+          "detail": "losing to HAYDEN"
+        },
+        {
+          "rank": 2,
           "manager": "GREG",
           "face": "greg",
           "value": "1.40",
           "detail": "losing to SCHILLING"
         },
         {
-          "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "3.02",
-          "detail": "losing to ANTHONY"
-        },
-        {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "6.52",
+          "value": "3.28",
           "detail": "losing to GANGUS"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "58.20",
+          "value": "59.60",
           "detail": "7 to play"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "42.48",
+          "value": "45.72",
           "detail": "7 to play"
         }
       ]
@@ -142,23 +142,49 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 32.5,
+      "points": 33.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 124
+          "value": 125
         },
         {
           "stat": "REC YD",
-          "value": 91
+          "value": 99
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 7
         },
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 28.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 303
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 2
         }
       ]
     },
@@ -207,32 +233,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 25.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 272
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
@@ -303,6 +303,24 @@
       ]
     },
     {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 50
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -321,24 +339,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },

@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T17:10:24Z",
+  "updated": "2026-11-15T17:15:29Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -9,23 +9,49 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 32.5,
+      "points": 33.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 124
+          "value": 125
         },
         {
           "stat": "REC YD",
-          "value": 91
+          "value": 99
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 7
         },
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 28.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 303
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 2
         }
       ]
     },
@@ -74,32 +100,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 25.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 272
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
@@ -170,6 +170,24 @@
       ]
     },
     {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 50
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -188,24 +206,6 @@
         {
           "stat": "FUM",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
