@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T23:45:27Z",
+  "updated": "2026-11-15T23:50:30Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -178,6 +178,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 28.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 303
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -205,11 +227,15 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 25.96,
+      "points": 25.76,
       "stats": [
         {
           "stat": "PASS YD",
           "value": 249
+        },
+        {
+          "stat": "RUSH YD",
+          "value": -2
         },
         {
           "stat": "TD",
@@ -240,28 +266,6 @@
         {
           "stat": "REC",
           "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 25.66,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 289
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
         },
         {
           "stat": "TD",
@@ -350,6 +354,32 @@
         {
           "stat": "RUSH YD",
           "value": 157
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 21.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 44
+        },
+        {
+          "stat": "REC YD",
+          "value": 95
+        },
+        {
+          "stat": "REC",
+          "value": 3
         },
         {
           "stat": "TD",
@@ -468,32 +498,6 @@
         {
           "stat": "REC",
           "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 17.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "REC YD",
-          "value": 81
-        },
-        {
-          "stat": "REC",
-          "value": 2
         },
         {
           "stat": "TD",
@@ -806,6 +810,15 @@
       ]
     },
     {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Jadarian Price",
       "position": "RB",
       "team": "Sea",
@@ -865,15 +878,6 @@
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 10.4,
-      "stats": []
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.0,
       "stats": []
     },
     {
