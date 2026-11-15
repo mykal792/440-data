@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T21:50:20Z",
+  "updated": "2026-11-15T21:55:27Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -689,6 +689,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -713,15 +722,6 @@
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 8.1,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.0,
       "stats": []
     },
     {
@@ -950,11 +950,11 @@
       "team": "Sea",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 3.8,
+      "points": 3.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 38
+          "value": 39
         }
       ]
     },
@@ -982,11 +982,11 @@
       "team": "LAR",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 3.5,
+      "points": 3.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 1
+          "value": 2
         },
         {
           "stat": "REC YD",
@@ -1013,6 +1013,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 33
         }
       ]
     },
@@ -1210,16 +1224,20 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 1.6,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 16
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1336,6 +1354,24 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 0.84,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 16
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1346,20 +1382,6 @@
         {
           "stat": "RUSH YD",
           "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 9
         }
       ]
     },
@@ -1441,15 +1463,6 @@
       "team": "Cin",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 0.0,
       "stats": []
     },

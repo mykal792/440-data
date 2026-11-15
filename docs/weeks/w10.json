@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T21:50:20Z",
+  "updated": "2026-11-15T21:55:27Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 103.36,
+        "score": 103.84,
         "projected": 124.89
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 74.72,
+        "score": 75.72,
         "projected": 123.02
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 100.24,
+        "score": 101.94,
         "projected": 127.08
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 38.64,
+        "score": 38.74,
         "projected": 108.15
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 108.8,
+        "score": 110.5,
         "projected": 114.77
       },
       "away": {
@@ -84,23 +84,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "1.12",
-          "detail": "losing to GRAHAM"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "0.58",
+          "detail": "losing to GANGUS"
         },
         {
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "35.86",
+          "value": "34.86",
           "detail": "losing to HAYDEN"
         },
         {
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "44.20",
+          "value": "44.68",
           "detail": "losing to GARRETT"
         }
       ]
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "109.92",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "110.50",
           "detail": "All played"
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "108.80",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "109.92",
           "detail": "All played"
         }
       ]
@@ -822,6 +822,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -846,15 +855,6 @@
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 8.1,
-      "stats": []
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.0,
       "stats": []
     },
     {
@@ -1083,11 +1083,11 @@
       "team": "Sea",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 3.8,
+      "points": 3.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 38
+          "value": 39
         }
       ]
     },
@@ -1115,11 +1115,11 @@
       "team": "LAR",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 3.5,
+      "points": 3.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 1
+          "value": 2
         },
         {
           "stat": "REC YD",
@@ -1146,6 +1146,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 3.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 33
         }
       ]
     },
@@ -1343,16 +1357,20 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 1.6,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 16
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1469,6 +1487,24 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 0.84,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 16
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1479,20 +1515,6 @@
         {
           "stat": "RUSH YD",
           "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 9
         }
       ]
     },
@@ -1574,15 +1596,6 @@
       "team": "Cin",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 0.0,
       "stats": []
     },
