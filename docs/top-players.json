@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T20:00:29Z",
+  "updated": "2026-11-15T20:05:23Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -126,15 +126,6 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 24.0,
-      "stats": []
-    },
-    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -162,7 +153,7 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 20.66,
+      "points": 21.26,
       "stats": [
         {
           "stat": "PASS YD",
@@ -170,7 +161,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 9
+          "value": 15
         },
         {
           "stat": "TD",
@@ -184,15 +175,15 @@
       "team": "Hou",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 19.2,
+      "points": 19.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 92
+          "value": 94
         },
         {
           "stat": "REC",
-          "value": 8
+          "value": 9
         },
         {
           "stat": "TD",
@@ -206,11 +197,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 18.6,
+      "points": 19.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 51
+          "value": 56
         },
         {
           "stat": "REC YD",
@@ -223,6 +214,37 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 19.0,
+      "stats": []
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 17.74,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 131
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -254,11 +276,11 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 16.6,
+      "points": 17.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 74
+          "value": 78
         },
         {
           "stat": "REC YD",
@@ -289,11 +311,11 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 14.04,
+      "points": 14.52,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 246
+          "value": 258
         },
         {
           "stat": "RUSH YD",
@@ -319,28 +341,6 @@
       "stats": []
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 11.4,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 125
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -358,6 +358,28 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 166
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -395,11 +417,11 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 8.4,
+      "points": 8.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 51
+          "value": 50
         },
         {
           "stat": "REC YD",
@@ -428,6 +450,24 @@
       "manager_display": "COYNE",
       "points": 8.0,
       "stats": []
+    },
+    {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 56
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
     },
     {
       "name": "Drake London",
@@ -492,28 +532,6 @@
       ]
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 67
-        },
-        {
-          "stat": "REC YD",
-          "value": -1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -539,6 +557,28 @@
       "manager_display": "HAYDEN",
       "points": 7.0,
       "stats": []
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 66
+        },
+        {
+          "stat": "REC YD",
+          "value": -1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -581,36 +621,27 @@
       ]
     },
     {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 5.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 44
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 5.6,
+      "points": 5.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 56
+          "value": 57
         }
       ]
+    },
+    {
+      "name": "Tyler Bass",
+      "position": "K",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 5.7,
+      "stats": []
     },
     {
       "name": "Rashee Rice",
@@ -627,6 +658,24 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -665,15 +714,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Tyler Bass",
-      "position": "K",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 4.7,
-      "stats": []
     },
     {
       "name": "Texans",
@@ -784,24 +824,6 @@
       "stats": []
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.68,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 117
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jordan Mason",
       "position": "RB",
       "team": "Min",
@@ -826,24 +848,6 @@
         {
           "stat": "RUSH YD",
           "value": 25
-        }
-      ]
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
