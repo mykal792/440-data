@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T19:50:22Z",
+  "updated": "2026-11-15T19:55:19Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 57.9,
+        "score": 59.06,
         "projected": 113.77
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 84.2,
+        "score": 85.1,
         "projected": 124.74
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 36.6,
+        "score": 36.7,
         "projected": 105.02
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 31.82,
+        "score": 33.62,
         "projected": 123.1
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 51.34,
+        "score": 56.04,
         "projected": 126.85
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 17.6,
+        "score": 17.9,
         "projected": 108.01
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 74.54,
+        "score": 76.54,
         "projected": 114.49
       },
       "away": {
@@ -86,21 +86,21 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "3.12",
+          "value": "5.12",
           "detail": "losing to GANGUS"
         },
         {
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "26.60",
+          "value": "27.76",
           "detail": "losing to GREG"
         },
         {
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "30.94",
+          "value": "29.14",
           "detail": "losing to HAYDEN"
         }
       ]
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "84.20",
+          "value": "85.10",
           "detail": "4 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "74.54",
+          "value": "76.54",
           "detail": "2 to play"
         },
         {
@@ -295,11 +295,11 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 20.5,
+      "points": 20.66,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 190
+          "value": 194
         },
         {
           "stat": "RUSH YD",
@@ -514,6 +514,15 @@
       ]
     },
     {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.6,
+      "stats": []
+    },
+    {
       "name": "Ollie Gordon II",
       "position": "RB",
       "team": "Mia",
@@ -536,6 +545,15 @@
       ]
     },
     {
+      "name": "Packers",
+      "position": "DEF",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Saints",
       "position": "DEF",
       "team": "NO",
@@ -552,6 +570,28 @@
       "manager_display": "SCOTTY",
       "points": 8.0,
       "stats": []
+    },
+    {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 43
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Jameson Williams",
@@ -577,15 +617,6 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 7.0,
-      "stats": []
-    },
-    {
-      "name": "Packers",
-      "position": "DEF",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 7.0,
       "stats": []
     },
@@ -630,6 +661,28 @@
       "stats": []
     },
     {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -662,28 +715,6 @@
       ]
     },
     {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        },
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Drake London",
       "position": "WR",
       "team": "Atl",
@@ -700,15 +731,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.4,
-      "stats": []
     },
     {
       "name": "Bhayshul Tuten",
@@ -729,6 +751,38 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 32
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Jonathan Taylor",
+      "position": "RB",
+      "team": "Ind",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 49
         }
       ]
     },
@@ -755,20 +809,6 @@
       ]
     },
     {
-      "name": "Jonathan Taylor",
-      "position": "RB",
-      "team": "Ind",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 48
-        }
-      ]
-    },
-    {
       "name": "Tyler Bass",
       "position": "K",
       "team": "Buf",
@@ -776,46 +816,6 @@
       "manager_display": "GREG",
       "points": 4.7,
       "stats": []
-    },
-    {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 28
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Justin Jefferson",
@@ -1044,11 +1044,11 @@
       "team": "NO",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.5,
+      "points": 1.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 5
+          "value": 8
         },
         {
           "stat": "REC YD",
@@ -1056,6 +1056,24 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 91
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -1415,28 +1433,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": -0.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 91
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     }
   ]
 }
