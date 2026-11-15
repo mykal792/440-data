@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T23:05:23Z",
+  "updated": "2026-11-15T23:10:22Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -156,6 +156,28 @@
       ]
     },
     {
+      "name": "Jaxon Smith-Njigba",
+      "position": "WR",
+      "team": "Sea",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 27.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 155
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
@@ -173,6 +195,28 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Matthew Stafford",
+      "position": "QB",
+      "team": "LAR",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 25.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 249
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -292,28 +336,6 @@
       ]
     },
     {
-      "name": "Jaxon Smith-Njigba",
-      "position": "WR",
-      "team": "Sea",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 23.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 135
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brock Purdy",
       "position": "QB",
       "team": "SF",
@@ -397,28 +419,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Matthew Stafford",
-      "position": "QB",
-      "team": "LAR",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 19.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 230
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -825,11 +825,11 @@
       "team": "Sea",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 9.7,
+      "points": 9.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 24
+          "value": 25
         },
         {
           "stat": "REC YD",
@@ -860,6 +860,20 @@
         {
           "stat": "REC",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 86
         }
       ]
     },
@@ -958,18 +972,13 @@
       "stats": []
     },
     {
-      "name": "Zach Charbonnet",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 60
-        }
-      ]
+      "name": "Brandon McManus",
+      "position": "K",
+      "team": "LAR",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 6.4,
+      "stats": []
     },
     {
       "name": "Jordan Mason",
@@ -1002,15 +1011,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Brandon McManus",
-      "position": "K",
-      "team": "LAR",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.4,
-      "stats": []
     },
     {
       "name": "Christian Watson",
