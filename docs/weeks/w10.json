@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T14:50:33Z",
+  "updated": "2026-11-15T14:55:21Z",
   "matchups": [
     {
       "home": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 25.2,
+        "score": 38.5,
         "projected": 114.42
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 17.3,
+        "score": 25.82,
         "projected": 117.24
       }
     }
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "7.90",
-          "detail": "losing to GANGUS"
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "8.10",
+          "detail": "losing to SCOTTY"
         }
       ]
     },
@@ -113,24 +113,24 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "38.50",
+          "detail": "7 to play"
+        },
+        {
+          "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
           "value": "27.00",
           "detail": "7 to play"
         },
         {
-          "rank": 2,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "25.20",
-          "detail": "8 to play"
-        },
-        {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "17.30",
-          "detail": "8 to play"
+          "value": "25.82",
+          "detail": "7 to play"
         }
       ]
     }
@@ -207,6 +207,28 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 63
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -221,6 +243,24 @@
         {
           "stat": "REC",
           "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 63
         },
         {
           "stat": "TD",
@@ -729,15 +769,6 @@
       "stats": []
     },
     {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -761,15 +792,6 @@
       "team": "Ind",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
