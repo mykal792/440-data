@@ -1,20 +1,20 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T16:55:25Z",
+  "updated": "2026-11-15T17:00:29Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 1.6,
-        "projected": 116.86
+        "projected": 116.75
       },
       "away": {
         "name": "GREG",
         "face": "greg",
         "score": 0.9,
-        "projected": 113.68
+        "projected": 113.6
       }
     },
     {
@@ -22,13 +22,13 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 58.2,
-        "projected": 124.5
+        "projected": 124.59
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 13.3,
-        "projected": 105.06
+        "projected": 105.04
       }
     },
     {
@@ -36,13 +36,13 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 3.7,
-        "projected": 121.36
+        "projected": 121.99
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 4.12,
-        "projected": 98.52
+        "score": 6.72,
+        "projected": 98.43
       }
     },
     {
@@ -50,13 +50,13 @@
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 0.0,
-        "projected": 126.98
+        "projected": 126.99
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 8.1,
-        "projected": 108.1
+        "projected": 108.13
       }
     },
     {
@@ -64,13 +64,13 @@
         "name": "GANGUS",
         "face": "gangus",
         "score": 49.0,
-        "projected": 114.41
+        "projected": 114.38
       },
       "away": {
         "name": "GRAHAM",
         "face": "graham",
         "score": 42.48,
-        "projected": 117.23
+        "projected": 117.95
       }
     }
   ],
@@ -84,17 +84,17 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "0.42",
-          "detail": "losing to ANTHONY"
-        },
-        {
-          "rank": 2,
           "manager": "GREG",
           "face": "greg",
           "value": "0.70",
           "detail": "losing to SCHILLING"
+        },
+        {
+          "rank": 2,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "3.02",
+          "detail": "losing to ANTHONY"
         },
         {
           "rank": 3,
@@ -343,6 +343,24 @@
       ]
     },
     {
+      "name": "A.J. Brown",
+      "position": "WR",
+      "team": "NE",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 3.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Hunter Henry",
       "position": "TE",
       "team": "NE",
@@ -407,24 +425,6 @@
         {
           "stat": "RUSH YD",
           "value": 16
-        }
-      ]
-    },
-    {
-      "name": "A.J. Brown",
-      "position": "WR",
-      "team": "NE",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
