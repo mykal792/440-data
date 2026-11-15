@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T23:30:28Z",
+  "updated": "2026-11-15T23:35:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 57.7,
+        "score": 59.4,
         "projected": 117.08
       },
       "away": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 126.34,
+        "score": 127.3,
         "projected": 124.92
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 91.5,
+        "score": 92.0,
         "projected": 105.1
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 116.0,
+        "score": 116.5,
         "projected": 114.77
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "1.42",
+          "value": "0.92",
           "detail": "losing to GRAHAM"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "34.84",
+          "value": "35.30",
           "detail": "losing to GARRETT"
         }
       ]
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "126.34",
+          "value": "127.30",
           "detail": "2 to play"
         },
         {
@@ -614,11 +614,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 17.54,
+      "points": 18.02,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 136
+          "value": 148
         },
         {
           "stat": "RUSH YD",
@@ -935,6 +935,32 @@
       ]
     },
     {
+      "name": "Jadarian Price",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 36
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -953,38 +979,21 @@
       ]
     },
     {
-      "name": "Jadarian Price",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 31
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 10.4,
+      "stats": []
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 10.0,
       "stats": []
     },
     {
@@ -1018,15 +1027,6 @@
           "value": 94
         }
       ]
-    },
-    {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 9.0,
-      "stats": []
     },
     {
       "name": "Spencer Shrader",
@@ -1182,6 +1182,20 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 54
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -1223,20 +1237,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 4.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 49
         }
       ]
     },
@@ -1424,15 +1424,6 @@
       ]
     },
     {
-      "name": "Jason Myers",
-      "position": "K",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.0,
-      "stats": []
-    },
-    {
       "name": "Brock Bowers",
       "position": "TE",
       "team": "LV",
@@ -1493,6 +1484,33 @@
         {
           "stat": "REC YD",
           "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jason Myers",
+      "position": "K",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.0,
+      "stats": []
+    },
+    {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 12
         },
         {
           "stat": "REC",
@@ -1566,15 +1584,6 @@
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
