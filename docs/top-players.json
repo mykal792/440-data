@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T19:55:19Z",
+  "updated": "2026-11-15T20:00:29Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -126,6 +126,15 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 24.0,
+      "stats": []
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -146,15 +155,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 22.0,
-      "stats": []
     },
     {
       "name": "Patrick Mahomes",
@@ -284,25 +284,16 @@
       "stats": []
     },
     {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 14.0,
-      "stats": []
-    },
-    {
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 13.56,
+      "points": 14.04,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 234
+          "value": 246
         },
         {
           "stat": "RUSH YD",
@@ -314,6 +305,37 @@
         },
         {
           "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 14.0,
+      "stats": []
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 11.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 125
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "TD",
           "value": 1
         }
       ]
@@ -359,28 +381,6 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.24,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 71
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -395,11 +395,11 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 8.2,
+      "points": 8.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 49
+          "value": 51
         },
         {
           "stat": "REC YD",
@@ -430,13 +430,44 @@
       "stats": []
     },
     {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.0,
-      "stats": []
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 57
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 55
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Breece Hall",
@@ -457,6 +488,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 67
+        },
+        {
+          "stat": "REC YD",
+          "value": -1
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -497,33 +550,11 @@
       "stats": []
     },
     {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 6.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 61
-        },
-        {
-          "stat": "REC YD",
-          "value": -1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Texans",
+      "name": "Bills",
       "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 6.0,
       "stats": []
     },
@@ -578,46 +609,6 @@
         {
           "stat": "RUSH YD",
           "value": 56
-        }
-      ]
-    },
-    {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 5.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 45
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 37
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -682,6 +673,15 @@
       "manager": "greg",
       "manager_display": "GREG",
       "points": 4.7,
+      "stats": []
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.0,
       "stats": []
     },
     {
@@ -784,6 +784,24 @@
       "stats": []
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.68,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 117
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jordan Mason",
       "position": "RB",
       "team": "Min",
@@ -871,11 +889,11 @@
       "team": "Cle",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 1.9,
+      "points": 2.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 16
+          "value": 17
         },
         {
           "stat": "REC YD",
@@ -928,19 +946,19 @@
       ]
     },
     {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.64,
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.6,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 91
+          "stat": "REC YD",
+          "value": 11
         },
         {
-          "stat": "INT",
+          "stat": "REC",
           "value": 1
         }
       ]
@@ -1260,15 +1278,6 @@
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
