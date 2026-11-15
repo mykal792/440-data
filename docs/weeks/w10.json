@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T22:30:30Z",
+  "updated": "2026-11-15T22:35:19Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 66.92,
+        "score": 67.24,
         "projected": 105.1
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 78.72,
+        "score": 79.72,
         "projected": 123.02
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 106.34,
+        "score": 107.64,
         "projected": 127.1
       },
       "away": {
@@ -93,14 +93,14 @@
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "31.86",
+          "value": "30.86",
           "detail": "losing to HAYDEN"
         },
         {
           "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
-          "value": "52.00",
+          "value": "53.30",
           "detail": "losing to SCARPITTI"
         }
       ]
@@ -715,6 +715,15 @@
       ]
     },
     {
+      "name": "Rams",
+      "position": "DEF",
+      "team": "LAR",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 13.0,
+      "stats": []
+    },
+    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -757,15 +766,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Rams",
-      "position": "DEF",
-      "team": "LAR",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 12.0,
-      "stats": []
     },
     {
       "name": "Justin Jefferson",
@@ -839,6 +839,24 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.84,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 121
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -853,24 +871,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 113
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1194,6 +1194,24 @@
       "stats": []
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 28
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -1396,24 +1414,6 @@
         {
           "stat": "RUSH YD",
           "value": 25
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
