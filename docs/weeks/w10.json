@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T23:20:27Z",
+  "updated": "2026-11-15T23:25:25Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 124.34,
+        "score": 125.34,
         "projected": 124.89
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 68.56,
+        "score": 73.76,
         "projected": 108.15
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 114.82,
+        "score": 117.42,
         "projected": 118.44
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "0.02",
+          "value": "2.62",
           "detail": "losing to GRAHAM"
         },
         {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "33.84",
+          "value": "34.84",
           "detail": "losing to GARRETT"
         }
       ]
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "124.34",
+          "value": "125.34",
           "detail": "2 to play"
         },
         {
           "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "114.82",
+          "value": "117.42",
           "detail": "All played"
         }
       ]
@@ -609,6 +609,28 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 17.54,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 136
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -653,28 +675,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 16.54,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 111
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -953,6 +953,15 @@
       ]
     },
     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.4,
+      "stats": []
+    },
+    {
       "name": "Jadarian Price",
       "position": "RB",
       "team": "Sea",
@@ -1009,6 +1018,15 @@
           "value": 92
         }
       ]
+    },
+    {
+      "name": "Seahawks",
+      "position": "DEF",
+      "team": "Sea",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 9.0,
+      "stats": []
     },
     {
       "name": "Spencer Shrader",
@@ -1105,15 +1123,6 @@
       ]
     },
     {
-      "name": "Seahawks",
-      "position": "DEF",
-      "team": "Sea",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Saints",
       "position": "DEF",
       "team": "NO",
@@ -1130,6 +1139,24 @@
       "manager_display": "COYNE",
       "points": 6.4,
       "stats": []
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
     },
     {
       "name": "Jordan Mason",
@@ -1173,15 +1200,6 @@
       ]
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.2,
-      "stats": []
-    },
-    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -1205,24 +1223,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 4
         }
       ]
     },
@@ -1277,6 +1277,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 23
+        },
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1340,28 +1362,6 @@
         {
           "stat": "REC YD",
           "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 17
-        },
-        {
-          "stat": "REC YD",
-          "value": 9
         },
         {
           "stat": "REC",
