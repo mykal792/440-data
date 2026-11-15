@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T18:45:20Z",
+  "updated": "2026-11-15T18:50:24Z",
   "matchups": [
     {
       "home": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 44.64,
+        "score": 44.54,
         "projected": 122.25
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 10.82,
+        "score": 13.02,
         "projected": 123.09
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 20.7,
+        "score": 17.7,
         "projected": 107.96
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 65.5,
+        "score": 61.5,
         "projected": 114.44
       },
       "away": {
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "5.98",
+          "value": "1.98",
           "detail": "losing to GANGUS"
         },
         {
           "rank": 2,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "12.16",
-          "detail": "losing to SCARPITTI"
-        },
-        {
-          "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "13.40",
           "detail": "losing to GREG"
+        },
+        {
+          "rank": 3,
+          "manager": "SCOTTY",
+          "face": "scotty",
+          "value": "15.16",
+          "detail": "losing to SCARPITTI"
         }
       ]
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "65.50",
+          "value": "61.50",
           "detail": "3 to play"
         },
         {
@@ -317,11 +317,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 13.8,
+      "points": 13.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 42
+          "value": 41
         },
         {
           "stat": "REC YD",
@@ -391,15 +391,6 @@
       ]
     },
     {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
@@ -427,15 +418,6 @@
       "team": "Hou",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Colts",
-      "position": "DEF",
-      "team": "Ind",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 10.0,
       "stats": []
     },
@@ -497,6 +479,15 @@
       ]
     },
     {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -537,6 +528,15 @@
       ]
     },
     {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.5,
+      "stats": []
+    },
+    {
       "name": "Packers",
       "position": "DEF",
       "team": "GB",
@@ -555,12 +555,12 @@
       "stats": []
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
+      "name": "Colts",
+      "position": "DEF",
+      "team": "Ind",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 5.5,
+      "points": 5.0,
       "stats": []
     },
     {
@@ -667,6 +667,28 @@
         {
           "stat": "RUSH YD",
           "value": 11
+        }
+      ]
+    },
+    {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": -1
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -843,6 +865,28 @@
       ]
     },
     {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -3
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Quinshon Judkins",
       "position": "RB",
       "team": "Cle",
@@ -875,28 +919,6 @@
         {
           "stat": "REC YD",
           "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
-        },
-        {
-          "stat": "REC YD",
-          "value": -1
         },
         {
           "stat": "REC",
@@ -939,24 +961,6 @@
       "manager_display": "GREG",
       "points": 1.0,
       "stats": []
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "DeMario Douglas",
