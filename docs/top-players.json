@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T19:05:23Z",
+  "updated": "2026-11-15T19:10:22Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -280,11 +280,11 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 10.74,
+      "points": 11.18,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 96
+          "value": 107
         },
         {
           "stat": "RUSH YD",
@@ -302,11 +302,11 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 10.64,
+      "points": 10.96,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 161
+          "value": 169
         },
         {
           "stat": "RUSH YD",
@@ -385,15 +385,6 @@
       ]
     },
     {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -421,15 +412,6 @@
       "stats": []
     },
     {
-      "name": "Packers",
-      "position": "DEF",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Saints",
       "position": "DEF",
       "team": "NO",
@@ -453,6 +435,55 @@
       "team": "Ind",
       "manager": "gangus",
       "manager_display": "GANGUS",
+      "points": 6.0,
+      "stats": []
+    },
+    {
+      "name": "Will Reichard",
+      "position": "K",
+      "team": "Min",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.4,
+      "stats": []
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 36
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.0,
+      "stats": []
+    },
+    {
+      "name": "Packers",
+      "position": "DEF",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
       "points": 5.0,
       "stats": []
     },
@@ -524,37 +555,6 @@
       ]
     },
     {
-      "name": "Will Reichard",
-      "position": "K",
-      "team": "Min",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.4,
-      "stats": []
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 27
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bijan Robinson",
       "position": "RB",
       "team": "Atl",
@@ -587,6 +587,24 @@
         {
           "stat": "REC YD",
           "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 22
         },
         {
           "stat": "REC",
@@ -771,34 +789,16 @@
       ]
     },
     {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Audric Estime",
       "position": "RB",
       "team": "NO",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.6,
+      "points": 1.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 6
+          "value": 5
         },
         {
           "stat": "REC YD",
@@ -838,6 +838,24 @@
       "team": "Atl",
       "manager": "garrett",
       "manager_display": "GARRETT",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 1.2,
       "stats": [
         {
@@ -1152,15 +1170,6 @@
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
