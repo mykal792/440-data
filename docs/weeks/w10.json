@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T22:35:19Z",
+  "updated": "2026-11-15T22:40:26Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 43.5,
+        "score": 57.4,
         "projected": 117.01
       },
       "away": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 122.16,
+        "score": 123.16,
         "projected": 124.89
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 67.24,
+        "score": 76.2,
         "projected": 105.1
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 112.7,
+        "score": 113.4,
         "projected": 114.77
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "0.68",
+          "value": "1.38",
           "detail": "losing to GANGUS"
         },
         {
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCOTTY",
-          "face": "scotty",
-          "value": "53.30",
-          "detail": "losing to SCARPITTI"
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "46.96",
+          "detail": "losing to GARRETT"
         }
       ]
     },
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "122.16",
+          "value": "123.16",
           "detail": "2 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "112.70",
+          "value": "113.40",
           "detail": "All played"
         },
         {
@@ -491,6 +491,24 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 19.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 195
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -531,6 +549,32 @@
         {
           "stat": "REC",
           "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 17.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "REC YD",
+          "value": 81
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
@@ -839,24 +883,6 @@
       ]
     },
     {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 121
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -1099,6 +1125,15 @@
       ]
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 4.8,
+      "stats": []
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -1113,6 +1148,20 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 4.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 44
         }
       ]
     },
@@ -1185,15 +1234,6 @@
       ]
     },
     {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.8,
-      "stats": []
-    },
-    {
       "name": "George Kittle",
       "position": "TE",
       "team": "SF",
@@ -1208,20 +1248,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 37
         }
       ]
     },
@@ -1280,28 +1306,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
