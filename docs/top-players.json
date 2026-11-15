@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T19:25:21Z",
+  "updated": "2026-11-15T19:30:27Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -52,6 +52,28 @@
         {
           "stat": "INT",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 25.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 148
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -126,28 +148,6 @@
       ]
     },
     {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 22.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 116
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
@@ -190,6 +190,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 19.0,
+      "stats": []
     },
     {
       "name": "Emmett Johnson",
@@ -240,15 +249,6 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 17.0,
-      "stats": []
-    },
-    {
       "name": "Chuba Hubbard",
       "position": "RB",
       "team": "Car",
@@ -275,6 +275,32 @@
       ]
     },
     {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 12.68,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 212
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
@@ -292,32 +318,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 169
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -354,25 +354,16 @@
       ]
     },
     {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Ollie Gordon II",
       "position": "RB",
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 7.9,
+      "points": 8.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 46
+          "value": 49
         },
         {
           "stat": "REC YD",
@@ -383,6 +374,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.0,
+      "stats": []
     },
     {
       "name": "Garrett Wilson",
@@ -430,6 +430,15 @@
       "stats": []
     },
     {
+      "name": "Packers",
+      "position": "DEF",
+      "team": "GB",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "Saints",
       "position": "DEF",
       "team": "NO",
@@ -471,6 +480,24 @@
       ]
     },
     {
+      "name": "Drake London",
+      "position": "WR",
+      "team": "Atl",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 45
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -507,15 +534,6 @@
       "team": "Hou",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.0,
-      "stats": []
-    },
-    {
-      "name": "Packers",
-      "position": "DEF",
-      "team": "GB",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 5.0,
       "stats": []
     },
@@ -614,11 +632,11 @@
       "team": "KC",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 4.2,
+      "points": 4.3,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 27
+          "value": 28
         },
         {
           "stat": "REC",
@@ -654,6 +672,24 @@
       "team": "Min",
       "manager": "graham",
       "manager_display": "GRAHAM",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 4.0,
       "stats": [
         {
@@ -892,24 +928,6 @@
       ]
     },
     {
-      "name": "Drake London",
-      "position": "WR",
-      "team": "Atl",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brenton Strange",
       "position": "TE",
       "team": "Jax",
@@ -941,6 +959,24 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 72
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -1248,15 +1284,6 @@
       "stats": []
     },
     {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
@@ -1273,24 +1300,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": -0.4,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 40
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     }
   ]
 }
