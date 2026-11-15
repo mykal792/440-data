@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T23:50:30Z",
+  "updated": "2026-11-15T23:55:20Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -152,6 +152,54 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 29.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 60
+        },
+        {
+          "stat": "REC YD",
+          "value": 95
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 28.62,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 313
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -173,28 +221,6 @@
         },
         {
           "stat": "INT",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 28.22,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 303
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        },
-        {
-          "stat": "TD",
           "value": 2
         }
       ]
@@ -354,32 +380,6 @@
         {
           "stat": "RUSH YD",
           "value": 157
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 21.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 44
-        },
-        {
-          "stat": "REC YD",
-          "value": 95
-        },
-        {
-          "stat": "REC",
-          "value": 3
         },
         {
           "stat": "TD",
@@ -881,20 +881,6 @@
       "stats": []
     },
     {
-      "name": "Zach Charbonnet",
-      "position": "RB",
-      "team": "Sea",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 95
-        }
-      ]
-    },
-    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -905,6 +891,38 @@
         {
           "stat": "REC YD",
           "value": 70
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Zach Charbonnet",
+      "position": "RB",
+      "team": "Sea",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 94
+        }
+      ]
+    },
+    {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 8.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 64
         },
         {
           "stat": "REC",
@@ -966,6 +984,15 @@
       ]
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 7.8,
+      "stats": []
+    },
+    {
       "name": "Tyler Bass",
       "position": "K",
       "team": "Buf",
@@ -982,24 +1009,6 @@
       "manager_display": "GANGUS",
       "points": 7.5,
       "stats": []
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 54
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
     },
     {
       "name": "Texans",
@@ -1035,15 +1044,6 @@
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 7.0,
-      "stats": []
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.8,
       "stats": []
     },
     {
