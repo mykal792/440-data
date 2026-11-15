@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T19:45:21Z",
+  "updated": "2026-11-15T19:50:22Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -148,6 +148,15 @@
       ]
     },
     {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 22.0,
+      "stats": []
+    },
+    {
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
@@ -190,15 +199,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 19.0,
-      "stats": []
     },
     {
       "name": "Emmett Johnson",
@@ -254,11 +254,11 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 16.4,
+      "points": 16.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 72
+          "value": 74
         },
         {
           "stat": "REC YD",
@@ -341,6 +341,24 @@
       ]
     },
     {
+      "name": "Garrett Wilson",
+      "position": "WR",
+      "team": "NYJ",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 85
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -385,6 +403,15 @@
       ]
     },
     {
+      "name": "Saints",
+      "position": "DEF",
+      "team": "NO",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.0,
+      "stats": []
+    },
+    {
       "name": "Bills",
       "position": "DEF",
       "team": "Buf",
@@ -392,24 +419,6 @@
       "manager_display": "SCOTTY",
       "points": 8.0,
       "stats": []
-    },
-    {
-      "name": "Garrett Wilson",
-      "position": "WR",
-      "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 7.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 56
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Jameson Williams",
@@ -448,15 +457,6 @@
       "stats": []
     },
     {
-      "name": "Saints",
-      "position": "DEF",
-      "team": "NO",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -466,6 +466,28 @@
       "stats": []
     },
     {
+      "name": "Bijan Robinson",
+      "position": "RB",
+      "team": "Atl",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 61
+        },
+        {
+          "stat": "REC YD",
+          "value": -1
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -473,6 +495,24 @@
       "manager_display": "GARRETT",
       "points": 6.0,
       "stats": []
+    },
+    {
+      "name": "Matthew Golden",
+      "position": "WR",
+      "team": "GB",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 44
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "James Cook III",
@@ -485,6 +525,28 @@
         {
           "stat": "RUSH YD",
           "value": 56
+        }
+      ]
+    },
+    {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "REC YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -560,28 +622,6 @@
       ]
     },
     {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        },
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -603,28 +643,6 @@
       "manager_display": "GREG",
       "points": 4.7,
       "stats": []
-    },
-    {
-      "name": "Bijan Robinson",
-      "position": "RB",
-      "team": "Atl",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 42
-        },
-        {
-          "stat": "REC YD",
-          "value": -1
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Rashee Rice",
@@ -690,24 +708,6 @@
       "team": "KC",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Matthew Golden",
-      "position": "WR",
-      "team": "GB",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
       "points": 4.0,
       "stats": [
         {
@@ -959,24 +959,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.88,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 72
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -1300,6 +1282,28 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": -0.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 91
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     }
   ]
 }
