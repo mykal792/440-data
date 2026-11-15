@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T21:35:25Z",
+  "updated": "2026-11-15T21:40:24Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 40.2,
+        "score": 40.6,
         "projected": 117.01
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 49.7,
+        "score": 50.58,
         "projected": 105.1
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 108.88,
+        "score": 110.58,
         "projected": 122.24
       },
       "away": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 95.64,
+        "score": 96.24,
         "projected": 127.08
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 38.98,
+        "score": 39.02,
         "projected": 108.15
       }
     },
@@ -93,14 +93,14 @@
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "34.16",
+          "value": "35.86",
           "detail": "losing to HAYDEN"
         },
         {
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "52.30",
+          "value": "51.42",
           "detail": "losing to GARRETT"
         }
       ]
@@ -113,17 +113,17 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "110.58",
+          "detail": "2 to play"
+        },
+        {
+          "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
           "value": "109.22",
           "detail": "All played"
-        },
-        {
-          "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "108.88",
-          "detail": "2 to play"
         },
         {
           "rank": 3,
@@ -1146,6 +1146,24 @@
       ]
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Corey Kiner",
       "position": "RB",
       "team": "NE",
@@ -1223,6 +1241,24 @@
       ]
     },
     {
+      "name": "Blake Corum",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -1250,11 +1286,11 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.88,
+      "points": 1.92,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 47
+          "value": 48
         }
       ]
     },
@@ -1295,24 +1331,6 @@
       ]
     },
     {
-      "name": "Blake Corum",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1331,24 +1349,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -1394,6 +1394,20 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 22
+        }
+      ]
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -1408,18 +1422,23 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1539,15 +1558,6 @@
       "team": "Bal",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 0.0,
       "stats": []
     },

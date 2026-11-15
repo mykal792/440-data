@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-15T21:35:25Z",
+  "updated": "2026-11-15T21:40:24Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -1013,6 +1013,24 @@
       ]
     },
     {
+      "name": "Brock Bowers",
+      "position": "TE",
+      "team": "LV",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Corey Kiner",
       "position": "RB",
       "team": "NE",
@@ -1090,6 +1108,24 @@
       ]
     },
     {
+      "name": "Blake Corum",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Kyren Williams",
       "position": "RB",
       "team": "LAR",
@@ -1117,11 +1153,11 @@
       "team": "LAR",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 1.88,
+      "points": 1.92,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 47
+          "value": 48
         }
       ]
     },
@@ -1162,24 +1198,6 @@
       ]
     },
     {
-      "name": "Blake Corum",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 9
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1198,24 +1216,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Bowers",
-      "position": "TE",
-      "team": "LV",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -1261,6 +1261,20 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 0.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 22
+        }
+      ]
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -1275,18 +1289,23 @@
       ]
     },
     {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1406,15 +1425,6 @@
       "team": "Bal",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
       "points": 0.0,
       "stats": []
     },
