@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T00:20:23Z",
+  "updated": "2026-11-16T00:25:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 79.3,
+        "score": 96.4,
         "projected": 117.01
       },
       "away": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 104.72,
+        "score": 115.36,
         "projected": 105.1
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "26.72",
+          "value": "9.62",
           "detail": "losing to GREG"
         },
         {
@@ -159,6 +159,32 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 46.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 60
+        },
+        {
+          "stat": "REC YD",
+          "value": 161
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -181,6 +207,28 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 39.66,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 389
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 3
         }
       ]
     },
@@ -307,54 +355,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 29.02,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 323
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 29.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 60
-        },
-        {
-          "stat": "REC YD",
-          "value": 95
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
