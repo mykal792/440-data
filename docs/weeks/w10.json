@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T03:35:28Z",
+  "updated": "2026-11-16T03:45:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 146.14,
+        "score": 147.24,
         "projected": 117.02
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "7.22",
+          "value": "8.32",
           "detail": "losing to SCHILLING"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "146.14",
+          "value": "147.24",
           "detail": "All played"
         }
       ]
@@ -1595,6 +1595,28 @@
       ]
     },
     {
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 19
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Corey Kiner",
       "position": "RB",
       "team": "NE",
@@ -1668,28 +1690,6 @@
         {
           "stat": "REC YD",
           "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rico Dowdle",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
         },
         {
           "stat": "REC",
