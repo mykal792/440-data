@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T01:45:23Z",
+  "updated": "2026-11-16T01:50:20Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 107.2,
+        "score": 108.3,
         "projected": 117.02
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "4.32",
+          "value": "3.22",
           "detail": "losing to GREG"
         },
         {
@@ -1292,6 +1292,24 @@
       ]
     },
     {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.1,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 105
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -1377,20 +1395,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 100
         }
       ]
     },
