@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T01:20:22Z",
+  "updated": "2026-11-16T01:25:22Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -1428,6 +1428,24 @@
       ]
     },
     {
+      "name": "Mike Gesicki",
+      "position": "TE",
+      "team": "Cin",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1446,6 +1464,42 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1473,8 +1527,13 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
+      "points": 0.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 18
+        }
+      ]
     },
     {
       "name": "Rico Dowdle",
@@ -1489,15 +1548,6 @@
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Mike Gesicki",
-      "position": "TE",
-      "team": "Cin",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
@@ -1522,15 +1572,6 @@
       "stats": []
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Tee Higgins",
       "position": "WR",
       "team": "Cin",
@@ -1545,15 +1586,6 @@
       "team": "Bal",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 0.0,
       "stats": []
     },
