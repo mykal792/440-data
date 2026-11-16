@@ -220,8 +220,22 @@ def build():
                                if me["points"] == week_top[(g["season"], g["week"])]),
             "streak": streak([{"result": result(me, o)} for g, me, o in
                               sorted(now_rows, key=lambda x: x[0]["week"])]),
+            "high": ref(*max(now_rows, key=lambda x: x[1]["points"])) if now_rows else None,
+            "low": ref(*min(now_rows, key=lambda x: x[1]["points"])) if now_rows else None,
             "dots": dots_now[m],
             "bank": bank_now[m],
+            # for the 2026 section's graphics
+            "dots_by_pos": {pos: (dots_feed.get("totals", {}).get(m) or {}).get(pos, 0)
+                            for pos in ("QB", "RB", "WR", "TE")},
+            "bonuses": [{"week": b.get("week"), "type": b.get("type"),
+                         "pos": b.get("pos"), "label": b.get("label"),
+                         "amount": b.get("amount", 0)}
+                        for b in bonuses.get(m, [])],
+            "regular_weeks": seasons[this_season].get("regular_weeks") or 15,
+            "results": [{"week": g["week"], "result": result(me, o),
+                         "points": me["points"], "opp_points": o["points"],
+                         "opponent_name": name_of(o["manager"])}
+                        for g, me, o in sorted(now_rows, key=lambda x: x[0]["week"])],
         }
 
         # season history, newest first, each with its games
@@ -288,6 +302,10 @@ def build():
 
         P[m] = {"key": m, "name": name_of(m),
                 "team_name": now_team.get("team_name"),
+                # Yahoo team page; the profile's team name links here
+                "team_url": ("https://football.fantasysports.yahoo.com/f1/%s/%s"
+                             % (seasons[this_season]["league_key"].split(".l.")[-1],
+                                now_team.get("team_id")) if now_team.get("team_id") else None),
                 "season": cur, "career": career, "seasons": history,
                 "playoffs": playoffs, "versus": versus, "versus_former": former,
                 "bonus": {"weekly_category": category}}
@@ -311,6 +329,8 @@ def build():
     put("season", "avg_against", lambda p: p["season"]["avg_against"])
     put("season", "high_scores", lambda p: p["season"]["high_scores"])
     put("season", "dots", lambda p: p["season"]["dots"])
+    put("season", "high", lambda p: (p["season"]["high"] or {}).get("value"))
+    put("season", "low", lambda p: (p["season"]["low"] or {}).get("value"), lowest_first=True)
     put("season", "bank", lambda p: p["season"]["bank"])
     put("bonus", "weekly_category", lambda p: p["bonus"]["weekly_category"])
 
