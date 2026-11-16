@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T00:30:24Z",
+  "updated": "2026-11-16T00:35:27Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 146.54,
+        "score": 147.9,
         "projected": 124.89
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 117.4,
+        "score": 118.3,
         "projected": 114.77
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "1.02",
+          "value": "0.12",
           "detail": "losing to GRAHAM"
         },
         {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "146.54",
+          "value": "147.90",
           "detail": "2 to play"
         },
         {
@@ -238,11 +238,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 36.74,
+      "points": 38.1,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 301
+          "value": 335
         },
         {
           "stat": "RUSH YD",
@@ -1162,6 +1162,28 @@
       "stats": []
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -1196,20 +1218,6 @@
       "manager_display": "COYNE",
       "points": 7.0,
       "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 6.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 63
-        }
-      ]
     },
     {
       "name": "Trey McBride",
