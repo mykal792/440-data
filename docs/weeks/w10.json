@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T02:35:21Z",
+  "updated": "2026-11-16T02:40:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 126.6,
+        "score": 127.3,
         "projected": 117.02
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "1.48",
+          "value": "2.18",
           "detail": "losing to SCHILLING"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "126.60",
+          "value": "127.30",
           "detail": "All played"
         }
       ]
@@ -1676,6 +1676,28 @@
       ]
     },
     {
+      "name": "Rico Dowdle",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 8
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Mike Gesicki",
       "position": "TE",
       "team": "Cin",
@@ -1730,20 +1752,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Rico Dowdle",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
         }
       ]
     },
