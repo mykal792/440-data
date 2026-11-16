@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:00:51Z",
+ "updated": "2026-11-16T16:40:36Z",
  "through": {
   "season": 2026,
   "week": 9
@@ -22,6 +22,7 @@
  "key": "gangus",
  "name": "GANGUS",
  "team_name": "Gangus",
+ "team_url": "https://football.fantasysports.yahoo.com/f1/63529/6",
  "season": {
   "season": 2026,
   "weeks_played": 9,
@@ -33,13 +34,180 @@
   "avg_against": 114.94,
   "high_scores": 2,
   "streak": "W1",
+  "high": {
+   "value": 151.68,
+   "season": 2026,
+   "week": 4,
+   "opponent": "schilling",
+   "opponent_name": "SCHILLING"
+  },
+  "low": {
+   "value": 91.18,
+   "season": 2026,
+   "week": 3,
+   "opponent": "scarpitti",
+   "opponent_name": "SCARPITTI"
+  },
   "dots": 6,
   "bank": 135,
+  "dots_by_pos": {
+   "QB": 1,
+   "RB": 0,
+   "WR": 1,
+   "TE": 4
+  },
+  "bonuses": [
+   {
+    "week": 1,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   },
+   {
+    "week": 2,
+    "type": "category",
+    "pos": null,
+    "label": "Match Up Blues",
+    "amount": 25
+   },
+   {
+    "week": 4,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   },
+   {
+    "week": 4,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   },
+   {
+    "week": 5,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   },
+   {
+    "week": 6,
+    "type": "category",
+    "pos": null,
+    "label": "Photo Finish",
+    "amount": 25
+   },
+   {
+    "week": 6,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   },
+   {
+    "week": 7,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   },
+   {
+    "week": 9,
+    "type": "category",
+    "pos": null,
+    "label": "Blow Out",
+    "amount": 25
+   },
+   {
+    "week": 9,
+    "type": "dot",
+    "pos": "QB",
+    "label": "Dot Pot - QB",
+    "amount": 5
+   },
+   {
+    "week": 9,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   }
+  ],
+  "regular_weeks": 15,
+  "results": [
+   {
+    "week": 1,
+    "result": "W",
+    "points": 134.36,
+    "opp_points": 110.6,
+    "opponent_name": "GARRETT"
+   },
+   {
+    "week": 2,
+    "result": "L",
+    "points": 106.64,
+    "opp_points": 121.62,
+    "opponent_name": "COYNE"
+   },
+   {
+    "week": 3,
+    "result": "L",
+    "points": 91.18,
+    "opp_points": 142.02,
+    "opponent_name": "SCARPITTI"
+   },
+   {
+    "week": 4,
+    "result": "W",
+    "points": 151.68,
+    "opp_points": 120.92,
+    "opponent_name": "SCHILLING"
+   },
+   {
+    "week": 5,
+    "result": "L",
+    "points": 140.88,
+    "opp_points": 142.74,
+    "opponent_name": "GRAHAM"
+   },
+   {
+    "week": 6,
+    "result": "W",
+    "points": 102.64,
+    "opp_points": 100.98,
+    "opponent_name": "SCOTTY"
+   },
+   {
+    "week": 7,
+    "result": "W",
+    "points": 132.06,
+    "opp_points": 79.5,
+    "opponent_name": "GREG"
+   },
+   {
+    "week": 8,
+    "result": "L",
+    "points": 117.02,
+    "opp_points": 121.5,
+    "opponent_name": "HAYDEN"
+   },
+   {
+    "week": 9,
+    "result": "W",
+    "points": 144.68,
+    "opp_points": 94.56,
+    "opponent_name": "SCARPITTI"
+   }
+  ],
   "ranks": {
    "avg": "3",
    "avg_against": "7",
    "high_scores": "T-1",
    "dots": "T-2",
+   "high": "4",
+   "low": "7",
    "bank": "1"
   }
  },

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:00:51Z",
+ "updated": "2026-11-16T16:40:36Z",
  "through": {
   "season": 2026,
   "week": 9
@@ -22,6 +22,7 @@
  "key": "hayden",
  "name": "HAYDEN",
  "team_name": "Brian the MG",
+ "team_url": "https://football.fantasysports.yahoo.com/f1/63529/3",
  "season": {
   "season": 2026,
   "weeks_played": 9,
@@ -33,13 +34,187 @@
   "avg_against": 125.69,
   "high_scores": 2,
   "streak": "W2",
+  "high": {
+   "value": 184.0,
+   "season": 2026,
+   "week": 1,
+   "opponent": "coyne",
+   "opponent_name": "COYNE"
+  },
+  "low": {
+   "value": 92.06,
+   "season": 2026,
+   "week": 2,
+   "opponent": "graham",
+   "opponent_name": "GRAHAM"
+  },
   "dots": 10,
   "bank": 80,
+  "dots_by_pos": {
+   "QB": 1,
+   "RB": 5,
+   "WR": 0,
+   "TE": 4
+  },
+  "bonuses": [
+   {
+    "week": 1,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
+    "amount": 5
+   },
+   {
+    "week": 1,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   },
+   {
+    "week": 3,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   },
+   {
+    "week": 3,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   },
+   {
+    "week": 4,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
+    "amount": 5
+   },
+   {
+    "week": 4,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   },
+   {
+    "week": 6,
+    "type": "dot",
+    "pos": "QB",
+    "label": "Dot Pot - QB",
+    "amount": 5
+   },
+   {
+    "week": 6,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
+    "amount": 5
+   },
+   {
+    "week": 7,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
+    "amount": 5
+   },
+   {
+    "week": 8,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   },
+   {
+    "week": 9,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
+    "amount": 5
+   },
+   {
+    "week": 9,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   }
+  ],
+  "regular_weeks": 15,
+  "results": [
+   {
+    "week": 1,
+    "result": "W",
+    "points": 184.0,
+    "opp_points": 138.56,
+    "opponent_name": "COYNE"
+   },
+   {
+    "week": 2,
+    "result": "L",
+    "points": 92.06,
+    "opp_points": 99.98,
+    "opponent_name": "GRAHAM"
+   },
+   {
+    "week": 3,
+    "result": "W",
+    "points": 145.48,
+    "opp_points": 117.92,
+    "opponent_name": "GREG"
+   },
+   {
+    "week": 4,
+    "result": "W",
+    "points": 133.98,
+    "opp_points": 124.96,
+    "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 5,
+    "result": "L",
+    "points": 156.14,
+    "opp_points": 168.2,
+    "opponent_name": "SCARPITTI"
+   },
+   {
+    "week": 6,
+    "result": "L",
+    "points": 124.94,
+    "opp_points": 128.16,
+    "opponent_name": "SCHILLING"
+   },
+   {
+    "week": 7,
+    "result": "L",
+    "points": 117.62,
+    "opp_points": 124.6,
+    "opponent_name": "SCOTTY"
+   },
+   {
+    "week": 8,
+    "result": "W",
+    "points": 121.5,
+    "opp_points": 117.02,
+    "opponent_name": "GANGUS"
+   },
+   {
+    "week": 9,
+    "result": "W",
+    "points": 140.16,
+    "opp_points": 111.8,
+    "opponent_name": "GRAHAM"
+   }
+  ],
   "ranks": {
    "avg": "2",
    "avg_against": "2",
    "high_scores": "T-1",
    "dots": "1",
+   "high": "1",
+   "low": "8",
    "bank": "4"
   }
  },

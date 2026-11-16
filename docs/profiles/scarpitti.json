@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:00:51Z",
+ "updated": "2026-11-16T16:40:36Z",
  "through": {
   "season": 2026,
   "week": 9
@@ -22,6 +22,7 @@
  "key": "scarpitti",
  "name": "SCARPITTI",
  "team_name": "Galaxy",
+ "team_url": "https://football.fantasysports.yahoo.com/f1/63529/5",
  "season": {
   "season": 2026,
   "weeks_played": 9,
@@ -33,13 +34,166 @@
   "avg_against": 112.15,
   "high_scores": 2,
   "streak": "L1",
+  "high": {
+   "value": 168.2,
+   "season": 2026,
+   "week": 5,
+   "opponent": "hayden",
+   "opponent_name": "HAYDEN"
+  },
+  "low": {
+   "value": 94.56,
+   "season": 2026,
+   "week": 9,
+   "opponent": "gangus",
+   "opponent_name": "GANGUS"
+  },
   "dots": 6,
   "bank": 85,
+  "dots_by_pos": {
+   "QB": 2,
+   "RB": 1,
+   "WR": 3,
+   "TE": 0
+  },
+  "bonuses": [
+   {
+    "week": 1,
+    "type": "dot",
+    "pos": "QB",
+    "label": "Dot Pot - QB",
+    "amount": 5
+   },
+   {
+    "week": 2,
+    "type": "dot",
+    "pos": "QB",
+    "label": "Dot Pot - QB",
+    "amount": 5
+   },
+   {
+    "week": 2,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   },
+   {
+    "week": 2,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   },
+   {
+    "week": 3,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   },
+   {
+    "week": 5,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   },
+   {
+    "week": 7,
+    "type": "category",
+    "pos": null,
+    "label": "The Flex",
+    "amount": 25
+   },
+   {
+    "week": 7,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   },
+   {
+    "week": 8,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
+    "amount": 5
+   }
+  ],
+  "regular_weeks": 15,
+  "results": [
+   {
+    "week": 1,
+    "result": "W",
+    "points": 160.96,
+    "opp_points": 119.52,
+    "opponent_name": "GREG"
+   },
+   {
+    "week": 2,
+    "result": "W",
+    "points": 146.62,
+    "opp_points": 99.8,
+    "opponent_name": "SCOTTY"
+   },
+   {
+    "week": 3,
+    "result": "W",
+    "points": 142.02,
+    "opp_points": 91.18,
+    "opponent_name": "GANGUS"
+   },
+   {
+    "week": 4,
+    "result": "L",
+    "points": 100.42,
+    "opp_points": 145.48,
+    "opponent_name": "GRAHAM"
+   },
+   {
+    "week": 5,
+    "result": "W",
+    "points": 168.2,
+    "opp_points": 156.14,
+    "opponent_name": "HAYDEN"
+   },
+   {
+    "week": 6,
+    "result": "W",
+    "points": 125.9,
+    "opp_points": 75.82,
+    "opponent_name": "GARRETT"
+   },
+   {
+    "week": 7,
+    "result": "W",
+    "points": 145.52,
+    "opp_points": 91.74,
+    "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 8,
+    "result": "W",
+    "points": 153.26,
+    "opp_points": 84.98,
+    "opponent_name": "COYNE"
+   },
+   {
+    "week": 9,
+    "result": "L",
+    "points": 94.56,
+    "opp_points": 144.68,
+    "opponent_name": "GANGUS"
+   }
+  ],
   "ranks": {
    "avg": "1",
    "avg_against": "10",
    "high_scores": "T-1",
    "dots": "T-2",
+   "high": "2",
+   "low": "9",
    "bank": "3"
   }
  },

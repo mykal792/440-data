@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:00:51Z",
+ "updated": "2026-11-16T16:40:36Z",
  "through": {
   "season": 2026,
   "week": 9
@@ -22,6 +22,7 @@
  "key": "schilling",
  "name": "SCHILLING",
  "team_name": "Schill The Thrill",
+ "team_url": "https://football.fantasysports.yahoo.com/f1/63529/1",
  "season": {
   "season": 2026,
   "weeks_played": 9,
@@ -33,13 +34,152 @@
   "avg_against": 116.58,
   "high_scores": 2,
   "streak": "W4",
+  "high": {
+   "value": 147.58,
+   "season": 2026,
+   "week": 7,
+   "opponent": "coyne",
+   "opponent_name": "COYNE"
+  },
+  "low": {
+   "value": 79.86,
+   "season": 2026,
+   "week": 1,
+   "opponent": "anthony",
+   "opponent_name": "ANTHONY"
+  },
   "dots": 5,
   "bank": 55,
+  "dots_by_pos": {
+   "QB": 2,
+   "RB": 0,
+   "WR": 3,
+   "TE": 0
+  },
+  "bonuses": [
+   {
+    "week": 1,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   },
+   {
+    "week": 5,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   },
+   {
+    "week": 6,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   },
+   {
+    "week": 7,
+    "type": "dot",
+    "pos": "QB",
+    "label": "Dot Pot - QB",
+    "amount": 5
+   },
+   {
+    "week": 7,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   },
+   {
+    "week": 8,
+    "type": "dot",
+    "pos": "QB",
+    "label": "Dot Pot - QB",
+    "amount": 5
+   },
+   {
+    "week": 9,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   }
+  ],
+  "regular_weeks": 15,
+  "results": [
+   {
+    "week": 1,
+    "result": "L",
+    "points": 79.86,
+    "opp_points": 96.62,
+    "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 2,
+    "result": "L",
+    "points": 103.0,
+    "opp_points": 105.26,
+    "opponent_name": "GREG"
+   },
+   {
+    "week": 3,
+    "result": "W",
+    "points": 106.68,
+    "opp_points": 97.04,
+    "opponent_name": "SCOTTY"
+   },
+   {
+    "week": 4,
+    "result": "L",
+    "points": 120.92,
+    "opp_points": 151.68,
+    "opponent_name": "GANGUS"
+   },
+   {
+    "week": 5,
+    "result": "L",
+    "points": 125.7,
+    "opp_points": 145.94,
+    "opponent_name": "GARRETT"
+   },
+   {
+    "week": 6,
+    "result": "W",
+    "points": 128.16,
+    "opp_points": 124.94,
+    "opponent_name": "HAYDEN"
+   },
+   {
+    "week": 7,
+    "result": "W",
+    "points": 147.58,
+    "opp_points": 88.12,
+    "opponent_name": "COYNE"
+   },
+   {
+    "week": 8,
+    "result": "W",
+    "points": 141.08,
+    "opp_points": 102.14,
+    "opponent_name": "GRAHAM"
+   },
+   {
+    "week": 9,
+    "result": "W",
+    "points": 143.84,
+    "opp_points": 137.46,
+    "opponent_name": "ANTHONY"
+   }
+  ],
   "ranks": {
    "avg": "4",
    "avg_against": "5",
    "high_scores": "T-1",
    "dots": "4",
+   "high": "5",
+   "low": "5",
    "bank": "5"
   }
  },

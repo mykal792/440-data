@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:00:51Z",
+ "updated": "2026-11-16T16:40:36Z",
  "through": {
   "season": 2026,
   "week": 9
@@ -22,6 +22,7 @@
  "key": "scotty",
  "name": "SCOTTY",
  "team_name": "Reagan's Raiders",
+ "team_url": "https://football.fantasysports.yahoo.com/f1/63529/9",
  "season": {
   "season": 2026,
   "weeks_played": 9,
@@ -33,13 +34,110 @@
   "avg_against": 114.34,
   "high_scores": 0,
   "streak": "W1",
+  "high": {
+   "value": 124.6,
+   "season": 2026,
+   "week": 7,
+   "opponent": "hayden",
+   "opponent_name": "HAYDEN"
+  },
+  "low": {
+   "value": 84.98,
+   "season": 2026,
+   "week": 8,
+   "opponent": "anthony",
+   "opponent_name": "ANTHONY"
+  },
   "dots": 1,
   "bank": 5,
+  "dots_by_pos": {
+   "QB": 0,
+   "RB": 0,
+   "WR": 1,
+   "TE": 0
+  },
+  "bonuses": [
+   {
+    "week": 6,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   }
+  ],
+  "regular_weeks": 15,
+  "results": [
+   {
+    "week": 1,
+    "result": "L",
+    "points": 87.86,
+    "opp_points": 134.26,
+    "opponent_name": "GRAHAM"
+   },
+   {
+    "week": 2,
+    "result": "L",
+    "points": 99.8,
+    "opp_points": 146.62,
+    "opponent_name": "SCARPITTI"
+   },
+   {
+    "week": 3,
+    "result": "L",
+    "points": 97.04,
+    "opp_points": 106.68,
+    "opponent_name": "SCHILLING"
+   },
+   {
+    "week": 4,
+    "result": "L",
+    "points": 97.28,
+    "opp_points": 105.0,
+    "opponent_name": "GARRETT"
+   },
+   {
+    "week": 5,
+    "result": "W",
+    "points": 123.22,
+    "opp_points": 109.56,
+    "opponent_name": "GREG"
+   },
+   {
+    "week": 6,
+    "result": "L",
+    "points": 100.98,
+    "opp_points": 102.64,
+    "opponent_name": "GANGUS"
+   },
+   {
+    "week": 7,
+    "result": "W",
+    "points": 124.6,
+    "opp_points": 117.62,
+    "opponent_name": "HAYDEN"
+   },
+   {
+    "week": 8,
+    "result": "L",
+    "points": 84.98,
+    "opp_points": 109.26,
+    "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 9,
+    "result": "W",
+    "points": 103.32,
+    "opp_points": 97.4,
+    "opponent_name": "GARRETT"
+   }
+  ],
   "ranks": {
    "avg": "10",
    "avg_against": "8",
    "high_scores": "T-6",
    "dots": "T-8",
+   "high": "10",
+   "low": "6",
    "bank": "T-9"
   }
  },

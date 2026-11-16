@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:00:51Z",
+ "updated": "2026-11-16T16:40:36Z",
  "through": {
   "season": 2026,
   "week": 9
@@ -22,6 +22,7 @@
  "key": "greg",
  "name": "GREG",
  "team_name": "Deer Hunter",
+ "team_url": "https://football.fantasysports.yahoo.com/f1/63529/4",
  "season": {
   "season": 2026,
   "weeks_played": 9,
@@ -33,13 +34,117 @@
   "avg_against": 121.74,
   "high_scores": 0,
   "streak": "W1",
+  "high": {
+   "value": 144.38,
+   "season": 2026,
+   "week": 8,
+   "opponent": "garrett",
+   "opponent_name": "GARRETT"
+  },
+  "low": {
+   "value": 79.5,
+   "season": 2026,
+   "week": 7,
+   "opponent": "gangus",
+   "opponent_name": "GANGUS"
+  },
   "dots": 1,
   "bank": 30,
+  "dots_by_pos": {
+   "QB": 0,
+   "RB": 0,
+   "WR": 1,
+   "TE": 0
+  },
+  "bonuses": [
+   {
+    "week": 8,
+    "type": "category",
+    "pos": null,
+    "label": "Nice Hands",
+    "amount": 25
+   },
+   {
+    "week": 8,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   }
+  ],
+  "regular_weeks": 15,
+  "results": [
+   {
+    "week": 1,
+    "result": "L",
+    "points": 119.52,
+    "opp_points": 160.96,
+    "opponent_name": "SCARPITTI"
+   },
+   {
+    "week": 2,
+    "result": "W",
+    "points": 105.26,
+    "opp_points": 103.0,
+    "opponent_name": "SCHILLING"
+   },
+   {
+    "week": 3,
+    "result": "L",
+    "points": 117.92,
+    "opp_points": 145.48,
+    "opponent_name": "HAYDEN"
+   },
+   {
+    "week": 4,
+    "result": "W",
+    "points": 143.3,
+    "opp_points": 104.42,
+    "opponent_name": "COYNE"
+   },
+   {
+    "week": 5,
+    "result": "L",
+    "points": 109.56,
+    "opp_points": 123.22,
+    "opponent_name": "SCOTTY"
+   },
+   {
+    "week": 6,
+    "result": "W",
+    "points": 104.18,
+    "opp_points": 95.5,
+    "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 7,
+    "result": "L",
+    "points": 79.5,
+    "opp_points": 132.06,
+    "opponent_name": "GANGUS"
+   },
+   {
+    "week": 8,
+    "result": "L",
+    "points": 144.38,
+    "opp_points": 156.0,
+    "opponent_name": "GARRETT"
+   },
+   {
+    "week": 9,
+    "result": "W",
+    "points": 115.28,
+    "opp_points": 74.98,
+    "opponent_name": "COYNE"
+   }
+  ],
   "ranks": {
    "avg": "7",
    "avg_against": "3",
    "high_scores": "T-6",
    "dots": "T-8",
+   "high": "7",
+   "low": "4",
    "bank": "7"
   }
  },

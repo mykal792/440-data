@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:00:51Z",
+ "updated": "2026-11-16T16:40:36Z",
  "through": {
   "season": 2026,
   "week": 9
@@ -22,6 +22,7 @@
  "key": "garrett",
  "name": "GARRETT",
  "team_name": "Anderton's Revenge",
+ "team_url": "https://football.fantasysports.yahoo.com/f1/63529/2",
  "season": {
   "season": 2026,
   "weeks_played": 9,
@@ -33,13 +34,145 @@
   "avg_against": 117.23,
   "high_scores": 1,
   "streak": "L1",
+  "high": {
+   "value": 156.0,
+   "season": 2026,
+   "week": 8,
+   "opponent": "greg",
+   "opponent_name": "GREG"
+  },
+  "low": {
+   "value": 75.82,
+   "season": 2026,
+   "week": 6,
+   "opponent": "scarpitti",
+   "opponent_name": "SCARPITTI"
+  },
   "dots": 2,
   "bank": 100,
+  "dots_by_pos": {
+   "QB": 0,
+   "RB": 2,
+   "WR": 0,
+   "TE": 0
+  },
+  "bonuses": [
+   {
+    "week": 1,
+    "type": "category",
+    "pos": null,
+    "label": "Bench Warmer",
+    "amount": 25
+   },
+   {
+    "week": 3,
+    "type": "category",
+    "pos": null,
+    "label": "Beast Mode",
+    "amount": 25
+   },
+   {
+    "week": 3,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
+    "amount": 5
+   },
+   {
+    "week": 4,
+    "type": "category",
+    "pos": null,
+    "label": "Lucky Duck",
+    "amount": 25
+   },
+   {
+    "week": 5,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
+    "amount": 5
+   },
+   {
+    "week": 8,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   }
+  ],
+  "regular_weeks": 15,
+  "results": [
+   {
+    "week": 1,
+    "result": "L",
+    "points": 110.6,
+    "opp_points": 134.36,
+    "opponent_name": "GANGUS"
+   },
+   {
+    "week": 2,
+    "result": "W",
+    "points": 112.76,
+    "opp_points": 75.82,
+    "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 3,
+    "result": "W",
+    "points": 132.84,
+    "opp_points": 125.88,
+    "opponent_name": "COYNE"
+   },
+   {
+    "week": 4,
+    "result": "W",
+    "points": 105.0,
+    "opp_points": 97.28,
+    "opponent_name": "SCOTTY"
+   },
+   {
+    "week": 5,
+    "result": "W",
+    "points": 145.94,
+    "opp_points": 125.7,
+    "opponent_name": "SCHILLING"
+   },
+   {
+    "week": 6,
+    "result": "L",
+    "points": 75.82,
+    "opp_points": 125.9,
+    "opponent_name": "SCARPITTI"
+   },
+   {
+    "week": 7,
+    "result": "W",
+    "points": 133.68,
+    "opp_points": 122.42,
+    "opponent_name": "GRAHAM"
+   },
+   {
+    "week": 8,
+    "result": "W",
+    "points": 156.0,
+    "opp_points": 144.38,
+    "opponent_name": "GREG"
+   },
+   {
+    "week": 9,
+    "result": "L",
+    "points": 97.4,
+    "opp_points": 103.32,
+    "opponent_name": "SCOTTY"
+   }
+  ],
   "ranks": {
    "avg": "6",
    "avg_against": "4",
    "high_scores": "5",
    "dots": "T-5",
+   "high": "3",
+   "low": "T-2",
    "bank": "2"
   }
  },

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:00:51Z",
+ "updated": "2026-11-16T16:40:36Z",
  "through": {
   "season": 2026,
   "week": 9
@@ -22,6 +22,7 @@
  "key": "graham",
  "name": "GRAHAM",
  "team_name": "Crackers",
+ "team_url": "https://football.fantasysports.yahoo.com/f1/63529/7",
  "season": {
   "season": 2026,
   "weeks_played": 9,
@@ -33,13 +34,110 @@
   "avg_against": 114.98,
   "high_scores": 0,
   "streak": "L3",
+  "high": {
+   "value": 145.48,
+   "season": 2026,
+   "week": 4,
+   "opponent": "scarpitti",
+   "opponent_name": "SCARPITTI"
+  },
+  "low": {
+   "value": 99.98,
+   "season": 2026,
+   "week": 2,
+   "opponent": "hayden",
+   "opponent_name": "HAYDEN"
+  },
   "dots": 1,
   "bank": 5,
+  "dots_by_pos": {
+   "QB": 0,
+   "RB": 0,
+   "WR": 0,
+   "TE": 1
+  },
+  "bonuses": [
+   {
+    "week": 2,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   }
+  ],
+  "regular_weeks": 15,
+  "results": [
+   {
+    "week": 1,
+    "result": "W",
+    "points": 134.26,
+    "opp_points": 87.86,
+    "opponent_name": "SCOTTY"
+   },
+   {
+    "week": 2,
+    "result": "W",
+    "points": 99.98,
+    "opp_points": 92.06,
+    "opponent_name": "HAYDEN"
+   },
+   {
+    "week": 3,
+    "result": "W",
+    "points": 101.66,
+    "opp_points": 97.36,
+    "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 4,
+    "result": "W",
+    "points": 145.48,
+    "opp_points": 100.42,
+    "opponent_name": "SCARPITTI"
+   },
+   {
+    "week": 5,
+    "result": "W",
+    "points": 142.74,
+    "opp_points": 140.88,
+    "opponent_name": "GANGUS"
+   },
+   {
+    "week": 6,
+    "result": "W",
+    "points": 111.02,
+    "opp_points": 101.36,
+    "opponent_name": "COYNE"
+   },
+   {
+    "week": 7,
+    "result": "L",
+    "points": 122.42,
+    "opp_points": 133.68,
+    "opponent_name": "GARRETT"
+   },
+   {
+    "week": 8,
+    "result": "L",
+    "points": 102.14,
+    "opp_points": 141.08,
+    "opponent_name": "SCHILLING"
+   },
+   {
+    "week": 9,
+    "result": "L",
+    "points": 111.8,
+    "opp_points": 140.16,
+    "opponent_name": "HAYDEN"
+   }
+  ],
   "ranks": {
    "avg": "5",
    "avg_against": "6",
    "high_scores": "T-6",
    "dots": "T-8",
+   "high": "6",
+   "low": "10",
    "bank": "T-9"
   }
  },

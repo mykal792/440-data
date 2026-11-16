@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T12:00:51Z",
+ "updated": "2026-11-16T16:40:36Z",
  "through": {
   "season": 2026,
   "week": 9
@@ -22,6 +22,7 @@
  "key": "coyne",
  "name": "COYNE",
  "team_name": "LongLivePulledPork",
+ "team_url": "https://football.fantasysports.yahoo.com/f1/63529/8",
  "season": {
   "season": 2026,
   "weeks_played": 9,
@@ -33,13 +34,117 @@
   "avg_against": 136.05,
   "high_scores": 0,
   "streak": "L7",
+  "high": {
+   "value": 138.56,
+   "season": 2026,
+   "week": 1,
+   "opponent": "hayden",
+   "opponent_name": "HAYDEN"
+  },
+  "low": {
+   "value": 74.98,
+   "season": 2026,
+   "week": 9,
+   "opponent": "greg",
+   "opponent_name": "GREG"
+  },
   "dots": 2,
   "bank": 10,
+  "dots_by_pos": {
+   "QB": 1,
+   "RB": 1,
+   "WR": 0,
+   "TE": 0
+  },
+  "bonuses": [
+   {
+    "week": 2,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
+    "amount": 5
+   },
+   {
+    "week": 3,
+    "type": "dot",
+    "pos": "QB",
+    "label": "Dot Pot - QB",
+    "amount": 5
+   }
+  ],
+  "regular_weeks": 15,
+  "results": [
+   {
+    "week": 1,
+    "result": "L",
+    "points": 138.56,
+    "opp_points": 184.0,
+    "opponent_name": "HAYDEN"
+   },
+   {
+    "week": 2,
+    "result": "W",
+    "points": 121.62,
+    "opp_points": 106.64,
+    "opponent_name": "GANGUS"
+   },
+   {
+    "week": 3,
+    "result": "L",
+    "points": 125.88,
+    "opp_points": 132.84,
+    "opponent_name": "GARRETT"
+   },
+   {
+    "week": 4,
+    "result": "L",
+    "points": 104.42,
+    "opp_points": 143.3,
+    "opponent_name": "GREG"
+   },
+   {
+    "week": 5,
+    "result": "L",
+    "points": 120.02,
+    "opp_points": 130.56,
+    "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 6,
+    "result": "L",
+    "points": 101.36,
+    "opp_points": 111.02,
+    "opponent_name": "GRAHAM"
+   },
+   {
+    "week": 7,
+    "result": "L",
+    "points": 88.12,
+    "opp_points": 147.58,
+    "opponent_name": "SCHILLING"
+   },
+   {
+    "week": 8,
+    "result": "L",
+    "points": 84.98,
+    "opp_points": 153.26,
+    "opponent_name": "SCARPITTI"
+   },
+   {
+    "week": 9,
+    "result": "L",
+    "points": 74.98,
+    "opp_points": 115.28,
+    "opponent_name": "GREG"
+   }
+  ],
   "ranks": {
    "avg": "8",
    "avg_against": "1",
    "high_scores": "T-6",
    "dots": "T-5",
+   "high": "8",
+   "low": "1",
    "bank": "8"
   }
  },
