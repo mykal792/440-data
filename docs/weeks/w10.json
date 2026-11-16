@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T02:15:34Z",
+  "updated": "2026-11-16T02:20:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 117.08,
+        "score": 117.18,
         "projected": 117.02
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "1.56",
+          "value": "1.66",
           "detail": "losing to SCHILLING"
         },
         {
@@ -1727,8 +1727,13 @@
       "team": "Pit",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
+      "points": 0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Zay Flowers",
