@@ -1,19 +1,19 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T01:50:20Z",
+  "updated": "2026-11-16T01:55:19Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 108.3,
+        "score": 108.84,
         "projected": 117.02
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 111.52,
+        "score": 113.62,
         "projected": 113.77
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "3.22",
+          "value": "4.78",
           "detail": "losing to GREG"
         },
         {
@@ -1274,6 +1274,24 @@
       ]
     },
     {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 5.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 121
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 8
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -1288,24 +1306,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.1,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 105
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 9
         }
       ]
     },
@@ -1458,6 +1458,24 @@
         {
           "stat": "REC YD",
           "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tee Higgins",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 26
         },
         {
           "stat": "REC",
@@ -1620,24 +1638,6 @@
         {
           "stat": "REC YD",
           "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Tee Higgins",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 10
         },
         {
           "stat": "REC",
