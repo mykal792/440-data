@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T00:00:37Z",
+  "updated": "2026-11-16T00:05:21Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -152,6 +152,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 29.02,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 323
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -170,28 +192,6 @@
         {
           "stat": "REC",
           "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 28.62,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 313
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
         },
         {
           "stat": "TD",
@@ -317,6 +317,32 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 24.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 214
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -501,32 +527,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 18.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 209
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -872,6 +872,24 @@
       "stats": []
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 74
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -909,24 +927,6 @@
         {
           "stat": "RUSH YD",
           "value": 94
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 64
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },

@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T00:00:37Z",
+  "updated": "2026-11-16T00:05:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 77.8,
+        "score": 77.9,
         "projected": 117.01
       },
       "away": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 128.36,
+        "score": 134.6,
         "projected": 124.89
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 104.32,
+        "score": 104.72,
         "projected": 105.1
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 153.64,
+        "score": 155.14,
         "projected": 127.1
       },
       "away": {
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "24.04",
-          "detail": "losing to GARRETT"
-        },
-        {
-          "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
           "value": "26.86",
           "detail": "losing to HAYDEN"
+        },
+        {
+          "rank": 3,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "28.12",
+          "detail": "losing to GREG"
         }
       ]
     },
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "153.64",
+          "value": "155.14",
           "detail": "1 to play"
         },
         {
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "128.36",
+          "value": "134.60",
           "detail": "2 to play"
         },
         {
@@ -285,6 +285,28 @@
       ]
     },
     {
+      "name": "Brock Purdy",
+      "position": "QB",
+      "team": "SF",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 29.02,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 323
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 21
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -303,28 +325,6 @@
         {
           "stat": "REC",
           "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Brock Purdy",
-      "position": "QB",
-      "team": "SF",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 28.62,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 313
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 21
         },
         {
           "stat": "TD",
@@ -450,6 +450,32 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 24.76,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 214
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -634,32 +660,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 18.56,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 209
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -1005,6 +1005,24 @@
       "stats": []
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 74
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -1042,24 +1060,6 @@
         {
           "stat": "RUSH YD",
           "value": 94
-        }
-      ]
-    },
-    {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 64
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
