@@ -1,19 +1,19 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T03:30:25Z",
+  "updated": "2026-11-16T03:35:28Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 145.86,
+        "score": 146.14,
         "projected": 117.02
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 137.12,
+        "score": 138.92,
         "projected": 113.77
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "8.74",
+          "value": "7.22",
           "detail": "losing to SCHILLING"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "145.86",
+          "value": "146.14",
           "detail": "All played"
         }
       ]
@@ -242,11 +242,11 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 41.16,
+      "points": 41.44,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 359
+          "value": 366
         },
         {
           "stat": "RUSH YD",
@@ -547,6 +547,32 @@
       ]
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 23.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 39
+        },
+        {
+          "stat": "REC YD",
+          "value": 39
+        },
+        {
+          "stat": "REC",
+          "value": 8
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -583,32 +609,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 22.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 38
-        },
-        {
-          "stat": "REC YD",
-          "value": 32
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
