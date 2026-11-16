@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T00:35:27Z",
+  "updated": "2026-11-16T00:40:27Z",
   "players": [
     {
       "name": "Patrick Mahomes",
@@ -22,6 +22,32 @@
         {
           "stat": "TD",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 46.14,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 336
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 5
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -96,32 +122,6 @@
         {
           "stat": "TD",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 38.1,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 335
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 4
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -563,6 +563,28 @@
       "stats": []
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 16.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 72
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Colts",
       "position": "DEF",
       "team": "Ind",
@@ -891,24 +913,6 @@
         {
           "stat": "REC YD",
           "value": 74
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 71
         },
         {
           "stat": "REC",
