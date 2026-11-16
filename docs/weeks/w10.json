@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T00:10:30Z",
+  "updated": "2026-11-16T00:15:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 77.9,
+        "score": 79.3,
         "projected": 117.01
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 134.6,
+        "score": 136.32,
         "projected": 124.89
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 117.1,
+        "score": 117.4,
         "projected": 114.77
       },
       "away": {
@@ -86,22 +86,22 @@
           "rank": 1,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "1.32",
+          "value": "1.02",
           "detail": "losing to GRAHAM"
         },
         {
           "rank": 2,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "26.72",
+          "detail": "losing to GREG"
+        },
+        {
+          "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
           "value": "26.86",
           "detail": "losing to HAYDEN"
-        },
-        {
-          "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "28.12",
-          "detail": "losing to GREG"
         }
       ]
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "134.60",
+          "value": "136.32",
           "detail": "2 to play"
         },
         {
@@ -381,6 +381,32 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 26.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 258
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Matthew Stafford",
       "position": "QB",
       "team": "LAR",
@@ -450,32 +476,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 24.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 215
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -1032,6 +1032,24 @@
       "stats": []
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 10.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 71
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -1060,24 +1078,6 @@
         {
           "stat": "RUSH YD",
           "value": 94
-        }
-      ]
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 8.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 62
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -1198,6 +1198,20 @@
       "stats": []
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 6.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
+        }
+      ]
+    },
+    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -1212,20 +1226,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 6.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 60
         }
       ]
     },
