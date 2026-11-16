@@ -1,13 +1,13 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-16T02:30:28Z",
+  "updated": "2026-11-16T02:35:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 125.9,
+        "score": 126.6,
         "projected": 117.02
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 157.92,
+        "score": 160.62,
         "projected": 124.81
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "0.78",
+          "value": "1.48",
           "detail": "losing to SCHILLING"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "157.92",
+          "value": "160.62",
           "detail": "All played"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
-          "value": "125.90",
+          "value": "126.60",
           "detail": "All played"
         }
       ]
@@ -1555,6 +1555,28 @@
       ]
     },
     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Brock Bowers",
       "position": "TE",
       "team": "LV",
@@ -1712,30 +1734,16 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Rico Dowdle",
       "position": "RB",
       "team": "Pit",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.1,
+      "points": 0.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 1
+          "value": 8
         }
       ]
     },
