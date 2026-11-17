@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T12:00:48Z",
+ "updated": "2026-11-17T12:40:38Z",
  "through": {
   "season": 2026,
   "week": 10
@@ -48,17 +48,24 @@
    "opponent": "anthony",
    "opponent_name": "ANTHONY"
   },
-  "dots": 1,
-  "bank": 5,
+  "dots": 2,
+  "bank": 10,
   "dots_by_pos": {
    "QB": 0,
    "RB": 0,
-   "WR": 1,
+   "WR": 2,
    "TE": 0
   },
   "bonuses": [
    {
     "week": 6,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
+    "amount": 5
+   },
+   {
+    "week": 10,
     "type": "dot",
     "pos": "WR",
     "label": "Dot Pot - WR",
@@ -142,10 +149,10 @@
    "avg": "10",
    "avg_against": "5",
    "high_scores": "T-6",
-   "dots": "T-9",
+   "dots": "T-5",
    "high": "10",
    "low": "6",
-   "bank": "T-9"
+   "bank": "T-8"
   }
  },
  "career": {
@@ -162,7 +169,7 @@
    "opponent": "anthony",
    "opponent_name": "ANTHONY"
   },
-  "earnings": -368.5,
+  "earnings": -363.5,
   "avg": 117.69,
   "avg_against": 117.14,
   "high": {

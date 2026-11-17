@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T12:00:48Z",
+ "updated": "2026-11-17T12:40:38Z",
  "through": {
   "season": 2026,
   "week": 10
@@ -48,13 +48,13 @@
    "opponent": "scarpitti",
    "opponent_name": "SCARPITTI"
   },
-  "dots": 6,
-  "bank": 160,
+  "dots": 7,
+  "bank": 165,
   "dots_by_pos": {
    "QB": 1,
    "RB": 0,
    "WR": 1,
-   "TE": 4
+   "TE": 5
   },
   "bonuses": [
    {
@@ -140,6 +140,13 @@
     "pos": null,
     "label": "Bad Beat",
     "amount": 25
+   },
+   {
+    "week": 10,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
    }
   ],
   "regular_weeks": 15,
@@ -219,7 +226,7 @@
    "avg": "4",
    "avg_against": "9",
    "high_scores": "T-1",
-   "dots": "T-3",
+   "dots": "2",
    "high": "5",
    "low": "7",
    "bank": "1"
@@ -239,7 +246,7 @@
    "opponent": "garrett",
    "opponent_name": "GARRETT"
   },
-  "earnings": -219.5,
+  "earnings": -214.5,
   "avg": 118.63,
   "avg_against": 115.76,
   "high": {
