@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-17T03:35:23Z",
+  "updated": "2026-11-17T03:40:30Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 121.78,
+        "score": 123.78,
         "projected": 121.8
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 159.14,
+        "score": 157.14,
         "projected": 127.16
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "31.66",
+          "value": "33.66",
           "detail": "losing to HAYDEN"
         }
       ]
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
-          "value": "159.14",
+          "value": "157.14",
           "detail": "All played"
         },
         {
@@ -1442,6 +1442,24 @@
       ]
     },
     {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 34
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -1531,15 +1549,6 @@
       "team": "GB",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 4.0,
-      "stats": []
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 4.0,
       "stats": []
     },
@@ -1634,24 +1643,6 @@
       ]
     },
     {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Brock Bowers",
       "position": "TE",
       "team": "LV",
@@ -1718,6 +1709,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.0,
+      "stats": []
     },
     {
       "name": "Jason Myers",
