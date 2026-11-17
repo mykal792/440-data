@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-17T02:00:31Z",
+  "updated": "2026-11-17T02:05:22Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 113.48,
+        "score": 119.68,
         "projected": 121.8
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "23.36",
+          "value": "29.56",
           "detail": "losing to HAYDEN"
         }
       ]
@@ -1308,6 +1308,32 @@
       "stats": []
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        },
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -1775,24 +1801,6 @@
         {
           "stat": "REC YD",
           "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 2
         },
         {
           "stat": "REC",
