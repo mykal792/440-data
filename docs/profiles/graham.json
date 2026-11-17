@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T16:40:36Z",
+ "updated": "2026-11-17T12:00:48Z",
  "through": {
   "season": 2026,
-  "week": 9
+  "week": 10
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/7",
  "season": {
   "season": 2026,
-  "weeks_played": 9,
-  "standing": 2,
-  "wins": 6,
+  "weeks_played": 10,
+  "standing": 3,
+  "wins": 7,
   "losses": 3,
   "ties": 0,
-  "avg": 119.06,
-  "avg_against": 114.98,
+  "avg": 118.99,
+  "avg_against": 115.32,
   "high_scores": 0,
-  "streak": "L3",
+  "streak": "W1",
   "high": {
    "value": 145.48,
    "season": 2026,
@@ -129,23 +129,30 @@
     "points": 111.8,
     "opp_points": 140.16,
     "opponent_name": "HAYDEN"
+   },
+   {
+    "week": 10,
+    "result": "W",
+    "points": 118.42,
+    "opp_points": 118.3,
+    "opponent_name": "GANGUS"
    }
   ],
   "ranks": {
-   "avg": "5",
-   "avg_against": "6",
+   "avg": "6",
+   "avg_against": "8",
    "high_scores": "T-6",
-   "dots": "T-8",
+   "dots": "T-9",
    "high": "6",
    "low": "10",
    "bank": "T-9"
   }
  },
  "career": {
-  "wins": 86,
+  "wins": 87,
   "losses": 110,
   "ties": 0,
-  "win_pct": 0.439,
+  "win_pct": 0.442,
   "high_scores": 16,
   "weeks_first": 6,
   "blowout": {
@@ -156,8 +163,8 @@
    "opponent_name": "GARRETT"
   },
   "earnings": -971.0,
-  "avg": 112.26,
-  "avg_against": 116.79,
+  "avg": 112.31,
+  "avg_against": 116.8,
   "high": {
    "value": 173.3,
    "season": 2025,
@@ -188,13 +195,13 @@
   {
    "season": 2026,
    "team_name": "Crackers",
-   "wins": 6,
+   "wins": 7,
    "losses": 3,
    "ties": 0,
    "playoffs": false,
-   "avg": 119.06,
-   "avg_against": 114.98,
-   "finish": 2,
+   "avg": 118.99,
+   "avg_against": 115.32,
+   "finish": 3,
    "in_progress": true,
    "games": [
     {
@@ -285,6 +292,16 @@
      "points": 111.8,
      "opp_points": 140.16,
      "result": "L",
+     "high_score": false
+    },
+    {
+     "week": 10,
+     "type": "regular",
+     "opponent": "gangus",
+     "opponent_name": "GANGUS",
+     "points": 118.42,
+     "opp_points": 118.3,
+     "result": "W",
      "high_score": false
     }
    ]
@@ -2587,7 +2604,7 @@
   {
    "opponent": "gangus",
    "opponent_name": "GANGUS",
-   "wins": 9,
+   "wins": 10,
    "losses": 9,
    "ties": 0
   },

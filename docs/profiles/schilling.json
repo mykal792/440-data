@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T16:40:36Z",
+ "updated": "2026-11-17T12:00:48Z",
  "through": {
   "season": 2026,
-  "week": 9
+  "week": 10
  },
  "rules": {
   "ppr_from": 2018
@@ -25,21 +25,21 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/1",
  "season": {
   "season": 2026,
-  "weeks_played": 9,
-  "standing": 6,
-  "wins": 5,
+  "weeks_played": 10,
+  "standing": 5,
+  "wins": 6,
   "losses": 4,
   "ties": 0,
-  "avg": 121.87,
-  "avg_against": 116.58,
+  "avg": 124.96,
+  "avg_against": 118.86,
   "high_scores": 2,
-  "streak": "W4",
+  "streak": "W5",
   "high": {
-   "value": 147.58,
+   "value": 152.76,
    "season": 2026,
-   "week": 7,
-   "opponent": "coyne",
-   "opponent_name": "COYNE"
+   "week": 10,
+   "opponent": "greg",
+   "opponent_name": "GREG"
   },
   "low": {
    "value": 79.86,
@@ -48,11 +48,11 @@
    "opponent": "anthony",
    "opponent_name": "ANTHONY"
   },
-  "dots": 5,
-  "bank": 55,
+  "dots": 6,
+  "bank": 60,
   "dots_by_pos": {
    "QB": 2,
-   "RB": 0,
+   "RB": 1,
    "WR": 3,
    "TE": 0
   },
@@ -104,6 +104,13 @@
     "type": "dot",
     "pos": "WR",
     "label": "Dot Pot - WR",
+    "amount": 5
+   },
+   {
+    "week": 10,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
     "amount": 5
    }
   ],
@@ -171,23 +178,30 @@
     "points": 143.84,
     "opp_points": 137.46,
     "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 10,
+    "result": "W",
+    "points": 152.76,
+    "opp_points": 139.42,
+    "opponent_name": "GREG"
    }
   ],
   "ranks": {
-   "avg": "4",
-   "avg_against": "5",
+   "avg": "3",
+   "avg_against": "4",
    "high_scores": "T-1",
-   "dots": "4",
-   "high": "5",
+   "dots": "T-3",
+   "high": "4",
    "low": "5",
    "bank": "5"
   }
  },
  "career": {
-  "wins": 112,
+  "wins": 113,
   "losses": 84,
   "ties": 0,
-  "win_pct": 0.571,
+  "win_pct": 0.574,
   "high_scores": 34,
   "weeks_first": 54,
   "blowout": {
@@ -197,9 +211,9 @@
    "opponent": "garrett",
    "opponent_name": "GARRETT"
   },
-  "earnings": 1539.0,
-  "avg": 123.73,
-  "avg_against": 116.59,
+  "earnings": 1544.0,
+  "avg": 123.95,
+  "avg_against": 116.77,
   "high": {
    "value": 184.48,
    "season": 2020,
@@ -230,13 +244,13 @@
   {
    "season": 2026,
    "team_name": "Schill The Thrill",
-   "wins": 5,
+   "wins": 6,
    "losses": 4,
    "ties": 0,
    "playoffs": false,
-   "avg": 121.87,
-   "avg_against": 116.58,
-   "finish": 6,
+   "avg": 124.96,
+   "avg_against": 118.86,
+   "finish": 5,
    "in_progress": true,
    "games": [
     {
@@ -326,6 +340,16 @@
      "opponent_name": "ANTHONY",
      "points": 143.84,
      "opp_points": 137.46,
+     "result": "W",
+     "high_score": false
+    },
+    {
+     "week": 10,
+     "type": "regular",
+     "opponent": "greg",
+     "opponent_name": "GREG",
+     "points": 152.76,
+     "opp_points": 139.42,
      "result": "W",
      "high_score": false
     }
@@ -2636,7 +2660,7 @@
   {
    "opponent": "greg",
    "opponent_name": "GREG",
-   "wins": 13,
+   "wins": 14,
    "losses": 8,
    "ties": 0
   },

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T16:40:36Z",
+ "updated": "2026-11-17T12:00:48Z",
  "through": {
   "season": 2026,
-  "week": 9
+  "week": 10
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/3",
  "season": {
   "season": 2026,
-  "weeks_played": 9,
+  "weeks_played": 10,
   "standing": 4,
-  "wins": 5,
+  "wins": 6,
   "losses": 4,
   "ties": 0,
-  "avg": 135.1,
-  "avg_against": 125.69,
+  "avg": 135.14,
+  "avg_against": 122.13,
   "high_scores": 2,
-  "streak": "W2",
+  "streak": "W3",
   "high": {
    "value": 184.0,
    "season": 2026,
@@ -206,11 +206,18 @@
     "points": 140.16,
     "opp_points": 111.8,
     "opponent_name": "GRAHAM"
+   },
+   {
+    "week": 10,
+    "result": "W",
+    "points": 135.48,
+    "opp_points": 90.12,
+    "opponent_name": "ANTHONY"
    }
   ],
   "ranks": {
    "avg": "2",
-   "avg_against": "2",
+   "avg_against": "3",
    "high_scores": "T-1",
    "dots": "1",
    "high": "1",
@@ -219,10 +226,10 @@
   }
  },
  "career": {
-  "wins": 93,
+  "wins": 94,
   "losses": 75,
   "ties": 0,
-  "win_pct": 0.554,
+  "win_pct": 0.556,
   "high_scores": 18,
   "weeks_first": 21,
   "blowout": {
@@ -233,8 +240,8 @@
    "opponent_name": "SCARPITTI"
   },
   "earnings": -295.0,
-  "avg": 120.4,
-  "avg_against": 117.43,
+  "avg": 120.52,
+  "avg_against": 117.22,
   "high": {
    "value": 184.0,
    "season": 2026,
@@ -251,12 +258,12 @@
   },
   "ranks": {
    "win_pct": "2",
-   "high_scores": "T-3",
+   "high_scores": "T-4",
    "weeks_first": "T-3",
    "blowout": "9",
    "earnings": "5",
    "avg": "3",
-   "avg_against": "5",
+   "avg_against": "6",
    "high": "3",
    "low": "10"
   }
@@ -265,12 +272,12 @@
   {
    "season": 2026,
    "team_name": "Brian the MG",
-   "wins": 5,
+   "wins": 6,
    "losses": 4,
    "ties": 0,
    "playoffs": false,
-   "avg": 135.1,
-   "avg_against": 125.69,
+   "avg": 135.14,
+   "avg_against": 122.13,
    "finish": 4,
    "in_progress": true,
    "games": [
@@ -361,6 +368,16 @@
      "opponent_name": "GRAHAM",
      "points": 140.16,
      "opp_points": 111.8,
+     "result": "W",
+     "high_score": false
+    },
+    {
+     "week": 10,
+     "type": "regular",
+     "opponent": "anthony",
+     "opponent_name": "ANTHONY",
+     "points": 135.48,
+     "opp_points": 90.12,
      "result": "W",
      "high_score": false
     }
@@ -2419,7 +2436,7 @@
   {
    "opponent": "anthony",
    "opponent_name": "ANTHONY",
-   "wins": 7,
+   "wins": 8,
    "losses": 11,
    "ties": 0
   }

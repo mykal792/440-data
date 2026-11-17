@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T16:40:36Z",
+ "updated": "2026-11-17T12:00:48Z",
  "through": {
   "season": 2026,
-  "week": 9
+  "week": 10
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/4",
  "season": {
   "season": 2026,
-  "weeks_played": 9,
+  "weeks_played": 10,
   "standing": 7,
   "wins": 4,
-  "losses": 5,
+  "losses": 6,
   "ties": 0,
-  "avg": 115.43,
-  "avg_against": 121.74,
+  "avg": 117.83,
+  "avg_against": 124.84,
   "high_scores": 0,
-  "streak": "W1",
+  "streak": "L1",
   "high": {
    "value": 144.38,
    "season": 2026,
@@ -48,10 +48,10 @@
    "opponent": "gangus",
    "opponent_name": "GANGUS"
   },
-  "dots": 1,
-  "bank": 30,
+  "dots": 2,
+  "bank": 35,
   "dots_by_pos": {
-   "QB": 0,
+   "QB": 1,
    "RB": 0,
    "WR": 1,
    "TE": 0
@@ -69,6 +69,13 @@
     "type": "dot",
     "pos": "WR",
     "label": "Dot Pot - WR",
+    "amount": 5
+   },
+   {
+    "week": 10,
+    "type": "dot",
+    "pos": "QB",
+    "label": "Dot Pot - QB",
     "amount": 5
    }
   ],
@@ -136,23 +143,30 @@
     "points": 115.28,
     "opp_points": 74.98,
     "opponent_name": "COYNE"
+   },
+   {
+    "week": 10,
+    "result": "L",
+    "points": 139.42,
+    "opp_points": 152.76,
+    "opponent_name": "SCHILLING"
    }
   ],
   "ranks": {
    "avg": "7",
-   "avg_against": "3",
+   "avg_against": "2",
    "high_scores": "T-6",
-   "dots": "T-8",
+   "dots": "T-5",
    "high": "7",
    "low": "4",
-   "bank": "7"
+   "bank": "T-6"
   }
  },
  "career": {
   "wins": 98,
-  "losses": 98,
+  "losses": 99,
   "ties": 0,
-  "win_pct": 0.5,
+  "win_pct": 0.497,
   "high_scores": 25,
   "weeks_first": 10,
   "blowout": {
@@ -162,9 +176,9 @@
    "opponent": "scarpitti",
    "opponent_name": "SCARPITTI"
   },
-  "earnings": 434.0,
-  "avg": 120.87,
-  "avg_against": 117.84,
+  "earnings": 439.0,
+  "avg": 121.02,
+  "avg_against": 118.12,
   "high": {
    "value": 185.94,
    "season": 2018,
@@ -196,11 +210,11 @@
    "season": 2026,
    "team_name": "Deer Hunter",
    "wins": 4,
-   "losses": 5,
+   "losses": 6,
    "ties": 0,
    "playoffs": false,
-   "avg": 115.43,
-   "avg_against": 121.74,
+   "avg": 117.83,
+   "avg_against": 124.84,
    "finish": 7,
    "in_progress": true,
    "games": [
@@ -292,6 +306,16 @@
      "points": 115.28,
      "opp_points": 74.98,
      "result": "W",
+     "high_score": false
+    },
+    {
+     "week": 10,
+     "type": "regular",
+     "opponent": "schilling",
+     "opponent_name": "SCHILLING",
+     "points": 139.42,
+     "opp_points": 152.76,
+     "result": "L",
      "high_score": false
     }
    ]
@@ -2602,7 +2626,7 @@
    "opponent": "schilling",
    "opponent_name": "SCHILLING",
    "wins": 8,
-   "losses": 13,
+   "losses": 14,
    "ties": 0
   },
   {

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T16:40:36Z",
+ "updated": "2026-11-17T12:00:48Z",
  "through": {
   "season": 2026,
-  "week": 9
+  "week": 10
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/6",
  "season": {
   "season": 2026,
-  "weeks_played": 9,
-  "standing": 5,
+  "weeks_played": 10,
+  "standing": 6,
   "wins": 5,
-  "losses": 4,
+  "losses": 5,
   "ties": 0,
-  "avg": 124.57,
-  "avg_against": 114.94,
+  "avg": 123.94,
+  "avg_against": 115.29,
   "high_scores": 2,
-  "streak": "W1",
+  "streak": "L1",
   "high": {
    "value": 151.68,
    "season": 2026,
@@ -49,7 +49,7 @@
    "opponent_name": "SCARPITTI"
   },
   "dots": 6,
-  "bank": 135,
+  "bank": 160,
   "dots_by_pos": {
    "QB": 1,
    "RB": 0,
@@ -133,6 +133,13 @@
     "pos": null,
     "label": "High Score",
     "amount": 15
+   },
+   {
+    "week": 10,
+    "type": "category",
+    "pos": null,
+    "label": "Bad Beat",
+    "amount": 25
    }
   ],
   "regular_weeks": 15,
@@ -199,23 +206,30 @@
     "points": 144.68,
     "opp_points": 94.56,
     "opponent_name": "SCARPITTI"
+   },
+   {
+    "week": 10,
+    "result": "L",
+    "points": 118.3,
+    "opp_points": 118.42,
+    "opponent_name": "GRAHAM"
    }
   ],
   "ranks": {
-   "avg": "3",
-   "avg_against": "7",
+   "avg": "4",
+   "avg_against": "9",
    "high_scores": "T-1",
-   "dots": "T-2",
-   "high": "4",
+   "dots": "T-3",
+   "high": "5",
    "low": "7",
    "bank": "1"
   }
  },
  "career": {
   "wins": 91,
-  "losses": 105,
+  "losses": 106,
   "ties": 0,
-  "win_pct": 0.464,
+  "win_pct": 0.462,
   "high_scores": 15,
   "weeks_first": 18,
   "blowout": {
@@ -225,9 +239,9 @@
    "opponent": "garrett",
    "opponent_name": "GARRETT"
   },
-  "earnings": -244.5,
+  "earnings": -219.5,
   "avg": 118.63,
-  "avg_against": 115.73,
+  "avg_against": 115.76,
   "high": {
    "value": 182.5,
    "season": 2020,
@@ -259,12 +273,12 @@
    "season": 2026,
    "team_name": "Gangus",
    "wins": 5,
-   "losses": 4,
+   "losses": 5,
    "ties": 0,
    "playoffs": false,
-   "avg": 124.57,
-   "avg_against": 114.94,
-   "finish": 5,
+   "avg": 123.94,
+   "avg_against": 115.29,
+   "finish": 6,
    "in_progress": true,
    "games": [
     {
@@ -356,6 +370,16 @@
      "opp_points": 94.56,
      "result": "W",
      "high_score": true
+    },
+    {
+     "week": 10,
+     "type": "regular",
+     "opponent": "graham",
+     "opponent_name": "GRAHAM",
+     "points": 118.3,
+     "opp_points": 118.42,
+     "result": "L",
+     "high_score": false
     }
    ]
   },
@@ -2640,7 +2664,7 @@
    "opponent": "graham",
    "opponent_name": "GRAHAM",
    "wins": 9,
-   "losses": 9,
+   "losses": 10,
    "ties": 0
   },
   {
@@ -2689,9 +2713,9 @@
   }
  ],
  "bonus": {
-  "weekly_category": 13,
+  "weekly_category": 14,
   "ranks": {
-   "weekly_category": "T-6"
+   "weekly_category": "T-4"
   }
  }
 }

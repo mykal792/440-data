@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T16:40:36Z",
+ "updated": "2026-11-17T12:00:48Z",
  "through": {
   "season": 2026,
-  "week": 9
+  "week": 10
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/9",
  "season": {
   "season": 2026,
-  "weeks_played": 9,
+  "weeks_played": 10,
   "standing": 9,
   "wins": 3,
-  "losses": 6,
+  "losses": 7,
   "ties": 0,
-  "avg": 102.12,
-  "avg_against": 114.34,
+  "avg": 102.64,
+  "avg_against": 118.72,
   "high_scores": 0,
-  "streak": "W1",
+  "streak": "L1",
   "high": {
    "value": 124.6,
    "season": 2026,
@@ -129,13 +129,20 @@
     "points": 103.32,
     "opp_points": 97.4,
     "opponent_name": "GARRETT"
+   },
+   {
+    "week": 10,
+    "result": "L",
+    "points": 107.36,
+    "opp_points": 158.14,
+    "opponent_name": "SCARPITTI"
    }
   ],
   "ranks": {
    "avg": "10",
-   "avg_against": "8",
+   "avg_against": "5",
    "high_scores": "T-6",
-   "dots": "T-8",
+   "dots": "T-9",
    "high": "10",
    "low": "6",
    "bank": "T-9"
@@ -143,9 +150,9 @@
  },
  "career": {
   "wins": 65,
-  "losses": 61,
+  "losses": 62,
   "ties": 0,
-  "win_pct": 0.516,
+  "win_pct": 0.512,
   "high_scores": 13,
   "weeks_first": 6,
   "blowout": {
@@ -156,8 +163,8 @@
    "opponent_name": "ANTHONY"
   },
   "earnings": -368.5,
-  "avg": 117.77,
-  "avg_against": 116.81,
+  "avg": 117.69,
+  "avg_against": 117.14,
   "high": {
    "value": 182.12,
    "season": 2020,
@@ -189,11 +196,11 @@
    "season": 2026,
    "team_name": "Reagan's Raiders",
    "wins": 3,
-   "losses": 6,
+   "losses": 7,
    "ties": 0,
    "playoffs": false,
-   "avg": 102.12,
-   "avg_against": 114.34,
+   "avg": 102.64,
+   "avg_against": 118.72,
    "finish": 9,
    "in_progress": true,
    "games": [
@@ -285,6 +292,16 @@
      "points": 103.32,
      "opp_points": 97.4,
      "result": "W",
+     "high_score": false
+    },
+    {
+     "week": 10,
+     "type": "regular",
+     "opponent": "scarpitti",
+     "opponent_name": "SCARPITTI",
+     "points": 107.36,
+     "opp_points": 158.14,
+     "result": "L",
      "high_score": false
     }
    ]
@@ -1791,7 +1808,7 @@
    "opponent": "scarpitti",
    "opponent_name": "SCARPITTI",
    "wins": 10,
-   "losses": 7,
+   "losses": 8,
    "ties": 0
   },
   {

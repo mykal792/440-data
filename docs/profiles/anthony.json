@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T16:40:36Z",
+ "updated": "2026-11-17T12:00:48Z",
  "through": {
   "season": 2026,
-  "week": 9
+  "week": 10
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/10",
  "season": {
   "season": 2026,
-  "weeks_played": 9,
+  "weeks_played": 10,
   "standing": 8,
   "wins": 3,
-  "losses": 6,
+  "losses": 7,
   "ties": 0,
-  "avg": 106.59,
-  "avg_against": 114.09,
+  "avg": 104.94,
+  "avg_against": 116.23,
   "high_scores": 0,
-  "streak": "L1",
+  "streak": "L2",
   "high": {
    "value": 137.46,
    "season": 2026,
@@ -143,23 +143,30 @@
     "points": 137.46,
     "opp_points": 143.84,
     "opponent_name": "SCHILLING"
+   },
+   {
+    "week": 10,
+    "result": "L",
+    "points": 90.12,
+    "opp_points": 135.48,
+    "opponent_name": "HAYDEN"
    }
   ],
   "ranks": {
    "avg": "9",
-   "avg_against": "9",
+   "avg_against": "7",
    "high_scores": "T-6",
    "dots": "T-5",
    "high": "9",
    "low": "T-2",
-   "bank": "6"
+   "bank": "T-6"
   }
  },
  "career": {
   "wins": 105,
-  "losses": 91,
+  "losses": 92,
   "ties": 0,
-  "win_pct": 0.536,
+  "win_pct": 0.533,
   "high_scores": 15,
   "weeks_first": 15,
   "blowout": {
@@ -170,8 +177,8 @@
    "opponent_name": "HAYDEN"
   },
   "earnings": -79.0,
-  "avg": 115.52,
-  "avg_against": 117.74,
+  "avg": 115.32,
+  "avg_against": 117.88,
   "high": {
    "value": 173.48,
    "season": 2025,
@@ -203,11 +210,11 @@
    "season": 2026,
    "team_name": "OTPHJ",
    "wins": 3,
-   "losses": 6,
+   "losses": 7,
    "ties": 0,
    "playoffs": false,
-   "avg": 106.59,
-   "avg_against": 114.09,
+   "avg": 104.94,
+   "avg_against": 116.23,
    "finish": 8,
    "in_progress": true,
    "games": [
@@ -298,6 +305,16 @@
      "opponent_name": "SCHILLING",
      "points": 137.46,
      "opp_points": 143.84,
+     "result": "L",
+     "high_score": false
+    },
+    {
+     "week": 10,
+     "type": "regular",
+     "opponent": "hayden",
+     "opponent_name": "HAYDEN",
+     "points": 90.12,
+     "opp_points": 135.48,
      "result": "L",
      "high_score": false
     }
@@ -2621,7 +2638,7 @@
    "opponent": "hayden",
    "opponent_name": "HAYDEN",
    "wins": 11,
-   "losses": 7,
+   "losses": 8,
    "ties": 0
   },
   {
@@ -2693,7 +2710,7 @@
  "bonus": {
   "weekly_category": 13,
   "ranks": {
-   "weekly_category": "T-6"
+   "weekly_category": "7"
   }
  }
 }

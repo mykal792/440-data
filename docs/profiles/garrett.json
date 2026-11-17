@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-16T16:40:36Z",
+ "updated": "2026-11-17T12:00:48Z",
  "through": {
   "season": 2026,
-  "week": 9
+  "week": 10
  },
  "rules": {
   "ppr_from": 2018
@@ -25,21 +25,21 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/2",
  "season": {
   "season": 2026,
-  "weeks_played": 9,
-  "standing": 3,
-  "wins": 6,
+  "weeks_played": 10,
+  "standing": 2,
+  "wins": 7,
   "losses": 3,
   "ties": 0,
-  "avg": 118.89,
-  "avg_against": 117.23,
-  "high_scores": 1,
-  "streak": "L1",
+  "avg": 123.43,
+  "avg_against": 117.04,
+  "high_scores": 2,
+  "streak": "W1",
   "high": {
-   "value": 156.0,
+   "value": 164.22,
    "season": 2026,
-   "week": 8,
-   "opponent": "greg",
-   "opponent_name": "GREG"
+   "week": 10,
+   "opponent": "coyne",
+   "opponent_name": "COYNE"
   },
   "low": {
    "value": 75.82,
@@ -49,7 +49,7 @@
    "opponent_name": "SCARPITTI"
   },
   "dots": 2,
-  "bank": 100,
+  "bank": 115,
   "dots_by_pos": {
    "QB": 0,
    "RB": 2,
@@ -94,6 +94,13 @@
    },
    {
     "week": 8,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
+   },
+   {
+    "week": 10,
     "type": "high",
     "pos": null,
     "label": "High Score",
@@ -164,12 +171,19 @@
     "points": 97.4,
     "opp_points": 103.32,
     "opponent_name": "SCOTTY"
+   },
+   {
+    "week": 10,
+    "result": "W",
+    "points": 164.22,
+    "opp_points": 115.36,
+    "opponent_name": "COYNE"
    }
   ],
   "ranks": {
-   "avg": "6",
-   "avg_against": "4",
-   "high_scores": "5",
+   "avg": "5",
+   "avg_against": "6",
+   "high_scores": "T-1",
    "dots": "T-5",
    "high": "3",
    "low": "T-2",
@@ -177,11 +191,11 @@
   }
  },
  "career": {
-  "wins": 94,
+  "wins": 95,
   "losses": 102,
   "ties": 0,
-  "win_pct": 0.48,
-  "high_scores": 18,
+  "win_pct": 0.482,
+  "high_scores": 19,
   "weeks_first": 8,
   "blowout": {
    "value": 84.02,
@@ -190,9 +204,9 @@
    "opponent": "scotty",
    "opponent_name": "SCOTTY"
   },
-  "earnings": -346.0,
-  "avg": 115.87,
-  "avg_against": 118.21,
+  "earnings": -331.0,
+  "avg": 116.25,
+  "avg_against": 118.19,
   "high": {
    "value": 181.5,
    "season": 2019,
@@ -209,7 +223,7 @@
   },
   "ranks": {
    "win_pct": "7",
-   "high_scores": "T-3",
+   "high_scores": "3",
    "weeks_first": "8",
    "blowout": "8",
    "earnings": "6",
@@ -223,13 +237,13 @@
   {
    "season": 2026,
    "team_name": "Anderton's Revenge",
-   "wins": 6,
+   "wins": 7,
    "losses": 3,
    "ties": 0,
    "playoffs": false,
-   "avg": 118.89,
-   "avg_against": 117.23,
-   "finish": 3,
+   "avg": 123.43,
+   "avg_against": 117.04,
+   "finish": 2,
    "in_progress": true,
    "games": [
     {
@@ -321,6 +335,16 @@
      "opp_points": 103.32,
      "result": "L",
      "high_score": false
+    },
+    {
+     "week": 10,
+     "type": "regular",
+     "opponent": "coyne",
+     "opponent_name": "COYNE",
+     "points": 164.22,
+     "opp_points": 115.36,
+     "result": "W",
+     "high_score": true
     }
    ]
   },
@@ -2672,7 +2696,7 @@
   {
    "opponent": "coyne",
    "opponent_name": "COYNE",
-   "wins": 12,
+   "wins": 13,
    "losses": 14,
    "ties": 0
   },

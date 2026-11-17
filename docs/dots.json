@@ -1,16 +1,16 @@
 {
   "season": 2026,
-  "updated": "2026-11-17T06:55:15Z",
+  "updated": "2026-11-17T12:00:31Z",
   "pot": {
     "total": 300,
     "dot_value": 5,
-    "paid_out": 180,
-    "remaining": 120
+    "paid_out": 200,
+    "remaining": 100
   },
   "totals": {
     "schilling": {
       "QB": 2,
-      "RB": 0,
+      "RB": 1,
       "WR": 3,
       "TE": 0
     },
@@ -27,7 +27,7 @@
       "TE": 4
     },
     "greg": {
-      "QB": 0,
+      "QB": 1,
       "RB": 0,
       "WR": 1,
       "TE": 0
@@ -35,8 +35,8 @@
     "scarpitti": {
       "QB": 2,
       "RB": 1,
-      "WR": 3,
-      "TE": 0
+      "WR": 4,
+      "TE": 1
     },
     "gangus": {
       "QB": 1,
@@ -436,6 +436,47 @@
           ],
           "value": "20.80",
           "detail": "Brock Bowers"
+        }
+      }
+    },
+    {
+      "week": 10,
+      "positions": {
+        "QB": {
+          "manager": "greg",
+          "manager_display": "GREG",
+          "managers": [
+            "GREG"
+          ],
+          "value": "47.42",
+          "detail": "Patrick Mahomes"
+        },
+        "RB": {
+          "manager": "schilling",
+          "manager_display": "SCHILLING",
+          "managers": [
+            "SCHILLING"
+          ],
+          "value": "46.30",
+          "detail": "Christian McCaffrey"
+        },
+        "WR": {
+          "manager": "scarpitti",
+          "manager_display": "SCARPITTI",
+          "managers": [
+            "SCARPITTI"
+          ],
+          "value": "40.00",
+          "detail": "George Pickens"
+        },
+        "TE": {
+          "manager": "scarpitti",
+          "manager_display": "SCARPITTI",
+          "managers": [
+            "SCARPITTI"
+          ],
+          "value": "10.40",
+          "detail": "George Kittle"
         }
       }
     }
