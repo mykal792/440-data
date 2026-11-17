@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-17T01:15:24Z",
+  "updated": "2026-11-17T01:20:23Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 110.58,
+        "score": 110.38,
         "projected": 121.8
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 155.14,
+        "score": 165.14,
         "projected": 127.16
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "20.46",
+          "value": "20.26",
           "detail": "losing to HAYDEN"
         }
       ]
@@ -113,17 +113,17 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "164.22",
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "165.14",
           "detail": "All played"
         },
         {
           "rank": 2,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "155.14",
-          "detail": "1 to play"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "164.22",
+          "detail": "All played"
         },
         {
           "rank": 3,
@@ -1120,6 +1120,15 @@
       ]
     },
     {
+      "name": "Ravens",
+      "position": "DEF",
+      "team": "Bal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Matthew Golden",
       "position": "WR",
       "team": "GB",
@@ -1770,17 +1779,13 @@
       "team": "Bal",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ravens",
-      "position": "DEF",
-      "team": "Bal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
+      "points": -0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -2
+        }
+      ]
     }
   ]
 }
