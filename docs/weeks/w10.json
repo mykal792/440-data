@@ -1,7 +1,7 @@
 {
   "week": 10,
   "status": "live",
-  "updated": "2026-11-17T01:25:21Z",
+  "updated": "2026-11-17T01:30:29Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 110.38,
+        "score": 111.28,
         "projected": 121.8
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "20.26",
+          "value": "21.16",
           "detail": "losing to HAYDEN"
         }
       ]
@@ -1765,6 +1765,24 @@
       ]
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 2
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -1772,20 +1790,6 @@
       "manager_display": "HAYDEN",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": -0.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -2
-        }
-      ]
     }
   ]
 }
