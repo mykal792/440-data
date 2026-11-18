@@ -93,7 +93,8 @@ def bonuses_from_ledger(meta, ledger_path=None):
 
     for a in awards:
         out[a["manager"]].append({"type": "award", "label": a["label"],
-                                  "short": a["short"], "amount": a["amount"]})
+                                  "short": a["short"], "amount": a["amount"],
+                                  "kind": a.get("kind"), "place": a.get("place")})
 
     for v in out.values():
         v.sort(key=lambda b: (b.get("week") or 99, b["type"]))

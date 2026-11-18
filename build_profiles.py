@@ -49,6 +49,7 @@ REPO = yc.REPO
 HISTORY = REPO / "docs" / "history"
 OUT_DIR = REPO / "docs" / "profiles"
 BASELINE = REPO / "profile-baseline.json"
+PRIZES = REPO / "prize-history.json"     # hand-owned money 2013-2025
 PPR_FROM = 2018
 
 CURRENT = list(yc.MANAGER_KEYS)
@@ -139,6 +140,15 @@ def streak(rows):
 
 # --- main build ----------------------------------------------------------------
 
+def award_group(b):
+    """Which bank category a ledger award belongs to, from its kind or label."""
+    t = ("%s %s %s" % (b.get("kind") or "", b.get("label") or "", b.get("short") or "")).lower()
+    if "squid" in t: return "squid_game"
+    if "thanksgiving" in t: return "thanksgiving"
+    if "draft" in t or "dk" in t.split(): return "draftkings"
+    return "playoffs"
+
+
 def build():
     games = load(HISTORY / "matchups.json")["games"]
     seasons = {s["season"]: s for s in load(HISTORY / "seasons.json")["seasons"]}
@@ -148,6 +158,27 @@ def build():
 
     this_season = max(seasons)
     regular = [g for g in games if g["type"] == "regular"]
+
+    # ---- this season's money, all automatic --------------------------------
+    # Weekly bonus, high score and Dot Pot come from bank-ledger.json, which
+    # settle_week.py fills every Tuesday. Squid Game, DraftKings and
+    # Thanksgiving winners are the ledger's "awards". Playoff payouts are added
+    # here from Yahoo's final standings once the season is over, unless the
+    # ledger already has them. Waiver tax comes from the DraftKings feed.
+    live_bonuses = {m: list(v) for m, v in season_feed.get("bonuses", {}).items()}
+    cur = seasons[this_season]
+    payout = baseline.get("playoff_payouts", {"1": 500, "2": 300, "3": 200})
+    if cur.get("finished"):
+        for t in cur["teams"]:
+            amt = payout.get(str(t.get("final_rank")))
+            rows = live_bonuses.setdefault(t["manager"], [])
+            if amt and not any(award_group(b) == "playoffs" for b in rows if b.get("type") == "award"):
+                rows.append({"type": "playoff", "label": "Playoffs - %s place" % t["final_rank"], "amount": amt})
+    dk_feed = load(REPO / "docs" / "dk.json", {})
+    tax_now = defaultdict(float)
+    if dk_feed.get("season", this_season) == this_season:
+        for r in dk_feed.get("managers", []):
+            tax_now[r["name"].lower()] = round(r.get("moves", 0) * dk_feed.get("tax_per_move", 0.5), 2)
     playoff = [g for g in games if g["type"] == "playoff"]
 
     # weekly top score, regular season
@@ -158,8 +189,81 @@ def build():
 
     first = weeks_at_first(regular, seasons)
 
+    # Per-season numbers for every team that season (former managers too), so
+    # the season history can rank a year's average, high and low among that
+    # year's ten teams.
+    season_stat = defaultdict(dict)
+    for g, me, opp in sides(regular):
+        d = season_stat[g["season"]].setdefault(me["manager"], {"pf": [], "pa": [], "hi": None, "lo": None})
+        d["pf"].append(me["points"]); d["pa"].append(opp["points"])
+        if d["hi"] is None or me["points"] > d["hi"][1]["points"]: d["hi"] = (g, me, opp)
+        if d["lo"] is None or me["points"] < d["lo"][1]["points"]: d["lo"] = (g, me, opp)
+    season_rank = {}
+    for season, teams in season_stat.items():
+        vals = {k: {"avg": sum(v["pf"]) / len(v["pf"]), "avg_against": sum(v["pa"]) / len(v["pa"]),
+                    "high": v["hi"][1]["points"], "low": v["lo"][1]["points"]} for k, v in teams.items()}
+        season_rank[season] = {
+            f: rank_all({k: v[f] for k, v in vals.items()}, lowest_first=(f == "low"))
+            for f in ("avg", "avg_against", "high", "low")}
+
+    # past seasons' money (prize-history.json): buy-in, each prize, bank rank
+    prize_hist = load(PRIZES, {})
+    PTYPE = {"weekly_bonus": "category", "high_score": "high", "playoff": "playoff",
+             "squid_game": "squid", "draftkings": "dk", "thanksgiving": "thanksgiving"}
+    past_prizes = defaultdict(list)
+    for r in prize_hist.get("prizes", []):
+        past_prizes[(r["year"], r["winner"])].append({
+            "week": r.get("week"), "type": PTYPE.get(r["type"], r["type"]),
+            "label": r.get("label"), "key": r.get("key"), "icon": r.get("icon"),
+            "amount": r["amount"]})
+    past_buy = {int(y): v for y, v in prize_hist.get("buy_in", {}).items()}
+    past_bank_rank = {
+        y: rank_all({m: round(sum(q["amount"] for q in past_prizes[(y, m)]), 2) for m in teams})
+        for y, teams in past_buy.items()}
+
+    BANK_GROUP = {"category": "weekly_bonus", "high": "high_score", "playoff": "playoffs",
+                  "squid": "squid_game", "dk": "draftkings", "thanksgiving": "draftkings",
+                  "dot": "dot_pot"}
+
+    def career_bank(m):
+        won = {k: 0.0 for k in ("weekly_bonus", "high_score", "squid_game", "draftkings", "dot_pot", "playoffs")}
+        rows = [q for (y, who), qs in past_prizes.items() if who == m for q in qs]
+        rows += live_bonuses.get(m, []) if this_season > max([y for (y, _), qs in past_prizes.items() if qs] or [0]) else []
+        for q in rows:
+            k = BANK_GROUP.get(q.get("type")) if q.get("type") != "award" else \
+                {"thanksgiving": "draftkings"}.get(award_group(q), award_group(q))
+            if k: won[k] += q.get("amount", 0)
+        won = {k: round(v, 2) for k, v in won.items()}
+        return {"total": round(sum(won.values()), 2), "won": won,
+                "since": min([y for (y, who) in past_prizes if who == m] or [this_season])}
+
+    # career bonus stats: weekly category wins by category, Squid Game and
+    # DraftKings titles, Dot Pot dots by position
+    cat_week = {c["week"]: c["key"] for c in load(REPO / "bonus-categories.json", {}).get("categories", [])}
+
+    def career_bonus(m):
+        wins, names, squid, dk = defaultdict(int), {}, [], []
+        for (y, who), qs in past_prizes.items():
+            if who != m: continue
+            for q in qs:
+                if q["type"] == "category" and q.get("key"):
+                    wins[q["key"]] += 1; names[q["key"]] = q["label"]
+                elif q["type"] == "squid": squid.append(y)
+                elif q["type"] == "dk": dk.append(y)
+        if this_season > max([y for (y, _), qs in past_prizes.items() if qs] or [0]):
+            for b in live_bonuses.get(m, []):
+                if b.get("type") == "category" and cat_week.get(b.get("week")):
+                    wins[cat_week[b["week"]]] += 1
+                elif b.get("type") == "award" and award_group(b) == "squid_game": squid.append(this_season)
+                elif b.get("type") == "award" and award_group(b) == "draftkings": dk.append(this_season)
+        dots = {pos: (dots_feed.get("totals", {}).get(m) or {}).get(pos, 0) for pos in ("QB", "RB", "WR", "TE")}
+        return {"weekly": dict(wins), "weekly_total": sum(wins.values()),
+                "retired_names": {k: v for k, v in names.items() if k not in cat_week.values()},
+                "squid": sorted(squid), "draftkings": sorted(dk),
+                "dots": dots, "dots_total": sum(dots.values()), "dots_since": 2026}
+
     # this season's money and dots
-    bonuses = season_feed.get("bonuses", {})
+    bonuses = live_bonuses
     bank_now = {m: round(sum(b.get("amount", 0) for b in bonuses.get(m, [])), 2)
                 for m in CURRENT}
     category_now = {m: sum(1 for b in bonuses.get(m, []) if b.get("type") == "category")
@@ -182,10 +286,11 @@ def build():
         hi = max(mine, key=lambda x: x[1]["points"])
         lo = min(ppr, key=lambda x: x[1]["points"]) if ppr else None
         blow = max(mine, key=lambda x: x[1]["points"] - x[2]["points"])
+        both = max(mine, key=lambda x: x[1]["points"] + x[2]["points"])
 
         earnings = baseline.get("earnings", {}).get(m)
         if earnings is not None and add_current:
-            earnings = round(earnings + bank_now[m] - dues, 2)
+            earnings = round(earnings + bank_now[m] - dues - tax_now[m], 2)
         category = baseline.get("weekly_category", {}).get(m)
         if category is not None and add_current:
             category += category_now[m]
@@ -198,6 +303,12 @@ def build():
             "weeks_first": first.get(m, 0),
             "blowout": ref(*blow, value=blow[1]["points"] - blow[2]["points"]),
             "earnings": earnings,
+            # highest combined score (both teams) in one regular-season game
+            "combined": dict(ref(*both, value=both[1]["points"] + both[2]["points"]),
+                             points=both[1]["points"], opp_points=both[2]["points"]),
+            # every dollar won, 2013 to now, by where it came from (no buy-ins)
+            "bank": career_bank(m),
+            "bonus": career_bonus(m),
             "avg": round(sum(me["points"] for _, me, _ in ppr) / len(ppr), 2) if ppr else None,
             "avg_against": round(sum(o["points"] for _, _, o in ppr) / len(ppr), 2) if ppr else None,
             "high": ref(*hi),
@@ -224,6 +335,7 @@ def build():
             "low": ref(*min(now_rows, key=lambda x: x[1]["points"])) if now_rows else None,
             "dots": dots_now[m],
             "bank": bank_now[m],
+            "buy_in": baseline.get("season_dues"),
             # for the 2026 section's graphics
             "dots_by_pos": {pos: (dots_feed.get("totals", {}).get(m) or {}).get(pos, 0)
                             for pos in ("QB", "RB", "WR", "TE")},
@@ -260,6 +372,18 @@ def build():
                 "avg_against": round(sum(o["points"] for _, _, o in reg) / len(reg), 2) if reg else None,
                 "finish": team["final_rank"],
                 "in_progress": not seasons[season]["finished"],
+                "champion": seasons[season]["finished"] and team["final_rank"] == 1,
+                "high": ref(*season_stat[season][m]["hi"]) if m in season_stat.get(season, {}) else None,
+                "low": ref(*season_stat[season][m]["lo"]) if m in season_stat.get(season, {}) else None,
+                "ranks": dict({f: season_rank.get(season, {}).get(f, {}).get(m)
+                               for f in ("avg", "avg_against", "high", "low")},
+                              **({"bank": past_bank_rank[season].get(m)} if season in past_buy else {})),
+                **({"buy_in": round(past_buy[season][m]["dues"] + past_buy[season][m]["tax"], 2),
+                    "dues": past_buy[season][m]["dues"], "waiver_tax": past_buy[season][m]["tax"],
+                    "bank": round(sum(q["amount"] for q in past_prizes[(season, m)]), 2),
+                    "bonuses": sorted(past_prizes[(season, m)],
+                                      key=lambda q: (q["week"] or 99, q["type"]))}
+                   if m in past_buy.get(season, {}) else {}),
                 "games": [{"week": g["week"], "type": g["type"],
                            "opponent": o["manager"], "opponent_name": name_of(o["manager"]),
                            "points": me["points"], "opp_points": o["points"],
@@ -289,11 +413,40 @@ def build():
         }
 
         # versus - every game type
-        vs = defaultdict(lambda: {"wins": 0, "losses": 0, "ties": 0})
+        vs = defaultdict(lambda: {"wins": 0, "losses": 0, "ties": 0, "games": []})
         for g, me, o in sides(games):
             if me["manager"] == m:
                 r = result(me, o)
                 vs[o["manager"]][{"W": "wins", "L": "losses", "T": "ties"}[r]] += 1
+                fr = {t["manager"]: t.get("final_rank") for t in seasons[g["season"]]["teams"]}
+                last_po = max((x["week"] for x in games if x["season"] == g["season"] and x["type"] == "playoff"), default=None)
+                champ = (g["type"] == "playoff" and g["week"] == last_po and seasons[g["season"]].get("finished")
+                         and {fr.get(me["manager"]), fr.get(o["manager"])} == {1, 2})
+                vs[o["manager"]]["games"].append({
+                    "season": g["season"], "week": g["week"], "type": g["type"], "result": r,
+                    "champ": bool(champ),
+                    "points": round(me["points"], 2), "opp_points": round(o["points"], 2)})
+        for k, v in vs.items():
+            # head-to-head totals for the Versus block, newest game first
+            gl = sorted(v["games"], key=lambda x: (x["season"], x["week"]), reverse=True)
+            n = len(gl) or 1
+            pf, pa = sum(x["points"] for x in gl), sum(x["opp_points"] for x in gl)
+            v["games"] = gl
+            v["points_for"], v["points_against"] = round(pf, 2), round(pa, 2)
+            v["avg_for"], v["avg_against"] = round(pf / n, 2), round(pa / n, 2)
+            v["diff"] = round(pf - pa, 2)
+            wins = [x for x in gl if x["result"] == "W"]
+            losses = [x for x in gl if x["result"] == "L"]
+            margin = lambda x: x["points"] - x["opp_points"]
+            v["biggest_win"] = max(wins, key=margin) if wins else None
+            v["worst_loss"] = min(losses, key=margin) if losses else None
+            v["closest"] = min(gl, key=lambda x: abs(margin(x))) if gl else None
+            v["high"] = max(gl, key=lambda x: x["points"]) if gl else None
+            st = 0
+            for x in gl:
+                if not st or (x["result"] == gl[0]["result"]): st += 1
+                if x["result"] != gl[0]["result"]: break
+            v["streak"] = (gl[0]["result"] + str(st)) if gl else None
         versus = [dict(opponent=k, opponent_name=name_of(k), **v)
                   for k, v in vs.items() if k in CURRENT]
         versus.sort(key=lambda v: CURRENT.index(v["opponent"]))
@@ -321,6 +474,22 @@ def build():
     put("career", "weeks_first", lambda p: p["career"]["weeks_first"])
     put("career", "blowout", lambda p: p["career"]["blowout"]["value"])
     put("career", "earnings", lambda p: p["career"]["earnings"])
+    # profit = everything won minus every dollar paid in (dues + waiver tax)
+    for m in CURRENT:
+        c = P[m]["career"]
+        if c.get("earnings") is not None:
+            c["bank"]["net"] = c["earnings"]
+            c["bank"]["paid"] = round(c["bank"]["total"] - c["earnings"], 2)
+    put("career", "bank", lambda p: p["career"]["bank"].get("net"))
+    put("career", "bonus_weekly", lambda p: p["career"]["bonus"]["weekly_total"])
+    put("career", "bonus_dots", lambda p: p["career"]["bonus"]["dots_total"])
+    # combined score ranks the GAME among every regular-season game ever played
+    # (the league's Highest Combined Scores list), not among the ten players
+    all_combined = sorted((round(g["a"]["points"] + g["b"]["points"], 2) for g in regular), reverse=True)
+    for m in CURRENT:
+        v = P[m]["career"]["combined"]["value"]
+        better = sum(1 for o in all_combined if o > v)
+        P[m]["career"].setdefault("ranks", {})["combined"] = ("T-%d" if all_combined.count(v) > 1 else "%d") % (better + 1)
     put("career", "avg", lambda p: p["career"]["avg"])
     put("career", "avg_against", lambda p: p["career"]["avg_against"])
     put("career", "high", lambda p: p["career"]["high"]["value"])

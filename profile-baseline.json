@@ -1,18 +1,18 @@
 {
- "_note": "Hand-owned. Totals up to the END of through_season, copied from the stats spreadsheet (Career Stats 'Bank' column and the Bonus Wins tab). build_profiles.py adds the current season on top: this season's bank (from the ledger) for earnings, and this season's weekly category wins. season_dues is subtracted from earnings once, for the current season, so earnings stay a net balance like the spreadsheet. ONCE A YEAR, after the season's payouts are in the ledger: replace these numbers with the end-of-season totals and bump through_season.",
+ "_note": "Hand-owned. Totals up to the END of through_season, earnings from the corrected Finance tab's 2025 ending balance (2026-11-17), weekly category counts from the Bonus Wins tab. build_profiles.py adds the current season on top: this season's bank (from the ledger) for earnings, and this season's weekly category wins. season_dues is subtracted from earnings once, for the current season, so earnings stay a net balance like the spreadsheet. ONCE A YEAR, after the season's payouts are in the ledger: replace these numbers with the end-of-season totals and bump through_season.",
  "through_season": 2025,
  "season_dues": 210,
  "earnings": {
-  "schilling": 1694.0,
-  "hayden": -165.0,
-  "anthony": 96.0,
+  "schilling": 2285,
+  "hayden": -165,
+  "anthony": -54,
   "scotty": -163.5,
-  "coyne": -387.5,
-  "greg": 614.0,
-  "garrett": -236.0,
-  "gangus": -169.5,
-  "scarpitti": -425.0,
-  "graham": -766.0
+  "coyne": -437.5,
+  "greg": 465,
+  "garrett": -111,
+  "gangus": -245,
+  "scarpitti": -400,
+  "graham": -916
  },
  "weekly_category": {
   "scotty": 17,
@@ -25,5 +25,9 @@
   "graham": 11,
   "gangus": 10,
   "schilling": 10
+ },
+ "season_dues_breakdown": {
+  "_note": "2026 buy-in $210, from Michael",
+  "covers": "playoffs $500/$300/$200, 15 weekly bonuses x $25, 15 high scores x $15, Squid Game $100, Dot Pot $30 each ($5 a dot), Thanksgiving one-day DraftKings $10 each ($75 1st / $25 2nd). Waiver tax ($0.50 a move) is on top and funds the week-18 DraftKings prize."
  }
 }
