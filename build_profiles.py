@@ -422,9 +422,13 @@ def build():
                 last_po = max((x["week"] for x in games if x["season"] == g["season"] and x["type"] == "playoff"), default=None)
                 champ = (g["type"] == "playoff" and g["week"] == last_po and seasons[g["season"]].get("finished")
                          and {fr.get(me["manager"]), fr.get(o["manager"])} == {1, 2})
+                # 4-team bracket: first playoff week is the semifinal; the last
+                # week is the final (champ) or the 3rd place game
+                rnd = (("final" if champ else "third") if g["week"] == last_po else "semi") \
+                    if g["type"] == "playoff" else None
                 vs[o["manager"]]["games"].append({
                     "season": g["season"], "week": g["week"], "type": g["type"], "result": r,
-                    "champ": bool(champ),
+                    "champ": bool(champ), "round": rnd,
                     "points": round(me["points"], 2), "opp_points": round(o["points"], 2)})
         for k, v in vs.items():
             # head-to-head totals for the Versus block, newest game first
