@@ -1522,10 +1522,19 @@ function drawVersus(root, p, mobile){
 function draw(p){
   var root = document.getElementById("root");
   root.innerHTML = "";
-  if (block === "career") {
-    // Career Stats and Season History share one Wix block: the two panels
-    // stacked, with a gap between them in the same units as the art
-    var mob = root.clientWidth < 500;
+  var mob = root.clientWidth < 500, Wd = mob ? 254.33 : 406.02;
+  // block=all: every section in one page, each panel 16.5 units below the last
+  function gapAbove(sv){ if (sv) sv.style.marginTop = (16.5 / Wd * 100) + "%"; }
+  if (block === "all") {
+    drawProfile(root, p, who, mob);
+    var k = root.children.length; careerGroup(); gapAbove(root.children[k]);
+    k = root.children.length; drawBonus(root, p, mob); gapAbove(root.children[k]);
+    k = root.children.length; drawVersus(root, p, mob); gapAbove(root.children[k]);
+    return;
+  }
+  if (block === "career") careerGroup();
+  function careerGroup(){
+    // Career Stats, Playoff Stats and Season History share one gray panel
     drawCareer(root, p, mob ? MOB : DESK);
     var n = root.children.length;
     drawPlayoffs(root, p, mob);
@@ -1552,7 +1561,8 @@ function draw(p){
       if (sv) sv.style.marginTop = "calc(" + (-15 / (mob ? 254.33 : 406.02) * 100) + "% - 1px)";
     });
   }
-  else if (block === "history") drawHistory(root, p, root.clientWidth < 500);
+  if (block === "career") return;
+  if (block === "history") drawHistory(root, p, root.clientWidth < 500);
   else if (block === "bonus") drawBonus(root, p, root.clientWidth < 500);
   else if (block === "versus") drawVersus(root, p, root.clientWidth < 500);
   else drawProfile(root, p, who, root.clientWidth < 500);
