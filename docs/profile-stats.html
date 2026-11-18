@@ -740,11 +740,11 @@ STY.arc    = {size: 21.6, fill: "#2d2d2d", ls: 0.6};
 STY.ribbon = {size: 11.0, fill: "#333",    ls: 0.46};
 var HDR = {
   desk: {k: 1, ox: 0, oy: 0, nameX: 67.27, teamX: 133.28, teamY: 33.3, teamA: "s", teamSty: "team",
-         room: [133.28, 345], rule: [129.41, 348.5, 44.45], play: [377.85, 24.63, 1], songLab: [377.85, 45.6, 7.2, 7.6], songSize: 11},
+         room: [133.28, 345], rule: [129.41, 348.5, 44.45], play: [377.85, 24.63, 1], songLab: [377.85, 46.2, 6.0], songSize: 11},          // one line
   // avatar scaled 1.4319 so its frame lands on the mobile art's frame (58.11, 73.02)
   mob:  {k: 1.4319, ox: 58.11 - 21.93 * 1.4319, oy: 73.02 - 20.27 * 1.4319, arc: true,
          teamX: 125.78, teamY: 231.02, teamA: "m", teamSty: "ribbon", room: [44, 208],
-         card: [16.15, 18.51, 219.26, 235.71], play: [214.5, 40.5, 0.72], songLab: [214.5, 56.4, 5.6, 6.0], songSize: 8}
+         card: [16.15, 18.51, 219.26, 235.71], play: [214.5, 40.5, 0.72], songLab: [214.5, 56.4, 5.6, 6.0], songSize: 8}        // TEAM over SONG
 };
 function arcName(g, label){
   // the name sits on a shallow arc (radius 482) peaking at x 125.68, baseline 49.1
@@ -795,10 +795,13 @@ function drawHeader(g, p, who, H){
 
   // play / pause the team song; TEAM SONG under the button. While it plays,
   // the song's title and artist replace the team name, scrolling if too long.
-  // TEAM over SONG under the button ([x, first baseline, size, line pitch])
-  var songLab = el("g", {}, g);
-  txt(songLab, "lab", H.songLab[0], H.songLab[1], "m", "TEAM", {"font-size": H.songLab[2]});
-  txt(songLab, "lab", H.songLab[0], H.songLab[1] + H.songLab[3], "m", "SONG", {"font-size": H.songLab[2]});
+  // TEAM SONG under the button: one line on desktop; TEAM over SONG on
+  // mobile ([x, first baseline, size, line pitch when stacked])
+  var songLab = el("g", {}, g), SL = H.songLab;
+  if (SL[3]) {
+    txt(songLab, "lab", SL[0], SL[1], "m", "TEAM", {"font-size": SL[2]});
+    txt(songLab, "lab", SL[0], SL[1] + SL[3], "m", "SONG", {"font-size": SL[2]});
+  } else txt(songLab, "lab", SL[0], SL[1], "m", "TEAM SONG", {"font-size": SL[2]});
   var songLine = songTicker(g, H, a);
   var btn = el("g", {style: "cursor:pointer", role: "button", "aria-label": "Play team song",
                      transform: "translate(" + H.play[0] + "," + H.play[1] + ") scale(" + H.play[2] + ") translate(-377.85,-24.63)"}, g);
