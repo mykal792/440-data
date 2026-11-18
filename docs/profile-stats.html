@@ -12,7 +12,9 @@
 
   Reads docs/profiles/<p>.json (build_profiles.py, refreshed by the live
   workflow), docs/avatars-profile/<p>.svg (the framed avatar art) and
-  docs/songs/<p>.mp3 (the team song behind the play button).
+  docs/songs/<p>.m4a or .mp3 (the team song behind the play button) and
+  docs/songs/songs.json (each song's title and artist, shown while it plays;
+  without an entry the MP3's own title / artist tags are used).
 
   Everything is drawn as one SVG in the Illustrator artboards' own
   coordinates (2026_Stats_-_Profile.svg, 406.02 wide; Profile_Desktop.svg /
@@ -738,11 +740,11 @@ STY.arc    = {size: 21.6, fill: "#2d2d2d", ls: 0.6};
 STY.ribbon = {size: 11.0, fill: "#333",    ls: 0.46};
 var HDR = {
   desk: {k: 1, ox: 0, oy: 0, nameX: 67.27, teamX: 133.28, teamY: 33.3, teamA: "s", teamSty: "team",
-         room: [133.28, 361.5], rule: [129.41, 389.28, 44.45], play: [377.85, 24.63, 1]},
+         room: [133.28, 345], rule: [129.41, 348.5, 44.45], play: [377.85, 24.63, 1], songLab: [377.85, 45.6, 7.2, 7.6], songSize: 11},
   // avatar scaled 1.4319 so its frame lands on the mobile art's frame (58.11, 73.02)
   mob:  {k: 1.4319, ox: 58.11 - 21.93 * 1.4319, oy: 73.02 - 20.27 * 1.4319, arc: true,
          teamX: 125.78, teamY: 231.02, teamA: "m", teamSty: "ribbon", room: [44, 208],
-         card: [16.15, 18.51, 219.26, 235.71], play: [214.5, 43.2, 0.72]}
+         card: [16.15, 18.51, 219.26, 235.71], play: [214.5, 40.5, 0.72], songLab: [214.5, 56.4, 5.6, 6.0], songSize: 8}
 };
 function arcName(g, label){
   // the name sits on a shallow arc (radius 482) peaking at x 125.68, baseline 49.1
@@ -791,7 +793,13 @@ function drawHeader(g, p, who, H){
   if (t) { el("title", {}, a).textContent = "Open " + (p.team_name || "team") + " on Yahoo"; t.style.cursor = "pointer"; }
   if (H.rule) el("line", {x1: H.rule[0], x2: H.rule[1], y1: H.rule[2], y2: H.rule[2], stroke: C.line, "stroke-width": 2, "stroke-linecap": "round"}, g);
 
-  // play / pause the team song
+  // play / pause the team song; TEAM SONG under the button. While it plays,
+  // the song's title and artist replace the team name, scrolling if too long.
+  // TEAM over SONG under the button ([x, first baseline, size, line pitch])
+  var songLab = el("g", {}, g);
+  txt(songLab, "lab", H.songLab[0], H.songLab[1], "m", "TEAM", {"font-size": H.songLab[2]});
+  txt(songLab, "lab", H.songLab[0], H.songLab[1] + H.songLab[3], "m", "SONG", {"font-size": H.songLab[2]});
+  var songLine = songTicker(g, H, a);
   var btn = el("g", {style: "cursor:pointer", role: "button", "aria-label": "Play team song",
                      transform: "translate(" + H.play[0] + "," + H.play[1] + ") scale(" + H.play[2] + ") translate(-377.85,-24.63)"}, g);
   el("circle", {cx: 377.85, cy: 24.63, r: 11.42, fill: "#333"}, btn);
@@ -799,17 +807,113 @@ function drawHeader(g, p, who, H){
   var pause = el("g", {display: "none"}, btn);
   el("rect", {x: 373.6, y: 19.4, width: 2.9, height: 10.5, rx: 1.1, fill: C.plus}, pause);
   el("rect", {x: 379.2, y: 19.4, width: 2.9, height: 10.5, rx: 1.1, fill: C.plus}, pause);
-  var audio = new Audio("songs/" + who + ".mp3");
+  var audio = new Audio();
   audio.preload = "none";
+  var noSong = function(){ btn.setAttribute("opacity", 0.35); songLab.setAttribute("opacity", 0.35); btn.style.cursor = "default"; };
+  // songs/<name>.m4a or songs/<name>.mp3, whichever is there; neither: the
+  // button and TEAM SONG are dimmed
+  songFile(who).then(function(f){ if (f) audio.src = f; else noSong(); });
   var show = function(on){ play.setAttribute("display", on ? "none" : "inline"); pause.setAttribute("display", on ? "inline" : "none"); };
-  audio.addEventListener("ended", function(){ show(false); });
-  audio.addEventListener("pause", function(){ show(false); });
-  audio.addEventListener("play", function(){ show(true); });
-  audio.addEventListener("error", function(){ btn.setAttribute("opacity", 0.35); btn.style.cursor = "default"; show(false); });
+  audio.addEventListener("ended", function(){ show(false); songLine.off(); });
+  audio.addEventListener("pause", function(){ show(false); songLine.off(); });
+  audio.addEventListener("play", function(){ show(true); songTitle(who).then(songLine.on); });
+  audio.addEventListener("error", function(){ noSong(); show(false); songLine.off(); });
   btn.addEventListener("click", function(){
-    if (audio.paused) audio.play().catch(function(){ btn.setAttribute("opacity", 0.35); });
+    if (!audio.src) return;
+    if (audio.paused) audio.play().catch(function(){ noSong(); });
     else audio.pause();
   });
+}
+
+// The song's "TITLE · ARTIST": docs/songs/songs.json first, else the MP3's
+// ID3 tags (TIT2 / TPE1), else nothing. Looked up once per page.
+var SONGS = null, SONG_NAME = {}, SONG_FILE = {};
+function songFile(who){
+  if (!SONG_FILE[who]) {
+    var tryOne = function(list){
+      if (!list.length) return Promise.resolve("");
+      return fetch(list[0], {method: "HEAD", cache: "no-cache"}).then(function(r){ return r.ok ? list[0] : tryOne(list.slice(1)); },
+                                                                        function(){ return tryOne(list.slice(1)); });
+    };
+    SONG_FILE[who] = tryOne(["songs/" + who + ".m4a", "songs/" + who + ".mp3"]);
+  }
+  return SONG_FILE[who];
+}
+function songTitle(who){
+  if (SONG_NAME[who] !== undefined) return Promise.resolve(SONG_NAME[who]);
+  SONGS = SONGS || fetch("songs/songs.json", {cache: "no-cache"}).then(function(r){ return r.ok ? r.json() : {}; }).catch(function(){ return {}; });
+  return SONGS.then(function(all){
+    var e = all[who];
+    if (e && e.title) return e.title + (e.artist ? "  ·  " + e.artist : "");
+    return songFile(who).then(function(f){ return f && /\.mp3$/.test(f) ? id3(f) : ""; });
+  }).then(function(n){ SONG_NAME[who] = (n || "").toUpperCase(); return SONG_NAME[who]; });
+}
+function id3(url){
+  return fetch(url, {headers: {Range: "bytes=0-262143"}}).then(function(r){ return r.arrayBuffer(); }).then(function(buf){
+    var b = new Uint8Array(buf);
+    if (b[0] !== 73 || b[1] !== 68 || b[2] !== 51) return "";          // "ID3"
+    var ver = b[3], end = Math.min(b.length, 10 + ((b[6] << 21) | (b[7] << 14) | (b[8] << 7) | b[9])), i = 10, f = {};
+    if (b[5] & 0x40) i += ver === 4 ? ((b[10] << 21) | (b[11] << 14) | (b[12] << 7) | b[13]) : 4 + ((b[10] << 24) | (b[11] << 16) | (b[12] << 8) | b[13]);
+    var dec = function(enc, d){
+      try {
+        if (enc === 0) return new TextDecoder("latin1").decode(d);
+        if (enc === 3) return new TextDecoder("utf-8").decode(d);
+        return new TextDecoder(enc === 2 ? "utf-16be" : (d[0] === 0xfe ? "utf-16be" : "utf-16le")).decode(enc === 1 ? d.subarray(2) : d);
+      } catch (x) { return ""; }
+    };
+    while (i + 10 <= end && b[i]) {
+      var id = String.fromCharCode(b[i], b[i + 1], b[i + 2], b[i + 3]);
+      var n = ver === 4 ? ((b[i + 4] << 21) | (b[i + 5] << 14) | (b[i + 6] << 7) | b[i + 7]) : ((b[i + 4] << 24) | (b[i + 5] << 16) | (b[i + 6] << 8) | b[i + 7]);
+      if (n <= 0 || i + 10 + n > end) break;
+      if (id === "TIT2" || id === "TPE1") f[id] = dec(b[i + 10], b.subarray(i + 11, i + 10 + n)).replace(/\u0000/g, "").trim();
+      i += 10 + n;
+    }
+    return f.TIT2 ? f.TIT2 + (f.TPE1 ? "  ·  " + f.TPE1 : "") : "";
+  }).catch(function(){ return ""; });
+}
+// a one-line ticker in the team name's place: still when it fits, otherwise
+// it scrolls left in a loop. on(name) shows it (hiding the team name), off() undoes.
+function songTicker(g, H, teamEl){
+  // smaller than the team name, centred on the same line
+  var sty = STY[H.teamSty], x0 = H.room[0], w = H.room[1] - H.room[0];
+  var fs = H.songSize || sty.size, sy = H.teamY - 0.35 * (sty.size - fs);
+  var opt = {"font-size": fs, "letter-spacing": sty.ls * fs / sty.size};
+  var id = "song" + Math.random().toString(36).slice(2, 8), raf = null;
+  // a mask rather than a clip, so a scrolling title fades in and out at the edges
+  var ry = H.teamY - sty.size * 1.05, rh = sty.size * 1.45, f = Math.min(0.08, 10 / w);
+  var gr = el("linearGradient", {id: id + "g", gradientUnits: "userSpaceOnUse", x1: x0, x2: x0 + w, y1: 0, y2: 0}, g);
+  [[0, 0], [f, 1], [1 - f, 1], [1, 0]].forEach(function(s){ el("stop", {offset: s[0], "stop-color": "#fff", "stop-opacity": s[1]}, gr); });
+  var mk = el("mask", {id: id, maskUnits: "userSpaceOnUse", x: x0, y: ry, width: w, height: rh}, g);
+  var mr = el("rect", {x: x0, y: ry, width: w, height: rh, fill: "#fff"}, mk);
+  var box = el("g", {mask: "url(#" + id + ")", display: "none"}, g), mover = el("g", {}, box);
+  return {
+    on: function(name){
+      if (!name) return;
+      mover.innerHTML = ""; if (raf) cancelAnimationFrame(raf); raf = null;
+      var t1 = txt(mover, H.teamSty, 0, sy, "s", name, opt), tw = t1.getComputedTextLength();
+      box.removeAttribute("display"); teamEl.setAttribute("display", "none");
+      if (tw <= w) {                                     // fits: sit where the team name sits, no fade
+        mr.setAttribute("fill", "#fff");
+        t1.setAttribute("x", H.teamA === "m" ? H.teamX - tw / 2 : x0);
+        return;
+      }
+      mr.setAttribute("fill", "url(#" + id + "g)");
+      var gap = 30, loop = tw + gap, speed = 16, t0 = null;   // board units per second
+      txt(mover, H.teamSty, loop, sy, "s", name, opt);
+      var step = function(ts){
+        if (t0 === null) t0 = ts + 900;                    // a short pause before it starts moving
+        var d = Math.max(0, (ts - t0) / 1000 * speed) % loop;
+        mover.setAttribute("transform", "translate(" + (x0 - d) + ",0)");
+        raf = requestAnimationFrame(step);
+      };
+      mover.setAttribute("transform", "translate(" + x0 + ",0)");
+      raf = requestAnimationFrame(step);
+    },
+    off: function(){
+      if (raf) cancelAnimationFrame(raf); raf = null;
+      box.setAttribute("display", "none"); teamEl.removeAttribute("display");
+    }
+  };
 }
 
 function panel(svg, x0, y0, W, H, R){
