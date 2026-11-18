@@ -118,6 +118,49 @@ var MOB = {
   }
 };
 
+// ---- one spacing for every section: the same side edges and the same gap
+// between white boxes (the Career / Playoff Stats spacing), desktop and mobile
+var GRID = {d: {L: 17.5, R: 389, G: 9.5}, m: {L: 16.61, R: 237.72, G: 10.5}};
+(function(){ [GRID.d, GRID.m].forEach(function(q){
+  q.W = q.R - q.L; q.Q = (q.W - 3 * q.G) / 4; q.H = (q.W - q.G) / 2; q.T = (q.W - 2 * q.G) / 3;
+  q.x4 = [0, 1, 2, 3].map(function(i){ return q.L + i * (q.Q + q.G); });
+  q.x2 = [q.L, q.L + q.H + q.G];
+}); })();
+// move a career box to a new rect, carrying its text with it (start-anchored
+// text keeps its offset from the left, end-anchored from the right, centred
+// text stays centred)
+function moveBox(b, x, y, w, h){
+  var ox = b.r[0], oy = b.r[1], ow = b.r[2];
+  var mx = function(v, a){ return a === "e" ? x + w - (ox + ow - v) : a === "m" ? x + (v - ox) * w / ow : x + (v - ox); };
+  ["lab", "num", "sub", "sub2", "rank"].forEach(function(f){
+    if (b[f]) { b[f][0] = mx(b[f][0], b[f][2]); b[f][1] += y - oy; }
+  });
+  if (b.plus) { b.plus[0] = mx(b.plus[0], "e"); b.plus[1] += y - oy; }
+  if (b.div) { b.div[0] = mx(b.div[0], "s"); b.div[1] = mx(b.div[1], "e"); b.div[2] += y - oy; }
+  b.r[0] = x; b.r[1] = y; b.r[2] = w; if (h !== undefined) b.r[3] = h;
+}
+function snapCareer(L){
+  var mob = L === MOB, q = mob ? GRID.m : GRID.d, G = q.G, bx = {};
+  L.career.boxes.forEach(function(b){ bx[b.k] = b; });
+  var y = bx.record.r[1];
+  if (!mob) {
+    ["record", "win_pct", "high_scores", "weeks_first"].forEach(function(k, i){ moveBox(bx[k], q.x4[i], y, q.Q); });
+    y += bx.record.r[3] + G;
+    var bh = bx.blowout.r[3];
+    moveBox(bx.blowout, q.x2[0], y, q.H); moveBox(bx.combined, q.x2[0], y + bh + G, q.H);
+    moveBox(bx.earnings, q.x2[1], y, q.H, 2 * bh + G);
+    y += 2 * bh + 2 * G;
+    ["avg", "avg_against", "high", "low"].forEach(function(k, i){ moveBox(bx[k], q.x4[i], y, q.Q); });
+    L.career.end = y + bx.avg.r[3];
+  } else {
+    var rows = [["record", "win_pct"], ["high_scores", "weeks_first"], ["blowout"], ["combined"], ["earnings"], ["avg", "avg_against"], ["high", "low"]];
+    rows.forEach(function(row){
+      row.forEach(function(k, i){ moveBox(bx[k], row.length > 1 ? q.x2[i] : q.L, y, row.length > 1 ? q.H : q.W); });
+      y += bx[row[0]].r[3] + G;
+    });
+    L.career.end = y - G;
+  }
+}
 // The 2026 section reuses the top-row box exactly (label, rule, number,
 // rank), in two rows of four on desktop and four rows of two on mobile, at
 // the artwork's own pitch. It sits above CAREER STATS.
@@ -219,9 +262,11 @@ function pill(g, cx, cy, w, h, fill){
 // coordinate below is that artboard's (rule at y 142.61); the whole group is
 // shifted so the rule lands where this block's section rule is drawn.
 // ---------------------------------------------------------------------------
-var ART = {rule: 142.61, end: 593.09,
+var ART = {rule: 142.61, end: 157.4 + 73.08 + 73.47 + 94.05 + 94.04 + 4 * 9.5 + 61.71,   // GRID.d gaps
            green: "#88e9bf", lossFill: "#e2e2e2", money: "#2eb57b",
-           bonus: "#ed402e", high: "#0c9bd7", dot: "#2eb57b"};
+           bonus: "#ed402e", high: "#0c9bd7", dot: "#f6c835"};
+// one colour per money category in every bank (this season, past seasons, career)
+var BANK_C = {category: "#ed402e", high: "#0c9bd7", dot: "#f6c835", squid: "#f8287e", dk: "#f4862c", playoff: "#2eb57b"};
 var STAR = "M34.36,465.44l.61,1.31c.04.09.12.15.22.16l1.43.18c.24.03.33.32.16.49l-1.05.99c-.07.07-.1.16-.08.26l.27,1.42c.05.23-.2.42-.41.3l-1.26-.7c-.08-.05-.19-.05-.27,0l-1.26.7c-.21.12-.46-.07-.41-.3l.27-1.42c.02-.1-.01-.19-.08-.26l-1.05-.99c-.17-.16-.08-.46.16-.49l1.43-.18c.1-.01.18-.07.22-.16l.61-1.31c.1-.22.41-.22.51,0Z";
 
 function rule(g, x1, x2, y){
@@ -235,6 +280,15 @@ function ring(g, cx, cy, r){       // empty slot: white disc in a 1.5-wide #e1e1
 // A list longer than its card (4+ high scores, 5+ weekly bonuses) scrolls
 // inside the card: wheel, trackpad or a finger drag, with a thin scrollbar.
 // The block is SVG, so this is a clipped group moved by hand, in artboard units.
+// Chunky scroll bar: wide enough to grab with a thumb. SBW is its width in
+// board units (mobile boards are narrower, so the bar is wider there).
+var MOBV = false;
+function sbw(){ return MOBV ? 7 : 4.6; }
+function chunkyBar(x, y, h){                         // x = the bar's left edge
+  var w = sbw();
+  return {track: {x: x, y: y, width: w, height: h, rx: w / 2, fill: "#efefef"},
+          thumb: {x: x, y: y, width: w, height: 10, rx: w / 2, fill: "#a2a0a0"}};
+}
 function scroller(g, box, axis, contentLen, bar, state){
   // box: [x, y, w, h] visible window; axis "y" or "x"; contentLen: full length;
   // bar: {track, thumb} rect attrs or null; state: {get, set} to keep the offset
@@ -242,48 +296,121 @@ function scroller(g, box, axis, contentLen, bar, state){
   var cp = el("clipPath", {id: id}, g);
   el("rect", {x: box[0], y: box[1], width: box[2], height: box[3]}, cp);
   var outer = el("g", {"clip-path": "url(#" + id + ")"}, g);
-  el("rect", {x: box[0], y: box[1], width: box[2], height: box[3], fill: "#fff", "fill-opacity": 0,
-              style: "touch-action:" + (axis === "y" ? "none" : "pan-y")}, outer);
+  el("rect", {x: box[0], y: box[1], width: box[2], height: box[3], fill: "#fff", "fill-opacity": 0}, outer);
   var inner = el("g", {}, outer);
   var view = axis === "y" ? box[3] : box[2], max = Math.max(0, contentLen - view), off = 0;
   if (!max) return inner;
-  var track, thumb, tlen, thl;
+  var Y = axis === "y", track, thumb, tlen, thl, t0;
   if (bar) {
     track = el("rect", bar.track, g); thumb = el("rect", bar.thumb, g);
-    tlen = axis === "y" ? bar.track.height : bar.track.width;
-    thl = Math.max(tlen * view / contentLen, 8);
-    thumb.setAttribute(axis === "y" ? "height" : "width", thl);
+    tlen = Y ? bar.track.height : bar.track.width; t0 = Y ? bar.track.y : bar.track.x;
+    thl = Math.max(tlen * view / contentLen, 16);
+    thumb.setAttribute(Y ? "height" : "width", thl);
   }
   var set = function(v){
     off = Math.max(0, Math.min(max, v));
     if (state) state.set(off);
-    inner.setAttribute("transform", axis === "y" ? "translate(0," + (-off) + ")" : "translate(" + (-off) + ",0)");
-    if (bar) thumb.setAttribute(axis === "y" ? "y" : "x", (axis === "y" ? bar.track.y : bar.track.x) + (tlen - thl) * off / max);
+    inner.setAttribute("transform", Y ? "translate(0," + (-off) + ")" : "translate(" + (-off) + ",0)");
+    if (bar) thumb.setAttribute(Y ? "y" : "x", t0 + (tlen - thl) * off / max);
   };
   set(state ? state.get() : 0);
-  var svg = g.ownerSVGElement, unit = function(){        // screen px -> artboard units
+  var svg = g.ownerSVGElement, unit = function(){        // screen px -> board units
     return svg.viewBox.baseVal.width / svg.getBoundingClientRect().width;
   };
+  var anim = null, stop = function(){ if (anim) cancelAnimationFrame(anim); anim = null; };
   outer.addEventListener("wheel", function(e){
-    var d = (axis === "y" ? e.deltaY : (Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY)) * unit();
-    var before = off; set(off + d);
+    var d = (Y ? e.deltaY : (Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY)) * unit();
+    var before = off; stop(); set(off + d);
     if (off !== before) e.preventDefault();               // let the page scroll once we hit an end
   }, {passive: false});
-  // drag to scroll; a drag of more than a few pixels swallows the click that
-  // follows, so dragging the year bar doesn't also pick a year
+
+  // ---- mouse: drag the list --------------------------------------------------
   var start = null, moved = false;
-  outer.addEventListener("pointerdown", function(e){ start = {p: axis === "y" ? e.clientY : e.clientX, o: off, id: e.pointerId}; moved = false; });
+  outer.addEventListener("pointerdown", function(e){
+    if (e.pointerType === "touch") return;                // touch has its own handlers below
+    stop(); start = {p: Y ? e.clientY : e.clientX, o: off, id: e.pointerId}; moved = false;
+  });
   outer.addEventListener("pointermove", function(e){
-    if (!start) return;
-    var d = (axis === "y" ? e.clientY : e.clientX) - start.p;
+    if (!start || e.pointerType === "touch") return;
+    var d = (Y ? e.clientY : e.clientX) - start.p;
     if (!moved && Math.abs(d) > 4) { moved = true; try { outer.setPointerCapture(start.id); } catch (x) {} }
     if (moved) set(start.o - d * unit());
   });
   var end = function(){ start = null; };
   outer.addEventListener("pointerup", end);
   outer.addEventListener("pointercancel", end);
-  outer.addEventListener("click", function(e){ if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
   outer.style.cursor = "grab";
+
+  // ---- touch: swipe with momentum. A swipe along the list's axis scrolls the
+  // list; across it (or past either end) it is left to the page.
+  var T = null;
+  outer.addEventListener("touchstart", function(e){
+    if (e.touches.length !== 1) { T = null; return; }
+    stop();
+    var t = e.touches[0];
+    T = {x: t.clientX, y: t.clientY, o: off, mode: null, u: unit(), hist: [[t.clientX, t.clientY, Date.now()]]};
+    moved = false;
+  }, {passive: true});
+  outer.addEventListener("touchmove", function(e){
+    if (!T || e.touches.length !== 1) return;
+    var t = e.touches[0], dx = t.clientX - T.x, dy = t.clientY - T.y, d = Y ? dy : dx, across = Y ? dx : dy;
+    if (!T.mode) {
+      if (Math.abs(d) < 6 && Math.abs(across) < 6) return;
+      var pushingOut = (d > 0 && off <= 0) || (d < 0 && off >= max);
+      T.mode = Math.abs(d) >= Math.abs(across) && !pushingOut ? "list" : "page";
+      if (T.mode === "list") { T.p = Y ? t.clientY : t.clientX; T.o = off; moved = true; }
+    }
+    if (T.mode !== "list") return;
+    if (e.cancelable) e.preventDefault();
+    set(T.o - ((Y ? t.clientY : t.clientX) - T.p) * T.u);
+    T.hist.push([t.clientX, t.clientY, Date.now()]); if (T.hist.length > 6) T.hist.shift();
+  }, {passive: false});
+  outer.addEventListener("touchend", function(){
+    if (!T) return;
+    var h = T.hist, a = h[0], b = h[h.length - 1], dt = b[2] - a[2];
+    if (T.mode === "list" && dt > 0 && Date.now() - b[2] < 80) {
+      var v = -((Y ? b[1] - a[1] : b[0] - a[0]) / dt) * T.u, last = Date.now();   // units per ms
+      var step = function(){
+        var now = Date.now(), ms = now - last; last = now;
+        set(off + v * ms); v *= Math.pow(0.995, ms);
+        anim = (Math.abs(v) > 0.01 && off > 0 && off < max) ? requestAnimationFrame(step) : null;
+      };
+      anim = requestAnimationFrame(step);
+    }
+    T = null;
+  });
+  outer.addEventListener("touchcancel", function(){ T = null; });
+  // a drag swallows the click that follows, so dragging the year bar doesn't
+  // also pick a year
+  outer.addEventListener("click", function(e){ if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; } }, true);
+
+  // ---- the bar: drag the thumb, or tap the track to jump there ---------------
+  if (bar) {
+    var pad = 6, hit = el("rect", {x: bar.track.x - (Y ? pad : 0), y: bar.track.y - (Y ? 0 : pad),
+      width: bar.track.width + (Y ? 2 * pad : 0), height: bar.track.height + (Y ? 0 : 2 * pad),
+      fill: "#fff", "fill-opacity": 0, style: "cursor:pointer;touch-action:none"}, g);
+    var drag = null;
+    var at = function(cx, cy){                          // screen point -> board units along the track
+      var r = svg.getBoundingClientRect(), u = unit(), vb = svg.viewBox.baseVal;
+      return Y ? vb.y + (cy - r.top) * u : vb.x + (cx - r.left) * u;
+    };
+    var begin = function(cx, cy){
+      stop();
+      var pos = at(cx, cy), ty = t0 + (tlen - thl) * off / max;
+      if (pos < ty || pos > ty + thl) set((pos - t0 - thl / 2) / (tlen - thl) * max);   // jump
+      drag = {p: pos, o: off};
+    };
+    var moveTo = function(cx, cy){ if (drag) set(drag.o + (at(cx, cy) - drag.p) * max / (tlen - thl)); };
+    hit.addEventListener("pointerdown", function(e){
+      if (e.pointerType === "touch") return;
+      begin(e.clientX, e.clientY); try { hit.setPointerCapture(e.pointerId); } catch (x) {}
+    });
+    hit.addEventListener("pointermove", function(e){ if (e.pointerType !== "touch") moveTo(e.clientX, e.clientY); });
+    hit.addEventListener("pointerup", function(){ drag = null; });
+    hit.addEventListener("touchstart", function(e){ var t = e.touches[0]; begin(t.clientX, t.clientY); if (e.cancelable) e.preventDefault(); }, {passive: false});
+    hit.addEventListener("touchmove", function(e){ var t = e.touches[0]; moveTo(t.clientX, t.clientY); if (e.cancelable) e.preventDefault(); }, {passive: false});
+    hit.addEventListener("touchend", function(){ drag = null; });
+  }
   return inner;
 }
 
@@ -354,15 +481,22 @@ function bankCard(g, x, y, w, s, rk){
   txt(g, "num", x + 11.39, y + 55.58, "s", money(s.bank), {fill: ART.money});
   var sum = function(t){ return b.filter(function(q){ return q.type === t; })
                                   .reduce(function(a2, q){ return a2 + (q.amount || 0); }, 0); };
-  var parts = [{k: "WEEKLY BONUS", t: "category", v: sum("category"), c: ART.bonus},
-               {k: "HIGH SCORE",   t: "high",     v: sum("high"),     c: ART.high},
-               {k: "DOT POT",      t: "dot",      v: sum("dot"),      c: ART.dot}];
-  // legend with how many of each were won: WEEKLY BONUS - 3
   var cnt = function(t){ return b.filter(function(q){ return q.type === t; }).length; };
-  var lx = x + w - 70.65;
+  // always the three weekly categories; Squid Game, DraftKings (incl. the
+  // Thanksgiving one-day) and the playoff payout join once won
+  var parts = [{k: "WEEKLY BONUS", v: sum("category"), n: cnt("category"), c: BANK_C.category},
+               {k: "HIGH SCORE",   v: sum("high"),     n: cnt("high"),     c: BANK_C.high},
+               {k: "DOT POT",      v: sum("dot"),      n: cnt("dot"),      c: BANK_C.dot},
+               {k: "SQUID GAME",   v: sum("squid"),    n: cnt("squid"),    c: BANK_C.squid, opt: 1},
+               {k: "DRAFTKINGS",   v: sum("dk") + sum("thanksgiving"), n: cnt("dk") + cnt("thanksgiving"), c: BANK_C.dk, opt: 1},
+               {k: "PLAYOFF",      v: sum("playoff"),  n: cnt("playoff"),  c: BANK_C.playoff, opt: 1}]
+              .filter(function(pt){ return !pt.opt || pt.v; });
+  // legend with how many of each were won: WEEKLY BONUS - 3
+  var lx = x + w - 70.65, lp = parts.length <= 4 ? 7.815 : 6.9, l0 = 37.8 + 7.815 - (parts.length - 1) / 2 * lp;
+  if (parts.length <= 3) l0 = 37.8;
   parts.forEach(function(pt, j){
-    el("circle", {cx: lx, cy: y + 37.8 + j * 7.815, r: 2.15, fill: pt.c}, g);
-    txt(g, "tiny", lx + 5.01, y + 39.5 + j * 7.83, "s", pt.k + " - " + cnt(pt.t));
+    el("circle", {cx: lx, cy: y + l0 + j * lp, r: 2.15, fill: pt.c}, g);
+    txt(g, "tiny", lx + 5.01, y + l0 + 1.7 + j * lp, "s", pt.k + " - " + pt.n);
   });
   var bx = x + 10.74, bw = w - 20.83, by = y + 70.59, bh = 13.67;
   var total = parts.reduce(function(a2, q){ return a2 + q.v; }, 0);
@@ -506,17 +640,19 @@ function dotPotCard(g, x, y, w, s, perRow){
 // ---- desktop: the artboard, card by card ---------------------------------------
 function drawSeasonArt(g, p){
   var s = p.season, r = s.ranks || {};
-  statBox(g, 17.19, 157.4, 85.44, "STANDINGS", {ord: s.standing}, null, {lc: 42.73, nc: 43.11});
-  statBox(g, 112.43, 157.4, 85.44, "RECORD", rec(s), null, {lc: 42.72, nc: 42.7, nb: 50.05});
-  statBox(g, 208.93, 157.4, 85.44, "AVG SCORE", dec2(s.avg), rank(r.avg), {lc: 41.76, nc: 42.87, nb: 49.94, ri: 7.79});
-  statBox(g, 304.17, 157.4, 85.44, "AVG PTS AG", dec2(s.avg_against), rank(r.avg_against), {lc: 43.73, nc: 43.03, nb: 49.94, ri: 6.14});
+  var q = GRID.d, G = q.G, X = q.x4, y = 157.4;
+  statBox(g, X[0], y, q.Q, "STANDINGS", {ord: s.standing}, null, {lc: 42.73, nc: 43.11});
+  statBox(g, X[1], y, q.Q, "RECORD", rec(s), null, {lc: 42.72, nc: 42.7, nb: 50.05});
+  statBox(g, X[2], y, q.Q, "AVG SCORE", dec2(s.avg), rank(r.avg), {lc: 41.76, nc: 42.87, nb: 49.94, ri: 7.79});
+  statBox(g, X[3], y, q.Q, "AVG PTS AG", dec2(s.avg_against), rank(r.avg_against), {lc: 43.73, nc: 43.03, nb: 49.94, ri: 6.14});
   // the season's schedule on the left (as in Season History), the rest on the right
-  scheduleCard(g, 14.67, 240.89, 180.41, 280.75, liveSeason(p), true);
-  hiLoSmall(g, 208.93, 239.3, 85.44, "HIGH SCORE", s.high, rank(r.high), 9.61);
-  hiLoSmall(g, 304.17, 239.3, 85.44, "LOW SCORE", s.low, rank(r.low), 8.27);
-  bankCard(g, 208.57, 323.08, 181.16, s, rank(r.bank));
-  bonusCard(g, 208.84, 428.44, 181.16, s, "WEEKLY BONUS");
-  dotPotCard(g, 16.71, 531.38, 373.11, s, 999);
+  var y2 = y + 73.08 + G, y3 = y2 + 73.47 + G, y4 = y3 + 94.05 + G, bot = y4 + 94.04;
+  scheduleCard(g, q.x2[0], y2, q.H, bot - y2, liveSeason(p), true);
+  hiLoSmall(g, X[2], y2, q.Q, "HIGH SCORE", s.high, rank(r.high), 9.61);
+  hiLoSmall(g, X[3], y2, q.Q, "LOW SCORE", s.low, rank(r.low), 8.27);
+  bankCard(g, q.x2[1], y3, q.H, s, rank(r.bank));
+  bonusCard(g, q.x2[1], y4, q.H, s, "WEEKLY BONUS");
+  dotPotCard(g, q.L, bot + G, q.W, s, 999);
   return ART.end;
 }
 
@@ -526,7 +662,7 @@ function liveSeason(p){
   return l || (p.seasons || []).filter(function(x){ return x.in_progress; })[0] || {season: yr, games: []};
 }
 // ---- mobile: the same cards stacked on a 254.33-wide board ------------------------
-var MART = {w: 254.33, x: 16.61, cw: 221.11, gapX: 11.9, gapY: 9.0};
+var MART = {w: 254.33, x: 16.61, cw: 221.11, gapX: 10.5, gapY: 10.5};   // = GRID.m
 function drawSeasonMobile(g, p, top){
   var s = p.season, r = s.ranks || {}, M = MART, y = top;
   var half = (M.cw - M.gapX) / 2, x2 = M.x + half + M.gapX;
@@ -709,7 +845,7 @@ function drawProfile(root, p, who, mobile){
 // Mobile: 2 stat rows, 2-row results, hi/lo, bank, high scores, bonus, 2-row dot
 // pot. Fixed so the Wix block height never changes.
 var MOBILE_TOP = 467.35;
-var MOBILE_END = MOBILE_TOP + 2 * (73.08 + 9) + (174.8 + 9) + 3 * (94.05 + 9) + (58.17 + 17.2);
+var MOBILE_END = MOBILE_TOP + 2 * (73.08 + MART.gapY) + (174.8 + MART.gapY) + 3 * (94.05 + MART.gapY) + (58.17 + 17.2);
 
 function growCareer(L){
   // a Highest Combined Score box joins Biggest Blowout; the bank grows to
@@ -740,6 +876,7 @@ function growCareer(L){
     b.num[1] += d; b.sub[1] += d;
   });
   L.career.end += shift; L.career.grown = true;
+  snapCareer(L);
 }
 function drawCareer(root, p, L){
   growCareer(L);
@@ -770,12 +907,12 @@ function drawCareer(root, p, L){
 // CAREER BANK: every dollar won since the player joined, by where it came
 // from. A donut, because the question is "what share of my winnings came
 // from where"; the legend carries the dollars. No buy-ins.
-var BANK_CATS = [{k: "playoffs", label: "PLAYOFFS", c: "#2eb57b"},
-                 {k: "weekly_bonus", label: "WEEKLY BONUS", c: "#ed402e"},
-                 {k: "high_score", label: "HIGH SCORE", c: "#0c9bd7"},
-                 {k: "squid_game", label: "SQUID GAME", c: "#f8287e"},
-                 {k: "draftkings", label: "DRAFTKINGS", c: "#f4862c"},
-                 {k: "dot_pot", label: "DOT POT", c: "#f6c835"}];
+var BANK_CATS = [{k: "playoffs", label: "PLAYOFFS", c: BANK_C.playoff},
+                 {k: "weekly_bonus", label: "WEEKLY BONUS", c: BANK_C.category},
+                 {k: "high_score", label: "HIGH SCORE", c: BANK_C.high},
+                 {k: "squid_game", label: "SQUID GAME", c: BANK_C.squid},
+                 {k: "draftkings", label: "DRAFTKINGS", c: BANK_C.dk},
+                 {k: "dot_pot", label: "DOT POT", c: BANK_C.dot}];
 function careerBank(g, x, y, w, h, rx, p, mobile){
   var bk = (p.career || {}).bank || {total: 0, won: {}}, won = bk.won || {}, total = bk.total || 0;
   card(g, x, y, w, h, rx);
@@ -884,9 +1021,7 @@ function allTable(g, p, L){
   }
   var len = seasons.length * T.pitch + 8;
   var list = len > boxH
-    ? scroller(g, [T.x + 2, T.y + HD, T.w - 4, boxH], "y", len, {
-        track: {x: T.x + T.w - 7.3, y: T.y + HD + 6, width: 2.2, height: boxH - 16, rx: 1.1, fill: "#f0f0f0"},
-        thumb: {x: T.x + T.w - 7.3, y: T.y + HD + 6, width: 2.2, height: 10, rx: 1.1, fill: "#c4c4c4"}}, keep("table"))
+    ? scroller(g, [T.x + 2, T.y + HD, T.w - 4, boxH], "y", len, chunkyBar(T.x + T.w - 5 - sbw(), T.y + HD + 6, boxH - 16), keep("table"))
     : g;
   var PW = T.pill ? T.pill[0] : 39.78, PH = T.pill ? T.pill[1] : 16.8;
   seasons.forEach(function(s, i){
@@ -929,12 +1064,11 @@ function scheduleCard(g, x, y, w, h, s, newestFirst){
   txt(g, "lab", x + 12.49, y + 14.3, "s", s.season + " SCHEDULE");
   rule(g, x + 7.36, x + w - 7.61, y + 21.75);
   var pitch = 35.665, len = games.length * pitch + 4, top = y + 28.62;
-  var list = len > h - 32
-    ? scroller(g, [x + 3, y + 25.5, w - 6, h - 29], "y", len + 3.1, {
-        track: {x: x + w - 6.2, y: y + 30, width: 2.2, height: h - 38, rx: 1.1, fill: "#f0f0f0"},
-        thumb: {x: x + w - 6.2, y: y + 30, width: 2.2, height: 10, rx: 1.1, fill: "#c4c4c4"}}, keep("sched"))
+  var SW = sbw(), scroll = len > h - 32;
+  var list = scroll
+    ? scroller(g, [x + 3, y + 25.5, w - 6, h - 29], "y", len + 3.1, chunkyBar(x + w - 5 - SW, y + 30, h - 38), keep("sched"))
     : g;
-  var tw = w - 14.97;
+  var tw = scroll ? w - 7.36 - SW - 9 : w - 14.97;       // rows stop short of the bar
   games.forEach(function(gm, i){
     var ty = top + i * pitch, tx = x + 7.36;
     var tg = el("g", {}, list);
@@ -973,18 +1107,24 @@ function seasonBank(g, x, y, w, s, live, p){
   var b = live ? (p.season.bonuses || []) : (s.bonuses || null);
   txt(g, "rank", x + w - 16.05, y + 13.81, "e", live ? rank((p.season.ranks || {}).bank) : (s.ranks && s.ranks.bank ? rank(s.ranks.bank) : ""));
   var sum = function(t){ return (b || []).filter(function(q){ return q.type === t; }).reduce(function(a, q){ return a + (q.amount || 0); }, 0); };
-  var parts = [{k: "WEEKLY BONUS", v: sum("category"), c: ART.bonus},
-               {k: "HIGH SCORE",   v: sum("high"),     c: ART.high},
-               live ? {k: "DOT POT", v: sum("dot"), c: ART.dot}
-                    : {k: "SIDE GAMES", v: sum("squid") + sum("dk") + sum("thanksgiving"), c: COL.TE},
-               {k: "PLAYOFF",      v: sum("playoff"),  c: live ? COL.TE : ART.dot}];
+  // same categories and colours as the Career Bank; Dot Pot from 2026, Squid
+  // Game and DraftKings (incl. Thanksgiving) from 2020
+  var yr = live ? p.season.season : s.season;
+  var parts = [{k: "WEEKLY BONUS", v: sum("category"), c: BANK_C.category},
+               {k: "HIGH SCORE",   v: sum("high"),     c: BANK_C.high},
+               {k: "DOT POT",      v: sum("dot"),      c: BANK_C.dot, from: 2026},
+               {k: "SQUID GAME",   v: sum("squid"),    c: BANK_C.squid, from: 2020},
+               {k: "DRAFTKINGS",   v: sum("dk") + sum("thanksgiving"), c: BANK_C.dk, from: 2020},
+               {k: "PLAYOFF",      v: sum("playoff"),  c: BANK_C.playoff}]
+              .filter(function(pt){ return !pt.from || yr >= pt.from || pt.v; });
+  var lp = parts.length <= 5 ? 7.9 : 6.9;
   // legend with each category's dollars ("PLAYOFF: $500"), right-aligned to
   // the card; the big total shrinks if it would run into the legend
   var cash = function(v){ return "$" + (v % 1 ? v.toFixed(2) : String(v)); };
   var lg = el("g", {}, g), lw = 0;
   parts.forEach(function(pt, j){
-    el("circle", {cx: 0, cy: y + 29.54 + j * 7.9, r: 2.15, fill: pt.c}, lg);
-    var lt = txt(lg, "tiny", 5.01, y + 31.25 + j * 7.9, "s", pt.k + ": " + (b ? cash(pt.v) : "-"));
+    el("circle", {cx: 0, cy: y + 29.54 + j * lp, r: 2.15, fill: pt.c}, lg);
+    var lt = txt(lg, "tiny", 5.01, y + 31.25 + j * lp, "s", pt.k + ": " + (b ? cash(pt.v) : "-"));
     lw = Math.max(lw, lt.getComputedTextLength());
   });
   var lx = Math.min(x + w - 63.32, x + w - 13 - 5.01 - lw);
@@ -1088,11 +1228,7 @@ var HLAY = {
          // season view's bottom edge so the block is one height for both views
          table: {x: 19.03, y: 66.69, w: 368.97, h: 428.04 - 66.69, pitch: 32.435, head: 25, first: 66.69 + 25 + 17.3,
                  col: {yr: 62.02, w: 114.4, dash: 132.55, l: 146.83, po: 191.13, avg: 239.86, ag: 302.7, fin: 352.64}},
-         view: {stats: [[16.8, 64.68, 85.44, {lc: 42.73, nc: 42.9, ri: 7.8}], [112.03, 64.68, 85.44, {lc: 42.72, nc: 42.65}],
-                        [208.53, 64.68, 85.44, {lc: 41.77, nc: 42.72, ri: 5.89}], [303.78, 64.68, 85.44, {lc: 43.72, nc: 43.03, ri: 6.51}]],
-                sched: [17.06, 147.29, 180.41, 280.75],
-                bank: [208.25, 146.97, 181.16], bonus: [208.25, 250.61, 181.16],
-                hi: [208.49, 353.87, 85.44, 9.61], lo: [303.72, 353.87, 85.44, 8.27]}},
+         view: null},       // GRID.d, filled in below
   // mobile: the same pieces stacked on the 254.33 board
   mob:  {w: 254.33, end: 0,
          rule: [16.61, 237.72, 19.86, 127.17, 23.64],
@@ -1103,14 +1239,28 @@ var HLAY = {
                  col: {yr: 44.6, w: 85, dash: 94, l: 105, po: 140.5, avg: 179.5, fin: 217.5}, fs: {w: 12.4, avg: 9.13}},
          view: null}
 };
+(function(){                      // desktop season view on GRID.d: stats row; schedule left; bank, bonus, hi/lo right
+  var D = HLAY.desk, q = GRID.d, G = q.G, X = q.x4, y = 64.68, y2 = y + 73.08 + G;
+  var v = {stats: [[X[0], y, q.Q, {lc: 42.73, nc: 42.9, ri: 7.8}], [X[1], y, q.Q, {lc: 42.72, nc: 42.65}],
+                   [X[2], y, q.Q, {lc: 41.77, nc: 42.72, ri: 5.89}], [X[3], y, q.Q, {lc: 43.72, nc: 43.03, ri: 6.51}]]};
+  v.bank = [q.x2[1], y2, q.H]; v.bonus = [q.x2[1], y2 + 94.05 + G, q.H];
+  var yh = y2 + 94.05 + 94.04 + 2 * G;
+  v.hi = [X[2], yh, q.Q, 9.61]; v.lo = [X[3], yh, q.Q, 8.27];
+  D.end = yh + 73.47; v.sched = [q.L, y2, q.H, D.end - y2]; D.view = v;
+  // the ALL table spans the same edges; its columns keep their places across it
+  var T = D.table, k = q.W / T.w;
+  for (var c in T.col) T.col[c] = q.L + (T.col[c] - T.x) * k;      // column x positions
+  T.x = q.L; T.w = q.W; T.h = D.end - T.y;
+  D.tabX = q.L; D.tabRoom = q.W;
+})();
 (function(){                      // mobile season view: 2x2 stats, schedule, bank, bonus, hi/lo
-  var M = HLAY.mob, x = 16.61, cw = 221.11, half = (cw - 11.9) / 2, x2 = x + half + 11.9, y = 64.68;
-  var v = {stats: [[x, y, half, {}], [x2, y, half, {}], [x, y + 82.08, half, {}], [x2, y + 82.08, half, {}]]};
-  y += 2 * 82.08;
+  var M = HLAY.mob, q = GRID.m, x = q.L, cw = q.W, half = q.H, x2 = q.x2[1], y = 64.68, G = q.G;
+  var v = {stats: [[x, y, half, {}], [x2, y, half, {}], [x, y + 73.08 + G, half, {}], [x2, y + 73.08 + G, half, {}]]};
+  y += 2 * (73.08 + G);
   // four games show; the rest scroll
-  v.sched = [x, y, cw, 174.8]; y += 174.8 + 9;
-  v.bank = [x, y, cw]; y += 94.05 + 9;
-  v.bonus = [x, y, cw]; y += 94.04 + 9;
+  v.sched = [x, y, cw, 174.8]; y += 174.8 + G;
+  v.bank = [x, y, cw]; y += 94.05 + G;
+  v.bonus = [x, y, cw]; y += 94.04 + G;
   v.hi = [x, y, half, 8.48]; v.lo = [x2, y, half, 8.48]; y += 73.47;
   M.view = v; M.end = y; M.table.h = y - M.table.y;
 })();
@@ -1164,7 +1314,20 @@ var BLAY = {
          shelfS: 0.91, badges: [16.61, 216.16, 221.11, 0], cols: [52.17, 102.17, 152.17, 202.17],
          rows: [], rB: 19, lab: 0.8}
 };
-(function(){ var m = BLAY.mob, b0 = m.badges[1], y = b0 + 64; for (var i = 0; i < 5; i++) m.rows.push(y + i * 74);
+(function(){
+  // desktop on GRID.d: three equal cards across, the badges card one gap under them
+  var d = BLAY.desk, q = GRID.d, w3 = q.T, top = d.top[0][1], th = d.top[0][3];
+  d.top = [0, 1, 2].map(function(i){ return [q.L + i * (w3 + q.G), top, w3, th]; });
+  var b = d.badges, ny = top + th + q.G, dy = ny - b[1], k = q.W / b[2];
+  d.cols = d.cols.map(function(c){ return q.L + (c - b[0]) * k; });
+  d.rows = d.rows.map(function(r){ return r + dy; });
+  d.badges = [q.L, ny, q.W, b[3]]; d.H += dy;
+  // mobile on GRID.m: tall Dot Pot card left; DraftKings over Squid Game right
+  var m = BLAY.mob, g = GRID.m, dp = m.top[0], rx = g.L + dp[2] + g.G, rw = g.R - rx, sh = m.top[1][3];
+  m.top = [[g.L, dp[1], dp[2], 2 * sh + g.G], [rx, dp[1] + sh + g.G, rw, sh], [rx, dp[1], rw, sh]];
+  var b0 = dp[1] + 2 * sh + 2 * g.G;
+  m.badges = [g.L, b0, g.W, 0];
+  var y = b0 + 64; for (var i = 0; i < 5; i++) m.rows.push(y + i * 74);
   m.badges[3] = m.rows[4] + 52 - b0; m.H = b0 + m.badges[3] + 17; })();
 
 function drawBonus(root, p, mobile){
@@ -1300,46 +1463,52 @@ function drawPlayoffs(root, p, mobile){
   var H, svg, g;
   if (!mobile) {
     var dx = 13.43, dy = 15.31;
-    H = dy + 175.36 + 16.5;
+    H = dy + 19.16 + 2 * 73.08 + GRID.d.G + 16.5;
     svg = el("svg", {viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": (p.name || "") + " playoff stats"}, root);
     panel(svg, 0, 0, W, H, 27.3);
     g = el("g", {transform: "translate(" + dx + "," + dy + ")"}, svg);
     titledRule(g, 1, 374.65, 4.55, 187.82, 7.75, "PLAYOFF STATS");
-    card(g, 5.76, 19.16, 85.44, 155.57, 10.8);
-    txt(g, "lab", 48.48, 32.42, "m", "TROPHIES", lab7);
-    el("line", {x1: 13.52, x2: 83.72, y1: 37.36, y2: 37.36, stroke: C.div, "stroke-width": 2, "stroke-linecap": "round"}, g);
-    medal(g, 48.43, 56.89, medals[0]); medal(g, 48.43, 99.96, medals[1]); medal(g, 48.43, 141.68, medals[2]);
-    box(g, 102.29, 20.33, 85.44, "APPEARANCES", String(po.appearances || 0));
-    box(g, 196.62, 20.33, 85.44, "RECORD", rec2);
-    box(g, 290.42, 20.33, 85.44, "AVERAGE SCORE", dec2(po.avg));
-    hilo(g, 102.29, 102.29, 132.61, "HIGH SCORE", po.high);
-    hilo(g, 243.8, 102.29, 132.61, "LOW SCORE", po.low);
+    // GRID.d: four columns; trophies in the first, two rows of boxes beside it
+    var q = GRID.d, G = q.G, X = q.x4.map(function(v){ return v - dx; }), t0 = 19.16, tc = X[0] + q.Q / 2;
+    var hw = (X[3] + q.Q - X[1] - G) / 2;
+    card(g, X[0], t0, q.Q, 2 * 73.08 + G, 10.8);
+    txt(g, "lab", tc, 32.42, "m", "TROPHIES", lab7);
+    el("line", {x1: X[0] + 7.76, x2: X[0] + q.Q - 7.76, y1: 37.36, y2: 37.36, stroke: C.div, "stroke-width": 2, "stroke-linecap": "round"}, g);
+    medal(g, tc, 56.89, medals[0]); medal(g, tc, 99.96, medals[1]); medal(g, tc, 141.68, medals[2]);
+    box(g, X[1], t0, q.Q, "APPEARANCES", String(po.appearances || 0));
+    box(g, X[2], t0, q.Q, "RECORD", rec2);
+    box(g, X[3], t0, q.Q, "AVERAGE SCORE", dec2(po.avg));
+    hilo(g, X[1], t0 + 73.08 + G, hw, "HIGH SCORE", po.high);
+    hilo(g, X[1] + hw + G, t0 + 73.08 + G, hw, "LOW SCORE", po.low);
   } else {
     // mobile - Michael's Mobile_layout.svg (229.33 wide)
     var mx = 11.39, my = 15.79;
-    H = my + 275.17 + 16.5;
+    var qm = GRID.m, Gm = qm.G, c3 = (qm.W - 2 * Gm) / 3, mL = qm.L - mx;
+    var mc = [mL, mL + c3 + Gm, mL + 2 * (c3 + Gm)], m0 = 19.85, mHi = m0 + 2 * (73.08 + Gm);
+    H = my + mHi + 88.92 + 16.5;
     svg = el("svg", {viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": (p.name || "") + " playoff stats"}, root);
     panel(svg, 0, 0, W, H, 27.3);
     g = el("g", {transform: "translate(" + mx + "," + my + ")"}, svg);
     titledRule(g, 1, 228.33, 4.07, 114.7, 7.75, "PLAYOFF STATS");
-    card(g, 5.86, 19.85, 66.33, 156.28, 10.8);
-    txt(g, "lab", 39.3, 33.09, "m", "TROPHIES", lab7);
-    el("line", {x1: 14.3, x2: 64.3, y1: 38.03, y2: 38.03, stroke: C.div, "stroke-width": 2, "stroke-linecap": "round"}, g);
-    medal(g, 39.3, 57.56, medals[0]); medal(g, 39.3, 100.63, medals[1]); medal(g, 39.3, 142.36, medals[2]);
+    var mtc = mc[0] + c3 / 2;
+    card(g, mc[0], m0, c3, 2 * 73.08 + Gm, 10.8);
+    txt(g, "lab", mtc, 33.09, "m", "TROPHIES", lab7);
+    el("line", {x1: mtc - 25, x2: mtc + 25, y1: 38.03, y2: 38.03, stroke: C.div, "stroke-width": 2, "stroke-linecap": "round"}, g);
+    medal(g, mtc, 57.56, medals[0]); medal(g, mtc, 100.63, medals[1]); medal(g, mtc, 142.36, medals[2]);
     function mbox(x, y, w, label, num, ry){
       card(g, x, y, w, 73.08, 10.8);
       txt(g, "lab", x + w / 2, y + (ry - 4.94), "m", label, lab7);
       el("line", {x1: x + 8.84, x2: x + w - 9.37, y1: y + ry, y2: y + ry, stroke: C.div, "stroke-width": 2, "stroke-linecap": "round"}, g);
       txt(g, "num", x + w / 2, y + (ry > 20 ? 50.42 : 49.38), "m", num);
     }
-    mbox(83.72, 19.85, 66.33, "APP", String(po.appearances || 0), 19.19);
-    mbox(160.47, 19.85, 66.33, "RECORD", rec2, 19.19);
-    mbox(83.72, 103.05, 142.65, "AVERAGE SCORE", dec2(po.avg), 23.33);
-    [[4.76, "HIGH SCORE", po.high], [120.85, "LOW SCORE", po.low]].forEach(function(b){
-      card(g, b[0], 186.25, 103.97, 88.92, 13.14);
-      txt(g, "lab", b[0] + 11.33, 203.07, "s", b[1], lab7);
-      txt(g, "num", b[0] + 54.7, 235.59, "m", b[2] ? dec2(b[2].value) : "-");
-      txt(g, "sub3", b[0] + 55.6, 244.71, "m", ref(b[2]), subF);
+    mbox(mc[1], m0, c3, "APP", String(po.appearances || 0), 19.19);
+    mbox(mc[2], m0, c3, "RECORD", rec2, 19.19);
+    mbox(mc[1], m0 + 73.08 + Gm, 2 * c3 + Gm, "AVERAGE SCORE", dec2(po.avg), 23.33);
+    [[mL, "HIGH SCORE", po.high], [mL + qm.H + Gm, "LOW SCORE", po.low]].forEach(function(b){
+      card(g, b[0], mHi, qm.H, 88.92, 13.14);
+      txt(g, "lab", b[0] + 11.33, mHi + 16.82, "s", b[1], lab7);
+      txt(g, "num", b[0] + qm.H / 2 + 2.7, mHi + 49.34, "m", b[2] ? dec2(b[2].value) : "-");
+      txt(g, "sub3", b[0] + qm.H / 2 + 3.6, mHi + 58.46, "m", ref(b[2]), subF);
     });
   }
   return svg;
@@ -1393,14 +1562,15 @@ function drawVersus(root, p, mobile){
   var list = p.versus || [], me = p.key || (p.name || "").toLowerCase();
   if (!VS.sel || !list.some(function(v){ return v.opponent === VS.sel; })) VS.sel = list.length ? list[0].opponent : null;
   var v = list.filter(function(x){ return x.opponent === VS.sel; })[0];
-  var W = mobile ? 254.33 : 406.02, X = mobile ? 16.61 : 16.79, CW = W - 2 * X, gap = 6;
+  var q = mobile ? GRID.m : GRID.d, W = mobile ? 254.33 : 406.02, X = q.L, CW = q.W, gap = q.G;
   // ---- frame ----------------------------------------------------------------
   var L = mobile
-    ? {btn: [X, 34, CW, 44], right: [X, 34 + 44 + 9, CW], hist: 250}
-    : {btn: [X, 34, 104, 0], right: [X + 104 + 9, 34, CW - 104 - 9], hist: 0};
+    ? {btn: [X, 34, CW, 44], right: [X, 34 + 44 + gap, CW], hist: 250}
+    : {btn: [X, 34, 104, 0], right: [X + 104 + gap, 34, CW - 104 - gap], hist: 0};
   // the boxes end at boxEnd; under them is room for Wix's JUMP TO PROFILE buttons
   // (Michael's artboards: 102 under the boxes on desktop, 151 on mobile)
-  var boxEnd = mobile ? 878 - 16.5 : 34 + 9 * 44 + 8 * 6;
+  // (mobile: five gaps above Matchup History grew from 6 to the grid gap; it keeps its height)
+  var boxEnd = mobile ? 878 - 16.5 + 5 * (gap - 6) + (gap - 9) : 34 + 9 * 44 + 8 * gap;
   var H = boxEnd + (mobile ? 151 : 102), svg = el("svg", {viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": (p.name || "") + " versus"}, root);
   panel(svg, 0, 0, W, H, 27.3);
   var g = el("g", {}, svg);
@@ -1433,7 +1603,7 @@ function drawVersus(root, p, mobile){
     list.forEach(function(o, i){ button(strip, X + i * (bw + 5), 34, bw, 44, o); });
   } else {
     // each button is as tall as a bento box on the right, with the same gaps
-    list.forEach(function(o, i){ button(g, X, 34 + i * (44 + 6), 104, 44, o); });
+    list.forEach(function(o, i){ button(g, X, 34 + i * (44 + gap), 104, 44, o); });
   }
   if (!v) return;
 
@@ -1533,13 +1703,12 @@ function drawVersus(root, p, mobile){
   });
   rule(g, rx + 12, rx + rw - 12, y + 28 + hdr);
   var rows = gs, rowH = 26, boxY = y + 31 + hdr, boxH = hh - 36 - hdr, glen = rows.length * rowH + 4;
-  var lg = glen > boxH ? scroller(g, [rx + 2, boxY, rw - 4, boxH], "y", glen, {
-      track: {x: rx + rw - 6.5, y: boxY + 4, width: 2.2, height: boxH - 8, rx: 1.1, fill: "#f0f0f0"},
-      thumb: {x: rx + rw - 6.5, y: boxY + 4, width: 2.2, height: 10, rx: 1.1, fill: "#c4c4c4"}}, keep("vs-" + v.opponent + mode)) : g;
+  var vscroll = glen > boxH, rEnd = rx + rw - (vscroll ? sbw() + 11 : 16);   // rows stop short of the bar
+  var lg = vscroll ? scroller(g, [rx + 2, boxY, rw - 4, boxH], "y", glen, chunkyBar(rx + rw - 5 - sbw(), boxY + 4, boxH - 8), keep("vs-" + v.opponent + mode)) : g;
   if (!rows.length) txt(g, "sub3", rx + rw / 2, boxY + 20, "m", "NEVER MET IN THE PLAYOFFS");
   rows.forEach(function(x, i){
     var ry = boxY + 2 + i * rowH, cy = ry + rowH / 2, m = x.points - x.opp_points, po = x.type === "playoff";
-    if (i) el("line", {x1: rx + 14, x2: rx + rw - 16, y1: ry, y2: ry, stroke: "#f0f0f0", "stroke-width": 1}, lg);
+    if (i) el("line", {x1: rx + 14, x2: rEnd, y1: ry, y2: ry, stroke: "#f0f0f0", "stroke-width": 1}, lg);
     el("rect", {x: rx + 14, y: cy - 7, width: 14, height: 14, rx: 3.7,
                 fill: x.result === "W" ? VS_G : x.result === "T" ? "#f6c835" : ART.lossFill}, lg);
     txt(lg, "wl", rx + 21, cy + 3.1, "m", x.result, {"font-size": 7.6});
@@ -1547,8 +1716,8 @@ function drawVersus(root, p, mobile){
     var yt = txt(lg, "vsg", rx + 36, cy + 2.9, "s", String(x.season));
     txt(lg, "vsl", rx + 36 + yt.getComputedTextLength() * STY.vsg.sx + 5, cy + 2.3, "s", gameTag(x),
         {fill: po ? VS_GOLD : "#a2a0a0", "font-size": 5.6});
-    txt(lg, "vsg", rx + rw * 0.63, cy + 2.9, "m", x.points.toFixed(2) + " - " + x.opp_points.toFixed(2));
-    txt(lg, "vsg", rx + rw - 16, cy + 2.9, "e", signed(m), {fill: m >= 0 ? VS_GT : VS_R});
+    txt(lg, "vsg", rx + rw * (mobile ? 0.62 : 0.63), cy + 2.9, "m", x.points.toFixed(2) + " - " + x.opp_points.toFixed(2));
+    txt(lg, "vsg", rEnd, cy + 2.9, "e", signed(m), {fill: m >= 0 ? VS_GT : VS_R});
   });
 }
 
@@ -1556,6 +1725,7 @@ function draw(p){
   var root = document.getElementById("root");
   root.innerHTML = "";
   var mob = root.clientWidth < 500, Wd = mob ? 254.33 : 406.02;
+  MOBV = mob;
   // block=all: every section in one page, each panel 16.5 units below the last
   function gapAbove(sv){ if (sv) sv.style.marginTop = (16.5 / Wd * 100) + "%"; }
   if (block === "all") {
