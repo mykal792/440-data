@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T12:00:48Z",
+ "updated": "2026-11-18T17:45:44Z",
  "through": {
   "season": 2026,
   "week": 10
@@ -50,6 +50,7 @@
   },
   "dots": 2,
   "bank": 115,
+  "buy_in": 210,
   "dots_by_pos": {
    "QB": 0,
    "RB": 2,
@@ -204,7 +205,59 @@
    "opponent": "scotty",
    "opponent_name": "SCOTTY"
   },
-  "earnings": -331.0,
+  "earnings": -212.0,
+  "combined": {
+   "value": 360.26,
+   "season": 2019,
+   "week": 5,
+   "opponent": "hayden",
+   "opponent_name": "HAYDEN",
+   "points": 181.5,
+   "opp_points": 178.76
+  },
+  "bank": {
+   "total": 1735.0,
+   "won": {
+    "weekly_bonus": 410.0,
+    "high_score": 110.0,
+    "squid_game": 0.0,
+    "draftkings": 0.0,
+    "dot_pot": 10.0,
+    "playoffs": 1205.0
+   },
+   "since": 2013,
+   "net": -212.0,
+   "paid": 1947.0
+  },
+  "bonus": {
+   "weekly": {
+    "hammer-toe": 3,
+    "long-ball": 1,
+    "points-against": 3,
+    "lucky-duck": 3,
+    "nice-hands": 1,
+    "tighty-whities": 2,
+    "the-flex": 1,
+    "one-two-punch": 1,
+    "pick-six": 1,
+    "bench-warmer": 1,
+    "beast-mode": 1
+   },
+   "weekly_total": 18,
+   "retired_names": {
+    "long-ball": "Long Ball"
+   },
+   "squid": [],
+   "draftkings": [],
+   "dots": {
+    "QB": 0,
+    "RB": 2,
+    "WR": 0,
+    "TE": 0
+   },
+   "dots_total": 2,
+   "dots_since": 2026
+  },
   "avg": 116.25,
   "avg_against": 118.19,
   "high": {
@@ -226,7 +279,11 @@
    "high_scores": "3",
    "weeks_first": "8",
    "blowout": "8",
-   "earnings": "6",
+   "earnings": "3",
+   "bank": "3",
+   "bonus_weekly": "T-1",
+   "bonus_dots": "T-5",
+   "combined": "1",
    "avg": "7",
    "avg_against": "2",
    "high": "6",
@@ -245,6 +302,33 @@
    "avg_against": 117.04,
    "finish": 2,
    "in_progress": true,
+   "champion": false,
+   "high": {
+    "value": 164.22,
+    "season": 2026,
+    "week": 10,
+    "opponent": "coyne",
+    "opponent_name": "COYNE"
+   },
+   "low": {
+    "value": 75.82,
+    "season": 2026,
+    "week": 6,
+    "opponent": "scarpitti",
+    "opponent_name": "SCARPITTI"
+   },
+   "ranks": {
+    "avg": "5",
+    "avg_against": "6",
+    "high": "3",
+    "low": "T-2",
+    "bank": "T-1"
+   },
+   "buy_in": 210.0,
+   "dues": 210.0,
+   "waiver_tax": 0,
+   "bank": 0,
+   "bonuses": [],
    "games": [
     {
      "week": 1,
@@ -359,6 +443,66 @@
    "avg_against": 108.66,
    "finish": 7,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 153.54,
+    "season": 2025,
+    "week": 10,
+    "opponent": "scarpitti",
+    "opponent_name": "SCARPITTI"
+   },
+   "low": {
+    "value": 73.22,
+    "season": 2025,
+    "week": 6,
+    "opponent": "graham",
+    "opponent_name": "GRAHAM"
+   },
+   "ranks": {
+    "avg": "4",
+    "avg_against": "10",
+    "high": "8",
+    "low": "5",
+    "bank": "7"
+   },
+   "buy_in": 178.0,
+   "dues": 170.0,
+   "waiver_tax": 8.0,
+   "bank": 70.0,
+   "bonuses": [
+    {
+     "week": 1,
+     "type": "high",
+     "label": "High Score",
+     "key": null,
+     "icon": null,
+     "amount": 15.0
+    },
+    {
+     "week": 10,
+     "type": "high",
+     "label": "High Score",
+     "key": null,
+     "icon": null,
+     "amount": 15.0
+    },
+    {
+     "week": 11,
+     "type": "high",
+     "label": "High Score",
+     "key": null,
+     "icon": null,
+     "amount": 15.0
+    },
+    {
+     "week": 14,
+     "type": "category",
+     "label": "Tighty Whities",
+     "key": "tighty-whities",
+     "icon": 14,
+     "amount": 25.0
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -543,6 +687,42 @@
    "avg_against": 113.69,
    "finish": 6,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 173.74,
+    "season": 2024,
+    "week": 2,
+    "opponent": "graham",
+    "opponent_name": "GRAHAM"
+   },
+   "low": {
+    "value": 86.88,
+    "season": 2024,
+    "week": 3,
+    "opponent": "scotty",
+    "opponent_name": "SCOTTY"
+   },
+   "ranks": {
+    "avg": "4",
+    "avg_against": "8",
+    "high": "1",
+    "low": "7",
+    "bank": "T-8"
+   },
+   "buy_in": 177.5,
+   "dues": 170.0,
+   "waiver_tax": 7.5,
+   "bank": 15.0,
+   "bonuses": [
+    {
+     "week": 2,
+     "type": "high",
+     "label": "High Score",
+     "key": null,
+     "icon": null,
+     "amount": 15.0
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -727,6 +907,98 @@
    "avg_against": 120.04,
    "finish": 1,
    "in_progress": false,
+   "champion": true,
+   "high": {
+    "value": 176.44,
+    "season": 2023,
+    "week": 12,
+    "opponent": "greg",
+    "opponent_name": "GREG"
+   },
+   "low": {
+    "value": 76.98,
+    "season": 2023,
+    "week": 4,
+    "opponent": "hayden",
+    "opponent_name": "HAYDEN"
+   },
+   "ranks": {
+    "avg": "4",
+    "avg_against": "1",
+    "high": "1",
+    "low": "4",
+    "bank": "1"
+   },
+   "buy_in": 178.0,
+   "dues": 170.0,
+   "waiver_tax": 8.0,
+   "bank": 625.0,
+   "bonuses": [
+    {
+     "week": 7,
+     "type": "category",
+     "label": "The Flex",
+     "key": "the-flex",
+     "icon": 7,
+     "amount": 25.0
+    },
+    {
+     "week": 11,
+     "type": "category",
+     "label": "Hammer Toe",
+     "key": "hammer-toe",
+     "icon": 11,
+     "amount": 25.0
+    },
+    {
+     "week": 12,
+     "type": "category",
+     "label": "One-Two Punch",
+     "key": "one-two-punch",
+     "icon": 12,
+     "amount": 25.0
+    },
+    {
+     "week": 12,
+     "type": "high",
+     "label": "High Score",
+     "key": null,
+     "icon": null,
+     "amount": 10.0
+    },
+    {
+     "week": 13,
+     "type": "category",
+     "label": "Pick Six",
+     "key": "pick-six",
+     "icon": 13,
+     "amount": 25.0
+    },
+    {
+     "week": 13,
+     "type": "high",
+     "label": "High Score",
+     "key": null,
+     "icon": null,
+     "amount": 10.0
+    },
+    {
+     "week": 15,
+     "type": "category",
+     "label": "Points Against",
+     "key": "points-against",
+     "icon": 15,
+     "amount": 25.0
+    },
+    {
+     "week": null,
+     "type": "playoff",
+     "label": "1st Place",
+     "key": null,
+     "icon": null,
+     "amount": 480
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -911,6 +1183,42 @@
    "avg_against": 109.57,
    "finish": 8,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 145.82,
+    "season": 2022,
+    "week": 2,
+    "opponent": "scarpitti",
+    "opponent_name": "SCARPITTI"
+   },
+   "low": {
+    "value": 68.56,
+    "season": 2022,
+    "week": 11,
+    "opponent": "scarpitti",
+    "opponent_name": "SCARPITTI"
+   },
+   "ranks": {
+    "avg": "9",
+    "avg_against": "9",
+    "high": "9",
+    "low": "3",
+    "bank": "T-9"
+   },
+   "buy_in": 163.0,
+   "dues": 155.0,
+   "waiver_tax": 8.0,
+   "bank": 25.0,
+   "bonuses": [
+    {
+     "week": 4,
+     "type": "category",
+     "label": "Lucky Duck",
+     "key": "lucky-duck",
+     "icon": 4,
+     "amount": 25.0
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -1095,6 +1403,50 @@
    "avg_against": 111.98,
    "finish": 8,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 166.14,
+    "season": 2021,
+    "week": 14,
+    "opponent": "greg",
+    "opponent_name": "GREG"
+   },
+   "low": {
+    "value": 46.62,
+    "season": 2021,
+    "week": 1,
+    "opponent": "schilling",
+    "opponent_name": "SCHILLING"
+   },
+   "ranks": {
+    "avg": "8",
+    "avg_against": "8",
+    "high": "2",
+    "low": "1",
+    "bank": "T-6"
+   },
+   "buy_in": 156.5,
+   "dues": 145.0,
+   "waiver_tax": 11.5,
+   "bank": 40.0,
+   "bonuses": [
+    {
+     "week": 11,
+     "type": "category",
+     "label": "Hammer Toe",
+     "key": "hammer-toe",
+     "icon": 11,
+     "amount": 20.0
+    },
+    {
+     "week": 14,
+     "type": "category",
+     "label": "Tighty Whities",
+     "key": "tighty-whities",
+     "icon": 14,
+     "amount": 20.0
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -1279,6 +1631,58 @@
    "avg_against": 128.52,
    "finish": 9,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 143.38,
+    "season": 2020,
+    "week": 3,
+    "opponent": "coyne",
+    "opponent_name": "COYNE"
+   },
+   "low": {
+    "value": 66.68,
+    "season": 2020,
+    "week": 6,
+    "opponent": "graham",
+    "opponent_name": "GRAHAM"
+   },
+   "ranks": {
+    "avg": "10",
+    "avg_against": "1",
+    "high": "10",
+    "low": "5",
+    "bank": "5"
+   },
+   "buy_in": 144.0,
+   "dues": 135.0,
+   "waiver_tax": 9.0,
+   "bank": 60.0,
+   "bonuses": [
+    {
+     "week": 4,
+     "type": "category",
+     "label": "Lucky Duck",
+     "key": "lucky-duck",
+     "icon": 4,
+     "amount": 20.0
+    },
+    {
+     "week": 8,
+     "type": "category",
+     "label": "Nice Hands",
+     "key": "nice-hands",
+     "icon": 8,
+     "amount": 20.0
+    },
+    {
+     "week": 14,
+     "type": "category",
+     "label": "Points Against",
+     "key": "points-against",
+     "icon": 15,
+     "amount": 20.0
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -1433,6 +1837,42 @@
    "avg_against": 133.83,
    "finish": 9,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 181.5,
+    "season": 2019,
+    "week": 5,
+    "opponent": "hayden",
+    "opponent_name": "HAYDEN"
+   },
+   "low": {
+    "value": 76.54,
+    "season": 2019,
+    "week": 8,
+    "opponent": "gangus",
+    "opponent_name": "GANGUS"
+   },
+   "ranks": {
+    "avg": "6",
+    "avg_against": "1",
+    "high": "1",
+    "low": "4",
+    "bank": "T-8"
+   },
+   "buy_in": 128.0,
+   "dues": 128.0,
+   "waiver_tax": 0,
+   "bank": 20.0,
+   "bonuses": [
+    {
+     "week": 14,
+     "type": "category",
+     "label": "Points Against",
+     "key": "points-against",
+     "icon": 15,
+     "amount": 20.0
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -1587,6 +2027,50 @@
    "avg_against": 121.96,
    "finish": 7,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 171.96,
+    "season": 2018,
+    "week": 4,
+    "opponent": "coyne",
+    "opponent_name": "COYNE"
+   },
+   "low": {
+    "value": 53.04,
+    "season": 2018,
+    "week": 9,
+    "opponent": "graham",
+    "opponent_name": "GRAHAM"
+   },
+   "ranks": {
+    "avg": "5",
+    "avg_against": "5",
+    "high": "4",
+    "low": "1",
+    "bank": "T-5"
+   },
+   "buy_in": 128.0,
+   "dues": 128.0,
+   "waiver_tax": 0,
+   "bank": 40.0,
+   "bonuses": [
+    {
+     "week": 10,
+     "type": "category",
+     "label": "Automatic",
+     "key": "hammer-toe",
+     "icon": 11,
+     "amount": 20.0
+    },
+    {
+     "week": 14,
+     "type": "category",
+     "label": "Long Ball",
+     "key": "long-ball",
+     "icon": null,
+     "amount": 20.0
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -1761,6 +2245,33 @@
    "avg_against": 108.46,
    "finish": 6,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 152.06,
+    "season": 2017,
+    "week": 5,
+    "opponent": "cam",
+    "opponent_name": "CAM"
+   },
+   "low": {
+    "value": 75.6,
+    "season": 2017,
+    "week": 11,
+    "opponent": "greg",
+    "opponent_name": "GREG"
+   },
+   "ranks": {
+    "avg": "7",
+    "avg_against": "6",
+    "high": "5",
+    "low": "5",
+    "bank": "10"
+   },
+   "buy_in": 128.0,
+   "dues": 128.0,
+   "waiver_tax": 0,
+   "bank": 0,
+   "bonuses": [],
    "games": [
     {
      "week": 1,
@@ -1935,6 +2446,33 @@
    "avg_against": 104.33,
    "finish": 7,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 130.74,
+    "season": 2016,
+    "week": 8,
+    "opponent": "gangus",
+    "opponent_name": "GANGUS"
+   },
+   "low": {
+    "value": 65.02,
+    "season": 2016,
+    "week": 12,
+    "opponent": "hayden",
+    "opponent_name": "HAYDEN"
+   },
+   "ranks": {
+    "avg": "5",
+    "avg_against": "3",
+    "high": "8",
+    "low": "5",
+    "bank": "T-5"
+   },
+   "buy_in": 100.0,
+   "dues": 100.0,
+   "waiver_tax": 0,
+   "bank": 0,
+   "bonuses": [],
    "games": [
     {
      "week": 1,
@@ -2109,6 +2647,42 @@
    "avg_against": 99.27,
    "finish": 1,
    "in_progress": false,
+   "champion": true,
+   "high": {
+    "value": 151.5,
+    "season": 2015,
+    "week": 7,
+    "opponent": "graham",
+    "opponent_name": "GRAHAM"
+   },
+   "low": {
+    "value": 64.96,
+    "season": 2015,
+    "week": 4,
+    "opponent": "cam",
+    "opponent_name": "CAM"
+   },
+   "ranks": {
+    "avg": "6",
+    "avg_against": "7",
+    "high": "3",
+    "low": "7",
+    "bank": "1"
+   },
+   "buy_in": 100.0,
+   "dues": 100.0,
+   "waiver_tax": 0,
+   "bank": 450,
+   "bonuses": [
+    {
+     "week": null,
+     "type": "playoff",
+     "label": "1st Place",
+     "key": null,
+     "icon": null,
+     "amount": 450
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -2283,6 +2857,42 @@
    "avg_against": 100.52,
    "finish": 2,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 153.82,
+    "season": 2014,
+    "week": 13,
+    "opponent": "schilling",
+    "opponent_name": "SCHILLING"
+   },
+   "low": {
+    "value": 74.96,
+    "season": 2014,
+    "week": 12,
+    "opponent": "scarpitti",
+    "opponent_name": "SCARPITTI"
+   },
+   "ranks": {
+    "avg": "4",
+    "avg_against": "8",
+    "high": "T-4",
+    "low": "6",
+    "bank": "2"
+   },
+   "buy_in": 100.0,
+   "dues": 100.0,
+   "waiver_tax": 0,
+   "bank": 275,
+   "bonuses": [
+    {
+     "week": null,
+     "type": "playoff",
+     "label": "2nd Place",
+     "key": null,
+     "icon": null,
+     "amount": 275
+    }
+   ],
    "games": [
     {
      "week": 1,
@@ -2457,6 +3067,33 @@
    "avg_against": 111.69,
    "finish": 5,
    "in_progress": false,
+   "champion": false,
+   "high": {
+    "value": 142.32,
+    "season": 2013,
+    "week": 5,
+    "opponent": "gangus",
+    "opponent_name": "GANGUS"
+   },
+   "low": {
+    "value": 62.84,
+    "season": 2013,
+    "week": 10,
+    "opponent": "anthony",
+    "opponent_name": "ANTHONY"
+   },
+   "ranks": {
+    "avg": "8",
+    "avg_against": "5",
+    "high": "7",
+    "low": "4",
+    "bank": "T-4"
+   },
+   "buy_in": 50.0,
+   "dues": 50.0,
+   "waiver_tax": 0,
+   "bank": 0,
+   "bonuses": [],
    "games": [
     {
      "week": 1,
@@ -2656,63 +3293,2322 @@
    "opponent_name": "SCHILLING",
    "wins": 9,
    "losses": 19,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2026,
+     "week": 5,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 145.94,
+     "opp_points": 125.7
+    },
+    {
+     "season": 2025,
+     "week": 15,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 121.32,
+     "opp_points": 85.7
+    },
+    {
+     "season": 2025,
+     "week": 8,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 123.28,
+     "opp_points": 157.66
+    },
+    {
+     "season": 2024,
+     "week": 14,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 137.76,
+     "opp_points": 116.0
+    },
+    {
+     "season": 2024,
+     "week": 5,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 126.8,
+     "opp_points": 91.32
+    },
+    {
+     "season": 2023,
+     "week": 16,
+     "type": "playoff",
+     "result": "W",
+     "champ": false,
+     "points": 132.42,
+     "opp_points": 120.08
+    },
+    {
+     "season": 2023,
+     "week": 14,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 131.24,
+     "opp_points": 140.22
+    },
+    {
+     "season": 2023,
+     "week": 5,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 98.72,
+     "opp_points": 134.86
+    },
+    {
+     "season": 2022,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 110.46,
+     "opp_points": 123.74
+    },
+    {
+     "season": 2022,
+     "week": 3,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 144.92,
+     "opp_points": 83.8
+    },
+    {
+     "season": 2021,
+     "week": 10,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 77.58,
+     "opp_points": 144.1
+    },
+    {
+     "season": 2021,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 46.62,
+     "opp_points": 121.0
+    },
+    {
+     "season": 2020,
+     "week": 7,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 76.52,
+     "opp_points": 184.48
+    },
+    {
+     "season": 2019,
+     "week": 11,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 117.22,
+     "opp_points": 140.68
+    },
+    {
+     "season": 2019,
+     "week": 2,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 113.9,
+     "opp_points": 116.38
+    },
+    {
+     "season": 2018,
+     "week": 10,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 107.14,
+     "opp_points": 102.52
+    },
+    {
+     "season": 2018,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 96.96,
+     "opp_points": 160.66
+    },
+    {
+     "season": 2017,
+     "week": 10,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 94.92,
+     "opp_points": 127.16
+    },
+    {
+     "season": 2017,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 83.18,
+     "opp_points": 124.04
+    },
+    {
+     "season": 2016,
+     "week": 10,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 108.74,
+     "opp_points": 135.04
+    },
+    {
+     "season": 2016,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 113.96,
+     "opp_points": 136.92
+    },
+    {
+     "season": 2015,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 71.6,
+     "opp_points": 123.78
+    },
+    {
+     "season": 2015,
+     "week": 3,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 111.12,
+     "opp_points": 106.26
+    },
+    {
+     "season": 2014,
+     "week": 16,
+     "type": "playoff",
+     "result": "L",
+     "champ": true,
+     "points": 82.92,
+     "opp_points": 103.16
+    },
+    {
+     "season": 2014,
+     "week": 13,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 153.82,
+     "opp_points": 180.2
+    },
+    {
+     "season": 2014,
+     "week": 4,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 110.08,
+     "opp_points": 98.82
+    },
+    {
+     "season": 2013,
+     "week": 13,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 100.08,
+     "opp_points": 125.2
+    },
+    {
+     "season": 2013,
+     "week": 4,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 126.64,
+     "opp_points": 148.78
+    }
+   ],
+   "points_for": 3065.86,
+   "points_against": 3558.26,
+   "avg_for": 109.49,
+   "avg_against": 127.08,
+   "diff": -492.4,
+   "biggest_win": {
+    "season": 2022,
+    "week": 3,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 144.92,
+    "opp_points": 83.8
+   },
+   "worst_loss": {
+    "season": 2020,
+    "week": 7,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 76.52,
+    "opp_points": 184.48
+   },
+   "closest": {
+    "season": 2019,
+    "week": 2,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 113.9,
+    "opp_points": 116.38
+   },
+   "high": {
+    "season": 2014,
+    "week": 13,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 153.82,
+    "opp_points": 180.2
+   },
+   "streak": "W2"
   },
   {
    "opponent": "hayden",
    "opponent_name": "HAYDEN",
    "wins": 7,
    "losses": 13,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2025,
+     "week": 13,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 116.62,
+     "opp_points": 134.4
+    },
+    {
+     "season": 2024,
+     "week": 13,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 136.4,
+     "opp_points": 86.54
+    },
+    {
+     "season": 2023,
+     "week": 13,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 159.06,
+     "opp_points": 131.88
+    },
+    {
+     "season": 2023,
+     "week": 4,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 76.98,
+     "opp_points": 97.6
+    },
+    {
+     "season": 2022,
+     "week": 17,
+     "type": "consolation",
+     "result": "L",
+     "champ": false,
+     "points": 73.9,
+     "opp_points": 137.92
+    },
+    {
+     "season": 2022,
+     "week": 9,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 109.12,
+     "opp_points": 162.08
+    },
+    {
+     "season": 2021,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 96.18,
+     "opp_points": 102.7
+    },
+    {
+     "season": 2021,
+     "week": 3,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 122.24,
+     "opp_points": 105.64
+    },
+    {
+     "season": 2020,
+     "week": 14,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 107.54,
+     "opp_points": 97.52
+    },
+    {
+     "season": 2020,
+     "week": 5,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 121.54,
+     "opp_points": 122.8
+    },
+    {
+     "season": 2019,
+     "week": 14,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 124.22,
+     "opp_points": 178.24
+    },
+    {
+     "season": 2019,
+     "week": 5,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 181.5,
+     "opp_points": 178.76
+    },
+    {
+     "season": 2018,
+     "week": 12,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 154.32,
+     "opp_points": 111.48
+    },
+    {
+     "season": 2018,
+     "week": 3,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 85.96,
+     "opp_points": 126.62
+    },
+    {
+     "season": 2017,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 118.16,
+     "opp_points": 155.78
+    },
+    {
+     "season": 2017,
+     "week": 3,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 75.68,
+     "opp_points": 116.44
+    },
+    {
+     "season": 2016,
+     "week": 16,
+     "type": "consolation",
+     "result": "W",
+     "champ": false,
+     "points": 97.68,
+     "opp_points": 97.4
+    },
+    {
+     "season": 2016,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 65.02,
+     "opp_points": 130.76
+    },
+    {
+     "season": 2016,
+     "week": 3,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 86.9,
+     "opp_points": 124.9
+    },
+    {
+     "season": 2015,
+     "week": 6,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 99.58,
+     "opp_points": 128.42
+    }
+   ],
+   "points_for": 2208.6,
+   "points_against": 2527.88,
+   "avg_for": 110.43,
+   "avg_against": 126.39,
+   "diff": -319.28,
+   "biggest_win": {
+    "season": 2024,
+    "week": 13,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 136.4,
+    "opp_points": 86.54
+   },
+   "worst_loss": {
+    "season": 2016,
+    "week": 12,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 65.02,
+    "opp_points": 130.76
+   },
+   "closest": {
+    "season": 2016,
+    "week": 16,
+    "type": "consolation",
+    "result": "W",
+    "champ": false,
+    "points": 97.68,
+    "opp_points": 97.4
+   },
+   "high": {
+    "season": 2019,
+    "week": 5,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 181.5,
+    "opp_points": 178.76
+   },
+   "streak": "L1"
   },
   {
    "opponent": "greg",
    "opponent_name": "GREG",
    "wins": 18,
    "losses": 9,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2026,
+     "week": 8,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 156.0,
+     "opp_points": 144.38
+    },
+    {
+     "season": 2025,
+     "week": 3,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 82.62,
+     "opp_points": 117.72
+    },
+    {
+     "season": 2024,
+     "week": 8,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 142.68,
+     "opp_points": 125.74
+    },
+    {
+     "season": 2023,
+     "week": 17,
+     "type": "playoff",
+     "result": "W",
+     "champ": true,
+     "points": 141.1,
+     "opp_points": 114.68
+    },
+    {
+     "season": 2023,
+     "week": 12,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 176.44,
+     "opp_points": 135.8
+    },
+    {
+     "season": 2023,
+     "week": 3,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 153.7,
+     "opp_points": 129.14
+    },
+    {
+     "season": 2022,
+     "week": 16,
+     "type": "consolation",
+     "result": "L",
+     "champ": false,
+     "points": 84.9,
+     "opp_points": 100.28
+    },
+    {
+     "season": 2022,
+     "week": 13,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 99.24,
+     "opp_points": 97.82
+    },
+    {
+     "season": 2022,
+     "week": 4,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 120.96,
+     "opp_points": 108.12
+    },
+    {
+     "season": 2021,
+     "week": 17,
+     "type": "consolation",
+     "result": "L",
+     "champ": false,
+     "points": 116.12,
+     "opp_points": 138.6
+    },
+    {
+     "season": 2021,
+     "week": 14,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 166.14,
+     "opp_points": 101.44
+    },
+    {
+     "season": 2021,
+     "week": 5,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 131.36,
+     "opp_points": 138.14
+    },
+    {
+     "season": 2020,
+     "week": 10,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 96.44,
+     "opp_points": 81.86
+    },
+    {
+     "season": 2020,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 109.96,
+     "opp_points": 112.9
+    },
+    {
+     "season": 2019,
+     "week": 6,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 135.14,
+     "opp_points": 156.1
+    },
+    {
+     "season": 2018,
+     "week": 11,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 126.68,
+     "opp_points": 134.62
+    },
+    {
+     "season": 2018,
+     "week": 2,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 136.06,
+     "opp_points": 137.6
+    },
+    {
+     "season": 2017,
+     "week": 11,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 75.6,
+     "opp_points": 93.4
+    },
+    {
+     "season": 2017,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 129.04,
+     "opp_points": 76.06
+    },
+    {
+     "season": 2016,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 107.54,
+     "opp_points": 102.08
+    },
+    {
+     "season": 2016,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 128.72,
+     "opp_points": 103.02
+    },
+    {
+     "season": 2015,
+     "week": 16,
+     "type": "playoff",
+     "result": "W",
+     "champ": true,
+     "points": 132.94,
+     "opp_points": 62.9
+    },
+    {
+     "season": 2015,
+     "week": 9,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 136.96,
+     "opp_points": 114.16
+    },
+    {
+     "season": 2014,
+     "week": 10,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 134.8,
+     "opp_points": 71.84
+    },
+    {
+     "season": 2014,
+     "week": 1,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 108.26,
+     "opp_points": 74.2
+    },
+    {
+     "season": 2013,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 93.98,
+     "opp_points": 86.82
+    },
+    {
+     "season": 2013,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 138.42,
+     "opp_points": 124.92
+    }
+   ],
+   "points_for": 3361.8,
+   "points_against": 2984.34,
+   "avg_for": 124.51,
+   "avg_against": 110.53,
+   "diff": 377.46,
+   "biggest_win": {
+    "season": 2015,
+    "week": 16,
+    "type": "playoff",
+    "result": "W",
+    "champ": true,
+    "points": 132.94,
+    "opp_points": 62.9
+   },
+   "worst_loss": {
+    "season": 2025,
+    "week": 3,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 82.62,
+    "opp_points": 117.72
+   },
+   "closest": {
+    "season": 2022,
+    "week": 13,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 99.24,
+    "opp_points": 97.82
+   },
+   "high": {
+    "season": 2023,
+    "week": 12,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 176.44,
+    "opp_points": 135.8
+   },
+   "streak": "W1"
   },
   {
    "opponent": "scarpitti",
    "opponent_name": "SCARPITTI",
    "wins": 10,
    "losses": 12,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2026,
+     "week": 6,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 75.82,
+     "opp_points": 125.9
+    },
+    {
+     "season": 2025,
+     "week": 10,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 153.54,
+     "opp_points": 103.04
+    },
+    {
+     "season": 2025,
+     "week": 5,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 133.02,
+     "opp_points": 90.24
+    },
+    {
+     "season": 2024,
+     "week": 10,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 101.14,
+     "opp_points": 117.7
+    },
+    {
+     "season": 2024,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 117.98,
+     "opp_points": 153.82
+    },
+    {
+     "season": 2023,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 98.96,
+     "opp_points": 98.54
+    },
+    {
+     "season": 2023,
+     "week": 2,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 115.36,
+     "opp_points": 128.92
+    },
+    {
+     "season": 2022,
+     "week": 11,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 68.56,
+     "opp_points": 107.52
+    },
+    {
+     "season": 2022,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 145.82,
+     "opp_points": 68.1
+    },
+    {
+     "season": 2021,
+     "week": 15,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 92.62,
+     "opp_points": 122.64
+    },
+    {
+     "season": 2021,
+     "week": 6,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 129.5,
+     "opp_points": 104.6
+    },
+    {
+     "season": 2020,
+     "week": 9,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 87.26,
+     "opp_points": 123.1
+    },
+    {
+     "season": 2019,
+     "week": 7,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 94.36,
+     "opp_points": 115.76
+    },
+    {
+     "season": 2018,
+     "week": 6,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 132.54,
+     "opp_points": 147.38
+    },
+    {
+     "season": 2017,
+     "week": 6,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 129.8,
+     "opp_points": 108.92
+    },
+    {
+     "season": 2016,
+     "week": 6,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 101.96,
+     "opp_points": 72.34
+    },
+    {
+     "season": 2015,
+     "week": 10,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 115.06,
+     "opp_points": 63.46
+    },
+    {
+     "season": 2015,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 89.12,
+     "opp_points": 97.3
+    },
+    {
+     "season": 2014,
+     "week": 15,
+     "type": "playoff",
+     "result": "W",
+     "champ": false,
+     "points": 93.2,
+     "opp_points": 44.8
+    },
+    {
+     "season": 2014,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 74.96,
+     "opp_points": 76.1
+    },
+    {
+     "season": 2014,
+     "week": 3,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 78.38,
+     "opp_points": 89.6
+    },
+    {
+     "season": 2013,
+     "week": 9,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 125.02,
+     "opp_points": 96.18
+    }
+   ],
+   "points_for": 2353.98,
+   "points_against": 2255.96,
+   "avg_for": 107.0,
+   "avg_against": 102.54,
+   "diff": 98.02,
+   "biggest_win": {
+    "season": 2022,
+    "week": 2,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 145.82,
+    "opp_points": 68.1
+   },
+   "worst_loss": {
+    "season": 2026,
+    "week": 6,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 75.82,
+    "opp_points": 125.9
+   },
+   "closest": {
+    "season": 2023,
+    "week": 11,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 98.96,
+    "opp_points": 98.54
+   },
+   "high": {
+    "season": 2025,
+    "week": 10,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 153.54,
+    "opp_points": 103.04
+   },
+   "streak": "L1"
   },
   {
    "opponent": "gangus",
    "opponent_name": "GANGUS",
    "wins": 9,
    "losses": 11,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2026,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 110.6,
+     "opp_points": 134.36
+    },
+    {
+     "season": 2025,
+     "week": 16,
+     "type": "consolation",
+     "result": "L",
+     "champ": false,
+     "points": 69.8,
+     "opp_points": 103.7
+    },
+    {
+     "season": 2025,
+     "week": 9,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 124.22,
+     "opp_points": 143.3
+    },
+    {
+     "season": 2025,
+     "week": 1,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 148.96,
+     "opp_points": 135.68
+    },
+    {
+     "season": 2024,
+     "week": 15,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 152.94,
+     "opp_points": 105.78
+    },
+    {
+     "season": 2024,
+     "week": 6,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 93.96,
+     "opp_points": 132.3
+    },
+    {
+     "season": 2023,
+     "week": 7,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 106.56,
+     "opp_points": 149.7
+    },
+    {
+     "season": 2022,
+     "week": 7,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 73.4,
+     "opp_points": 134.7
+    },
+    {
+     "season": 2021,
+     "week": 16,
+     "type": "consolation",
+     "result": "L",
+     "champ": false,
+     "points": 96.38,
+     "opp_points": 169.2
+    },
+    {
+     "season": 2021,
+     "week": 7,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 112.06,
+     "opp_points": 105.48
+    },
+    {
+     "season": 2020,
+     "week": 13,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 103.74,
+     "opp_points": 182.5
+    },
+    {
+     "season": 2020,
+     "week": 4,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 119.56,
+     "opp_points": 119.54
+    },
+    {
+     "season": 2019,
+     "week": 8,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 76.54,
+     "opp_points": 136.78
+    },
+    {
+     "season": 2018,
+     "week": 8,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 121.46,
+     "opp_points": 79.9
+    },
+    {
+     "season": 2017,
+     "week": 8,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 88.38,
+     "opp_points": 122.06
+    },
+    {
+     "season": 2016,
+     "week": 8,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 130.74,
+     "opp_points": 68.52
+    },
+    {
+     "season": 2015,
+     "week": 8,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 110.24,
+     "opp_points": 109.6
+    },
+    {
+     "season": 2014,
+     "week": 9,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 124.46,
+     "opp_points": 114.72
+    },
+    {
+     "season": 2013,
+     "week": 14,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 113.12,
+     "opp_points": 158.96
+    },
+    {
+     "season": 2013,
+     "week": 5,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 142.32,
+     "opp_points": 76.86
+    }
+   ],
+   "points_for": 2219.44,
+   "points_against": 2483.64,
+   "avg_for": 110.97,
+   "avg_against": 124.18,
+   "diff": -264.2,
+   "biggest_win": {
+    "season": 2013,
+    "week": 5,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 142.32,
+    "opp_points": 76.86
+   },
+   "worst_loss": {
+    "season": 2020,
+    "week": 13,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 103.74,
+    "opp_points": 182.5
+   },
+   "closest": {
+    "season": 2020,
+    "week": 4,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 119.56,
+    "opp_points": 119.54
+   },
+   "high": {
+    "season": 2024,
+    "week": 15,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 152.94,
+    "opp_points": 105.78
+   },
+   "streak": "L3"
   },
   {
    "opponent": "graham",
    "opponent_name": "GRAHAM",
    "wins": 13,
    "losses": 9,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2026,
+     "week": 7,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 133.68,
+     "opp_points": 122.42
+    },
+    {
+     "season": 2025,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 146.88,
+     "opp_points": 95.44
+    },
+    {
+     "season": 2025,
+     "week": 6,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 73.22,
+     "opp_points": 94.98
+    },
+    {
+     "season": 2024,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 95.52,
+     "opp_points": 86.68
+    },
+    {
+     "season": 2024,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 173.74,
+     "opp_points": 105.9
+    },
+    {
+     "season": 2023,
+     "week": 9,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 113.16,
+     "opp_points": 124.0
+    },
+    {
+     "season": 2022,
+     "week": 15,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 85.7,
+     "opp_points": 67.2
+    },
+    {
+     "season": 2022,
+     "week": 6,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 101.2,
+     "opp_points": 98.98
+    },
+    {
+     "season": 2021,
+     "week": 8,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 100.06,
+     "opp_points": 103.9
+    },
+    {
+     "season": 2020,
+     "week": 6,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 66.68,
+     "opp_points": 129.5
+    },
+    {
+     "season": 2019,
+     "week": 12,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 111.04,
+     "opp_points": 75.04
+    },
+    {
+     "season": 2019,
+     "week": 3,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 125.86,
+     "opp_points": 142.36
+    },
+    {
+     "season": 2018,
+     "week": 16,
+     "type": "consolation",
+     "result": "W",
+     "champ": false,
+     "points": 120.68,
+     "opp_points": 91.82
+    },
+    {
+     "season": 2018,
+     "week": 9,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 53.04,
+     "opp_points": 165.94
+    },
+    {
+     "season": 2017,
+     "week": 9,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 115.62,
+     "opp_points": 91.38
+    },
+    {
+     "season": 2016,
+     "week": 15,
+     "type": "consolation",
+     "result": "L",
+     "champ": false,
+     "points": 80.08,
+     "opp_points": 113.44
+    },
+    {
+     "season": 2016,
+     "week": 9,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 112.28,
+     "opp_points": 99.86
+    },
+    {
+     "season": 2015,
+     "week": 7,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 151.5,
+     "opp_points": 133.44
+    },
+    {
+     "season": 2014,
+     "week": 6,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 93.86,
+     "opp_points": 151.92
+    },
+    {
+     "season": 2013,
+     "week": 16,
+     "type": "consolation",
+     "result": "W",
+     "champ": false,
+     "points": 91.52,
+     "opp_points": 70.14
+    },
+    {
+     "season": 2013,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 78.38,
+     "opp_points": 153.72
+    },
+    {
+     "season": 2013,
+     "week": 3,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 93.18,
+     "opp_points": 60.9
+    }
+   ],
+   "points_for": 2316.88,
+   "points_against": 2378.96,
+   "avg_for": 105.31,
+   "avg_against": 108.13,
+   "diff": -62.08,
+   "biggest_win": {
+    "season": 2024,
+    "week": 2,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 173.74,
+    "opp_points": 105.9
+   },
+   "worst_loss": {
+    "season": 2018,
+    "week": 9,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 53.04,
+    "opp_points": 165.94
+   },
+   "closest": {
+    "season": 2022,
+    "week": 6,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 101.2,
+    "opp_points": 98.98
+   },
+   "high": {
+    "season": 2024,
+    "week": 2,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 173.74,
+    "opp_points": 105.9
+   },
+   "streak": "W2"
   },
   {
    "opponent": "coyne",
    "opponent_name": "COYNE",
    "wins": 13,
    "losses": 14,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2026,
+     "week": 10,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 164.22,
+     "opp_points": 115.36
+    },
+    {
+     "season": 2026,
+     "week": 3,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 132.84,
+     "opp_points": 125.88
+    },
+    {
+     "season": 2025,
+     "week": 17,
+     "type": "consolation",
+     "result": "W",
+     "champ": false,
+     "points": 116.98,
+     "opp_points": 62.64
+    },
+    {
+     "season": 2025,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 103.92,
+     "opp_points": 91.74
+    },
+    {
+     "season": 2024,
+     "week": 7,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 107.6,
+     "opp_points": 129.06
+    },
+    {
+     "season": 2023,
+     "week": 15,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 129.66,
+     "opp_points": 94.3
+    },
+    {
+     "season": 2023,
+     "week": 6,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 117.78,
+     "opp_points": 89.34
+    },
+    {
+     "season": 2022,
+     "week": 8,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 119.52,
+     "opp_points": 138.6
+    },
+    {
+     "season": 2021,
+     "week": 13,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 137.04,
+     "opp_points": 110.6
+    },
+    {
+     "season": 2021,
+     "week": 4,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 117.42,
+     "opp_points": 118.5
+    },
+    {
+     "season": 2020,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 120.5,
+     "opp_points": 123.58
+    },
+    {
+     "season": 2020,
+     "week": 3,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 143.38,
+     "opp_points": 165.0
+    },
+    {
+     "season": 2019,
+     "week": 9,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 112.76,
+     "opp_points": 118.3
+    },
+    {
+     "season": 2018,
+     "week": 15,
+     "type": "consolation",
+     "result": "L",
+     "champ": false,
+     "points": 71.28,
+     "opp_points": 80.82
+    },
+    {
+     "season": 2018,
+     "week": 13,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 88.82,
+     "opp_points": 117.88
+    },
+    {
+     "season": 2018,
+     "week": 4,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 171.96,
+     "opp_points": 116.18
+    },
+    {
+     "season": 2017,
+     "week": 16,
+     "type": "consolation",
+     "result": "L",
+     "champ": false,
+     "points": 107.46,
+     "opp_points": 123.16
+    },
+    {
+     "season": 2017,
+     "week": 13,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 132.54,
+     "opp_points": 124.02
+    },
+    {
+     "season": 2017,
+     "week": 4,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 87.78,
+     "opp_points": 111.28
+    },
+    {
+     "season": 2016,
+     "week": 13,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 72.36,
+     "opp_points": 93.74
+    },
+    {
+     "season": 2016,
+     "week": 4,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 70.72,
+     "opp_points": 81.38
+    },
+    {
+     "season": 2015,
+     "week": 14,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 75.24,
+     "opp_points": 59.56
+    },
+    {
+     "season": 2015,
+     "week": 5,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 113.4,
+     "opp_points": 82.76
+    },
+    {
+     "season": 2014,
+     "week": 14,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 140.08,
+     "opp_points": 74.4
+    },
+    {
+     "season": 2014,
+     "week": 5,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 82.44,
+     "opp_points": 107.34
+    },
+    {
+     "season": 2013,
+     "week": 15,
+     "type": "consolation",
+     "result": "W",
+     "champ": false,
+     "points": 128.6,
+     "opp_points": 115.46
+    },
+    {
+     "season": 2013,
+     "week": 7,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 74.44,
+     "opp_points": 94.56
+    }
+   ],
+   "points_for": 3040.74,
+   "points_against": 2865.44,
+   "avg_for": 112.62,
+   "avg_against": 106.13,
+   "diff": 175.3,
+   "biggest_win": {
+    "season": 2014,
+    "week": 14,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 140.08,
+    "opp_points": 74.4
+   },
+   "worst_loss": {
+    "season": 2018,
+    "week": 13,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 88.82,
+    "opp_points": 117.88
+   },
+   "closest": {
+    "season": 2021,
+    "week": 4,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 117.42,
+    "opp_points": 118.5
+   },
+   "high": {
+    "season": 2018,
+    "week": 4,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 171.96,
+    "opp_points": 116.18
+   },
+   "streak": "W4"
   },
   {
    "opponent": "scotty",
    "opponent_name": "SCOTTY",
    "wins": 9,
    "losses": 10,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2026,
+     "week": 9,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 97.4,
+     "opp_points": 103.32
+    },
+    {
+     "season": 2026,
+     "week": 4,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 105.0,
+     "opp_points": 97.28
+    },
+    {
+     "season": 2025,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 79.92,
+     "opp_points": 90.72
+    },
+    {
+     "season": 2025,
+     "week": 7,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 114.18,
+     "opp_points": 119.74
+    },
+    {
+     "season": 2024,
+     "week": 16,
+     "type": "consolation",
+     "result": "W",
+     "champ": false,
+     "points": 137.58,
+     "opp_points": 130.98
+    },
+    {
+     "season": 2024,
+     "week": 12,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 97.7,
+     "opp_points": 115.96
+    },
+    {
+     "season": 2024,
+     "week": 3,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 86.88,
+     "opp_points": 100.86
+    },
+    {
+     "season": 2023,
+     "week": 10,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 140.66,
+     "opp_points": 110.22
+    },
+    {
+     "season": 2023,
+     "week": 1,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 97.76,
+     "opp_points": 92.26
+    },
+    {
+     "season": 2022,
+     "week": 14,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 111.66,
+     "opp_points": 128.4
+    },
+    {
+     "season": 2022,
+     "week": 5,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 108.56,
+     "opp_points": 120.56
+    },
+    {
+     "season": 2021,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 135.7,
+     "opp_points": 120.68
+    },
+    {
+     "season": 2021,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 138.4,
+     "opp_points": 93.82
+    },
+    {
+     "season": 2020,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 107.74,
+     "opp_points": 81.58
+    },
+    {
+     "season": 2020,
+     "week": 2,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 118.68,
+     "opp_points": 182.12
+    },
+    {
+     "season": 2019,
+     "week": 13,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 117.18,
+     "opp_points": 114.12
+    },
+    {
+     "season": 2019,
+     "week": 4,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 96.3,
+     "opp_points": 141.38
+    },
+    {
+     "season": 2018,
+     "week": 14,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 169.56,
+     "opp_points": 85.54
+    },
+    {
+     "season": 2018,
+     "week": 5,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 116.9,
+     "opp_points": 132.18
+    }
+   ],
+   "points_for": 2177.76,
+   "points_against": 2161.72,
+   "avg_for": 114.62,
+   "avg_against": 113.77,
+   "diff": 16.04,
+   "biggest_win": {
+    "season": 2018,
+    "week": 14,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 169.56,
+    "opp_points": 85.54
+   },
+   "worst_loss": {
+    "season": 2020,
+    "week": 2,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 118.68,
+    "opp_points": 182.12
+   },
+   "closest": {
+    "season": 2019,
+    "week": 13,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 117.18,
+    "opp_points": 114.12
+   },
+   "high": {
+    "season": 2018,
+    "week": 14,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 169.56,
+    "opp_points": 85.54
+   },
+   "streak": "L1"
   },
   {
    "opponent": "anthony",
    "opponent_name": "ANTHONY",
    "wins": 13,
    "losses": 9,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2026,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 112.76,
+     "opp_points": 75.82
+    },
+    {
+     "season": 2025,
+     "week": 14,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 139.34,
+     "opp_points": 57.4
+    },
+    {
+     "season": 2025,
+     "week": 4,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 125.76,
+     "opp_points": 112.12
+    },
+    {
+     "season": 2024,
+     "week": 17,
+     "type": "consolation",
+     "result": "L",
+     "champ": false,
+     "points": 133.14,
+     "opp_points": 185.3
+    },
+    {
+     "season": 2024,
+     "week": 9,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 119.34,
+     "opp_points": 94.32
+    },
+    {
+     "season": 2024,
+     "week": 4,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 114.38,
+     "opp_points": 143.36
+    },
+    {
+     "season": 2023,
+     "week": 8,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 88.82,
+     "opp_points": 143.86
+    },
+    {
+     "season": 2022,
+     "week": 10,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 101.44,
+     "opp_points": 106.26
+    },
+    {
+     "season": 2022,
+     "week": 1,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 115.02,
+     "opp_points": 97.62
+    },
+    {
+     "season": 2021,
+     "week": 9,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 48.9,
+     "opp_points": 86.48
+    },
+    {
+     "season": 2020,
+     "week": 8,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 120.66,
+     "opp_points": 92.86
+    },
+    {
+     "season": 2019,
+     "week": 10,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 119.18,
+     "opp_points": 118.18
+    },
+    {
+     "season": 2019,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 139.72,
+     "opp_points": 141.6
+    },
+    {
+     "season": 2018,
+     "week": 7,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 139.64,
+     "opp_points": 88.92
+    },
+    {
+     "season": 2017,
+     "week": 7,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 128.98,
+     "opp_points": 93.04
+    },
+    {
+     "season": 2016,
+     "week": 7,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 130.44,
+     "opp_points": 103.88
+    },
+    {
+     "season": 2015,
+     "week": 15,
+     "type": "playoff",
+     "result": "W",
+     "champ": false,
+     "points": 106.08,
+     "opp_points": 101.26
+    },
+    {
+     "season": 2015,
+     "week": 11,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 73.18,
+     "opp_points": 77.68
+    },
+    {
+     "season": 2015,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 81.54,
+     "opp_points": 75.0
+    },
+    {
+     "season": 2014,
+     "week": 8,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 141.32,
+     "opp_points": 111.8
+    },
+    {
+     "season": 2013,
+     "week": 10,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 62.84,
+     "opp_points": 64.06
+    },
+    {
+     "season": 2013,
+     "week": 1,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 101.94,
+     "opp_points": 129.32
+    }
+   ],
+   "points_for": 2444.42,
+   "points_against": 2300.14,
+   "avg_for": 111.11,
+   "avg_against": 104.55,
+   "diff": 144.28,
+   "biggest_win": {
+    "season": 2025,
+    "week": 14,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 139.34,
+    "opp_points": 57.4
+   },
+   "worst_loss": {
+    "season": 2023,
+    "week": 8,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 88.82,
+    "opp_points": 143.86
+   },
+   "closest": {
+    "season": 2019,
+    "week": 10,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 119.18,
+    "opp_points": 118.18
+   },
+   "high": {
+    "season": 2014,
+    "week": 8,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 141.32,
+    "opp_points": 111.8
+   },
+   "streak": "W3"
   }
  ],
  "versus_former": [
@@ -2721,21 +5617,245 @@
    "opponent_name": "PATRICK",
    "wins": 0,
    "losses": 1,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2013,
+     "week": 6,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 80.44,
+     "opp_points": 124.48
+    }
+   ],
+   "points_for": 80.44,
+   "points_against": 124.48,
+   "avg_for": 80.44,
+   "avg_against": 124.48,
+   "diff": -44.04,
+   "biggest_win": null,
+   "worst_loss": {
+    "season": 2013,
+    "week": 6,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 80.44,
+    "opp_points": 124.48
+   },
+   "closest": {
+    "season": 2013,
+    "week": 6,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 80.44,
+    "opp_points": 124.48
+   },
+   "high": {
+    "season": 2013,
+    "week": 6,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 80.44,
+    "opp_points": 124.48
+   },
+   "streak": "L1"
   },
   {
    "opponent": "cam",
    "opponent_name": "CAM",
    "wins": 5,
    "losses": 5,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2017,
+     "week": 15,
+     "type": "consolation",
+     "result": "W",
+     "champ": false,
+     "points": 104.94,
+     "opp_points": 91.84
+    },
+    {
+     "season": 2017,
+     "week": 14,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 93.32,
+     "opp_points": 97.04
+    },
+    {
+     "season": 2017,
+     "week": 5,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 152.06,
+     "opp_points": 77.78
+    },
+    {
+     "season": 2016,
+     "week": 14,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 99.14,
+     "opp_points": 104.04
+    },
+    {
+     "season": 2016,
+     "week": 5,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 93.06,
+     "opp_points": 104.08
+    },
+    {
+     "season": 2015,
+     "week": 13,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 129.48,
+     "opp_points": 122.82
+    },
+    {
+     "season": 2015,
+     "week": 4,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 64.96,
+     "opp_points": 95.48
+    },
+    {
+     "season": 2014,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 98.04,
+     "opp_points": 89.76
+    },
+    {
+     "season": 2014,
+     "week": 2,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 106.24,
+     "opp_points": 91.58
+    },
+    {
+     "season": 2013,
+     "week": 8,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "points": 89.34,
+     "opp_points": 118.84
+    }
+   ],
+   "points_for": 1030.58,
+   "points_against": 993.26,
+   "avg_for": 103.06,
+   "avg_against": 99.33,
+   "diff": 37.32,
+   "biggest_win": {
+    "season": 2017,
+    "week": 5,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 152.06,
+    "opp_points": 77.78
+   },
+   "worst_loss": {
+    "season": 2015,
+    "week": 4,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 64.96,
+    "opp_points": 95.48
+   },
+   "closest": {
+    "season": 2017,
+    "week": 14,
+    "type": "regular",
+    "result": "L",
+    "champ": false,
+    "points": 93.32,
+    "opp_points": 97.04
+   },
+   "high": {
+    "season": 2017,
+    "week": 5,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 152.06,
+    "opp_points": 77.78
+   },
+   "streak": "W1"
   },
   {
    "opponent": "steve",
    "opponent_name": "STEVE",
    "wins": 1,
    "losses": 0,
-   "ties": 0
+   "ties": 0,
+   "games": [
+    {
+     "season": 2014,
+     "week": 7,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "points": 84.2,
+     "opp_points": 75.04
+    }
+   ],
+   "points_for": 84.2,
+   "points_against": 75.04,
+   "avg_for": 84.2,
+   "avg_against": 75.04,
+   "diff": 9.16,
+   "biggest_win": {
+    "season": 2014,
+    "week": 7,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 84.2,
+    "opp_points": 75.04
+   },
+   "worst_loss": null,
+   "closest": {
+    "season": 2014,
+    "week": 7,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 84.2,
+    "opp_points": 75.04
+   },
+   "high": {
+    "season": 2014,
+    "week": 7,
+    "type": "regular",
+    "result": "W",
+    "champ": false,
+    "points": 84.2,
+    "opp_points": 75.04
+   },
+   "streak": "W1"
   }
  ],
  "bonus": {
