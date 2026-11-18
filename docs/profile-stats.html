@@ -511,7 +511,7 @@ function drawSeasonArt(g, p){
   statBox(g, 208.93, 157.4, 85.44, "AVG SCORE", dec2(s.avg), rank(r.avg), {lc: 41.76, nc: 42.87, nb: 49.94, ri: 7.79});
   statBox(g, 304.17, 157.4, 85.44, "AVG PTS AG", dec2(s.avg_against), rank(r.avg_against), {lc: 43.73, nc: 43.03, nb: 49.94, ri: 6.14});
   // the season's schedule on the left (as in Season History), the rest on the right
-  scheduleCard(g, 14.67, 240.89, 180.41, 280.75, liveSeason(p));
+  scheduleCard(g, 14.67, 240.89, 180.41, 280.75, liveSeason(p), true);
   hiLoSmall(g, 208.93, 239.3, 85.44, "HIGH SCORE", s.high, rank(r.high), 9.61);
   hiLoSmall(g, 304.17, 239.3, 85.44, "LOW SCORE", s.low, rank(r.low), 8.27);
   bankCard(g, 208.57, 323.08, 181.16, s, rank(r.bank));
@@ -536,7 +536,7 @@ function drawSeasonMobile(g, p, top){
   statBox(g, M.x, y, half, "AVG SCORE", dec2(s.avg), rank(r.avg));
   statBox(g, x2, y, half, "AVG PTS AG", dec2(s.avg_against), rank(r.avg_against));
   y += 73.08 + M.gapY;
-  scheduleCard(g, M.x, y, M.cw, 174.8, liveSeason(p));      // four games show; the rest scroll
+  scheduleCard(g, M.x, y, M.cw, 174.8, liveSeason(p), true);  // newest first; four show, the rest scroll
   y += 174.8 + M.gapY;
   hiLoBox(g, M.x, y, half, "HIGH SCORE", s.high, rank(r.high));
   hiLoBox(g, x2, y, half, "LOW SCORE", s.low, rank(r.low));
@@ -876,7 +876,7 @@ function allTable(g, p, L){
   txt(g, "hHd", c.avg, hy, "m", "AVG PTS", hs);
   if (c.ag) txt(g, "hHd", c.ag, hy, "m", "PTS AG", hs);
   txt(g, "hHd", c.fin, hy, "m", "FINISH", hs);
-  el("line", {x1: T.x + 10.5, x2: T.x + T.w - 10.5, y1: T.y + HD - 1.5, y2: T.y + HD - 1.5, stroke: "#8f8f8f", "stroke-width": 2.2, "stroke-linecap": "round"}, g);
+  el("line", {x1: T.x + 10.5, x2: T.x + T.w - 10.5, y1: T.y + HD - 1.5, y2: T.y + HD - 1.5, stroke: C.div, "stroke-width": 1.5, "stroke-linecap": "round"}, g);
   var boxH = T.h - HD - 3;
   if (T.fill) {                     // mobile: spread the rows to fill the card, then scroll
     var pitch = Math.max(T.pitch, Math.min(T.fill, (boxH - 8) / Math.max(seasons.length, 1)));
@@ -922,18 +922,20 @@ function allTable(g, p, L){
 }
 
 // ---- one season ----------------------------------------------------------------------
-function scheduleCard(g, x, y, w, h, s){
+function scheduleCard(g, x, y, w, h, s, newestFirst){
+  // the live season lists its latest game on top; past seasons read week 1 down
+  var games = newestFirst ? s.games.slice().reverse() : s.games;
   card(g, x, y, w, h, 10.8);
   txt(g, "lab", x + 12.49, y + 14.3, "s", s.season + " SCHEDULE");
   rule(g, x + 7.36, x + w - 7.61, y + 21.75);
-  var pitch = 35.665, len = s.games.length * pitch + 4, top = y + 28.62;
+  var pitch = 35.665, len = games.length * pitch + 4, top = y + 28.62;
   var list = len > h - 32
     ? scroller(g, [x + 3, y + 25.5, w - 6, h - 29], "y", len + 3.1, {
         track: {x: x + w - 6.2, y: y + 30, width: 2.2, height: h - 38, rx: 1.1, fill: "#f0f0f0"},
         thumb: {x: x + w - 6.2, y: y + 30, width: 2.2, height: 10, rx: 1.1, fill: "#c4c4c4"}}, keep("sched"))
     : g;
   var tw = w - 14.97;
-  s.games.forEach(function(gm, i){
+  games.forEach(function(gm, i){
     var ty = top + i * pitch, tx = x + 7.36;
     var tg = el("g", {}, list);
     var po = gm.type !== "regular";
@@ -955,7 +957,8 @@ function scheduleCard(g, x, y, w, h, s){
 }
 function gameLabel(season, gm){
   if (gm.type === "consolation") return "CONSOLATION";
-  var po = season.games.filter(function(q){ return q.type === "playoff"; });
+  var po = season.games.filter(function(q){ return q.type === "playoff"; })
+                       .sort(function(a, b){ return a.week - b.week; });
   if (po.indexOf(gm) === 0) return "SEMIFINAL";
   return po[0] && po[0].result === "L" ? "3RD PLACE" : "FINAL";
 }
@@ -1037,6 +1040,21 @@ function championBox(g, x, y, w){
   tp.textContent = "CHAMPION";
   trophy(g, cx, y + 68.5, 50.5);
 }
+// a last-place year: the Standings box becomes Michael's "I FINISHED LAST"
+// licence plate, docs/plates/<name>_<year>.svg (87.61 x 46.91 art, shadow
+// included). The plain 10TH box shows until the file loads, and stays if there
+// is no plate for that year - so next year's plate needs nothing but the upload.
+function plateBox(g, x, y, w, year, plain){
+  var pg = el("g", {display: "none"}, g);
+  card(pg, x, y, w, 73.08, 10.8);
+  // plate at 70% of the box's inner width, THE PLATE underneath; the pair centered
+  var pw = (w - 12) * 0.7, ph = pw * 46.91 / 87.61, gap = 8.5, th = 5.6;
+  var top = y + (73.08 - ph - gap - th) / 2;
+  var im = el("image", {href: "plates/" + who + "_" + year + ".svg", x: x + (w - pw) / 2 + 0.6, y: top, width: pw, height: ph}, pg);
+  txt(pg, "lab", x + w / 2, top + ph + gap + th, "m", "THE PLATE");
+  im.addEventListener("load", function(){ pg.removeAttribute("display"); plain.setAttribute("display", "none"); });
+  im.addEventListener("error", function(){ if (pg.parentNode) pg.parentNode.removeChild(pg); });
+}
 function seasonView(g, p, s, L){
   var live = s.in_progress, r = s.ranks || {}, V = L.view;
   var standing = live ? p.season.standing : s.finish;
@@ -1045,6 +1063,11 @@ function seasonView(g, p, s, L){
     var val = [{ord: standing}, rec(s), dec2(s.avg), dec2(s.avg_against)][i];
     var rk = [null, null, rank(r.avg), rank(r.avg_against)][i];
     if (i === 0 && !live && s.champion) championBox(g, b[0], b[1], b[2]);
+    else if (i === 0 && !live && s.finish === 10) {
+      var plain = el("g", {}, g);
+      statBox(plain, b[0], b[1], b[2], lab, val, rk, b[3]);
+      plateBox(g, b[0], b[1], b[2], s.season, plain);
+    }
     else statBox(g, b[0], b[1], b[2], lab, val, rk, b[3]);
   });
   scheduleCard(g, V.sched[0], V.sched[1], V.sched[2], V.sched[3], s);
@@ -1357,7 +1380,14 @@ function vsIcon(g, wk, cx, cy, r){
   ic.innerHTML = ICONS[wk] || "";
 }
 function signed(n){ return (n > 0 ? "+" : n < 0 ? "-" : "") + Math.abs(n).toFixed(2); }
-function gameTag(x){ return x.champ ? "CHAMP" : x.type === "playoff" ? "PLAYOFF" : x.type === "consolation" ? "CONSOLATION" : "WK " + x.week; }
+// playoff round of a versus game: the semifinal (first playoff week) or the
+// 3rd place game; the final is CHAMP. "round" comes from build_profiles.py;
+// the week rule is the fallback (playoffs began week 15 through 2020, 16 since).
+function poRound(x){
+  if (x.round) return x.round === "third" ? "3RD PLACE" : "SEMI FINAL";
+  return x.week === (x.season <= 2020 ? 15 : 16) ? "SEMI FINAL" : "3RD PLACE";
+}
+function gameTag(x){ return x.champ ? "CHAMP" : x.type === "playoff" ? poRound(x) : x.type === "consolation" ? "CONSOLATION" : "WK " + x.week; }
 
 function drawVersus(root, p, mobile){
   var list = p.versus || [], me = p.key || (p.name || "").toLowerCase();
@@ -1427,8 +1457,11 @@ function drawVersus(root, p, mobile){
   var cid = "vb" + Math.random().toString(36).slice(2, 7), cp = el("clipPath", {id: cid}, g);
   el("rect", {x: bx0, y: byy, width: bwBar, height: 8, rx: 4}, cp);
   var bar = el("g", {"clip-path": "url(#" + cid + ")"}, g);
-  el("rect", {x: bx0, y: byy, width: bwBar, height: 8, fill: VS_R}, bar);
-  el("rect", {x: bx0, y: byy, width: bwBar * wfrac, height: 8, fill: VS_G}, bar);
+  // red only from where green stops - a full red bar under the green showed as a
+  // red fringe around the green's anti-aliased edges
+  var split = bwBar * wfrac;
+  if (wfrac < 1) el("rect", {x: bx0 + split, y: byy, width: bwBar - split, height: 8, fill: n ? VS_R : C.div}, bar);
+  if (wfrac > 0) el("rect", {x: bx0, y: byy, width: Math.min(bwBar, split + (wfrac < 1 ? 0.3 : 0)), height: 8, fill: VS_G}, bar);
   el("line", {x1: bx0 + bwBar / 2, x2: bx0 + bwBar / 2, y1: byy - 2.5, y2: byy + 10.5, stroke: "#333", "stroke-width": 1.4, "stroke-linecap": "round"}, g);
   y += hh0 + gap;
   // one look for all six boxes: label, rule, the big value, an optional line under it
@@ -1470,7 +1503,7 @@ function drawVersus(root, p, mobile){
   // BLOWOUT and TOUGH LOSS: the margin is the headline, with the year and week;
   // mobile adds the badge on the right, desktop a small one in the corner
   var nw = mobile ? rw : (rw - gap) / 2, icons = [9, 2];
-  var wkLong = function(x){ return x.champ ? "CHAMP" : x.type === "playoff" ? "PLAYOFF" : x.type === "consolation" ? "CONSOLATION" : "WEEK " + x.week; };
+  var wkLong = function(x){ return x.champ ? "CHAMP" : x.type === "playoff" ? poRound(x) : x.type === "consolation" ? "CONSOLATION" : "WEEK " + x.week; };
   notable.forEach(function(b, i){
     var x = b[1], bx = mobile ? rx : rx + i * (nw + gap), by = mobile ? y + i * (BH + gap) : y;
     var mtxt = x ? signed(mg(x)) : "-", mcol = x ? (mg(x) >= 0 ? VS_GT : VS_R) : null;
