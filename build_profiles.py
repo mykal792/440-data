@@ -53,7 +53,13 @@ PRIZES = REPO / "prize-history.json"     # hand-owned money 2013-2025
 PPR_FROM = 2018
 
 CURRENT = list(yc.MANAGER_KEYS)
-FORMER_NAMES = {"cam": "CAM", "steve": "STEVE", "patrick": "PATRICK"}
+FORMER_NAMES = {"cam": "CAM", "steve": "STEVE", "patrick": "PATRICK", "chipper": "CHIPPER"}
+# Preview profiles for players joining next season (Michael, 2026-11-19): Cam
+# returns in 2027 with his 2013-2017 history; Chipper is brand new. They get a
+# profile file but aren't in the league's order, ranks or anyone's Versus.
+# When 2027 starts, move them into yc.MANAGER_KEYS and delete them here.
+PREVIEW = {"cam": {"team_name": "Cindy Gricar", "season": 2027},
+           "chipper": {"team_name": "TBD", "season": 2027}}
 
 
 def name_of(key):
@@ -276,20 +282,29 @@ def build():
     dues = baseline.get("season_dues") or 0
 
     P = {}
-    for m in CURRENT:
+    for m in CURRENT + [k for k in PREVIEW if k not in CURRENT]:
+        pv = PREVIEW.get(m) if m not in CURRENT else None
         mine = [(g, me, opp) for g, me, opp in sides(regular) if me["manager"] == m]
         ppr = [(g, me, opp) for g, me, opp in mine if g["season"] >= PPR_FROM]
+        # a preview with only full-PPR seasons (Cam, 2013-17): averages and low
+        # from those years, unranked since they don't compare with half-PPR
+        if pv and not ppr: ppr = mine
         w = sum(1 for g, me, opp in mine if result(me, opp) == "W")
         l = sum(1 for g, me, opp in mine if result(me, opp) == "L")
         t = sum(1 for g, me, opp in mine if result(me, opp) == "T")
 
-        hi = max(mine, key=lambda x: x[1]["points"])
+        hi = max(mine, key=lambda x: x[1]["points"]) if mine else None
         lo = min(ppr, key=lambda x: x[1]["points"]) if ppr else None
-        blow = max(mine, key=lambda x: x[1]["points"] - x[2]["points"])
-        both = max(mine, key=lambda x: x[1]["points"] + x[2]["points"])
+        blow = max(mine, key=lambda x: x[1]["points"] - x[2]["points"]) if mine else None
+        both = max(mine, key=lambda x: x[1]["points"] + x[2]["points"]) if mine else None
 
         earnings = baseline.get("earnings", {}).get(m)
-        if earnings is not None and add_current:
+        if pv:
+            # preview: past winnings minus past dues and tax (prize-history.json)
+            paid = sum(v[m]["dues"] + v[m]["tax"] for v in past_buy.values() if m in v)
+            won = sum(q["amount"] for (y, who), qs in past_prizes.items() if who == m for q in qs)
+            earnings = round(won - paid, 2)
+        elif earnings is not None and add_current:
             earnings = round(earnings + bank_now[m] - dues - tax_now[m], 2)
         category = baseline.get("weekly_category", {}).get(m)
         if category is not None and add_current:
@@ -301,23 +316,27 @@ def build():
             "high_scores": sum(1 for g, me, opp in mine
                                if me["points"] == week_top[(g["season"], g["week"])]),
             "weeks_first": first.get(m, 0),
-            "blowout": ref(*blow, value=blow[1]["points"] - blow[2]["points"]),
+            "blowout": ref(*blow, value=blow[1]["points"] - blow[2]["points"]) if blow else None,
             "earnings": earnings,
             # highest combined score (both teams) in one regular-season game
             "combined": dict(ref(*both, value=both[1]["points"] + both[2]["points"]),
-                             points=both[1]["points"], opp_points=both[2]["points"]),
+                             points=both[1]["points"], opp_points=both[2]["points"]) if both else None,
             # every dollar won, 2013 to now, by where it came from (no buy-ins)
             "bank": career_bank(m),
             "bonus": career_bonus(m),
             "avg": round(sum(me["points"] for _, me, _ in ppr) / len(ppr), 2) if ppr else None,
             "avg_against": round(sum(o["points"] for _, _, o in ppr) / len(ppr), 2) if ppr else None,
-            "high": ref(*hi),
+            "high": ref(*hi) if hi else None,
             "low": ref(*lo) if lo else None,
         }
+        if pv:
+            career["last_season"] = max([g["season"] for g, _, _ in mine] or [None], key=lambda v: v or 0)
+            career["full_ppr_only"] = bool(mine) and all(g["season"] < PPR_FROM for g, _, _ in mine)
 
         # this season
         now_rows = [(g, me, opp) for g, me, opp in mine if g["season"] == this_season]
         now_team = next((t for t in seasons[this_season]["teams"] if t["manager"] == m), {})
+        if pv: now_team = {"team_name": pv["team_name"]}
         cur = {
             "season": this_season,
             "weeks_played": len(now_rows),
@@ -333,9 +352,9 @@ def build():
                               sorted(now_rows, key=lambda x: x[0]["week"])]),
             "high": ref(*max(now_rows, key=lambda x: x[1]["points"])) if now_rows else None,
             "low": ref(*min(now_rows, key=lambda x: x[1]["points"])) if now_rows else None,
-            "dots": dots_now[m],
-            "bank": bank_now[m],
-            "buy_in": baseline.get("season_dues"),
+            "dots": dots_now.get(m, 0),
+            "bank": bank_now.get(m, 0),
+            "buy_in": None if pv else baseline.get("season_dues"),
             # for the 2026 section's graphics
             "dots_by_pos": {pos: (dots_feed.get("totals", {}).get(m) or {}).get(pos, 0)
                             for pos in ("QB", "RB", "WR", "TE")},
@@ -344,6 +363,7 @@ def build():
                          "amount": b.get("amount", 0)}
                         for b in bonuses.get(m, [])],
             "regular_weeks": seasons[this_season].get("regular_weeks") or 15,
+            **({"season": pv["season"], "preview": True} if pv else {}),
             "results": [{"week": g["week"], "result": result(me, o),
                          "points": me["points"], "opp_points": o["points"],
                          "opponent_name": name_of(o["manager"])}
@@ -396,6 +416,7 @@ def build():
         # playoffs (championship bracket only - consolation isn't the playoffs)
         po = [(g, me, opp) for g, me, opp in sides(playoff) if me["manager"] == m]
         po_ppr = [x for x in po if x[0]["season"] >= PPR_FROM]
+        if pv and not po_ppr: po_ppr = po        # full-PPR-only preview (Cam): his own years
         finishes = [t["final_rank"] for s in seasons.values() if s["finished"]
                     for t in s["teams"] if t["manager"] == m]
         playoffs = {
@@ -465,13 +486,28 @@ def build():
                                 now_team.get("team_id")) if now_team.get("team_id") else None),
                 "season": cur, "career": career, "seasons": history,
                 "playoffs": playoffs, "versus": versus, "versus_former": former,
-                "bonus": {"weekly_category": category}}
+                "bonus": {"weekly_category": category},
+                **({"preview": True} if pv else {})}
 
     # ranks
+    previews = [m for m in P if m not in CURRENT]
+
     def put(section, field, getter, lowest_first=False):
-        ranks = rank_all({m: getter(P[m]) for m in CURRENT}, lowest_first)
+        def val(m):
+            try: return getter(P[m])
+            except (TypeError, KeyError, AttributeError): return None
+        ranks = rank_all({m: val(m) for m in CURRENT}, lowest_first)
         for m in CURRENT:
             P[m][section].setdefault("ranks", {})[field] = ranks[m]
+        # a preview's rank is where it would sit among the ten (the ten keep theirs)
+        for m in previews:
+            if section == "season": continue
+            if not P[m]["career"]["wins"] + P[m]["career"]["losses"] + P[m]["career"]["ties"]:
+                P[m][section].setdefault("ranks", {})[field] = None; continue      # no games yet
+            if (P[m]["career"].get("full_ppr_only") and field in ("avg", "avg_against", "low")) or field == "bonus_dots":
+                P[m][section].setdefault("ranks", {})[field] = None; continue
+            r = rank_all(dict({k: val(k) for k in CURRENT}, **{m: val(m)}), lowest_first)
+            P[m][section].setdefault("ranks", {})[field] = r[m]
 
     put("career", "win_pct", lambda p: p["career"]["win_pct"])
     put("career", "high_scores", lambda p: p["career"]["high_scores"])
@@ -479,7 +515,7 @@ def build():
     put("career", "blowout", lambda p: p["career"]["blowout"]["value"])
     put("career", "earnings", lambda p: p["career"]["earnings"])
     # profit = everything won minus every dollar paid in (dues + waiver tax)
-    for m in CURRENT:
+    for m in P:
         c = P[m]["career"]
         if c.get("earnings") is not None:
             c["bank"]["net"] = c["earnings"]
@@ -490,7 +526,9 @@ def build():
     # combined score ranks the GAME among every regular-season game ever played
     # (the league's Highest Combined Scores list), not among the ten players
     all_combined = sorted((round(g["a"]["points"] + g["b"]["points"], 2) for g in regular), reverse=True)
-    for m in CURRENT:
+    for m in P:
+        if not P[m]["career"]["combined"]:
+            P[m]["career"].setdefault("ranks", {})["combined"] = None; continue
         v = P[m]["career"]["combined"]["value"]
         better = sum(1 for o in all_combined if o > v)
         P[m]["career"].setdefault("ranks", {})["combined"] = ("T-%d" if all_combined.count(v) > 1 else "%d") % (better + 1)
@@ -510,7 +548,7 @@ def build():
     last = max(((g["season"], g["week"]) for g in games), default=(this_season, 0))
     return {"through": {"season": last[0], "week": last[1]},
             "rules": {"ppr_from": PPR_FROM},
-            "order": CURRENT, "managers": P}
+            "order": CURRENT, "previews": previews, "managers": P}
 
 
 def main():
@@ -519,13 +557,13 @@ def main():
     args = ap.parse_args()
 
     data = build()
-    for m in data["order"]:
+    for m in data["order"] + data["previews"]:
         p = data["managers"][m]
         c, s, po = p["career"], p["season"], p["playoffs"]
         print("%-10s %3d-%-3d %.3f  avg %6s  ag %6s  hi %6.2f  lo %6s  HS %2d  #1 %2d  $%s"
               "  | %d now: #%s %d-%d %s  | PO %d-%d  %d/%d/%d"
               % (m, c["wins"], c["losses"], c["win_pct"], c["avg"], c["avg_against"],
-                 c["high"]["value"], (c["low"] or {}).get("value"), c["high_scores"],
+                 (c["high"] or {}).get("value") or 0, (c["low"] or {}).get("value"), c["high_scores"],
                  c["weeks_first"], c["earnings"], s["season"], s["standing"],
                  s["wins"], s["losses"], s["streak"], po["wins"], po["losses"],
                  po["trophies"]["first"], po["trophies"]["second"], po["trophies"]["third"]))
@@ -535,7 +573,7 @@ def main():
         return
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     written = 0
-    for m in data["order"]:
+    for m in data["order"] + data["previews"]:
         body = {"through": data["through"], "rules": data["rules"],
                 "order": data["order"], **data["managers"][m]}
         path = OUT_DIR / ("%s.json" % m)
