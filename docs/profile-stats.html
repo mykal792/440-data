@@ -838,7 +838,9 @@ function songFile(who){
       return fetch(list[0], {method: "HEAD", cache: "no-cache"}).then(function(r){ return r.ok ? list[0] : tryOne(list.slice(1)); },
                                                                         function(){ return tryOne(list.slice(1)); });
     };
-    SONG_FILE[who] = tryOne(["songs/" + who + ".m4a", "songs/" + who + ".mp3"]);
+    // GitHub Pages names are case-sensitive: coyne.m4a and Coyne.m4a both work
+    var Who = who.charAt(0).toUpperCase() + who.slice(1);
+    SONG_FILE[who] = tryOne(["songs/" + who + ".m4a", "songs/" + who + ".mp3", "songs/" + Who + ".m4a", "songs/" + Who + ".mp3"]);
   }
   return SONG_FILE[who];
 }
@@ -893,16 +895,25 @@ function songTicker(g, H, teamEl){
     on: function(name){
       if (!name) return;
       mover.innerHTML = ""; if (raf) cancelAnimationFrame(raf); raf = null;
-      var t1 = txt(mover, H.teamSty, 0, sy, "s", name, opt), tw = t1.getComputedTextLength();
+      // one <text> holding two copies (the second in a tspan pushed one gap
+      // along); the loop length is read from where the second copy actually
+      // starts, so letter-spacing is counted the same way in every browser
+      // (Safari leaves it out of getComputedTextLength)
       box.removeAttribute("display"); teamEl.setAttribute("display", "none");
+      var t1 = txt(mover, H.teamSty, 0, sy, "s", name, opt), n = t1.getNumberOfChars();   // (runs of spaces collapse)
+      var span = function(){ return t1.getEndPositionOfChar(n - 1).x - t1.getStartPositionOfChar(0).x; };
+      var tw = span();
       if (tw <= w) {                                     // fits: sit where the team name sits, no fade
         mr.setAttribute("fill", "#fff");
-        t1.setAttribute("x", H.teamA === "m" ? H.teamX - tw / 2 : x0);
+        mover.setAttribute("transform", "translate(" + ((H.teamA === "m" ? H.teamX - tw / 2 : x0)) + ",0)");
         return;
       }
       mr.setAttribute("fill", "url(#" + id + "g)");
-      var gap = 30, loop = tw + gap, speed = 16, t0 = null;   // board units per second
-      txt(mover, H.teamSty, loop, sy, "s", name, opt);
+      var gap = 34, speed = 16, t0 = null;                 // board units; units per second
+      var t2 = document.createElementNS(NS, "tspan");
+      t2.setAttribute("dx", gap); t2.textContent = name; t1.appendChild(t2);
+      var loop = t1.getStartPositionOfChar(n).x - t1.getStartPositionOfChar(0).x;
+      if (!(loop > tw)) loop = tw + gap;                   // never closer than one gap
       var step = function(ts){
         if (t0 === null) t0 = ts + 900;                    // a short pause before it starts moving
         var d = Math.max(0, (ts - t0) / 1000 * speed) % loop;
