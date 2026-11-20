@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-20T01:50:25Z",
+  "updated": "2026-11-20T01:55:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 0.0,
+        "score": 1.0,
         "projected": 119.34
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 0.0,
+        "score": 10.7,
         "projected": 127.37
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 1.8,
+        "score": 1.9,
         "projected": 100.09
       },
       "away": {
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "1.00",
+          "detail": "Ka'imi Fairbairn"
+        },
+        {
+          "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
           "value": "0.00",
           "detail": "Eddy Pineiro"
-        },
-        {
-          "rank": 2,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "0.00",
-          "detail": "Cam Little"
         }
       ]
     },
@@ -113,29 +113,51 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GREG",
+          "face": "greg",
+          "value": "10.70",
+          "detail": "8 to play"
+        },
+        {
+          "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
           "value": "7.00",
           "detail": "8 to play"
         },
         {
-          "rank": 2,
+          "rank": 3,
           "manager": "SCHILLING",
           "face": "schilling",
           "value": "3.40",
-          "detail": "8 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "1.80",
           "detail": "8 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "Hou",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 42
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Texans",
       "position": "DEF",
@@ -160,11 +182,11 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 1.8,
+      "points": 1.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 15
         },
         {
           "stat": "REC YD",
@@ -175,6 +197,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "David Montgomery",
@@ -460,15 +491,6 @@
       "stats": []
     },
     {
-      "name": "Nico Collins",
-      "position": "WR",
-      "team": "Hou",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Dallas Goedert",
       "position": "TE",
       "team": "Phi",
@@ -643,15 +665,6 @@
       "name": "Isaiah Likely",
       "position": "TE",
       "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 0.0,
