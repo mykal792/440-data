@@ -358,6 +358,8 @@ def build():
             # for the 2026 section's graphics
             "dots_by_pos": {pos: (dots_feed.get("totals", {}).get(m) or {}).get(pos, 0)
                             for pos in ("QB", "RB", "WR", "TE")},
+            # each dot: week, position, the player, his points, NFL team and stat line
+            "dot_list": dot_list(dots_feed, m),
             "bonuses": [{"week": b.get("week"), "type": b.get("type"),
                          "pos": b.get("pos"), "label": b.get("label"),
                          "amount": b.get("amount", 0)}
@@ -549,6 +551,29 @@ def build():
     return {"through": {"season": last[0], "week": last[1]},
             "rules": {"ppr_from": PPR_FROM},
             "order": CURRENT, "previews": previews, "managers": P}
+
+
+_WEEKS = {}
+def dot_list(dots_feed, m):
+    """One entry per Dot Pot dot this player won this season, oldest first. The
+    winning player's NFL team and stat line come from that week's archive
+    (docs/weeks/wN.json, top_players)."""
+    out = []
+    for h in dots_feed.get("history", []):
+        wk = h.get("week")
+        if wk not in _WEEKS:
+            _WEEKS[wk] = load(REPO / "docs" / "weeks" / ("w%s.json" % wk), {}).get("top_players") or []
+        for pos in ("QB", "RB", "WR", "TE"):
+            e = (h.get("positions") or {}).get(pos) or {}
+            if m not in [str(x).lower() for x in e.get("managers") or [e.get("manager")] if x]:
+                continue
+            name = e.get("detail") or ""
+            tp = next((t for t in _WEEKS[wk] if t.get("name") == name and t.get("position") == pos), None) \
+                or next((t for t in _WEEKS[wk] if t.get("name") == name), None) or {}
+            out.append({"week": wk, "pos": pos, "player": name, "points": e.get("value"),
+                        "team": (tp.get("team") or "").upper(),
+                        "stats": " · ".join("%s %s" % (st["value"], st["stat"]) for st in tp.get("stats") or [])})
+    return out
 
 
 def main():
