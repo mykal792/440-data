@@ -266,7 +266,7 @@ function pill(g, cx, cy, w, h, fill){
 // coordinate below is that artboard's (rule at y 142.61); the whole group is
 // shifted so the rule lands where this block's section rule is drawn.
 // ---------------------------------------------------------------------------
-var ART = {rule: 142.61, end: 157.4 + 73.08 + 73.47 + 94.05 + 94.04 + 4 * 9.5 + 83.02 + 3.54,   // GRID.d gaps
+var ART = {rule: 142.61, end: 157.4 + 73.08 + 73.47 + 94.05 + 94.04 + 4 * 9.5 + 83.02,   // the Dot Pot card's foot   // GRID.d gaps
            green: "#88e9bf", lossFill: "#e2e2e2", money: "#2eb57b",
            bonus: "#ed402e", high: "#0c9bd7", dot: "#f6c835"};
 // one colour per money category in every bank (this season, past seasons, career)
@@ -667,10 +667,10 @@ function dotPotCard(g, x, y, w, s, perRow){
   txt(g, "lab", bx, by + 2.6, "m", dt.pos, {fill: "#fff", "font-size": 7.6});
   txt(g, "sub3", tx, by - 8.9, "s", "WEEK " + dt.week + (dt.points ? "  ·  " + dt.points + " PTS" : ""), {"font-size": 5.4, fill: "#bababa"});
   var nm = txt(g, "lab", tx, by + 1.5, "s", dt.player.toUpperCase(), {"font-size": 9});
-  var chip = dt.team ? 22 : 0;
+  var chip = dt.team ? 23.5 : 0;
   fitLine(nm, room - chip, 6);
-  if (dt.team) {
-    var cxp = tx + nm.getComputedTextLength() + 4.5;
+  if (dt.team) {                                     // team chip a clear 5.5 past the name
+    var cxp = tx + textW(nm) + 5.5;
     el("rect", {x: cxp, y: by - 5.8, width: 16.8, height: 8.54, rx: 2.35, fill: "#e4e4e4"}, g);
     txt(g, "sub3", cxp + 8.4, by + 0.5, "m", dt.team, {"font-size": 5, fill: "#a2a0a0"});
   }
@@ -678,10 +678,18 @@ function dotPotCard(g, x, y, w, s, perRow){
   if (dt.stats) { var st = txt(g, "sub3", tx, by + 10.1, "s", dt.stats, {"font-size": 5.6, fill: "#a2a0a0", "letter-spacing": 0.1, "class": "wix"}); fitLine(st, room, 4); }
   return h;
 }
+// the width a <text> really takes: Safari (iPad, iPhone) leaves letter-spacing
+// out of getComputedTextLength, so measure where the glyphs actually land too
+function textW(t){
+  var w = t.getComputedTextLength(), n = t.getNumberOfChars();
+  try { if (n) w = Math.max(w, t.getEndPositionOfChar(n - 1).x - t.getStartPositionOfChar(0).x); } catch (e) {}
+  try { w = Math.max(w, t.getBBox().width); } catch (e) {}
+  return w;
+}
 function fitLine(t, w, min){                       // shrink to fit, then trim with an ellipsis
   var fs = parseFloat(t.getAttribute("font-size")) || 5, s = t.textContent;
-  while (t.getComputedTextLength() > w && fs > min) { fs -= 0.2; t.setAttribute("font-size", fs); }
-  while (t.getComputedTextLength() > w && s.length > 3) { s = s.slice(0, -1); t.textContent = s.replace(/\s+$/, "") + "…"; }
+  while (textW(t) > w && fs > min) { fs -= 0.2; t.setAttribute("font-size", fs); }
+  while (textW(t) > w && s.length > 3) { s = s.slice(0, -1); t.textContent = s.replace(/\s+$/, "") + "…"; }
 }
 
 // ---- desktop: the artboard, card by card ---------------------------------------
@@ -992,7 +1000,9 @@ function drawProfile(root, p, who, mobile){
   var GAP = 16.5, R = 10.8 + GAP;            // card -> panel edge; corners concentric with the cards
   var W = mobile ? MART.w : 406.02;
   // measure pass for the mobile height (it depends on nothing but the layout)
-  var H = mobile ? MOBILE_END + GAP : ART.end + GAP;
+  // the gray panel's foot sits the same distance below the last card as its
+  // sides are from the cards (16.61 phone, 17.5 desktop): offset paths
+  var H = mobile ? MOBILE_END + GRID.m.L : ART.end + GRID.d.L;
   var svg = el("svg", {viewBox: "0 0 " + W + " " + H, role: "img", "aria-label": (p.name || who) + " profile"}, root);
   panel(svg, 0, 0, W, H, R);
   var g = el("g", {}, svg);
@@ -1011,7 +1021,7 @@ function drawProfile(root, p, who, mobile){
 // Mobile: 2 stat rows, 2-row results, hi/lo, bank, high scores, bonus, 2-row dot
 // pot. Fixed so the Wix block height never changes.
 var MOBILE_TOP = 467.35;
-var MOBILE_END = MOBILE_TOP + 2 * (73.08 + MART.gapY) + (174.8 + MART.gapY) + 3 * (94.05 + MART.gapY) + (138 + 17.2);   // Dot Pot: DOT_H.m
+var MOBILE_END = MOBILE_TOP + 2 * (73.08 + MART.gapY) + (174.8 + MART.gapY) + 3 * (94.05 + MART.gapY) + 138;   // ends at the Dot Pot card's foot (DOT_H.m)
 
 function growCareer(L){
   // a Highest Combined Score box joins Biggest Blowout; the bank grows to
