@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-20T02:25:24Z",
+  "updated": "2026-11-20T02:30:33Z",
   "players": [
     {
       "name": "Nico Collins",
@@ -66,13 +66,22 @@
       ]
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.0,
-      "stats": []
+      "name": "Tyler Warren",
+      "position": "TE",
+      "team": "Ind",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jonathan Taylor",
@@ -80,11 +89,11 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 1.8,
+      "points": 2.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 14
+          "value": 17
         },
         {
           "stat": "REC YD",
@@ -95,6 +104,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.0,
+      "stats": []
     },
     {
       "name": "Joe Burrow",
@@ -811,15 +829,6 @@
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Warren",
-      "position": "TE",
-      "team": "Ind",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
