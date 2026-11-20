@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-20T04:00:33Z",
+  "updated": "2026-11-20T04:05:24Z",
   "players": [
     {
       "name": "Texans",
@@ -13,16 +13,38 @@
       "stats": []
     },
     {
+      "name": "Nico Collins",
+      "position": "WR",
+      "team": "Hou",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 13.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 58
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 11.9,
+      "points": 12.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 87
+          "value": 93
         },
         {
           "stat": "REC YD",
@@ -31,28 +53,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Nico Collins",
-      "position": "WR",
-      "team": "Hou",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 48
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
