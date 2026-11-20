@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-20T01:40:26Z",
+  "updated": "2026-11-20T01:45:31Z",
   "matchups": [
     {
       "home": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 1.0,
+        "score": 1.8,
         "projected": 100.09
       },
       "away": {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "1.00",
+          "value": "1.80",
           "detail": "8 to play"
         }
       ]
@@ -160,11 +160,19 @@
       "team": "Ind",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 1.0,
+      "points": 1.8,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": -1
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
