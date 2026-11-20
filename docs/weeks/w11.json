@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-20T01:15:31Z",
+  "updated": "2026-11-20T01:20:28Z",
   "matchups": [
     {
       "home": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 0.0,
+        "score": 10.0,
         "projected": 125.16
       },
       "away": {
@@ -113,29 +113,38 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "10.00",
+          "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "0.00",
+          "detail": "9 to play"
         },
         {
-          "rank": 3,
-          "manager": "TBD",
-          "face": "",
-          "value": "--",
-          "detail": ""
+          "rank": 2,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "0.00",
+          "detail": "9 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Texans",
+      "position": "DEF",
+      "team": "Hou",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.0,
+      "stats": []
+    },
     {
       "name": "Joe Burrow",
       "position": "QB",
@@ -284,15 +293,6 @@
       "name": "Eddy Pineiro",
       "position": "K",
       "team": "SF",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Texans",
-      "position": "DEF",
-      "team": "Hou",
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 0.0,
