@@ -97,6 +97,17 @@ jobs:
         # dots and the bank. Only rewrites files whose numbers changed.
         continue-on-error: true
         run: python build_profiles.py
+      - name: Build record book
+        # docs/records.json for record-book.html. No Yahoo calls; reads history
+        # and the profiles, so it runs right after them.
+        continue-on-error: true
+        run: python build_records.py
+      - name: Pull record-book box scores
+        # docs/boxscores/<game>.json for every game in a record that doesn't
+        # have one yet (2 Yahoo calls a game, at most 40 games a run). A box
+        # score is pulled once and never again; a no-op almost every run.
+        continue-on-error: true
+        run: python pull_boxscores.py
 
       - name: Publish if changed
         # EVERY file a step above writes must be listed here. A file written
@@ -107,7 +118,7 @@ jobs:
         # which is also why "docs/weeks" (a DIRECTORY, staged whole) is here.
         if: always()
         run: |
-          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/weeks docs/dots.json docs/dk.json docs/squid-scores.json docs/season.json bank-ledger.json docs/history docs/profiles"
+          FILES="docs/scoreboard.json docs/bonus.json docs/top-players.json docs/weeks docs/dots.json docs/dk.json docs/squid-scores.json docs/season.json bank-ledger.json docs/history docs/profiles docs/records.json docs/boxscores"
           # Stage first, THEN compare. "git diff" alone can't see files that
           # have never been committed, so a brand-new output (dots.json in
           # week 2) was written every run and silently discarded as "no change"
