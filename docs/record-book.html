@@ -17,7 +17,8 @@
 
   THE HALL OF RECORDS header (Michael's art, redrawn) floating above the gray
   panel (?hdr=card puts it in its own white card instead).
-  ALL-TIME STANDINGS: full width; tap a name to light up his rows in every
+  ALL-TIME STANDINGS: full width; tap a heading to sort (again to flip; the
+  place numbers stay 1-10); tap a name to light up his rows in every
   record (and a green dot in the menu beside each record he's on). Under it,
   PLAYER SPOTLIGHT: the tapped manager's art and line, or faces to tap.
   BOX SCORE: under the records. In a single-game or playoff-game record,
@@ -114,7 +115,7 @@ function avatar(g, who, cx, cy, r){
 // ---- vertical scroller (from profile-stats.html: wheel, drag, touch with
 // momentum, chunky bar; hands the swipe back to the page at either end) ------
 var HEADER = (new URLSearchParams(location.search)).get("hdr") === "card" ? "card" : "float";
-var MOB = false, STATE = {cat: 0, rec: 0, open: 0, menu: false, who: null, game: null, era: {}, scroll: {}};
+var MOB = false, STATE = {cat: 0, rec: 0, open: 0, menu: false, who: null, game: null, sort: null, era: {}, scroll: {}};
 function scroller(g, box, contentLen, barX, key){
   var id = "clip" + Math.random().toString(36).slice(2, 8);
   var cp = el("clipPath", {id: id}, g);
@@ -238,13 +239,40 @@ function standings(g, x, y, w, S){
   rrect(g, x, y, w, h, 10.8, K.white);
   var hy = y + S.head * 0.62;
   Wx(g, L + 3, hy, "m", "#", S.hSize, C.sub, true);
-  Wx(g, L + S.nameX, hy, "s", "TEAM", S.hSize, C.sub, true);
-  cols.forEach(function(c){ Wx(g, c.x, hy, "m", c.label, S.hSize, C.sub, true); });
+  // tap a heading to sort by it (again to flip); the place numbers down the left never move
+  var heads = [{label: "TEAM", key: "name", x: L + S.nameX, a: "s"}].concat(cols.map(function(c){ return {label: c.label, key: c.key, x: c.x, a: "m"}; }));
+  heads.forEach(function(hd){
+    var on = STATE.sort && STATE.sort.key === hd.key, hg = el("g", {style: "cursor:pointer"}, g);
+    var t = Wx(hg, hd.x, hy, hd.a, hd.label, S.hSize, on ? K.ink : C.sub, true), tw = textW(t);
+    var x0 = hd.a === "m" ? hd.x - tw / 2 : hd.x;
+    rrect(hg, x0 - 3, y + 2, tw + 9, S.head - 3, 0, "#fff", {"fill-opacity": 0});
+    if (on) {                                   // small arrow after the label: down = high to low
+      var ax = x0 + tw + 2.2, ay = hy - S.hSize * 0.36, a = S.hSize * 0.32, up = STATE.sort.dir > 0;
+      el("path", {d: up ? "M" + (ax - a) + "," + (ay + a * 0.5) + " l" + a + "," + (-a) + " l" + a + "," + a
+                        : "M" + (ax - a) + "," + (ay - a * 0.5) + " l" + a + "," + a + " l" + a + "," + (-a),
+                  fill: "none", stroke: K.ink, "stroke-width": S.hSize * 0.17, "stroke-linecap": "round", "stroke-linejoin": "round", transform: "translate(" + a + ",0)"}, hg);
+    }
+    hg.addEventListener("click", function(){
+      if (on) STATE.sort = {key: hd.key, dir: -STATE.sort.dir};
+      else STATE.sort = {key: hd.key, dir: hd.key === "name" ? 1 : -1};   // names A-Z, numbers high to low
+      render();
+    });
+  });
   rule(g, L, Rr, y + S.head);
-  D.standings.forEach(function(s, i){
+  var list = D.standings.slice();
+  if (STATE.sort) {
+    var k = STATE.sort.key, dir = STATE.sort.dir, base = D.standings.slice();
+    var val = function(q){ return k === "name" ? (NAMES[q.m] || q.m) : k.charAt(0) === "m" && k.length === 2 ? q.medals[+k.charAt(1)] : q[k]; };
+    list.sort(function(p, q){
+      var a = val(p), b = val(q);
+      if (a < b) return -dir; if (a > b) return dir;
+      return base.indexOf(p) - base.indexOf(q);              // ties keep the all-time order
+    });
+  }
+  list.forEach(function(s, i){
     var ry = y + S.head + i * S.rh, my = ry + S.rh / 2, on = STATE.who === s.m, rg = el("g", {style: "cursor:pointer"}, g);
     rrect(rg, L - S.hi, ry + 1.2, Rr - L + 2 * S.hi, S.rh - 2.4, 5, on ? C.mint : "#fff");
-    if (i && !on && STATE.who !== D.standings[i - 1].m) rule(rg, L, Rr, ry, 0.8);
+    if (i && !on && STATE.who !== list[i - 1].m) rule(rg, L, Rr, ry, 0.8);
     R(rg, L + 3, my + S.txt * 0.36, "m", String(i + 1), S.txt, on ? K.ink : C.sub, 0.1);
     avatar(rg, s.m, L + S.nameX - S.av - 2.6, my, S.av);
     R(rg, L + S.nameX, my + S.txt * 0.36, "s", NAMES[s.m], S.txt, K.ink);
@@ -365,11 +393,11 @@ function menu(g, x, y, w, h, S, key, picked){
 var SD = {
   stand: {pad: 13, hi: 7, head: 19, rh: 19, hSize: 4.4, txt: 6.4, num: 5.6, av: 5.6, nameX: 24,
           cols: function(L, Rr){ var x0 = L + 122, st = (Rr - 8 - x0) / 8; return [
-            {label: "WIN %", get: function(s){ return pctS(s.pct); }}, {label: "W", get: function(s){ return s.w; }},
-            {label: "L", get: function(s){ return s.l; }}, {label: "PO APP", get: function(s){ return s.po_app; }},
-            {label: "PO W", get: function(s){ return s.po_w; }}, {label: "PO L", get: function(s){ return s.po_l; }},
-            {label: "1ST", medal: K.gold, get: function(s){ return s.medals[0]; }}, {label: "2ND", medal: K.silver, get: function(s){ return s.medals[1]; }},
-            {label: "3RD", medal: K.bronze, get: function(s){ return s.medals[2]; }}].map(function(c, i){ c.x = x0 + i * st; return c; }); }},
+            {label: "WIN %", key: "pct", get: function(s){ return pctS(s.pct); }}, {label: "W", key: "w", get: function(s){ return s.w; }},
+            {label: "L", key: "l", get: function(s){ return s.l; }}, {label: "PO APP", key: "po_app", get: function(s){ return s.po_app; }},
+            {label: "PO W", key: "po_w", get: function(s){ return s.po_w; }}, {label: "PO L", key: "po_l", get: function(s){ return s.po_l; }},
+            {label: "1ST", key: "m0", medal: K.gold, get: function(s){ return s.medals[0]; }}, {label: "2ND", key: "m1", medal: K.silver, get: function(s){ return s.medals[1]; }},
+            {label: "3RD", key: "m2", medal: K.bronze, get: function(s){ return s.medals[2]; }}].map(function(c, i){ c.x = x0 + i * st; return c; }); }},
   menu: {pad: 8, side: 7, catH: 15.5, catGap: 3.6, catSize: 5.2, subH: 11.8, subPad: 2.5, subSize: 5.0, indent: 9, bar: 4.2},
   rec: {pad: 14, hi: 7, titleY: 17, title: 9.2, catY: 24.6, catSize: 4.6, headMid: 15.4, noteSize: 4.6, pillH: 9.4, pillSize: 4.6, ruleY: 30,
         bottom: 6, box: 13, rank: 6.4, av: 8.4, gap: 4.6, name: 7.0, det: 5.0, val: 8.4},
@@ -402,10 +430,10 @@ function drawDesktop(svg){
 var SM = {
   stand: {pad: 10, hi: 6, head: 18, rh: 18, hSize: 4.2, txt: 5.6, num: 5.3, av: 5.0, nameX: 19,
           cols: function(L, Rr){ var a = [
-            {label: "W-L", get: function(s){ return s.w + "-" + s.l; }}, {label: "WIN %", get: function(s){ return pctS(s.pct); }},
-            {label: "PO", get: function(s){ return s.po_w + "-" + s.po_l; }},
-            {label: "1ST", medal: K.gold, get: function(s){ return s.medals[0]; }}, {label: "2ND", medal: K.silver, get: function(s){ return s.medals[1]; }},
-            {label: "3RD", medal: K.bronze, get: function(s){ return s.medals[2]; }}];
+            {label: "W-L", key: "w", get: function(s){ return s.w + "-" + s.l; }}, {label: "WIN %", key: "pct", get: function(s){ return pctS(s.pct); }},
+            {label: "PO", key: "po_w", get: function(s){ return s.po_w + "-" + s.po_l; }},
+            {label: "1ST", key: "m0", medal: K.gold, get: function(s){ return s.medals[0]; }}, {label: "2ND", key: "m1", medal: K.silver, get: function(s){ return s.medals[1]; }},
+            {label: "3RD", key: "m2", medal: K.bronze, get: function(s){ return s.medals[2]; }}];
             var xs = [Rr - 112, Rr - 87, Rr - 63, Rr - 42, Rr - 25, Rr - 8];
             return a.map(function(c, i){ c.x = xs[i]; return c; }); }},
   menu: {pad: 8, side: 8, catH: 18, catGap: 4, catSize: 6.4, subH: 14.5, subPad: 3, subSize: 6.0, indent: 11, bar: -6.5},
@@ -744,6 +772,7 @@ if (q.get("rec")) STATE.rec = +q.get("rec") || 0;
 if (q.get("menu")) STATE.menu = true;
 if (q.get("who")) STATE.who = q.get("who");
 if (q.get("game")) STATE.game = q.get("game");
+if (q.get("sort")) STATE.sort = {key: q.get("sort"), dir: q.get("dir") === "up" ? 1 : -1};
 Promise.all([document.fonts.load('10px "Rotundo"'), document.fonts.load('500 10px "Laro Soft"'),
              document.fonts.load('500 10px "Wix Made for Text"'), document.fonts.load('700 10px "Wix Made for Text"')])
   .then(function(){ return fetch("records.json", {cache: "no-cache"}); })
