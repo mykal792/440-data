@@ -1,19 +1,19 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T21:50:25Z",
+  "updated": "2026-11-22T21:55:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 56.0,
+        "score": 58.3,
         "projected": 120.48
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 81.76,
+        "score": 83.2,
         "projected": 119.93
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 86.32,
+        "score": 86.42,
         "projected": 119.41
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 63.02,
+        "score": 65.72,
         "projected": 112.82
       }
     }
@@ -1120,6 +1120,28 @@
       ]
     },
     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -1178,6 +1200,24 @@
       "stats": []
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 60
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1210,6 +1250,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "Den",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1254,28 +1312,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1334,24 +1370,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 24
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
         }
       ]
     },
@@ -1436,15 +1454,6 @@
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "team": "Den",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1609,11 +1618,15 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": -1.08,
+      "points": -0.98,
       "stats": [
         {
           "stat": "PASS YD",
           "value": 23
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
         },
         {
           "stat": "INT",

@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T21:50:25Z",
+  "updated": "2026-11-22T21:55:22Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -987,6 +987,28 @@
       ]
     },
     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Cam Little",
       "position": "K",
       "team": "Jax",
@@ -1045,6 +1067,24 @@
       "stats": []
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 2.8,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 60
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1077,6 +1117,24 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jaylen Waddle",
+      "position": "WR",
+      "team": "Den",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 2.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -1121,28 +1179,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -1201,24 +1237,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 24
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
         }
       ]
     },
@@ -1303,15 +1321,6 @@
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaylen Waddle",
-      "position": "WR",
-      "team": "Den",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1476,11 +1485,15 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": -1.08,
+      "points": -0.98,
       "stats": [
         {
           "stat": "PASS YD",
           "value": 23
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
         },
         {
           "stat": "INT",
