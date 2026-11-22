@@ -115,7 +115,7 @@ function avatar(g, who, cx, cy, r){
 // ---- vertical scroller (from profile-stats.html: wheel, drag, touch with
 // momentum, chunky bar; hands the swipe back to the page at either end) ------
 var HEADER = (new URLSearchParams(location.search)).get("hdr") === "card" ? "card" : "float";
-var MOB = false, STATE = {cat: 0, rec: 0, open: 0, menu: false, who: null, game: null, sort: null, era: {}, scroll: {}};
+var MOB = false, STATE = {cat: 0, rec: 0, open: 0, menu: false, who: null, game: null, sort: null, era: {}, scroll: {}, trophy: false};
 function scroller(g, box, contentLen, barX, key){
   var id = "clip" + Math.random().toString(36).slice(2, 8);
   var cp = el("clipPath", {id: id}, g);
@@ -233,16 +233,33 @@ function header(g, x, y, w){
 }
 
 // ---- ALL-TIME STANDINGS: full width, tap a name to light him up everywhere ---------
+// Phone (S.slide): W-L, WIN %, PO show first; the arrow slides them over to 1ST / 2ND / 3RD.
+var LAST_SLIDE = 0;
 function standings(g, x, y, w, S){
   var L = x + S.pad, Rr = x + w - S.pad, cols = S.cols(L, Rr);
   var h = S.head + 10 * S.rh + S.pad * 0.6;
   rrect(g, x, y, w, h, 10.8, K.white);
   var hy = y + S.head * 0.62;
   Wx(g, L + 3, hy, "m", "#", S.hSize, C.sub, true);
+  // values (and their headings) that slide live in their own clipped group, drawn over the rows
+  var slideG = null, shift = 0, under = el("g", {}, g);
+  if (S.slide) {
+    var id = "sl" + Math.random().toString(36).slice(2, 8), cp = el("clipPath", {id: id}, g);
+    el("rect", {x: S.slide.x0(L, Rr), y: y, width: S.slide.w(L, Rr), height: h}, cp);
+    var clipG = el("g", {"clip-path": "url(#" + id + ")"}, g);
+    slideG = el("g", {}, clipG);
+    shift = S.slide.w(L, Rr);
+    var target = STATE.trophy ? -shift : 0, from = LAST_SLIDE ? -shift : 0;
+    slideG.style.transform = "translateX(" + from + "px)";
+    if (from !== target) requestAnimationFrame(function(){ requestAnimationFrame(function(){
+      slideG.style.transition = "transform .35s cubic-bezier(.3,.7,.3,1)"; slideG.style.transform = "translateX(" + target + "px)"; }); });
+    else slideG.style.transform = "translateX(" + target + "px)";
+    LAST_SLIDE = STATE.trophy ? 1 : 0;
+  }
   // tap a heading to sort by it (again to flip); the place numbers down the left never move
   var heads = [{label: "TEAM", key: "name", x: L + S.nameX, a: "s"}].concat(cols.map(function(c){ return {label: c.label, key: c.key, x: c.x, a: "m"}; }));
   heads.forEach(function(hd){
-    var on = STATE.sort && STATE.sort.key === hd.key, hg = el("g", {style: "cursor:pointer"}, g);
+    var on = STATE.sort && STATE.sort.key === hd.key, hg = el("g", {style: "cursor:pointer"}, slideG && hd.key !== "name" ? slideG : g);
     var t = Wx(hg, hd.x, hy, hd.a, hd.label, S.hSize, on ? K.ink : C.sub, true), tw = textW(t);
     var x0 = hd.a === "m" ? hd.x - tw / 2 : hd.x;
     rrect(hg, x0 - 3, y + 2, tw + 9, S.head - 3, 0, "#fff", {"fill-opacity": 0});
@@ -258,30 +275,38 @@ function standings(g, x, y, w, S){
       render();
     });
   });
-  rule(g, L, Rr, y + S.head);
+  if (S.slide) {                                // the slide button, right of the headings
+    var bx = Rr - S.slide.btn / 2, bg = el("g", {style: "cursor:pointer"}, g), a = S.slide.btn * 0.16, dir = STATE.trophy ? -1 : 1;
+    el("circle", {cx: bx, cy: y + S.head / 2, r: S.slide.btn / 2, fill: K.ink}, bg);
+    el("path", {d: "M" + (bx - dir * a * 0.6) + "," + (y + S.head / 2 - a * 1.25) + " l" + (dir * a * 1.25) + "," + a * 1.25 + " l" + (-dir * a * 1.25) + "," + a * 1.25,
+                fill: "none", stroke: K.white, "stroke-width": S.slide.btn * 0.11, "stroke-linecap": "round", "stroke-linejoin": "round"}, bg);
+    bg.addEventListener("click", function(){ STATE.trophy = !STATE.trophy; render(); });
+  }
+  rule(under, L, Rr, y + S.head);
   var list = D.standings.slice();
   if (STATE.sort) {
-    var k = STATE.sort.key, dir = STATE.sort.dir, base = D.standings.slice();
+    var k = STATE.sort.key, dir2 = STATE.sort.dir, base = D.standings.slice();
     var val = function(q){ return k === "name" ? (NAMES[q.m] || q.m) : k.charAt(0) === "m" && k.length === 2 ? q.medals[+k.charAt(1)] : q[k]; };
     list.sort(function(p, q){
       var a = val(p), b = val(q);
-      if (a < b) return -dir; if (a > b) return dir;
+      if (a < b) return -dir2; if (a > b) return dir2;
       return base.indexOf(p) - base.indexOf(q);              // ties keep the all-time order
     });
   }
   list.forEach(function(s, i){
-    var ry = y + S.head + i * S.rh, my = ry + S.rh / 2, on = STATE.who === s.m, rg = el("g", {style: "cursor:pointer"}, g);
-    rrect(rg, L - S.hi, ry + 1.2, Rr - L + 2 * S.hi, S.rh - 2.4, 5, on ? C.mint : "#fff");
+    var ry = y + S.head + i * S.rh, my = ry + S.rh / 2, on = STATE.who === s.m, rg = el("g", {style: "cursor:pointer"}, under);
+    rrect(rg, L - S.hi, ry + 1.2, Rr - L + 2 * S.hi, S.rh - 2.4, 6, on ? C.mint : "#fff");
     if (i && !on && STATE.who !== list[i - 1].m) rule(rg, L, Rr, ry, 0.8);
     R(rg, L + 3, my + S.txt * 0.36, "m", String(i + 1), S.txt, on ? K.ink : C.sub, 0.1);
-    avatar(rg, s.m, L + S.nameX - S.av - 2.6, my, S.av);
+    avatar(rg, s.m, L + S.nameX - S.av - S.avGap, my, S.av);
     R(rg, L + S.nameX, my + S.txt * 0.36, "s", NAMES[s.m], S.txt, K.ink);
+    var vg = slideG ? el("g", {style: "pointer-events:none"}, slideG) : rg;
     cols.forEach(function(c){
       var v = c.get(s);
       if (c.medal) {
-        el("circle", {cx: c.x - S.num * 0.5, cy: my, r: S.num * 0.3, fill: c.medal}, rg);
-        Wx(rg, c.x + S.num * 0.05, my + S.num * 0.36, "s", "×" + v, S.num, K.ink, true);
-      } else Wx(rg, c.x, my + S.num * 0.36, "m", v, S.num, K.ink, true);
+        el("circle", {cx: c.x - S.num * 0.5, cy: my, r: S.num * 0.3, fill: c.medal}, vg);
+        Wx(vg, c.x + S.num * 0.05, my + S.num * 0.36, "s", "×" + v, S.num, K.ink, true);
+      } else Wx(vg, c.x, my + S.num * 0.36, "m", v, S.num, K.ink, true);
     });
     rg.addEventListener("click", function(){ STATE.who = on ? null : s.m; render(); });
   });
@@ -360,6 +385,7 @@ function recordView(g, x, y, w, h, cat, rec, S){
 function menu(g, x, y, w, h, S, key, picked){
   var cats = D.categories, open = STATE.open, len = S.pad * 2 + cats.length * S.catH + (cats.length - 1) * S.catGap;
   if (open !== null) len += cats[open].records.length * S.subH + S.subPad * 2;
+  if (h === "fit") h = len;
   var inner = scroller(g, [x, y, w, h], len, x + w + S.bar, key), cy = y + S.pad;
   cats.forEach(function(c, i){
     var isOpen = open === i, here = STATE.cat === i, dark = isOpen || (open === null && here), bg = el("g", {style: "cursor:pointer"}, inner);
@@ -387,12 +413,13 @@ function menu(g, x, y, w, h, S, key, picked){
     }
     cy += S.catGap;
   });
+  return h;
 }
 
 // ---- desktop ------------------------------------------------------------------------
 var SD = {
-  stand: {pad: 13, hi: 7, head: 19, rh: 19, hSize: 4.4, txt: 6.4, num: 5.6, av: 5.6, nameX: 24,
-          cols: function(L, Rr){ var x0 = L + 122, st = (Rr - 8 - x0) / 8; return [
+  stand: {pad: 14, hi: 7, head: 21, rh: 24, hSize: 4.6, txt: 7.0, num: 6.0, av: 8.2, avGap: 3.2, nameX: 30,
+          cols: function(L, Rr){ var x0 = L + 104, st = (Rr - 10 - x0) / 8; return [
             {label: "WIN %", key: "pct", get: function(s){ return pctS(s.pct); }}, {label: "W", key: "w", get: function(s){ return s.w; }},
             {label: "L", key: "l", get: function(s){ return s.l; }}, {label: "PO APP", key: "po_app", get: function(s){ return s.po_app; }},
             {label: "PO W", key: "po_w", get: function(s){ return s.po_w; }}, {label: "PO L", key: "po_l", get: function(s){ return s.po_l; }},
@@ -413,12 +440,13 @@ function drawDesktop(svg){
   y += standings(body, X, y, CW, SD.stand) + G;
   y += spotlight(body, X, y, CW, SPOT.d) + 19.86;
   titledRule(body, X, q.R, y, "RECORDS"); y += 14.14;
+  // the menu's white card hugs its buttons and grows as a category opens; the record keeps its height
   var NW = (CW - G) / 3, RX = X + NW + G, RW = q.R - RX, bh = 300;
-  rrect(body, X, y, NW, bh, 10.8, K.white);
-  menu(body, X, y, NW, bh, SD.menu, "menu", function(){});
+  var mcard = el("g", {}, body), mh = menu(body, X, y, NW, "fit", SD.menu, "menu", function(){});
+  rrect(mcard, X, y, NW, mh, 10.8, K.white);
   var cat = D.categories[STATE.cat];
   recordView(body, RX, y, RW, bh, cat, cat.records[STATE.rec], SD.rec);
-  y += bh + 19.86;
+  y += Math.max(bh, mh) + 19.86;
   titledRule(body, X, q.R, y, "BOX SCORE"); y += 14.14;
   y += boxScore(body, X, y, CW, SBOX.d);
   var H = y + q.L;
@@ -428,14 +456,15 @@ function drawDesktop(svg){
 
 // ---- phone --------------------------------------------------------------------------
 var SM = {
-  stand: {pad: 10, hi: 6, head: 18, rh: 18, hSize: 4.2, txt: 5.6, num: 5.3, av: 5.0, nameX: 19,
-          cols: function(L, Rr){ var a = [
+  stand: {pad: 10, hi: 6, head: 20, rh: 23, hSize: 4.6, txt: 6.4, num: 6.0, av: 7.2, avGap: 2.8, nameX: 25,
+          slide: {btn: 11, x0: function(L, Rr){ return L + 84; }, w: function(L, Rr){ return Rr - 15 - (L + 84); }},
+          cols: function(L, Rr){
+            var x0 = L + 84, pw = Rr - 15 - x0, c3 = function(i){ return x0 + (i % 3 + 0.5) * pw / 3 + (i >= 3 ? pw : 0); };
+            return [
             {label: "W-L", key: "w", get: function(s){ return s.w + "-" + s.l; }}, {label: "WIN %", key: "pct", get: function(s){ return pctS(s.pct); }},
             {label: "PO", key: "po_w", get: function(s){ return s.po_w + "-" + s.po_l; }},
             {label: "1ST", key: "m0", medal: K.gold, get: function(s){ return s.medals[0]; }}, {label: "2ND", key: "m1", medal: K.silver, get: function(s){ return s.medals[1]; }},
-            {label: "3RD", key: "m2", medal: K.bronze, get: function(s){ return s.medals[2]; }}];
-            var xs = [Rr - 112, Rr - 87, Rr - 63, Rr - 42, Rr - 25, Rr - 8];
-            return a.map(function(c, i){ c.x = xs[i]; return c; }); }},
+            {label: "3RD", key: "m2", medal: K.bronze, get: function(s){ return s.medals[2]; }}].map(function(c, i){ c.x = c3(i) - (c.medal ? 2 : 0); return c; }); }},
   menu: {pad: 8, side: 8, catH: 18, catGap: 4, catSize: 6.4, subH: 14.5, subPad: 3, subSize: 6.0, indent: 11, bar: -6.5},
   rec: {pad: 11, hi: 6, titleY: 17, title: 9.2, catY: 25, catSize: 4.6, headMid: 15.4, noteSize: 4.4, pillH: 9.8, pillSize: 4.6, ruleY: 31,
         bottom: 5, box: 11.5, rank: 5.8, av: 7.4, gap: 3.8, name: 6.4, det: 4.7, val: 7.4},
@@ -498,10 +527,19 @@ function drawPhone(svg){
   svg.setAttribute("viewBox", "0 0 " + W + " " + H);
 }
 
-// ---- PLAYER SPOTLIGHT: the tapped manager's line, or the ten faces to tap -------------
+// ---- PLAYER SPOTLIGHT: Michael's Player_Spotlight.svg (nobody picked) and Highlighted_Player.svg
+// (a manager picked), both 845.08 x 273.18 art, scaled to the card. Phone: the same parts, stacked.
 var SPOT = {
-  d: {h: 118, pad: 16, art: 70, name: 9.5, line: 5.6, list: 5.2, hint: 5.4, title: 7.5, face: 15.5, facesX: 150, tileH: 58, tileLab: 5.4, labY: 15, tileVal: 15, below: false},
-  m: {h: 166, pad: 12, face2: 25, name: 11, line: 5.0, list: 4.7, hint: 5.0, title: 7.0, face: 13.5, tileH: 42, tileLab: 4.6, labY: 13, tileVal: 12, below: true, grid: true},
+  d: {art: 845.08, h: 273.18},
+  m: {grid: true},
+};
+var SP = {                                   // the art's positions (desktop)
+  faces: [324.8, 433.51, 544.89, 657.32, 767.49], rows: [75.52, 185.32], faceR: 37, faceName: [130.5, 240.5], faceNameSize: 10.7,
+  title: [47, 97.5, 123.5, 23.6], hint: [47.5, 164, 184.8, 14.6],
+  frame: [27.27, 55.77, 147.91], name: [101.22, 225, 17.9], lines: [221.5, 54.5, 79.5, 16],
+  pill: [684.11, 32.78, 114.07, 27.95, 51.5, 12.5],
+  tiles: [209.15, 363.91, 518.67, 673.43], tileY: 105.26, tileW: 133.13, tileH: 125.19, tileR: 20.53, tileRule: 146.5, tileRuleIn: 19.3,
+  tileLab: [138.5, 14.3], tileVal: [190, 27.1]
 };
 function bookFor(who){                       // every row he's on, and the records he holds outright or shares at #1
   var on = 0, firsts = [];
@@ -527,68 +565,96 @@ function wrapWx(g, x, y, w, items, sep, size, fill, lh, maxLines){   // wrap a l
   lines.forEach(function(ln, i){ fitLine(Wx(g, x, y + i * lh, "s", ln, size, fill), w, size * 0.8); });
   return lines.length;
 }
+var GRAYTXT = "#8f8f8f";
+function spotTile(g, tx, ty, tw, th, k, label, value, labY, labSize, ruleY, valY, valSize){
+  // one outlined tile: Rotundo label, a short light rule, the big Rotundo value
+  el("rect", {x: tx + 2 * k, y: ty + 2 * k, width: tw - 4 * k, height: th - 4 * k, rx: SP.tileR * k, ry: SP.tileR * k,
+              fill: K.white, stroke: K.light, "stroke-width": 4 * k}, g);
+  fitLine(R(g, tx + tw / 2, labY, "m", label, labSize, K.ink, labSize * 0.02), tw - 22 * k, labSize * 0.7);
+  el("line", {x1: tx + SP.tileRuleIn * k, x2: tx + tw - SP.tileRuleIn * k, y1: ruleY, y2: ruleY, stroke: K.light, "stroke-width": 3 * k, "stroke-linecap": "round"}, g);
+  fitLine(R(g, tx + tw / 2, valY, "m", value, valSize, K.ink, valSize * 0.02), tw - 24 * k, valSize * 0.6);
+}
+function clearPill(g, x, top, h, size, k, anchorRight){
+  var pg = el("g", {style: "cursor:pointer"}, g), probe = Wx(pg, 0, 0, "s", "TAP TO CLEAR", size, "#6f6f6f"), tw = textW(probe), pw = tw + h * 0.95;
+  probe.remove();
+  var px = anchorRight ? x - pw : x;
+  rrect(pg, px, top, pw, h, h / 2, K.light);
+  Wx(pg, px + pw / 2, top + h / 2 + size * 0.36, "m", "TAP TO CLEAR", size, "#6f6f6f");
+  pg.addEventListener("click", function(){ STATE.who = null; render(); });
+}
 function spotlight(g, x, y, w, S){
-  rrect(g, x, y, w, S.h, 10.8, K.white);
-  var L = x + S.pad, Rr = x + w - S.pad, who = STATE.who;
+  var who = STATE.who;
+  if (S.grid) return spotlightPhone(g, x, y, w, who);
+  var k = w / S.art, h = S.h * k, X = function(v){ return x + v * k; }, Y = function(v){ return y + v * k; };
+  rrect(g, x, y, w, h, 10.8, K.white);
   if (!who) {
-    // the ten faces, two rows of five, spread evenly over the space they have
-    var fx0 = S.below ? L : x + S.facesX, fw = Rr - fx0, colW = fw / 5;
-    var top = S.below ? y + 44 : y + S.pad, rowH = (y + S.h - S.pad - top) / 2;
-    R(g, L, S.below ? y + 21 : y + S.h / 2 - 5, "s", "PLAYER SPOTLIGHT", S.title, K.ink, 0.3);
-    var hintW = S.below ? w - 2 * S.pad : fx0 - L - 14;
-    wrapWx(g, L, S.below ? y + 31 : y + S.h / 2 + 6, hintW, "Tap a name in the standings, or a face, to light up his records.".split(" "), " ",
-           S.hint, "#8f8f8f", S.hint * 1.45, 2);
+    R(g, X(SP.title[0]), Y(SP.title[1]), "s", "PLAYER", SP.title[3] * k, K.ink, SP.title[3] * k * 0.03);
+    R(g, X(SP.title[0]), Y(SP.title[2]), "s", "SPOTLIGHT", SP.title[3] * k, K.ink, SP.title[3] * k * 0.03);
+    fitLine(Wx(g, X(SP.hint[0]), Y(SP.hint[1]), "s", "Tap a name in the standings", SP.hint[3] * k, GRAYTXT, false), 222 * k, SP.hint[3] * k * 0.7);
+    fitLine(Wx(g, X(SP.hint[0]), Y(SP.hint[2]), "s", "or a face to highlight his records", SP.hint[3] * k, GRAYTXT, false), 222 * k, SP.hint[3] * k * 0.7);
     D.standings.forEach(function(s, i){
-      var fg = el("g", {style: "cursor:pointer"}, g);
-      avatar(fg, s.m, fx0 + colW * (i % 5 + 0.5), top + rowH * (Math.floor(i / 5) + 0.5), S.face);
+      var fg = el("g", {style: "cursor:pointer"}, g), cx = X(SP.faces[i % 5]), row = Math.floor(i / 5), cy = Y(SP.rows[row]);
+      avatar(fg, s.m, cx, cy, SP.faceR * k);
+      var nm = R(fg, cx, Y(SP.faceName[row]), "m", NAMES[s.m], SP.faceNameSize * k, K.ink, SP.faceNameSize * k * 0.06);
+      fitLine(nm, 105 * k, SP.faceNameSize * k * 0.7);
       fg.addEventListener("click", function(){ STATE.who = s.m; render(); });
     });
-    return S.h;
+    return h;
   }
   var s = D.standings.filter(function(q){ return q.m === who; })[0], rank = D.standings.indexOf(s) + 1, b = bookFor(who);
-  var tiles = [["RECORD", s.w + "-" + s.l + (s.t ? "-" + s.t : "")], ["TITLES", String(s.medals[0])],
-               ["PLAYOFFS", s.po_w + "-" + s.po_l], ["#1 RECORDS", String(b.firsts.length)]];
-  var clear = el("g", {style: "cursor:pointer"}, g);
-  clear.addEventListener("click", function(){ STATE.who = null; render(); });
-  var tx, tY, cols, tW, gap;
-  if (S.grid) {
-    // phone: round face + name and line across the top, four tiles 2 x 2 across the full width
-    var r = S.face2, fy = y + S.pad + r;
-    el("circle", {cx: L + r, cy: fy, r: r + 1.2, fill: "#fff"}, clear);
-    avatar(clear, who, L + r, fy, r);
-    tx = L + 2 * r + 10;
-    R(g, tx, fy - S.name * 0.25, "s", NAMES[who], S.name, K.ink, S.name * 0.03);
-    Wx(g, tx, fy + S.line * 1.25, "s", ordinal(rank) + " ALL-TIME  ·  " + pctS(s.pct) + " WIN %", S.line, "#555", true);
-    Wx(g, tx, fy + S.line * 2.75, "s", "ON THE BOOK " + b.on + " TIMES", S.line, "#555", true);
-    cols = 2; gap = 6; tW = (Rr - L - gap) / 2; tY = y + S.h - S.pad - 2 * S.tileH - gap; tx = L;
-  } else {
-    // desktop: framed art with the name under it on the left; the line and four tiles on the right,
-    // tiles from the line down to the bottom of the name
-    var artW = S.art * 98.44 / 97, ay = y + S.pad;
-    el("rect", {x: L, y: ay, width: artW, height: S.art + S.name * 2.2, fill: "#fff", "fill-opacity": 0}, clear);
-    boxAvatarIn(clear, who, L, ay, artW, S.art);
-    var nm = R(clear, L + artW / 2, ay + S.art + S.name * 1.55, "m", NAMES[who], S.name, K.ink, S.name * 0.03);
-    fitLine(nm, artW + 10, S.name * 0.6);
-    tx = L + artW + 18;
-    Wx(g, tx, ay + S.line * 1.2, "s", ordinal(rank) + " ALL-TIME  ·  " + pctS(s.pct) + " WIN %  ·  ON THE BOOK " + b.on + " TIMES", S.line, "#555", true);
-    Wx(g, Rr, ay + S.line * 1.2, "e", "TAP AGAIN TO CLEAR", S.line * 0.8, K.mid, true);
-    cols = 4; gap = 7; tW = (Rr - tx - 3 * gap) / 4;
-    tY = ay + S.line * 2.9;
-    S = Object.assign({}, S, {tileH: ay + S.art + S.name * 1.55 + 1 - tY});
-  }
-  var probe = el("g", {}, g), vs = S.tileVal;
-  tiles.forEach(function(t){ var w0 = textW(R(probe, 0, 0, "s", t[1], S.tileVal, K.ink, 0.2)); if (w0 > tW - 10) vs = Math.min(vs, S.tileVal * (tW - 10) / w0); });
-  probe.remove();
-  tiles.forEach(function(t, i){
-    var tx0 = tx + (i % cols) * (tW + gap), ty0 = tY + Math.floor(i / cols) * (S.tileH + gap);
-    rrect(g, tx0, ty0, tW, S.tileH, 8, C.tile);
-    var lb = R(g, tx0 + tW / 2, ty0 + S.labY, "m", t[0], S.tileLab, K.ink, 0.25);
-    fitLine(lb, tW - 8, S.tileLab * 0.7);
-    var ruleY = ty0 + S.labY + S.tileLab * 0.75;
-    el("line", {x1: tx0 + 9, x2: tx0 + tW - 9, y1: ruleY, y2: ruleY, stroke: C.div, "stroke-width": 1.5, "stroke-linecap": "round"}, g);
-    R(g, tx0 + tW / 2, ruleY + (ty0 + S.tileH - ruleY) / 2 + vs * 0.36, "m", t[1], vs, K.ink, 0.2);
+  var ag = el("g", {style: "cursor:pointer"}, g);
+  ag.addEventListener("click", function(){ STATE.who = null; render(); });
+  boxAvatar(ag, who, X(SP.frame[0]), Y(SP.frame[1]), SP.frame[2] * k);
+  fitLine(R(ag, X(SP.name[0]), Y(SP.name[1]), "m", NAMES[who], SP.name[2] * k, K.ink, SP.name[2] * k * 0.055), SP.frame[2] * k + 12 * k, SP.name[2] * k * 0.6);
+  Wx(g, X(SP.lines[0]), Y(SP.lines[1]), "s", ordinal(rank) + " ALL-TIME", SP.lines[3] * k, K.ink, false, {"letter-spacing": SP.lines[3] * k * 0.03});
+  Wx(g, X(SP.lines[0]), Y(SP.lines[2]), "s", pctS(s.pct) + " WIN %  •  ON THE BOOK " + b.on + " TIMES", SP.lines[3] * k, K.ink, false, {"letter-spacing": SP.lines[3] * k * 0.03});
+  clearPill(g, X(SP.pill[0] + SP.pill[2]), Y(SP.pill[1]), SP.pill[3] * k, SP.pill[5] * k, k, true);
+  spotTiles(s, b).forEach(function(t, i){
+    spotTile(g, X(SP.tiles[i]), Y(SP.tileY), SP.tileW * k, SP.tileH * k, k, t[0], t[1],
+             Y(SP.tileLab[0]), SP.tileLab[1] * k, Y(SP.tileRule), Y(SP.tileVal[0]), SP.tileVal[1] * k);
   });
-  return S.h;
+  return h;
+}
+function spotTiles(s, b){
+  return [["RECORD", s.w + "-" + s.l + (s.t ? "-" + s.t : "")], ["TITLES", String(s.medals[0])],
+          ["PLAYOFFS", s.po_w + "-" + s.po_l], ["#1 RECORDS", String(b.firsts.length)]];
+}
+function spotlightPhone(g, x, y, w, who){
+  // the same parts at phone size: title and hint over two rows of five faces; or the framed
+  // art + lines + TAP TO CLEAR across the top and the four tiles 2 x 2 under them
+  var P = 12, L = x + P, Rr = x + w - P, h;
+  if (!who) {
+    h = 138;
+    rrect(g, x, y, w, h, 10.8, K.white);
+    R(g, L, y + 22, "s", "PLAYER SPOTLIGHT", 9.6, K.ink, 0.3);
+    fitLine(Wx(g, L, y + 32.5, "s", "Tap a name in the standings or a face to highlight his records", 5.4, GRAYTXT, false, {"letter-spacing": 0.15}), Rr - L, 4.4);
+    var colW = (Rr - L) / 5, r = 14.5;
+    D.standings.forEach(function(s, i){
+      var fg = el("g", {style: "cursor:pointer"}, g), cx = L + colW * (i % 5 + 0.5), row = Math.floor(i / 5), cy = y + 60 + row * 46;
+      avatar(fg, s.m, cx, cy, r);
+      fitLine(R(fg, cx, cy + r + 7.6, "m", NAMES[s.m], 4.5, K.ink, 0.27), colW - 2, 3.4);
+      fg.addEventListener("click", function(){ STATE.who = s.m; render(); });
+    });
+    return h;
+  }
+  var s = D.standings.filter(function(q){ return q.m === who; })[0], rank = D.standings.indexOf(s) + 1, b = bookFor(who);
+  var fw = 60, fy = y + 19, fh = fw * 299.9 / 318.32, k = 0.36;     // k: the art's line widths and corners at this size
+  var tY = fy + fh + 19, gap = 7, tW = (Rr - L - gap) / 2, tH = 46;
+  h = tY + 2 * tH + gap + P - y;
+  rrect(g, x, y, w, h, 10.8, K.white);
+  var ag = el("g", {style: "cursor:pointer"}, g);
+  ag.addEventListener("click", function(){ STATE.who = null; render(); });
+  boxAvatar(ag, who, L, fy, fw);
+  fitLine(R(ag, L + fw / 2, fy + fh + 10.5, "m", NAMES[who], 7.2, K.ink, 0.4), fw + 8, 5);
+  var tx = L + fw + 14, lw = Rr - tx;
+  fitLine(Wx(g, tx, fy + 12, "s", ordinal(rank) + " ALL-TIME", 7.0, K.ink, false, {"letter-spacing": 0.2}), lw, 5);
+  fitLine(Wx(g, tx, fy + 23, "s", pctS(s.pct) + " WIN %  •  ON THE BOOK " + b.on + " TIMES", 5.8, K.ink, false, {"letter-spacing": 0.15}), lw, 4.2);
+  clearPill(g, tx, fy + 31, 11, 5.0, k, false);
+  spotTiles(s, b).forEach(function(t, i){
+    var tx0 = L + (i % 2) * (tW + gap), ty0 = tY + Math.floor(i / 2) * (tH + gap);
+    spotTile(g, tx0, ty0, tW, tH, k, t[0], t[1], ty0 + 13, 5.4, ty0 + 17.5, ty0 + 35.5, 11.5);
+  });
+  return h;
 }
 
 // framed avatars with no dark outline (docs/avatars-box/<name>.svg, 432 x 432 art; the gray frame's
@@ -648,8 +714,9 @@ function boxScore(g, x, y, w, S){
   if (b === "missing") { message("BOX SCORE", "This one is still on its way from Yahoo - it shows up after the next update."); return S.h; }
 
   // where it came from, top left
-  var from = Wx(g, L, y + S.pad + 2, "s", pick.rec.title + "  ·  #" + String(pick.place).replace("T-", ""), S.stats ? 4.4 : 4.0, C.sub, true);
-  fitLine(from, w * 0.4, 3.4);
+  var fs = S.stats ? 6.6 : 5.6;            // Rotundo, the same light gray as WEEK n
+  var from = R(g, S.stats ? L : x + w / 2, y + S.pad + fs * 0.7 + 1, S.stats ? "s" : "m", pick.rec.title + "  ·  #" + String(pick.place).replace("T-", ""), fs, K.mid, fs * 0.04);
+  fitLine(from, S.stats ? w * 0.6 : w * 0.4, fs * 0.7);
 
   // header. Desktop: one band - each team in a light panel (face on the outside, name and score
   // on the inside), the year between rules and WEEK n in gray in the middle. Phone: faces over
@@ -713,7 +780,10 @@ function boxScore(g, x, y, w, S){
   // the lineups
   var top = y + S.head + 6, rows = Math.max(A.players.length, B.players.length), rh = Math.min(S.rh, (y + S.h - S.pad - top) / Math.max(rows, 1));
   rrect(g, L - 4, top - 4, Rr - L + 8, rows * rh + 8, 8, "none", {stroke: C.div, "stroke-width": 1.2});
-  var W = Rr - L, c = S.stats
+  // Yahoo only has stat lines from 2022 on: a game with none at all drops the stat columns and
+  // gives the names the room (the phone never shows them)
+  var lines = S.stats && A.players.concat(B.players).some(function(p){ return p.line; });
+  var W = Rr - L, c = lines
     ? {nameL: L + 4, statL: L + W * 0.205, ptsL: L + W * 0.418, badge: cx, ptsR: cx + W * 0.082, nameR: cx + W * 0.142, statR: cx + W * 0.312, v: [L + W * 0.197, L + W * 0.36, cx + W * 0.14 - 4, cx + W * 0.304], segL: [L, L + W * 0.465], segR: [cx + W * 0.035, Rr]}
     : {nameL: L + 3, ptsL: cx - W * 0.1, badge: cx, ptsR: cx + W * 0.1, nameR: cx + W * 0.19, v: [cx - W * 0.17, cx + W * 0.17], segL: [L, cx - W * 0.06], segR: [cx + W * 0.06, Rr]};
   c.v.forEach(function(vx){ el("line", {x1: vx, x2: vx, y1: top + 2, y2: top + rows * rh - 2, stroke: C.div, "stroke-width": 1}, g); });
@@ -724,7 +794,7 @@ function boxScore(g, x, y, w, S){
     var bw = S.badge * (label.length > 3 ? 4.6 : 3.8);
     rrect(g, c.badge - bw / 2, my - S.badge * 1.05, bw, S.badge * 2.1, S.badge * 0.5, K.light);
     R(g, c.badge, my + S.badge * 0.36, "m", label, S.badge, K.ink, 0.2);
-    [[pa, c.nameL, c.statL, c.ptsL, S.stats ? c.v[0] - 3 : c.v[0] - 3, c.v[1] - 3, "e"], [pb, c.nameR, c.statR, c.ptsR, S.stats ? c.v[3] - 3 : Rr - 2, Rr - 2, "s"]].forEach(function(s){
+    [[pa, c.nameL, c.statL, c.ptsL, c.v[0] - 3, c.v[1] - 3, "e"], [pb, c.nameR, c.statR, c.ptsR, lines ? c.v[3] - 3 : Rr - 2, Rr - 2, "s"]].forEach(function(s){
       var p = s[0]; if (!p.slot && !p.last) return;
       var nameRoom = s[4] - s[1];
       if (p.first) {
@@ -732,7 +802,7 @@ function boxScore(g, x, y, w, S){
         var l = R(g, s[1], my + S.last * 0.75, "s", p.last, S.last, K.ink, 0.15); fitLine(l, nameRoom, S.last * 0.6);
       } else { var l2 = R(g, s[1], my + S.last * 0.36, "s", p.last, S.last, K.ink, 0.15); fitLine(l2, nameRoom, S.last * 0.6); }
       Wx(g, s[3], my + S.pts * 0.36, "m", p.pts === null || p.pts === undefined ? "—" : Number(p.pts).toFixed(2), S.pts, K.ink, true);
-      if (S.stats && p.line) {                                    // one or two lines, centred on the row
+      if (lines && p.line) {                                    // one or two lines, centred on the row
         var sg = el("g", {}, g), n = wrapWx(sg, s[2], my + S.stat * 0.36, s[5] - s[2] - 2, p.line.split(", "), ", ", S.stat, p.alert ? K.red : "#555", S.stat * 1.3, 2);
         if (n > 1) sg.setAttribute("transform", "translate(0," + (-(n - 1) * S.stat * 0.65) + ")");
       }
@@ -770,6 +840,7 @@ var q = new URLSearchParams(location.search);
 if (q.get("cat")) STATE.cat = STATE.open = +q.get("cat") || 0;
 if (q.get("rec")) STATE.rec = +q.get("rec") || 0;
 if (q.get("menu")) STATE.menu = true;
+if (q.get("trophy")) { STATE.trophy = true; LAST_SLIDE = 1; }
 if (q.get("who")) STATE.who = q.get("who");
 if (q.get("game")) STATE.game = q.get("game");
 if (q.get("sort")) STATE.sort = {key: q.get("sort"), dir: q.get("dir") === "up" ? 1 : -1};
