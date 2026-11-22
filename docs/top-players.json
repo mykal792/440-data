@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T20:30:28Z",
+  "updated": "2026-11-22T20:35:20Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -9,11 +9,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 39.72,
+      "points": 39.44,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 318
+          "value": 311
         },
         {
           "stat": "RUSH YD",
@@ -66,6 +66,28 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 24.46,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 279
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Emmett Johnson",
       "position": "RB",
       "team": "KC",
@@ -102,28 +124,6 @@
         {
           "stat": "RUSH YD",
           "value": 98
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 23.54,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 256
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 13
         },
         {
           "stat": "TD",
@@ -185,7 +185,7 @@
       "team": "Dal",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 19.8,
+      "points": 18.6,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -193,11 +193,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 97
+          "value": 90
         },
         {
           "stat": "REC",
-          "value": 7
+          "value": 6
         },
         {
           "stat": "TD",
@@ -491,6 +491,46 @@
       ]
     },
     {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 64
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tyler Shough",
       "position": "QB",
       "team": "NO",
@@ -517,44 +557,13 @@
       ]
     },
     {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 59
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.9,
+      "stats": []
     },
     {
       "name": "Colston Loveland",
@@ -597,6 +606,28 @@
         {
           "stat": "REC",
           "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 9.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 51
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 4
         }
       ]
     },
@@ -651,6 +682,42 @@
         {
           "stat": "REC",
           "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 8.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 82
+        }
+      ]
+    },
+    {
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 7
         }
       ]
     },
@@ -753,20 +820,6 @@
       "stats": []
     },
     {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 75
-        }
-      ]
-    },
-    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -786,50 +839,6 @@
         {
           "stat": "RUSH YD",
           "value": 67
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 6.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 6.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 47
-        },
-        {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
@@ -866,11 +875,11 @@
       "team": "Mia",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 5.1,
+      "points": 5.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 49
+          "value": 51
         },
         {
           "stat": "REC YD",
@@ -881,15 +890,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Jonathan Taylor",
