@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T19:30:31Z",
+  "updated": "2026-11-22T19:35:26Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -84,6 +84,28 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 17.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -171,20 +193,20 @@
       ]
     },
     {
-      "name": "DJ Moore",
-      "position": "WR",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 14.9,
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 13.34,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 59
+          "stat": "PASS YD",
+          "value": 181
         },
         {
-          "stat": "REC",
-          "value": 6
+          "stat": "RUSH YD",
+          "value": 1
         },
         {
           "stat": "TD",
@@ -225,28 +247,6 @@
         {
           "stat": "RUSH YD",
           "value": 51
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 13.06,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 174
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -313,16 +313,29 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
+      "name": "Bills",
+      "position": "DEF",
       "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.92,
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.0,
+      "stats": []
+    },
+    {
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.72,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 173
+          "value": 93
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 30
         },
         {
           "stat": "TD",
@@ -361,32 +374,6 @@
       ]
     },
     {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 84
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 30
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -409,6 +396,28 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.72,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 193
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
         }
       ]
     },
@@ -453,6 +462,37 @@
       ]
     },
     {
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 9.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Steelers",
+      "position": "DEF",
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -463,37 +503,6 @@
         {
           "stat": "RUSH YD",
           "value": 30
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 8.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 2
         },
         {
           "stat": "TD",
@@ -556,20 +565,33 @@
       ]
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 55
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 7.0,
-      "stats": []
-    },
-    {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
       "points": 7.0,
       "stats": []
     },
@@ -581,28 +603,6 @@
       "manager_display": "GRAHAM",
       "points": 6.6,
       "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 45
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Josh Downs",
@@ -749,6 +749,28 @@
       "stats": []
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 20
+        },
+        {
+          "stat": "REC YD",
+          "value": 4
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -874,28 +896,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "REC YD",
-          "value": -3
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
