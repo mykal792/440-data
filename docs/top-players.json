@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T19:20:31Z",
+  "updated": "2026-11-22T19:25:22Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -445,6 +445,15 @@
       ]
     },
     {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -485,13 +494,22 @@
       ]
     },
     {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.0,
-      "stats": []
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 54
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
     },
     {
       "name": "Sam LaPorta",
@@ -583,24 +601,6 @@
       ]
     },
     {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 47
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Josh Downs",
       "position": "WR",
       "team": "KC",
@@ -640,6 +640,20 @@
       "manager_display": "GANGUS",
       "points": 5.7,
       "stats": []
+    },
+    {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 56
+        }
+      ]
     },
     {
       "name": "Buccaneers",
@@ -687,20 +701,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 43
         }
       ]
     },
@@ -896,6 +896,38 @@
       ]
     },
     {
+      "name": "Cam Ward",
+      "position": "QB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "name": "Elic Ayomanor",
+      "position": "WR",
+      "team": "Ten",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 12
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ryan Flournoy",
       "position": "WR",
       "team": "Dal",
@@ -910,20 +942,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Cam Ward",
-      "position": "QB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.52,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 38
         }
       ]
     },
@@ -1218,15 +1236,6 @@
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Elic Ayomanor",
-      "position": "WR",
-      "team": "Ten",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
