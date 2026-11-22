@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T21:35:20Z",
+  "updated": "2026-11-22T21:40:23Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -645,6 +645,15 @@
       ]
     },
     {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Bills",
       "position": "DEF",
       "team": "Buf",
@@ -737,15 +746,6 @@
       ]
     },
     {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
@@ -762,6 +762,32 @@
       "manager_display": "ANTHONY",
       "points": 10.0,
       "stats": []
+    },
+    {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jake Bates",
@@ -903,15 +929,6 @@
       "stats": []
     },
     {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -936,6 +953,15 @@
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 5.7,
+      "stats": []
+    },
+    {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.0,
       "stats": []
     },
     {
@@ -1055,20 +1081,6 @@
       ]
     },
     {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 24
-        }
-      ]
-    },
-    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -1153,6 +1165,46 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 24
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -1167,20 +1219,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.96,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 24
         }
       ]
     },
@@ -1213,20 +1251,6 @@
         {
           "stat": "PASS YD",
           "value": 13
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
         }
       ]
     },
