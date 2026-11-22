@@ -439,8 +439,8 @@ var SD = {
   stand: {pad: 14, hi: 7, head: 21, rh: 24, hSize: 4.6, txt: 7.0, num: 6.0, av: 8.2, avGap: 3.2, nameX: 30,
           cols: function(L, Rr){ var x0 = L + 104, st = (Rr - 10 - x0) / 8; return [
             {label: "WIN %", key: "pct", get: function(s){ return pctS(s.pct); }}, {label: "W", key: "w", get: function(s){ return s.w; }},
-            {label: "L", key: "l", get: function(s){ return s.l; }}, {label: "PO APP", key: "po_app", get: function(s){ return s.po_app; }},
-            {label: "PO W", key: "po_w", get: function(s){ return s.po_w; }}, {label: "PO L", key: "po_l", get: function(s){ return s.po_l; }},
+            {label: "L", key: "l", get: function(s){ return s.l; }}, {label: "PLAYOFFS", key: "po_app", get: function(s){ return s.po_app; }},
+            {label: "PW", key: "po_w", get: function(s){ return s.po_w; }}, {label: "PL", key: "po_l", get: function(s){ return s.po_l; }},
             {label: "1ST", key: "m0", medal: K.gold, get: function(s){ return s.medals[0]; }}, {label: "2ND", key: "m1", medal: K.silver, get: function(s){ return s.medals[1]; }},
             {label: "3RD", key: "m2", medal: K.bronze, get: function(s){ return s.medals[2]; }}].map(function(c, i){ c.x = x0 + i * st; return c; }); }},
   menu: {pad: 8, side: 7, catH: 15.5, catGap: 3.6, catSize: 5.2, subH: 11.8, subPad: 2.5, subSize: 5.0, indent: 9, bar: 4.2},
@@ -482,7 +482,7 @@ var SM = {
             var x0 = L + 84, pw = Rr - 15 - x0, c3 = function(i){ return x0 + (i % 3 + 0.5) * pw / 3 + (i >= 3 ? pw : 0); };
             return [
             {label: "W-L", key: "w", get: function(s){ return s.w + "-" + s.l; }}, {label: "WIN %", key: "pct", get: function(s){ return pctS(s.pct); }},
-            {label: "PO", key: "po_w", get: function(s){ return s.po_w + "-" + s.po_l; }},
+            {label: "PLAYOFFS", key: "po_w", get: function(s){ return s.po_w + "-" + s.po_l; }},
             {label: "1ST", key: "m0", medal: K.gold, get: function(s){ return s.medals[0]; }}, {label: "2ND", key: "m1", medal: K.silver, get: function(s){ return s.medals[1]; }},
             {label: "3RD", key: "m2", medal: K.bronze, get: function(s){ return s.medals[2]; }}].map(function(c, i){ c.x = c3(i) - (c.medal ? 2 : 0); return c; }); }},
   menu: {pad: 8, side: 8, catH: 18, catGap: 4, catSize: 6.4, subH: 14.5, subPad: 3, subSize: 6.0, indent: 11, bar: -6.5},
