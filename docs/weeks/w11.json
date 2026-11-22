@@ -1,20 +1,20 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T21:10:25Z",
+  "updated": "2026-11-22T21:15:23Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 56.0,
-        "projected": 120.52
+        "projected": 120.48
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
         "score": 80.4,
-        "projected": 119.84
+        "projected": 119.93
       }
     },
     {
@@ -22,21 +22,21 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 112.4,
-        "projected": 125.78
+        "projected": 125.76
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 66.66,
-        "projected": 121.49
+        "projected": 121.48
       }
     },
     {
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 73.8,
-        "projected": 119.4
+        "score": 75.2,
+        "projected": 119.41
       },
       "away": {
         "name": "GREG",
@@ -50,27 +50,27 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 120.56,
-        "projected": 118.88
+        "projected": 118.87
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 62.78,
-        "projected": 109.99
+        "projected": 109.96
       }
     },
     {
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 59.14,
-        "projected": 108.83
+        "score": 56.14,
+        "projected": 108.84
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
         "score": 50.32,
-        "projected": 112.97
+        "projected": 112.82
       }
     }
   ],
@@ -879,15 +879,6 @@
       "stats": []
     },
     {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -1027,6 +1018,15 @@
       "stats": []
     },
     {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -1143,6 +1143,24 @@
       ]
     },
     {
+      "name": "Mark Andrews",
+      "position": "TE",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -1215,24 +1233,6 @@
         {
           "stat": "RUSH YD",
           "value": 11
-        }
-      ]
-    },
-    {
-      "name": "Mark Andrews",
-      "position": "TE",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
