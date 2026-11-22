@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T19:25:22Z",
+  "updated": "2026-11-22T19:30:31Z",
   "matchups": [
     {
       "home": {
@@ -27,8 +27,8 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 40.02,
-        "projected": 121.55
+        "score": 43.12,
+        "projected": 121.53
       }
     },
     {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 83.56,
+        "score": 85.06,
         "projected": 118.89
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 26.1,
+        "score": 29.86,
         "projected": 110.02
       }
     },
@@ -64,13 +64,13 @@
         "name": "COYNE",
         "face": "coyne",
         "score": 37.12,
-        "projected": 108.41
+        "projected": 109.37
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 12.4,
-        "projected": 112.88
+        "score": 12.6,
+        "projected": 112.86
       }
     }
   ],
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "83.56",
+          "value": "85.06",
           "detail": "2 to play"
         },
         {
@@ -304,6 +304,28 @@
       ]
     },
     {
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 14.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 59
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -318,6 +340,24 @@
         {
           "stat": "REC",
           "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 13.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 51
         },
         {
           "stat": "TD",
@@ -348,44 +388,13 @@
       ]
     },
     {
-      "name": "DJ Moore",
-      "position": "WR",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
+      "name": "Bears",
+      "position": "DEF",
+      "team": "Chi",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 12.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "points": 12.0,
+      "stats": []
     },
     {
       "name": "Saquon Barkley",
@@ -437,13 +446,26 @@
       ]
     },
     {
-      "name": "Bears",
-      "position": "DEF",
-      "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 11.0,
-      "stats": []
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.92,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 173
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "D'Andre Swift",
@@ -472,6 +494,32 @@
       ]
     },
     {
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 84
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 30
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -493,28 +541,6 @@
         },
         {
           "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.12,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 153
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -688,28 +714,6 @@
       "manager_display": "GRAHAM",
       "points": 6.6,
       "stats": []
-    },
-    {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.6,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 65
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Derrick Henry",
@@ -967,6 +971,24 @@
       ]
     },
     {
+      "name": "Cam Ward",
+      "position": "QB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 55
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -1025,20 +1047,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Cam Ward",
-      "position": "QB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 50
         }
       ]
     },
