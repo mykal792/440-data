@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T22:25:23Z",
+  "updated": "2026-11-22T22:30:29Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 81.56,
+        "score": 84.16,
         "projected": 121.48
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 85.66,
+        "score": 90.92,
         "projected": 119.41
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 59.04,
+        "score": 64.54,
         "projected": 108.84
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 74.12,
+        "score": 71.12,
         "projected": 112.82
       }
     }
@@ -835,15 +835,6 @@
       "stats": []
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -971,6 +962,28 @@
       "stats": []
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 64
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -994,6 +1007,15 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
+      "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 8.0,
       "stats": []
     },
@@ -1036,6 +1058,15 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 7.7,
+      "stats": []
     },
     {
       "name": "Sam LaPorta",
@@ -1119,6 +1150,24 @@
       ]
     },
     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 6.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Jaguars",
       "position": "DEF",
       "team": "Jax",
@@ -1177,15 +1226,6 @@
       ]
     },
     {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.2,
-      "stats": []
-    },
-    {
       "name": "Elic Ayomanor",
       "position": "WR",
       "team": "Ten",
@@ -1235,24 +1275,6 @@
       ]
     },
     {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 3.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -1276,28 +1298,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -1374,6 +1374,28 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.02,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 78
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -1471,28 +1493,6 @@
         },
         {
           "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.26,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 54
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
