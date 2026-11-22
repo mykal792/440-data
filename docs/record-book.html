@@ -341,8 +341,10 @@ function recordView(g, x, y, w, h, cat, rec, S){
     if (rows.some(function(r){ return r.on; })) note = (note ? note + " · " : "") + "GREEN = STILL GOING";
     if (note) { var nt = Wx(g, Rr, y + S.headMid + S.noteSize * 0.36, "e", note, S.noteSize, C.sub, true); right = Rr - textW(nt) - 4; }
   }
+  var tnd = dotColors(rec).length, tr = S.title * 0.3, tdw = tnd ? (tnd - 1) * tr * 2.7 + 2 * tr + tr * 2 : 0;
   var tt = R(g, L, y + S.titleY, "s", rec.title, S.title, K.ink, S.title * 0.027);
-  fitLine(tt, right - L - 2, S.title * 0.6);
+  fitLine(tt, right - L - 2 - tdw, S.title * 0.6);
+  if (tnd) dotRow(g, L + textW(tt) + tr * 2, y + S.titleY - S.title * 0.35, tr, rec);
   Wx(g, L, y + S.catY, "s", cat.label, S.catSize, C.sub, true);
   rule(g, L, Rr, y + S.ruleY);
 
@@ -381,6 +383,20 @@ function recordView(g, x, y, w, h, cat, rec, S){
   });
 }
 
+// Dot Pot position colors (the same as dot-pot.html): one circle per position a record is about,
+// none on the totals and the all-position list
+var POS_COLOR = {QB: "#ed402e", RB: "#0c9bd7", WR: "#2eb57b", TE: "#f4862c"};
+function dotColors(rec){
+  var k = rec.key || "";
+  var m = k.match(/^dots?-(?:best-)?(qb|rb|wr|te)$/);
+  return m ? [POS_COLOR[m[1].toUpperCase()]] : [];
+}
+function dotRow(g, x, cy, r, rec){                       // draws the circles from x; returns their width
+  var cs = dotColors(rec);
+  cs.forEach(function(c, i){ el("circle", {cx: x + r + i * r * 2.7, cy: cy, r: r, fill: c}, g); });
+  return cs.length ? (cs.length - 1) * r * 2.7 + 2 * r : 0;
+}
+
 // ---- the menu: categories open to show their records ---------------------------------
 function menu(g, x, y, w, h, S, key, picked){
   var cats = D.categories, open = STATE.open, len = S.pad * 2 + cats.length * S.catH + (cats.length - 1) * S.catGap;
@@ -404,7 +420,9 @@ function menu(g, x, y, w, h, S, key, picked){
         var on = here && STATE.rec === j, sg = el("g", {style: "cursor:pointer"}, inner);
         pill(sg, x + S.side + S.indent - 4, cy + S.subH / 2, w - 2 * S.side - S.indent + 4, S.subH - 1.6, on ? C.mint : "#fff");
         var st = Wx(sg, x + S.side + S.indent + 1, cy + S.subH / 2 + S.subSize * 0.36, "s", r.title, S.subSize, on ? K.ink : "#555", on);
-        fitLine(st, w - 2 * S.side - S.indent - 12, S.subSize * 0.7);
+        var nd = dotColors(r).length, dr = S.subSize * 0.36, dw = nd ? (nd - 1) * dr * 2.7 + 2 * dr + dr * 1.6 : 0;
+        fitLine(st, w - 2 * S.side - S.indent - 12 - dw, S.subSize * 0.7);
+        if (nd) dotRow(sg, x + S.side + S.indent + 1 + textW(st) + dr * 1.6, cy + S.subH / 2, dr, r);
         if (hasWho(r)) el("circle", {cx: x + w - S.side - 5, cy: cy + S.subH / 2, r: S.subH * 0.13, fill: K.green}, sg);
         sg.addEventListener("click", function(){ STATE.cat = i; STATE.rec = j; picked(); render(); });
         cy += S.subH;
@@ -714,9 +732,9 @@ function boxScore(g, x, y, w, S){
   if (b === "missing") { message("BOX SCORE", "This one is still on its way from Yahoo - it shows up after the next update."); return S.h; }
 
   // where it came from, top left
-  var fs = S.stats ? 6.6 : 5.6;            // Rotundo, the same light gray as WEEK n
-  var from = R(g, S.stats ? L : x + w / 2, y + S.pad + fs * 0.7 + 1, S.stats ? "s" : "m", pick.rec.title + "  ·  #" + String(pick.place).replace("T-", ""), fs, K.mid, fs * 0.04);
-  fitLine(from, S.stats ? w * 0.6 : w * 0.4, fs * 0.7);
+  // which record this game is from, centred over the year in Rotundo, the same light gray as WEEK n
+  var fromTxt = pick.rec.title + "  ·  #" + String(pick.place).replace("T-", "");
+  if (!S.stats) fitLine(R(g, x + w / 2, y + S.pad + 5.6 * 0.7 + 1, "m", fromTxt, 5.6, K.mid, 5.6 * 0.04), w * 0.4, 5.6 * 0.7);
 
   // header. Desktop: one band - each team in a light panel (face on the outside, name and score
   // on the inside), the year between rules and WEEK n in gray in the middle. Phone: faces over
@@ -741,6 +759,7 @@ function boxScore(g, x, y, w, S){
     function hx(v){ return X0 + v * s; } function hyy(v){ return hy0 + v * s; }
     [["a", 49.55], ["b", 366.08]].forEach(function(p){ boxAvatar(g, b[p[0]].manager, hx(p[1]), hyy(11.78), 118.38 * s); });
     R(g, hx(267), hyy(65.2), "m", String(b.season), 23 * s, K.ink, 0.6 * s);
+    fitLine(R(g, hx(267), hyy(37), "m", fromTxt, 6.6, K.mid, 6.6 * 0.04), 180 * s, 6.6 * 0.7);
     [[187.79, 224.76], [309.73, 346.7]].forEach(function(p){
       el("line", {x1: hx(p[0]), x2: hx(p[1]), y1: hyy(57.18), y2: hyy(57.18), stroke: K.light, "stroke-width": 2.38 * s, "stroke-linecap": "round"}, g);
     });
