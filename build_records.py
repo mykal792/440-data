@@ -275,7 +275,6 @@ def build():
          "rows": career_list(lambda m: round(car[m]["sos"], 2), low=True, fmt=signed)},
         {"key": "high-scores", "title": "HIGH SCORES", "rows": career_list(lambda m: car[m]["hs"])},
         {"key": "top3", "title": "TOP 3 SCORES", "rows": career_list(lambda m: car[m]["t3"])},
-        {"key": "fewest-top3", "title": "FEWEST TOP 3 SCORES", "rows": career_list(lambda m: car[m]["t3"], low=True)},
         {"key": "reg-titles", "title": "REGULAR SEASON TITLES", "note": "BEST RECORD",
          "rows": career_list(lambda m: len(titles["reg"][m]), sub=lambda m: yrs(titles["reg"][m]))},
         {"key": "pts-titles", "title": "POINTS TITLES", "note": "MOST POINTS IN A SEASON",
@@ -414,7 +413,6 @@ def build():
                   career_list(lambda m: prof(m, "career", "bank", "net"), fmt=dollars,
                               sub=lambda m: "%s WON" % dollars(prof(m, "career", "bank", "total")))]},
         {"key": "bonus-wins", "title": "WEEKLY BONUS WINS", "rows": career_list(lambda m: prof(m, "career", "bonus", "weekly_total"))},
-        {"key": "dots", "title": "DOT POT DOTS", "note": "SINCE 2026", "rows": career_list(lambda m: prof(m, "career", "bonus", "dots_total"))},
         {"key": "squid", "title": "SQUID GAME BELTS",
          "rows": career_list(lambda m: len(prof(m, "career", "bonus", "squid", default=[])), sub=lambda m: yrs(prof(m, "career", "bonus", "squid", default=[])))},
         {"key": "dk", "title": "DRAFTKINGS WINS",
@@ -433,6 +431,8 @@ def build():
                                      for k in (1, 2, 3)]})
     standings.sort(key=lambda s: (-s["medals"][0], -s["pct"]))
 
+    dots = dot_pot(CURRENT, managers)
+
     last_week = max((g["week"] for g in reg if g["season"] == this_season), default=0)
     return {
         "season": this_season, "through": "%d WEEK %d" % (this_season, last_week),
@@ -445,8 +445,69 @@ def build():
             {"key": "playoffs", "label": "PLAYOFFS", "records": playoffs},
             {"key": "streaks", "label": "STREAKS & DROUGHTS", "records": streaks},
             {"key": "money", "label": "MONEY & BONUSES", "records": money},
-        ],
+        ] + ([{"key": "dots", "label": "DOT POT", "records": dots}] if dots else []),
     }
+
+
+DOT_POS = ("QB", "RB", "WR", "TE")
+
+
+def dot_pot(current, managers):
+    """DOT POT tab. docs/dots.json only holds the season being played, so each
+    run keeps a copy as docs/history/dots-<season>.json and every season saved
+    there counts toward the all-time lists."""
+    cur = load(REPO / "docs" / "dots.json", {})
+    hist_dir = REPO / "docs" / "history"
+    if cur.get("season") and cur.get("history"):
+        keep = {"season": cur["season"], "dot_value": (cur.get("pot") or {}).get("dot_value"), "history": cur["history"]}
+        f = hist_dir / ("dots-%d.json" % cur["season"])
+        if load(f, None) != keep:
+            f.write_text(json.dumps(keep, separators=(",", ":")) + "\n")
+    seasons = [load(f, {}) for f in sorted(hist_dir.glob("dots-*.json"))]
+    if not seasons:
+        return []
+    count = {m: {p: 0 for p in DOT_POS} for m in current}
+    money = {m: 0 for m in current}
+    best = {m: {p: 0.0 for p in DOT_POS} for m in current}
+    wins = []                                        # every dot: one row per manager who got it
+    for sz in seasons:
+        for wk in sz.get("history", []):
+            for pos, d in (wk.get("positions") or {}).items():
+                if pos not in DOT_POS:
+                    continue
+                who = [x.lower() for x in (d.get("managers") or [d.get("manager")]) if x]
+                try:
+                    val = float(d.get("value"))
+                except (TypeError, ValueError):
+                    continue
+                for m in who:
+                    m = m if m in managers or m in current else m
+                    if m in count:
+                        count[m][pos] += 1
+                        money[m] += (sz.get("dot_value") or 0) / max(1, len(who))
+                        best[m][pos] = max(best[m][pos], val)
+                    wins.append({"m": m, "x": val, "v": "%.2f" % val,
+                                 "s": "WK %d, %d" % (wk["week"], sz["season"]),
+                                 "d": "%s · %s" % (pos, str(d.get("detail") or "").upper())})
+    first = min(sz["season"] for sz in seasons)
+    note = "SINCE %d" % first
+    usd = lambda v: "$%s" % ("{:,.0f}".format(v) if v == int(v) else "{:,.2f}".format(v))
+
+    def lst(fn, sub=None):
+        return ranked([{"m": m, "x": fn(m), "v": str(fn(m)), "s": sub(m) if sub else ""} for m in current if fn(m)], "x")
+
+    recs = [{"key": "dots", "title": "TOTAL DOTS", "note": note,
+             "rows": lst(lambda m: sum(count[m].values()), sub=lambda m: "%s WON" % usd(money[m]))}]
+    for pos in DOT_POS:
+        recs.append({"key": "dots-" + pos.lower(), "title": "%s DOTS" % pos, "note": note,
+                     "rows": lst(lambda m, p=pos: count[m][p],
+                                 sub=lambda m, p=pos: ("BEST %.2f" % best[m][p]) if count[m][p] else "")})
+    recs.append({"key": "dot-scores", "title": "BIGGEST DOT SCORES", "note": "BEST WEEKLY WINNER", "rows": ranked(wins, "x")})
+    for pos in DOT_POS:
+        recs.append({"key": "dot-best-" + pos.lower(), "title": "BIGGEST %s DOT" % pos, "note": note,
+                     "rows": [dict(w, d=w["d"].split(" · ", 1)[1]) for w in
+                              ranked([w for w in wins if w["d"].startswith(pos + " ")], "x")]})
+    return recs
 
 
 def main():

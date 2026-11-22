@@ -185,6 +185,12 @@ def main():
         if not ok:
             print("  %s: Yahoo returned no starters, will retry next run" % gid)
             continue
+        if not any(pl.get("line") for sd in ("a", "b") for pl in out[sd]["players"]):
+            try:                                   # Yahoo has no stat lines before 2022: fill them from nflverse
+                import nflverse_lines
+                nflverse_lines.fill_box(out)
+            except Exception as e:
+                print("  %s: nflverse stat lines skipped (%s)" % (gid, e))
         if args.dry_run:
             print(json.dumps(out)[:400])
         else:
