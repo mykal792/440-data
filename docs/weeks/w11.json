@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T20:15:33Z",
+  "updated": "2026-11-22T20:20:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 73.4,
+        "score": 74.4,
         "projected": 119.81
       }
     },
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 79.24,
+        "score": 85.74,
         "projected": 125.76
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 55.04,
+        "score": 56.36,
         "projected": 121.54
       }
     },
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 53.7,
+        "score": 54.1,
         "projected": 119.53
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 92.46,
+        "score": 92.36,
         "projected": 126.07
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 41.76,
+        "score": 42.76,
         "projected": 110.02
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 32.2,
+        "score": 32.96,
         "projected": 112.87
       }
     }
@@ -122,20 +122,42 @@
           "rank": 2,
           "manager": "GREG",
           "face": "greg",
-          "value": "92.46",
+          "value": "92.36",
           "detail": "3 to play"
         },
         {
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "79.24",
+          "value": "85.74",
           "detail": "2 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 38.44,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 301
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 4
+        }
+      ]
+    },
     {
       "name": "Patrick Mahomes",
       "position": "QB",
@@ -147,28 +169,6 @@
         {
           "stat": "PASS YD",
           "value": 324
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 32.44,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 301
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
         },
         {
           "stat": "TD",
@@ -292,11 +292,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 19.9,
+      "points": 20.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 81
+          "value": 85
         },
         {
           "stat": "REC YD",
@@ -344,11 +344,11 @@
       "team": "Ten",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 18.1,
+      "points": 18.46,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 145
+          "value": 154
         },
         {
           "stat": "RUSH YD",
@@ -488,6 +488,28 @@
       ]
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 13.36,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 284
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Nico Collins",
       "position": "WR",
       "team": "Hou",
@@ -537,11 +559,11 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 12.7,
+      "points": 12.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 54
+          "value": 53
         },
         {
           "stat": "REC YD",
@@ -606,28 +628,6 @@
         {
           "stat": "INT",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 251
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
@@ -891,11 +891,11 @@
       "team": "Ten",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 7.1,
+      "points": 7.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 71
+          "value": 75
         }
       ]
     },
@@ -945,25 +945,16 @@
       ]
     },
     {
-      "name": "Ka'imi Fairbairn",
-      "position": "K",
-      "team": "Hou",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.7,
-      "stats": []
-    },
-    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 5.6,
+      "points": 6.1,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 42
+          "value": 47
         },
         {
           "stat": "REC YD",
@@ -974,6 +965,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Ka'imi Fairbairn",
+      "position": "K",
+      "team": "Hou",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.7,
+      "stats": []
     },
     {
       "name": "DeVonta Smith",
@@ -992,6 +992,15 @@
           "value": 4
         }
       ]
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Jonathan Taylor",
@@ -1016,11 +1025,11 @@
       ]
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
+      "name": "Buccaneers",
+      "position": "DEF",
+      "team": "TB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 4.0,
       "stats": []
     },
@@ -1053,15 +1062,6 @@
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 3.4,
-      "stats": []
-    },
-    {
-      "name": "Buccaneers",
-      "position": "DEF",
-      "team": "TB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.0,
       "stats": []
     },
     {
