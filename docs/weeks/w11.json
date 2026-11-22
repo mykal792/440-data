@@ -1,19 +1,19 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T23:25:26Z",
+  "updated": "2026-11-22T23:30:35Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 61.3,
-        "projected": 120.48
+        "projected": 120.45
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 95.1,
+        "score": 95.5,
         "projected": 119.93
       }
     },
@@ -22,13 +22,13 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 112.4,
-        "projected": 125.76
+        "projected": 125.74
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 92.06,
-        "projected": 121.48
+        "score": 92.16,
+        "projected": 121.44
       }
     },
     {
@@ -50,13 +50,13 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 120.56,
-        "projected": 118.87
+        "projected": 118.84
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 76.48,
-        "projected": 109.96
+        "projected": 109.93
       }
     },
     {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 83.42,
+        "score": 83.32,
         "projected": 112.82
       }
     }
@@ -715,11 +715,11 @@
       "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 14.0,
+      "points": 13.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 54
+          "value": 53
         },
         {
           "stat": "REC YD",
@@ -878,6 +878,32 @@
       ]
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 11.1,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 160
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ladd McConkey",
       "position": "WR",
       "team": "LAC",
@@ -946,32 +972,6 @@
       "manager_display": "SCOTTY",
       "points": 10.9,
       "stats": []
-    },
-    {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.7,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 150
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Colston Loveland",
@@ -1292,11 +1292,11 @@
       "team": "Jax",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 4.2,
+      "points": 4.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 14
         },
         {
           "stat": "REC YD",
