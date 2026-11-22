@@ -58,7 +58,7 @@ text.laro5{font-family:"Laro Soft",sans-serif;font-weight:500}
 var K = {red: "#ed402e", orange: "#f4862c", mint: "#8aebc1", green: "#2eb57b", blue: "#0c9bd7",
          ink: "#333333", mid: "#bababa", light: "#e4e4e4", white: "#ffffff", gold: "#f2b705",
          silver: "#bababa", bronze: "#c08457"};
-var GRID = {d: {L: 17.5, R: 389, G: 9.5}, m: {L: 16.61, R: 237.72, G: 10.5}};
+var GRID = {d: {L: 17.5, R: 389, G: 9.5}, m: {L: 9.78, R: 244.55, G: 10.5}};     // phone L/R: 15px margin at 390px wide
 var RIBBON = "M222.73,217.6c1.12-.83.47-2.48-.97-2.48H29.8c-1.44,0-2.09,1.65-.97,2.48l12.98,9.64-12.98,9.64c-1.12.83-.47,2.48.97,2.48h191.96c1.44,0,2.09-1.65.97-2.48l-12.98-9.64,12.98-9.64Z";
 var RIB = {cx: 126.27, cy: 227.24, w: 194.9, h: 24.24};
 var NO_ROUND = {patrick: 1, steve: 1, chipper: 1};          // no docs/avatars/<name>.svg
@@ -346,7 +346,7 @@ function recordView(g, x, y, w, h, cat, rec, S){
   fitLine(tt, right - L - 2 - tdw, S.title * 0.6);
   if (tnd) dotRow(g, L + textW(tt) + tr * 2, y + S.titleY - S.title * 0.35, tr, rec);
   Wx(g, L, y + S.catY, "s", cat.label, S.catSize, C.sub, true);
-  rule(g, L, Rr, y + S.ruleY);
+  if (!(rows.length && rows[0].g && rows[0].g === STATE.game)) rule(g, L, Rr, y + S.ruleY);
 
   var top = y + S.ruleY + 1, rh = (y + h - S.bottom - top) / 10;
   if (!rows.length) { R(g, x + w / 2, top + 4 * rh, "m", "NOTHING HERE YET", S.name, C.sub); return; }
@@ -355,7 +355,7 @@ function recordView(g, x, y, w, h, cat, rec, S){
   probe.remove();
   rows.forEach(function(r, i){
     var ry = top + i * rh, my = ry + rh / 2, sub = shortSub(r.s), det = r.d;
-    if (!det && sub) { det = sub; sub = ""; }                  // one extra line: it goes under the name
+    if (!det && sub && !rec.valSub) { det = sub; sub = ""; }                  // one extra line: it goes under the name
     var mine = STATE.who && (r.m === STATE.who || r.m2 === STATE.who);
     var prevMine = i && STATE.who && (rows[i - 1].m === STATE.who || rows[i - 1].m2 === STATE.who);
     var picked = r.g && r.g === STATE.game, prevPicked = i && rows[i - 1].g && rows[i - 1].g === STATE.game;
@@ -459,7 +459,9 @@ function drawDesktop(svg){
   y += spotlight(body, X, y, CW, SPOT.d) + 19.86;
   titledRule(body, X, q.R, y, "RECORDS"); y += 14.14;
   // the menu's white card hugs its buttons and grows as a category opens; the record keeps its height
-  var NW = (CW - G) / 3, RX = X + NW + G, RW = q.R - RX, bh = 300;
+  var NW = (CW - G) / 3, RX = X + NW + G, RW = q.R - RX, M = SD.menu, nc = D.categories.length;
+  var bh = Math.max(300, M.pad * 2 + nc * M.catH + (nc - 1) * M.catGap + M.subPad * 2 +
+                         M.subH * Math.max.apply(null, D.categories.map(function(c){ return c.records.length; })));
   var mcard = el("g", {}, body), mh = menu(body, X, y, NW, "fit", SD.menu, "menu", function(){});
   rrect(mcard, X, y, NW, mh, 10.8, K.white);
   var cat = D.categories[STATE.cat];
@@ -490,7 +492,7 @@ var SM = {
 function drawPhone(svg){
   var W = 254.33, q = GRID.m, G = q.G, X = q.L, CW = q.R - q.L, g = el("g", {}, svg);
   var py = 0, cardHdr = HEADER === "card";
-  if (!cardHdr) { py = header(g, X + 6, 3, CW - 12) + 9; }
+  if (!cardHdr) { py = header(g, 16.61 + 6, 3, 237.72 - 16.61 - 12) + 9; }   // header keeps the 25px-margin size
   var panelG = el("g", {}, g), body = el("g", {}, g), y;
   if (cardHdr) { y = py + 16.61; rrect(body, X, y, CW, 50, 10.8, K.white); header(body, X + 12, y + 9, CW - 24); y += 50 + 2 * G + 2; }
   else y = py + 34 - 14.14;
