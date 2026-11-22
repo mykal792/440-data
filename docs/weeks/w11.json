@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T23:35:20Z",
+  "updated": "2026-11-22T23:40:23Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 92.16,
+        "score": 94.56,
         "projected": 121.44
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 89.84,
+        "score": 92.16,
         "projected": 119.41
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 83.32,
+        "score": 88.92,
         "projected": 112.82
       }
     }
@@ -474,6 +474,28 @@
       ]
     },
     {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 18.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 37
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Bears",
       "position": "DEF",
       "team": "Chi",
@@ -715,11 +737,11 @@
       "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 13.9,
+      "points": 14.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 53
+          "value": 58
         },
         {
           "stat": "REC YD",
@@ -904,28 +926,6 @@
       ]
     },
     {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 11.1,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 31
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bills",
       "position": "DEF",
       "team": "Buf",
@@ -1063,15 +1063,6 @@
       "stats": []
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Josh Downs",
       "position": "WR",
       "team": "KC",
@@ -1184,6 +1175,24 @@
       "stats": []
     },
     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 7.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -1202,22 +1211,22 @@
       ]
     },
     {
-      "name": "Parker Washington",
-      "position": "WR",
+      "name": "Jaguars",
+      "position": "DEF",
       "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 6.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 47
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.0,
+      "stats": []
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 6.0,
+      "stats": []
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -1227,6 +1236,28 @@
       "manager_display": "GANGUS",
       "points": 5.7,
       "stats": []
+    },
+    {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 5.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Garrett Wilson",
@@ -1287,28 +1318,6 @@
       ]
     },
     {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 4.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 14
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Elic Ayomanor",
       "position": "WR",
       "team": "Ten",
@@ -1325,15 +1334,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.0,
-      "stats": []
     },
     {
       "name": "Isaiah Likely",
@@ -1390,11 +1390,11 @@
       "team": "Jax",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 2.94,
+      "points": 3.26,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 106
+          "value": 114
         },
         {
           "stat": "RUSH YD",
