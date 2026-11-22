@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T20:45:25Z",
+  "updated": "2026-11-22T20:50:23Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -9,11 +9,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 39.92,
+      "points": 46.0,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 323
+          "value": 325
         },
         {
           "stat": "RUSH YD",
@@ -21,7 +21,7 @@
         },
         {
           "stat": "TD",
-          "value": 4
+          "value": 5
         }
       ]
     },
@@ -137,11 +137,11 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 22.5,
+      "points": 22.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 66
+          "value": 67
         },
         {
           "stat": "REC YD",
@@ -206,6 +206,32 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 19.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 95
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "DJ Moore",
       "position": "WR",
       "team": "Buf",
@@ -233,11 +259,11 @@
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 17.82,
+      "points": 18.46,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 163
+          "value": 179
         },
         {
           "stat": "RUSH YD",
@@ -280,32 +306,6 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 16.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 68
-        },
-        {
-          "stat": "REC YD",
-          "value": 20
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -328,6 +328,54 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 16.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 89
+        },
+        {
+          "stat": "REC YD",
+          "value": 3
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 16.16,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 304
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
         }
       ]
     },
@@ -381,32 +429,6 @@
       "stats": []
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 15.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 82
-        },
-        {
-          "stat": "REC YD",
-          "value": 3
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Tetairoa McMillan",
       "position": "WR",
       "team": "Car",
@@ -425,28 +447,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 13.8,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 295
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
         }
       ]
     },
@@ -605,6 +605,15 @@
       ]
     },
     {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.9,
+      "stats": []
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -663,15 +672,6 @@
       "stats": []
     },
     {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.9,
-      "stats": []
-    },
-    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -712,6 +712,32 @@
         {
           "stat": "REC",
           "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 9.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 78
+        },
+        {
+          "stat": "REC YD",
+          "value": 17
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "FUM",
+          "value": 1
         }
       ]
     },
@@ -831,32 +857,6 @@
       "manager_display": "COYNE",
       "points": 7.6,
       "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 6.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 59
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Ka'imi Fairbairn",
