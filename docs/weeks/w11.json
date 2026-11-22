@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T23:20:27Z",
+  "updated": "2026-11-22T23:25:26Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 94.62,
+        "score": 95.1,
         "projected": 119.93
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 81.42,
+        "score": 83.42,
         "projected": 112.82
       }
     }
@@ -710,6 +710,32 @@
       ]
     },
     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 14.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 54
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -760,32 +786,6 @@
         {
           "stat": "REC YD",
           "value": 58
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 13.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 47
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
         },
         {
           "stat": "REC",
@@ -878,6 +878,28 @@
       ]
     },
     {
+      "name": "Ladd McConkey",
+      "position": "WR",
+      "team": "LAC",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 11.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 31
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bills",
       "position": "DEF",
       "team": "Buf",
@@ -926,6 +948,32 @@
       "stats": []
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.7,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 150
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Colston Loveland",
       "position": "TE",
       "team": "Chi",
@@ -970,32 +1018,6 @@
       ]
     },
     {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 10.22,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 138
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
@@ -1003,28 +1025,6 @@
       "manager_display": "GREG",
       "points": 10.0,
       "stats": []
-    },
-    {
-      "name": "Ladd McConkey",
-      "position": "WR",
-      "team": "LAC",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 9.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Jake Bates",
