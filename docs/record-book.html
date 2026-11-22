@@ -542,8 +542,8 @@ function drawPhone(svg){
   y += 14 + 19.86;
   titledRule(body, X, q.R, y, "BOX SCORE"); y += 14.14;
   y += boxScore(body, X, y, CW, SBOX.m);
-  var H = y + q.L;
-  el("rect", {x: 0, y: py, width: W, height: H - py, rx: 27.3, ry: 27.3, fill: "var(--panel)"}, panelG);
+  var H = y + q.L, pr = 10.8 + q.L;                    // phone: panel corners concentric with the cards (card radius + margin)
+  el("rect", {x: 0, y: py, width: W, height: H - py, rx: pr, ry: pr, fill: "var(--panel)"}, panelG);
   svg.setAttribute("viewBox", "0 0 " + W + " " + H);
 }
 
