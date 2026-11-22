@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T21:00:39Z",
+  "updated": "2026-11-22T21:05:26Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -9,7 +9,7 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 46.0,
+      "points": 45.9,
       "stats": [
         {
           "stat": "PASS YD",
@@ -17,7 +17,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 9
         },
         {
           "stat": "TD",
@@ -49,11 +49,11 @@
       "team": "Car",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 27.8,
+      "points": 28.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 118
+          "value": 120
         },
         {
           "stat": "TD",
@@ -79,6 +79,32 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Cam Ward",
+      "position": "QB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 26.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 248
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "FUM",
           "value": 1
         }
       ]
@@ -232,32 +258,6 @@
       ]
     },
     {
-      "name": "Cam Ward",
-      "position": "QB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 19.74,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 236
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        },
-        {
-          "stat": "FUM",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "DJ Moore",
       "position": "WR",
       "team": "Buf",
@@ -280,12 +280,21 @@
       ]
     },
     {
+      "name": "Tyler Bass",
+      "position": "K",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 18.5,
+      "stats": []
+    },
+    {
       "name": "Caleb Williams",
       "position": "QB",
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 18.54,
+      "points": 18.34,
       "stats": [
         {
           "stat": "PASS YD",
@@ -293,7 +302,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 13
+          "value": 11
         },
         {
           "stat": "TD",
@@ -306,12 +315,12 @@
       ]
     },
     {
-      "name": "Tyler Bass",
-      "position": "K",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 18.5,
+      "name": "Bears",
+      "position": "DEF",
+      "team": "Chi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 18.0,
       "stats": []
     },
     {
@@ -371,13 +380,48 @@
       ]
     },
     {
-      "name": "Bears",
-      "position": "DEF",
-      "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 17.0,
-      "stats": []
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 16.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 102
+        },
+        {
+          "stat": "REC",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 16.28,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 222
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "James Cook III",
@@ -428,27 +472,23 @@
       ]
     },
     {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 16.12,
+      "name": "Tetairoa McMillan",
+      "position": "WR",
+      "team": "Car",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 16.1,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 218
+          "stat": "REC YD",
+          "value": 71
         },
         {
-          "stat": "RUSH YD",
-          "value": 34
+          "stat": "REC",
+          "value": 6
         },
         {
           "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
           "value": 1
         }
       ]
@@ -481,46 +521,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Tetairoa McMillan",
-      "position": "WR",
-      "team": "Car",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 14.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 58
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 13.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 98
-        },
-        {
-          "stat": "REC",
-          "value": 8
         }
       ]
     },
@@ -645,6 +645,15 @@
       ]
     },
     {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "D'Andre Swift",
       "position": "RB",
       "team": "Chi",
@@ -737,11 +746,11 @@
       "stats": []
     },
     {
-      "name": "Bills",
+      "name": "Chargers",
       "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
+      "team": "LAC",
+      "manager": "coyne",
+      "manager_display": "COYNE",
       "points": 10.0,
       "stats": []
     },
@@ -840,6 +849,28 @@
       ]
     },
     {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 69
+        },
+        {
+          "stat": "REC YD",
+          "value": -2
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Travis Etienne Jr.",
       "position": "RB",
       "team": "NO",
@@ -861,28 +892,6 @@
       "manager_display": "COYNE",
       "points": 7.6,
       "stats": []
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 69
-        },
-        {
-          "stat": "REC YD",
-          "value": -3
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -1309,15 +1318,6 @@
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
