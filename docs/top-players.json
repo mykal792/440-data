@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T19:15:24Z",
+  "updated": "2026-11-22T19:20:31Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -48,6 +48,24 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 21.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 233
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
@@ -62,24 +80,6 @@
         {
           "stat": "RUSH YD",
           "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 19.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 184
         },
         {
           "stat": "TD",
@@ -198,7 +198,7 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 13.16,
+      "points": 13.06,
       "stats": [
         {
           "stat": "PASS YD",
@@ -206,7 +206,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 1
         },
         {
           "stat": "TD",
@@ -237,16 +237,34 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.12,
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.6,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 153
+          "stat": "RUSH YD",
+          "value": 46
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 11.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 59
         },
         {
           "stat": "TD",
@@ -262,24 +280,6 @@
       "manager_display": "GREG",
       "points": 11.7,
       "stats": []
-    },
-    {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 54
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Amon-Ra St. Brown",
@@ -311,24 +311,6 @@
       "manager_display": "GRAHAM",
       "points": 11.0,
       "stats": []
-    },
-    {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 46
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "D'Andre Swift",
@@ -378,6 +360,28 @@
         },
         {
           "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 153
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -463,6 +467,24 @@
       ]
     },
     {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 8.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 53
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Bills",
       "position": "DEF",
       "team": "Buf",
@@ -486,24 +508,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 7.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 47
-        },
-        {
-          "stat": "REC",
-          "value": 5
         }
       ]
     },
@@ -535,6 +539,50 @@
       "stats": []
     },
     {
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 65
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 6.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 45
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -553,24 +601,34 @@
       ]
     },
     {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.16,
+      "name": "Josh Downs",
+      "position": "WR",
+      "team": "KC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.1,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 54
+          "stat": "REC YD",
+          "value": 46
         },
         {
-          "stat": "TD",
-          "value": 1
-        },
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Travis Etienne Jr.",
+      "position": "RB",
+      "team": "NO",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 6.0,
+      "stats": [
         {
-          "stat": "INT",
-          "value": 1
+          "stat": "RUSH YD",
+          "value": 60
         }
       ]
     },
@@ -582,42 +640,6 @@
       "manager_display": "GANGUS",
       "points": 5.7,
       "stats": []
-    },
-    {
-      "name": "Travis Etienne Jr.",
-      "position": "RB",
-      "team": "NO",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 54
-        }
-      ]
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 34
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Buccaneers",
@@ -669,6 +691,20 @@
       ]
     },
     {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 4.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 43
+        }
+      ]
+    },
+    {
       "name": "Cairo Santos",
       "position": "K",
       "team": "Chi",
@@ -676,38 +712,6 @@
       "manager_display": "COYNE",
       "points": 4.1,
       "stats": []
-    },
-    {
-      "name": "Josh Downs",
-      "position": "WR",
-      "team": "KC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 30
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 3.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 39
-        }
-      ]
     },
     {
       "name": "Trey McBride",
@@ -910,6 +914,20 @@
       ]
     },
     {
+      "name": "Cam Ward",
+      "position": "QB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.52,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 38
+        }
+      ]
+    },
+    {
       "name": "Jordyn Tyson",
       "position": "WR",
       "team": "NO",
@@ -950,20 +968,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Cam Ward",
-      "position": "QB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 1.16,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 29
         }
       ]
     },
