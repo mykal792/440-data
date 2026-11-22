@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T20:20:25Z",
+  "updated": "2026-11-22T20:25:22Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -9,7 +9,7 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 38.44,
+      "points": 39.04,
       "stats": [
         {
           "stat": "PASS YD",
@@ -17,7 +17,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 4
+          "value": 10
         },
         {
           "stat": "TD",
@@ -58,6 +58,32 @@
         {
           "stat": "REC",
           "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Emmett Johnson",
+      "position": "RB",
+      "team": "KC",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 24.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 105
+        },
+        {
+          "stat": "REC YD",
+          "value": 38
+        },
+        {
+          "stat": "REC",
+          "value": 4
         },
         {
           "stat": "TD",
@@ -150,32 +176,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Emmett Johnson",
-      "position": "RB",
-      "team": "KC",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 20.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 85
-        },
-        {
-          "stat": "REC YD",
-          "value": 38
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -276,6 +276,32 @@
       ]
     },
     {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 16.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 66
+        },
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Texans",
       "position": "DEF",
       "team": "Hou",
@@ -307,30 +333,13 @@
       ]
     },
     {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 15.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 55
-        },
-        {
-          "stat": "REC YD",
-          "value": 25
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
+      "name": "Tyler Bass",
+      "position": "K",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 15.7,
+      "stats": []
     },
     {
       "name": "Tetairoa McMillan",
@@ -505,15 +514,6 @@
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 12.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Bass",
-      "position": "K",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 11.7,
       "stats": []
     },
     {
