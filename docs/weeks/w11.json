@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T18:10:30Z",
+  "updated": "2026-11-22T18:15:28Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 18.5,
+        "score": 18.6,
         "projected": 119.79
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 23.96,
+        "score": 24.76,
         "projected": 125.77
       },
       "away": {
@@ -35,13 +35,13 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 6.3,
+        "score": 8.1,
         "projected": 119.52
       },
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 28.92,
+        "score": 35.24,
         "projected": 126.07
       }
     },
@@ -49,13 +49,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 28.2,
+        "score": 37.38,
         "projected": 118.96
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 11.5,
+        "score": 13.96,
         "projected": 109.88
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 11.52,
+        "score": 16.72,
         "projected": 108.54
       },
       "away": {
@@ -113,24 +113,24 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "28.92",
-          "detail": "4 to play"
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "37.38",
+          "detail": "3 to play"
         },
         {
           "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "28.20",
+          "manager": "GREG",
+          "face": "greg",
+          "value": "35.24",
           "detail": "4 to play"
         },
         {
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "23.96",
-          "detail": "3 to play"
+          "value": "24.76",
+          "detail": "2 to play"
         }
       ]
     }
@@ -226,6 +226,28 @@
       "stats": []
     },
     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -235,6 +257,24 @@
       "stats": []
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.44,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 36
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -242,6 +282,24 @@
       "manager_display": "GANGUS",
       "points": 5.7,
       "stats": []
+    },
+    {
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "team": "Det",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Emmett Johnson",
@@ -373,6 +431,52 @@
       ]
     },
     {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 47
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 17
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -405,20 +509,6 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 16
-        }
-      ]
-    },
-    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -433,6 +523,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.56,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 34
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 2
         }
       ]
     },
@@ -495,6 +603,24 @@
       ]
     },
     {
+      "name": "Zay Flowers",
+      "position": "WR",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 9
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "DJ Moore",
       "position": "WR",
       "team": "Buf",
@@ -513,20 +639,6 @@
       ]
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.36,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 34
-        }
-      ]
-    },
-    {
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
@@ -541,20 +653,6 @@
       ]
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.12,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 28
-        }
-      ]
-    },
-    {
       "name": "Caleb Williams",
       "position": "QB",
       "team": "Chi",
@@ -565,24 +663,6 @@
         {
           "stat": "PASS YD",
           "value": 28
-        }
-      ]
-    },
-    {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -623,11 +703,25 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.56,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 14
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
       "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 0.4,
       "stats": [
         {
@@ -642,11 +736,39 @@
       "team": "Pit",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.2,
+      "points": 0.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Jordyn Tyson",
+      "position": "WR",
+      "team": "NO",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Chuba Hubbard",
+      "position": "RB",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 0.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
         }
       ]
     },
@@ -728,15 +850,6 @@
       "stats": []
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Mike Gesicki",
       "position": "TE",
       "team": "Cin",
@@ -758,24 +871,6 @@
       "name": "Trevor Lawrence",
       "position": "QB",
       "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Zay Flowers",
-      "position": "WR",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jordyn Tyson",
-      "position": "WR",
-      "team": "NO",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
@@ -953,15 +1048,6 @@
       "stats": []
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
@@ -1016,29 +1102,11 @@
       "stats": []
     },
     {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Chargers",
       "position": "DEF",
       "team": "LAC",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 0.0,
       "stats": []
     },
@@ -1055,15 +1123,6 @@
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
