@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T18:50:24Z",
+  "updated": "2026-11-22T18:55:23Z",
   "players": [
     {
       "name": "CeeDee Lamb",
@@ -62,11 +62,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 14.2,
+      "points": 15.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 55
+          "value": 63
         },
         {
           "stat": "REC YD",
@@ -136,6 +136,24 @@
       ]
     },
     {
+      "name": "Patrick Mahomes",
+      "position": "QB",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 11.64,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 141
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Dak Prescott",
       "position": "QB",
       "team": "Dal",
@@ -150,6 +168,24 @@
         {
           "stat": "RUSH YD",
           "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 11.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 54
         },
         {
           "stat": "TD",
@@ -180,24 +216,6 @@
       ]
     },
     {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 51
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
@@ -218,15 +236,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 11.0,
-      "stats": []
     },
     {
       "name": "Tyler Bass",
@@ -286,24 +295,6 @@
       ]
     },
     {
-      "name": "Patrick Mahomes",
-      "position": "QB",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 10.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 108
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -342,6 +333,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.0,
+      "stats": []
     },
     {
       "name": "Javonte Williams",
@@ -443,6 +443,28 @@
       "stats": []
     },
     {
+      "name": "Derrick Henry",
+      "position": "RB",
+      "team": "Bal",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Cairo Santos",
       "position": "K",
       "team": "Chi",
@@ -483,6 +505,24 @@
       ]
     },
     {
+      "name": "Josh Downs",
+      "position": "WR",
+      "team": "KC",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 4.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 30
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -490,28 +530,6 @@
       "manager_display": "SCHILLING",
       "points": 3.4,
       "stats": []
-    },
-    {
-      "name": "Derrick Henry",
-      "position": "RB",
-      "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 3.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        },
-        {
-          "stat": "REC YD",
-          "value": 2
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "DeVonta Smith",
@@ -528,6 +546,20 @@
         {
           "stat": "REC",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 29
         }
       ]
     },
@@ -611,20 +643,6 @@
       "manager_display": "SCOTTY",
       "points": 2.0,
       "stats": []
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 20
-        }
-      ]
     },
     {
       "name": "James Cook III",
@@ -786,20 +804,16 @@
       "stats": []
     },
     {
-      "name": "Josh Downs",
-      "position": "WR",
-      "team": "KC",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.9,
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 0.8,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 4
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "stat": "RUSH YD",
+          "value": 8
         }
       ]
     },
@@ -892,20 +906,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
         }
       ]
     },
