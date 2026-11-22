@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T21:45:22Z",
+  "updated": "2026-11-22T21:50:25Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 89.32,
+        "score": 86.32,
         "projected": 119.41
       },
       "away": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 62.78,
+        "score": 63.78,
         "projected": 109.96
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 56.84,
+        "score": 57.44,
         "projected": 108.84
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 62.02,
+        "score": 63.02,
         "projected": 112.82
       }
     }
@@ -778,20 +778,20 @@
       ]
     },
     {
-      "name": "Jaguars",
-      "position": "DEF",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 11.0,
-      "stats": []
-    },
-    {
       "name": "Bills",
       "position": "DEF",
       "team": "Buf",
       "manager": "scotty",
       "manager_display": "SCOTTY",
+      "points": 11.0,
+      "stats": []
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 11.0,
       "stats": []
     },
@@ -888,15 +888,6 @@
       "stats": []
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Breece Hall",
       "position": "RB",
       "team": "NYJ",
@@ -948,6 +939,15 @@
           "value": 6
         }
       ]
+    },
+    {
+      "name": "Jaguars",
+      "position": "DEF",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 8.0,
+      "stats": []
     },
     {
       "name": "Steelers",
@@ -1236,6 +1236,28 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        },
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jonah Coleman",
       "position": "RB",
       "team": "Den",
@@ -1316,28 +1338,6 @@
       ]
     },
     {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bo Nix",
       "position": "QB",
       "team": "Den",
@@ -1366,6 +1366,24 @@
         {
           "stat": "REC YD",
           "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
         },
         {
           "stat": "REC",
@@ -1562,15 +1580,6 @@
       "name": "T.J. Hockenson",
       "position": "TE",
       "team": "Min",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
