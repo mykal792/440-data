@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T18:15:28Z",
+  "updated": "2026-11-22T18:20:23Z",
   "players": [
     {
       "name": "Texans",
@@ -57,6 +57,24 @@
       ]
     },
     {
+      "name": "Bears",
+      "position": "DEF",
+      "team": "Chi",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.0,
+      "stats": []
+    },
+    {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Chiefs",
       "position": "DEF",
       "team": "KC",
@@ -75,21 +93,12 @@
       "stats": []
     },
     {
-      "name": "Bears",
+      "name": "Steelers",
       "position": "DEF",
-      "team": "Chi",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 10.0,
-      "stats": []
-    },
-    {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.0,
+      "team": "Pit",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.0,
       "stats": []
     },
     {
@@ -115,25 +124,34 @@
       ]
     },
     {
-      "name": "Steelers",
-      "position": "DEF",
-      "team": "Pit",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "Patrick Mahomes",
       "position": "QB",
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 7.44,
+      "points": 7.88,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 36
+          "value": 47
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 7.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 18
         },
         {
           "stat": "TD",
@@ -231,6 +249,24 @@
       "stats": []
     },
     {
+      "name": "Rashee Rice",
+      "position": "WR",
+      "team": "KC",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 26
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -238,6 +274,28 @@
       "manager_display": "SCHILLING",
       "points": 3.4,
       "stats": []
+    },
+    {
+      "name": "Kenny Gainwell",
+      "position": "RB",
+      "team": "TB",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "D'Andre Swift",
@@ -280,24 +338,6 @@
       ]
     },
     {
-      "name": "Rashee Rice",
-      "position": "WR",
-      "team": "KC",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 2.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 15
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -330,9 +370,9 @@
       ]
     },
     {
-      "name": "Javonte Williams",
+      "name": "Saquon Barkley",
       "position": "RB",
-      "team": "Dal",
+      "team": "Phi",
       "manager": "gangus",
       "manager_display": "GANGUS",
       "points": 1.7,
@@ -430,20 +470,16 @@
       ]
     },
     {
-      "name": "Kenny Gainwell",
+      "name": "Chuba Hubbard",
       "position": "RB",
-      "team": "TB",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
+      "team": "Car",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
       "points": 1.5,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 1
+          "stat": "RUSH YD",
+          "value": 15
         }
       ]
     },
@@ -506,20 +542,6 @@
       ]
     },
     {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        }
-      ]
-    },
-    {
       "name": "Caleb Williams",
       "position": "QB",
       "team": "Chi",
@@ -566,6 +588,20 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Bucky Irving",
+      "position": "RB",
+      "team": "TB",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 6
         }
       ]
     },
@@ -626,30 +662,16 @@
       ]
     },
     {
-      "name": "Chuba Hubbard",
-      "position": "RB",
-      "team": "Car",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "James Cook III",
       "position": "RB",
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 0.2,
+      "points": 0.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 2
+          "value": 4
         }
       ]
     },
@@ -747,15 +769,6 @@
       "name": "Mark Andrews",
       "position": "TE",
       "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Bucky Irving",
-      "position": "RB",
-      "team": "TB",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
