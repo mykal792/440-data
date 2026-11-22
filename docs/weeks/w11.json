@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T23:15:31Z",
+  "updated": "2026-11-22T23:20:27Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 90.62,
+        "score": 94.62,
         "projected": 119.93
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 74.08,
+        "score": 76.48,
         "projected": 109.96
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 81.34,
+        "score": 79.44,
         "projected": 108.84
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 80.72,
+        "score": 81.42,
         "projected": 112.82
       }
     }
@@ -322,11 +322,11 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 22.8,
+      "points": 22.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 75
+          "value": 76
         },
         {
           "stat": "REC YD",
@@ -710,6 +710,28 @@
       ]
     },
     {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 13.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 47
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
@@ -738,6 +760,32 @@
         {
           "stat": "REC YD",
           "value": 58
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 13.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 47
+        },
+        {
+          "stat": "REC YD",
+          "value": 11
         },
         {
           "stat": "REC",
@@ -786,32 +834,6 @@
       ]
     },
     {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 12.6,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 40
-        },
-        {
-          "stat": "REC YD",
-          "value": 11
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
@@ -848,28 +870,6 @@
         {
           "stat": "REC",
           "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 11.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 33
-        },
-        {
-          "stat": "REC",
-          "value": 4
         },
         {
           "stat": "TD",
@@ -1336,13 +1336,22 @@
       "stats": []
     },
     {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
-      "manager": "coyne",
-      "manager_display": "COYNE",
+      "name": "Isaiah Likely",
+      "position": "TE",
+      "team": "NYG",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
       "points": 4.0,
-      "stats": []
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 35
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Jaylen Warren",
@@ -1454,6 +1463,15 @@
           "value": 2
         }
       ]
+    },
+    {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 2.0,
+      "stats": []
     },
     {
       "name": "Ryan Flournoy",
@@ -1600,15 +1618,6 @@
       "team": "Min",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Isaiah Likely",
-      "position": "TE",
-      "team": "NYG",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 0.0,
       "stats": []
     },
