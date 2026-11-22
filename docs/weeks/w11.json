@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T22:50:27Z",
+  "updated": "2026-11-22T22:55:21Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 88.36,
+        "score": 88.86,
         "projected": 121.48
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 72.58,
+        "score": 74.08,
         "projected": 109.96
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 77.84,
+        "score": 78.54,
         "projected": 108.84
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 71.22,
+        "score": 72.22,
         "projected": 112.82
       }
     }
@@ -365,6 +365,32 @@
       ]
     },
     {
+      "name": "Ashton Jeanty",
+      "position": "RB",
+      "team": "LV",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 22.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 71
+        },
+        {
+          "stat": "REC YD",
+          "value": 78
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -383,32 +409,6 @@
         {
           "stat": "REC",
           "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Ashton Jeanty",
-      "position": "RB",
-      "team": "LV",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 21.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 64
-        },
-        {
-          "stat": "REC YD",
-          "value": 78
-        },
-        {
-          "stat": "REC",
-          "value": 3
         },
         {
           "stat": "TD",
@@ -738,6 +738,32 @@
       ]
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 40
+        },
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Carnell Tate",
       "position": "WR",
       "team": "Ten",
@@ -808,32 +834,6 @@
       ]
     },
     {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 12.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 35
-        },
-        {
-          "stat": "REC YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bo Nix",
       "position": "QB",
       "team": "Den",
@@ -870,6 +870,28 @@
         {
           "stat": "REC",
           "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 33
+        },
+        {
+          "stat": "REC",
+          "value": 4
         },
         {
           "stat": "TD",
@@ -979,28 +1001,6 @@
       "stats": []
     },
     {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 23
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -1033,6 +1033,15 @@
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
+      "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
       "points": 8.0,
       "stats": []
     },
@@ -1146,15 +1155,6 @@
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 7.6,
-      "stats": []
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.0,
       "stats": []
     },
     {
