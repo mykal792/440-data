@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T22:15:27Z",
+  "updated": "2026-11-22T22:20:24Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -1223,6 +1223,28 @@
       ]
     },
     {
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 2.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Ashton Jeanty",
       "position": "RB",
       "team": "LV",
@@ -1303,20 +1325,6 @@
       ]
     },
     {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        }
-      ]
-    },
-    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -1330,6 +1338,28 @@
         },
         {
           "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 0.26,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 54
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
           "value": 1
         }
       ]
@@ -1495,28 +1525,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": -0.06,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 46
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
     }
   ]
 }
