@@ -267,8 +267,10 @@ def build():
         {"key": "wins", "title": "MOST WINS", "rows": career_list(lambda m: car[m]["w"])},
         {"key": "losses", "title": "MOST LOSSES", "rows": career_list(lambda m: car[m]["l"])},
         {"key": "win-pct", "title": "WIN PERCENTAGE", "rows": career_list(lambda m: round(car[m]["pct"], 3), fmt=pct, sub=crec)},
-        {"key": "points", "title": "TOTAL POINTS", "rows": career_list(lambda m: round(car[m]["pf"], 2), fmt=comma)},
-        {"key": "points-against", "title": "TOTAL POINTS AGAINST", "rows": career_list(lambda m: round(car[m]["pa"], 2), fmt=comma)},
+        {"key": "points", "title": "MOST POINTS", "unit": "AVG PPG", "valSub": True,
+         "rows": career_list(lambda m: round(car[m]["pf"] / car[m]["g"], 2), fmt=f2, sub=lambda m: comma(car[m]["pf"]) + " TOTAL")},
+        {"key": "points-against", "title": "MOST POINTS AGAINST", "unit": "AVG PPG", "valSub": True,
+         "rows": career_list(lambda m: round(car[m]["pa"] / car[m]["g"], 2), fmt=f2, sub=lambda m: comma(car[m]["pa"]) + " TOTAL")},
         {"key": "hardest-sched", "title": "HARDEST SCHEDULE", "unit": "VS LEAGUE AVG",
          "rows": career_list(lambda m: round(car[m]["sos"], 2), fmt=signed)},
         {"key": "easiest-sched", "title": "EASIEST SCHEDULE", "unit": "VS LEAGUE AVG",
@@ -281,6 +283,8 @@ def build():
          "rows": career_list(lambda m: len(titles["pts"][m]), sub=lambda m: yrs(titles["pts"][m]))},
         {"key": "winning-seasons", "title": "WINNING SEASONS", "rows": career_list(lambda m: len(titles["win"][m]))},
         {"key": "losing-seasons", "title": "LOSING SEASONS", "rows": career_list(lambda m: len(titles["lose"][m]))},
+        {"key": "last", "title": "LAST PLACE FINISHES", "note": "THE PLATE BEGAN IN 2020",
+         "rows": career_list(lambda m: len(titles["last"][m]), sub=lambda m: yrs(titles["last"][m]))},
     ]
 
     # ---------------------------------------------------------------- playoffs
@@ -304,7 +308,7 @@ def build():
          "rows": strip(finish(ranked(pair_rows(True, "sum", False, f2), "x")))},
         {"key": "po-low-combined", "title": "LOWEST COMBINED", "pair": True,
          "eras": [dict(e, rows=strip(finish(e["rows"]))) for e in eras(pair_rows(True, "sum", True, f2), "x")]},
-        {"key": "po-blowout", "title": "BIGGEST WIN", "pair": True,
+        {"key": "po-blowout", "title": "BIGGEST BLOWOUT", "pair": True,
          "rows": strip(finish(ranked(pair_rows(True, "mar", False, lambda v: "+" + f2(v)), "x")))},
         {"key": "po-narrow", "title": "NARROWEST WIN", "pair": True,
          "rows": strip(finish(ranked(pair_rows(True, "mar", True, lambda v: "+" + f2(v), True), "x", low=True)))},
@@ -417,8 +421,6 @@ def build():
          "rows": career_list(lambda m: len(prof(m, "career", "bonus", "squid", default=[])), sub=lambda m: yrs(prof(m, "career", "bonus", "squid", default=[])))},
         {"key": "dk", "title": "DRAFTKINGS WINS",
          "rows": career_list(lambda m: len(prof(m, "career", "bonus", "draftkings", default=[])), sub=lambda m: yrs(prof(m, "career", "bonus", "draftkings", default=[])))},
-        {"key": "last", "title": "LAST PLACE FINISHES",
-         "rows": career_list(lambda m: len(titles["last"][m]), sub=lambda m: yrs(titles["last"][m]))},
     ]
 
     # ---------------------------------------------------------------- standings (left nav)
