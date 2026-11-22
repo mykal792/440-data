@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T20:35:20Z",
+  "updated": "2026-11-22T20:40:32Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -180,6 +180,28 @@
       ]
     },
     {
+      "name": "Cam Ward",
+      "position": "QB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 19.26,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 174
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -202,28 +224,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Cam Ward",
-      "position": "QB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 18.46,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 154
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -373,16 +373,60 @@
       ]
     },
     {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 75
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Tyler Shough",
+      "position": "QB",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 13.34,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 156
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 31
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 13.36,
+      "points": 13.32,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 284
+          "value": 283
         },
         {
           "stat": "TD",
@@ -465,50 +509,6 @@
       ]
     },
     {
-      "name": "D'Andre Swift",
-      "position": "RB",
-      "team": "Chi",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 12.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 47
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 64
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -531,30 +531,92 @@
       ]
     },
     {
-      "name": "Tyler Shough",
-      "position": "QB",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 12.06,
+      "name": "D'Andre Swift",
+      "position": "RB",
+      "team": "Chi",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.9,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 124
+          "stat": "RUSH YD",
+          "value": 51
         },
         {
-          "stat": "RUSH YD",
-          "value": 31
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
           "value": 1
         },
         {
-          "stat": "INT",
+          "stat": "FUM",
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Chris Olave",
+      "position": "WR",
+      "team": "NO",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 74
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 10.3,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 63
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 10.0,
+      "stats": []
+    },
+    {
+      "name": "Bills",
+      "position": "DEF",
+      "team": "Buf",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.0,
+      "stats": []
     },
     {
       "name": "Brandon Aubrey",
@@ -610,60 +672,38 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 9.1,
+      "name": "Trey McBride",
+      "position": "TE",
+      "team": "Ari",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 9.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 51
+          "value": 4
         },
         {
           "stat": "REC YD",
-          "value": 20
+          "value": 50
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 8
         }
       ]
     },
     {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Bills",
-      "position": "DEF",
-      "team": "Buf",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 9.0,
-      "stats": []
-    },
-    {
-      "name": "Chris Olave",
-      "position": "WR",
-      "team": "NO",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.8,
+      "name": "Tony Pollard",
+      "position": "RB",
+      "team": "Ten",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 9.3,
       "stats": [
         {
-          "stat": "REC YD",
-          "value": 63
-        },
-        {
-          "stat": "REC",
-          "value": 5
+          "stat": "RUSH YD",
+          "value": 93
         }
       ]
     },
@@ -682,42 +722,6 @@
         {
           "stat": "REC",
           "value": 6
-        }
-      ]
-    },
-    {
-      "name": "Tony Pollard",
-      "position": "RB",
-      "team": "Ten",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 8.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 82
-        }
-      ]
-    },
-    {
-      "name": "Trey McBride",
-      "position": "TE",
-      "team": "Ari",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 8.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        },
-        {
-          "stat": "REC YD",
-          "value": 41
-        },
-        {
-          "stat": "REC",
-          "value": 7
         }
       ]
     },
@@ -802,6 +806,20 @@
       ]
     },
     {
+      "name": "Travis Etienne Jr.",
+      "position": "RB",
+      "team": "NO",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 76
+        }
+      ]
+    },
+    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -829,20 +847,6 @@
       "stats": []
     },
     {
-      "name": "Travis Etienne Jr.",
-      "position": "RB",
-      "team": "NO",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 67
-        }
-      ]
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -850,6 +854,28 @@
       "manager_display": "GANGUS",
       "points": 5.7,
       "stats": []
+    },
+    {
+      "name": "Ollie Gordon II",
+      "position": "RB",
+      "team": "Mia",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 54
+        },
+        {
+          "stat": "REC YD",
+          "value": -3
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "DeVonta Smith",
@@ -866,28 +892,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Ollie Gordon II",
-      "position": "RB",
-      "team": "Mia",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 5.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 51
-        },
-        {
-          "stat": "REC YD",
-          "value": -3
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
@@ -910,6 +914,24 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Elic Ayomanor",
+      "position": "WR",
+      "team": "Ten",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 3
         }
       ]
     },
@@ -990,24 +1012,6 @@
         {
           "stat": "REC",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Elic Ayomanor",
-      "position": "WR",
-      "team": "Ten",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 1.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 12
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
