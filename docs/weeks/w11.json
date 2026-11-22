@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T22:00:34Z",
+  "updated": "2026-11-22T22:05:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 83.24,
+        "score": 89.28,
         "projected": 119.93
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 77.66,
+        "score": 78.16,
         "projected": 121.48
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 64.98,
+        "score": 65.28,
         "projected": 109.96
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 60.14,
+        "score": 58.14,
         "projected": 108.84
       },
       "away": {
@@ -857,6 +857,32 @@
       ]
     },
     {
+      "name": "Breece Hall",
+      "position": "RB",
+      "team": "NYJ",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 10.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 32
+        },
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -888,32 +914,6 @@
       "stats": []
     },
     {
-      "name": "Breece Hall",
-      "position": "RB",
-      "team": "NYJ",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 27
-        },
-        {
-          "stat": "REC YD",
-          "value": 7
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -921,6 +921,28 @@
       "manager_display": "GRAHAM",
       "points": 9.6,
       "stats": []
+    },
+    {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 62
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
     },
     {
       "name": "Rashee Rice",
@@ -1080,15 +1102,6 @@
       ]
     },
     {
-      "name": "Chargers",
-      "position": "DEF",
-      "team": "LAC",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -1169,6 +1182,15 @@
       ]
     },
     {
+      "name": "Chargers",
+      "position": "DEF",
+      "team": "LAC",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.0,
+      "stats": []
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -1218,24 +1240,6 @@
       ]
     },
     {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 2.84,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 61
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1250,6 +1254,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 15
+        },
+        {
+          "stat": "REC",
+          "value": 2
         }
       ]
     },
@@ -1304,24 +1326,6 @@
         {
           "stat": "REC YD",
           "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 12
         },
         {
           "stat": "REC",
