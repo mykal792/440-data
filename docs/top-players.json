@@ -1,8 +1,30 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T19:00:35Z",
+  "updated": "2026-11-22T19:05:22Z",
   "players": [
+    {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 17.82,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 113
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
     {
       "name": "CeeDee Lamb",
       "position": "WR",
@@ -71,11 +93,11 @@
       "team": "KC",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 15.0,
+      "points": 15.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 63
+          "value": 66
         },
         {
           "stat": "REC YD",
@@ -84,6 +106,28 @@
         {
           "stat": "REC",
           "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 13.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 52
+        },
+        {
+          "stat": "REC",
+          "value": 5
         },
         {
           "stat": "TD",
@@ -136,20 +180,20 @@
       ]
     },
     {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 12.0,
+      "name": "DJ Moore",
+      "position": "WR",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.6,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 40
+          "value": 41
         },
         {
           "stat": "REC",
-          "value": 4
+          "value": 5
         },
         {
           "stat": "TD",
@@ -163,11 +207,29 @@
       "team": "KC",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 11.64,
+      "points": 12.12,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 141
+          "value": 153
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.12,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 153
         },
         {
           "stat": "TD",
@@ -181,11 +243,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 11.4,
+      "points": 11.68,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 130
+          "value": 137
         },
         {
           "stat": "RUSH YD",
@@ -208,28 +270,6 @@
         {
           "stat": "RUSH YD",
           "value": 54
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 11.22,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 98
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 13
         },
         {
           "stat": "TD",
@@ -267,28 +307,6 @@
       "manager_display": "GREG",
       "points": 10.7,
       "stats": []
-    },
-    {
-      "name": "DJ Moore",
-      "position": "WR",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 27
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Chuba Hubbard",
@@ -335,16 +353,38 @@
       ]
     },
     {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 10.2,
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.7,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 105
+          "stat": "REC YD",
+          "value": 27
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 8.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 24
         },
         {
           "stat": "TD",
@@ -360,24 +400,6 @@
       "manager_display": "SCOTTY",
       "points": 8.0,
       "stats": []
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 18
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
     },
     {
       "name": "Sam LaPorta",
@@ -416,12 +438,30 @@
       ]
     },
     {
+      "name": "Chiefs",
+      "position": "DEF",
+      "team": "KC",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 7.0,
+      "stats": []
+    },
+    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 7.0,
+      "stats": []
+    },
+    {
+      "name": "Jake Bates",
+      "position": "K",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 6.6,
       "stats": []
     },
     {
@@ -441,15 +481,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Chiefs",
-      "position": "DEF",
-      "team": "KC",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 6.0,
-      "stats": []
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -483,15 +514,6 @@
       ]
     },
     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 5.1,
-      "stats": []
-    },
-    {
       "name": "Buccaneers",
       "position": "DEF",
       "team": "TB",
@@ -523,6 +545,15 @@
       ]
     },
     {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 4.1,
+      "stats": []
+    },
+    {
       "name": "Josh Downs",
       "position": "WR",
       "team": "KC",
@@ -551,6 +582,20 @@
         {
           "stat": "RUSH YD",
           "value": 39
+        }
+      ]
+    },
+    {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 35
         }
       ]
     },
@@ -644,20 +689,6 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 2.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 22
-        }
-      ]
-    },
-    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
@@ -725,15 +756,15 @@
       ]
     },
     {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
       "points": 1.7,
       "stats": [
         {
-          "stat": "REC YD",
+          "stat": "RUSH YD",
           "value": 12
         },
         {
@@ -801,24 +832,6 @@
       ]
     },
     {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.3,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Bucky Irving",
       "position": "RB",
       "team": "TB",
@@ -829,6 +842,24 @@
         {
           "stat": "RUSH YD",
           "value": 12
+        }
+      ]
+    },
+    {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 7
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -845,15 +876,6 @@
           "value": 29
         }
       ]
-    },
-    {
-      "name": "Jake Bates",
-      "position": "K",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Ollie Gordon II",
@@ -1058,15 +1080,6 @@
       "name": "Parker Washington",
       "position": "WR",
       "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "George Pickens",
-      "position": "WR",
-      "team": "Dal",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
       "points": 0.0,
