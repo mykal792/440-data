@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T00:20:25Z",
+  "updated": "2026-11-23T00:25:20Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 98.66,
+        "score": 101.26,
         "projected": 121.33
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 92.86,
+        "score": 94.26,
         "projected": 119.42
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 109.52,
+        "score": 108.42,
         "projected": 112.82
       }
     }
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "109.52",
+          "value": "108.42",
           "detail": "1 to play"
         }
       ]
@@ -164,11 +164,11 @@
       "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 34.0,
+      "points": 34.9,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 102
+          "value": 111
         },
         {
           "stat": "REC YD",
@@ -904,6 +904,24 @@
       ]
     },
     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 12.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 87
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -1034,24 +1052,6 @@
       "manager_display": "GREG",
       "points": 10.0,
       "stats": []
-    },
-    {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 9.6,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 66
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        }
-      ]
     },
     {
       "name": "Jake Bates",
@@ -1211,15 +1211,6 @@
       "stats": []
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "DeVonta Smith",
       "position": "WR",
       "team": "Phi",
@@ -1287,6 +1278,15 @@
       ]
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.0,
+      "stats": []
+    },
+    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -1305,6 +1305,28 @@
         {
           "stat": "REC",
           "value": 4
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.26,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 189
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 2
         }
       ]
     },
@@ -1383,28 +1405,6 @@
       "manager_display": "SCHILLING",
       "points": 3.4,
       "stats": []
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 2.86,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 154
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Tyler Warren",
