@@ -263,6 +263,30 @@ def build():
         c = car[m]
         return "%d-%d" % (c["w"], c["l"]) + ("-%d" % c["t"] if c["t"] else "")
 
+    # weeks #1: finished regular seasons, first in the standings after each week's games
+    # (wins, ties as half, then points for). Before week 1 everyone is tied, so it isn't counted.
+    wk1, wk1_season = defaultdict(int), defaultdict(int)
+    by_week = defaultdict(list)
+    for g in reg:
+        if g["season"] in done:
+            by_week[(g["season"], g["week"])].append(g)
+    standing = defaultdict(lambda: [0.0, 0.0])
+    for (y, w) in sorted(by_week):
+        for g in by_week[(y, w)]:
+            for me, opp in sides(g):
+                r = standing[(y, me["manager"])]
+                r[0] += {"W": 1, "T": 0.5, "L": 0}[res(me, opp)]
+                r[1] += me["points"]
+        lead = max(((m, r) for (yy, m), r in standing.items() if yy == y), key=lambda kv: (kv[1][0], kv[1][1]))[0]
+        wk1[lead] += 1; wk1_season[(y, lead)] += 1
+
+    def wk1_best(m):
+        mine = {y: n for (y, mm), n in wk1_season.items() if mm == m}
+        if not mine: return ""
+        top = max(mine.values())
+        ys = sorted(y for y, n in mine.items() if n == top)
+        return "BEST: %d IN %s" % (top, " ".join("'%02d" % (y % 100) for y in ys))
+
     career = [
         {"key": "wins", "title": "MOST WINS", "rows": career_list(lambda m: car[m]["w"])},
         {"key": "losses", "title": "MOST LOSSES", "rows": career_list(lambda m: car[m]["l"])},
@@ -277,6 +301,8 @@ def build():
          "rows": career_list(lambda m: round(car[m]["sos"], 2), low=True, fmt=signed)},
         {"key": "high-scores", "title": "HIGH SCORES", "rows": career_list(lambda m: car[m]["hs"])},
         {"key": "top3", "title": "TOP 3 SCORES", "rows": career_list(lambda m: car[m]["t3"])},
+        {"key": "weeks-first", "title": "WEEKS AT #1", "note": "1ST IN THE STANDINGS \u00b7 THRU %d" % max(done),
+         "rows": career_list(lambda m: wk1[m], sub=wk1_best)},
         {"key": "reg-titles", "title": "REGULAR SEASON TITLES", "note": "BEST RECORD",
          "rows": career_list(lambda m: len(titles["reg"][m]), sub=lambda m: yrs(titles["reg"][m]))},
         {"key": "pts-titles", "title": "POINTS TITLES", "note": "MOST POINTS IN A SEASON",
