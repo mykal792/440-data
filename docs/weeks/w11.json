@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T01:50:32Z",
+  "updated": "2026-11-23T01:55:23Z",
   "matchups": [
     {
       "home": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 120.56,
+        "score": 123.96,
         "projected": 118.78
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 80.48,
+        "score": 83.28,
         "projected": 109.85
       }
     },
@@ -115,8 +115,8 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "120.56",
-          "detail": "2 to play"
+          "value": "123.96",
+          "detail": "1 to play"
         },
         {
           "rank": 2,
@@ -1366,6 +1366,24 @@
       ]
     },
     {
+      "name": "T.J. Hockenson",
+      "position": "TE",
+      "team": "Min",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 4.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 36
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Elic Ayomanor",
       "position": "WR",
       "team": "Ten",
@@ -1442,6 +1460,24 @@
       "stats": []
     },
     {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 29
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1452,24 +1488,6 @@
         {
           "stat": "REC YD",
           "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "T.J. Hockenson",
-      "position": "TE",
-      "team": "Min",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 20
         },
         {
           "stat": "REC",
@@ -1576,6 +1594,20 @@
       "stats": []
     },
     {
+      "name": "Jordan Mason",
+      "position": "RB",
+      "team": "Min",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 9
+        }
+      ]
+    },
+    {
       "name": "Christian McCaffrey",
       "position": "RB",
       "team": "SF",
@@ -1604,20 +1636,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Mason",
-      "position": "RB",
-      "team": "Min",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 2
         }
       ]
     },
@@ -1681,15 +1699,6 @@
       "team": "TB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
