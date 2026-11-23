@@ -1,14 +1,14 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T00:10:29Z",
+  "updated": "2026-11-23T00:15:36Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 63.6,
-        "projected": 120.42
+        "projected": 120.39
       },
       "away": {
         "name": "GANGUS",
@@ -22,27 +22,27 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 112.4,
-        "projected": 125.72
+        "projected": 125.74
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
         "score": 98.66,
-        "projected": 121.4
+        "projected": 121.33
       }
     },
     {
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 96.86,
-        "projected": 119.41
+        "score": 94.86,
+        "projected": 119.42
       },
       "away": {
         "name": "GREG",
         "face": "greg",
         "score": 103.76,
-        "projected": 126.07
+        "projected": 126.06
       }
     },
     {
@@ -50,26 +50,26 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 120.56,
-        "projected": 118.81
+        "projected": 118.78
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 76.48,
-        "projected": 109.91
+        "projected": 109.85
       }
     },
     {
       "home": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 79.74,
+        "score": 80.64,
         "projected": 108.84
       },
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 109.32,
+        "score": 109.52,
         "projected": 112.82
       }
     }
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "109.32",
+          "value": "109.52",
           "detail": "1 to play"
         }
       ]
@@ -164,11 +164,11 @@
       "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
-      "points": 33.8,
+      "points": 34.0,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 100
+          "value": 102
         },
         {
           "stat": "REC YD",
@@ -348,7 +348,7 @@
       "team": "LV",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 23.2,
+      "points": 24.1,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -356,11 +356,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 78
+          "value": 82
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 4
         },
         {
           "stat": "TD",
@@ -1296,28 +1296,6 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.86,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 154
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jonathan Taylor",
       "position": "RB",
       "team": "Ind",
@@ -1405,6 +1383,28 @@
       "manager_display": "SCHILLING",
       "points": 3.4,
       "stats": []
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 2.86,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 154
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
     },
     {
       "name": "Tyler Warren",
