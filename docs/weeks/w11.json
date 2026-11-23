@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T00:40:25Z",
+  "updated": "2026-11-23T00:45:31Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 98.1,
+        "score": 97.9,
         "projected": 119.93
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 104.22,
+        "score": 109.34,
         "projected": 119.42
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 116.42,
+        "score": 119.42,
         "projected": 112.82
       }
     }
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "HAYDEN",
+          "face": "hayden",
+          "value": "13.40",
+          "detail": "Cam Little"
+        },
+        {
+          "rank": 3,
           "manager": "SCOTTY",
           "face": "scotty",
           "value": "10.90",
           "detail": "Brandon Aubrey"
-        },
-        {
-          "rank": 3,
-          "manager": "HAYDEN",
-          "face": "hayden",
-          "value": "10.80",
-          "detail": "Cam Little"
         }
       ]
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "116.42",
+          "value": "119.42",
           "detail": "1 to play"
         },
         {
@@ -613,6 +613,32 @@
       ]
     },
     {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 16.74,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 301
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Chris Olave",
       "position": "WR",
       "team": "NO",
@@ -754,6 +780,15 @@
       "stats": []
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 16.0,
+      "stats": []
+    },
+    {
       "name": "David Montgomery",
       "position": "RB",
       "team": "Hou",
@@ -798,38 +833,12 @@
       ]
     },
     {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 14.22,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 288
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 2
-        }
-      ]
-    },
-    {
       "name": "Bo Nix",
       "position": "QB",
       "team": "Den",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 13.7,
+      "points": 13.5,
       "stats": [
         {
           "stat": "PASS YD",
@@ -837,7 +846,7 @@
         },
         {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 5
         },
         {
           "stat": "TD",
@@ -866,6 +875,15 @@
           "value": 1
         }
       ]
+    },
+    {
+      "name": "Cam Little",
+      "position": "K",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 13.4,
+      "stats": []
     },
     {
       "name": "Nico Collins",
@@ -902,15 +920,6 @@
           "value": 110
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 13.0,
-      "stats": []
     },
     {
       "name": "Carnell Tate",
@@ -1024,15 +1033,6 @@
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 10.9,
-      "stats": []
-    },
-    {
-      "name": "Cam Little",
-      "position": "K",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 10.8,
       "stats": []
     },
     {
