@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T00:30:36Z",
+  "updated": "2026-11-23T00:35:24Z",
   "matchups": [
     {
       "home": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 76.48,
+        "score": 77.78,
         "projected": 109.87
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 108.42,
+        "score": 116.42,
         "projected": 112.82
       }
     }
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "116.42",
+          "detail": "1 to play"
+        },
+        {
+          "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
           "value": "112.40",
           "detail": "2 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "108.42",
-          "detail": "1 to play"
         }
       ]
     }
@@ -758,6 +758,28 @@
       ]
     },
     {
+      "name": "Malik Nabers",
+      "position": "WR",
+      "team": "NYG",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 15.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Bo Nix",
       "position": "QB",
       "team": "Den",
@@ -779,28 +801,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Malik Nabers",
-      "position": "WR",
-      "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 13.7,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 47
-        },
-        {
-          "stat": "REC",
-          "value": 6
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -858,6 +858,15 @@
           "value": 110
         }
       ]
+    },
+    {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 13.0,
+      "stats": []
     },
     {
       "name": "Carnell Tate",
@@ -1302,15 +1311,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Jonathan Taylor",
