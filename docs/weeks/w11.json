@@ -1,13 +1,13 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T02:05:30Z",
+  "updated": "2026-11-23T02:10:27Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 71.0,
+        "score": 69.0,
         "projected": 120.4
       },
       "away": {
@@ -21,13 +21,13 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 113.4,
+        "score": 114.4,
         "projected": 125.78
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 115.36,
+        "score": 122.66,
         "projected": 121.36
       }
     },
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "SCARPITTI",
+          "face": "scarpitti",
+          "value": "122.66",
+          "detail": "All played"
+        },
+        {
+          "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
           "value": "119.42",
           "detail": "1 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "SCARPITTI",
-          "face": "scarpitti",
-          "value": "115.36",
-          "detail": "All played"
         }
       ]
     }
@@ -811,6 +811,28 @@
       ]
     },
     {
+      "name": "George Kittle",
+      "position": "TE",
+      "team": "SF",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 15.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 25
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -1116,28 +1138,6 @@
       ]
     },
     {
-      "name": "George Kittle",
-      "position": "TE",
-      "team": "SF",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 8.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 17
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Steelers",
       "position": "DEF",
       "team": "Pit",
@@ -1308,15 +1308,6 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 6.0,
-      "stats": []
-    },
-    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -1400,6 +1391,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 4.0,
+      "stats": []
     },
     {
       "name": "Jaguars",
@@ -1536,6 +1536,15 @@
       ]
     },
     {
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "team": "SF",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.0,
+      "stats": []
+    },
+    {
       "name": "Chargers",
       "position": "DEF",
       "team": "LAC",
@@ -1585,13 +1594,18 @@
       ]
     },
     {
-      "name": "Eddy Pineiro",
-      "position": "K",
+      "name": "Christian McCaffrey",
+      "position": "RB",
       "team": "SF",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.0,
-      "stats": []
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 14
+        }
+      ]
     },
     {
       "name": "Will Reichard",
@@ -1613,20 +1627,6 @@
         {
           "stat": "RUSH YD",
           "value": 9
-        }
-      ]
-    },
-    {
-      "name": "Christian McCaffrey",
-      "position": "RB",
-      "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 8
         }
       ]
     },
