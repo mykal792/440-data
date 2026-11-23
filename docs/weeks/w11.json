@@ -1,19 +1,19 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-22T23:55:19Z",
+  "updated": "2026-11-23T00:00:32Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 63.6,
-        "projected": 120.45
+        "projected": 120.42
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 97.26,
+        "score": 98.1,
         "projected": 119.93
       }
     },
@@ -22,20 +22,20 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 112.4,
-        "projected": 125.74
+        "projected": 125.72
       },
       "away": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 95.96,
-        "projected": 121.44
+        "score": 98.66,
+        "projected": 121.4
       }
     },
     {
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 93.08,
+        "score": 93.76,
         "projected": 119.41
       },
       "away": {
@@ -50,13 +50,13 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 120.56,
-        "projected": 118.84
+        "projected": 118.81
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
         "score": 76.48,
-        "projected": 109.93
+        "projected": 109.91
       }
     },
     {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 97.02,
+        "score": 98.72,
         "projected": 112.82
       }
     }
@@ -343,6 +343,32 @@
       ]
     },
     {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 23.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 74
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
@@ -361,32 +387,6 @@
         {
           "stat": "REC",
           "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 22.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 67
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 4
         },
         {
           "stat": "TD",
@@ -758,6 +758,32 @@
       ]
     },
     {
+      "name": "Bo Nix",
+      "position": "QB",
+      "team": "Den",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 13.7,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 225
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        },
+        {
+          "stat": "INT",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
@@ -830,32 +856,6 @@
         {
           "stat": "RUSH YD",
           "value": 110
-        }
-      ]
-    },
-    {
-      "name": "Bo Nix",
-      "position": "QB",
-      "team": "Den",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 12.86,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 204
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
@@ -1027,6 +1027,24 @@
       "stats": []
     },
     {
+      "name": "Parker Washington",
+      "position": "WR",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 66
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -1193,22 +1211,13 @@
       "stats": []
     },
     {
-      "name": "Parker Washington",
-      "position": "WR",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 55
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "DeVonta Smith",
@@ -1238,13 +1247,26 @@
       "stats": []
     },
     {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
+      "name": "Bhayshul Tuten",
+      "position": "RB",
+      "team": "Jax",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
       "points": 6.0,
-      "stats": []
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Ka'imi Fairbairn",
@@ -1254,28 +1276,6 @@
       "manager_display": "GANGUS",
       "points": 5.7,
       "stats": []
-    },
-    {
-      "name": "Bhayshul Tuten",
-      "position": "RB",
-      "team": "Jax",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 5.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        },
-        {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
     },
     {
       "name": "Garrett Wilson",
@@ -1292,6 +1292,28 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Trevor Lawrence",
+      "position": "QB",
+      "team": "Jax",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 4.86,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 154
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -1332,28 +1354,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Trevor Lawrence",
-      "position": "QB",
-      "team": "Jax",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 4.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 137
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "INT",
-          "value": 1
         }
       ]
     },
