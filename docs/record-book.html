@@ -700,7 +700,7 @@ function boxAvatarIn(g, who, x, y, w, h){ boxAvatar(g, who, x, y + h - w * 299.9
 // ---- BOX SCORE: Michael's box score card, for the game picked in a record ------------------
 var BOX = {};                                   // id -> box score json, "missing", or "loading"
 var SBOX = {
-  d: {h: 352, pad: 14, art: 54, year: 16, week: 6.0, mid: 84, score: 8.6, name: 9.0, head: 140, rh: 21.4, first: 3.9, last: 5.6, stat: 4.1, pts: 5.4, badge: 4.6, stats: true},
+  d: {h: 345, pad: 14, art: 54, year: 16, week: 6.0, mid: 84, score: 8.6, name: 9.0, head: 133, rh: 21.4, first: 3.9, last: 5.6, stat: 4.1, pts: 5.4, badge: 4.6, stats: true},
   m: {h: 284, pad: 10, art: 46, year: 12, week: 4.8, nw: 72, sgap: 4, score: 6.4, name: 6.0, head: 80, rh: 21.0, first: 3.6, last: 5.2, stat: 0, pts: 5.0, badge: 4.2, stats: false},
 };
 function gameRows(rec){ var rows = recordRows(rec); return rows.length && rows[0].g ? rows : null; }
@@ -736,39 +736,40 @@ function boxScore(g, x, y, w, S){
   // where it came from, top left
   // which record this game is from, centred over the year in Rotundo, the same light gray as WEEK n
   var fromTxt = pick.rec.title + "  ·  #" + String(pick.place).replace("T-", "");
-  if (!S.stats) fitLine(R(g, x + w / 2, y + S.pad + 5.6 * 0.7 + 1, "m", fromTxt, 5.6, K.mid, 5.6 * 0.04), w * 0.4, 5.6 * 0.7);
+  if (!S.stats) fitLine(R(g, x + w / 2, y + S.pad + 5.6 * 0.7 + 1 + 4.24, "m", fromTxt, 5.6, K.ink, 5.6 * 0.04), w * 0.4, 5.6 * 0.7);
 
   // header. Desktop: one band - each team in a light panel (face on the outside, name and score
   // on the inside), the year between rules and WEEK n in gray in the middle. Phone: faces over
   // their name bars, scores beside the faces, year between rules with WEEK n under it.
   var A = b.a, B = b.b, win = A.points > B.points ? "a" : B.points > A.points ? "b" : "";
   var artW = S.art * 98.44 / 97;
-  function yearBlock(cyr, ruleLen){
+  function yearBlock(cyw, ruleLen){
+    var cyr = cyw + 2.61;            // year and its rules sit 2.61 lower; WEEK n keeps its place
     var yt = R(g, cx, cyr + S.year * 0.36, "m", String(b.season), S.year, K.ink, 0.3), yw = textW(yt);
     [[cx - yw / 2 - 5 - ruleLen, cx - yw / 2 - 5], [cx + yw / 2 + 5, cx + yw / 2 + 5 + ruleLen]].forEach(function(p){
       el("line", {x1: p[0], x2: p[1], y1: cyr, y2: cyr, stroke: C.line, "stroke-width": 1.6, "stroke-linecap": "round"}, g);
     });
-    R(g, cx, cyr + S.year * 0.36 + S.week * 2.1, "m", "WEEK " + b.week, S.week, C.sub, 0.35);
+    R(g, cx, cyw + S.year * 0.36 + S.week * 2.1, "m", "WEEK " + b.week, S.week, C.sub, 0.35);
   }
   function scoreBox(k, sx, sy, sw, sh, size){
     var on = win === k;
-    rrect(g, sx, sy - sh / 2, sw, sh, 4, on ? K.ink : K.white, on ? {} : {stroke: C.div, "stroke-width": 1.2});
-    R(g, sx + sw / 2, sy + size * 0.36, "m", b[k].points.toFixed(2), size, on ? K.white : K.ink, 0.2);
+    rrect(g, sx, sy - sh / 2, sw, sh, 4, K.white, {stroke: on ? K.ink : C.div, "stroke-width": 1.2});
+    R(g, sx + sw / 2, sy + size * 0.36, "m", b[k].points.toFixed(2), size, K.ink, 0.2);
   }
   if (S.stats) {
     // Michael's Desktop_Box_Score_Header.svg, drawn in its own 534.01 x 168.41 units and scaled to the card
-    var s = W0 / 534.01, hy0 = y + S.pad + 12, X0 = L;
+    var s = W0 / 534.01, hy0 = y + S.pad + 5, X0 = L;
     function hx(v){ return X0 + v * s; } function hyy(v){ return hy0 + v * s; }
     [["a", 49.55], ["b", 366.08]].forEach(function(p){ boxAvatar(g, b[p[0]].manager, hx(p[1]), hyy(11.78), 118.38 * s); });
-    R(g, hx(267), hyy(65.2), "m", String(b.season), 23 * s, K.ink, 0.6 * s);
-    fitLine(R(g, hx(267), hyy(37), "m", fromTxt, 6.6, K.mid, 6.6 * 0.04), 180 * s, 6.6 * 0.7);
+    R(g, hx(267), hyy(65.93), "m", String(b.season), 23 * s, K.ink, 0.15 * s);
+    fitLine(R(g, hx(267), hyy(41.76), "m", fromTxt, 6.6, K.ink, 6.6 * 0.01), 180 * s, 6.6 * 0.7);
     [[187.79, 224.76], [309.73, 346.7]].forEach(function(p){
-      el("line", {x1: hx(p[0]), x2: hx(p[1]), y1: hyy(57.18), y2: hyy(57.18), stroke: K.light, "stroke-width": 2.38 * s, "stroke-linecap": "round"}, g);
+      el("line", {x1: hx(p[0]), x2: hx(p[1]), y1: hyy(57.91), y2: hyy(57.91), stroke: C.line, "stroke-width": 3.07 * s, "stroke-linecap": "round"}, g);
     });
-    R(g, hx(267), hyy(82.3), "m", "WEEK " + b.week, 13 * s, K.mid, 1.1 * s);
+    R(g, hx(267), hyy(82.3), "m", "WEEK " + b.week, 13 * s, K.mid, 0.4 * s);
     [["a", 179.93], ["b", 287.75]].forEach(function(p){
       var on = win === p[0];
-      rrect(g, hx(p[1]), hyy(101.85), 67.39 * s, 21.99 * s, 4.56 * s, "#fff", {stroke: on ? K.ink : K.light, "stroke-width": 1.5 * s});
+      rrect(g, hx(p[1]), hyy(101.85), 67.39 * s, 21.99 * s, 4.56 * s, "#fff", {stroke: on ? K.ink : K.light, "stroke-width": 2.23 * s});
       R(g, hx(p[1] + 33.7), hyy(112.85) + 14 * s * 0.36, "m", b[p[0]].points.toFixed(2), 14 * s, K.ink, 0.3 * s);
     });
     var nsz2 = 18.5 * s, probe2 = el("g", {}, g);
@@ -783,7 +784,7 @@ function boxScore(g, x, y, w, S){
     var ay = y + S.pad + 8, nw = S.nw;
     var pillX = {a: L, b: Rr - nw}, sideX = {a: L + nw / 2 - artW / 2, b: Rr - nw / 2 - artW / 2};
     ["a", "b"].forEach(function(k){
-      boxAvatarIn(g, b[k].manager, sideX[k], ay, artW, S.art);
+      boxAvatarIn(g, b[k].manager, sideX[k], ay - 3, artW, S.art);
     });
     yearBlock(ay + S.year * 0.55, 9);
     var sw2 = S.score * 5.4, sh2 = S.score * 1.85, sy2 = ay + S.art * 0.76;
