@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T01:35:25Z",
+  "updated": "2026-11-23T01:40:30Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -1327,6 +1327,24 @@
       ]
     },
     {
+      "name": "T.J. Hockenson",
+      "position": "TE",
+      "team": "Min",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 2.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Mark Andrews",
       "position": "TE",
       "team": "Bal",
@@ -1538,27 +1556,9 @@
       "stats": []
     },
     {
-      "name": "Jordan Mason",
-      "position": "RB",
-      "team": "Min",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Ja'Marr Chase",
       "position": "WR",
       "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "T.J. Hockenson",
-      "position": "TE",
-      "team": "Min",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
@@ -1572,6 +1572,20 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Jordan Mason",
+      "position": "RB",
+      "team": "Min",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": -0.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        }
+      ]
     }
   ]
 }
