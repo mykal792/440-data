@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T00:00:32Z",
+  "updated": "2026-11-23T00:05:22Z",
   "matchups": [
     {
       "home": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 98.72,
+        "score": 109.32,
         "projected": 112.82
       }
     }
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "GREG",
-          "face": "greg",
-          "value": "103.76",
-          "detail": "3 to play"
+          "manager": "ANTHONY",
+          "face": "anthony",
+          "value": "109.32",
+          "detail": "1 to play"
         }
       ]
     }
@@ -155,6 +155,32 @@
         {
           "stat": "TD",
           "value": 5
+        }
+      ]
+    },
+    {
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 33.8,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 100
+        },
+        {
+          "stat": "REC YD",
+          "value": 18
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 3
         }
       ]
     },
@@ -339,32 +365,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "team": "Den",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 23.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 74
-        },
-        {
-          "stat": "REC YD",
-          "value": 18
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
