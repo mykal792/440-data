@@ -1,14 +1,14 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T03:55:50Z",
+  "updated": "2026-11-23T04:00:31Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
         "score": 76.8,
-        "projected": 120.4
+        "projected": 120.27
       },
       "away": {
         "name": "GANGUS",
@@ -22,7 +22,7 @@
         "name": "GARRETT",
         "face": "garrett",
         "score": 117.4,
-        "projected": 125.78
+        "projected": 125.76
       },
       "away": {
         "name": "SCARPITTI",
@@ -42,21 +42,21 @@
         "name": "GREG",
         "face": "greg",
         "score": 103.76,
-        "projected": 126.06
+        "projected": 125.94
       }
     },
     {
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 128.36,
-        "projected": 118.78
+        "score": 129.26,
+        "projected": 118.77
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 87.88,
-        "projected": 109.85
+        "score": 89.08,
+        "projected": 109.78
       }
     },
     {
@@ -70,7 +70,7 @@
         "name": "ANTHONY",
         "face": "anthony",
         "score": 119.42,
-        "projected": 112.82
+        "projected": 112.8
       }
     }
   ],
@@ -113,17 +113,17 @@
       "leaders": [
         {
           "rank": 1,
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "129.26",
+          "detail": "1 to play"
+        },
+        {
+          "rank": 2,
           "manager": "SCARPITTI",
           "face": "scarpitti",
           "value": "128.86",
           "detail": "All played"
-        },
-        {
-          "rank": 2,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "128.36",
-          "detail": "1 to play"
         },
         {
           "rank": 3,
@@ -1146,6 +1146,50 @@
       "stats": []
     },
     {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 8.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "REC YD",
+          "value": 76
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "T.J. Hockenson",
+      "position": "TE",
+      "team": "Min",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 8.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 55
+        },
+        {
+          "stat": "REC",
+          "value": 6
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -1209,32 +1253,6 @@
         {
           "stat": "REC",
           "value": 4
-        }
-      ]
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 7.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "REC YD",
-          "value": 72
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "FUM",
-          "value": 1
         }
       ]
     },
@@ -1318,24 +1336,6 @@
       "manager_display": "COYNE",
       "points": 7.6,
       "stats": []
-    },
-    {
-      "name": "T.J. Hockenson",
-      "position": "TE",
-      "team": "Min",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 7.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 48
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Bhayshul Tuten",
