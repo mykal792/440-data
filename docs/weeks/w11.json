@@ -1,13 +1,13 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T03:50:24Z",
+  "updated": "2026-11-23T03:55:50Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 70.4,
+        "score": 76.8,
         "projected": 120.4
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 116.4,
+        "score": 117.4,
         "projected": 125.78
       },
       "away": {
@@ -930,6 +930,32 @@
       ]
     },
     {
+      "name": "Christian McCaffrey",
+      "position": "RB",
+      "team": "SF",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 13.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 49
+        },
+        {
+          "stat": "REC YD",
+          "value": 13
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Tony Pollard",
       "position": "RB",
       "team": "Ten",
@@ -1388,22 +1414,13 @@
       ]
     },
     {
-      "name": "Christian McCaffrey",
-      "position": "RB",
+      "name": "Eddy Pineiro",
+      "position": "K",
       "team": "SF",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 4.8,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 43
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 5.0,
+      "stats": []
     },
     {
       "name": "Jonathan Taylor",
@@ -1444,15 +1461,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Eddy Pineiro",
-      "position": "K",
-      "team": "SF",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.0,
-      "stats": []
     },
     {
       "name": "Jaguars",
@@ -1593,15 +1601,6 @@
       ]
     },
     {
-      "name": "Vikings",
-      "position": "DEF",
-      "team": "Min",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.0,
-      "stats": []
-    },
-    {
       "name": "Chargers",
       "position": "DEF",
       "team": "LAC",
@@ -1672,6 +1671,15 @@
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 0.0,
+      "stats": []
+    },
+    {
+      "name": "Vikings",
+      "position": "DEF",
+      "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
