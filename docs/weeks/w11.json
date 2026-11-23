@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T03:15:26Z",
+  "updated": "2026-11-23T03:20:27Z",
   "matchups": [
     {
       "home": {
@@ -49,13 +49,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 125.26,
+        "score": 126.26,
         "projected": 118.78
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 85.48,
+        "score": 86.78,
         "projected": 109.85
       }
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "125.26",
+          "value": "126.26",
           "detail": "1 to play"
         },
         {
@@ -1268,6 +1268,24 @@
       "stats": []
     },
     {
+      "name": "T.J. Hockenson",
+      "position": "TE",
+      "team": "Min",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 48
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Bhayshul Tuten",
       "position": "RB",
       "team": "Jax",
@@ -1308,24 +1326,6 @@
       ]
     },
     {
-      "name": "T.J. Hockenson",
-      "position": "TE",
-      "team": "Min",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 6.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 40
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
-    },
-    {
       "name": "Will Reichard",
       "position": "K",
       "team": "Min",
@@ -1344,6 +1344,32 @@
       "stats": []
     },
     {
+      "name": "Justin Jefferson",
+      "position": "WR",
+      "team": "Min",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 5.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 1
+        },
+        {
+          "stat": "REC YD",
+          "value": 61
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Garrett Wilson",
       "position": "WR",
       "team": "NYJ",
@@ -1358,28 +1384,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Justin Jefferson",
-      "position": "WR",
-      "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 4.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 1
-        },
-        {
-          "stat": "REC YD",
-          "value": 36
-        },
-        {
-          "stat": "REC",
-          "value": 2
         }
       ]
     },
