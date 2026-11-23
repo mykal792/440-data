@@ -263,13 +263,12 @@ def build():
         c = car[m]
         return "%d-%d" % (c["w"], c["l"]) + ("-%d" % c["t"] if c["t"] else "")
 
-    # weeks #1: finished regular seasons, first in the standings after each week's games
+    # weeks #1: every regular season incl. the current one (weeks played so far), first in the standings after each week's games
     # (wins, ties as half, then points for). Before week 1 everyone is tied, so it isn't counted.
     wk1, wk1_season = defaultdict(int), defaultdict(int)
     by_week = defaultdict(list)
     for g in reg:
-        if g["season"] in done:
-            by_week[(g["season"], g["week"])].append(g)
+        by_week[(g["season"], g["week"])].append(g)
     standing = defaultdict(lambda: [0.0, 0.0])
     for (y, w) in sorted(by_week):
         for g in by_week[(y, w)]:
@@ -301,7 +300,8 @@ def build():
          "rows": career_list(lambda m: round(car[m]["sos"], 2), low=True, fmt=signed)},
         {"key": "high-scores", "title": "HIGH SCORES", "rows": career_list(lambda m: car[m]["hs"])},
         {"key": "top3", "title": "TOP 3 SCORES", "rows": career_list(lambda m: car[m]["t3"])},
-        {"key": "weeks-first", "title": "WEEKS AT #1", "note": "1ST IN THE STANDINGS \u00b7 THRU %d" % max(done),
+        {"key": "weeks-first", "title": "WEEKS AT #1", "note": "1ST IN THE STANDINGS \u00b7 THRU " + (
+             "%d" % this_season if this_season in done else "WEEK %d, %d" % (max(w for (y, w) in by_week if y == this_season), this_season)),
          "rows": career_list(lambda m: wk1[m], sub=wk1_best)},
         {"key": "reg-titles", "title": "REGULAR SEASON TITLES", "note": "BEST RECORD",
          "rows": career_list(lambda m: len(titles["reg"][m]), sub=lambda m: yrs(titles["reg"][m]))},
