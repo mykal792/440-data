@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-23T01:45:24Z",
+  "updated": "2026-11-23T01:50:32Z",
   "matchups": [
     {
       "home": {
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 80.18,
+        "score": 80.48,
         "projected": 109.85
       }
     },
@@ -1608,6 +1608,20 @@
       ]
     },
     {
+      "name": "Jordan Mason",
+      "position": "RB",
+      "team": "Min",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -1705,20 +1719,6 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
-    },
-    {
-      "name": "Jordan Mason",
-      "position": "RB",
-      "team": "Min",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": -0.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": -1
-        }
-      ]
     }
   ]
 }
