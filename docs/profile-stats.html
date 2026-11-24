@@ -38,6 +38,10 @@ body{font-family:"Rotundo",sans-serif}
 #root{width:100%}
 svg{display:block;width:100%;height:auto}
 text{font-family:"Rotundo";font-kerning:normal}
+/* the schedule's live dot blinks like the scoreboard's */
+.livedot{animation:sgpulse 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes sgpulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.8)}}
+@media (prefers-reduced-motion:reduce){.livedot{animation:none}}
 text.wix{font-family:"Wix Made for Text",sans-serif;font-weight:500}
 .msg{font:12px/1.4 sans-serif;color:#888;padding:12px;text-align:center}
 </style>
@@ -873,9 +877,9 @@ function drawHeader(g, p, who, H){
   // button and TEAM SONG are dimmed
   songFile(who).then(function(f){ if (f) audio.src = f; else noSong(); });
   var show = function(on){ play.setAttribute("display", on ? "none" : "inline"); pause.setAttribute("display", on ? "inline" : "none"); };
-  audio.addEventListener("ended", function(){ show(false); songLine.off(); });
-  audio.addEventListener("pause", function(){ show(false); songLine.off(); });
-  audio.addEventListener("play", function(){ show(true); songTitle(who).then(songLine.on); });
+  audio.addEventListener("ended", function(){ show(false); songLine.off(); songStopped(); });
+  audio.addEventListener("pause", function(){ show(false); songLine.off(); songStopped(); });
+  audio.addEventListener("play", function(){ show(true); songTitle(who).then(songLine.on); PLAYING = audio; });
   audio.addEventListener("error", function(){ noSong(); show(false); songLine.off(); });
   btn.addEventListener("click", function(){
     if (!audio.src) return;
@@ -1237,18 +1241,39 @@ function allTable(g, p, L){
 }
 
 // ---- one season ----------------------------------------------------------------------
+// This week's game from docs/scoreboard.json (pull_live.py, every 10 min):
+// {week, status: pregame|live|final, matchups: [{home:{face,name,score,projected}, away:{…}}]}.
+// Shown on top of the 2026 schedule until that week's result lands in the
+// profile (then the next week shows as up next).
+var SCOREBOARD = null, PLAYING = null, CUR_WHO = null, SB_PENDING = false;
+function songStopped(){ PLAYING = null; if (SB_PENDING) { SB_PENDING = false; setTimeout(function(){ render(); }, 0); } }
+function liveGame(who, s){
+  var sb = SCOREBOARD; if (!sb || !sb.matchups) return null;
+  var last = Math.max.apply(null, [0].concat(s.games.map(function(q){ return q.week; })));
+  if (!(sb.week > last)) return null;
+  for (var i = 0; i < sb.matchups.length; i++) {
+    var m = sb.matchups[i], me = m.home && m.home.face === who ? m.home : m.away && m.away.face === who ? m.away : null;
+    if (!me) continue;
+    var op = me === m.home ? m.away : m.home;
+    return {live: sb.status, week: sb.week, type: "regular", points: me.score || 0, opp_points: op.score || 0,
+            proj: me.projected, opp_proj: op.projected, opponent_name: op.name};
+  }
+  return null;
+}
 function scheduleCard(g, x, y, w, h, s, newestFirst){
   // the live season lists its latest game on top; past seasons read week 1 down
   var games = newestFirst ? s.games.slice().reverse() : s.games;
+  var lg = newestFirst ? liveGame(CUR_WHO, s) : null;
   card(g, x, y, w, h, 10.8);
   txt(g, "lab", x + 12.49, y + 14.3, "s", s.season + " SCHEDULE");
-  if (newestFirst && games.length) {                 // this season: the current streak, W5 / L2
+  if (newestFirst && games.length) {                 // this season: the current streak, W5 / L2 (settled games)
     var sr = games[0].result, sn = 0;
     while (sn < games.length && games[sn].result === sr) sn++;
     el("rect", {x: x + w - 34.6, y: y + 6.7, width: 23.5, height: 9.7, rx: 4.85, fill: sr === "W" ? ART.green : sr === "L" ? "#ff697b" : "#f6c835"}, g);
     txt(g, "lab", x + w - 22.85, y + 13.85, "m", sr + sn, {"font-size": 6.6});
   }
   rule(g, x + 7.36, x + w - 7.61, y + 21.75);
+  if (lg) games = [lg].concat(games);
   var pitch = 35.665, len = games.length * pitch + 4, top = y + 28.62;
   var SW = sbw(), scroll = len > h - 32;
   var list = scroll
@@ -1259,6 +1284,7 @@ function scheduleCard(g, x, y, w, h, s, newestFirst){
   games.forEach(function(gm, i){
     var ty = top + i * pitch, tx = x + 7.36;
     var tg = el("g", {}, list);
+    if (gm.live) { liveRow(tg, gm, tx, ty, tw); return; }
     var po = gm.type !== "regular";
     el("rect", {x: tx, y: ty, width: tw, height: 30.14, rx: 7.91, fill: po ? "#fbf6e4" : "#f6f6f6"}, tg);
     el("rect", {x: tx + 4.28, y: ty + 3.84, width: 22.46, height: 22.46, rx: 4.11,
@@ -1275,6 +1301,27 @@ function scheduleCard(g, x, y, w, h, s, newestFirst){
       el("path", {d: STAR, fill: "#8aebc1", transform: "translate(" + (scx - 34.1) + "," + (scy - 467.9) + ")"}, tg);
     }
   });
+}
+// this week's game: white row with a dark outline; the square says LIVE (red
+// dot), NEXT before kickoff, or the result once final but not yet settled.
+// Before kickoff the scores are the projections, in gray.
+function liveRow(tg, gm, tx, ty, tw){
+  var pre = gm.live === "pregame", fin = gm.live === "final";
+  var res = gm.points > gm.opp_points ? "W" : gm.points < gm.opp_points ? "L" : "T";
+  el("rect", {x: tx + 0.6, y: ty + 0.6, width: tw - 1.2, height: 28.94, rx: 7.4, fill: "#fff", stroke: "#333", "stroke-width": 1.2}, tg);
+  el("rect", {x: tx + 4.28, y: ty + 3.84, width: 22.46, height: 22.46, rx: 4.11,
+              fill: fin ? (res === "W" ? ART.green : res === "T" ? "#f6c835" : "#e4e4e4") : "#333"}, tg);
+  if (fin) txt(tg, "sWL", tx + 15.51, ty + 19.33, "m", res);
+  else {
+    txt(tg, "lab", tx + 15.51, ty + (pre ? 17.2 : 19.6), "m", pre ? "NEXT" : "LIVE", {fill: pre ? "#fff" : VS_GT, "font-size": 5.2});
+    if (!pre) el("circle", {cx: tx + 15.51, cy: ty + 10.6, r: 2.1, fill: "#8aebc1", "class": "livedot"}, tg);
+  }
+  txt(tg, "sWk", tx + 34.69, ty + 15.06, "s", "WEEK " + gm.week + (fin ? " · FINAL" : ""));
+  txt(tg, "sOpp", tx + 34.66, ty + 22.47, "s", "VS " + gm.opponent_name);
+  var a = pre ? gm.proj : gm.points, b = pre ? gm.opp_proj : gm.opp_points;
+  txt(tg, "sSc", tx + tw - 6.53, ty + 15.07, "e", a != null ? a.toFixed(2) : "-", pre ? {fill: "#a2a0a0"} : null);
+  txt(tg, "sOpp", tx + tw - 6.52, ty + 22.47, "e", (pre ? "PROJ " : "") + (b != null ? b.toFixed(2) : "-"));
+  el("title", {}, tg).textContent = pre ? "Projected" : "Projected " + (gm.proj || 0).toFixed(2) + " - " + (gm.opp_proj || 0).toFixed(2);
 }
 function gameLabel(season, gm){
   if (gm.type === "consolation") return "CONSOLATION";
@@ -1986,14 +2033,26 @@ if (!who) {
 }
 
 var data = null, lastW = 0;
+CUR_WHO = who;
 function render(){ if (data) { lastW = root.clientWidth; draw(data); } }
 Promise.all([document.fonts.load('10px "Rotundo"'), document.fonts.load('500 10px "Wix Made for Text"')]).then(function(){
   return fetch("profiles/" + who + ".json", {cache: "no-cache"});
 }).then(function(r){
   if (!r.ok) throw new Error(r.status);
   return r.json();
-}).then(function(p){ data = p; render(); })
+}).then(function(p){ data = p; render(); pollScoreboard(); })
   .catch(function(e){ root.innerHTML = '<div class="msg">Stats unavailable (' + who + ': ' + e.message + ')</div>'; });
+// this week's live game for the schedule: checked every 2 minutes; the page
+// only redraws when the scores changed, and never while a team song plays
+var sbSeen = "";
+function pollScoreboard(){
+  if (block !== "all" && block !== "profile") return;   // the schedule is in the top block only
+  fetch("scoreboard.json", {cache: "no-cache"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(sb){
+    if (!sb) return;
+    var sig = JSON.stringify(sb.matchups) + sb.week + sb.status;
+    if (sig !== sbSeen) { sbSeen = sig; SCOREBOARD = sb; if (PLAYING) SB_PENDING = true; else render(); }
+  }).catch(function(){}).then(function(){ setTimeout(pollScoreboard, 120000); });
+}
 window.addEventListener("resize", function(){
   if (!data) return;
   var w = root.clientWidth;
