@@ -1,13 +1,13 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-24T03:15:26Z",
+  "updated": "2026-11-24T03:20:37Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 91.86,
+        "score": 98.02,
         "projected": 120.27
       },
       "away": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 124.22,
+        "score": 125.22,
         "projected": 112.66
       }
     }
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "ANTHONY",
           "face": "anthony",
-          "value": "124.22",
+          "value": "125.22",
           "detail": "All played"
         }
       ]
@@ -439,6 +439,28 @@
         {
           "stat": "TD",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 21.22,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 233
+        },
+        {
+          "stat": "RUSH YD",
+          "value": -1
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -829,28 +851,6 @@
         {
           "stat": "REC",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 15.06,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 229
-        },
-        {
-          "stat": "RUSH YD",
-          "value": -1
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -1471,6 +1471,15 @@
       "stats": []
     },
     {
+      "name": "Evan McPherson",
+      "position": "K",
+      "team": "Cin",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 5.8,
+      "stats": []
+    },
+    {
       "name": "Ka'imi Fairbairn",
       "position": "K",
       "team": "Hou",
@@ -1504,15 +1513,6 @@
       "manager": "garrett",
       "manager_display": "GARRETT",
       "points": 5.0,
-      "stats": []
-    },
-    {
-      "name": "Evan McPherson",
-      "position": "K",
-      "team": "Cin",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 4.8,
       "stats": []
     },
     {
