@@ -821,20 +821,36 @@ function drawHeader(g, p, who, H){
   // avatar: fetched as markup and dropped in as a nested <svg>
   var at = (AVATAR_AT[who] || [19.02, 9.7, 98.16, 100.5]).map(function(v){ return v * H.k; });
   at[0] += H.ox; at[1] += H.oy;
-  var holder = el("g", {}, g);
-  fetch("avatars-profile/" + who + ".svg").then(function(r){ return r.ok ? r.text() : ""; }).then(function(t){
-    if (!t) return;
-    // prefix the art's ids so they can't clash with the page's - including
-    // href="#.." links (Scotty's hair gradient borrows its stops from another)
-    t = t.replace(/\bid="([^"]+)"/g, 'id="av-$1"').replace(/url\(#([^)]+)\)/g, "url(#av-$1)")
-         .replace(/(href=)"#([^"]+)"/g, '$1"#av-$2"');
-    var doc = new DOMParser().parseFromString(t, "image/svg+xml").documentElement;
-    if (!doc || doc.nodeName !== "svg") return;
-    var node = document.importNode(doc, true);
-    node.setAttribute("x", at[0]); node.setAttribute("y", at[1]);
-    node.setAttribute("width", at[2]); node.setAttribute("height", at[3]);
-    holder.appendChild(node);
-  }).catch(function(){});
+  var holder = el("g", {}, g), dancer = el("g", {display: "none"}, g);
+  // the art is drawn on Michael's 97.89-wide canvas with the frame at the
+  // same spot in every file version, so x / y / width stay put and the height
+  // follows the file's own viewBox (the static and dance files are 104.56 tall)
+  var place = function(url, into, pre){
+    return fetch(url).then(function(r){ return r.ok ? r.text() : ""; }).then(function(t){
+      if (!t) return false;
+      // prefix the art's ids so they can't clash with the page's - including
+      // href="#.." links (Scotty's hair gradient borrows its stops from another)
+      t = t.replace(/\bid="([^"]+)"/g, 'id="' + pre + '$1"').replace(/url\(#([^)]+)\)/g, "url(#" + pre + "$1)")
+           .replace(/(href=)"#([^"]+)"/g, '$1"#' + pre + '$2"');
+      var doc = new DOMParser().parseFromString(t, "image/svg+xml").documentElement;
+      if (!doc || doc.nodeName !== "svg") return false;
+      var node = document.importNode(doc, true), vb = node.viewBox && node.viewBox.baseVal;
+      node.setAttribute("x", at[0]); node.setAttribute("y", at[1]); node.setAttribute("width", at[2]);
+      node.setAttribute("height", vb && vb.width ? at[2] * vb.height / vb.width : at[3]);
+      into.appendChild(node);
+      return true;
+    }).catch(function(){ return false; });
+  };
+  place("avatars-profile/" + who + ".svg", holder, "av-");
+  // the dancing version (docs/avatars-dance/<name>.svg), loaded now so it can
+  // swap in the instant the team song starts
+  var hasDance = place("avatars-dance/" + who + ".svg", dancer, "avd-");
+  var dance = function(on){
+    hasDance.then(function(ok){
+      if (!ok) return;
+      holder.setAttribute("display", on ? "none" : "inline"); dancer.setAttribute("display", on ? "inline" : "none");
+    });
+  };
 
   if (H.arc) arcName(g, (p.name || who).toUpperCase());
   else txt(g, "who", H.nameX, 125.95, "m", (p.name || who).toUpperCase());
@@ -875,16 +891,47 @@ function drawHeader(g, p, who, H){
   var noSong = function(){ btn.setAttribute("opacity", 0.35); songLab.setAttribute("opacity", 0.35); btn.style.cursor = "default"; };
   // songs/<name>.m4a or songs/<name>.mp3, whichever is there; neither: the
   // button and TEAM SONG are dimmed
-  songFile(who).then(function(f){ if (f) audio.src = f; else noSong(); });
+  // a song can start part-way in ("start" seconds in songs.json) and fade up
+  // over "fade" seconds, so the cut doesn't show (Schilling: 28s in)
+  var cue = {start: 0, fade: 0};
+  Promise.all([songFile(who), songInfo(who)]).then(function(r){
+    var f = r[0], e = r[1] || {};
+    cue.start = +e.start || 0; cue.fade = +e.fade || (cue.start ? 3 : 0);
+    if (f) audio.src = f; else noSong();
+  });
+  var gain = null, ramp = null;
+  var fadeIn = function(){
+    if (!cue.fade) return;
+    // iPhones ignore audio.volume, so the fade runs through Web Audio when it can
+    try {
+      if (!gain) {
+        var AC = window.AudioContext || window.webkitAudioContext, ctx = new AC();
+        gain = ctx.createGain(); ctx.createMediaElementSource(audio).connect(gain); gain.connect(ctx.destination);
+      }
+      if (gain.context.state === "suspended") gain.context.resume();
+      var now = gain.context.currentTime;
+      gain.gain.cancelScheduledValues(now); gain.gain.setValueAtTime(0.0001, now);
+      gain.gain.exponentialRampToValueAtTime(1, now + cue.fade);
+      return;
+    } catch (e) {}
+    var t0 = performance.now(); audio.volume = 0; cancelAnimationFrame(ramp);
+    (function up(){ var k = (performance.now() - t0) / (cue.fade * 1000); audio.volume = Math.min(1, k); if (k < 1) ramp = requestAnimationFrame(up); })();
+  };
   var show = function(on){ play.setAttribute("display", on ? "none" : "inline"); pause.setAttribute("display", on ? "inline" : "none"); };
-  audio.addEventListener("ended", function(){ show(false); songLine.off(); songStopped(); });
-  audio.addEventListener("pause", function(){ show(false); songLine.off(); songStopped(); });
-  audio.addEventListener("play", function(){ show(true); songTitle(who).then(songLine.on); PLAYING = audio; });
-  audio.addEventListener("error", function(){ noSong(); show(false); songLine.off(); });
+  audio.addEventListener("ended", function(){ show(false); songLine.off(); dance(false); audio.currentTime = 0; songStopped(); });
+  audio.addEventListener("pause", function(){ show(false); songLine.off(); dance(false); songStopped(); });
+  audio.addEventListener("play", function(){ show(true); dance(true); songTitle(who).then(songLine.on); PLAYING = audio; });
+  audio.addEventListener("error", function(){ noSong(); show(false); songLine.off(); dance(false); });
   btn.addEventListener("click", function(){
     if (!audio.src) return;
-    if (audio.paused) audio.play().catch(function(){ noSong(); });
-    else audio.pause();
+    if (!audio.paused) { audio.pause(); return; }
+    var fresh = audio.currentTime < cue.start || audio.currentTime === 0;   // from the top (not a resume)
+    if (fresh && cue.start) {
+      var seek = function(){ try { audio.currentTime = cue.start; } catch (e) {} };
+      if (audio.readyState >= 1) seek(); else audio.addEventListener("loadedmetadata", seek, {once: true});
+    }
+    if (fresh) fadeIn();
+    audio.play().catch(function(){ noSong(); });
   });
 }
 
@@ -903,6 +950,10 @@ function songFile(who){
     SONG_FILE[who] = tryOne(["songs/" + who + ".m4a", "songs/" + who + ".mp3", "songs/" + Who + ".m4a", "songs/" + Who + ".mp3"]);
   }
   return SONG_FILE[who];
+}
+function songInfo(who){                           // the songs.json entry: title, artist, start, fade
+  SONGS = SONGS || fetch("songs/songs.json", {cache: "no-cache"}).then(function(r){ return r.ok ? r.json() : {}; }).catch(function(){ return {}; });
+  return SONGS.then(function(all){ return all[who] || null; });
 }
 function songTitle(who){
   if (SONG_NAME[who] !== undefined) return Promise.resolve(SONG_NAME[who]);
