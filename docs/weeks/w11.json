@@ -1,13 +1,13 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-24T02:00:33Z",
+  "updated": "2026-11-24T02:05:21Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 79.44,
+        "score": 80.76,
         "projected": 120.27
       },
       "away": {
@@ -21,7 +21,7 @@
       "home": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 118.5,
+        "score": 120.1,
         "projected": 125.8
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 107.16,
+        "score": 107.26,
         "projected": 126.05
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 92.78,
+        "score": 93.98,
         "projected": 110.16
       }
     },
@@ -127,10 +127,10 @@
         },
         {
           "rank": 3,
-          "manager": "ANTHONY",
-          "face": "anthony",
-          "value": "119.42",
-          "detail": "1 to play"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "120.10",
+          "detail": "All played"
         }
       ]
     }
@@ -1512,6 +1512,20 @@
       ]
     },
     {
+      "name": "Joe Burrow",
+      "position": "QB",
+      "team": "Cin",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.96,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 99
+        }
+      ]
+    },
+    {
       "name": "Jaylen Warren",
       "position": "RB",
       "team": "Pit",
@@ -1534,6 +1548,46 @@
       ]
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 4
+        },
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Ja'Marr Chase",
+      "position": "WR",
+      "team": "Cin",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 3.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Spencer Shrader",
       "position": "K",
       "team": "Ind",
@@ -1543,24 +1597,20 @@
       "stats": []
     },
     {
-      "name": "Chase Brown",
-      "position": "RB",
+      "name": "Mike Gesicki",
+      "position": "TE",
       "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 3.4,
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 2.7,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 3
-        },
-        {
           "stat": "REC YD",
-          "value": 16
+          "value": 17
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 2
         }
       ]
     },
@@ -1579,20 +1629,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Joe Burrow",
-      "position": "QB",
-      "team": "Cin",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 2.64,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 66
         }
       ]
     },
@@ -1629,24 +1665,6 @@
         {
           "stat": "REC YD",
           "value": 10
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Ja'Marr Chase",
-      "position": "WR",
-      "team": "Cin",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 2.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 13
         },
         {
           "stat": "REC",
@@ -1693,24 +1711,6 @@
           "stat": "RUSH YD",
           "value": 4
         },
-        {
-          "stat": "REC YD",
-          "value": 6
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Mike Gesicki",
-      "position": "TE",
-      "team": "Cin",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 1.1,
-      "stats": [
         {
           "stat": "REC YD",
           "value": 6
