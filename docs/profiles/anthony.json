@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T18:40:39Z",
+ "updated": "2026-11-24T12:01:03Z",
  "through": {
   "season": 2026,
-  "week": 10
+  "week": 11
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/10",
  "season": {
   "season": 2026,
-  "weeks_played": 10,
+  "weeks_played": 11,
   "standing": 8,
-  "wins": 3,
+  "wins": 4,
   "losses": 7,
   "ties": 0,
-  "avg": 104.94,
-  "avg_against": 116.23,
+  "avg": 107.29,
+  "avg_against": 113.11,
   "high_scores": 0,
-  "streak": "L2",
+  "streak": "W1",
   "high": {
    "value": 137.46,
    "season": 2026,
@@ -48,12 +48,12 @@
    "opponent": "garrett",
    "opponent_name": "GARRETT"
   },
-  "dots": 2,
-  "bank": 35,
+  "dots": 3,
+  "bank": 40,
   "buy_in": 210,
   "dots_by_pos": {
    "QB": 2,
-   "RB": 0,
+   "RB": 1,
    "WR": 0,
    "TE": 0
   },
@@ -73,6 +73,14 @@
     "points": "49.46",
     "team": "NE",
     "stats": "374 PASS YD \u00b7 25 RUSH YD \u00b7 5 TD"
+   },
+   {
+    "week": 11,
+    "pos": "RB",
+    "player": "Jonah Coleman",
+    "points": "34.90",
+    "team": "DEN",
+    "stats": "111 RUSH YD \u00b7 18 REC YD \u00b7 4 REC \u00b7 3 TD"
    }
   ],
   "bonuses": [
@@ -95,6 +103,13 @@
     "type": "dot",
     "pos": "QB",
     "label": "Dot Pot - QB",
+    "amount": 5
+   },
+   {
+    "week": 11,
+    "type": "dot",
+    "pos": "RB",
+    "label": "Dot Pot - RB",
     "amount": 5
    }
   ],
@@ -169,23 +184,30 @@
     "points": 90.12,
     "opp_points": 135.48,
     "opponent_name": "HAYDEN"
+   },
+   {
+    "week": 11,
+    "result": "W",
+    "points": 130.82,
+    "opp_points": 81.94,
+    "opponent_name": "COYNE"
    }
   ],
   "ranks": {
-   "avg": "9",
-   "avg_against": "7",
-   "high_scores": "T-6",
+   "avg": "8",
+   "avg_against": "10",
+   "high_scores": "T-7",
    "dots": "T-5",
    "high": "9",
    "low": "T-2",
-   "bank": "T-6"
+   "bank": "7"
   }
  },
  "career": {
-  "wins": 105,
+  "wins": 106,
   "losses": 92,
   "ties": 0,
-  "win_pct": 0.533,
+  "win_pct": 0.535,
   "high_scores": 15,
   "weeks_first": 15,
   "blowout": {
@@ -195,7 +217,7 @@
    "opponent": "hayden",
    "opponent_name": "HAYDEN"
   },
-  "earnings": -236.0,
+  "earnings": -231.0,
   "combined": {
    "value": 316.84,
    "season": 2025,
@@ -206,17 +228,17 @@
    "opp_points": 143.36
   },
   "bank": {
-   "total": 1715.0,
+   "total": 1720.0,
    "won": {
     "weekly_bonus": 295.0,
     "high_score": 70.0,
     "squid_game": 100.0,
     "draftkings": 0.0,
-    "dot_pot": 10.0,
+    "dot_pot": 15.0,
     "playoffs": 1240.0
    },
    "since": 2013,
-   "net": -236.0,
+   "net": -231.0,
    "paid": 1951.0
   },
   "bonus": {
@@ -243,15 +265,15 @@
    "draftkings": [],
    "dots": {
     "QB": 2,
-    "RB": 0,
+    "RB": 1,
     "WR": 0,
     "TE": 0
    },
-   "dots_total": 2,
+   "dots_total": 3,
    "dots_since": 2026
   },
-  "avg": 115.32,
-  "avg_against": 117.88,
+  "avg": 115.44,
+  "avg_against": 117.6,
   "high": {
    "value": 173.48,
    "season": 2025,
@@ -286,12 +308,12 @@
   {
    "season": 2026,
    "team_name": "OTPHJ",
-   "wins": 3,
+   "wins": 4,
    "losses": 7,
    "ties": 0,
    "playoffs": false,
-   "avg": 104.94,
-   "avg_against": 116.23,
+   "avg": 107.29,
+   "avg_against": 113.11,
    "finish": 8,
    "in_progress": true,
    "champion": false,
@@ -310,8 +332,8 @@
     "opponent_name": "GARRETT"
    },
    "ranks": {
-    "avg": "9",
-    "avg_against": "7",
+    "avg": "8",
+    "avg_against": "10",
     "high": "9",
     "low": "T-2",
     "bank": "T-1"
@@ -420,6 +442,16 @@
      "points": 90.12,
      "opp_points": 135.48,
      "result": "L",
+     "high_score": false
+    },
+    {
+     "week": 11,
+     "type": "regular",
+     "opponent": "coyne",
+     "opponent_name": "COYNE",
+     "points": 130.82,
+     "opp_points": 81.94,
+     "result": "W",
      "high_score": false
     }
    ]
@@ -5306,10 +5338,20 @@
   {
    "opponent": "coyne",
    "opponent_name": "COYNE",
-   "wins": 15,
+   "wins": 16,
    "losses": 9,
    "ties": 0,
    "games": [
+    {
+     "season": 2026,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "round": null,
+     "points": 130.82,
+     "opp_points": 81.94
+    },
     {
      "season": 2026,
      "week": 5,
@@ -5551,20 +5593,20 @@
      "opp_points": 111.84
     }
    ],
-   "points_for": 2508.9,
-   "points_against": 2560.5,
-   "avg_for": 104.54,
-   "avg_against": 106.69,
-   "diff": -51.6,
+   "points_for": 2639.72,
+   "points_against": 2642.44,
+   "avg_for": 105.59,
+   "avg_against": 105.7,
+   "diff": -2.72,
    "biggest_win": {
-    "season": 2025,
-    "week": 10,
+    "season": 2026,
+    "week": 11,
     "type": "regular",
     "result": "W",
     "champ": false,
     "round": null,
-    "points": 144.5,
-    "opp_points": 109.1
+    "points": 130.82,
+    "opp_points": 81.94
    },
    "worst_loss": {
     "season": 2016,
@@ -5596,7 +5638,7 @@
     "points": 144.5,
     "opp_points": 109.1
    },
-   "streak": "W5"
+   "streak": "W6"
   },
   {
    "opponent": "scotty",

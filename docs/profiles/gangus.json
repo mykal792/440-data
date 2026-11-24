@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T18:40:39Z",
+ "updated": "2026-11-24T12:01:03Z",
  "through": {
   "season": 2026,
-  "week": 10
+  "week": 11
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/6",
  "season": {
   "season": 2026,
-  "weeks_played": 10,
+  "weeks_played": 11,
   "standing": 6,
   "wins": 5,
-  "losses": 5,
+  "losses": 6,
   "ties": 0,
-  "avg": 123.94,
-  "avg_against": 115.29,
+  "avg": 121.58,
+  "avg_against": 114.14,
   "high_scores": 2,
-  "streak": "L1",
+  "streak": "L2",
   "high": {
    "value": 151.68,
    "season": 2026,
@@ -279,13 +279,20 @@
     "points": 118.3,
     "opp_points": 118.42,
     "opponent_name": "GRAHAM"
+   },
+   {
+    "week": 11,
+    "result": "L",
+    "points": 97.9,
+    "opp_points": 102.7,
+    "opponent_name": "SCHILLING"
    }
   ],
   "ranks": {
-   "avg": "4",
-   "avg_against": "9",
+   "avg": "5",
+   "avg_against": "7",
    "high_scores": "T-1",
-   "dots": "2",
+   "dots": "T-2",
    "high": "5",
    "low": "7",
    "bank": "1"
@@ -293,9 +300,9 @@
  },
  "career": {
   "wins": 91,
-  "losses": 106,
+  "losses": 107,
   "ties": 0,
-  "win_pct": 0.462,
+  "win_pct": 0.46,
   "high_scores": 15,
   "weeks_first": 18,
   "blowout": {
@@ -364,8 +371,8 @@
    "dots_total": 7,
    "dots_since": 2026
   },
-  "avg": 118.63,
-  "avg_against": 115.76,
+  "avg": 118.47,
+  "avg_against": 115.65,
   "high": {
    "value": 182.5,
    "season": 2020,
@@ -387,8 +394,8 @@
    "blowout": "10",
    "earnings": "5",
    "bank": "5",
-   "bonus_weekly": "T-4",
-   "bonus_dots": "2",
+   "bonus_weekly": "T-5",
+   "bonus_dots": "T-2",
    "combined": "5",
    "avg": "4",
    "avg_against": "10",
@@ -401,11 +408,11 @@
    "season": 2026,
    "team_name": "Gangus",
    "wins": 5,
-   "losses": 5,
+   "losses": 6,
    "ties": 0,
    "playoffs": false,
-   "avg": 123.94,
-   "avg_against": 115.29,
+   "avg": 121.58,
+   "avg_against": 114.14,
    "finish": 6,
    "in_progress": true,
    "champion": false,
@@ -424,8 +431,8 @@
     "opponent_name": "SCARPITTI"
    },
    "ranks": {
-    "avg": "4",
-    "avg_against": "9",
+    "avg": "5",
+    "avg_against": "7",
     "high": "5",
     "low": "7",
     "bank": "T-1"
@@ -533,6 +540,16 @@
      "opponent_name": "GRAHAM",
      "points": 118.3,
      "opp_points": 118.42,
+     "result": "L",
+     "high_score": false
+    },
+    {
+     "week": 11,
+     "type": "regular",
+     "opponent": "schilling",
+     "opponent_name": "SCHILLING",
+     "points": 97.9,
+     "opp_points": 102.7,
      "result": "L",
      "high_score": false
     }
@@ -3319,9 +3336,19 @@
    "opponent": "schilling",
    "opponent_name": "SCHILLING",
    "wins": 14,
-   "losses": 11,
+   "losses": 12,
    "ties": 0,
    "games": [
+    {
+     "season": 2026,
+     "week": 11,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "round": null,
+     "points": 97.9,
+     "opp_points": 102.7
+    },
     {
      "season": 2026,
      "week": 4,
@@ -3573,11 +3600,11 @@
      "opp_points": 176.7
     }
    ],
-   "points_for": 2896.66,
-   "points_against": 2886.66,
-   "avg_for": 115.87,
-   "avg_against": 115.47,
-   "diff": 10.0,
+   "points_for": 2994.56,
+   "points_against": 2989.36,
+   "avg_for": 115.18,
+   "avg_against": 114.98,
+   "diff": 5.2,
    "biggest_win": {
     "season": 2025,
     "week": 5,
@@ -3618,7 +3645,7 @@
     "points": 158.46,
     "opp_points": 110.72
    },
-   "streak": "W6"
+   "streak": "L1"
   },
   {
    "opponent": "garrett",
@@ -6102,7 +6129,7 @@
  "bonus": {
   "weekly_category": 14,
   "ranks": {
-   "weekly_category": "T-4"
+   "weekly_category": "T-5"
   }
  }
 }

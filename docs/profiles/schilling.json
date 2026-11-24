@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-22T13:10:29Z",
+ "updated": "2026-11-24T12:01:02Z",
  "through": {
   "season": 2026,
-  "week": 10
+  "week": 11
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/1",
  "season": {
   "season": 2026,
-  "weeks_played": 10,
-  "standing": 5,
-  "wins": 6,
+  "weeks_played": 11,
+  "standing": 4,
+  "wins": 7,
   "losses": 4,
   "ties": 0,
-  "avg": 124.96,
-  "avg_against": 118.86,
+  "avg": 122.93,
+  "avg_against": 116.96,
   "high_scores": 2,
-  "streak": "W5",
+  "streak": "W6",
   "high": {
    "value": 152.76,
    "season": 2026,
@@ -48,13 +48,13 @@
    "opponent": "anthony",
    "opponent_name": "ANTHONY"
   },
-  "dots": 6,
-  "bank": 60,
+  "dots": 7,
+  "bank": 65,
   "buy_in": 210,
   "dots_by_pos": {
    "QB": 2,
    "RB": 1,
-   "WR": 3,
+   "WR": 4,
    "TE": 0
   },
   "dot_list": [
@@ -105,6 +105,14 @@
     "points": "46.30",
     "team": "SF",
     "stats": "62 RUSH YD \u00b7 161 REC YD \u00b7 4 REC \u00b7 3 TD"
+   },
+   {
+    "week": 11,
+    "pos": "WR",
+    "player": "CeeDee Lamb",
+    "points": "26.70",
+    "team": "DAL",
+    "stats": "132 REC YD \u00b7 11 REC \u00b7 1 TD"
    }
   ],
   "bonuses": [
@@ -162,6 +170,13 @@
     "type": "dot",
     "pos": "RB",
     "label": "Dot Pot - RB",
+    "amount": 5
+   },
+   {
+    "week": 11,
+    "type": "dot",
+    "pos": "WR",
+    "label": "Dot Pot - WR",
     "amount": 5
    }
   ],
@@ -236,23 +251,30 @@
     "points": 152.76,
     "opp_points": 139.42,
     "opponent_name": "GREG"
+   },
+   {
+    "week": 11,
+    "result": "W",
+    "points": 102.7,
+    "opp_points": 97.9,
+    "opponent_name": "GANGUS"
    }
   ],
   "ranks": {
-   "avg": "3",
-   "avg_against": "4",
+   "avg": "4",
+   "avg_against": "6",
    "high_scores": "T-1",
-   "dots": "T-3",
+   "dots": "T-2",
    "high": "4",
    "low": "5",
    "bank": "5"
   }
  },
  "career": {
-  "wins": 113,
+  "wins": 114,
   "losses": 84,
   "ties": 0,
-  "win_pct": 0.574,
+  "win_pct": 0.576,
   "high_scores": 34,
   "weeks_first": 54,
   "blowout": {
@@ -262,7 +284,7 @@
    "opponent": "garrett",
    "opponent_name": "GARRETT"
   },
-  "earnings": 2117.5,
+  "earnings": 2122.5,
   "combined": {
    "value": 334.02,
    "season": 2014,
@@ -273,17 +295,17 @@
    "opp_points": 153.82
   },
   "bank": {
-   "total": 4099.5,
+   "total": 4104.5,
    "won": {
     "weekly_bonus": 225.0,
     "high_score": 120.0,
     "squid_game": 75.0,
     "draftkings": 209.5,
-    "dot_pot": 30.0,
+    "dot_pot": 35.0,
     "playoffs": 3440.0
    },
    "since": 2013,
-   "net": 2117.5,
+   "net": 2122.5,
    "paid": 1982.0
   },
   "bonus": {
@@ -307,14 +329,14 @@
    "dots": {
     "QB": 2,
     "RB": 1,
-    "WR": 3,
+    "WR": 4,
     "TE": 0
    },
-   "dots_total": 6,
+   "dots_total": 7,
    "dots_since": 2026
   },
-  "avg": 123.95,
-  "avg_against": 116.77,
+  "avg": 123.79,
+  "avg_against": 116.62,
   "high": {
    "value": 184.48,
    "season": 2020,
@@ -337,7 +359,7 @@
    "earnings": "1",
    "bank": "1",
    "bonus_weekly": "10",
-   "bonus_dots": "T-3",
+   "bonus_dots": "T-2",
    "combined": "4",
    "avg": "1",
    "avg_against": "9",
@@ -349,13 +371,13 @@
   {
    "season": 2026,
    "team_name": "Schill The Thrill",
-   "wins": 6,
+   "wins": 7,
    "losses": 4,
    "ties": 0,
    "playoffs": false,
-   "avg": 124.96,
-   "avg_against": 118.86,
-   "finish": 5,
+   "avg": 122.93,
+   "avg_against": 116.96,
+   "finish": 4,
    "in_progress": true,
    "champion": false,
    "high": {
@@ -373,8 +395,8 @@
     "opponent_name": "ANTHONY"
    },
    "ranks": {
-    "avg": "3",
-    "avg_against": "4",
+    "avg": "4",
+    "avg_against": "6",
     "high": "4",
     "low": "5",
     "bank": "T-1"
@@ -482,6 +504,16 @@
      "opponent_name": "GREG",
      "points": 152.76,
      "opp_points": 139.42,
+     "result": "W",
+     "high_score": false
+    },
+    {
+     "week": 11,
+     "type": "regular",
+     "opponent": "gangus",
+     "opponent_name": "GANGUS",
+     "points": 102.7,
+     "opp_points": 97.9,
      "result": "W",
      "high_score": false
     }
@@ -4563,10 +4595,20 @@
   {
    "opponent": "gangus",
    "opponent_name": "GANGUS",
-   "wins": 11,
+   "wins": 12,
    "losses": 14,
    "ties": 0,
    "games": [
+    {
+     "season": 2026,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "round": null,
+     "points": 102.7,
+     "opp_points": 97.9
+    },
     {
      "season": 2026,
      "week": 4,
@@ -4818,11 +4860,11 @@
      "opp_points": 123.66
     }
    ],
-   "points_for": 2886.66,
-   "points_against": 2896.66,
-   "avg_for": 115.47,
-   "avg_against": 115.87,
-   "diff": -10.0,
+   "points_for": 2989.36,
+   "points_against": 2994.56,
+   "avg_for": 114.98,
+   "avg_against": 115.18,
+   "diff": -5.2,
    "biggest_win": {
     "season": 2020,
     "week": 14,
@@ -4863,7 +4905,7 @@
     "points": 176.7,
     "opp_points": 123.66
    },
-   "streak": "L6"
+   "streak": "W1"
   },
   {
    "opponent": "graham",

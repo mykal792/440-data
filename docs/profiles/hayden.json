@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T18:40:39Z",
+ "updated": "2026-11-24T12:01:02Z",
  "through": {
   "season": 2026,
-  "week": 10
+  "week": 11
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/3",
  "season": {
   "season": 2026,
-  "weeks_played": 10,
-  "standing": 4,
+  "weeks_played": 11,
+  "standing": 5,
   "wins": 6,
-  "losses": 4,
+  "losses": 5,
   "ties": 0,
-  "avg": 135.14,
-  "avg_against": 122.13,
+  "avg": 132.79,
+  "avg_against": 122.83,
   "high_scores": 2,
-  "streak": "W3",
+  "streak": "L1",
   "high": {
    "value": 184.0,
    "season": 2026,
@@ -296,6 +296,13 @@
     "points": 135.48,
     "opp_points": 90.12,
     "opponent_name": "ANTHONY"
+   },
+   {
+    "week": 11,
+    "result": "L",
+    "points": 109.34,
+    "opp_points": 129.76,
+    "opponent_name": "GREG"
    }
   ],
   "ranks": {
@@ -310,9 +317,9 @@
  },
  "career": {
   "wins": 94,
-  "losses": 75,
+  "losses": 76,
   "ties": 0,
-  "win_pct": 0.556,
+  "win_pct": 0.553,
   "high_scores": 18,
   "weeks_first": 21,
   "blowout": {
@@ -373,8 +380,8 @@
    "dots_total": 10,
    "dots_since": 2026
   },
-  "avg": 120.52,
-  "avg_against": 117.22,
+  "avg": 120.43,
+  "avg_against": 117.32,
   "high": {
    "value": 184.0,
    "season": 2026,
@@ -410,12 +417,12 @@
    "season": 2026,
    "team_name": "Brian the MG",
    "wins": 6,
-   "losses": 4,
+   "losses": 5,
    "ties": 0,
    "playoffs": false,
-   "avg": 135.14,
-   "avg_against": 122.13,
-   "finish": 4,
+   "avg": 132.79,
+   "avg_against": 122.83,
+   "finish": 5,
    "in_progress": true,
    "champion": false,
    "high": {
@@ -543,6 +550,16 @@
      "points": 135.48,
      "opp_points": 90.12,
      "result": "W",
+     "high_score": false
+    },
+    {
+     "week": 11,
+     "type": "regular",
+     "opponent": "greg",
+     "opponent_name": "GREG",
+     "points": 109.34,
+     "opp_points": 129.76,
+     "result": "L",
      "high_score": false
     }
    ]
@@ -3573,9 +3590,19 @@
    "opponent": "greg",
    "opponent_name": "GREG",
    "wins": 13,
-   "losses": 7,
+   "losses": 8,
    "ties": 0,
    "games": [
+    {
+     "season": 2026,
+     "week": 11,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "round": null,
+     "points": 109.34,
+     "opp_points": 129.76
+    },
     {
      "season": 2026,
      "week": 3,
@@ -3777,11 +3804,11 @@
      "opp_points": 119.48
     }
    ],
-   "points_for": 2441.0,
-   "points_against": 2138.82,
-   "avg_for": 122.05,
-   "avg_against": 106.94,
-   "diff": 302.18,
+   "points_for": 2550.34,
+   "points_against": 2268.58,
+   "avg_for": 121.44,
+   "avg_against": 108.03,
+   "diff": 281.76,
    "biggest_win": {
     "season": 2020,
     "week": 9,
@@ -3822,7 +3849,7 @@
     "points": 165.36,
     "opp_points": 162.9
    },
-   "streak": "W1"
+   "streak": "L1"
   },
   {
    "opponent": "scarpitti",

@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T18:40:39Z",
+ "updated": "2026-11-24T12:01:02Z",
  "through": {
   "season": 2026,
-  "week": 10
+  "week": 11
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/2",
  "season": {
   "season": 2026,
-  "weeks_played": 10,
-  "standing": 2,
+  "weeks_played": 11,
+  "standing": 3,
   "wins": 7,
-  "losses": 3,
+  "losses": 4,
   "ties": 0,
-  "avg": 123.43,
-  "avg_against": 117.04,
+  "avg": 123.81,
+  "avg_against": 118.12,
   "high_scores": 2,
-  "streak": "W1",
+  "streak": "L1",
   "high": {
    "value": 164.22,
    "season": 2026,
@@ -48,11 +48,11 @@
    "opponent": "scarpitti",
    "opponent_name": "SCARPITTI"
   },
-  "dots": 2,
-  "bank": 115,
+  "dots": 3,
+  "bank": 120,
   "buy_in": 210,
   "dots_by_pos": {
-   "QB": 0,
+   "QB": 1,
    "RB": 2,
    "WR": 0,
    "TE": 0
@@ -73,6 +73,14 @@
     "points": "37.20",
     "team": "DET",
     "stats": "151 RUSH YD \u00b7 56 REC YD \u00b7 5 REC \u00b7 2 TD"
+   },
+   {
+    "week": 11,
+    "pos": "QB",
+    "player": "Dak Prescott",
+    "points": "45.90",
+    "team": "DAL",
+    "stats": "325 PASS YD \u00b7 9 RUSH YD \u00b7 5 TD"
    }
   ],
   "bonuses": [
@@ -124,6 +132,13 @@
     "pos": null,
     "label": "High Score",
     "amount": 15
+   },
+   {
+    "week": 11,
+    "type": "dot",
+    "pos": "QB",
+    "label": "Dot Pot - QB",
+    "amount": 5
    }
   ],
   "regular_weeks": 15,
@@ -197,11 +212,18 @@
     "points": 164.22,
     "opp_points": 115.36,
     "opponent_name": "COYNE"
+   },
+   {
+    "week": 11,
+    "result": "L",
+    "points": 127.6,
+    "opp_points": 128.86,
+    "opponent_name": "SCARPITTI"
    }
   ],
   "ranks": {
-   "avg": "5",
-   "avg_against": "6",
+   "avg": "3",
+   "avg_against": "5",
    "high_scores": "T-1",
    "dots": "T-5",
    "high": "3",
@@ -211,9 +233,9 @@
  },
  "career": {
   "wins": 95,
-  "losses": 102,
+  "losses": 103,
   "ties": 0,
-  "win_pct": 0.482,
+  "win_pct": 0.48,
   "high_scores": 19,
   "weeks_first": 8,
   "blowout": {
@@ -223,7 +245,7 @@
    "opponent": "scotty",
    "opponent_name": "SCOTTY"
   },
-  "earnings": -212.0,
+  "earnings": -207.0,
   "combined": {
    "value": 360.26,
    "season": 2019,
@@ -234,17 +256,17 @@
    "opp_points": 178.76
   },
   "bank": {
-   "total": 1735.0,
+   "total": 1740.0,
    "won": {
     "weekly_bonus": 410.0,
     "high_score": 110.0,
     "squid_game": 0.0,
     "draftkings": 0.0,
-    "dot_pot": 10.0,
+    "dot_pot": 15.0,
     "playoffs": 1205.0
    },
    "since": 2013,
-   "net": -212.0,
+   "net": -207.0,
    "paid": 1947.0
   },
   "bonus": {
@@ -268,16 +290,16 @@
    "squid": [],
    "draftkings": [],
    "dots": {
-    "QB": 0,
+    "QB": 1,
     "RB": 2,
     "WR": 0,
     "TE": 0
    },
-   "dots_total": 2,
+   "dots_total": 3,
    "dots_since": 2026
   },
-  "avg": 116.25,
-  "avg_against": 118.19,
+  "avg": 116.34,
+  "avg_against": 118.27,
   "high": {
    "value": 181.5,
    "season": 2019,
@@ -313,12 +335,12 @@
    "season": 2026,
    "team_name": "Anderton's Revenge",
    "wins": 7,
-   "losses": 3,
+   "losses": 4,
    "ties": 0,
    "playoffs": false,
-   "avg": 123.43,
-   "avg_against": 117.04,
-   "finish": 2,
+   "avg": 123.81,
+   "avg_against": 118.12,
+   "finish": 3,
    "in_progress": true,
    "champion": false,
    "high": {
@@ -336,8 +358,8 @@
     "opponent_name": "SCARPITTI"
    },
    "ranks": {
-    "avg": "5",
-    "avg_against": "6",
+    "avg": "3",
+    "avg_against": "5",
     "high": "3",
     "low": "T-2",
     "bank": "T-1"
@@ -447,6 +469,16 @@
      "opp_points": 115.36,
      "result": "W",
      "high_score": true
+    },
+    {
+     "week": 11,
+     "type": "regular",
+     "opponent": "scarpitti",
+     "opponent_name": "SCARPITTI",
+     "points": 127.6,
+     "opp_points": 128.86,
+     "result": "L",
+     "high_score": false
     }
    ]
   },
@@ -4225,9 +4257,19 @@
    "opponent": "scarpitti",
    "opponent_name": "SCARPITTI",
    "wins": 10,
-   "losses": 12,
+   "losses": 13,
    "ties": 0,
    "games": [
+    {
+     "season": 2026,
+     "week": 11,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "round": null,
+     "points": 127.6,
+     "opp_points": 128.86
+    },
     {
      "season": 2026,
      "week": 6,
@@ -4449,11 +4491,11 @@
      "opp_points": 96.18
     }
    ],
-   "points_for": 2353.98,
-   "points_against": 2255.96,
-   "avg_for": 107.0,
-   "avg_against": 102.54,
-   "diff": 98.02,
+   "points_for": 2481.58,
+   "points_against": 2384.82,
+   "avg_for": 107.89,
+   "avg_against": 103.69,
+   "diff": 96.76,
    "biggest_win": {
     "season": 2022,
     "week": 2,
@@ -4494,7 +4536,7 @@
     "points": 153.54,
     "opp_points": 103.04
    },
-   "streak": "L1"
+   "streak": "L2"
   },
   {
    "opponent": "gangus",

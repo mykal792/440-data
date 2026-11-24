@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-20T18:40:39Z",
+ "updated": "2026-11-24T12:01:03Z",
  "through": {
   "season": 2026,
-  "week": 10
+  "week": 11
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/7",
  "season": {
   "season": 2026,
-  "weeks_played": 10,
-  "standing": 3,
-  "wins": 7,
+  "weeks_played": 11,
+  "standing": 2,
+  "wins": 8,
   "losses": 3,
   "ties": 0,
-  "avg": 118.99,
-  "avg_against": 115.32,
-  "high_scores": 0,
-  "streak": "W1",
+  "avg": 120.65,
+  "avg_against": 113.57,
+  "high_scores": 1,
+  "streak": "W2",
   "high": {
    "value": 145.48,
    "season": 2026,
@@ -48,14 +48,14 @@
    "opponent": "hayden",
    "opponent_name": "HAYDEN"
   },
-  "dots": 1,
-  "bank": 5,
+  "dots": 2,
+  "bank": 25,
   "buy_in": 210,
   "dots_by_pos": {
    "QB": 0,
    "RB": 0,
    "WR": 0,
-   "TE": 1
+   "TE": 2
   },
   "dot_list": [
    {
@@ -65,6 +65,14 @@
     "points": "22.60",
     "team": "KC",
     "stats": "101 REC YD \u00b7 9 REC \u00b7 1 TD"
+   },
+   {
+    "week": 11,
+    "pos": "TE",
+    "player": "Travis Kelce",
+    "points": "22.40",
+    "team": "KC",
+    "stats": "74 REC YD \u00b7 6 REC \u00b7 2 TD"
    }
   ],
   "bonuses": [
@@ -74,6 +82,20 @@
     "pos": "TE",
     "label": "Dot Pot - TE",
     "amount": 5
+   },
+   {
+    "week": 11,
+    "type": "dot",
+    "pos": "TE",
+    "label": "Dot Pot - TE",
+    "amount": 5
+   },
+   {
+    "week": 11,
+    "type": "high",
+    "pos": null,
+    "label": "High Score",
+    "amount": 15
    }
   ],
   "regular_weeks": 15,
@@ -147,24 +169,31 @@
     "points": 118.42,
     "opp_points": 118.3,
     "opponent_name": "GANGUS"
+   },
+   {
+    "week": 11,
+    "result": "W",
+    "points": 137.26,
+    "opp_points": 96.08,
+    "opponent_name": "SCOTTY"
    }
   ],
   "ranks": {
    "avg": "6",
    "avg_against": "8",
-   "high_scores": "T-6",
-   "dots": "10",
+   "high_scores": "6",
+   "dots": "T-7",
    "high": "6",
    "low": "10",
-   "bank": "10"
+   "bank": "8"
   }
  },
  "career": {
-  "wins": 87,
+  "wins": 88,
   "losses": 110,
   "ties": 0,
-  "win_pct": 0.442,
-  "high_scores": 16,
+  "win_pct": 0.444,
+  "high_scores": 17,
   "weeks_first": 6,
   "blowout": {
    "value": 112.9,
@@ -173,7 +202,7 @@
    "opponent": "garrett",
    "opponent_name": "GARRETT"
   },
-  "earnings": -1125.0,
+  "earnings": -1105.0,
   "combined": {
    "value": 316.84,
    "season": 2025,
@@ -184,17 +213,17 @@
    "opp_points": 173.48
   },
   "bank": {
-   "total": 805.0,
+   "total": 825.0,
    "won": {
     "weekly_bonus": 235.0,
-    "high_score": 55.0,
+    "high_score": 70.0,
     "squid_game": 0.0,
     "draftkings": 0.0,
-    "dot_pot": 5.0,
+    "dot_pot": 10.0,
     "playoffs": 510.0
    },
    "since": 2013,
-   "net": -1125.0,
+   "net": -1105.0,
    "paid": 1930.0
   },
   "bonus": {
@@ -220,13 +249,13 @@
     "QB": 0,
     "RB": 0,
     "WR": 0,
-    "TE": 1
+    "TE": 2
    },
-   "dots_total": 1,
+   "dots_total": 2,
    "dots_since": 2026
   },
-  "avg": 112.31,
-  "avg_against": 116.8,
+  "avg": 112.5,
+  "avg_against": 116.64,
   "high": {
    "value": 173.3,
    "season": 2025,
@@ -243,13 +272,13 @@
   },
   "ranks": {
    "win_pct": "10",
-   "high_scores": "7",
+   "high_scores": "T-6",
    "weeks_first": "T-9",
    "blowout": "2",
    "earnings": "10",
    "bank": "10",
    "bonus_weekly": "9",
-   "bonus_dots": "10",
+   "bonus_dots": "T-7",
    "combined": "9",
    "avg": "10",
    "avg_against": "8",
@@ -261,13 +290,13 @@
   {
    "season": 2026,
    "team_name": "Crackers",
-   "wins": 7,
+   "wins": 8,
    "losses": 3,
    "ties": 0,
    "playoffs": false,
-   "avg": 118.99,
-   "avg_against": 115.32,
-   "finish": 3,
+   "avg": 120.65,
+   "avg_against": 113.57,
+   "finish": 2,
    "in_progress": true,
    "champion": false,
    "high": {
@@ -396,6 +425,16 @@
      "opp_points": 118.3,
      "result": "W",
      "high_score": false
+    },
+    {
+     "week": 11,
+     "type": "regular",
+     "opponent": "scotty",
+     "opponent_name": "SCOTTY",
+     "points": 137.26,
+     "opp_points": 96.08,
+     "result": "W",
+     "high_score": true
     }
    ]
   },
@@ -5101,10 +5140,20 @@
   {
    "opponent": "scotty",
    "opponent_name": "SCOTTY",
-   "wins": 12,
+   "wins": 13,
    "losses": 6,
    "ties": 0,
    "games": [
+    {
+     "season": 2026,
+     "week": 11,
+     "type": "regular",
+     "result": "W",
+     "champ": false,
+     "round": null,
+     "points": 137.26,
+     "opp_points": 96.08
+    },
     {
      "season": 2026,
      "week": 1,
@@ -5286,11 +5335,11 @@
      "opp_points": 104.2
     }
    ],
-   "points_for": 2291.9,
-   "points_against": 2178.56,
-   "avg_for": 127.33,
-   "avg_against": 121.03,
-   "diff": 113.34,
+   "points_for": 2429.16,
+   "points_against": 2274.64,
+   "avg_for": 127.85,
+   "avg_against": 119.72,
+   "diff": 154.52,
    "biggest_win": {
     "season": 2026,
     "week": 1,
@@ -5331,7 +5380,7 @@
     "points": 173.3,
     "opp_points": 127.18
    },
-   "streak": "W3"
+   "streak": "W4"
   },
   {
    "opponent": "anthony",

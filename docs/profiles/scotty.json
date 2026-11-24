@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-22T16:45:35Z",
+ "updated": "2026-11-24T12:01:03Z",
  "through": {
   "season": 2026,
-  "week": 10
+  "week": 11
  },
  "rules": {
   "ppr_from": 2018
@@ -25,15 +25,15 @@
  "team_url": "https://football.fantasysports.yahoo.com/f1/63529/9",
  "season": {
   "season": 2026,
-  "weeks_played": 10,
+  "weeks_played": 11,
   "standing": 9,
   "wins": 3,
-  "losses": 7,
+  "losses": 8,
   "ties": 0,
-  "avg": 102.64,
-  "avg_against": 118.72,
+  "avg": 102.05,
+  "avg_against": 120.4,
   "high_scores": 0,
-  "streak": "L1",
+  "streak": "L2",
   "high": {
    "value": 124.6,
    "season": 2026,
@@ -162,23 +162,30 @@
     "points": 107.36,
     "opp_points": 158.14,
     "opponent_name": "SCARPITTI"
+   },
+   {
+    "week": 11,
+    "result": "L",
+    "points": 96.08,
+    "opp_points": 137.26,
+    "opponent_name": "GRAHAM"
    }
   ],
   "ranks": {
    "avg": "10",
-   "avg_against": "5",
-   "high_scores": "T-6",
-   "dots": "T-5",
+   "avg_against": "4",
+   "high_scores": "T-7",
+   "dots": "T-7",
    "high": "10",
    "low": "6",
-   "bank": "T-8"
+   "bank": "T-9"
   }
  },
  "career": {
   "wins": 65,
-  "losses": 62,
+  "losses": 63,
   "ties": 0,
-  "win_pct": 0.512,
+  "win_pct": 0.508,
   "high_scores": 13,
   "weeks_first": 6,
   "blowout": {
@@ -244,8 +251,8 @@
    "dots_total": 2,
    "dots_since": 2026
   },
-  "avg": 117.69,
-  "avg_against": 117.14,
+  "avg": 117.52,
+  "avg_against": 117.3,
   "high": {
    "value": 182.12,
    "season": 2020,
@@ -268,7 +275,7 @@
    "earnings": "7",
    "bank": "7",
    "bonus_weekly": "3",
-   "bonus_dots": "T-5",
+   "bonus_dots": "T-7",
    "combined": "2",
    "avg": "5",
    "avg_against": "7",
@@ -281,11 +288,11 @@
    "season": 2026,
    "team_name": "Reagan's Raiders",
    "wins": 3,
-   "losses": 7,
+   "losses": 8,
    "ties": 0,
    "playoffs": false,
-   "avg": 102.64,
-   "avg_against": 118.72,
+   "avg": 102.05,
+   "avg_against": 120.4,
    "finish": 9,
    "in_progress": true,
    "champion": false,
@@ -305,7 +312,7 @@
    },
    "ranks": {
     "avg": "10",
-    "avg_against": "5",
+    "avg_against": "4",
     "high": "10",
     "low": "6",
     "bank": "T-1"
@@ -413,6 +420,16 @@
      "opponent_name": "SCARPITTI",
      "points": 107.36,
      "opp_points": 158.14,
+     "result": "L",
+     "high_score": false
+    },
+    {
+     "week": 11,
+     "type": "regular",
+     "opponent": "graham",
+     "opponent_name": "GRAHAM",
+     "points": 96.08,
+     "opp_points": 137.26,
      "result": "L",
      "high_score": false
     }
@@ -3607,9 +3624,19 @@
    "opponent": "graham",
    "opponent_name": "GRAHAM",
    "wins": 6,
-   "losses": 12,
+   "losses": 13,
    "ties": 0,
    "games": [
+    {
+     "season": 2026,
+     "week": 11,
+     "type": "regular",
+     "result": "L",
+     "champ": false,
+     "round": null,
+     "points": 96.08,
+     "opp_points": 137.26
+    },
     {
      "season": 2026,
      "week": 1,
@@ -3791,11 +3818,11 @@
      "opp_points": 118.84
     }
    ],
-   "points_for": 2178.56,
-   "points_against": 2291.9,
-   "avg_for": 121.03,
-   "avg_against": 127.33,
-   "diff": -113.34,
+   "points_for": 2274.64,
+   "points_against": 2429.16,
+   "avg_for": 119.72,
+   "avg_against": 127.85,
+   "diff": -154.52,
    "biggest_win": {
     "season": 2019,
     "week": 11,
@@ -3836,7 +3863,7 @@
     "points": 166.84,
     "opp_points": 135.56
    },
-   "streak": "L3"
+   "streak": "L4"
   },
   {
    "opponent": "coyne",
