@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-24T02:30:27Z",
+  "updated": "2026-11-24T02:35:25Z",
   "matchups": [
     {
       "home": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 130.76,
+        "score": 132.26,
         "projected": 118.74
       },
       "away": {
@@ -115,8 +115,8 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "130.76",
-          "detail": "1 to play"
+          "value": "132.26",
+          "detail": "All played"
         },
         {
           "rank": 2,
@@ -1757,6 +1757,24 @@
       ]
     },
     {
+      "name": "Stefon Diggs",
+      "position": "WR",
+      "team": "Was",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -1798,15 +1816,6 @@
       "team": "TB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Stefon Diggs",
-      "position": "WR",
-      "team": "Was",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     }
