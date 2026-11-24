@@ -835,7 +835,12 @@ function drawHeader(g, p, who, H){
       var doc = new DOMParser().parseFromString(t, "image/svg+xml").documentElement;
       if (!doc || doc.nodeName !== "svg") return false;
       var node = document.importNode(doc, true), vb = node.viewBox && node.viewBox.baseVal;
-      node.setAttribute("x", at[0]); node.setAttribute("y", at[1]); node.setAttribute("width", at[2]);
+      // Michael's 97.89 x 104.56 canvas (Nov 2026 art, static and dance) puts
+      // every frame in the same spot, 12.03 down: one placement for all, with
+      // the frame's top at 18.85 like before. Older art keeps AVATAR_AT.
+      // (phone: a touch lower, so tall hair clears the arched name above it)
+      var y = vb && Math.abs(vb.height - 104.56) < 0.05 ? (6.82 + (H.arc ? 3 : 0)) * H.k + H.oy : at[1];
+      node.setAttribute("x", at[0]); node.setAttribute("y", y); node.setAttribute("width", at[2]);
       node.setAttribute("height", vb && vb.width ? at[2] * vb.height / vb.width : at[3]);
       into.appendChild(node);
       return true;
