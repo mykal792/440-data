@@ -1,13 +1,13 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-24T01:15:36Z",
+  "updated": "2026-11-24T01:20:37Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 76.8,
+        "score": 77.04,
         "projected": 120.27
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GREG",
         "face": "greg",
-        "score": 103.76,
+        "score": 104.86,
         "projected": 126.05
       }
     },
@@ -1650,6 +1650,24 @@
       ]
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -1673,8 +1691,13 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
+      "points": 0.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 6
+        }
+      ]
     },
     {
       "name": "Vikings",
@@ -1691,15 +1714,6 @@
       "team": "Cin",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 0.0,
       "stats": []
     },

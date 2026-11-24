@@ -1,7 +1,7 @@
 {
   "week": 11,
   "status": "live",
-  "updated": "2026-11-24T01:15:36Z",
+  "updated": "2026-11-24T01:20:37Z",
   "players": [
     {
       "name": "Dak Prescott",
@@ -1517,6 +1517,24 @@
       ]
     },
     {
+      "name": "Chase Brown",
+      "position": "RB",
+      "team": "Cin",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 6
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "DK Metcalf",
       "position": "WR",
       "team": "Pit",
@@ -1540,8 +1558,13 @@
       "team": "Cin",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
+      "points": 0.24,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 6
+        }
+      ]
     },
     {
       "name": "Vikings",
@@ -1558,15 +1581,6 @@
       "team": "Cin",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Chase Brown",
-      "position": "RB",
-      "team": "Cin",
-      "manager": "greg",
-      "manager_display": "GREG",
       "points": 0.0,
       "stats": []
     },
