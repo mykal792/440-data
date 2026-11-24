@@ -1306,17 +1306,19 @@ function scheduleCard(g, x, y, w, h, s, newestFirst){
 // dot), NEXT before kickoff, or the result once final but not yet settled.
 // Before kickoff the scores are the projections, in gray.
 function liveRow(tg, gm, tx, ty, tw){
-  var pre = gm.live === "pregame", fin = gm.live === "final";
+  // Yahoo calls the week "live" from Tuesday on; it only counts as live here
+  // once points are on the board (the games have started), NEXT until then
+  var fin = gm.live === "final", pre = !fin && (gm.live === "pregame" || (!gm.points && !gm.opp_points));
   var res = gm.points > gm.opp_points ? "W" : gm.points < gm.opp_points ? "L" : "T";
   el("rect", {x: tx + 0.6, y: ty + 0.6, width: tw - 1.2, height: 28.94, rx: 7.4, fill: "#fff", stroke: "#333", "stroke-width": 1.2}, tg);
   el("rect", {x: tx + 4.28, y: ty + 3.84, width: 22.46, height: 22.46, rx: 4.11,
               fill: fin ? (res === "W" ? ART.green : res === "T" ? "#f6c835" : "#e4e4e4") : "#333"}, tg);
   if (fin) txt(tg, "sWL", tx + 15.51, ty + 19.33, "m", res);
   else {
-    txt(tg, "lab", tx + 15.51, ty + (pre ? 17.2 : 19.6), "m", pre ? "NEXT" : "LIVE", {fill: pre ? "#fff" : VS_GT, "font-size": 5.2});
+    txt(tg, "lab", tx + 15.51, ty + (pre ? 17.2 : 19.6), "m", pre ? "NEXT" : "LIVE", {fill: "#fff", "font-size": 5.2});
     if (!pre) el("circle", {cx: tx + 15.51, cy: ty + 10.6, r: 2.1, fill: "#8aebc1", "class": "livedot"}, tg);
   }
-  txt(tg, "sWk", tx + 34.69, ty + 15.06, "s", "WEEK " + gm.week + (fin ? " · FINAL" : ""));
+  txt(tg, "sWk", tx + 34.69, ty + 15.06, "s", "WEEK " + gm.week + (fin ? " · FINAL" : pre ? "" : " · LIVE"), pre || fin ? null : {fill: VS_GT});
   txt(tg, "sOpp", tx + 34.66, ty + 22.47, "s", "VS " + gm.opponent_name);
   var a = pre ? gm.proj : gm.points, b = pre ? gm.opp_proj : gm.opp_points;
   txt(tg, "sSc", tx + tw - 6.53, ty + 15.07, "e", a != null ? a.toFixed(2) : "-", pre ? {fill: "#a2a0a0"} : null);
