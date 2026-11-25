@@ -1001,7 +1001,7 @@ function drawHeader(g, p, who, H){
     remoteUI(st);
   };
   SONG_UI = {who: who, remote: remoteUI, local: function(){ return audio; }, handOver: handOver};
-  if (SONG_REMOTE.st) remoteUI(SONG_REMOTE.st);
+
   var localClick = function(){
     if (!audio.src) return;
     if (priming) { setTimeout(localClick, 120); return; }
@@ -1016,14 +1016,9 @@ function drawHeader(g, p, who, H){
   };
   btn.addEventListener("click", function(){
     if (!audio.src) return;
-    var st = SONG_REMOTE.st;
-    if (!audio.paused) { offer = false; localClick(); return; }                   // pause it here
-    if (st && st.who === who && st.playing) {                                      // the header has it: pause there
-      SONG_NET.send({type: "pause"}); SONG_REMOTE.st = null; remoteUI(null); return;
-    }
-    // Always start the song right here, in the tap - browsers always allow
-    // that, so it plays every time. The header is then offered it.
-    offer = true; localClick();
+    // The song always plays right here, in the tap - browsers always allow
+    // that. Nothing from the header can change or stop it.
+    localClick();
   });
 }
 // ---- the site-wide player channel (see site-player.html) ---------------------
@@ -1059,6 +1054,10 @@ function hushLocal(st, fresh){        // fresh = a message (new news); the store
 var SONG_REMOTE = {here: false, st: null, wait: null}, SONG_UI = null, SONG_LOG = [];
 SONG_NET.on(function(m){
   SONG_LOG.push(new Date().toTimeString().slice(0, 8) + " got " + m.type + " " + (m.who || "") + (m.playing ? " playing" : ""));
+  // the only thing the header can say to a profile: someone tapped the
+  // header player, so stop this page's song
+  if (m.type === "hush") { if (PLAYING && !PLAYING.paused) PLAYING.pause(); return; }
+  return;                                                   // otherwise profile songs are independent of the header
   if (m.type === "state") {
     SONG_REMOTE.here = true;
     var U = SONG_UI, ownLocal = U && !U.local().paused;
@@ -1089,6 +1088,7 @@ function songStore(){
 // prove the header can hear this page, so only a real message sets "here".
 var SONG_PREV = null;
 function songSync(){
+  return;                                                    // not used: profile songs are independent of the header
   var st = songStore(); if (!st) return;
   var startedNow = st.playing && !(SONG_PREV && SONG_PREV.playing && SONG_PREV.who === st.who);
   SONG_PREV = st;

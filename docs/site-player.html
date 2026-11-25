@@ -228,6 +228,8 @@ body.compact #mini{display:block}
   audio.addEventListener("error", function(){ if (radio && cur) radioNext(); });
 
   // ---- controls
+  // a tap on this player tells any profile playing its own song to stop
+  document.addEventListener("pointerdown", function(){ say({type: "hush"}); }, true);
   function toggle(){
     if (!cur) { radioNext(); return; }                    // idle: start the radio
     if (audio.paused) audio.play(); else audio.pause();
