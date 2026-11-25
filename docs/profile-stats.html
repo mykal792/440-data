@@ -884,6 +884,21 @@ function drawHeader(g, p, who, H){
     txt(songLab, "lab", SL[0], SL[1] + SL[3], "m", "SONG", {"font-size": SL[2]});
   } else txt(songLab, "lab", SL[0], SL[1], "m", "TEAM SONG", {"font-size": SL[2]});
   var songLine = songTicker(g, H, a);
+  // trouble-shooting: tap TEAM SONG five times to see what the player said
+  var taps = 0, tapT = null;
+  songLab.style.cursor = "default";
+  songLab.addEventListener("click", function(){
+    taps++; clearTimeout(tapT); tapT = setTimeout(function(){ taps = 0; }, 1500);
+    if (taps < 5) return; taps = 0;
+    var old = document.getElementById("songlog"); if (old) { old.remove(); return; }
+    var d = document.createElement("pre"); d.id = "songlog";
+    d.style.cssText = "position:fixed;left:8px;right:8px;top:8px;max-height:60%;overflow:auto;background:#333;color:#88e9bf;font:11px/1.4 monospace;padding:8px;border-radius:8px;z-index:9;white-space:pre-wrap";
+    d.textContent = "here=" + SONG_REMOTE.here + "  bc=" + ("BroadcastChannel" in window) + "  origin=" + location.origin +
+                    "  frames-up=" + (function(){ var n = 0, w = window; try { while (w !== w.parent && n < 9) { w = w.parent; n++; } } catch (e) {} return n; })() +
+                    "\n" + SONG_LOG.slice(-25).join("\n");
+    d.addEventListener("click", function(){ d.remove(); });
+    document.body.appendChild(d);
+  });
   var btn = el("g", {style: "cursor:pointer", role: "button", "aria-label": "Play team song",
                      transform: "translate(" + H.play[0] + "," + H.play[1] + ") scale(" + H.play[2] + ") translate(-377.85,-24.63)"}, g);
   el("circle", {cx: 377.85, cy: 24.63, r: 11.42, fill: "#333"}, btn);
@@ -925,17 +940,33 @@ function drawHeader(g, p, who, H){
   var show = function(on){ play.setAttribute("display", on ? "none" : "inline"); pause.setAttribute("display", on ? "inline" : "none"); };
   audio.addEventListener("ended", function(){ show(false); songLine.off(); dance(false); audio.currentTime = 0; songStopped(); });
   audio.addEventListener("pause", function(){ show(false); songLine.off(); dance(false); songStopped(); });
-  audio.addEventListener("play", function(){ show(true); dance(true); songTitle(who).then(songLine.on); PLAYING = audio; });
+  audio.addEventListener("play", function(){ show(true); dance(true); songTitle(who).then(songLine.on); PLAYING = audio;
+    LOCAL_AT = Date.now(); SONG_NET.send({type: "pause"}); });   // only one song at a time: hush the header
   audio.addEventListener("error", function(){ noSong(); show(false); songLine.off(); dance(false); });
   // the site-wide player (site-player.html in the Wix header) plays the song
   // when it's there, so it keeps going from page to page; this page just
   // mirrors it (pause button, dancing avatar, title). No header player, or the
   // browser won't let it start: the song plays here, as before.
   var remoteUI = function(st){
-    var mine = st && st.who === who && st.playing;
+    var mine = !!(st && st.who === who && st.playing);
     show(mine); dance(mine);
     if (mine) songTitle(who).then(songLine.on); else songLine.off();
   };
+  // set this page's look straight away on a tap (pause button, dancing, title)
+  // rather than waiting to hear back from the header - its answers then only
+  // correct it (another song started, paused there, song over). If nothing
+  // ever comes back, the look resets when the song should have ended.
+  var mineUntil = null;
+  var assume = function(on){
+    SONG_REMOTE.st = {type: "state", who: on ? who : null, playing: on, assumed: true};
+    remoteUI(SONG_REMOTE.st);
+    clearTimeout(mineUntil);
+    if (on) {
+      var left = (audio.duration && isFinite(audio.duration) ? audio.duration - cue.start : 300) + 2;
+      mineUntil = setTimeout(function(){ if (SONG_REMOTE.st && SONG_REMOTE.st.assumed) assume(false); }, left * 1000);
+    }
+  };
+  if (audio.preload === "none") audio.preload = "metadata";   // so the song's length is known
   SONG_UI = {who: who, remote: remoteUI, local: function(){ return audio; }};
   if (SONG_REMOTE.st) remoteUI(SONG_REMOTE.st);
   var localClick = function(){
@@ -952,11 +983,16 @@ function drawHeader(g, p, who, H){
   btn.addEventListener("click", function(){
     if (!audio.src) return;
     var st = SONG_REMOTE.st;
+    if (!SONG_REMOTE.here) songSync();                       // a page that just opened may not have heard yet
     if (!SONG_REMOTE.here || !audio.paused) { localClick(); return; }
-    if (st && st.who === who && st.playing) { SONG_NET.send({type: "pause"}); return; }
-    var waiting = setTimeout(function(){ SONG_REMOTE.wait = null; localClick(); }, 900);   // header didn't answer
-    SONG_REMOTE.wait = {who: who, cancel: function(){ clearTimeout(waiting); }, fallback: function(){ clearTimeout(waiting); localClick(); }};
+    if (st && st.who === who && st.playing) { SONG_NET.send({type: "pause"}); assume(false); return; }
+    assume(true); SONG_TAP = Date.now();
+    // the header normally answers at once; only if it says it can't play
+    // (browser wants a tap there) does this page play the song itself
+    var waiting = null;
+    SONG_REMOTE.wait = {who: who, cancel: function(){}, fallback: function(){ SONG_REMOTE.st = null; localClick(); }};
     songTitle(who).then(function(t){
+      SONG_LOG.push(new Date().toTimeString().slice(0, 8) + " sent play " + who);
       SONG_NET.send({type: "play", who: who, src: new URL(audio.src, location.href).pathname.split("/").slice(-2).join("/"),
                             start: cue.start, fade: cue.fade, title: t});
     });
@@ -987,10 +1023,19 @@ var SONG_NET = (function(){
       on: function(f){ handler = f; }
     };
   })();
-var SONG_REMOTE = {here: false, st: null, wait: null}, SONG_UI = null;
+// the header started something: this page's own copy of a song stops
+var LOCAL_AT = 0;
+function hushLocal(st, fresh){        // fresh = a message (new news); the stored copy can be a few seconds old
+  if (st && st.playing && PLAYING && !PLAYING.paused && (fresh || Date.now() - LOCAL_AT > 3000)) PLAYING.pause();
+}
+var SONG_REMOTE = {here: false, st: null, wait: null}, SONG_UI = null, SONG_LOG = [];
 SONG_NET.on(function(m){
+  SONG_LOG.push(new Date().toTimeString().slice(0, 8) + " got " + m.type + " " + (m.who || "") + (m.playing ? " playing" : ""));
   if (m.type === "state") {
-    SONG_REMOTE.here = true; SONG_REMOTE.st = m;
+    SONG_REMOTE.here = true;
+    hushLocal(m, true);
+    if (Date.now() - SONG_TAP < 3000 && SONG_REMOTE.wait && !(m.who === SONG_REMOTE.wait.who && m.playing)) return;   // old news
+    SONG_REMOTE.st = m;
     var w = SONG_REMOTE.wait;
     if (w && m.who === w.who && m.playing) { w.cancel(); SONG_REMOTE.wait = null; }
     if (SONG_UI) SONG_UI.remote(m);
@@ -999,6 +1044,34 @@ SONG_NET.on(function(m){
     if (w2 && m.who === w2.who) { SONG_REMOTE.wait = null; SONG_NET.send({type: "stop"}); w2.fallback(); }
   }
 });
+// Third route: the header writes what it's playing to localStorage every
+// second (same github.io site, so the profile can read it). Gives the right
+// state the instant a page opens, and keeps correcting it while it plays.
+var SONG_TAP = 0;                                            // when this page last asked for a song
+function songStore(){
+  try {
+    var alive = +(localStorage.getItem("440hdr") || 0), s = JSON.parse(localStorage.getItem("440radio") || "null");
+    if (Date.now() - alive > 4000) return null;              // no header on this page
+    return {type: "state", who: s && s.m ? s.m.who : null, playing: !!(s && s.m && s.playing && Date.now() - s.at < 4000), store: true};
+  } catch (e) { return null; }
+}
+function songSync(){
+  var st = songStore(); if (!st) return;
+  hushLocal(st);
+  SONG_REMOTE.here = true;
+  if (Date.now() - SONG_TAP < 3000) {                        // just tapped: only accept news that the song started
+    var w = SONG_REMOTE.wait;
+    if (!(w && st.who === w.who && st.playing)) return;
+    SONG_REMOTE.wait = null;
+  }
+  var old = SONG_REMOTE.st;
+  if (old && old.who === st.who && old.playing === st.playing) { old.assumed = false; return; }
+  SONG_REMOTE.st = st;
+  if (SONG_UI) SONG_UI.remote(st);
+}
+songSync();
+window.addEventListener("storage", function(e){ if (e.key === "440radio" || e.key === "440hdr") songSync(); });
+setInterval(songSync, 1500);
 SONG_NET.send({type: "hello"});
 setTimeout(function(){ SONG_NET.send({type: "hello"}); }, 1500);   // in case the header loads after this page
 

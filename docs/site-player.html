@@ -190,7 +190,9 @@ body.compact #mini{display:block}
   function start(m){
     var fresh = !cur || cur.who !== m.who || audio.ended;
     if (fresh) {
-      cur = m; audio.src = m.src; av.style.backgroundImage = "url(avatars/" + m.who + ".svg)"; setTitle(m.title);
+      cur = m; audio.src = m.src; av.style.backgroundImage = "url(avatars/" + m.who + ".svg)"; setTitle(m.title || m.who.toUpperCase());
+      show();
+      info(m.who).then(function(i){ if (i && cur === m) { m.title = i.title; setTitle(i.title); show(); state(); } });   // header's own songs.json title wins
       if (m.start) {
         var seek = function(){ try { audio.currentTime = m.start; } catch (e) {} };
         if (audio.readyState >= 1) seek(); else audio.addEventListener("loadedmetadata", seek, {once: true});
@@ -247,6 +249,8 @@ body.compact #mini{display:block}
     } catch (e) {}
   }
   setInterval(save, 1000);
+  // heartbeat the profiles can read even if no message gets through
+  setInterval(function(){ try { localStorage.setItem("440hdr", String(Date.now())); } catch (e) {} }, 1000);
   window.addEventListener("pagehide", save);
   audio.addEventListener("pause", save); audio.addEventListener("play", save);
   (function resume(){
