@@ -927,7 +927,18 @@ function drawHeader(g, p, who, H){
   audio.addEventListener("pause", function(){ show(false); songLine.off(); dance(false); songStopped(); });
   audio.addEventListener("play", function(){ show(true); dance(true); songTitle(who).then(songLine.on); PLAYING = audio; });
   audio.addEventListener("error", function(){ noSong(); show(false); songLine.off(); dance(false); });
-  btn.addEventListener("click", function(){
+  // the site-wide player (site-player.html in the Wix header) plays the song
+  // when it's there, so it keeps going from page to page; this page just
+  // mirrors it (pause button, dancing avatar, title). No header player, or the
+  // browser won't let it start: the song plays here, as before.
+  var remoteUI = function(st){
+    var mine = st && st.who === who && st.playing;
+    show(mine); dance(mine);
+    if (mine) songTitle(who).then(songLine.on); else songLine.off();
+  };
+  SONG_UI = {who: who, remote: remoteUI, local: function(){ return audio; }};
+  if (SONG_REMOTE.st) remoteUI(SONG_REMOTE.st);
+  var localClick = function(){
     if (!audio.src) return;
     if (!audio.paused) { audio.pause(); return; }
     var fresh = audio.currentTime < cue.start || audio.currentTime === 0;   // from the top (not a resume)
@@ -937,7 +948,37 @@ function drawHeader(g, p, who, H){
     }
     if (fresh) fadeIn();
     audio.play().catch(function(){ noSong(); });
+  };
+  btn.addEventListener("click", function(){
+    if (!audio.src) return;
+    var st = SONG_REMOTE.st;
+    if (!SONG_REMOTE.here || !audio.paused) { localClick(); return; }
+    if (st && st.who === who && st.playing) { SONG_BUS.postMessage({type: "pause"}); return; }
+    var waiting = setTimeout(function(){ SONG_REMOTE.wait = null; localClick(); }, 900);   // header didn't answer
+    SONG_REMOTE.wait = {who: who, cancel: function(){ clearTimeout(waiting); }, fallback: function(){ clearTimeout(waiting); localClick(); }};
+    songTitle(who).then(function(t){
+      SONG_BUS.postMessage({type: "play", who: who, src: new URL(audio.src, location.href).pathname.split("/").slice(-2).join("/"),
+                            start: cue.start, fade: cue.fade, title: t});
+    });
   });
+}
+// ---- the site-wide player channel (see site-player.html) ---------------------
+var SONG_BUS = "BroadcastChannel" in window ? new BroadcastChannel("440-song") : null;
+var SONG_REMOTE = {here: false, st: null, wait: null}, SONG_UI = null;
+if (SONG_BUS) {
+  SONG_BUS.onmessage = function(e){
+    var m = e.data || {};
+    if (m.type === "state") {
+      SONG_REMOTE.here = true; SONG_REMOTE.st = m;
+      var w = SONG_REMOTE.wait;
+      if (w && m.who === w.who && m.playing) { w.cancel(); SONG_REMOTE.wait = null; }
+      if (SONG_UI) SONG_UI.remote(m);
+    } else if (m.type === "blocked") {                     // the browser wants a tap there first
+      var w2 = SONG_REMOTE.wait;
+      if (w2 && m.who === w2.who) { SONG_REMOTE.wait = null; SONG_BUS.postMessage({type: "stop"}); w2.fallback(); }
+    }
+  };
+  SONG_BUS.postMessage({type: "hello"});
 }
 
 // The song's "TITLE · ARTIST": docs/songs/songs.json first, else the MP3's

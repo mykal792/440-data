@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>440 Radio</title>
+<!--
+  440 & Friends - 440 RADIO, the site-wide team song player.
+  ONE Wix HTML embed in the site header, "Show on all pages":
+    https://mykal792.github.io/440-data/site-player.html
+  Desktop: ~300 x 40 -> a pill. Phone (any box under 120px wide, ~50 x 50)
+  -> a round button. In the classic Wix Editor the header isn't reloaded on
+  page changes, so the music keeps going from page to page.
+
+  Radio: hit play and it shuffles through every team song in
+  docs/songs/songs.json (each one once before any repeats), honouring each
+  song's "start" / "fade". Pill: play/pause, next, close. Round button: tap =
+  play/pause, press and hold = next song.
+  Profiles: their TEAM SONG buttons ask this player to play that song over a
+  BroadcastChannel ("440-song"): {type:"play"|"pause"|"stop"|"hello", ...};
+  it answers {type:"state", who, playing, title} (the profile mirrors it -
+  pause button, dancing avatar, title) or {type:"blocked"} if the browser
+  won't start it (then the profile plays the song itself). After a profile's
+  song ends the radio carries on if it was on, otherwise it stops.
+-->
+<style>
+@font-face{font-family:"Rotundo";src:url(data:font/woff2;base64,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) format("woff2");font-display:block}
+html,body{margin:0;background:transparent;overflow:hidden;height:100%}
+button{border:0;background:none;padding:0;cursor:pointer;font:inherit;color:inherit}
+/* ---- pill (desktop) ---- */
+#bar{position:absolute;inset:0;display:flex;align-items:center;gap:8px;padding:0 8px 0 4px;
+  background:#333;border-radius:999px;box-sizing:border-box;font-family:Rotundo,sans-serif;color:#fff}
+#av{height:calc(100% - 8px);aspect-ratio:1;border-radius:50%;background:#e4e4e4 center/cover no-repeat;flex:none;display:grid;place-items:center}
+#av.idle{background:#88e9bf}
+#av.idle::after{content:"";width:34%;height:34%;background:#333;
+  clip-path:polygon(20% 0,100% 50%,20% 100%)}
+#win{flex:1;min-width:0;overflow:hidden;position:relative;height:100%;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8px,#000 calc(100% - 8px),transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 8px,#000 calc(100% - 8px),transparent)}
+#tick{position:absolute;top:50%;transform:translateY(-50%);white-space:nowrap;font-size:13px;letter-spacing:.06em}
+#tick span{padding-right:40px}
+#tick.run{animation:tick var(--dur,12s) linear infinite}
+#tick small{font-size:9px;color:#88e9bf;letter-spacing:.08em;margin-left:6px}
+@keyframes tick{from{transform:translate(0,-50%)}to{transform:translate(-50%,-50%)}}
+.ic{flex:none;width:26px;height:26px;display:grid;place-items:center}
+#pp{background:#88e9bf;border-radius:50%}
+.ic svg{width:12px;height:12px}
+#nx svg{width:13px;height:13px}
+#x svg{width:11px;height:11px}
+#bar.idle #pp,#bar.idle #nx,#bar.idle #x{display:none}
+#bar.idle{cursor:pointer}
+/* ---- round button (phone) ---- */
+#mini{display:none;position:absolute;inset:0;-webkit-tap-highlight-color:transparent;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+body.compact #bar{display:none}
+body.compact #mini{display:block}
+#mini .face{position:absolute;inset:12%;border-radius:50%;background:#333 center/cover no-repeat}
+#mini svg.ring{position:absolute;inset:0;width:100%;height:100%}
+#mini.playing svg.ring{animation:spin 2.4s linear infinite}
+#mini.skip svg.ring circle{stroke:#fff}
+@keyframes spin{to{transform:rotate(360deg)}}
+#mini .over{position:absolute;inset:12%;border-radius:50%;display:none;place-items:center}
+#mini:not(.playing) .over{display:grid}
+#mini.loaded:not(.playing) .over{background:rgba(51,51,51,.55)}
+#mini .over svg{width:36%;height:36%}
+@media (prefers-reduced-motion:reduce){#tick.run,#mini.playing svg.ring{animation:none}}
+</style></head>
+<body>
+<div id="bar" class="idle" role="region" aria-label="440 Radio">
+  <div id="av" class="idle"></div>
+  <div id="win"><div id="tick"></div></div>
+  <button id="pp" class="ic" aria-label="Pause"><svg viewBox="0 0 12 12"><path id="ppi" d="M3 1.5v9l7.5-4.5z" fill="#333"/></svg></button>
+  <button id="nx" class="ic" aria-label="Next song"><svg viewBox="0 0 13 12"><path d="M1.5 1.5v9l6.5-4.5zM8.5 1.5v9l-.1 0" fill="#fff"/><rect x="9.4" y="1.5" width="2.2" height="9" rx=".8" fill="#fff"/></svg></button>
+  <button id="x" class="ic" aria-label="Stop"><svg viewBox="0 0 11 11"><path d="M1.5 1.5l8 8M9.5 1.5l-8 8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></button>
+</div>
+<button id="mini" aria-label="Play 440 Radio">
+  <svg class="ring" viewBox="0 0 40 40"><circle cx="20" cy="20" r="18" fill="none" stroke="#88e9bf" stroke-width="3"
+      stroke-dasharray="84 29" stroke-linecap="round"/></svg>
+  <div class="face"></div>
+  <div class="over"><svg viewBox="0 0 12 12"><path d="M3 1.5v9l7.5-4.5z" fill="#88e9bf"/></svg></div>
+</button>
+<script>
+(function(){
+  "use strict";
+  var bus = "BroadcastChannel" in window ? new BroadcastChannel("440-song") : null;
+  var audio = new Audio(), cur = null, ramp = null, radio = false, bag = [];
+  var $ = function(id){ return document.getElementById(id); };
+  var bar = $("bar"), av = $("av"), tick = $("tick"), win = $("win"), ppi = $("ppi"), mini = $("mini"), face = mini.querySelector(".face");
+  var PLAY = "M3 1.5v9l7.5-4.5z", PAUSE = "M2.5 1.5h2.6v9H2.5zM6.9 1.5h2.6v9H6.9z";
+  function say(m){ if (bus) bus.postMessage(m); }
+  function state(){ say({type: "state", who: cur && cur.who, playing: !!cur && !audio.paused, title: cur && cur.title}); }
+
+  // ---- the songs: songs.json (title, artist, start, fade) + whichever file exists
+  var SONGS = fetch("songs/songs.json", {cache: "no-cache"}).then(function(r){ return r.ok ? r.json() : {}; }).catch(function(){ return {}; });
+  var FILE = {};
+  function fileFor(who){
+    if (!FILE[who]) {
+      var W = who.charAt(0).toUpperCase() + who.slice(1);
+      var list = ["songs/" + who + ".m4a", "songs/" + who + ".mp3", "songs/" + W + ".m4a", "songs/" + W + ".mp3"];
+      var tryOne = function(i){
+        if (i >= list.length) return Promise.resolve("");
+        return fetch(list[i], {method: "HEAD", cache: "no-cache"}).then(function(r){ return r.ok ? list[i] : tryOne(i + 1); }, function(){ return tryOne(i + 1); });
+      };
+      FILE[who] = tryOne(0);
+    }
+    return FILE[who];
+  }
+  function info(who){
+    return Promise.all([SONGS, fileFor(who)]).then(function(r){
+      var e = r[0][who] || {};
+      return r[1] ? {who: who, src: r[1], start: +e.start || 0, fade: +e.fade || 0,
+                     title: ((e.title || who) + (e.artist ? "  ·  " + e.artist : "")).toUpperCase()} : null;
+    });
+  }
+  function nextWho(){                                      // shuffle: everyone once before repeats
+    return SONGS.then(function(all){
+      var keys = Object.keys(all);
+      if (!bag.length) {
+        bag = keys.slice();
+        for (var i = bag.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = bag[i]; bag[i] = bag[j]; bag[j] = t; }
+        if (cur && bag.length > 1 && bag[bag.length - 1] === cur.who) bag.unshift(bag.pop());   // no back-to-back
+      }
+      return bag.pop();
+    });
+  }
+  function radioNext(){
+    radio = true;
+    return nextWho().then(function(w){ return w ? info(w) : null; }).then(function(m){
+      if (m) start(m); else if (bag.length) return radioNext();
+    });
+  }
+
+  // ---- looks
+  function fit(){ document.body.classList.toggle("compact", window.innerWidth < 120); }
+  fit(); window.addEventListener("resize", fit);
+  function setTitle(t, idle){
+    tick.innerHTML = ""; tick.classList.remove("run");
+    var a = document.createElement("span"); a.textContent = t || "";
+    if (idle) { var sm = document.createElement("small"); sm.textContent = "SHUFFLE TEAM SONGS"; a.appendChild(sm); }
+    tick.appendChild(a);
+    requestAnimationFrame(function(){
+      if (!idle && a.offsetWidth - 40 > win.clientWidth) {
+        tick.appendChild(a.cloneNode(true));
+        tick.style.setProperty("--dur", (a.offsetWidth / 30) + "s"); tick.classList.add("run");
+      } else a.style.paddingRight = "0";
+    });
+  }
+  function show(){
+    var on = !!cur, playing = on && !audio.paused;
+    bar.classList.toggle("idle", !on); av.classList.toggle("idle", !on);
+    if (!on) { av.style.backgroundImage = ""; setTitle("440 RADIO", true); }
+    ppi.setAttribute("d", playing ? PAUSE : PLAY); $("pp").setAttribute("aria-label", playing ? "Pause" : "Play");
+    mini.classList.toggle("playing", playing); mini.classList.toggle("loaded", on);
+    face.style.backgroundImage = on ? "url(avatars/" + cur.who + ".svg)" : "";
+    mini.setAttribute("aria-label", playing ? "Pause (hold for next song)" : on ? "Play" : "Play 440 Radio");
+  }
+  function fadeIn(sec){
+    cancelAnimationFrame(ramp);
+    if (!sec) { audio.volume = 1; return; }
+    var t0 = performance.now(); audio.volume = 0;
+    (function up(){ var k = (performance.now() - t0) / (sec * 1000); audio.volume = Math.min(1, k); if (k < 1) ramp = requestAnimationFrame(up); })();
+  }
+  function start(m){
+    var fresh = !cur || cur.who !== m.who || audio.ended;
+    if (fresh) {
+      cur = m; audio.src = m.src; av.style.backgroundImage = "url(avatars/" + m.who + ".svg)"; setTitle(m.title);
+      if (m.start) {
+        var seek = function(){ try { audio.currentTime = m.start; } catch (e) {} };
+        if (audio.readyState >= 1) seek(); else audio.addEventListener("loadedmetadata", seek, {once: true});
+      }
+      fadeIn(m.start ? (m.fade || 3) : 0);
+    }
+    var p = audio.play();
+    if (p && p.catch) p.catch(function(){ if (!radio) { say({type: "blocked", who: m.who}); } show(); });
+    show();
+  }
+  function stop(){ radio = false; audio.pause(); audio.removeAttribute("src"); audio.load(); cur = null; show(); state(); }
+  audio.addEventListener("play", function(){ show(); state(); });
+  audio.addEventListener("pause", function(){ show(); state(); });
+  audio.addEventListener("ended", function(){ if (radio) radioNext(); else { cur = null; show(); state(); } });
+  audio.addEventListener("error", function(){ if (radio && cur) radioNext(); });
+
+  // ---- controls
+  function toggle(){
+    if (!cur) { radioNext(); return; }                    // idle: start the radio
+    if (audio.paused) audio.play(); else audio.pause();
+  }
+  bar.addEventListener("click", function(e){ if (!cur && !e.target.closest("button")) radioNext(); });
+  av.addEventListener("click", function(e){ if (cur) { e.stopPropagation(); toggle(); } });
+  $("pp").addEventListener("click", toggle);
+  $("nx").addEventListener("click", function(){ radioNext(); });
+  $("x").addEventListener("click", stop);
+  // round button: tap = play/pause, hold = next song
+  var held = null, skipped = false;
+  mini.addEventListener("pointerdown", function(){
+    skipped = false;
+    held = setTimeout(function(){ skipped = true; mini.classList.add("skip"); setTimeout(function(){ mini.classList.remove("skip"); }, 400); radioNext(); }, 600);
+  });
+  ["pointerup", "pointerleave", "pointercancel"].forEach(function(ev){ mini.addEventListener(ev, function(){ clearTimeout(held); }); });
+  mini.addEventListener("click", function(){ if (!skipped) toggle(); skipped = false; });
+  mini.addEventListener("contextmenu", function(e){ e.preventDefault(); });
+
+  // ---- the profiles
+  if (bus) bus.onmessage = function(e){
+    var m = e.data || {};
+    if (m.type === "hello") state();
+    else if (m.type === "play") start(m);                  // a profile's TEAM SONG button (radio carries on after, if it was on)
+    else if (m.type === "pause") audio.pause();
+    else if (m.type === "stop") stop();
+  };
+  show(); state();
+})();
+</script>
+</body></html>
