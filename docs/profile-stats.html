@@ -953,33 +953,54 @@ function drawHeader(g, p, who, H){
     if (!audio.src) return;
     var st = SONG_REMOTE.st;
     if (!SONG_REMOTE.here || !audio.paused) { localClick(); return; }
-    if (st && st.who === who && st.playing) { SONG_BUS.postMessage({type: "pause"}); return; }
+    if (st && st.who === who && st.playing) { SONG_NET.send({type: "pause"}); return; }
     var waiting = setTimeout(function(){ SONG_REMOTE.wait = null; localClick(); }, 900);   // header didn't answer
     SONG_REMOTE.wait = {who: who, cancel: function(){ clearTimeout(waiting); }, fallback: function(){ clearTimeout(waiting); localClick(); }};
     songTitle(who).then(function(t){
-      SONG_BUS.postMessage({type: "play", who: who, src: new URL(audio.src, location.href).pathname.split("/").slice(-2).join("/"),
+      SONG_NET.send({type: "play", who: who, src: new URL(audio.src, location.href).pathname.split("/").slice(-2).join("/"),
                             start: cue.start, fade: cue.fade, title: t});
     });
   });
 }
 // ---- the site-wide player channel (see site-player.html) ---------------------
-var SONG_BUS = "BroadcastChannel" in window ? new BroadcastChannel("440-song") : null;
-var SONG_REMOTE = {here: false, st: null, wait: null}, SONG_UI = null;
-if (SONG_BUS) {
-  SONG_BUS.onmessage = function(e){
-    var m = e.data || {};
-    if (m.type === "state") {
-      SONG_REMOTE.here = true; SONG_REMOTE.st = m;
-      var w = SONG_REMOTE.wait;
-      if (w && m.who === w.who && m.playing) { w.cancel(); SONG_REMOTE.wait = null; }
-      if (SONG_UI) SONG_UI.remote(m);
-    } else if (m.type === "blocked") {                     // the browser wants a tap there first
-      var w2 = SONG_REMOTE.wait;
-      if (w2 && m.who === w2.who) { SONG_REMOTE.wait = null; SONG_BUS.postMessage({type: "stop"}); w2.fallback(); }
+var SONG_NET = (function(){
+    var bc = "BroadcastChannel" in window ? new BroadcastChannel("440-song") : null, seen = {}, handler = function(){};
+    function got(m){ if (!m || !m.id || seen[m.id]) return; seen[m.id] = 1; handler(m); }
+    if (bc) bc.onmessage = function(e){ got(e.data); };
+    window.addEventListener("message", function(e){ if (e.data && e.data.__440) got(e.data.__440); });
+    function walk(w, m, depth){
+      if (depth > 4) return;
+      var n = 0; try { n = w.frames.length; } catch (x) { return; }
+      for (var i = 0; i < n; i++) {
+        var f; try { f = w.frames[i]; } catch (x) { continue; }
+        if (f !== window) try { f.postMessage({__440: m}, "*"); } catch (x) {}
+        walk(f, m, depth + 1);
+      }
     }
-  };
-  SONG_BUS.postMessage({type: "hello"});
-}
+    return {
+      send: function(m){
+        m = Object.assign({id: Date.now().toString(36) + Math.random().toString(36).slice(2, 7)}, m);
+        seen[m.id] = 1;
+        if (bc) bc.postMessage(m);
+        try { walk(window.top, m, 0); } catch (x) {}
+      },
+      on: function(f){ handler = f; }
+    };
+  })();
+var SONG_REMOTE = {here: false, st: null, wait: null}, SONG_UI = null;
+SONG_NET.on(function(m){
+  if (m.type === "state") {
+    SONG_REMOTE.here = true; SONG_REMOTE.st = m;
+    var w = SONG_REMOTE.wait;
+    if (w && m.who === w.who && m.playing) { w.cancel(); SONG_REMOTE.wait = null; }
+    if (SONG_UI) SONG_UI.remote(m);
+  } else if (m.type === "blocked") {                       // the browser wants a tap there first
+    var w2 = SONG_REMOTE.wait;
+    if (w2 && m.who === w2.who) { SONG_REMOTE.wait = null; SONG_NET.send({type: "stop"}); w2.fallback(); }
+  }
+});
+SONG_NET.send({type: "hello"});
+setTimeout(function(){ SONG_NET.send({type: "hello"}); }, 1500);   // in case the header loads after this page
 
 // The song's "TITLE · ARTIST": docs/songs/songs.json first, else the MP3's
 // ID3 tags (TIT2 / TPE1), else nothing. Looked up once per page.

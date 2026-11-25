@@ -79,12 +79,42 @@ body.compact #mini{display:block}
 <script>
 (function(){
   "use strict";
-  var bus = "BroadcastChannel" in window ? new BroadcastChannel("440-song") : null;
+
+  // ---- talking between the profile embeds and the header player ------------
+  // Two routes, every message on both (each carries an id, so a copy that
+  // arrives twice is ignored): a BroadcastChannel, and a postMessage to every
+  // frame on the page (walking window.top.frames). Wix can put the embeds in
+  // different wrappers, and some browsers then keep their BroadcastChannels
+  // apart - the frame walk still reaches them.
+  var NET = (function(){
+    var bc = "BroadcastChannel" in window ? new BroadcastChannel("440-song") : null, seen = {}, handler = function(){};
+    function got(m){ if (!m || !m.id || seen[m.id]) return; seen[m.id] = 1; handler(m); }
+    if (bc) bc.onmessage = function(e){ got(e.data); };
+    window.addEventListener("message", function(e){ if (e.data && e.data.__440) got(e.data.__440); });
+    function walk(w, m, depth){
+      if (depth > 4) return;
+      var n = 0; try { n = w.frames.length; } catch (x) { return; }
+      for (var i = 0; i < n; i++) {
+        var f; try { f = w.frames[i]; } catch (x) { continue; }
+        if (f !== window) try { f.postMessage({__440: m}, "*"); } catch (x) {}
+        walk(f, m, depth + 1);
+      }
+    }
+    return {
+      send: function(m){
+        m = Object.assign({id: Date.now().toString(36) + Math.random().toString(36).slice(2, 7)}, m);
+        seen[m.id] = 1;
+        if (bc) bc.postMessage(m);
+        try { walk(window.top, m, 0); } catch (x) {}
+      },
+      on: function(f){ handler = f; }
+    };
+  })();
   var audio = new Audio(), cur = null, ramp = null, radio = false, bag = [];
   var $ = function(id){ return document.getElementById(id); };
   var bar = $("bar"), av = $("av"), tick = $("tick"), win = $("win"), ppi = $("ppi"), mini = $("mini"), face = mini.querySelector(".face");
   var PLAY = "M3 1.5v9l7.5-4.5z", PAUSE = "M2.5 1.5h2.6v9H2.5zM6.9 1.5h2.6v9H6.9z";
-  function say(m){ if (bus) bus.postMessage(m); }
+  function say(m){ NET.send(m); }
   function state(){ say({type: "state", who: cur && cur.who, playing: !!cur && !audio.paused, title: cur && cur.title}); }
 
   // ---- the songs: songs.json (title, artist, start, fade) + whichever file exists
@@ -198,13 +228,39 @@ body.compact #mini{display:block}
   mini.addEventListener("contextmenu", function(e){ e.preventDefault(); });
 
   // ---- the profiles
-  if (bus) bus.onmessage = function(e){
-    var m = e.data || {};
+  NET.on(function(m){
     if (m.type === "hello") state();
     else if (m.type === "play") start(m);                  // a profile's TEAM SONG button (radio carries on after, if it was on)
     else if (m.type === "pause") audio.pause();
     else if (m.type === "stop") stop();
-  };
+  });
+  // ---- picking up after a page change. On desktop Wix rebuilds the header
+  // embed on every page, so the player notes what's playing (song, spot,
+  // radio on/off) and the next page's player carries on from there. Browsers
+  // may want a tap before sound starts in a fresh embed: then it waits,
+  // paused at the same spot, and one tap on play continues.
+  var KEY = "440radio";
+  function save(){
+    try {
+      if (cur) localStorage.setItem(KEY, JSON.stringify({m: cur, t: audio.currentTime, playing: !audio.paused, radio: radio, bag: bag, at: Date.now()}));
+      else localStorage.removeItem(KEY);
+    } catch (e) {}
+  }
+  setInterval(save, 1000);
+  window.addEventListener("pagehide", save);
+  audio.addEventListener("pause", save); audio.addEventListener("play", save);
+  (function resume(){
+    var s = null; try { s = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) {}
+    if (!s || !s.m || Date.now() - s.at > 120000) return;          // only straight after a page change
+    radio = !!s.radio; bag = s.bag || []; cur = s.m;
+    audio.src = s.m.src; av.style.backgroundImage = "url(avatars/" + s.m.who + ".svg)"; setTitle(s.m.title);
+    var at = s.t + (s.playing ? (Date.now() - s.at) / 1000 : 0);
+    var seek = function(){ try { audio.currentTime = at; } catch (e) {} };
+    if (audio.readyState >= 1) seek(); else audio.addEventListener("loadedmetadata", seek, {once: true});
+    audio.volume = 1;
+    if (s.playing) { var p = audio.play(); if (p && p.catch) p.catch(function(){ show(); state(); }); }
+    show();
+  })();
   show(); state();
 })();
 </script>
