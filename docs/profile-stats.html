@@ -939,15 +939,40 @@ function drawHeader(g, p, who, H){
   };
   var show = function(on){ play.setAttribute("display", on ? "none" : "inline"); pause.setAttribute("display", on ? "inline" : "none"); };
   audio.addEventListener("ended", function(){ show(false); songLine.off(); dance(false); audio.currentTime = 0; songStopped(); });
-  audio.addEventListener("pause", function(){ show(false); songLine.off(); dance(false); songStopped(); });
-  audio.addEventListener("play", function(){ show(true); dance(true); songTitle(who).then(songLine.on); PLAYING = audio;
+  // iPad/iPhone only let a page start sound during a tap. When the tap goes
+  // to the header, this page's copy is started silently and stopped at once,
+  // which "unlocks" it - so if the header can't play, the fallback here can.
+  var priming = false;
+  var prime = function(){
+    if (!audio.paused) return;
+    priming = true; audio.muted = true;
+    var undo = function(){ audio.muted = false; setTimeout(function(){ priming = false; }, 50); };
+    var p; try { p = audio.play(); } catch (e) { undo(); return; }
+    var stop = function(){ audio.pause(); try { audio.currentTime = 0; } catch (e) {} undo(); };
+    if (p && p.then) p.then(stop, undo); else stop();
+  };
+  audio.addEventListener("pause", function(){ if (priming) return; if (handing) { handing = false; PLAYING = null; return; } show(false); songLine.off(); dance(false); songStopped(); });
+  audio.addEventListener("play", function(){ if (priming) return; show(true); dance(true); songTitle(who).then(songLine.on); PLAYING = audio;
     LOCAL_AT = Date.now(); SONG_NET.send({type: "pause"}); });   // only one song at a time: hush the header
+  // once it's really playing here, offer it to the header so it can keep
+  // going across pages (see handOver)
+  var offer = false;
+  audio.addEventListener("playing", function(){
+    if (!offer || !SONG_REMOTE.here) return; offer = false;
+    songTitle(who).then(function(t){
+      if (audio.paused) return;
+      SONG_LOG.push(new Date().toTimeString().slice(0, 8) + " offered to header " + who);
+      SONG_NET.send({type: "play", who: who, src: new URL(audio.src, location.href).pathname.split("/").slice(-2).join("/"),
+                     start: cue.start, fade: cue.fade, title: t, pos: audio.currentTime, at: Date.now()});
+    });
+  });
   audio.addEventListener("error", function(){ noSong(); show(false); songLine.off(); dance(false); });
   // the site-wide player (site-player.html in the Wix header) plays the song
   // when it's there, so it keeps going from page to page; this page just
   // mirrors it (pause button, dancing avatar, title). No header player, or the
   // browser won't let it start: the song plays here, as before.
   var remoteUI = function(st){
+    if (!audio.paused) return;                               // this page is playing it: its own look stands
     var mine = !!(st && st.who === who && st.playing);
     show(mine); dance(mine);
     if (mine) songTitle(who).then(songLine.on); else songLine.off();
@@ -967,10 +992,19 @@ function drawHeader(g, p, who, H){
     }
   };
   if (audio.preload === "none") audio.preload = "metadata";   // so the song's length is known
-  SONG_UI = {who: who, remote: remoteUI, local: function(){ return audio; }};
+  // the header is now playing this song from the same spot: go quiet here
+  var handing = false;
+  var handOver = function(st){
+    if (audio.paused) return;
+    handing = true; audio.pause();
+    SONG_LOG.push(new Date().toTimeString().slice(0, 8) + " header took over");
+    remoteUI(st);
+  };
+  SONG_UI = {who: who, remote: remoteUI, local: function(){ return audio; }, handOver: handOver};
   if (SONG_REMOTE.st) remoteUI(SONG_REMOTE.st);
   var localClick = function(){
     if (!audio.src) return;
+    if (priming) { setTimeout(localClick, 120); return; }
     if (!audio.paused) { audio.pause(); return; }
     var fresh = audio.currentTime < cue.start || audio.currentTime === 0;   // from the top (not a resume)
     if (fresh && cue.start) {
@@ -983,19 +1017,13 @@ function drawHeader(g, p, who, H){
   btn.addEventListener("click", function(){
     if (!audio.src) return;
     var st = SONG_REMOTE.st;
-    if (!SONG_REMOTE.here) songSync();                       // a page that just opened may not have heard yet
-    if (!SONG_REMOTE.here || !audio.paused) { localClick(); return; }
-    if (st && st.who === who && st.playing) { SONG_NET.send({type: "pause"}); assume(false); return; }
-    assume(true); SONG_TAP = Date.now();
-    // the header normally answers at once; only if it says it can't play
-    // (browser wants a tap there) does this page play the song itself
-    var waiting = null;
-    SONG_REMOTE.wait = {who: who, cancel: function(){}, fallback: function(){ SONG_REMOTE.st = null; localClick(); }};
-    songTitle(who).then(function(t){
-      SONG_LOG.push(new Date().toTimeString().slice(0, 8) + " sent play " + who);
-      SONG_NET.send({type: "play", who: who, src: new URL(audio.src, location.href).pathname.split("/").slice(-2).join("/"),
-                            start: cue.start, fade: cue.fade, title: t});
-    });
+    if (!audio.paused) { offer = false; localClick(); return; }                   // pause it here
+    if (st && st.who === who && st.playing) {                                      // the header has it: pause there
+      SONG_NET.send({type: "pause"}); SONG_REMOTE.st = null; remoteUI(null); return;
+    }
+    // Always start the song right here, in the tap - browsers always allow
+    // that, so it plays every time. The header is then offered it.
+    offer = true; localClick();
   });
 }
 // ---- the site-wide player channel (see site-player.html) ---------------------
@@ -1033,6 +1061,8 @@ SONG_NET.on(function(m){
   SONG_LOG.push(new Date().toTimeString().slice(0, 8) + " got " + m.type + " " + (m.who || "") + (m.playing ? " playing" : ""));
   if (m.type === "state") {
     SONG_REMOTE.here = true;
+    var U = SONG_UI, ownLocal = U && !U.local().paused;
+    if (ownLocal && m.who === U.who) { if (m.playing && m.sounding) { SONG_REMOTE.st = m; U.handOver(m); } return; }   // ours: hand over once it's audible there
     hushLocal(m, true);
     if (Date.now() - SONG_TAP < 3000 && SONG_REMOTE.wait && !(m.who === SONG_REMOTE.wait.who && m.playing)) return;   // old news
     SONG_REMOTE.st = m;
@@ -1055,15 +1085,17 @@ function songStore(){
     return {type: "state", who: s && s.m ? s.m.who : null, playing: !!(s && s.m && s.playing && Date.now() - s.at < 4000), store: true};
   } catch (e) { return null; }
 }
+// Note: the stored copy only shows what the header is doing; it doesn't
+// prove the header can hear this page, so only a real message sets "here".
+var SONG_PREV = null;
 function songSync(){
   var st = songStore(); if (!st) return;
-  hushLocal(st);
-  SONG_REMOTE.here = true;
-  if (Date.now() - SONG_TAP < 3000) {                        // just tapped: only accept news that the song started
-    var w = SONG_REMOTE.wait;
-    if (!(w && st.who === w.who && st.playing)) return;
-    SONG_REMOTE.wait = null;
-  }
+  var startedNow = st.playing && !(SONG_PREV && SONG_PREV.playing && SONG_PREV.who === st.who);
+  SONG_PREV = st;
+  if (startedNow && Date.now() - LOCAL_AT > 2000 && !(SONG_UI && st.who === SONG_UI.who)) hushLocal(st, true);   // header just started something itself
+  var w = SONG_REMOTE.wait;
+  if (w && st.who === w.who && st.playing) { w.cancel(); SONG_REMOTE.wait = null; }
+  else if (Date.now() - SONG_TAP < 3000) return;             // just tapped: only accept news that the song started
   var old = SONG_REMOTE.st;
   if (old && old.who === st.who && old.playing === st.playing) { old.assumed = false; return; }
   SONG_REMOTE.st = st;

@@ -188,6 +188,7 @@ body.compact #mini{display:block}
     (function up(){ var k = (performance.now() - t0) / (sec * 1000); audio.volume = Math.min(1, k); if (k < 1) ramp = requestAnimationFrame(up); })();
   }
   function start(m){
+    if (m.pos != null) return takeOver(m);
     var fresh = !cur || cur.who !== m.who || audio.ended;
     if (fresh) {
       cur = m; audio.src = m.src; av.style.backgroundImage = "url(avatars/" + m.who + ".svg)"; setTitle(m.title || m.who.toUpperCase());
@@ -203,8 +204,25 @@ body.compact #mini{display:block}
     if (p && p.catch) p.catch(function(){ if (!radio) { say({type: "blocked", who: m.who}); } show(); });
     show();
   }
+  // A profile is already playing the song itself; carry on from the same
+  // spot so it keeps going when the page changes. If this browser won't let
+  // the header start sound, nothing changes - the profile just keeps playing.
+  function takeOver(m){
+    cancelAnimationFrame(ramp); audio.volume = 1;
+    var before = cur;
+    cur = m; audio.src = m.src; av.style.backgroundImage = "url(avatars/" + m.who + ".svg)"; setTitle(m.title || m.who.toUpperCase());
+    info(m.who).then(function(i){ if (i && cur === m) { m.title = i.title; setTitle(i.title); show(); } });
+    var seek = function(){ try { audio.currentTime = m.pos + (Date.now() - m.at) / 1000 + 0.15; } catch (e) {} };
+    if (audio.readyState >= 1) seek(); else audio.addEventListener("loadedmetadata", seek, {once: true});
+    var p = audio.play();
+    if (p && p.catch) p.catch(function(){ if (cur === m) { cur = null; audio.removeAttribute("src"); radio = false; show(); } });
+    show();
+  }
   function stop(){ radio = false; audio.pause(); audio.removeAttribute("src"); audio.load(); cur = null; show(); state(); }
   audio.addEventListener("play", function(){ show(); state(); });
+  audio.addEventListener("playing", function(){                // actually making sound now
+    say({type: "state", who: cur && cur.who, playing: true, sounding: true, title: cur && cur.title});
+  });
   audio.addEventListener("pause", function(){ show(); state(); });
   audio.addEventListener("ended", function(){ if (radio) radioNext(); else { cur = null; show(); state(); } });
   audio.addEventListener("error", function(){ if (radio && cur) radioNext(); });
