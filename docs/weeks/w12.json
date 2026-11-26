@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T23:45:30Z",
+  "updated": "2026-11-26T23:50:24Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 12.0,
+        "score": 13.0,
         "projected": 113.19
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 69.2,
+        "score": 72.2,
         "projected": 111.95
       }
     }
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "69.20",
+          "value": "72.20",
           "detail": "5 to play"
         },
         {
@@ -211,6 +211,28 @@
       ]
     },
     {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 20.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 100
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -277,28 +299,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 17.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 95
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -421,6 +421,15 @@
       ]
     },
     {
+      "name": "Cowboys",
+      "position": "DEF",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 9.0,
+      "stats": []
+    },
+    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -435,15 +444,6 @@
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 8.0,
-      "stats": []
-    },
-    {
-      "name": "Cowboys",
-      "position": "DEF",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
       "points": 8.0,
       "stats": []
     },
