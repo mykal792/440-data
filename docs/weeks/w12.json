@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T22:15:27Z",
+  "updated": "2026-11-26T22:20:25Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 11.0,
+        "score": 12.0,
         "projected": 113.19
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 41.62,
+        "score": 41.92,
         "projected": 119.11
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 53.8,
+        "score": 54.8,
         "projected": 111.95
       }
     }
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "10.90",
+          "value": "11.20",
           "detail": "Javonte Williams + Saquon Barkley"
         }
       ]
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "53.80",
+          "value": "54.80",
           "detail": "5 to play"
         },
         {
@@ -325,6 +325,15 @@
       ]
     },
     {
+      "name": "Cowboys",
+      "position": "DEF",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 11.0,
+      "stats": []
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -375,15 +384,6 @@
           "value": 1
         }
       ]
-    },
-    {
-      "name": "Cowboys",
-      "position": "DEF",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.0,
-      "stats": []
     },
     {
       "name": "Jake Bates",
@@ -449,15 +449,15 @@
       "team": "Phi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 2.1,
+      "points": 3.1,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 16
+          "value": 21
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 2
         }
       ]
     },
@@ -490,11 +490,11 @@
       "team": "Phi",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.4,
+      "points": 0.7,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 4
+          "value": 7
         }
       ]
     },
