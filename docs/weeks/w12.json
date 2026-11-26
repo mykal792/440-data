@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T20:30:30Z",
+  "updated": "2026-11-26T20:35:20Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 24.3,
+        "score": 27.5,
         "projected": 124.66
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 5.6,
+        "score": 8.0,
         "projected": 130.95
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 40.5,
+        "score": 40.86,
         "projected": 116.34
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "24.30",
+          "value": "27.50",
           "detail": "Jahmyr Gibbs + Jaylen Warren"
         },
         {
@@ -115,8 +115,15 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "40.50",
+          "value": "40.86",
           "detail": "5 to play"
+        },
+        {
+          "rank": 2,
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "27.50",
+          "detail": "8 to play"
         },
         {
           "rank": 2,
@@ -124,13 +131,6 @@
           "face": "coyne",
           "value": "27.50",
           "detail": "6 to play"
-        },
-        {
-          "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "26.52",
-          "detail": "7 to play"
         }
       ]
     }
@@ -142,11 +142,11 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 24.3,
+      "points": 27.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 62
+          "value": 94
         },
         {
           "stat": "REC YD",
@@ -168,11 +168,11 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 16.6,
+      "points": 16.96,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 240
+          "value": 249
         },
         {
           "stat": "RUSH YD",
@@ -317,21 +317,12 @@
       ]
     },
     {
-      "name": "Cairo Santos",
-      "position": "K",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 7.0,
-      "stats": []
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
       "manager": "hayden",
       "manager_display": "HAYDEN",
-      "points": 5.6,
+      "points": 8.0,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -339,13 +330,22 @@
         },
         {
           "stat": "REC YD",
-          "value": 39
+          "value": 48
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 4
         }
       ]
+    },
+    {
+      "name": "Cairo Santos",
+      "position": "K",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Jake Bates",
