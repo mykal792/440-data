@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T03:30:31Z",
+  "updated": "2026-11-26T03:35:29Z",
   "players": [
     {
       "name": "Christian Watson",
@@ -26,12 +26,38 @@
       ]
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 12.86,
+      "points": 10.86,
       "stats": [
         {
           "stat": "PASS YD",
@@ -44,31 +70,9 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 12.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
         },
         {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
+          "stat": "INT",
           "value": 1
         }
       ]

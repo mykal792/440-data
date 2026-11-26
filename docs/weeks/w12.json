@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T03:30:31Z",
+  "updated": "2026-11-26T03:35:29Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 12.86,
+        "score": 10.86,
         "projected": 118.9
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 12.4,
+        "score": 12.5,
         "projected": 116.19
       },
       "away": {
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "12.40",
+          "value": "12.50",
           "detail": "Kyren Williams + Chuba Hubbard"
         },
         {
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "12.86",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "12.50",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "12.40",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "10.86",
           "detail": "8 to play"
         }
       ]
@@ -159,12 +159,38 @@
       ]
     },
     {
+      "name": "Kyren Williams",
+      "position": "RB",
+      "team": "LAR",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 12.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 26
+        },
+        {
+          "stat": "REC YD",
+          "value": 19
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 12.86,
+      "points": 10.86,
       "stats": [
         {
           "stat": "PASS YD",
@@ -177,31 +203,9 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Kyren Williams",
-      "position": "RB",
-      "team": "LAR",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 12.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
         },
         {
-          "stat": "REC YD",
-          "value": 19
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        },
-        {
-          "stat": "TD",
+          "stat": "INT",
           "value": 1
         }
       ]
