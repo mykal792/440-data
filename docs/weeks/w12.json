@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T20:15:22Z",
+  "updated": "2026-11-26T20:20:27Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 18.0,
+        "score": 24.3,
         "projected": 124.68
       }
     },
@@ -63,13 +63,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 38.52,
+        "score": 40.5,
         "projected": 116.35
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 22.9,
+        "score": 25.1,
         "projected": 111.97
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "18.00",
+          "value": "24.30",
           "detail": "Jahmyr Gibbs + Jaylen Warren"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "38.52",
+          "value": "40.50",
           "detail": "5 to play"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "22.90",
+          "value": "25.10",
           "detail": "6 to play"
         }
       ]
@@ -142,11 +142,11 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 18.0,
+      "points": 24.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 59
+          "value": 62
         },
         {
           "stat": "REC YD",
@@ -155,6 +155,28 @@
         {
           "stat": "REC",
           "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 16.6,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 240
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 10
         },
         {
           "stat": "TD",
@@ -177,28 +199,6 @@
         {
           "stat": "REC",
           "value": 5
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 15.62,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 223
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 7
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -251,6 +251,28 @@
       ]
     },
     {
+      "name": "Sam LaPorta",
+      "position": "TE",
+      "team": "Det",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 11.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 41
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -273,28 +295,6 @@
         {
           "stat": "INT",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 9.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 24
-        },
-        {
-          "stat": "REC",
-          "value": 2
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -353,7 +353,7 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 4.4,
+      "points": 5.4,
       "stats": []
     },
     {
