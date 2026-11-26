@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T18:15:25Z",
+  "updated": "2026-11-26T18:20:26Z",
   "players": [
     {
       "name": "Christian Watson",
@@ -138,11 +138,11 @@
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
-      "points": 0.92,
+      "points": 1.6,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 23
+          "value": 40
         }
       ]
     },
@@ -177,15 +177,6 @@
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Colston Loveland",
-      "position": "TE",
-      "team": "Chi",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -883,6 +874,28 @@
       "manager_display": "ANTHONY",
       "points": 0.0,
       "stats": []
+    },
+    {
+      "name": "Colston Loveland",
+      "position": "TE",
+      "team": "Chi",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": -1.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "FUM",
+          "value": 1
+        }
+      ]
     }
   ]
 }
