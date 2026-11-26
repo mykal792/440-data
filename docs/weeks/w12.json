@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T20:40:28Z",
+  "updated": "2026-11-26T20:45:22Z",
   "matchups": [
     {
       "home": {
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 27.5,
+        "score": 28.62,
         "projected": 111.97
       }
     }
@@ -120,17 +120,17 @@
         },
         {
           "rank": 2,
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "28.62",
+          "detail": "6 to play"
+        },
+        {
+          "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
           "value": "27.50",
           "detail": "8 to play"
-        },
-        {
-          "rank": 2,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "27.50",
-          "detail": "6 to play"
         }
       ]
     }
@@ -299,6 +299,24 @@
       ]
     },
     {
+      "name": "Caleb Williams",
+      "position": "QB",
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 10.02,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 218
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 13
+        }
+      ]
+    },
+    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -306,24 +324,6 @@
       "manager_display": "GRAHAM",
       "points": 9.4,
       "stats": []
-    },
-    {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 8.9,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 210
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        }
-      ]
     },
     {
       "name": "Jameson Williams",
