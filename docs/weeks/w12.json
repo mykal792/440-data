@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T22:00:32Z",
+  "updated": "2026-11-26T22:05:37Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 41.22,
+        "score": 41.42,
         "projected": 119.11
       }
     },
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "10.50",
+          "value": "10.70",
           "detail": "Javonte Williams + Saquon Barkley"
         }
       ]
@@ -467,6 +467,20 @@
       "stats": []
     },
     {
+      "name": "Saquon Barkley",
+      "position": "RB",
+      "team": "Phi",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Joe Burrow",
       "position": "QB",
       "team": "Cin",
@@ -814,15 +828,6 @@
       "team": "NYG",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Saquon Barkley",
-      "position": "RB",
-      "team": "Phi",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
       "points": 0.0,
       "stats": []
     },
