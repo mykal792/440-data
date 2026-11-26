@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T23:05:20Z",
+  "updated": "2026-11-26T23:10:26Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 61.36,
+        "score": 61.56,
         "projected": 124.72
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 13.0,
+        "score": 11.0,
         "projected": 113.19
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 50.12,
+        "score": 51.52,
         "projected": 119.09
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 57.7,
+        "score": 69.2,
         "projected": 111.95
       }
     }
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "19.40",
+          "value": "20.80",
           "detail": "Javonte Williams + Saquon Barkley"
         },
         {
@@ -113,23 +113,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GARRETT",
-          "face": "garrett",
-          "value": "61.36",
-          "detail": "7 to play"
+          "manager": "COYNE",
+          "face": "coyne",
+          "value": "69.20",
+          "detail": "5 to play"
         },
         {
           "rank": 2,
-          "manager": "COYNE",
-          "face": "coyne",
-          "value": "57.70",
-          "detail": "5 to play"
+          "manager": "GARRETT",
+          "face": "garrett",
+          "value": "61.56",
+          "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "50.12",
+          "value": "51.52",
           "detail": "5 to play"
         }
       ]
@@ -177,6 +177,32 @@
         {
           "stat": "RUSH YD",
           "value": 15
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 20.1,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 61
+        },
+        {
+          "stat": "REC YD",
+          "value": 10
+        },
+        {
+          "stat": "REC",
+          "value": 2
         },
         {
           "stat": "TD",
@@ -233,28 +259,24 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 18.7,
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 17.5,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 57
-        },
-        {
           "stat": "REC YD",
-          "value": 5
+          "value": 95
         },
         {
           "stat": "REC",
-          "value": 1
+          "value": 4
         },
         {
           "stat": "TD",
-          "value": 2
+          "value": 1
         }
       ]
     },
@@ -334,11 +356,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 11.66,
+      "points": 11.86,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 129
+          "value": 134
         },
         {
           "stat": "RUSH YD",
@@ -399,15 +421,6 @@
       ]
     },
     {
-      "name": "Cowboys",
-      "position": "DEF",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -422,6 +435,15 @@
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
+      "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Cowboys",
+      "position": "DEF",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 8.0,
       "stats": []
     },
@@ -458,24 +480,6 @@
         {
           "stat": "REC YD",
           "value": 44
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 6.0,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 45
         },
         {
           "stat": "REC",
