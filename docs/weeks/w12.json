@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T20:55:24Z",
+  "updated": "2026-11-26T21:00:33Z",
   "matchups": [
     {
       "home": {
@@ -28,7 +28,7 @@
         "name": "SCOTTY",
         "face": "scotty",
         "score": 0.0,
-        "projected": 113.22
+        "projected": 113.23
       }
     },
     {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 26.52,
+        "score": 29.32,
         "projected": 119.11
       }
     },
@@ -63,14 +63,14 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 44.02,
+        "score": 46.94,
         "projected": 116.34
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 28.62,
-        "projected": 111.97
+        "score": 39.46,
+        "projected": 111.98
       }
     }
   ],
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "44.02",
+          "value": "46.94",
           "detail": "5 to play"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "28.62",
+          "value": "39.46",
           "detail": "6 to play"
         }
       ]
@@ -163,20 +163,20 @@
       ]
     },
     {
-      "name": "Jared Goff",
+      "name": "Caleb Williams",
       "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 17.12,
+      "team": "Chi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 20.86,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 253
+          "value": 289
         },
         {
           "stat": "RUSH YD",
-          "value": 10
+          "value": 13
         },
         {
           "stat": "TD",
@@ -190,15 +190,37 @@
       "team": "Det",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 15.9,
+      "points": 18.7,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 114
+          "value": 137
         },
         {
           "stat": "REC",
-          "value": 5
+          "value": 6
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 18.04,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 276
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 10
+        },
+        {
+          "stat": "TD",
+          "value": 1
         }
       ]
     },
@@ -299,24 +321,6 @@
       ]
     },
     {
-      "name": "Caleb Williams",
-      "position": "QB",
-      "team": "Chi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 10.02,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 218
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 13
-        }
-      ]
-    },
-    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -362,7 +366,7 @@
       "team": "Chi",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 4.0,
+      "points": 6.0,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -370,11 +374,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 29
+          "value": 44
         },
         {
           "stat": "REC",
-          "value": 2
+          "value": 3
         }
       ]
     },
