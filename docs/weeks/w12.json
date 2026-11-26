@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T01:30:28Z",
+  "updated": "2026-11-26T01:35:26Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 1.04,
+        "score": 1.4,
         "projected": 118.97
       }
     },
@@ -120,16 +120,16 @@
         },
         {
           "rank": 2,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "1.10",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "1.40",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "1.04",
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "1.10",
           "detail": "8 to play"
         }
       ]
@@ -155,6 +155,20 @@
       ]
     },
     {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.4,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 35
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -169,20 +183,6 @@
         {
           "stat": "REC",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 1.04,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 26
         }
       ]
     },
