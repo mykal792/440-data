@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T19:30:29Z",
+  "updated": "2026-11-26T19:35:22Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 16.3,
+        "score": 17.8,
         "projected": 124.68
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 1.2,
+        "score": 5.6,
         "projected": 130.95
       },
       "away": {
@@ -63,13 +63,13 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 24.82,
+        "score": 34.22,
         "projected": 116.35
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 10.08,
+        "score": 17.68,
         "projected": 111.97
       }
     }
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "16.30",
+          "value": "17.80",
           "detail": "Jahmyr Gibbs + Jaylen Warren"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "24.82",
+          "value": "34.22",
           "detail": "5 to play"
         },
         {
@@ -129,7 +129,7 @@
           "rank": 3,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "16.30",
+          "value": "17.80",
           "detail": "8 to play"
         }
       ]
@@ -142,7 +142,7 @@
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 16.3,
+      "points": 17.8,
       "stats": [
         {
           "stat": "RUSH YD",
@@ -150,11 +150,11 @@
         },
         {
           "stat": "REC YD",
-          "value": 31
+          "value": 41
         },
         {
           "stat": "REC",
-          "value": 3
+          "value": 4
         },
         {
           "stat": "TD",
@@ -211,6 +211,28 @@
       ]
     },
     {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 14.42,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 193
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -255,20 +277,46 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
+      "name": "Sam LaPorta",
+      "position": "TE",
       "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 6.02,
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 7.6,
       "stats": [
         {
-          "stat": "PASS YD",
-          "value": 133
+          "stat": "REC YD",
+          "value": 11
         },
         {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 5.6,
+      "stats": [
+        {
           "stat": "RUSH YD",
-          "value": 7
+          "value": 12
+        },
+        {
+          "stat": "REC YD",
+          "value": 39
+        },
+        {
+          "stat": "REC",
+          "value": 1
         }
       ]
     },
@@ -301,22 +349,8 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 3.4,
+      "points": 4.4,
       "stats": []
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 1.2,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 12
-        }
-      ]
     },
     {
       "name": "Luther Burden III",
@@ -844,15 +878,6 @@
       "name": "Antonio Williams",
       "position": "WR",
       "team": "Was",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Sam LaPorta",
-      "position": "TE",
-      "team": "Det",
       "manager": "coyne",
       "manager_display": "COYNE",
       "points": 0.0,
