@@ -1,20 +1,20 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T22:55:23Z",
+  "updated": "2026-11-26T23:00:36Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 16.8,
+        "score": 20.7,
         "projected": 127.82
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 59.7,
-        "projected": 124.74
+        "score": 61.36,
+        "projected": 124.72
       }
     },
     {
@@ -22,12 +22,12 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 11.0,
-        "projected": 131.02
+        "projected": 130.96
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 12.0,
+        "score": 13.0,
         "projected": 113.19
       }
     },
@@ -36,12 +36,12 @@
         "name": "GREG",
         "face": "greg",
         "score": 0.0,
-        "projected": 118.14
+        "projected": 118.07
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 42.92,
+        "score": 50.12,
         "projected": 119.09
       }
     },
@@ -56,7 +56,7 @@
         "name": "ANTHONY",
         "face": "anthony",
         "score": 0.0,
-        "projected": 102.99
+        "projected": 102.89
       }
     },
     {
@@ -91,17 +91,17 @@
         },
         {
           "rank": 2,
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "19.40",
+          "detail": "Javonte Williams + Saquon Barkley"
+        },
+        {
+          "rank": 3,
           "manager": "GRAHAM",
           "face": "graham",
           "value": "14.50",
           "detail": "Kyren Williams + Chuba Hubbard"
-        },
-        {
-          "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "12.20",
-          "detail": "Javonte Williams + Saquon Barkley"
         }
       ]
     },
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "59.70",
+          "value": "61.36",
           "detail": "7 to play"
         },
         {
@@ -127,9 +127,9 @@
         },
         {
           "rank": 3,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "48.72",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "50.12",
           "detail": "5 to play"
         }
       ]
@@ -233,6 +233,32 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 18.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 57
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Christian Watson",
       "position": "WR",
       "team": "GB",
@@ -303,24 +329,20 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
+      "name": "Dak Prescott",
+      "position": "QB",
       "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 11.5,
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 11.66,
       "stats": [
         {
+          "stat": "PASS YD",
+          "value": 129
+        },
+        {
           "stat": "RUSH YD",
-          "value": 45
-        },
-        {
-          "stat": "REC YD",
           "value": 5
-        },
-        {
-          "stat": "REC",
-          "value": 1
         },
         {
           "stat": "TD",
@@ -377,24 +399,6 @@
       ]
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 10.0,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 100
-        },
-        {
-          "stat": "TD",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Cowboys",
       "position": "DEF",
       "team": "Dal",
@@ -420,6 +424,24 @@
       "manager_display": "COYNE",
       "points": 8.0,
       "stats": []
+    },
+    {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 7.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 57
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        }
+      ]
     },
     {
       "name": "Luther Burden III",
@@ -480,30 +502,12 @@
       ]
     },
     {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 3.3,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 28
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
-      "points": 2.0,
+      "points": 3.0,
       "stats": []
     },
     {
