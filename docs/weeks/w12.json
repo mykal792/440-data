@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T21:45:24Z",
+  "updated": "2026-11-26T21:50:28Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 49.7,
+        "score": 49.9,
         "projected": 124.68
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 0.0,
+        "score": 10.0,
         "projected": 113.25
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 30.72,
+        "score": 32.42,
         "projected": 119.11
       }
     },
@@ -98,10 +98,10 @@
         },
         {
           "rank": 3,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "0.00",
-          "detail": "Christian McCaffrey + Travis Etienne Jr."
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "1.70",
+          "detail": "Javonte Williams + Saquon Barkley"
         }
       ]
     },
@@ -122,8 +122,8 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "49.70",
-          "detail": "8 to play"
+          "value": "49.90",
+          "detail": "7 to play"
         },
         {
           "rank": 3,
@@ -351,6 +351,15 @@
       ]
     },
     {
+      "name": "Cowboys",
+      "position": "DEF",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -387,6 +396,42 @@
         {
           "stat": "REC",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 1.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 0.2,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 5
         }
       ]
     },
@@ -450,15 +495,6 @@
       "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
       "points": 0.0,
       "stats": []
     },
@@ -760,15 +796,6 @@
       "stats": []
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
@@ -987,15 +1014,6 @@
     {
       "name": "Brandon Aubrey",
       "position": "K",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Cowboys",
-      "position": "DEF",
       "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
