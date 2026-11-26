@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T18:35:24Z",
+  "updated": "2026-11-26T18:40:27Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 2.6,
+        "score": 4.4,
         "projected": 124.71
       }
     },
@@ -21,7 +21,7 @@
       "home": {
         "name": "HAYDEN",
         "face": "hayden",
-        "score": 0.0,
+        "score": 1.2,
         "projected": 131.02
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 20.72,
+        "score": 21.28,
         "projected": 116.24
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "2.60",
+          "value": "4.40",
           "detail": "Jahmyr Gibbs + Jaylen Warren"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "20.72",
+          "value": "21.28",
           "detail": "5 to play"
         },
         {
@@ -229,30 +229,38 @@
       ]
     },
     {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 2.92,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 73
-        }
-      ]
-    },
-    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 2.6,
+      "points": 4.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 26
+          "value": 25
+        },
+        {
+          "stat": "REC YD",
+          "value": 14
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 3.48,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 87
         }
       ]
     },
@@ -276,6 +284,20 @@
         {
           "stat": "PASS YD",
           "value": 44
+        }
+      ]
+    },
+    {
+      "name": "Jameson Williams",
+      "position": "WR",
+      "team": "Det",
+      "manager": "hayden",
+      "manager_display": "HAYDEN",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
         }
       ]
     },
@@ -463,15 +485,6 @@
       "name": "Zay Flowers",
       "position": "WR",
       "team": "Bal",
-      "manager": "hayden",
-      "manager_display": "HAYDEN",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jameson Williams",
-      "position": "WR",
-      "team": "Det",
       "manager": "hayden",
       "manager_display": "HAYDEN",
       "points": 0.0,
