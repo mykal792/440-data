@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T18:40:27Z",
+  "updated": "2026-11-26T18:45:26Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 4.4,
+        "score": 12.5,
         "projected": 124.71
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 21.28,
+        "score": 22.56,
         "projected": 116.24
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "4.40",
+          "value": "12.50",
           "detail": "Jahmyr Gibbs + Jaylen Warren"
         },
         {
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "21.28",
+          "value": "22.56",
           "detail": "5 to play"
         },
         {
@@ -185,6 +185,32 @@
       ]
     },
     {
+      "name": "Jahmyr Gibbs",
+      "position": "RB",
+      "team": "Det",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 12.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 35
+        },
+        {
+          "stat": "REC YD",
+          "value": 20
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -229,38 +255,16 @@
       ]
     },
     {
-      "name": "Jahmyr Gibbs",
-      "position": "RB",
-      "team": "Det",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 4.4,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 25
-        },
-        {
-          "stat": "REC YD",
-          "value": 14
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Jared Goff",
       "position": "QB",
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 3.48,
+      "points": 3.76,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 87
+          "value": 94
         }
       ]
     },
@@ -270,7 +274,7 @@
       "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
-      "points": 2.4,
+      "points": 3.4,
       "stats": []
     },
     {
