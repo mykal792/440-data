@@ -1,13 +1,13 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T02:05:21Z",
+  "updated": "2026-11-26T02:10:35Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 7.4,
+        "score": 14.5,
         "projected": 125.52
       },
       "away": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 5.2,
+        "score": 12.14,
         "projected": 118.97
       }
     },
@@ -113,29 +113,73 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "GRAHAM",
-          "face": "graham",
-          "value": "11.10",
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "14.50",
           "detail": "8 to play"
         },
         {
           "rank": 2,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "7.40",
+          "manager": "GANGUS",
+          "face": "gangus",
+          "value": "12.14",
           "detail": "8 to play"
         },
         {
           "rank": 3,
-          "manager": "GANGUS",
-          "face": "gangus",
-          "value": "5.20",
+          "manager": "GRAHAM",
+          "face": "graham",
+          "value": "11.10",
           "detail": "8 to play"
         }
       ]
     }
   },
   "top_players": [
+    {
+      "name": "Christian Watson",
+      "position": "WR",
+      "team": "GB",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 14.5,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 65
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Jordan Love",
+      "position": "QB",
+      "team": "GB",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 12.14,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 136
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
     {
       "name": "Kyren Williams",
       "position": "RB",
@@ -159,38 +203,6 @@
         {
           "stat": "TD",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Christian Watson",
-      "position": "WR",
-      "team": "GB",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 59
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Jordan Love",
-      "position": "QB",
-      "team": "GB",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 5.2,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 130
         }
       ]
     },
