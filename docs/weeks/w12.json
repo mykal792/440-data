@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T19:10:26Z",
+  "updated": "2026-11-26T19:15:24Z",
   "matchups": [
     {
       "home": {
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 19.02,
+        "score": 22.32,
         "projected": 119.08
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 22.56,
+        "score": 23.68,
         "projected": 116.31
       },
       "away": {
@@ -115,14 +115,14 @@
           "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "22.56",
+          "value": "23.68",
           "detail": "5 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "19.02",
+          "value": "22.32",
           "detail": "7 to play"
         },
         {
@@ -211,6 +211,24 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 11.7,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 97
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -237,24 +255,6 @@
       ]
     },
     {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 8.4,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 69
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Cairo Santos",
       "position": "K",
       "team": "Chi",
@@ -262,6 +262,20 @@
       "manager_display": "COYNE",
       "points": 5.0,
       "stats": []
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 4.88,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 122
+        }
+      ]
     },
     {
       "name": "Caleb Williams",
@@ -274,20 +288,6 @@
         {
           "stat": "PASS YD",
           "value": 120
-        }
-      ]
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 3.76,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 94
         }
       ]
     },
