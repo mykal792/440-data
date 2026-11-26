@@ -1,20 +1,20 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T21:55:20Z",
+  "updated": "2026-11-26T22:00:32Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 13.5,
-        "projected": 127.82
+        "score": 16.8,
+        "projected": 127.83
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 49.9,
-        "projected": 124.68
+        "score": 51.02,
+        "projected": 124.74
       }
     },
     {
@@ -22,13 +22,13 @@
         "name": "HAYDEN",
         "face": "hayden",
         "score": 11.0,
-        "projected": 130.96
+        "projected": 131.01
       },
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 10.0,
-        "projected": 113.25
+        "score": 11.0,
+        "projected": 113.19
       }
     },
     {
@@ -36,12 +36,12 @@
         "name": "GREG",
         "face": "greg",
         "score": 0.0,
-        "projected": 118.23
+        "projected": 118.14
       },
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 34.52,
+        "score": 41.22,
         "projected": 119.11
       }
     },
@@ -64,13 +64,13 @@
         "name": "GRAHAM",
         "face": "graham",
         "score": 48.72,
-        "projected": 116.34
+        "projected": 116.33
       },
       "away": {
         "name": "COYNE",
         "face": "coyne",
         "score": 51.7,
-        "projected": 111.98
+        "projected": 111.95
       }
     }
   ],
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "3.80",
+          "value": "10.50",
           "detail": "Javonte Williams + Saquon Barkley"
         }
       ]
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "49.90",
+          "value": "51.02",
           "detail": "7 to play"
         },
         {
@@ -351,6 +351,32 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 10.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 35
+        },
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Cowboys",
       "position": "DEF",
       "team": "Dal",
@@ -400,20 +426,16 @@
       ]
     },
     {
-      "name": "Javonte Williams",
-      "position": "RB",
+      "name": "CeeDee Lamb",
+      "position": "WR",
       "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 3.8,
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 3.3,
       "stats": [
         {
-          "stat": "RUSH YD",
-          "value": 28
-        },
-        {
           "stat": "REC YD",
-          "value": 5
+          "value": 28
         },
         {
           "stat": "REC",
@@ -427,13 +449,22 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.2,
+      "points": 1.32,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 5
+          "value": 33
         }
       ]
+    },
+    {
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Joe Burrow",
@@ -457,15 +488,6 @@
       "name": "Travis Etienne Jr.",
       "position": "RB",
       "team": "NO",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
       "manager": "schilling",
       "manager_display": "SCHILLING",
       "points": 0.0,
@@ -1006,15 +1028,6 @@
       "name": "Malik Nabers",
       "position": "WR",
       "team": "NYG",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Brandon Aubrey",
-      "position": "K",
-      "team": "Dal",
       "manager": "scotty",
       "manager_display": "SCOTTY",
       "points": 0.0,
