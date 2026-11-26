@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T18:05:21Z",
+  "updated": "2026-11-26T18:10:25Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 0.6,
+        "score": 2.2,
         "projected": 124.62
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 10.62,
+        "score": 16.22,
         "projected": 119.17
       }
     },
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 14.5,
+        "score": 18.74,
         "projected": 116.2
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "0.60",
+          "value": "2.20",
           "detail": "Jahmyr Gibbs + Jaylen Warren"
         },
         {
@@ -113,23 +113,23 @@
       "leaders": [
         {
           "rank": 1,
-          "manager": "SCHILLING",
-          "face": "schilling",
-          "value": "14.50",
-          "detail": "8 to play"
-        },
-        {
-          "rank": 1,
           "manager": "GRAHAM",
           "face": "graham",
-          "value": "14.50",
-          "detail": "8 to play"
+          "value": "18.74",
+          "detail": "6 to play"
         },
         {
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "10.62",
+          "value": "16.22",
+          "detail": "7 to play"
+        },
+        {
+          "rank": 3,
+          "manager": "SCHILLING",
+          "face": "schilling",
+          "value": "14.50",
           "detail": "8 to play"
         }
       ]
@@ -211,16 +211,57 @@
       ]
     },
     {
+      "name": "Amon-Ra St. Brown",
+      "position": "WR",
+      "team": "Det",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 5.6,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 46
+        },
+        {
+          "stat": "REC",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Jake Bates",
+      "position": "K",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.4,
+      "stats": []
+    },
+    {
       "name": "Jahmyr Gibbs",
       "position": "RB",
       "team": "Det",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 0.6,
+      "points": 2.2,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 6
+          "value": 22
+        }
+      ]
+    },
+    {
+      "name": "Jared Goff",
+      "position": "QB",
+      "team": "Det",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 1.84,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 46
         }
       ]
     },
@@ -639,15 +680,6 @@
       "stats": []
     },
     {
-      "name": "Amon-Ra St. Brown",
-      "position": "WR",
-      "team": "Det",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Trey McBride",
       "position": "TE",
       "team": "Ari",
@@ -680,15 +712,6 @@
       "team": "TB",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jared Goff",
-      "position": "QB",
-      "team": "Det",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
       "points": 0.0,
       "stats": []
     },
@@ -732,15 +755,6 @@
       "name": "Mike Evans",
       "position": "WR",
       "team": "SF",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jake Bates",
-      "position": "K",
-      "team": "Det",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
