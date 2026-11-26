@@ -1,19 +1,19 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-26T23:50:24Z",
+  "updated": "2026-11-26T23:55:22Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 20.7,
+        "score": 23.4,
         "projected": 127.82
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 68.56,
+        "score": 69.44,
         "projected": 124.72
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 59.52,
+        "score": 59.72,
         "projected": 119.09
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "28.80",
+          "value": "29.00",
           "detail": "Javonte Williams + Saquon Barkley"
         },
         {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "68.56",
+          "value": "69.44",
           "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "59.52",
+          "value": "59.72",
           "detail": "5 to play"
         }
       ]
@@ -190,11 +190,11 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 28.1,
+      "points": 28.3,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 64
+          "value": 66
         },
         {
           "stat": "REC YD",
@@ -286,11 +286,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 18.86,
+      "points": 19.74,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 159
+          "value": 181
         },
         {
           "stat": "RUSH YD",
@@ -421,6 +421,24 @@
       ]
     },
     {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 9.9,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 79
+        },
+        {
+          "stat": "REC",
+          "value": 4
+        }
+      ]
+    },
+    {
       "name": "Cowboys",
       "position": "DEF",
       "team": "Dal",
@@ -446,24 +464,6 @@
       "manager_display": "COYNE",
       "points": 8.0,
       "stats": []
-    },
-    {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 7.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 57
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        }
-      ]
     },
     {
       "name": "Luther Burden III",
