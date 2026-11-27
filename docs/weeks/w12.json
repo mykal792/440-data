@@ -1,19 +1,19 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T00:30:33Z",
+  "updated": "2026-11-27T00:35:30Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 24.3,
+        "score": 30.7,
         "projected": 127.81
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 70.32,
+        "score": 71.88,
         "projected": 124.71
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 17.9,
+        "score": 15.9,
         "projected": 113.15
       }
     },
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "70.32",
+          "value": "71.88",
           "detail": "7 to play"
         },
         {
@@ -238,11 +238,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 20.62,
+      "points": 22.18,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 203
+          "value": 242
         },
         {
           "stat": "RUSH YD",
@@ -299,6 +299,24 @@
         {
           "stat": "INT",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "schilling",
+      "manager_display": "SCHILLING",
+      "points": 17.2,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 122
+        },
+        {
+          "stat": "REC",
+          "value": 6
         }
       ]
     },
@@ -395,24 +413,6 @@
       ]
     },
     {
-      "name": "CeeDee Lamb",
-      "position": "WR",
-      "team": "Dal",
-      "manager": "schilling",
-      "manager_display": "SCHILLING",
-      "points": 10.8,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 83
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        }
-      ]
-    },
-    {
       "name": "Jordan Love",
       "position": "QB",
       "team": "GB",
@@ -466,15 +466,6 @@
       "stats": []
     },
     {
-      "name": "Cowboys",
-      "position": "DEF",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 8.0,
-      "stats": []
-    },
-    {
       "name": "George Pickens",
       "position": "WR",
       "team": "Dal",
@@ -513,6 +504,15 @@
           "value": 3
         }
       ]
+    },
+    {
+      "name": "Cowboys",
+      "position": "DEF",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 6.0,
+      "stats": []
     },
     {
       "name": "Saquon Barkley",
