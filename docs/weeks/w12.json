@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T00:05:21Z",
+  "updated": "2026-11-27T00:10:32Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 69.44,
+        "score": 70.2,
         "projected": 124.72
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 59.22,
+        "score": 59.82,
         "projected": 119.09
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "28.50",
+          "value": "29.10",
           "detail": "Javonte Williams + Saquon Barkley"
         },
         {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "69.44",
+          "value": "70.20",
           "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "59.22",
+          "value": "59.82",
           "detail": "5 to play"
         }
       ]
@@ -190,11 +190,11 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 27.8,
+      "points": 28.4,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 61
+          "value": 67
         },
         {
           "stat": "REC YD",
@@ -207,6 +207,28 @@
         {
           "stat": "TD",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 20.5,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 200
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 5
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -277,28 +299,6 @@
         {
           "stat": "INT",
           "value": 1
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 19.74,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 181
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
