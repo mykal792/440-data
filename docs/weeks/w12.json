@@ -1,19 +1,19 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T00:35:30Z",
+  "updated": "2026-11-27T00:40:25Z",
   "matchups": [
     {
       "home": {
         "name": "SCHILLING",
         "face": "schilling",
-        "score": 30.7,
+        "score": 32.4,
         "projected": 127.81
       },
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 71.88,
+        "score": 79.76,
         "projected": 124.71
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 60.32,
+        "score": 60.92,
         "projected": 119.14
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "29.60",
+          "value": "30.20",
           "detail": "Javonte Williams + Saquon Barkley"
         },
         {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "71.88",
+          "value": "79.76",
           "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "60.32",
+          "value": "60.92",
           "detail": "5 to play"
         }
       ]
@@ -207,16 +207,38 @@
       ]
     },
     {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 30.06,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 254
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 19
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Javonte Williams",
       "position": "RB",
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 28.9,
+      "points": 29.5,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 72
+          "value": 78
         },
         {
           "stat": "REC YD",
@@ -229,28 +251,6 @@
         {
           "stat": "TD",
           "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 22.18,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 242
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 2
         }
       ]
     },
@@ -308,15 +308,15 @@
       "team": "Dal",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 17.2,
+      "points": 18.9,
       "stats": [
         {
           "stat": "REC YD",
-          "value": 122
+          "value": 134
         },
         {
           "stat": "REC",
-          "value": 6
+          "value": 7
         }
       ]
     },
