@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T01:15:26Z",
+  "updated": "2026-11-27T01:20:27Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 80.64,
+        "score": 81.24,
         "projected": 124.44
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 62.32,
+        "score": 63.02,
         "projected": 119.12
       }
     },
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "31.60",
+          "value": "32.30",
           "detail": "Javonte Williams + Saquon Barkley"
         },
         {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "80.64",
+          "value": "81.24",
           "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "62.32",
+          "value": "63.02",
           "detail": "5 to play"
         }
       ]
@@ -185,6 +185,54 @@
       ]
     },
     {
+      "name": "Javonte Williams",
+      "position": "RB",
+      "team": "Dal",
+      "manager": "gangus",
+      "manager_display": "GANGUS",
+      "points": 31.6,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 99
+        },
+        {
+          "stat": "REC YD",
+          "value": 22
+        },
+        {
+          "stat": "REC",
+          "value": 3
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 31.54,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 291
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 19
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        }
+      ]
+    },
+    {
       "name": "Caleb Williams",
       "position": "QB",
       "team": "Chi",
@@ -203,54 +251,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 30.94,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 276
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 19
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "name": "Javonte Williams",
-      "position": "RB",
-      "team": "Dal",
-      "manager": "gangus",
-      "manager_display": "GANGUS",
-      "points": 30.9,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 92
-        },
-        {
-          "stat": "REC YD",
-          "value": 22
-        },
-        {
-          "stat": "REC",
-          "value": 3
-        },
-        {
-          "stat": "TD",
-          "value": 3
         }
       ]
     },
