@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T03:40:26Z",
+  "updated": "2026-11-27T03:45:26Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 17.5,
+        "score": 26.1,
         "projected": 118.1
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 11.82,
+        "score": 12.1,
         "projected": 127.13
       },
       "away": {
@@ -100,7 +100,7 @@
           "rank": 3,
           "manager": "GREG",
           "face": "greg",
-          "value": "16.50",
+          "value": "19.70",
           "detail": "James Cook III + Chase Brown"
         }
       ]
@@ -307,6 +307,32 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 19.7,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 104
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "CeeDee Lamb",
       "position": "WR",
       "team": "Dal",
@@ -321,32 +347,6 @@
         {
           "stat": "REC",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 16.5,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 92
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -558,6 +558,15 @@
       "stats": []
     },
     {
+      "name": "Tyler Bass",
+      "position": "K",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 6.4,
+      "stats": []
+    },
+    {
       "name": "Luther Burden III",
       "position": "WR",
       "team": "Chi",
@@ -612,11 +621,11 @@
       "team": "Buf",
       "manager": "scarpitti",
       "manager_display": "SCARPITTI",
-      "points": 2.62,
+      "points": 2.9,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 63
+          "value": 70
         },
         {
           "stat": "RUSH YD",
@@ -627,15 +636,6 @@
           "value": 2
         }
       ]
-    },
-    {
-      "name": "Tyler Bass",
-      "position": "K",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 1.0,
-      "stats": []
     },
     {
       "name": "Saquon Barkley",
