@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T00:15:26Z",
+  "updated": "2026-11-27T00:20:25Z",
   "matchups": [
     {
       "home": {
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 19.9,
+        "score": 17.9,
         "projected": 113.19
       }
     },
@@ -69,7 +69,7 @@
       "away": {
         "name": "COYNE",
         "face": "coyne",
-        "score": 72.2,
+        "score": 85.1,
         "projected": 111.95
       }
     }
@@ -115,7 +115,7 @@
           "rank": 1,
           "manager": "COYNE",
           "face": "coyne",
-          "value": "72.20",
+          "value": "85.10",
           "detail": "5 to play"
         },
         {
@@ -159,6 +159,28 @@
         {
           "stat": "TD",
           "value": 3
+        }
+      ]
+    },
+    {
+      "name": "DeVonta Smith",
+      "position": "WR",
+      "team": "Phi",
+      "manager": "coyne",
+      "manager_display": "COYNE",
+      "points": 33.4,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 159
+        },
+        {
+          "stat": "REC",
+          "value": 7
+        },
+        {
+          "stat": "TD",
+          "value": 2
         }
       ]
     },
@@ -229,28 +251,6 @@
         {
           "stat": "TD",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "DeVonta Smith",
-      "position": "WR",
-      "team": "Phi",
-      "manager": "coyne",
-      "manager_display": "COYNE",
-      "points": 20.5,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 100
-        },
-        {
-          "stat": "REC",
-          "value": 5
-        },
-        {
-          "stat": "TD",
-          "value": 1
         }
       ]
     },
@@ -439,15 +439,6 @@
       ]
     },
     {
-      "name": "Cowboys",
-      "position": "DEF",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 10.0,
-      "stats": []
-    },
-    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -471,6 +462,15 @@
       "team": "Chi",
       "manager": "coyne",
       "manager_display": "COYNE",
+      "points": 8.0,
+      "stats": []
+    },
+    {
+      "name": "Cowboys",
+      "position": "DEF",
+      "team": "Dal",
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
       "points": 8.0,
       "stats": []
     },
