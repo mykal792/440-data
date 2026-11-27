@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T01:30:25Z",
+  "updated": "2026-11-27T01:35:24Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 81.24,
+        "score": 79.24,
         "projected": 124.44
       }
     },
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 1.3,
+        "score": 2.0,
         "projected": 118.11
       },
       "away": {
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 9.52,
+        "score": 10.52,
         "projected": 127.13
       },
       "away": {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "81.24",
+          "value": "79.24",
           "detail": "7 to play"
         },
         {
@@ -211,28 +211,6 @@
       ]
     },
     {
-      "name": "Dak Prescott",
-      "position": "QB",
-      "team": "Dal",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 31.54,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 291
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 19
-        },
-        {
-          "stat": "TD",
-          "value": 3
-        }
-      ]
-    },
-    {
       "name": "Caleb Williams",
       "position": "QB",
       "team": "Chi",
@@ -251,6 +229,32 @@
         {
           "stat": "TD",
           "value": 2
+        }
+      ]
+    },
+    {
+      "name": "Dak Prescott",
+      "position": "QB",
+      "team": "Dal",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 29.54,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 291
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 19
+        },
+        {
+          "stat": "TD",
+          "value": 3
+        },
+        {
+          "stat": "INT",
+          "value": 1
         }
       ]
     },
@@ -520,8 +524,12 @@
       "team": "Buf",
       "manager": "greg",
       "manager_display": "GREG",
-      "points": 1.3,
+      "points": 2.0,
       "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 7
+        },
         {
           "stat": "REC YD",
           "value": 8
@@ -529,6 +537,24 @@
         {
           "stat": "REC",
           "value": 1
+        }
+      ]
+    },
+    {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 1.32,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 8
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 10
         }
       ]
     },
@@ -543,20 +569,6 @@
         {
           "stat": "RUSH YD",
           "value": 7
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 0.32,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 8
         }
       ]
     },
