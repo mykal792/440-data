@@ -1,7 +1,24 @@
 {
   "_comment": "Who won what, by season and week. Hand-editable on purpose \u2014 the commissioner has the final say, and a tie or a judgment call should never depend on a script. settle_week.py proposes entries; you confirm them here. Playoff payouts and the Thanksgiving DraftKings go in the awards array \u2014 never edit the HTML for those, or the bank column and this file will disagree.",
   "2026": {
-    "awards": [],
+    "awards": [
+      {
+        "manager": "ANTHONY",
+        "label": "Turkey DK 1st",
+        "short": "Thanksgiving",
+        "amount": 75,
+        "kind": "dk",
+        "week": 12
+      },
+      {
+        "manager": "GREG",
+        "label": "Turkey DK 2nd",
+        "short": "Thanksgiving",
+        "amount": 25,
+        "kind": "dk",
+        "week": 12
+      }
+    ],
     "1": {
       "high": {
         "managers": [
