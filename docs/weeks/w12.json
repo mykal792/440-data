@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T22:00:40Z",
+  "updated": "2026-11-27T22:05:29Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 85.24,
+        "score": 86.04,
         "projected": 123.84
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "52.80",
+          "value": "53.60",
           "detail": "Jahmyr Gibbs + Jaylen Warren"
         },
         {
@@ -122,7 +122,7 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "85.24",
+          "value": "86.04",
           "detail": "5 to play"
         },
         {
@@ -651,6 +651,24 @@
       "stats": []
     },
     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 3.9,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 34
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Josh Allen",
       "position": "QB",
       "team": "Buf",
@@ -669,24 +687,6 @@
         {
           "stat": "INT",
           "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
-      "points": 3.1,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 26
-        },
-        {
-          "stat": "REC",
-          "value": 1
         }
       ]
     },
