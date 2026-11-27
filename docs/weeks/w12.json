@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T20:00:33Z",
+  "updated": "2026-11-27T20:05:19Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 82.14,
+        "score": 83.34,
         "projected": 123.24
       }
     },
@@ -55,7 +55,7 @@
       "away": {
         "name": "ANTHONY",
         "face": "anthony",
-        "score": 0.0,
+        "score": 11.0,
         "projected": 107.57
       }
     },
@@ -86,7 +86,7 @@
           "rank": 1,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "49.70",
+          "value": "50.90",
           "detail": "Jahmyr Gibbs + Jaylen Warren"
         },
         {
@@ -122,8 +122,8 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "82.14",
-          "detail": "6 to play"
+          "value": "83.34",
+          "detail": "5 to play"
         },
         {
           "rank": 3,
@@ -504,6 +504,15 @@
       ]
     },
     {
+      "name": "Broncos",
+      "position": "DEF",
+      "team": "Den",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 10.0,
+      "stats": []
+    },
+    {
       "name": "Brandon Aubrey",
       "position": "K",
       "team": "Dal",
@@ -638,6 +647,38 @@
       ]
     },
     {
+      "name": "Jaylen Warren",
+      "position": "RB",
+      "team": "Pit",
+      "manager": "garrett",
+      "manager_display": "GARRETT",
+      "points": 1.2,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "name": "DK Metcalf",
+      "position": "WR",
+      "team": "Pit",
+      "manager": "anthony",
+      "manager_display": "ANTHONY",
+      "points": 1.0,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 5
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Saquon Barkley",
       "position": "RB",
       "team": "Phi",
@@ -702,15 +743,6 @@
       "team": "Min",
       "manager": "schilling",
       "manager_display": "SCHILLING",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Jaylen Warren",
-      "position": "RB",
-      "team": "Pit",
-      "manager": "garrett",
-      "manager_display": "GARRETT",
       "points": 0.0,
       "stats": []
     },
@@ -1174,15 +1206,6 @@
       "stats": []
     },
     {
-      "name": "DK Metcalf",
-      "position": "WR",
-      "team": "Pit",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Tyler Warren",
       "position": "TE",
       "team": "Ind",
@@ -1204,15 +1227,6 @@
       "name": "Evan McPherson",
       "position": "K",
       "team": "Cin",
-      "manager": "anthony",
-      "manager_display": "ANTHONY",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Broncos",
-      "position": "DEF",
-      "team": "Den",
       "manager": "anthony",
       "manager_display": "ANTHONY",
       "points": 0.0,
