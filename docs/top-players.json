@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T04:00:42Z",
+  "updated": "2026-11-27T04:05:32Z",
   "players": [
     {
       "name": "Jahmyr Gibbs",
@@ -126,6 +126,32 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 21.0,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 117
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Amon-Ra St. Brown",
       "position": "WR",
       "team": "Det",
@@ -169,32 +195,6 @@
         },
         {
           "stat": "INT",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 19.7,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 104
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        },
-        {
-          "stat": "TD",
           "value": 1
         }
       ]
@@ -465,6 +465,28 @@
       "stats": []
     },
     {
+      "name": "Josh Allen",
+      "position": "QB",
+      "team": "Buf",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 3.1,
+      "stats": [
+        {
+          "stat": "PASS YD",
+          "value": 70
+        },
+        {
+          "stat": "RUSH YD",
+          "value": 43
+        },
+        {
+          "stat": "INT",
+          "value": 2
+        }
+      ]
+    },
+    {
       "name": "Rashee Rice",
       "position": "WR",
       "team": "KC",
@@ -478,28 +500,6 @@
         },
         {
           "stat": "REC",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "name": "Josh Allen",
-      "position": "QB",
-      "team": "Buf",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 2.9,
-      "stats": [
-        {
-          "stat": "PASS YD",
-          "value": 70
-        },
-        {
-          "stat": "RUSH YD",
-          "value": 41
-        },
-        {
-          "stat": "INT",
           "value": 2
         }
       ]
