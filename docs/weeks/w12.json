@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T01:00:32Z",
+  "updated": "2026-11-27T01:05:21Z",
   "matchups": [
     {
       "home": {
@@ -13,7 +13,7 @@
       "away": {
         "name": "GARRETT",
         "face": "garrett",
-        "score": 79.92,
+        "score": 80.56,
         "projected": 124.61
       }
     },
@@ -27,7 +27,7 @@
       "away": {
         "name": "SCOTTY",
         "face": "scotty",
-        "score": 15.9,
+        "score": 17.9,
         "projected": 113.04
       }
     },
@@ -41,7 +41,7 @@
       "away": {
         "name": "GANGUS",
         "face": "gangus",
-        "score": 61.52,
+        "score": 62.02,
         "projected": 119.14
       }
     },
@@ -49,7 +49,7 @@
       "home": {
         "name": "SCARPITTI",
         "face": "scarpitti",
-        "score": 7.2,
+        "score": 9.3,
         "projected": 127.22
       },
       "away": {
@@ -93,7 +93,7 @@
           "rank": 2,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "30.80",
+          "value": "31.30",
           "detail": "Javonte Williams + Saquon Barkley"
         },
         {
@@ -122,14 +122,14 @@
           "rank": 2,
           "manager": "GARRETT",
           "face": "garrett",
-          "value": "79.92",
+          "value": "80.56",
           "detail": "7 to play"
         },
         {
           "rank": 3,
           "manager": "GANGUS",
           "face": "gangus",
-          "value": "61.52",
+          "value": "62.02",
           "detail": "5 to play"
         }
       ]
@@ -212,11 +212,11 @@
       "team": "Dal",
       "manager": "garrett",
       "manager_display": "GARRETT",
-      "points": 30.22,
+      "points": 30.86,
       "stats": [
         {
           "stat": "PASS YD",
-          "value": 258
+          "value": 274
         },
         {
           "stat": "RUSH YD",
@@ -234,11 +234,11 @@
       "team": "Dal",
       "manager": "gangus",
       "manager_display": "GANGUS",
-      "points": 30.1,
+      "points": 30.6,
       "stats": [
         {
           "stat": "RUSH YD",
-          "value": 84
+          "value": 89
         },
         {
           "stat": "REC YD",
@@ -448,6 +448,24 @@
       ]
     },
     {
+      "name": "George Pickens",
+      "position": "WR",
+      "team": "Dal",
+      "manager": "scarpitti",
+      "manager_display": "SCARPITTI",
+      "points": 9.3,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 68
+        },
+        {
+          "stat": "REC",
+          "value": 5
+        }
+      ]
+    },
+    {
       "name": "Jake Bates",
       "position": "K",
       "team": "Det",
@@ -466,22 +484,13 @@
       "stats": []
     },
     {
-      "name": "George Pickens",
-      "position": "WR",
+      "name": "Cowboys",
+      "position": "DEF",
       "team": "Dal",
-      "manager": "scarpitti",
-      "manager_display": "SCARPITTI",
-      "points": 7.2,
-      "stats": [
-        {
-          "stat": "REC YD",
-          "value": 52
-        },
-        {
-          "stat": "REC",
-          "value": 4
-        }
-      ]
+      "manager": "scotty",
+      "manager_display": "SCOTTY",
+      "points": 7.0,
+      "stats": []
     },
     {
       "name": "Luther Burden III",
@@ -504,15 +513,6 @@
           "value": 3
         }
       ]
-    },
-    {
-      "name": "Cowboys",
-      "position": "DEF",
-      "team": "Dal",
-      "manager": "scotty",
-      "manager_display": "SCOTTY",
-      "points": 5.0,
-      "stats": []
     },
     {
       "name": "Saquon Barkley",
