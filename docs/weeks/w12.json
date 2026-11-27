@@ -1,7 +1,7 @@
 {
   "week": 12,
   "status": "live",
-  "updated": "2026-11-27T02:05:22Z",
+  "updated": "2026-11-27T02:10:31Z",
   "matchups": [
     {
       "home": {
@@ -35,7 +35,7 @@
       "home": {
         "name": "GREG",
         "face": "greg",
-        "score": 5.0,
+        "score": 12.5,
         "projected": 117.95
       },
       "away": {
@@ -63,7 +63,7 @@
       "home": {
         "name": "GRAHAM",
         "face": "graham",
-        "score": 48.72,
+        "score": 50.82,
         "projected": 116.39
       },
       "away": {
@@ -395,6 +395,32 @@
       ]
     },
     {
+      "name": "James Cook III",
+      "position": "RB",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 11.5,
+      "stats": [
+        {
+          "stat": "RUSH YD",
+          "value": 42
+        },
+        {
+          "stat": "REC YD",
+          "value": 8
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        },
+        {
+          "stat": "TD",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Jameson Williams",
       "position": "WR",
       "team": "Det",
@@ -510,28 +536,6 @@
       ]
     },
     {
-      "name": "James Cook III",
-      "position": "RB",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 5.0,
-      "stats": [
-        {
-          "stat": "RUSH YD",
-          "value": 37
-        },
-        {
-          "stat": "REC YD",
-          "value": 8
-        },
-        {
-          "stat": "REC",
-          "value": 1
-        }
-      ]
-    },
-    {
       "name": "Cowboys",
       "position": "DEF",
       "team": "Dal",
@@ -559,6 +563,24 @@
       ]
     },
     {
+      "name": "Travis Kelce",
+      "position": "TE",
+      "team": "KC",
+      "manager": "graham",
+      "manager_display": "GRAHAM",
+      "points": 2.1,
+      "stats": [
+        {
+          "stat": "REC YD",
+          "value": 16
+        },
+        {
+          "stat": "REC",
+          "value": 1
+        }
+      ]
+    },
+    {
       "name": "Emmett Johnson",
       "position": "RB",
       "team": "KC",
@@ -571,6 +593,15 @@
           "value": 11
         }
       ]
+    },
+    {
+      "name": "Tyler Bass",
+      "position": "K",
+      "team": "Buf",
+      "manager": "greg",
+      "manager_display": "GREG",
+      "points": 1.0,
+      "stats": []
     },
     {
       "name": "Saquon Barkley",
@@ -821,15 +852,6 @@
       "stats": []
     },
     {
-      "name": "Tyler Bass",
-      "position": "K",
-      "team": "Buf",
-      "manager": "greg",
-      "manager_display": "GREG",
-      "points": 0.0,
-      "stats": []
-    },
-    {
       "name": "Commanders",
       "position": "DEF",
       "team": "Was",
@@ -959,15 +981,6 @@
       "name": "Justin Jefferson",
       "position": "WR",
       "team": "Min",
-      "manager": "graham",
-      "manager_display": "GRAHAM",
-      "points": 0.0,
-      "stats": []
-    },
-    {
-      "name": "Travis Kelce",
-      "position": "TE",
-      "team": "KC",
       "manager": "graham",
       "manager_display": "GRAHAM",
       "points": 0.0,
